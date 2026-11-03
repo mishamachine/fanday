@@ -8,8 +8,13 @@ export default function PickLeague() {
   const [leagues, setLeagues] = useState<League[]>([])
   const [q, setQ] = useState('')
   const [error, setError] = useState('')
+  const [loading, setLoading] = useState(true)
+  const [attempt, setAttempt] = useState(0)
   const onboarded = useStore((s) => s.onboarded)
-  useEffect(() => { data.listLeagues().then(setLeagues).catch(() => setError('Could not load leagues. Check your connection.')) }, [])
+  useEffect(() => {
+    setLoading(true); setError('')
+    data.listLeagues().then(setLeagues).catch(() => setError('Could not load leagues. Check your connection.')).finally(() => setLoading(false))
+  }, [attempt])
   const shown = useMemo(() => {
     const n = q.trim().toLowerCase()
     return n ? leagues.filter((l) => `${l.name} ${l.country}`.toLowerCase().includes(n)) : leagues
@@ -19,7 +24,8 @@ export default function PickLeague() {
       <TopBar back={onboarded ? '/games' : '/'} />
       <h1>Pick a league</h1>
       <input className="search" type="search" aria-label="Search leagues" placeholder={`Search ${leagues.length || ''} leagues`.replace('  ', ' ')} value={q} onChange={(e) => setQ(e.target.value)} />
-      {error && <p className="err" role="alert">{error}</p>}
+      {loading && <p className="fine" role="status">Loading leagues…</p>}
+      {error && <div className="err" role="alert">{error} <button className="link" onClick={() => setAttempt((n) => n + 1)}>Retry</button></div>}
       <ul className="list">
         {shown.map((l) => (
           <li key={l.id}>
@@ -31,7 +37,7 @@ export default function PickLeague() {
             </Link>
           </li>
         ))}
-        {!shown.length && !error && <li className="fine">No league matches "{q}".</li>}
+        {!shown.length && !error && !loading && <li className="fine">No league matches "{q}".</li>}
       </ul>
     </main>
   )

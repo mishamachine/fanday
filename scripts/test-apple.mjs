@@ -1,6 +1,6 @@
 import { webcrypto as crypto } from 'node:crypto'
 import { eq, ok, done } from './_t.mjs'
-import { appleConfigFrom, appleClientSecret, revokeAppleAuthorization } from '../supabase/functions/delete-account/apple.ts'
+import { appleConfigFrom, appleClientSecret, revokeAppleAuthorization, appleGate } from '../supabase/functions/delete-account/apple.ts'
 
 // A throwaway P-256 key made right here for the test. Not a real Apple key.
 const kp = await crypto.subtle.generateKey({ name: 'ECDSA', namedCurve: 'P-256' }, true, ['sign', 'verify'])
@@ -32,4 +32,13 @@ eq('exchanged the code, then revoked the refresh token', [calls[0][0], calls[0][
   ['https://appleid.apple.com/auth/token', 'CODE', 'https://appleid.apple.com/auth/revoke', 'RT', 'refresh_token'])
 eq('bad code: false, no revoke call', await revokeAppleAuthorization(cfg, 'x', 'BAD', fakeApple(false, true)), false)
 eq('revoke rejected: false', await revokeAppleAuthorization(cfg, 'x', 'CODE', fakeApple(true, false)), false)
+
+// Fail closed: an Apple user is never deleted unless secrets exist and a code was sent.
+eq('non-Apple user passes with no secrets', appleGate(false, null, undefined).ok, true)
+const g1 = appleGate(true, null, 'CODE')
+eq('Apple user, secrets missing: refused 503, nothing deleted', [g1.ok, g1.status, g1.code], [false, 503, 'apple_not_configured'])
+const g2 = appleGate(true, cfg, undefined)
+eq('Apple user, no authorization code: refused 409', [g2.ok, g2.status, g2.code], [false, 409, 'apple_code_required'])
+eq('Apple user, empty code: refused', appleGate(true, cfg, '').ok, false)
+eq('Apple user, secrets and code: gate passes (revoke still has to succeed)', appleGate(true, cfg, 'CODE').ok, true)
 done()

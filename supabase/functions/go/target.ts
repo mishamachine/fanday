@@ -18,15 +18,23 @@ export interface GameLinks {
   watch_url: string | null
   tickets_url: string | null
   sponsor_url: string | null
-  sponsor?: { url: string | null } | null // joined sponsors row, used when the game has no sponsor_url of its own
+  /** Joined sponsors row (via games.sponsor_id). When present, its starts_on/ends_on window gates the sponsor slot. */
+  sponsor?: { url: string | null; starts_on: string | null; ends_on: string | null } | null
+}
+
+/** Inclusive window on UTC dates (YYYY-MM-DD). Null bounds are open. */
+export function sponsorActive(s: { starts_on: string | null; ends_on: string | null }, now: Date = new Date()): boolean {
+  const today = now.toISOString().slice(0, 10)
+  return (!s.starts_on || s.starts_on <= today) && (!s.ends_on || s.ends_on >= today)
 }
 
 /**
  * The ONLY place a destination comes from: a URL stored on the game row (or its sponsor row). The request never
  * supplies a URL, so this is not an open redirect. https only; UTM tags added; the stored URL keeps any affiliate tag.
  */
-export function resolveTarget(row: GameLinks | null, slot: Slot): string | null {
+export function resolveTarget(row: GameLinks | null, slot: Slot, now: Date = new Date()): string | null {
   if (!row) return null
+  if (slot === 'sponsor' && row.sponsor && !sponsorActive(row.sponsor, now)) return null // expired or not started
   const stored = slot === 'watch' ? row.watch_url : slot === 'tickets' ? row.tickets_url : row.sponsor_url ?? row.sponsor?.url ?? null
   if (!stored) return null
   let u: URL

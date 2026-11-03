@@ -112,14 +112,15 @@ create table public.device_events (
   primary key (device_id, game_id)
 );
 
--- Counted per game, never per person: no user id, IP or agent is stored. Written only by the `go` Edge Function.
+-- Counted per game and slot per day, never per person: no user id, IP or agent is stored, and there is no row per click.
+-- Written only by the `go` Edge Function through record_link_click() (service_role).
 create table public.link_clicks (
-  id         bigint generated always as identity primary key,
-  game_id    uuid not null references public.games (id) on delete cascade,
-  slot       text not null check (slot in ('watch', 'tickets', 'sponsor')),
-  clicked_at timestamptz not null default now()
+  game_id uuid not null references public.games (id) on delete cascade,
+  slot    text not null check (slot in ('watch', 'tickets', 'sponsor')),
+  day     date not null default current_date,
+  clicks  int  not null default 0 check (clicks >= 0),
+  primary key (game_id, slot, day)
 );
-create index link_clicks_game_idx on public.link_clicks (game_id, slot);
 
 -- First-party stats only; no third-party SDKs.
 create table public.usage_events (
@@ -134,7 +135,8 @@ create index usage_events_user_idx on public.usage_events (user_id, at desc);
 create table public.merge_claims (
   token      uuid primary key default gen_random_uuid(),
   from_user  uuid not null references auth.users (id) on delete cascade,
-  expires_at timestamptz not null default now() + interval '15 minutes'
+  expires_at timestamptz not null default now() + interval '15 minutes',
+  redeemed_at timestamptz                                  -- set on use; cleanup_merged_anonymous_users() reads it
 );
 
 -- ---------------------------------------------------------------- row level security
@@ -155,7 +157,9 @@ alter table public.merge_claims  enable row level security;
 -- service_role bypasses RLS and keeps its grants.
 create policy leagues_read      on public.leagues      for select to anon, authenticated using (true);
 create policy teams_read        on public.teams        for select to anon, authenticated using (true);
-create policy sponsors_read     on public.sponsors     for select to anon, authenticated using (true);
+-- Only sponsors inside their starts_on/ends_on window (inclusive) are visible to clients.
+create policy sponsors_read     on public.sponsors     for select to anon, authenticated
+  using ((starts_on is null or starts_on <= current_date) and (ends_on is null or ends_on >= current_date));
 create policy games_read        on public.games        for select to anon, authenticated using (true);
 create policy game_changes_read on public.game_changes for select to anon, authenticated using (true);
 
@@ -240,7 +244,7 @@ begin
   if not exists (select 1 from auth.users u where u.id = v_uid and u.is_anonymous) then
     raise exception 'only anonymous users can start a merge' using errcode = '42501';
   end if;
-  delete from public.merge_claims where from_user = v_uid or expires_at < now();
+  delete from public.merge_claims where redeemed_at is null and (from_user = v_uid or expires_at < now());
   insert into public.merge_claims (from_user) values (v_uid) returning token into v_token;
   return v_token;
 end $$;
@@ -253,9 +257,9 @@ begin
   if exists (select 1 from auth.users u where u.id = v_caller and u.is_anonymous) then
     raise exception 'sign in first' using errcode = '42501';
   end if;
-  select from_user into v_from from public.merge_claims where token = p_token and expires_at > now() for update;
+  select from_user into v_from from public.merge_claims where token = p_token and expires_at > now() and redeemed_at is null for update;
   if v_from is null then raise exception 'invalid or expired claim' using errcode = '42501'; end if;
-  delete from public.merge_claims where token = p_token;               -- single use
+  update public.merge_claims set redeemed_at = now() where token = p_token;   -- single use; row kept for the 7-day cleanup
   if v_from = v_caller then return jsonb_build_object('moved_follows', 0, 'moved_devices', 0); end if;
   if not exists (select 1 from auth.users u where u.id = v_from and u.is_anonymous) then
     raise exception 'claim source is not anonymous' using errcode = '42501';
@@ -271,3 +275,32 @@ end $$;
 
 revoke all on function public.create_merge_claim(), public.claim_anonymous_follows(uuid) from public, anon;
 grant execute on function public.create_merge_claim(), public.claim_anonymous_follows(uuid) to authenticated;
+
+-- ---------------------------------------------------------------- link counting (called by the `go` Edge Function)
+create function public.record_link_click(p_game uuid, p_slot text) returns void
+language sql security invoker set search_path = '' as $$
+  insert into public.link_clicks (game_id, slot, day, clicks) values (p_game, p_slot, current_date, 1)
+  on conflict (game_id, slot, day) do update set clicks = public.link_clicks.clicks + 1;
+$$;
+revoke all on function public.record_link_click(uuid, text) from public, anon, authenticated;
+grant execute on function public.record_link_click(uuid, text) to service_role;
+
+-- ---------------------------------------------------------------- cleanup of merged anonymous users
+-- Deletes anonymous auth users whose follows were claimed more than 7 days ago; their rows go by cascade.
+-- Only users that are still flagged anonymous are ever touched. NOT scheduled yet: wire it to pg_cron or a daily job
+-- in a later PR (build-plan: the daily GitHub Actions job could call it with the secret key). service_role only.
+create function public.cleanup_merged_anonymous_users() returns int
+language plpgsql security definer set search_path = '' as $$
+declare v_n int;
+begin
+  with gone as (
+    delete from auth.users u
+    where u.is_anonymous
+      and u.id in (select c.from_user from public.merge_claims c where c.redeemed_at < now() - interval '7 days')
+    returning 1)
+  select count(*) into v_n from gone;
+  delete from public.merge_claims where redeemed_at is null and expires_at < now();
+  return v_n;
+end $$;
+revoke all on function public.cleanup_merged_anonymous_users() from public, anon, authenticated;
+grant execute on function public.cleanup_merged_anonymous_users() to service_role;

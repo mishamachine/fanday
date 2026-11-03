@@ -1,5 +1,5 @@
 import { eq, ok, done } from './_t.mjs'
-import { parseGoPath, resolveTarget } from '../supabase/functions/go/target.ts'
+import { parseGoPath, resolveTarget, sponsorActive } from '../supabase/functions/go/target.ts'
 
 const ID = 'aaaaaaaa-0000-0000-0000-000000000001'
 eq('parses functions path', parseGoPath(`/functions/v1/go/${ID}/watch`), { gameId: ID, slot: 'watch' })
@@ -24,4 +24,18 @@ eq('javascript: refused', resolveTarget({ ...row, watch_url: 'javascript:alert(1
 eq('credentials in url refused', resolveTarget({ ...row, watch_url: 'https://a:b@evil.example/' }, 'watch'), null)
 eq('garbage refused', resolveTarget({ ...row, watch_url: 'not a url' }, 'watch'), null)
 ok('the resolver takes no caller-supplied URL', resolveTarget.length === 2)
+
+// Sponsor window (inclusive UTC dates).
+const NOW = new Date('2026-11-10T12:00:00Z')
+const sp = (starts_on, ends_on) => ({ ...row, sponsor_url: null, sponsor: { url: 'https://acme.example', starts_on, ends_on } })
+eq('window: open bounds active', sponsorActive({ starts_on: null, ends_on: null }, NOW), true)
+eq('window: starts today is active', sponsorActive({ starts_on: '2026-11-10', ends_on: null }, NOW), true)
+eq('window: ends today is active', sponsorActive({ starts_on: null, ends_on: '2026-11-10' }, NOW), true)
+eq('window: not started', sponsorActive({ starts_on: '2026-11-11', ends_on: null }, NOW), false)
+eq('window: ended yesterday', sponsorActive({ starts_on: null, ends_on: '2026-11-09' }, NOW), false)
+eq('expired sponsor: no redirect', resolveTarget(sp('2026-01-01', '2026-11-09'), 'sponsor', NOW), null)
+eq('future sponsor: no redirect', resolveTarget(sp('2026-12-01', null), 'sponsor', NOW), null)
+eq('active sponsor redirects', new URL(resolveTarget(sp('2026-11-01', '2026-12-01'), 'sponsor', NOW)).host, 'acme.example')
+eq('expired sponsor blocks even the games own sponsor_url', resolveTarget({ ...sp(null, '2026-01-01'), sponsor_url: 'https://own.example' }, 'sponsor', NOW), null)
+eq('watch/tickets unaffected by an expired sponsor', new URL(resolveTarget(sp(null, '2026-01-01'), 'watch', NOW)).host, 'watch.example')
 done()

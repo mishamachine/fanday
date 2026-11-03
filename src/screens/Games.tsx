@@ -34,9 +34,12 @@ export default function Games() {
   const [official, setOfficial] = useState<Array<{ team: Team; league: League }>>([])
   const [synced, setSynced] = useState<string>('')
   const [error, setError] = useState('')
+  const [loading, setLoading] = useState(true)
+  const [attempt, setAttempt] = useState(0)
 
   useEffect(() => {
     let live = true
+    setLoading(true); setError('')
     ;(async () => {
       try {
         const leagues = await data.listLeagues()
@@ -51,18 +54,19 @@ export default function Games() {
         const res = await syncGames(calendar, list, useStore.getState().eventIds, { goBaseUrl: FUNCTIONS_URL })
         if (!live) return
         if (res.granted) { setSync(res.ids, res.calendarId); setSynced('Synced just now') } else setSynced('Calendar access is off')
-      } catch { if (live) setError('Could not load your games. Pull to try again later.') }
+      } catch { if (live) setError('Could not load your games.') } finally { if (live) setLoading(false) }
     })()
     return () => { live = false }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [follows])
+  }, [follows, attempt])
 
   return (
     <main className="screen">
       <div className="top"><Link className="link" to="/leagues">Add teams</Link><Link className="link" to="/settings">Settings</Link></div>
       <h1>Your games</h1>
       {synced && <p className="sync"><span className="dot" />{synced}</p>}
-      {error && <p className="err" role="alert">{error}</p>}
+      {loading && <p className="fine" role="status">Loading your games…</p>}
+      {error && <div className="err" role="alert">{error} <button className="link" onClick={() => setAttempt((n) => n + 1)}>Retry</button></div>}
       <ul className="list">
         {games.map((g) => <GameRow key={g.id} g={g} />)}
         {official.map(({ team, league }) => (
@@ -73,7 +77,7 @@ export default function Games() {
           </li>
         ))}
       </ul>
-      {!games.length && !official.length && !error && <p className="fine">No upcoming games yet. Schedules are added as they are published.</p>}
+      {!loading && !games.length && !official.length && !error && <p className="fine">No upcoming games yet. Schedules are added as they are published.</p>}
       {follows.length > 0 && <p className="fine">Following {follows.length} team{follows.length === 1 ? '' : 's'}.</p>}
     </main>
   )

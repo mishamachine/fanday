@@ -23,7 +23,7 @@ export default function PickTeams() {
     data.listTeams(leagueId).then(setTeams).catch(() => setError('Could not load teams.'))
   }, [leagueId])
 
-  const count = follows.length
+  const count = teams.filter((t) => follows.includes(t.id)).length // ticked on this screen only
   const canSave = !user || isAnonymous(user)
   async function sendLink() {
     setError('')
@@ -70,7 +70,7 @@ export default function PickTeams() {
         </section>
       )}
       <div className="sp" />
-      <button className="btn" disabled={!count} onClick={done}>{count ? `Add ${count} team${count === 1 ? '' : 's'} to my calendar` : 'Pick a team to continue'}</button>
+      <button className="btn" disabled={!count && !follows.length} onClick={done}>{count ? `Add ${count} team${count === 1 ? '' : 's'} to my calendar` : follows.length ? 'Done' : 'Pick a team to continue'}</button>
       <p className="fine">{PRIVACY_LINE}</p>
     </main>
   )

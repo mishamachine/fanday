@@ -2,7 +2,8 @@ import { App } from '@capacitor/app'
 import { Browser } from '@capacitor/browser'
 import { SignInWithApple } from '@capacitor-community/apple-sign-in'
 import type { Provider, User } from '@supabase/supabase-js'
-import { APP_SCHEME, BUNDLE_ID, FUNCTIONS_URL, SUPABASE_KEY, isNative, platform } from './env.ts'
+import { APPLE_SERVICES_ID, APP_SCHEME, BUNDLE_ID, FUNCTIONS_URL, SUPABASE_KEY, SUPABASE_URL, isNative, platform } from './env.ts'
+import { getAppleWebAuthorizationCode } from './appleWeb.ts'
 import { supabase } from './supabase.ts'
 import { authRedirect, parseCallbackUrl, randomNonce, sha256Hex } from './authUtil.ts'
 
@@ -123,22 +124,32 @@ export async function signOut() {
 
 /**
  * Delete account: the Edge Function deletes the auth user (rows go by cascade) and revokes the Apple token.
- * Apple revocation needs a fresh authorization code, so Apple-linked users on iOS re-confirm with Apple first.
+ * Apple-linked users must give a fresh authorization code at delete time: iOS re-confirms with the native Apple sheet,
+ * web and Android with Sign in with Apple JS (needs VITE_APPLE_SERVICES_ID). The server FAILS CLOSED: if Apple can't be
+ * revoked it deletes nothing, and we surface that message here.
  */
 export async function deleteAccount(user: User | null): Promise<void> {
   const sb = need()
   const { data } = await sb.auth.getSession()
   if (!data.session) throw new Error('Not signed in.')
   let appleCode: string | undefined
-  const hasApple = (user?.identities ?? []).some((i) => i.provider === 'apple')
-  if (hasApple && platform === 'ios') {
-    const res = await SignInWithApple.authorize({ clientId: BUNDLE_ID, redirectURI: '', scopes: '' })
-    appleCode = res.response.authorizationCode
+  let appleClient: string | undefined
+  if ((user?.identities ?? []).some((i) => i.provider === 'apple')) {
+    if (platform === 'ios') {
+      const res = await SignInWithApple.authorize({ clientId: BUNDLE_ID, redirectURI: '', scopes: '' })
+      appleCode = res.response.authorizationCode
+      appleClient = BUNDLE_ID
+    } else {
+      if (!APPLE_SERVICES_ID) throw new Error('Deleting an account that uses Apple sign-in is not available in this build. Nothing was deleted.')
+      appleCode = await getAppleWebAuthorizationCode(APPLE_SERVICES_ID, `${SUPABASE_URL}/auth/v1/callback`)
+      appleClient = APPLE_SERVICES_ID
+    }
+    if (!appleCode) throw new Error('Apple did not confirm. Nothing was deleted.')
   }
   const r = await fetch(`${FUNCTIONS_URL}/delete-account`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${data.session.access_token}`, apikey: SUPABASE_KEY },
-    body: JSON.stringify({ confirm: 'DELETE', apple_authorization_code: appleCode, apple_client_id: appleCode ? BUNDLE_ID : undefined }),
+    body: JSON.stringify({ confirm: 'DELETE', apple_authorization_code: appleCode, apple_client_id: appleClient }),
   })
   if (!r.ok) throw new Error((await r.json().catch(() => ({}))).error ?? 'Could not delete the account. Nothing was deleted.')
   await sb.auth.signOut({ scope: 'local' })

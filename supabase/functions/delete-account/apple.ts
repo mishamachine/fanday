@@ -40,3 +40,14 @@ export async function revokeAppleAuthorization(cfg: AppleConfig, clientId: strin
   const rev = await f('https://appleid.apple.com/auth/revoke', form({ client_id: clientId, client_secret: secret, token: refresh_token, token_type_hint: 'refresh_token' }))
   return rev.ok
 }
+
+export type Gate = { ok: true } | { ok: false; status: number; code: string; error: string }
+
+/** Fail-closed gate for Apple users, run BEFORE anything is deleted. Non-Apple users always pass. */
+export function appleGate(hasApple: boolean, cfg: AppleConfig | null, authorizationCode: unknown): Gate {
+  if (!hasApple) return { ok: true }
+  if (!cfg) return { ok: false, status: 503, code: 'apple_not_configured', error: 'Account deletion for Apple sign-in is not available right now. Nothing was deleted. Please try again later.' }
+  if (typeof authorizationCode !== 'string' || !authorizationCode) return { ok: false, status: 409, code: 'apple_code_required', error: 'Please confirm with Apple to delete this account. Nothing was deleted.' }
+  return { ok: true }
+}
+export const REVOKE_FAILED: Gate = { ok: false, status: 502, code: 'apple_revoke_failed', error: 'Apple did not confirm the removal. Nothing was deleted. Please try again.' }

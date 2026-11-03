@@ -6,11 +6,13 @@ project_id = "smhddbnctlkbwppzrsry"
 enabled = true
 sql_paths = ["./seed.sql"]
 
+# This file configures LOCAL development (`supabase start`). The production Site URL and redirect list
+# (https://fanday.bbprojectfactory.com, com.bbprojectfactory.fanday://auth/callback) are set in the dashboard:
+# see auth-setup-checklist.md. Do not rely on `supabase config push` for them.
 [auth]
-site_url = "https://fanday.bbprojectfactory.com"
+site_url = "http://localhost:5173"
 additional_redirect_urls = [
   "com.bbprojectfactory.fanday://auth/callback",
-  "https://fanday.bbprojectfactory.com/**",
   "http://localhost:5173/**",
 ]
 # Anonymous session on first launch (src/lib/auth.ts). Signing in later keeps follows via claim_anonymous_follows().

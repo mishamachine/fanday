@@ -99,9 +99,17 @@ ok('service_role writes games, sponsors and game_changes', !svcErr, svcErr ?? ''
 ok('link_clicks: authenticated cannot read or write', String(await n('authenticated', A, 'select 1 from public.link_clicks')).startsWith('ERR:')
   && !!(await as('authenticated', A, `insert into public.link_clicks (game_id, slot) values ('aaaaaaaa-0000-0000-0000-000000000001','watch')`)).error)
 ok('link_clicks: anon cannot write', !!(await as('anon', null, `insert into public.link_clicks (game_id, slot) values ('aaaaaaaa-0000-0000-0000-000000000001','watch')`)).error)
-ok('link_clicks: service_role writes, slot constrained', !(await as('service_role', null, `insert into public.link_clicks (game_id, slot) values ('aaaaaaaa-0000-0000-0000-000000000001','watch')`)).error
-  && !!(await as('service_role', null, `insert into public.link_clicks (game_id, slot) values ('aaaaaaaa-0000-0000-0000-000000000001','bogus')`)).error)
-ok('link_clicks stores no person columns', (await db.query(`select string_agg(column_name, ',' order by column_name) c from information_schema.columns where table_name='link_clicks'`)).rows[0].c === 'clicked_at,game_id,id,slot')
+await db.exec(`set role service_role`)
+await db.query(`select public.record_link_click('aaaaaaaa-0000-0000-0000-000000000001','watch')`)
+await db.query(`select public.record_link_click('aaaaaaaa-0000-0000-0000-000000000001','watch')`)
+await db.query(`select public.record_link_click('aaaaaaaa-0000-0000-0000-000000000001','tickets')`)
+const bogus = await db.query(`select public.record_link_click('aaaaaaaa-0000-0000-0000-000000000001','bogus')`).then(() => null, (e) => e.message)
+await db.exec(`reset role`)
+ok('link_clicks: record_link_click upserts one counter row per game+slot+day', JSON.stringify((await db.query(`select slot, clicks from public.link_clicks order by slot`)).rows) === JSON.stringify([{ slot: 'tickets', clicks: 1 }, { slot: 'watch', clicks: 2 }]))
+ok('link_clicks: slot still constrained', !!bogus)
+ok('record_link_click is not callable by users', !!(await as('authenticated', A, `select public.record_link_click('aaaaaaaa-0000-0000-0000-000000000001','watch')`)).error
+  && !!(await as('anon', null, `select public.record_link_click('aaaaaaaa-0000-0000-0000-000000000001','watch')`)).error)
+ok('link_clicks stores no person columns', (await db.query(`select string_agg(column_name, ',' order by column_name) c from information_schema.columns where table_name='link_clicks'`)).rows[0].c === 'clicks,day,game_id,slot')
 
 // ---- anonymous -> signed-in: follows survive
 await db.exec(`insert into public.follows (user_id, team_id) values ('${ANON}','nfl-kc'), ('${ANON}','epl-ars');
@@ -125,6 +133,35 @@ ok('anonymous user cannot redeem (must be signed in)', !!(await as('authenticate
 await db.exec(`update auth.users set is_anonymous = false where id = '${ANON2}'`)
 ok('claim whose source is no longer anonymous is rejected', !!(await as('authenticated', A, `select public.claim_anonymous_follows('${tok3}')`)).error)
 await db.exec(`update auth.users set is_anonymous = true where id = '${ANON2}'`)
+
+// ---- sponsors: only active ones (starts_on/ends_on, inclusive) are visible to clients
+await db.exec(`insert into public.sponsors (id, scope_type, scope_value, text, starts_on, ends_on) values
+  ('cccccccc-0000-0000-0000-000000000002','league','nfl','Expired', current_date - 10, current_date - 1),
+  ('cccccccc-0000-0000-0000-000000000003','league','nfl','Future', current_date + 1, null),
+  ('cccccccc-0000-0000-0000-000000000004','league','nfl','EndsToday', null, current_date),
+  ('cccccccc-0000-0000-0000-000000000005','league','nfl','StartsToday', current_date, current_date + 5)`)
+const vis = async (role, uid) => (await as(role, uid, 'select text from public.sponsors order by text')).rows.map((r) => r.text).join()
+ok('sponsors: anon sees only active (no expired, no future)', await vis('anon', null) === 'Acme,EndsToday,StartsToday', await vis('anon', null))
+ok('sponsors: authenticated sees the same', await vis('authenticated', B) === 'Acme,EndsToday,StartsToday')
+ok('sponsors: service_role sees all', (await db.query('select count(*)::int c from public.sponsors')).rows[0].c === 5)
+
+// ---- cleanup of merged anonymous users (7 days after the claim was redeemed)
+const rows = async () => (await db.query(`select id from auth.users where id in ('${ANON}','${ANON2}') order by id`)).rows.map((r) => r.id)
+ok('before cleanup both anonymous users exist', (await rows()).length === 2)
+await db.exec(`set role service_role`)
+const c1 = (await db.query('select public.cleanup_merged_anonymous_users() n')).rows[0].n
+await db.exec(`reset role`)
+ok('cleanup: a claim redeemed today does not delete its anonymous user yet', c1 === 0 && (await rows()).length === 2)
+await db.exec(`update public.merge_claims set redeemed_at = now() - interval '8 days' where from_user = '${ANON}'`)
+await db.exec(`update public.merge_claims set redeemed_at = now() - interval '8 days' where from_user = '${B}'`) // not anonymous: must survive
+await db.exec(`insert into public.merge_claims (from_user, redeemed_at) values ('${B}', now() - interval '9 days')`)
+await db.exec(`set role service_role`)
+const c2 = (await db.query('select public.cleanup_merged_anonymous_users() n')).rows[0].n
+await db.exec(`reset role`)
+ok('cleanup: deletes the merged anonymous user after 7 days', c2 === 1 && (await rows()).join() === ANON2)
+ok('cleanup: never deletes a non-anonymous user', (await db.query(`select 1 from auth.users where id='${B}'`)).rows.length === 1)
+ok('cleanup: cascaded the anonymous user rows', (await db.query(`select (select count(*) from public.devices where user_id='${ANON}')::int d`)).rows[0].d === 0)
+ok('cleanup is not callable by users', !!(await as('authenticated', B, 'select public.cleanup_merged_anonymous_users()')).error)
 
 // ---- profile email follows auth.users; delete cascades everything (what delete-account relies on)
 await db.exec(`update auth.users set email='a2@x.com' where id='${A}'`)
