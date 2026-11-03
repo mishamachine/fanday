@@ -170,6 +170,94 @@ test('CBB: Duke 2026-27 (Eastern, full dates, exhibition games keep their sectio
   assert.equal(find(g, '2027-03-06', 'North Carolina', 'Duke').venue, 'Dean Smith Center');
 });
 
+test('Liga MX: Club America 2026-27 (CST/PDT labels, Apertura section, bad minute is TBC)', () => {
+  const g = parse('football', 'america', { tz: 'America/Mexico_City' });
+  const ap = g.filter((x) => /^Apertura/.test(x.section));
+  assert.equal(ap.length, 17);
+  assert.equal(g.length, 28);
+  assert.ok(ap.every((x) => x.kickoffAt || x.timeTbc));
+  assert.ok(g.some((x) => x.timeTbc), '"21:90" is not a time');
+  const first = g.find((x) => x.date === '2026-06-28');
+  assert.equal(first.home.name, 'Trival Valderas');
+  assert.equal(first.away.name.normalize('NFD').replace(/[\u0300-\u036f]/g, ''), 'America');
+});
+
+test('Brasileirao: Flamengo 2026 ({{UTZ|21:30|-3}} times, Campeonato Brasileiro section)', () => {
+  const g = parse('football', 'flamengo', { tz: 'America/Sao_Paulo' });
+  const br = g.filter((x) => /^Campeonato Brasileiro/.test(x.section));
+  assert.equal(br.length, 37);
+  assert.equal(g.length, 68);
+  // 3 July 2026, {{UTZ|15:30|-3}} -> 18:30Z (listed second line of the first friendly)
+  assert.equal(find(g, '2026-07-03', 'Flamengo', 'River Plate').kickoffAt, '2026-07-03T18:30:00Z');
+  assert.deepEqual(parseTime('{{UTZ|21:30|-3}}'), { kind: 'time', h: 21, mi: 30, zoneLabel: 'UTC-3' });
+});
+
+test('MLB: Dodgers game log, 2026 results and the 2027 placeholder log (dates only, @ = away)', () => {
+  const ctx = (year) => ({ year, subject: { name: 'Los Angeles Dodgers', page: 'Los Angeles Dodgers' } });
+  const a = parse('gamelog', 'dodgers', ctx(2026));
+  assert.deepEqual(tally(a), { total: 170, timed: 0, tbc: 170 }); // 162 + postseason rows
+  const opener = find(a, '2026-03-26', 'Los Angeles Dodgers');
+  assert.deepEqual([opener.away.name, opener.away.page, opener.status, opener.venue], ['Arizona Diamondbacks', 'Arizona Diamondbacks', 'final', null]);
+  const road = find(a, '2026-04-03', 'Washington Nationals');
+  assert.equal(road.away.name, 'Los Angeles Dodgers');
+  const b = parse('gamelog', 'dodgers27', ctx(2027));
+  assert.deepEqual(tally(b), { total: 162, timed: 0, tbc: 162 });
+  assert.equal(b.every((x) => x.status === 'scheduled'), true);
+  assert.equal(find(b, '2027-03-25', 'Los Angeles Dodgers').away.name, 'Atlanta Braves');
+});
+
+test('WNBA: Seattle Storm game log (Preseason section kept apart)', () => {
+  const g = parse('gamelog', 'storm', { year: 2026, subject: { name: 'Seattle Storm', page: 'Seattle Storm' } });
+  assert.equal(g.length, 46);
+  assert.equal(g.filter((x) => x.section === 'Regular season').length, 44);
+  assert.equal(g.filter((x) => x.section === 'Preseason').length, 2);
+  const away = find(g, '2026-04-25', 'Golden State Valkyries');
+  assert.equal(away.away.name, 'Seattle Storm');
+  assert.equal(away.timeTbc, true);
+});
+
+test('IPL 2026: Single-innings cricket match, IST times, (H) marks the home side', () => {
+  const g = parse('cricket', 'ipl', { year: 2026 });
+  assert.equal(g.length, 74);
+  assert.equal(g.filter((x) => x.timeTbc).length, 0);
+  const m1 = find(g, '2026-03-28', 'Royal Challengers Bengaluru', 'Sunrisers Hyderabad'); // team2 is (H)
+  assert.equal(m1.kickoffAt, '2026-03-28T14:00:00Z'); // 19:30 IST
+  assert.equal(m1.venue, 'M. Chinnaswamy Stadium, Bengaluru');
+  assert.equal(g.at(-1).section, 'Final');
+});
+
+test('NRL 2026 results page: date from the round line, venue carried down a rowspan, local time by ground', () => {
+  const g = parse('rugby', 'nrlres', { year: 2026 });
+  assert.equal(g.length, 204);
+  assert.equal(g.filter((x) => x.timeTbc).length, 0);
+  // Las Vegas: Sunday 1 March 12:15pm PST -> 20:15Z; second game at the same ground has no venue cell
+  const lv1 = find(g, '2026-03-01', 'Newcastle Knights');
+  assert.deepEqual([lv1.kickoffAt, lv1.venue], ['2026-03-01T20:15:00Z', 'Allegiant Stadium']);
+  const lv2 = find(g, '2026-03-01', 'Canterbury-Bankstown Bulldogs');
+  assert.deepEqual([lv2.kickoffAt, lv2.venue], ['2026-03-01T22:30:00Z', 'Allegiant Stadium']);
+  // Thursday 5 March 7:00pm AEDT at AAMI Park -> 08:00Z
+  assert.equal(find(g, '2026-03-05', 'Melbourne Storm').kickoffAt, '2026-03-05T08:00:00Z');
+  // Round 2 gives "Thursday, 7:00 pm" only; Round 2 starts 12 March (a Thursday)
+  assert.equal(find(g, '2026-03-12', 'Brisbane Broncos').kickoffAt, '2026-03-12T09:00:00Z'); // Suncorp: AEST, no DST
+  // New Zealand ground is NZDT (UTC+13) in March
+  assert.equal(find(g, '2026-03-06', 'New Zealand Warriors').kickoffAt, '2026-03-06T04:00:00Z');
+});
+
+test('no zone, no guess: an unlabeled time with no known zone is TBC (MLS home-team zone)', () => {
+  const src = fixture('miami').replace(/(\|\s*time\s*=[^\n]*?)\s*\[\[[^\]|]*Time Zone\|[A-Z]{2,4}\]\]/g, '$1');
+  const base = { year: 2026, zoneFromHome: true };
+  const unknown = parseWikitext('football', src, { ...base, homeTz: () => null });
+  const mls = inSection(unknown, 'Major League Soccer (MLS)');
+  assert.ok(mls.length === 34 && mls.every((g) => g.timeTbc && g.kickoffAt === null), 'no home zone: all TBC');
+  const known = parseWikitext('football', src, { ...base, homeTz: (t) => (t.name.includes('Miami') ? 'America/New_York' : 'America/Chicago') });
+  const timed = inSection(known, 'Major League Soccer (MLS)').filter((g) => !g.timeTbc);
+  assert.ok(timed.length > 20, 'unlabeled times convert with the home team zone');
+  const home = timed.find((g) => g.home.name.includes('Miami'));
+  assert.equal(new Date(home.kickoffAt).getUTCMinutes() % 5, 0);
+  const t = parseWikitext('football', '{{Football box|date=3 July 2026|time=20:00|team1=A|team2=B|score=}}', {});
+  assert.deepEqual([t[0].timeTbc, t[0].kickoffAt], [true, null], 'no ctx zone at all is TBC, not UTC');
+});
+
 test('time and date unit cases', () => {
   assert.deepEqual(parseTime('--:-- [[Central European Time|CET]] ([[UTC+01:00|UTC+1]])'), { kind: 'tbc' });
   assert.deepEqual(parseTime('TBC [[British Summer Time|BST]]'), { kind: 'tbc' });

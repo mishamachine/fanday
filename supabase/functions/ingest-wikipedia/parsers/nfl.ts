@@ -2,24 +2,10 @@
 // Columns are located by header text, so a reordered or trimmed table still parses.
 
 import type { ParsedGame, ParseContext } from '../types.ts';
-import { cleanText, cleanWikitext, findHeadings, sectionAt, splitTopLevel } from '../wikitext.ts';
+import { cleanText, cleanWikitext, findHeadings, sectionAt } from '../wikitext.ts';
+import { rowCells } from './table.ts';
 import { isoDate, parseDate, parseTime, resolveZone, toKickoff } from '../time.ts';
-import { broadcastOrNull, textOrNull } from './common.ts';
-
-/** Cells of one table row. Handles "! a !! b", "| a || b" and cell attributes ("colspan=8| text"). */
-function rowCells(row: string): string[] {
-  const cells: string[] = [];
-  for (const line of row.split('\n')) {
-    const m = /^([!|])(.*)$/.exec(line);
-    if (m && !/^\|[+}-]/.test(line) && !/^\{\|/.test(line)) {
-      for (const c of splitTopLevel(m[2], m[1] === '!' ? '!!' : '||').flatMap((x) => splitTopLevel(x, m[1] === '!' ? '||' : '!!'))) {
-        const parts = splitTopLevel(c, '|');
-        cells.push(parts.length > 1 && /=/.test(parts[0]) ? parts.slice(1).join('|') : c);
-      }
-    } else if (cells.length && line.trim() && !/^\|[}+-]/.test(line)) cells[cells.length - 1] += '\n' + line;
-  }
-  return cells;
-}
+import { broadcastOrNull, seasonPage, textOrNull } from './common.ts';
 
 export function parseNfl(wikitext: string, ctx: ParseContext = {}): ParsedGame[] {
   const text = cleanWikitext(wikitext);
@@ -47,7 +33,7 @@ export function parseNfl(wikitext: string, ctx: ParseContext = {}): ParsedGame[]
       const name = (m ? m[2] : oppText).trim();
       if (!date || !name) continue;
       const away = !!m && /^(?:at|@)$/i.test(m[1]);
-      const opponent = { name, page: null };
+      const opponent = { name, page: seasonPage(cells[iOpp]) };
       const { kickoffAt, timeTbc } = toKickoff(date, parseTime(iTime >= 0 ? cells[iTime] : ''), zone);
       out.push({
         home: away ? opponent : subject, away: away ? subject : opponent,

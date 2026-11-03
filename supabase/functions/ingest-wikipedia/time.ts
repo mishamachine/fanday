@@ -121,7 +121,8 @@ export type ParsedTime = { kind: 'tbc' } | { kind: 'time'; h: number; mi: number
 export function parseTime(raw: string | undefined | null): ParsedTime {
   const TBC: ParsedTime = { kind: 'tbc' };
   if (!raw) return TBC;
-  const s = cleanText(raw.replace(/\{\{\s*small\s*\|[\s\S]*?\}\}/gi, ' ').split(/<br\s*\/?>/i)[0]);
+  const withUtz = raw.replace(/\{\{\s*UTZ\s*\|\s*([^|}]+?)\s*\|\s*([+\-\u2212]?\d{1,2}(?::?\d{2})?)\s*\}\}/gi, (_m, t: string, o: string) => `${t} UTC${/^[+\-\u2212]/.test(o) ? '' : '+'}${o}`);
+  const s = cleanText(withUtz.replace(/\{\{\s*small\s*\|[\s\S]*?\}\}/gi, ' ').split(/<br\s*\/?>/i)[0]);
   if (!s || /^(?:tbc|tbd|tba|n\/a|\?|-)/i.test(s)) return TBC;
   if (/^noon\b/i.test(s)) return { kind: 'time', h: 12, mi: 0, zoneLabel: findZoneLabel(s.slice(4)) };
   const m = /^\D*?(\d{1,2})(?:[:.](\d{2}))?\s*(?:([ap])\.?\s*m\b\.?)?/i.exec(s);
@@ -153,9 +154,11 @@ export interface Kickoff {
   timeTbc: boolean;
 }
 
-/** Combine a parsed date and time into a UTC kickoff. A label on the time wins over `fallback`. */
+/** Combine a parsed date and time into a UTC kickoff. A label on the time wins over `fallback`.
+ *  With neither, the time is TBC: we never guess a zone. */
 export function toKickoff(date: YMD, time: ParsedTime, fallback: Zone | null): Kickoff {
   if (time.kind === 'tbc') return { kickoffAt: null, timeTbc: true };
-  const zone = resolveZone(time.zoneLabel) ?? fallback ?? { offsetMin: 0 };
+  const zone = resolveZone(time.zoneLabel) ?? fallback;
+  if (!zone) return { kickoffAt: null, timeTbc: true };
   return { kickoffAt: localToUtc(date.y, date.m, date.d, time.h, time.mi, zone), timeTbc: false };
 }

@@ -1,8 +1,7 @@
 // Supabase PostgREST client over plain fetch (no supabase-js dependency).
 // Called with the service-role key from the function's environment; the key never leaves this module.
 
-import type { ChangeInsert, Db, GameUpsert, LeagueRow, StoredGame, TeamRow } from './ingest.ts';
-import { CONFLICT_KEY, UPSERT_COLUMNS } from './ingest.ts';
+import type { ApplyOps, Db, LeagueRow, StoredGame, TeamRow } from './ingest.ts';
 
 const PAGE = 1000;
 
@@ -23,24 +22,23 @@ export function createRestDb(baseUrl: string, serviceKey: string, fetchImpl: typ
     }
   }
 
-  async function post(path: string, body: unknown, prefer: string): Promise<void> {
-    const res = await fetchImpl(`${rest}/${path}`, { method: 'POST', headers: headers({ Prefer: prefer }), body: JSON.stringify(body) });
+  async function post(path: string, body: unknown): Promise<void> {
+    const res = await fetchImpl(`${rest}/${path}`, { method: 'POST', headers: headers(), body: JSON.stringify(body) });
     if (!res.ok) throw new Error(`Supabase POST ${path.split('?')[0]} failed: ${res.status} ${(await res.text()).slice(0, 200)}`);
   }
 
   return {
     leagues: () => get<LeagueRow>('leagues?select=id,season&order=id'),
-    teams: () => get<TeamRow>('teams?select=id,league_id,name,short_name,wiki_page&order=id'),
+    teams: () => get<TeamRow>('teams?select=id,league_id,name,short_name,wiki_page,tz&order=id'),
     existingGames: (leagueIds, minDate, maxDate) =>
       get<StoredGame>(
-        `games?select=id,league_id,home_team_id,away_team_id,game_date,kickoff_at,time_tbc,status,venue,broadcast,source_page,source_rev` +
+        `games?select=id,league_id,home_team_id,away_team_id,game_date,kickoff_at,time_tbc,status,venue,broadcast,source_page,source_rev,source_rank,pending,missing_runs` +
           `&league_id=in.(${leagueIds.join(',')})&game_date=gte.${minDate}&game_date=lte.${maxDate}&order=id`,
       ),
-    // `columns` makes PostgREST ignore any other key, and merge-duplicates updates only the columns sent,
-    // so affiliate and sponsor columns are never touched.
-    upsertGames: (rows: GameUpsert[]) =>
-      post(`games?on_conflict=${CONFLICT_KEY.join(',')}&columns=${UPSERT_COLUMNS.join(',')}`, rows, 'resolution=merge-duplicates,return=minimal'),
-    insertChanges: (rows: ChangeInsert[]) => post('game_changes', rows, 'return=minimal'),
+    ownedFutureGames: (title, fromDate) =>
+      get<StoredGame>(`games?select=id,league_id,home_team_id,away_team_id,game_date,kickoff_at,time_tbc,status,venue,broadcast,source_page,source_rev,source_rank,pending,missing_runs&source_page=eq.${encodeURIComponent(title)}&game_date=gte.${fromDate}&order=id`),
+    // One transaction in the database; the function can change only the columns it lists (migration 0002).
+    apply: (ops: ApplyOps) => post('rpc/ingest_apply', { p_inserts: ops.inserts, p_updates: ops.updates, p_changes: ops.changes }),
     gamesInWindow: (fromIso, toIso) =>
       get<{ source_page: string | null; home_team_id: string; away_team_id: string }>(
         `games?select=source_page,home_team_id,away_team_id` +

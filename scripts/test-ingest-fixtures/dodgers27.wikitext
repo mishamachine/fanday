@@ -1,0 +1,485 @@
+<!-- FIXTURE. Page: 2027 Los Angeles Dodgers season
+     Source: https://en.wikipedia.org/wiki/2027_Los_Angeles_Dodgers_season
+     Revision id: 1382601125  (permanent link: https://en.wikipedia.org/w/index.php?oldid=1382601125)
+     Fetched: 2026-11-03 from the MediaWiki API (action=query&prop=revisions&rvprop=content|ids&rvslots=main&format=json),
+     User-Agent: Fanday/0.1 (machinemisha+fanday@gmail.com). Unmodified wikitext below this comment.
+     Text (c) Wikipedia contributors, licensed CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/);
+     authors are listed in the page history. Used here only as test data. -->
+{{Short description|Season for the Major League Baseball team the Los Angeles Dodgers}}
+{{Use American English|date=March 2026}}
+{{Use mdy dates|date=October 2026}}
+{{Infobox baseball team season
+| name             = Los Angeles Dodgers
+| season           = 2027
+| misc             =  
+| image            = LA Dodgers.svg
+| league           = National League
+| division         = [[National League West|West]]
+| ballpark         = [[Dodger Stadium|Uniqlo Field at Dodger Stadium]]
+| city             = [[Los Angeles, California]]
+| record           =  
+| divisional_place =  
+| owner            = [[Guggenheim Baseball Management]]
+| president        = [[Stan Kasten]]
+| presbo           = [[Andrew Friedman]]
+| general_manager  = [[Brandon Gomes]]
+| manager          = [[Dave Roberts (baseball manager)|Dave Roberts]]
+| television       = [[Spectrum SportsNet LA]]<br />([[Joe Davis (sportscaster)|Joe Davis]], [[Stephen Nelson (sportscaster)|Stephen Nelson]], [[Orel Hershiser]], [[Eric Karros]], [[Jessica Mendoza]], [[Dontrelle Willis]], [[Rick Monday]], Kirsten Watson, David Vassegh)
+| radio            = [[KLAC|KLAC-AM]]<br/>[[Los Angeles Dodgers Radio Network]] <br />([[Charley Steiner]], [[Tim Neverett]], [[Stephen Nelson (sportscaster)|Stephen Nelson]], [[Rick Monday]], [[José Mota (baseball)|José Mota]])<br />[[KTNQ]]<br />([[Pepe Yñiguez]], [[José Mota (baseball)|José Mota]], [[Luis Cruz]])
+| next_season=none
+}}
+The '''2027 Los Angeles Dodgers season''' will be the 138th season for the [[Los Angeles Dodgers]] franchise in [[Major League Baseball]] (MLB), their 70th season in [[Los Angeles]], [[California]], and their 66th season playing home games at [[Dodger Stadium]]. The Dodgers will seek to make their fifteenth straight playoff appearance, which would surpass the 1991–2005 [[Atlanta Braves]] as the longest consecutive postseason streak in MLB history. They will also attempt to secure their sixth straight [[National League West]] title and make a return to the World Series after a one-year absence.<ref>{{cite news |title=Longest streaks of consecutive playoff appearances in MLB history |first=Cole |last=Jacobson |website=MLB.com |date=September 14, 2026 |access-date=October 15, 2026 |url=https://www.mlb.com/news/most-consecutive-playoff-seasons-in-mlb-history}}</ref>
+
+== Offseason ==
+=== Roster departures ===
+On October 29, 2026, the day after the conclusion of the [[2026 World Series]], nine Dodgers players became free agents. This included left-handed pitchers [[Tarik Skubal]], [[Alex Vesia]], [[Kris Bubic]], and [[Eric Lauer]]; right-handed pitchers [[Evan Phillips]], [[Blake Treinen]], and [[Brusdar Graterol]]; and utility players [[Miguel Rojas (baseball)|Miguel Rojas]] and [[Enrique Hernández (baseball)|Kiké Hernández]].<ref name=FreeAgents>{{cite news |title=Dodgers 2026 Offseason Guide on Free Agents, Trade Targets, More Roster Shakeups After NLCS Sweep |first=Kerry |last=Miller |website=Bleacher Report |date=October 15, 2026 |access-date=October 15, 2026 |url=https://bleacherreport.com/articles/25505146-dodgers-2026-offseason-guide-free-agents-trade-targets-more-roster-shakeups-after-nlcs-sweep}}</ref> Rojas, who initially announced his intention to retire at the end of the previous season, confirmed his retirement on October 15.<ref>{{cite news |title=Miguel Rojas teases delaying retirement one more year, but Dodgers can’t bite |first=Matthew |last=Swigonski |website=Dodgers Way |date=October 3, 2026 |access-date=October 15, 2026 |url=https://dodgersway.com/miguel-rojas-teases-delaying-retirement-one-more-year-dodgers-cant-bite}}</ref><ref name=Rojas>{{cite news |title=Dodgers Veteran Announces Immediate Retirement After NLCS Loss to Brewers |first=Noah |last=Camras |work=Sports Illustrated |date=October 15, 2026 |access-date=October 15, 2026 |url=https://www.si.com/mlb/dodgers/onsi/dodgers-veteran-announces-immediate-retirement-after-nlcs-loss-brewers}}</ref>
+
+{| class="toccolours collapsible collapsed" style="width:100%; background:inherit"
+|-
+! Off-season 40-man roster moves
+|-
+|
+{| class="wikitable"
+! Departing player !!Date!! Transaction!!New team !!!! Arriving player!!Old team!!Date!!Transaction
+|-
+| [[Kris Bubic]] || October 29 || Free agent<ref name=FreeAgents /> || TBA ||
+|-
+| [[Brusdar Graterol]] || October 29 || Free agent<ref name=FreeAgents /> || TBA ||
+|-
+| [[Enrique Hernández (baseball)|Kiké Hernández]] || October 29 || Free agent<ref name=FreeAgents /> || TBA ||
+|-
+| [[Eric Lauer]] || October 29 || Free agent<ref name=FreeAgents /> || TBA ||
+|-
+| [[Evan Phillips]] || October 29 || Free agent<ref name=FreeAgents /> || TBA ||
+|-
+| [[Tarik Skubal]] || October 29 || Free agent<ref name=FreeAgents /> || TBA ||
+|-
+| [[Blake Treinen]] || October 29 || Free agent<ref name=FreeAgents /> || TBA ||
+|-
+| [[Alex Vesia]] || October 29 || Free agent<ref name=FreeAgents /> || TBA ||
+|-
+| [[Miguel Rojas (baseball)|Miguel Rojas]] || October 29 || Retired<ref name=Rojas /> || N/A ||
+|}
+|}
+
+==Regular season==
+<!--
+===Season standings===
+
+====National League West====
+{{2027 NL West standings|highlight=Los Angeles Dodgers}}
+
+====National League Wild Card====
+{{hidden|Wild Card standings|style=border:1px solid #aaa|{{2027 NL Wild Card standings|highlight=Los Angeles Dodgers}}}}
+
+====Record vs. opponents====
+{{hidden|NL Records|style=border:1px solid #aaa|{{2027 NL Record vs. opponents|team=LAD}}}}
+--> 
+===Game log===
+{| class="wikitable" style="font-size:90%"
+|-
+!colspan="2"|Legend
+|-
+|bgcolor="#bbffbb"|&nbsp;||Dodgers win
+|-
+|bgcolor="#ffbbbb"|&nbsp;||Dodgers loss
+|-
+|bgcolor="#bbbbbb"|&nbsp;||Postponement
+|-
+|'''Bold'''||Dodgers team member
+|}
+{{Game log start|style={{Baseball primary style|Los Angeles Dodgers}};|title= 2027 Game Log: 0–0 (Home: 0–0; Road: 0–0)}}
+{{Game log section start|hide=y|style={{Baseball secondary style|Los Angeles Dodgers}};|title=March/April: 0–0 (Home: 0–0; Road: 0–0) | #| Date| Opponent| Score| Win| Loss| Save| Attendance| Record}}
+|-style="background:#;"
+| 1 || March 25 || [[2027 Atlanta Braves season|Braves]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 2 || March 27 || [[2027 Atlanta Braves season|Braves]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 3 || March 28 || [[2027 Atlanta Braves season|Braves]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 4 || March 29 || [[2027 Minnesota Twins season|Twins]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 5 || March 30 || [[2027 Minnesota Twins season|Twins]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 6 || March 31 || [[2027 Minnesota Twins season|Twins]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 7 || April 1 || @ [[2027 Colorado Rockies season|Rockies]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 8 || April 2 || @ [[2027 Colorado Rockies season|Rockies]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 9 || April 3 || @ [[2027 Colorado Rockies season|Rockies]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 10 || April 4 || @ [[2027 Colorado Rockies season|Rockies]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 11 || April 5 || @ [[2027 Arizona Diamondbacks season|Diamondbacks]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 12 || April 6 || @ [[2027 Arizona Diamondbacks season|Diamondbacks]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 13 || April 7 || @ [[2027 Arizona Diamondbacks season|Diamondbacks]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 14 || April 9 || @ [[2027 San Diego Padres season|Padres]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 15 || April 10 || @ [[2027 San Diego Padres season|Padres]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 16 || April 11 || @ [[2027 San Diego Padres season|Padres]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 17 || April 13 || [[2027 Colorado Rockies season|Rockies]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 18 || April 14 || [[2027 Colorado Rockies season|Rockies]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 19 || April 15 || [[2027 Colorado Rockies season|Rockies]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 20 || April 16 || [[2027 Chicago Cubs season|Cubs]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 21 || April 17 || [[2027 Chicago Cubs season|Cubs]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 22 || April 18 || [[2027 Chicago Cubs season|Cubs]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 23 || April 20 || @ [[2027 Philadelphia Phillies season|Phillies]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 24 || April 21 || @ [[2027 Philadelphia Phillies season|Phillies]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 25 || April 22 || @ [[2027 Philadelphia Phillies season|Phillies]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 26 || April 23 || @ [[2027 Washington Nationals season|Nationals]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 27 || April 24 || @ [[2027 Washington Nationals season|Nationals]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 28 || April 25 || @ [[2027 Washington Nationals season|Nationals]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 29 || April 26 || [[2027 Chicago White Sox season|White Sox]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 30 || April 27 || [[2027 Chicago White Sox season|White Sox]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 31 || April 28 || [[2027 Chicago White Sox season|White Sox]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 32 || April 30 || [[2027 Detroit Tigers season|Tigers]] || — || — || — || — || — || 0–0
+|-
+{{Game log section end}}
+{{Game log section start|hide=y|style={{Baseball secondary style|Los Angeles Dodgers}};|title=May: 0–0 (Home: 0–0; Road: 0–0) | #| Date| Opponent| Score| Win| Loss| Save| Attendance| Record}}
+|-style="background:#;"
+| 33 || May 1 || [[2027 Detroit Tigers season|Tigers]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 34 || May 2 || [[2027 Detroit Tigers season|Tigers]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 35 || May 3 || @ [[2027 Seattle Mariners season|Mariners]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 36 || May 4 || @ [[2027 Seattle Mariners season|Mariners]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 37 || May 5 || @ [[2027 Seattle Mariners season|Mariners]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 38 || May 6 || [[2027 San Francisco Giants season|Giants]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 39 || May 7 || [[2027 San Francisco Giants season|Giants]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 40 || May 8 || [[2027 San Francisco Giants season|Giants]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 41 || May 9 || [[2027 San Francisco Giants season|Giants]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 42 || May 11 || @ [[2027 Cleveland Guardians season|Guardians]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 43 || May 12 || @ [[2027 Cleveland Guardians season|Guardians]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 44 || May 13 || @ [[2027 Cleveland Guardians season|Guardians]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 45 || May 14 || @ [[2027 Boston Red Sox season|Red Sox]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 46 || May 15 || @ [[2027 Boston Red Sox season|Red Sox]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 47 || May 16 || @ [[2027 Boston Red Sox season|Red Sox]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 48 || May 17 || [[2027 Cincinnati Reds season|Reds]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 49 || May 18 || [[2027 Cincinnati Reds season|Reds]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 50 || May 19 || [[2027 Cincinnati Reds season|Reds]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 51 || May 21 || [[2027 San Diego Padres season|Padres]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 52 || May 22 || [[2027 San Diego Padres season|Padres]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 53 || May 23 || [[2027 San Diego Padres season|Padres]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 54 || May 24 || [[2027 Arizona Diamondbacks season|Diamondbacks]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 55 || May 25 || [[2027 Arizona Diamondbacks season|Diamondbacks]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 56 || May 26 || [[2027 Arizona Diamondbacks season|Diamondbacks]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 57 || May 28 || @ [[2027 Los Angeles Angels season|Angels]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 58 || May 29 || @ [[2027 Los Angeles Angels season|Angels]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 59 || May 30 || @ [[2027 Los Angeles Angels season|Angels]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 60 || May 31 || @ [[2027 Milwaukee Brewers season|Brewers]] || — || — || — || — || — || 0–0
+|-
+{{Game log section end}}
+{{Game log section start|hide=y|style={{Baseball secondary style|Los Angeles Dodgers}};|title=June: 0–0 (Home: 0–0; Road: 0–0) | #| Date| Opponent| Score| Win| Loss| Save| Attendance| Record}}
+|-style="background:#;"
+| 61 || June 1 || @ [[2027 Milwaukee Brewers season|Brewers]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 62 || June 2 || @ [[2027 Milwaukee Brewers season|Brewers]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 63 || June 3 || @ [[2027 Chicago Cubs season|Cubs]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 64 || June 4 || @ [[2027 Chicago Cubs season|Cubs]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 65 || June 5 || @ [[2027 Chicago Cubs season|Cubs]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 66 || June 6 || @ [[2027 Chicago Cubs season|Cubs]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 67 || June 7 || [[2027 Milwaukee Brewers season|Brewers]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 68 || June 8 || [[2027 Milwaukee Brewers season|Brewers]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 69 || June 9 || [[2027 Milwaukee Brewers season|Brewers]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 70 || June 11 || [[2027 Pittsburgh Pirates season|Pirates]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 71 || June 12 || [[2027 Pittsburgh Pirates season|Pirates]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 72 || June 13 || [[2027 Pittsburgh Pirates season|Pirates]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 73 || June 14 || @ [[2027 San Francisco Giants season|Giants]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 74 || June 15 || @ [[2027 San Francisco Giants season|Giants]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 75 || June 16 || @ [[2027 San Francisco Giants season|Giants]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 76 || June 18 || [[2027 Miami Marlins season|Marlins]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 77 || June 19 || [[2027 Miami Marlins season|Marlins]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 78 || June 20 || [[2027 Miami Marlins season|Marlins]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 79 || June 22 || @ [[2027 Tampa Bay Rays season|Rays]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 80 || June 23 || @ [[2027 Tampa Bay Rays season|Rays]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 81 || June 24 || @ [[2027 Tampa Bay Rays season|Rays]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 82 || June 25 || @ [[2027 Miami Marlins season|Marlins]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 83 || June 26 || @ [[2027 Miami Marlins season|Marlins]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 84 || June 27 || @ [[2027 Miami Marlins season|Marlins]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 85 || June 28 || [[2027 Washington Nationals season|Nationals]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 86 || June 29 || [[2027 Washington Nationals season|Nationals]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 87 || June 30 || [[2027 Washington Nationals season|Nationals]] || — || — || — || — || — || 0–0
+|-
+{{Game log section end}}
+{{Game log section start|hide=y|style={{Baseball secondary style|Los Angeles Dodgers}};|title=July: 0–0 (Home: 0–0; Road: 0–0) | #| Date| Opponent| Score| Win| Loss| Save| Attendance| Record}}
+|-style="background:#;"
+| 88 || July 1 || [[2027 New York Mets season|Mets]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 89 || July 2 || [[2027 New York Mets season|Mets]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 90 || July 3 || [[2027 New York Mets season|Mets]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 91 || July 4 || [[2027 New York Mets season|Mets]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 92 || July 6 || @ [[2027 Pittsburgh Pirates season|Pirates]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 93 || July 7 || @ [[2027 Pittsburgh Pirates season|Pirates]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 94 || July 8 || @ [[2027 Pittsburgh Pirates season|Pirates]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 95 || July 9 || @ [[2027 New York Mets season|Mets]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 96 || July 10 || @ [[2027 New York Mets season|Mets]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 97 || July 11 || @ [[2027 New York Mets season|Mets]] || — || — || — || — || — || 0–0
+|- bgcolor="bbbbbb"
+| – || July 13 || [[2027 Major League Baseball All-Star Game|97th All-Star Game]] || colspan=6 | [[American League]] vs. [[National League (baseball)|National League]] ([[Wrigley Field]], [[Chicago|Chicago, Illinois]])
+|-style="background:#;"
+| 98 || July 16 || [[2027 Los Angeles Angels season|Angels]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 99 || July 17 || [[2027 Los Angeles Angels season|Angels]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 100 || July 18 || [[2027 Los Angeles Angels season|Angels]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 101 || July 19 || [[2027 Athletics season|Athletics]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 102 || July 20 || [[2027 Athletics season|Athletics]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 103 || July 21 || [[2027 Athletics season|Athletics]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 104 || July 23 || @ [[2027 St. Louis Cardinals season|Cardinals]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 105 || July 24 || @ [[2027 St. Louis Cardinals season|Cardinals]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 106 || July 25 || @ [[2027 St. Louis Cardinals season|Cardinals]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 107 || July 26 || @ [[2027 San Diego Padres season|Padres]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 108 || July 27 || @ [[2027 San Diego Padres season|Padres]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 109 || July 28 || @ [[2027 San Diego Padres season|Padres]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 110 || July 29 || @ [[2027 San Diego Padres season|Padres]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 111 || July 30 || [[2027 San Francisco Giants season|Giants]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 112 || July 31 || [[2027 San Francisco Giants season|Giants]] || — || — || — || — || — || 0–0
+|-
+{{Game log section end}}
+{{Game log section start|hide=y|style={{Baseball secondary style|Los Angeles Dodgers}};|title=August: 0–0 (Home: 0–0; Road: 0–0) | #| Date| Opponent| Score| Win| Loss| Save| Attendance| Record}}
+|-style="background:#;"
+| 113 || August 1 || [[2027 San Francisco Giants season|Giants]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 114 || August 3 || [[2027 Houston Astros season|Astros]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 115 || August 4 || [[2027 Houston Astros season|Astros]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 116 || August 5 || [[2027 Houston Astros season|Astros]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 117 || August 6 || @ [[2027 San Francisco Giants season|Giants]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 118 || August 7 || @ [[2027 San Francisco Giants season|Giants]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 119 || August 8 || @ [[2027 San Francisco Giants season|Giants]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 120 || August 9 || @ [[2027 Texas Rangers season|Rangers]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 121 || August 10 || @ [[2027 Texas Rangers season|Rangers]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 122 || August 11 || @ [[2027 Texas Rangers season|Rangers]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 123 || August 13 || [[2027 Philadelphia Phillies season|Phillies]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 124 || August 14 || [[2027 Philadelphia Phillies season|Phillies]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 125 || August 15 || [[2027 Philadelphia Phillies season|Phillies]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 126 || August 16 || [[2027 Colorado Rockies season|Rockies]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 127 || August 17 || [[2027 Colorado Rockies season|Rockies]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 128 || August 18 || [[2027 Colorado Rockies season|Rockies]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 129 || August 20 || @ [[2027 Baltimore Orioles season|Orioles]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 130 || August 21 || @ [[2027 Baltimore Orioles season|Orioles]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 131 || August 22 || @ [[2027 Baltimore Orioles season|Orioles]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 132 || August 23 || @ [[2027 Cincinnati Reds season|Reds]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 133 || August 24 || @ [[2027 Cincinnati Reds season|Reds]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 134 || August 25 || @ [[2027 Cincinnati Reds season|Reds]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 135 || August 27 || [[2027 New York Yankees season|Yankees]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 136 || August 28 || [[2027 New York Yankees season|Yankees]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 137 || August 29 || [[2027 New York Yankees season|Yankees]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 138 || August 30 || [[2027 St. Louis Cardinals season|Cardinals]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 139 || August 31 || [[2027 St. Louis Cardinals season|Cardinals]] || — || — || — || — || — || 0–0
+|-
+{{Game log section end}}
+{{Game log section start|hide=y|style={{Baseball secondary style|Los Angeles Dodgers}};|title=September: 0–0 (Home: 0–0; Road: 0–0) | #| Date| Opponent| Score| Win| Loss| Save| Attendance| Record}}
+|-style="background:#;"
+| 140 || September 1 || [[2027 St. Louis Cardinals season|Cardinals]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 141 || September 3 || @ [[2027 Kansas City Royals season|Royals]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 142 || September 4 || @ [[2027 Kansas City Royals season|Royals]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 143 || September 5 || @ [[2027 Kansas City Royals season|Royals]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 144 || September 6 || @ [[2027 Atlanta Braves season|Braves]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 145 || September 7 || @ [[2027 Atlanta Braves season|Braves]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 146 || September 8 || @ [[2027 Atlanta Braves season|Braves]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 147 || September 10 || [[2027 San Diego Padres season|Padres]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 148 || September 11 || [[2027 San Diego Padres season|Padres]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 149 || September 12 || [[2027 San Diego Padres season|Padres]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 150 || September 13 || [[2027 Toronto Blue Jays season|Blue Jays]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 151 || September 14 || [[2027 Toronto Blue Jays season|Blue Jays]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 152 || September 15 || [[2027 Toronto Blue Jays season|Blue Jays]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 153 || September 16 || [[2027 Arizona Diamondbacks season|Diamondbacks]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 154 || September 17 || [[2027 Arizona Diamondbacks season|Diamondbacks]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 155 || September 18 || [[2027 Arizona Diamondbacks season|Diamondbacks]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 156 || September 19 || [[2027 Arizona Diamondbacks season|Diamondbacks]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 157 || September 21 || @ [[2027 Colorado Rockies season|Rockies]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 158 || September 22 || @ [[2027 Colorado Rockies season|Rockies]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 159 || September 23 || @ [[2027 Colorado Rockies season|Rockies]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 160 || September 24 || @ [[2027 Arizona Diamondbacks season|Diamondbacks]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 161 || September 25 || @ [[2027 Arizona Diamondbacks season|Diamondbacks]] || — || — || — || — || — || 0–0
+|-style="background:#;"
+| 162 || September 26 || @ [[2027 Arizona Diamondbacks season|Diamondbacks]] || — || — || — || — || — || 0–0
+|-
+{{Game log section end}}
+{{Game log end}}
+
+==Current roster==
+{{Los Angeles Dodgers roster}}
+
+
+==Farm system==
+{{See also|Minor League Baseball}}
+
+{| class="wikitable" style="width:70%; text-align:center;"
+|-
+! style="width:15%;"|[[Minor League Baseball|Level]]
+! style="width:15%;"| Team
+! style="width:15%;"| League
+! style="width:15%;"| Manager
+! style="width:5%;"| W
+! style="width:5%;"| L
+! style="width:20%;"| Position
+|-
+| [[Triple-A (baseball)|AAA]] || [[Oklahoma City Comets]] || [[Pacific Coast League]]<br>{{Small|(East Division)}} ||   || || || 
+|-
+| [[Double-A (baseball)|AA]] || [[Tulsa Drillers]] || [[Texas League]]<br>{{Small|(North Division)}} ||   || || || 
+|-
+| [[Class A-Advanced|High A]] ||[[Great Lakes Loons]] ||[[Midwest League]]  <br>{{Small|(East Division)}}||    || ||  || 
+|-
+| [[Class A (baseball)|Low A]] || [[Ontario Tower Buzzers]] || [[California League]]<br>{{Small|(South Division)}}||   || || ||    
+|-
+| [[Rookie League|Rookie]]|| [[Arizona Complex League Dodgers|ACL Dodgers]] || [[Arizona Complex League]] <br>{{Small|(West Division)}} ||    || ||  || 
+|-
+| [[Rookie League|Foreign Rookie]]|| [[Dominican Summer Dodgers|DSL Dodgers Bautista]] || [[Dominican Summer League]]<br>{{Small|(Northwest Division)}}||    ||   ||   ||  
+|-
+| [[Rookie League|Foreign Rookie]]|| [[Dominican Summer Dodgers|DSL Dodgers Mega]] || [[Dominican Summer League]]<br>{{Small|(Northwest Division)}} ||    ||  ||  ||  
+|-
+
+|}
+
+==References==
+{{reflist|30em}}
+{{reflist|group=note}}
+
+==External links==
+*[https://www.baseball-reference.com/teams/LAD/2027.shtml 2027 Los Angeles Dodgers season] at ''Baseball Reference''
+
+{{2027 MLB season by team}}
+{{Los Angeles Dodgers}}
+
+{{DEFAULTSORT:2027 Los Angeles Dodgers season}}
+[[Category:2027 in sports in Los Angeles|Los Angeles Dodgers]]
+[[Category:2027 Major League Baseball season|Los Angeles Dodgers]]
+[[Category:Los Angeles Dodgers seasons]]

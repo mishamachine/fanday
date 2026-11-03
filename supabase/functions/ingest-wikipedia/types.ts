@@ -31,8 +31,11 @@ export interface ParseContext {
   crossYear?: boolean;
   /** IANA zone used when a time carries no zone label. */
   tz?: string;
+  /** Take the fallback zone from the home team (MLS). With no label and no home zone the time is TBC. */
+  zoneFromHome?: boolean;
+  homeTz?: (home: TeamRef) => string | null;
   /** The team a team-season page is about (CFB, CBB, NFL). */
   subject?: TeamRef;
 }
 
-export type ParserKind = 'football' | 'afl' | 'cfb' | 'cbb' | 'nfl';
+export type ParserKind = 'football' | 'afl' | 'cfb' | 'cbb' | 'nfl' | 'gamelog' | 'cricket' | 'rugby';

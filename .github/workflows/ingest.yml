@@ -35,8 +35,8 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
         with:
           node-version: 24
       - name: Run ingest tests
@@ -50,9 +50,9 @@ jobs:
   call:
     if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 90
     concurrency:
-      group: ingest-${{ github.event_name == 'schedule' && github.event.schedule || github.run_id }}
+      group: ingest
       cancel-in-progress: false
     env:
       FUNCTION_URL: https://smhddbnctlkbwppzrsry.supabase.co/functions/v1/ingest-wikipedia
@@ -77,7 +77,7 @@ jobs:
           fi
           echo "mode=$MODE league=${INPUT_LEAGUE:-all}"
           CURSOR=0
-          for i in $(seq 1 40); do
+          for i in $(seq 1 800); do   # 2 pages per call; a full daily run is a few hundred calls
             BODY=$(jq -nc --arg mode "$MODE" --argjson cursor "$CURSOR" --arg league "${INPUT_LEAGUE:-}" \
               '{mode: $mode, cursor: $cursor} + (if $league == "" then {} else {league: $league} end)')
             curl --silent --show-error --fail-with-body --max-time 170 --retry 2 --retry-delay 10 \
@@ -85,12 +85,13 @@ jobs:
               -H "Content-Type: application/json" \
               -H "x-ingest-secret: ${INGEST_SECRET}" \
               -d "$BODY" -o response.json
-            jq -c '{mode, planned, cursor, nextCursor, done, pagesFetched, pagesMissing: (.pagesMissing | length), gamesParsed, created, upserted, changes, unmatchedTeams: (.unmatchedTeams | length), elapsedMs}' response.json
+            jq -c '{mode, planned, cursor, nextCursor, done, pagesFetched, pagesMissing: (.pagesMissing | length), gamesParsed, created, updated, held, vanished, changes, unmatchedTeams: (.unmatchedTeams | length), elapsedMs}' response.json
             if [ "$(jq -r '.done' response.json)" = "true" ]; then
               jq -r 'if (.unmatchedTeams | length) > 0 then "::warning::Unmatched teams: " + (.unmatchedTeams | join(", ")) else empty end' response.json
               exit 0
             fi
             CURSOR=$(jq -r '.nextCursor' response.json)
+            sleep 1
           done
-          echo "::error::Ingest did not finish within 40 calls."
+          echo "::error::Ingest did not finish within 800 calls."
           exit 1

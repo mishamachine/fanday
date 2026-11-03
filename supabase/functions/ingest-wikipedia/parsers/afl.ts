@@ -3,8 +3,8 @@
 
 import type { ParsedGame, ParseContext, TeamRef } from '../types.ts';
 import { cleanText, cleanWikitext, findHeadings, findTemplates, sectionAt } from '../wikitext.ts';
-import { isoDate, parseDate, parseTime, toKickoff, type Zone } from '../time.ts';
-import { statusFromScore, textOrNull } from './common.ts';
+import { isoDate, parseDate, parseTime, toKickoff } from '../time.ts';
+import { statusFromScore, textOrNull, venueZone } from './common.ts';
 
 export const AFL_TEAMS: Record<string, TeamRef> = {
   Ade: { name: 'Adelaide Crows', page: 'Adelaide Football Club' },
@@ -27,20 +27,6 @@ export const AFL_TEAMS: Record<string, TeamRef> = {
   WB: { name: 'Western Bulldogs', page: 'Western Bulldogs' },
 };
 
-/** AFL venue to local zone. Victoria, NSW, ACT and Tasmania share AEST/AEDT; the others differ. */
-export function aflVenueZone(venue: string): Zone {
-  const v = venue.toLowerCase();
-  const iana = /perth|optus/.test(v) ? 'Australia/Perth'
-    : /adelaide oval|norwood|barossa|football park|unley/.test(v) ? 'Australia/Adelaide'
-    : /gabba|carrara|metricon|heritage bank|cazaly|cairns|people first|mackay|riverway|townsville/.test(v) ? 'Australia/Brisbane'
-    : /marrara|tio |darwin|traeger|alice springs/.test(v) ? 'Australia/Darwin'
-    : /manuka|sydney|scg|engie|giants stadium|accor|homebush|canberra/.test(v) ? 'Australia/Sydney'
-    : /bellerive|university of tasmania|york park|blundstone|launceston|hobart|ninja/.test(v) ? 'Australia/Hobart'
-    : /wellington|sky stadium|dunedin|auckland/.test(v) ? 'Pacific/Auckland'
-    : 'Australia/Melbourne';
-  return { iana };
-}
-
 export function parseAfl(wikitext: string, ctx: ParseContext = {}): ParsedGame[] {
   const text = cleanWikitext(wikitext);
   const headings = findHeadings(text);
@@ -54,7 +40,7 @@ export function parseAfl(wikitext: string, ctx: ParseContext = {}): ParsedGame[]
     if (!home || !away || !date) continue;
     const venue = textOrNull(venueRaw);
     const timeRaw = /\(([^)]*)\)/.exec(cleanText(dateRaw))?.[1];
-    const { kickoffAt, timeTbc } = toKickoff(date, parseTime(timeRaw), aflVenueZone(venue ?? ''));
+    const { kickoffAt, timeTbc } = toKickoff(date, parseTime(timeRaw), venueZone(venue ?? ''));
     out.push({
       home, away, date: isoDate(date), kickoffAt, timeTbc,
       status: statusFromScore(`${cleanText(homeScore)}${cleanText(awayScore)}`),

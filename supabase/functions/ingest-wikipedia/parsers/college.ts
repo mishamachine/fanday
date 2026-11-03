@@ -4,7 +4,7 @@
 import type { ParsedGame, ParseContext, TeamRef } from '../types.ts';
 import { cleanText, cleanWikitext, findTemplates, type Template } from '../wikitext.ts';
 import { isoDate, parseDate, parseTime, resolveZone, toKickoff, type Zone } from '../time.ts';
-import { broadcastOrNull, statusFromScore, textOrNull } from './common.ts';
+import { broadcastOrNull, seasonPage, statusFromScore, textOrNull } from './common.ts';
 
 const yes = (v: string | undefined) => /^\s*(?:y|yes|true|1)\b/i.test(v ?? '');
 
@@ -26,7 +26,7 @@ function entries(text: string, names: string[], ctx: ParseContext, fallback: Zon
     const date = parseDate(p['date'], ctx);
     const opp = cleanText(p['opponent']);
     if (!date || !opp || /^(?:tba|tbd|tbc)$/i.test(opp)) continue;
-    const opponent: TeamRef = { name: opp, page: null };
+    const opponent: TeamRef = { name: opp, page: seasonPage(p['opponent']) };
     const away = yes(p['away']);
     const { kickoffAt, timeTbc } = toKickoff(date, parseTime(p['time']), fallback);
     out.push({

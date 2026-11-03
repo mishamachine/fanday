@@ -3,6 +3,7 @@
 
 /** The fields the detector compares. Stored rows may carry more columns; they are ignored. */
 export interface ComparableGame {
+  game_date?: string;
   kickoff_at: string | null;
   time_tbc: boolean;
   status: string;
@@ -11,7 +12,7 @@ export interface ComparableGame {
   source_rev?: number | string | null;
 }
 
-export type ChangeField = 'kickoff_at' | 'time_tbc' | 'status' | 'venue';
+export type ChangeField = 'kickoff_at' | 'time_tbc' | 'game_date' | 'status' | 'venue';
 
 export interface FieldChange {
   field: ChangeField;
@@ -43,6 +44,9 @@ export function detectChanges(stored: ComparableGame, incoming: ComparableGame):
   if (!!stored.time_tbc !== !!incoming.time_tbc) {
     out.push({ field: 'time_tbc', old_value: String(!!stored.time_tbc), new_value: String(!!incoming.time_tbc) });
   }
+  if (stored.game_date && incoming.game_date && stored.game_date !== incoming.game_date) {
+    out.push({ field: 'game_date', old_value: stored.game_date, new_value: incoming.game_date });
+  }
   const oldS = collapse(stored.status);
   const newS = collapse(incoming.status);
   if (oldS !== newS) out.push({ field: 'status', old_value: oldS, new_value: newS });
@@ -57,3 +61,7 @@ export function needsUpdate(stored: ComparableGame, incoming: ComparableGame): b
   if (detectChanges(stored, incoming).length > 0) return true;
   return collapse(stored.broadcast) !== collapse(incoming.broadcast);
 }
+
+/** Instant in one canonical form, for comparing kickoffs. */
+export const canonicalInstant = instant;
+export const collapseText = collapse;

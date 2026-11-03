@@ -62,3 +62,10 @@ test('broadcast changes update the row but are not game_changes', () => {
   assert.deepEqual(detectChanges(base, tv), []);
   assert.equal(needsUpdate(base, tv), true);
 });
+
+test('a moved game date is a game_date change; a missing date on either side is ignored', () => {
+  assert.deepEqual(detectChanges({ ...base, game_date: '2026-08-21' }, { ...base, game_date: '2026-08-22' }), [
+    { field: 'game_date', old_value: '2026-08-21', new_value: '2026-08-22' },
+  ]);
+  assert.deepEqual(detectChanges({ ...base, game_date: '2026-08-21' }, base), []);
+});

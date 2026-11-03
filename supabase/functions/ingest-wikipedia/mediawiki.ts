@@ -19,18 +19,20 @@ export interface FetcherOptions {
   /** Server lag (seconds) above which Wikipedia asks us to back off. */
   maxlag?: number;
   maxRetries?: number;
+  maxContinue?: number;
 }
 
-export function buildUrl(titles: string[], maxlag: number): string {
+export function buildUrl(titles: string[], maxlag: number, cont: Record<string, string> = {}): string {
   const q = new URLSearchParams({
     action: 'query', prop: 'revisions', rvprop: 'content|ids', rvslots: 'main', format: 'json',
-    redirects: '1', maxlag: String(maxlag), titles: titles.join('|'),
+    redirects: '1', maxlag: String(maxlag), titles: titles.join('|'), ...cont,
   });
   return `${API}?${q}`;
 }
 
 interface ApiJson {
   error?: { code: string; info?: string };
+  continue?: Record<string, string>;
   query?: {
     normalized?: Array<{ from: string; to: string }>;
     redirects?: Array<{ from: string; to: string }>;
@@ -68,12 +70,13 @@ export function createFetcher(opts: FetcherOptions = {}) {
   const delayMs = opts.delayMs ?? 1000;
   const maxlag = opts.maxlag ?? 5;
   const maxRetries = opts.maxRetries ?? 3;
+  const maxContinue = opts.maxContinue ?? 5;
   let calls = 0;
 
-  return async function fetchPages(titles: string[]): Promise<Map<string, WikiPage | null>> {
+  async function callApi(url: string): Promise<ApiJson> {
     for (let attempt = 0; ; attempt++) {
       if (calls++ > 0) await sleep(delayMs);
-      const res = await f(buildUrl(titles, maxlag), { headers: { 'User-Agent': ua, 'Api-User-Agent': ua, Accept: 'application/json' } });
+      const res = await f(url, { headers: { 'User-Agent': ua, 'Api-User-Agent': ua, Accept: 'application/json' } });
       const retryAfter = Number(res.headers.get('retry-after')) || 5;
       if (res.status === 429 || res.status >= 500) {
         if (attempt >= maxRetries) throw new Error(`Wikipedia HTTP ${res.status}`);
@@ -88,7 +91,26 @@ export function createFetcher(opts: FetcherOptions = {}) {
         continue;
       }
       if (json.error) throw new Error(`Wikipedia API error ${json.error.code}`);
-      return extractPages(json, titles);
+      return json;
     }
+  }
+
+  return async function fetchPages(titles: string[]): Promise<Map<string, WikiPage | null>> {
+    // When the answer is too big the API returns `continue` and the rest of the pages' revisions on the next call.
+    const merged: ApiJson = { query: { pages: {} } };
+    let cont: Record<string, string> | undefined;
+    for (let round = 0; ; round++) {
+      const json = await callApi(buildUrl(titles, maxlag, cont));
+      merged.query!.normalized ??= json.query?.normalized;
+      merged.query!.redirects ??= json.query?.redirects;
+      for (const [id, p] of Object.entries(json.query?.pages ?? {})) {
+        const have = merged.query!.pages![id];
+        merged.query!.pages![id] = have?.revisions?.length ? have : { ...have, ...p };
+      }
+      if (!json.continue) break;
+      if (round >= maxContinue) throw new Error('Wikipedia: too many continue rounds');
+      cont = json.continue;
+    }
+    return extractPages(merged, titles);
   };
 }
