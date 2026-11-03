@@ -10,7 +10,7 @@
 //  * A kickoff, date, status or time_tbc change is held in games.pending and written (with its game_changes rows) only when the
 //    same new value is seen again on a later run at least MIN_CONFIRM_MS later. Venue and broadcast changes apply at once.
 //  * A future game its owner stops listing is set to 'postponed' (never deleted, logged) only after 2 runs AND 24 h since first missed.
-//    If a page would lose more than 3 games (or 10% of its owned games) in one run, the vanish step is skipped for it with a warning.
+//    If a page would lose more than max(3, 10% of its owned future games) in one run, the vanish step is skipped for it with a warning.
 //  * Daily runs also roll a league to its next season when that season's pages exist, and look for the Wikipedia page of any team
 //    whose page is missing, writing only leagues.season and teams.wiki_page.
 //  * The whole batch (inserts, updates, game_changes) is one RPC call = one transaction.
@@ -268,7 +268,7 @@ export async function processBatch(items: WorkItem[], deps: Deps, ref: { leagues
     const src = sourceFor(item.leagueSlug)!;
     const team = item.teamId ? ref.teams.find((t) => t.id === item.teamId) : undefined;
     const games: ParsedGame[] = parseWikitext(src.kind, page.wikitext, {
-      ...seasonContext(item.season), tz: src.tz, zoneFromHome: src.zoneFromHome,
+      ...seasonContext(item.season), tz: src.tz, zoneFromHome: src.zoneFromHome, zoneAliases: src.zoneAliases,
       homeTz: (r) => { const id = resolveTeam(idx, r, item.leagueSlug); return ref.teams.find((t) => t.id === id)?.tz ?? null; },
       subject: team ? { name: team.name, page: team.wiki_page } : undefined,
     });
@@ -334,7 +334,7 @@ export async function processBatch(items: WorkItem[], deps: Deps, ref: { leagues
     const owned = await deps.db.ownedFutureGames(p.title, today);
     const missing = owned.filter((e) => !touched.has(e.id) && !seenBy.get(p.title)?.has(e.id) && e.status === 'scheduled');
     if (!missing.length) continue;
-    if (missing.length > MASS_VANISH_MAX || missing.length > owned.length * MASS_VANISH_SHARE) {
+    if (missing.length > Math.max(MASS_VANISH_MAX, owned.length * MASS_VANISH_SHARE)) {
       const msg = `mass vanish skipped for "${p.title}": ${missing.length} of ${owned.length} future games missing`;
       stats.warnings.push(msg);
       deps.log?.(`warning: ${msg}`);
@@ -372,17 +372,29 @@ export function pageCandidates(t: TeamRow): string[] {
   return [...new Set([t.wiki_page, t.name, `${t.name} F.C.`, `${t.name} FC`, `Club ${t.name}`].filter((x): x is string => !!x))];
 }
 
-/** Look for a team's season page under its candidate names; store the first name that exists. Writes teams.wiki_page only. */
+/** A replacement name must still be about the same team: its key contains the team's own name key. */
+export function acceptableCandidate(t: Pick<TeamRow, 'name'>, candidate: string): boolean {
+  const own = teamKey(t.name);
+  return own !== '' && teamKey(candidate).includes(own);
+}
+
+/**
+ * Fill teams.wiki_page when it is empty or its season page no longer exists, under a candidate name for the same team.
+ * A page that exists (this season or the next) is never replaced. Writes teams.wiki_page only.
+ */
 async function discoverPage(item: WorkItem, deps: Deps, ref: { leagues: LeagueRow[]; teams: TeamRow[] }, stats: BatchStats): Promise<void> {
   const src = sourceFor(item.leagueSlug);
   const team = ref.teams.find((t) => t.id === item.teamId);
   const league = ref.leagues.find((l) => l.id === item.leagueSlug);
   if (!src || !team || !league?.season) return;
-  const names = pageCandidates(team);
+  const next = nextSeason(league.season);
+  const current = team.wiki_page ? [src.title(league.season, team.wiki_page)[0], ...(next ? [src.title(next, team.wiki_page)[0]] : [])] : [];
+  const names = pageCandidates(team).filter((n) => n !== team.wiki_page && acceptableCandidate(team, n));
   const titles = names.map((n) => src.title(league.season!, n)[0]);
-  const found = await deps.pagesExist(titles);
+  const found = await deps.pagesExist([...current, ...titles]);
+  if (current.some((t) => found.get(t))) return; // the page exists (or next season's does): keep it
   const hit = names.findIndex((_, i) => found.get(titles[i]));
-  if (hit < 0 || names[hit] === team.wiki_page) return;
+  if (hit < 0) return;
   await deps.db.setTeamWikiPage(team.id, names[hit]);
   stats.pagesFilled.push(`${team.id}: ${names[hit]}`);
   team.wiki_page = names[hit];

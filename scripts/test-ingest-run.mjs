@@ -221,9 +221,9 @@ test('mass-vanish guard: more than 3 games gone in one run is skipped for the pa
   await t.run();
   const logs = [];
   t.deps.log = (m) => logs.push(m);
-  t.state.wikitext = fixture('afl').split('\n').filter((l) => !/^\{\{AFLGame\|(?:Wednesday, 17 March|Thursday, 18 March|Friday, 19 March|Saturday, 20 March)/.test(l)).join('\n');
-  const missingCount = fixture('afl').split('\n').length - t.state.wikitext.split('\n').length;
-  assert.ok(missingCount > 3, `dropped ${missingCount} games`);
+  let dropped = 0;
+  t.state.wikitext = fixture('afl').split('\n').filter((l) => !(l.startsWith('{{AFLGame|') && dropped++ < 20)).join('\n');
+  assert.ok(dropped > 0 && 20 > Math.max(3, 135 * 0.1), '20 of 135 is above max(3, 10%) = 13.5');
   for (let i = 0; i < 3; i++) {
     t.state.now += HOUR; // still before the first dropped game (17 March 00:00 UTC is 4 h away)
     const s = await t.run();
@@ -233,6 +233,40 @@ test('mass-vanish guard: more than 3 games gone in one run is skipped for the pa
   assert.ok([...t.rows.values()].every((g) => g.status === 'scheduled' && g.missing_runs === 0), 'nothing touched');
   assert.equal(t.log.changes.length, 0);
   assert.match(logs[0], /warning: mass vanish/);
+});
+
+test('mass-vanish guard is max(3, 10%): a small page can still lose one game, but not most of its games', async () => {
+  const teams = ['ars', 'a', 'b', 'c', 'd', 'e'].map((id) => ({ id, league_id: 'epl', name: id === 'ars' ? 'Arsenal' : id.toUpperCase(), short_name: null, wiki_page: id === 'ars' ? 'Arsenal F.C.' : null }));
+  const games = ['a', 'b', 'c', 'd', 'e'].map((o, i) => ({ id: `g${i}`, league_id: 'epl', home_team_id: 'ars', away_team_id: o, game_date: `2026-11-${10 + i}`, kickoff_at: null, time_tbc: true, status: 'scheduled', venue: 'Arsenal Ground', broadcast: null, source_page: ARS, source_rev: 1, source_rank: 1 }));
+  const build = (list) => {
+    const fx = fakeDb({ leagues: [{ id: 'epl', season: '2026-27' }], teams, games: structuredClone(games) });
+    const state = { now: Date.parse('2026-11-01T00:00:00Z'), page: eplPage(list.map((o) => fb(`${10 + 'abcde'.indexOf(o)} November 2026`, 'TBC', 'Arsenal', o.toUpperCase())).join('')) };
+    const deps = { db: fx.db, pagesExist: noPages, now: () => state.now, fetchPages: async (ts) => new Map(ts.map((x) => [x, { title: x, revid: 5, wikitext: state.page }])) };
+    return { fx, state, run: () => runAll(deps) };
+  };
+  // 5 owned games, 1 gone: 1 <= max(3, 0.5), the guard stays off; postponed after 2 runs and 24 h
+  const one = build(['a', 'b', 'c', 'd']);
+  assert.deepEqual((await one.run()).warnings, []);
+  assert.equal(one.fx.rows.get('g4').missing_runs, 1);
+  one.state.now += 25 * HOUR;
+  const r2 = await one.run();
+  assert.deepEqual([r2.warnings, r2.vanished, one.fx.rows.get('g4').status], [[], 1, 'postponed']);
+  // 4 of 5 gone: 4 > max(3, 0.5), the guard trips and nothing is touched
+  const four = build(['a']);
+  const g = await four.run();
+  assert.equal(g.warnings.length, 1);
+  assert.ok([...four.fx.rows.values()].every((x) => x.missing_runs === 0 && x.status === 'scheduled'));
+});
+
+test('end to end: a CDT-labelled Liga MX game comes out at UTC-6 (Mexico City), not UTC-5', async () => {
+  const leagues = [{ id: 'ligamx', season: '2026-27' }];
+  const teams = [mkTeam('ligamx-puebla', 'ligamx', 'Puebla', 'Club Puebla'), mkTeam('ligamx-toluca', 'ligamx', 'Toluca', 'Toluca FC')];
+  const page = `==Competitions==\n===Apertura 2026===\n====Matches====\n` + fb('3 July 2026', '20:00 [[Central Time Zone|CDT]]', 'Club Puebla', 'Toluca FC');
+  const fx = fakeDb({ leagues, teams });
+  const deps = { db: fx.db, pagesExist: noPages, now: () => Date.parse('2026-06-01T00:00:00Z'), fetchPages: async (ts) => new Map(ts.map((x) => [x, { title: x, revid: 9, wikitext: page }])) };
+  await runAll(deps);
+  const [g] = [...fx.rows.values()];
+  assert.equal(g.kickoff_at, '2026-07-04T02:00:00Z'); // 20:00 at UTC-6; a plain CDT (UTC-5) would give 01:00Z
 });
 
 test('a page that parses to nothing (blanked, template change) postpones nothing', async () => {
@@ -360,13 +394,14 @@ test('migration 0002: transactional SECURITY DEFINER RPC, empty search_path, ser
 
 // ---- season rollover and page discovery ----
 async function runAll(deps, mode = 'daily') {
-  const all = { rolled: [], pagesFilled: [], pagesMissing: [], calls: 0 };
+  const all = { rolled: [], pagesFilled: [], pagesMissing: [], warnings: [], vanished: 0, calls: 0 };
   let cursor = 0, r;
   do {
     r = await runIngest({ mode, cursor }, deps);
     cursor = r.nextCursor;
     all.calls++;
-    for (const k of ['rolled', 'pagesFilled', 'pagesMissing']) all[k].push(...r[k]);
+    for (const k of ['rolled', 'pagesFilled', 'pagesMissing', 'warnings']) all[k].push(...r[k]);
+    all.vanished += r.vanished;
   } while (!r.done);
   return all;
 }
@@ -424,6 +459,25 @@ test('discover: a team with a null or missing wiki_page is re-checked daily and 
   assert.deepEqual([...t.log.pages].sort(), [['ligamx-atlante', 'Atlante F.C.'], ['ligamx-puebla', 'Puebla']]);
   assert.equal(second.pagesFilled.length, 2);
   assert.equal(teams[2].wiki_page, 'Club Tijuana', 'an existing page name is left alone');
+});
+
+test('discover: an existing page, or next season\'s page for the same team, is never replaced; candidates stay on the same team', async () => {
+  const { acceptableCandidate } = ing;
+  assert.deepEqual([acceptableCandidate({ name: 'Puebla' }, 'Club Puebla'), acceptableCandidate({ name: 'Puebla' }, 'Pachuca'), acceptableCandidate({ name: 'Atlante' }, 'Atlante F.C.'), acceptableCandidate({ name: 'Atlante' }, 'Atlas F.C.')], [true, false, true, false]);
+  const run = async (team, existsList) => {
+    const leagues = [{ id: 'ligamx', season: '2026-27' }];
+    const t = rollSetup({ leagues, teams: [team], exists: existing(...existsList) });
+    await runAll(t.deps);
+    return t.log.pages;
+  };
+  // current page exists: a lower-ranked candidate that also exists changes nothing
+  assert.deepEqual(await run(mkTeam('ligamx-puebla', 'ligamx', 'Puebla', 'Club Puebla'), ['2026\u201327 Club Puebla season', '2026\u201327 Puebla season']), []);
+  // this season's page is not up yet but next season's is (rollover): same team, keep the name
+  assert.deepEqual(await run(mkTeam('ligamx-puebla', 'ligamx', 'Puebla', 'Club Puebla'), ['2027\u201328 Club Puebla season', '2026\u201327 Puebla season']), []);
+  // the stored page is gone and the plain name exists: replaced, with the same team's name only
+  assert.deepEqual(await run(mkTeam('ligamx-puebla', 'ligamx', 'Puebla', 'Club Puebla'), ['2026\u201327 Puebla season', '2026\u201327 Pachuca season']), [['ligamx-puebla', 'Puebla']]);
+  // a page for another team's name is never used
+  assert.deepEqual(await run(mkTeam('ligamx-puebla', 'ligamx', 'Puebla', null), ['2026\u201327 Pachuca season', '2026\u201327 Club Pachuca season']), []);
 });
 
 test('discover: page filled lets the next run parse it; gameday never runs maintenance', async () => {
