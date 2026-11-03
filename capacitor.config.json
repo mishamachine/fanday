@@ -1,0 +1,11 @@
+{
+  "appId": "com.bbprojectfactory.fanday",
+  "appName": "Fanday",
+  "webDir": "dist-native",
+  "android": { "backgroundColor": "#F1F4F4" },
+  "ios": { "backgroundColor": "#F1F4F4" },
+  "plugins": {
+    "SplashScreen": { "launchShowDuration": 600, "backgroundColor": "#0F5E5A", "showSpinner": false },
+    "StatusBar": { "overlaysWebView": false, "style": "LIGHT", "backgroundColor": "#F1F4F4" }
+  }
+}

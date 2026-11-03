@@ -1,0 +1,25 @@
+# Supabase CLI config for the Fanday project (ref smhddbnctlkbwppzrsry, org "B&B Free", us-west-1).
+# Link once with: supabase link --project-ref smhddbnctlkbwppzrsry   (Babar/CTO step; this PR does not link or push.)
+project_id = "smhddbnctlkbwppzrsry"
+
+[db.seed]
+enabled = true
+sql_paths = ["./seed.sql"]
+
+[auth]
+site_url = "https://fanday.bbprojectfactory.com"
+additional_redirect_urls = [
+  "com.bbprojectfactory.fanday://auth/callback",
+  "https://fanday.bbprojectfactory.com/**",
+  "http://localhost:5173/**",
+]
+# Anonymous session on first launch (src/lib/auth.ts). Signing in later keeps follows via claim_anonymous_follows().
+enable_anonymous_sign_ins = true
+
+# JWT verification at the gateway is OFF for both functions, as STT does: each authenticates itself
+# (delete-account checks the bearer token; go is a public redirect that reads only the game row).
+[functions.delete-account]
+verify_jwt = false
+
+[functions.go]
+verify_jwt = false

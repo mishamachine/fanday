@@ -1,0 +1,21 @@
+/* Fanday design tokens: light mode, from design/fanday-screens.html (2026-11-02). Navy = action, teal = brand surface, amber = alerts only. */
+:root {
+  --bg: #F1F4F4;
+  --card: #FFFFFF;
+  --ink: #10201F;
+  --muted: #4A5B5A;
+  --teal: #0F5E5A;
+  --navy: #1F3A5F;
+  --on-primary: #FFFFFF;
+  --amber: #B45309;
+  --amber-bg: #FFE9C2;
+  --amber-text: #7A3E00;
+  --tbc-bg: #DDE5E5;
+  --tbc-text: #2B3B3A;
+  --line: #D4DCDC;
+  --field: #7A8B8A;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  --sans: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --radius: 6px;
+  --tap: 44px;
+}
