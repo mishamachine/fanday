@@ -12,6 +12,7 @@ on:
         required: false
         default: ''
   pull_request:
+    types: [labeled, synchronize]
     paths:
       - 'ios/**'
       - 'src/**'
@@ -22,14 +23,15 @@ on:
 permissions:
   contents: read
 
-concurrency:
-  group: ios-sim-${{ github.event.pull_request.number || github.event.inputs.ref || github.ref }}
-  cancel-in-progress: true
-
 jobs:
   simulator:
+    # PR runs only when the PR carries the `ios-sim` label (macOS minutes bill at 10x).
+    if: github.event_name == 'workflow_dispatch' || contains(github.event.pull_request.labels.*.name, 'ios-sim')
     runs-on: macos-latest
     timeout-minutes: 25
+    concurrency:
+      group: ios-sim-${{ github.event.pull_request.number || github.event.inputs.ref || github.ref }}
+      cancel-in-progress: true
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:
@@ -48,6 +50,14 @@ jobs:
           cp .env.example .env
           npx vite build --mode native --outDir dist-native
           npx cap sync ios
+
+      - uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830 # v4
+        with:
+          path: |
+            build/spm
+            build/ios
+          key: ios-sim-${{ runner.os }}-${{ hashFiles('ios/App/CapApp-SPM/Package.swift', 'package-lock.json', 'ios/App/App.xcodeproj/project.pbxproj') }}
+          restore-keys: ios-sim-${{ runner.os }}-
 
       - name: Build, boot, launch, screenshot
         run: bash scripts/ios-sim/run.sh

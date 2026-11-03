@@ -10,7 +10,7 @@ echo "== xcodebuild"
 set -o pipefail
 xcodebuild -project ios/App/App.xcodeproj -scheme App -configuration Debug \
   -sdk iphonesimulator -destination 'generic/platform=iOS Simulator' \
-  -derivedDataPath "$DD" CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO build \
+  -derivedDataPath "$DD" -clonedSourcePackagesDirPath "$PWD/build/spm" -skipPackagePluginValidation CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO build \
   > "$OUT/xcodebuild.log" 2>&1 || { tail -60 "$OUT/xcodebuild.log"; echo "BUILD FAILED"; exit 1; }
 APP="$(find "$DD/Build/Products" -maxdepth 2 -name 'App.app' | head -1)"
 [ -n "$APP" ] || { echo "App.app not found"; exit 1; }
