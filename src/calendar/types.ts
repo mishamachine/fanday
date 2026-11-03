@@ -19,6 +19,10 @@ export interface StoredEvent extends CalendarEventInput {
 }
 
 export interface CalendarPlugin {
+  /** Native only: current permission without prompting. 'denied' means the OS will not prompt again (open Settings). */
+  checkAccess?(): Promise<'granted' | 'denied' | 'prompt'>
+  /** Native only: open this app's page in the system Settings. */
+  openSettings?(): Promise<void>
   /** Ask for calendar access. Resolves granted=false if the user says no. */
   requestAccess(): Promise<{ granted: boolean }>
   /** Create the Fanday calendar (or return the existing one with that title). */

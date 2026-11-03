@@ -1,9 +1,10 @@
-import { useEffect } from 'react'
+import { useEffect, useRef } from 'react'
 import { App as CapApp } from '@capacitor/app'
 import { isNative } from '../lib/env.ts'
 import { useStore } from '../store/useStore.ts'
 import { calendar } from './index.ts'
 import { syncNow } from './runner.ts'
+import { retryDelay } from './status.ts'
 
 /** Sync on app open, on resume, when the followed teams change, and when the OS wakes the app in the background. */
 export function useCalendarSync() {
@@ -27,4 +28,17 @@ export function useCalendarSync() {
       void due?.then((off) => off())
     }
   }, [])
+
+  // A partial or failed pass is retried with growing delays (20 s, 1 min, 3 min), then left to the next open or resume.
+  const status = useStore((s) => s.syncStatus)
+  const failed = useStore((s) => s.syncFailed)
+  const attempt = useRef(0)
+  useEffect(() => {
+    if (status === 'ok') { attempt.current = 0; return }
+    if (status !== 'partial' && status !== 'error') return
+    const delay = retryDelay(attempt.current)
+    if (delay === null) return
+    const t = setTimeout(() => { attempt.current++; void syncNow() }, delay)
+    return () => clearTimeout(t)
+  }, [status, failed])
 }

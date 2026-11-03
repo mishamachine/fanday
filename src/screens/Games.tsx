@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { data, type Game, type League, type Team } from '../data/index.ts'
 import { formatTime, formatWeekday } from '../lib/time.ts'
 import { useStore } from '../store/useStore.ts'
+import CalendarStatus from '../calendar/CalendarStatus.tsx'
 
 export function GameRow({ g }: { g: Game }) {
   const moved = !!g.previousKickoffAt && !g.timeTbc
@@ -27,10 +28,8 @@ export function GameRow({ g }: { g: Game }) {
 
 export default function Games() {
   const follows = useStore((s) => s.follows)
-  const syncStatus = useStore((s) => s.syncStatus)
   const [games, setGames] = useState<Game[]>([])
   const [official, setOfficial] = useState<Array<{ team: Team; league: League }>>([])
-  const synced = { syncing: 'Syncing your calendar…', ok: 'Calendar up to date', denied: 'Calendar access is off', error: '', idle: '' }[syncStatus]
   const [error, setError] = useState('')
   const [loading, setLoading] = useState(true)
   const [attempt, setAttempt] = useState(0)
@@ -58,7 +57,7 @@ export default function Games() {
     <main className="screen">
       <div className="top"><Link className="link" to="/leagues">Add teams</Link><Link className="link" to="/settings">Settings</Link></div>
       <h1>Your games</h1>
-      {synced && <p className="sync"><span className="dot" />{synced}</p>}
+      <CalendarStatus />
       {loading && <p className="fine" role="status">Loading your games…</p>}
       {error && <div className="err" role="alert">{error} <button className="link" onClick={() => setAttempt((n) => n + 1)}>Retry</button></div>}
       <ul className="list">

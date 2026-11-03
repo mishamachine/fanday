@@ -3,6 +3,7 @@ import { FUNCTIONS_URL, platform } from '../lib/env.ts'
 import { useStore } from '../store/useStore.ts'
 import { calendar } from './index.ts'
 import { syncGames, type SyncStats } from './sync.ts'
+import { statusFor } from './status.ts'
 import { singleFlight } from './singleFlight.ts'
 import { deleteDeviceRows, newDeviceId, pushDeviceState } from './deviceStore.ts'
 
@@ -11,6 +12,7 @@ export const WINDOW_BACK_DAYS = 1
 export const WINDOW_AHEAD_DAYS = 180
 export const BACKGROUND_INTERVAL_MIN = 15 // iOS BGAppRefresh earliest start. Android has no background job until a native-only sync exists; it syncs on open, resume and (push PR) a silent push.
 
+const emptyStats: SyncStats = { created: 0, updated: 0, recreated: 0, removed: 0, unchanged: 0, retained: 0, orphans: 0, failed: 0 }
 export type SyncOutcome = { granted: boolean; stats: SyncStats } | null
 
 /**
@@ -28,12 +30,17 @@ async function run(): Promise<SyncOutcome> {
   try {
     // Games that ended before this are outside the fetch, not gone: their events stay as history.
     const windowStart = Date.parse(new Date(Date.now() - WINDOW_BACK_DAYS * 86_400_000).toISOString().slice(0, 10))
+    // Before the OS prompt, the app explains why (once); a refused permission is shown with a way to open Settings.
+    const access = await calendar.checkAccess?.()
+    if (access === 'denied') { useStore.getState().setSyncStatus('denied'); return { granted: false, stats: emptyStats } }
+    if (access === 'prompt' && !st.rationaleSeen) { useStore.getState().setSyncStatus('rationale'); return null }
     const games = st.follows.length ? await data.listGames(st.follows, new Date(), WINDOW_AHEAD_DAYS) : []
     const res = await syncGames(calendar, games, st.eventState, { goBaseUrl: FUNCTIONS_URL }, windowStart)
     if (!res.granted || !res.calendarId) { useStore.getState().setSyncStatus('denied'); return { granted: false, stats: res.stats } }
     const deviceId = st.deviceId ?? newDeviceId()
     useStore.getState().setSync(res.state, res.calendarId, deviceId)
-    useStore.getState().setSyncStatus('ok')
+    const done = statusFor(res.stats)
+    useStore.getState().setSyncStatus(done.status, done.failed)
     const user = useStore.getState().user
     if (user) await pushDeviceState(user.id, deviceId, res.calendarId, st.eventState, res.state)
     if (platform === 'ios') void calendar.scheduleBackgroundSync?.(BACKGROUND_INTERVAL_MIN).catch(() => undefined)

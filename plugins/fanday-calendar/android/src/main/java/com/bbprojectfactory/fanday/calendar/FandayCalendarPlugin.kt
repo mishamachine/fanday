@@ -21,6 +21,28 @@ class FandayCalendarPlugin : Plugin() {
 
     private fun hasAccess() = getPermissionState("calendar") == PermissionState.GRANTED
 
+    /** JSON numbers arrive as Long or Int, never Double: getDouble()/getInt() return null for them. Read through org.json instead. */
+    private fun num(call: PluginCall, key: String): Long? =
+        if (call.data.has(key) && !call.data.isNull(key)) call.data.optLong(key) else null
+
+    @PluginMethod
+    fun checkAccess(call: PluginCall) {
+        val state = when (getPermissionState("calendar")) {
+            PermissionState.GRANTED -> "granted"
+            PermissionState.DENIED -> "denied"
+            else -> "prompt"
+        }
+        call.resolve(JSObject().put("state", state))
+    }
+
+    @PluginMethod
+    fun openSettings(call: PluginCall) {
+        val i = android.content.Intent(android.provider.Settings.ACTION_APPLICATION_DETAILS_SETTINGS, android.net.Uri.fromParts("package", context.packageName, null))
+        i.addFlags(android.content.Intent.FLAG_ACTIVITY_NEW_TASK)
+        context.startActivity(i)
+        call.resolve()
+    }
+
     @PluginMethod
     fun requestAccess(call: PluginCall) {
         if (hasAccess()) call.resolve(JSObject().put("granted", true))
@@ -58,11 +80,11 @@ class FandayCalendarPlugin : Plugin() {
             title = call.getString("title") ?: return@guarded call.reject("title is required"),
             location = call.getString("location"),
             notes = call.getString("notes") ?: "",
-            startMs = call.getDouble("startMs")?.toLong() ?: return@guarded call.reject("startMs is required"),
-            endMs = call.getDouble("endMs")?.toLong() ?: return@guarded call.reject("endMs is required"),
+            startMs = num(call, "startMs") ?: return@guarded call.reject("startMs is required"),
+            endMs = num(call, "endMs") ?: return@guarded call.reject("endMs is required"),
             allDay = call.getBoolean("allDay", false) ?: false,
             allDayDate = call.getString("allDayDate"),
-            alarmMinutesBefore = call.getInt("alarmMinutesBefore"),
+            alarmMinutesBefore = num(call, "alarmMinutesBefore")?.toInt(),
         )
         val eventId = store.upsert(data, id(call, "existingIdentifier"))
         call.resolve(JSObject().put("eventIdentifier", eventId.toString()))
@@ -95,6 +117,6 @@ class FandayCalendarPlugin : Plugin() {
     @PluginMethod
     fun removeOrphans(call: PluginCall) = guarded(call) {
         val keep = (call.getArray("keep") ?: JSArray()).toList<String>().mapNotNull { it.toLongOrNull() }.toSet()
-        call.resolve(JSObject().put("removed", store.removeOrphans(keep, call.getDouble("fromMs")?.toLong())))
+        call.resolve(JSObject().put("removed", store.removeOrphans(keep, num(call, "fromMs"))))
     }
 }

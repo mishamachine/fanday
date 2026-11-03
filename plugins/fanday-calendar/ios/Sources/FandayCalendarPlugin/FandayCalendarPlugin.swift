@@ -2,6 +2,7 @@ import Foundation
 import EventKit
 import BackgroundTasks
 import Capacitor
+import UIKit
 
 /// Posted by AppDelegate when iOS runs our BGAppRefresh task. The plugin turns it into a `syncDue` event for JS.
 public extension Notification.Name {
@@ -20,6 +21,8 @@ public class FandayCalendarPlugin: CAPPlugin, CAPBridgedPlugin {
     public let identifier = "FandayCalendarPlugin"
     public let jsName = "FandayCalendar"
     public let pluginMethods: [CAPPluginMethod] = [
+        CAPPluginMethod(name: "checkAccess", returnType: CAPPluginReturnPromise),
+        CAPPluginMethod(name: "openSettings", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "requestAccess", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "createCalendar", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "deleteCalendar", returnType: CAPPluginReturnPromise),
@@ -46,6 +49,26 @@ public class FandayCalendarPlugin: CAPPlugin, CAPBridgedPlugin {
         let s = EKEventStore.authorizationStatus(for: .event)
         if #available(iOS 17.0, *) { return s == .fullAccess }
         return s == .authorized
+    }
+
+    /// JSON numbers arrive as NSNumber (an epoch-ms value is an Int64). Read the NSNumber directly rather than trusting
+    /// getInt/getDouble casts, which return nil when the stored type differs.
+    private func number(_ call: CAPPluginCall, _ key: String) -> NSNumber? { call.options[key] as? NSNumber }
+
+    @objc func checkAccess(_ call: CAPPluginCall) {
+        let s = EKEventStore.authorizationStatus(for: .event)
+        var state = "prompt"
+        if hasFullAccess { state = "granted" }
+        else if s == .denied || s == .restricted { state = "denied" }
+        else if #available(iOS 17.0, *), s == .writeOnly { state = "denied" } // we need full access
+        call.resolve(["state": state])
+    }
+
+    @objc func openSettings(_ call: CAPPluginCall) {
+        DispatchQueue.main.async {
+            if let url = URL(string: UIApplication.openSettingsURLString) { UIApplication.shared.open(url) }
+            call.resolve()
+        }
     }
 
     @objc func requestAccess(_ call: CAPPluginCall) {
@@ -121,7 +144,7 @@ public class FandayCalendarPlugin: CAPPlugin, CAPBridgedPlugin {
     @objc func upsertEvent(_ call: CAPPluginCall) {
         guard guardAccess(call) else { return }
         guard let cal = ourCalendar() else { call.reject("No Fanday calendar", "NO_CALENDAR"); return }
-        guard let title = call.getString("title"), let startMs = call.getDouble("startMs"), let endMs = call.getDouble("endMs") else { call.reject("title, startMs and endMs are required"); return }
+        guard let title = call.getString("title"), let startMs = number(call, "startMs")?.doubleValue, let endMs = number(call, "endMs")?.doubleValue else { call.reject("title, startMs and endMs are required"); return }
         let allDay = call.getBool("allDay") ?? false
 
         // Update in place only when the stored identifier is one of OUR events; anything else (gone, or someone else's) makes a new event.
@@ -145,7 +168,7 @@ public class FandayCalendarPlugin: CAPPlugin, CAPBridgedPlugin {
             ev.timeZone = TimeZone.current // timed events are absolute instants; the phone shows them in its own zone
             ev.startDate = Date(timeIntervalSince1970: startMs / 1000)
             ev.endDate = Date(timeIntervalSince1970: endMs / 1000)
-            if let mins = call.getInt("alarmMinutesBefore") { ev.alarms = [EKAlarm(relativeOffset: -Double(mins) * 60)] } else { ev.alarms = nil }
+            if let mins = number(call, "alarmMinutesBefore")?.intValue { ev.alarms = [EKAlarm(relativeOffset: -Double(mins) * 60)] } else { ev.alarms = nil }
         }
         do {
             try store.save(ev, span: .thisEvent, commit: true)
@@ -191,7 +214,7 @@ public class FandayCalendarPlugin: CAPPlugin, CAPBridgedPlugin {
         let now = Date()
         // fromMs: only events starting at or after it; older ones are history and are never swept.
         let floor = now.addingTimeInterval(-2 * 365 * 86400)
-        let from = call.getDouble("fromMs").map { max(Date(timeIntervalSince1970: $0 / 1000), floor) } ?? floor
+        let from = number(call, "fromMs")?.doubleValue.map { max(Date(timeIntervalSince1970: $0 / 1000), floor) } ?? floor
         let pred = store.predicateForEvents(withStart: from, end: now.addingTimeInterval(2 * 365 * 86400), calendars: [cal])
         var removed = 0
         for ev in store.events(matching: pred) where isOurs(ev) && ev.startDate >= from && !keep.contains(ev.eventIdentifier ?? "") {
@@ -204,7 +227,7 @@ public class FandayCalendarPlugin: CAPPlugin, CAPBridgedPlugin {
     // MARK: background (best effort; iOS decides if and when it runs)
 
     @objc func scheduleBackgroundSync(_ call: CAPPluginCall) {
-        let minutes = call.getInt("intervalMinutes") ?? 15
+        let minutes = number(call, "intervalMinutes")?.intValue ?? 15
         let req = BGAppRefreshTaskRequest(identifier: fandayRefreshTaskId)
         req.earliestBeginDate = Date(timeIntervalSinceNow: Double(max(minutes, 15)) * 60)
         do { try BGTaskScheduler.shared.submit(req) } catch { /* simulator, Background App Refresh off, or not registered: best effort */ }
