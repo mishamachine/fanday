@@ -4,7 +4,7 @@ project_id = "smhddbnctlkbwppzrsry"
 
 [db.seed]
 enabled = true
-sql_paths = ["./seed.sql", "./seed_teams.sql"]
+sql_paths = ["./seed.sql", "./seed_teams.sql", "./seed/teams_tz.sql"] # teams_tz.sql comes from PR #2 (needs teams.tz from its 0002): merge both PRs together
 
 # This file configures LOCAL development (`supabase start`). The production Site URL and redirect list
 # (https://fanday.bbprojectfactory.com, com.bbprojectfactory.fanday://auth/callback) are set in the dashboard:
