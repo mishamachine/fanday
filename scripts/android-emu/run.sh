@@ -25,6 +25,7 @@ tap_text() {
   for ((i=0;i<n;i++)); do
     dump_ui
     if xy="$(python3 "$HERE/ui.py" find "$OUT/ui-current.xml" "$t")"; then adb shell input tap $xy; sleep 1.5; return 0; fi
+    adb shell input swipe 160 520 160 260 300  # scroll down a little in case the target is below the fold
     sleep 2
   done
   cp "$OUT/ui-current.xml" "$OUT/ui-notfound-$(echo "$t" | tr -c 'A-Za-z0-9' _).xml" 2>/dev/null
@@ -36,7 +37,7 @@ launch() { adb shell am start -n "$PKG/.MainActivity" >/dev/null 2>&1 || adb she
 onboard() {
   tap_text "Get started" 30 || return 1
   tap_text "NFL" 15 || return 1
-  tap_text "Kansas City Chiefs" 15 || return 1
+  tap_text "Denver Broncos" 15 || return 1  # Chiefs vs Broncos is the mock game whose kickoff the QA flag shifts
   tap_text "to my calendar" 10 || return 1
   return 0
 }
@@ -75,13 +76,13 @@ adb shell pm grant "$PKG" android.permission.WRITE_CALENDAR
 echo "== 2. seed QA_Other calendar + event"
 adb shell "content insert --uri '$CAL_URI?caller_is_syncadapter=true&account_name=QA_Other&account_type=LOCAL' \
   --bind account_name:s:QA_Other --bind account_type:s:LOCAL --bind name:s:QA_Other --bind calendar_displayName:s:QA_Other \
-  --bind calendar_color:i:-65536 --bind calendar_access_level:i:700 --bind visible:i:1 --bind sync_events:i:1 --bind owner_account:s:QA_Other" >/dev/null 2>&1
+  --bind calendar_color:i:-65536 --bind calendar_access_level:i:700 --bind visible:i:1 --bind sync_events:i:1 --bind ownerAccount:s:QA_Other" > "$OUT/seed-calendar.txt" 2>&1
 OTHER_ID="$(adb shell "content query --uri $CAL_URI --projection _id:account_name" | tr -d '\r' | grep 'account_name=QA_Other' | sed -n 's/.*_id=\([0-9]*\).*/\1/p' | head -1)"
 note "QA_Other calendar id: ${OTHER_ID:-none}"
 if [ -n "$OTHER_ID" ]; then
   START=$(( ($(date +%s) + 86400*2) * 1000 )); END=$(( START + 3600000 ))
   adb shell "content insert --uri '$EV_URI?caller_is_syncadapter=true&account_name=QA_Other&account_type=LOCAL' \
-    --bind calendar_id:i:$OTHER_ID --bind title:s:QA_Other_event --bind dtstart:l:$START --bind dtend:l:$END --bind eventTimezone:s:UTC" >/dev/null 2>&1
+    --bind calendar_id:i:$OTHER_ID --bind title:s:QA_Other_event --bind dtstart:l:$START --bind dtend:l:$END --bind eventTimezone:s:UTC" > "$OUT/seed-event.txt" 2>&1
   events_of "$OTHER_ID" > "$OUT/other-before.txt"
   OTHER_BEFORE="$(python3 "$HERE/ui.py" rows "$OUT/other-before.txt")"
   check "seeded one QA_Other event" "$([ "$(echo "$OTHER_BEFORE" | grep -c .)" = "1" ] && echo 1 || echo 0)" "rows: $OTHER_BEFORE"
@@ -91,7 +92,7 @@ fi
 
 echo "== 3. launch with permission, onboard"
 launch; sleep 4
-if onboard; then pass "onboarding driven (Get started, NFL, Kansas City Chiefs, add to calendar)"; else fail "onboarding driven" "see ui-notfound-*.xml"; fi
+if onboard; then pass "onboarding driven (Get started, NFL, Denver Broncos, add to calendar)"; else fail "onboarding driven" "see ui-notfound-*.xml"; fi
 shot 03-after-onboard
 
 echo "== 4. Fanday calendar and events"
@@ -124,7 +125,7 @@ fi
 check "same event count after move ($COUNT_BEFORE -> $COUNT_AFTER)" "$([ "$COUNT_BEFORE" -ge 1 ] && [ "$COUNT_BEFORE" = "$COUNT_AFTER" ] && echo 1 || echo 0)"
 # same _ID set, and the first mock kickoff (the one with the shifted time) has DTSTART + 90 min
 IDS_B="$(echo "$BEFORE" | awk '{print $1}' | tr '\n' ' ')"; IDS_A="$(echo "$AFTER" | awk '{print $1}' | tr '\n' ' ')"
-check "same event _ID set (before: $IDS_B / after: $IDS_A)" "$([ -n "$IDS_B" ] && [ "$IDS_B" = "$IDS_A" ] && echo 1 || echo 0)"
+check "same event _ID set (before: $IDS_B / after: $IDS_A)" "$([ "$COUNT_BEFORE" -ge 1 ] && [ "$IDS_B" = "$IDS_A" ] && echo 1 || echo 0)"
 MOVED="$(python3 - "$OUT/fanday-before.txt" "$OUT/fanday-after.txt" <<'PY'
 import re, sys
 def rows(p):
