@@ -6,9 +6,10 @@ import { LEAGUES } from '../src/data/leagues.ts'
 const teams = JSON.parse(readFileSync(new URL('../supabase/seed/teams.json', import.meta.url), 'utf8'))
 const by = (l) => teams.filter((t) => t.league_id === l)
 // Counts checked against each league's own season page on 2026-11-02.
-const want = { epl: 20, laliga: 20, seriea: 20, bundesliga: 18, ligue1: 18, mls: 30, nfl: 32, afl: 18, ucl: 36, ncaaf: 25, ncaab: 25, nba: 30, nhl: 32 }
+const want = { epl: 20, laliga: 20, seriea: 20, bundesliga: 18, ligue1: 18, mls: 30, nfl: 32, afl: 18, ucl: 36, ncaaf: 25, ncaab: 25, nba: 30, nhl: 32, ligamx: 18, brasileirao: 20, mlb: 30, wnba: 15, ipl: 10, nrl: 17 }
 for (const [l, n] of Object.entries(want)) eq(`${l}: ${n} teams`, by(l).length, n)
 eq('league ids the ingest uses all exist', ['epl', 'laliga', 'seriea', 'bundesliga', 'ligue1', 'ucl', 'mls', 'nfl', 'ncaaf', 'ncaab', 'afl'].every((id) => LEAGUES.some((l) => l.id === id)), true)
+eq('every one of the 19 leagues has real teams', LEAGUES.every((l) => by(l.id).length > 0), true)
 ok('every team belongs to a known league', teams.every((t) => LEAGUES.some((l) => l.id === t.league_id)))
 eq('team ids unique', new Set(teams.map((t) => t.id)).size, teams.length)
 ok('short names unique within a league (ingest matches on them)', Object.keys(want).every((l) => new Set(by(l).map((t) => t.short_name)).size === by(l).length))

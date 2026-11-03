@@ -1,27 +1,9 @@
 import type { Game, Team } from './types.ts'
-import { LEAGUES } from './leagues.ts'
 
 import { SEED_TEAMS } from './teams.ts'
 
-// Teams: the real seed (src/data/teams.ts) wherever it has any. PLACEHOLDER teams below only fill leagues the seed does
-// not cover yet (WNBA, MLB, Liga MX, Brasileirao, IPL, NRL); they do not exist in the database. Names are plain text and
-// badges are neutral abbreviations: no logos, no league or team imagery.
-const PLACEHOLDER: Record<string, Array<[string, string]>> = {
-  wnba: [['SEA', 'Storm'], ['LVA', 'Aces'], ['NYL', 'Liberty']],
-  mlb: [['LAD', 'Dodgers'], ['NYY', 'Yankees'], ['BOS', 'Red Sox']],
-  ligamx: [['AME', 'America'], ['CHI', 'Guadalajara'], ['TIG', 'Tigres']],
-  brasileirao: [['FLA', 'Flamengo'], ['PAL', 'Palmeiras'], ['COR', 'Corinthians']],
-  ipl: [['MI', 'Mumbai'], ['CSK', 'Chennai'], ['RCB', 'Bengaluru']],
-  nrl: [['PEN', 'Panthers'], ['BRO', 'Broncos'], ['STO', 'Storm']],
-}
-const seeded = new Set(SEED_TEAMS.map((t) => t.leagueId))
-
-export const MOCK_TEAMS: Team[] = [
-  ...SEED_TEAMS,
-  ...LEAGUES.filter((l) => !seeded.has(l.id)).flatMap((l) => (PLACEHOLDER[l.id] ?? []).map(([short, name]) => ({
-    id: `${l.id}-${short.toLowerCase()}`, leagueId: l.id, name, shortName: short, officialCalendarUrl: null,
-  }))),
-]
+// Teams: the real seed for every league (src/data/teams.ts); no placeholders left. No logos, no league or team imagery.
+export const MOCK_TEAMS: Team[] = SEED_TEAMS
 
 const DAY = 86_400_000
 const iso = (ms: number) => new Date(ms).toISOString()
@@ -40,7 +22,7 @@ export function mockGames(now: Date = new Date()): Game[] {
       venue: 'Arrowhead Stadium', broadcast: 'CBS', watchUrl: 'https://example.invalid/watch', ticketsUrl: 'https://example.invalid/tickets' }),
     g({ id: 'mock-2', leagueId: 'epl', sport: 'soccer', homeTeamId: 'epl-arsenal', awayTeamId: 'epl-chelsea', homeName: 'Arsenal', awayName: 'Chelsea',
       countryCode: 'GB', at: t0 + 5 * DAY + 12.5 * 3_600_000, venue: 'Emirates Stadium', broadcast: 'Sky Sports' }),
-    g({ id: 'mock-3', leagueId: 'ipl', sport: 'cricket', homeTeamId: 'ipl-mi', awayTeamId: 'ipl-csk', homeName: 'Mumbai', awayName: 'Chennai',
+    g({ id: 'mock-3', leagueId: 'ipl', sport: 'cricket', homeTeamId: 'ipl-mumbai-indians', awayTeamId: 'ipl-chennai-super-kings', homeName: 'Mumbai', awayName: 'Chennai',
       countryCode: 'IN', at: t0 + 7 * DAY, kickoffAt: null, timeTbc: true }),
   ]
 }

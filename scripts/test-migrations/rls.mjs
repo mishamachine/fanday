@@ -26,7 +26,7 @@ await db.exec(read('migrations/0001_init.sql'))
 await db.exec(read('seed.sql'))
 await db.exec(read('seed.sql')) // idempotent
 await db.exec(read('seed_teams.sql')); await db.exec(read('seed_teams.sql')) // loads into the real schema, idempotent
-ok('teams seed: 324 rows, every league FK valid, Arsenal once per league', (await db.query('select count(*)::int c from public.teams')).rows[0].c === 324
+ok('teams seed: 434 rows, every league FK valid, Arsenal once per league', (await db.query('select count(*)::int c from public.teams')).rows[0].c === 434
   && (await db.query(`select count(*)::int c from public.teams where id in ('epl-arsenal','ucl-arsenal')`)).rows[0].c === 2)
 ok('teams seed: NBA/NHL have no wiki_page; every other seeded team has one', (await db.query(`select count(*)::int c from public.teams where (league_id in ('nba','nhl')) <> (wiki_page is null)`)).rows[0].c === 0)
 await db.exec(`
