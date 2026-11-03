@@ -1,7 +1,6 @@
-// The native calendar plugin contract.
-// TODO(native-plugin PR): implement this as a Capacitor plugin. iOS: EventKit with full access (needed to update
-// events later; spike open in build-plan M2). Android: CalendarContract. Until then the app uses MockCalendar.
-// Fanday keeps its own "Fanday" calendar and stores each returned eventIdentifier per game (device_events table).
+// The native calendar plugin contract. Implemented by plugins/fanday-calendar (iOS EventKit with full access, Android
+// CalendarContract); the web build and the tests use MockCalendar. Fanday keeps its own "Fanday" calendar and stores
+// each returned eventIdentifier per game (device_events table).
 
 export interface CalendarEventInput {
   title: string
@@ -31,4 +30,9 @@ export interface CalendarPlugin {
   deleteEvent(calendarId: string, eventIdentifier: string): Promise<void>
   /** Read back events by the identifiers we stored. Unknown identifiers are simply missing from the result. */
   listEvents(calendarId: string, eventIdentifiers: string[]): Promise<StoredEvent[]>
+  /** Native only: ask the OS to wake the app roughly every N minutes (Android >= 15, iOS best effort) and fire onSyncDue. */
+  scheduleBackgroundSync?(intervalMinutes: number): Promise<void>
+  cancelBackgroundSync?(): Promise<void>
+  /** Native only: the OS woke us for a background sync. Returns an unsubscribe function. */
+  onSyncDue?(cb: () => void): Promise<() => void>
 }

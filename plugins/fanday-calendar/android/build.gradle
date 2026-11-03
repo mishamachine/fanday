@@ -1,0 +1,53 @@
+ext {
+    kotlin_version = project.hasProperty('kotlin_version') ? rootProject.ext.kotlin_version : '2.2.20'
+}
+
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.13.0'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:2.2.20"
+    }
+}
+
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+
+android {
+    namespace = "com.bbprojectfactory.fanday.calendar"
+    compileSdk = project.hasProperty('compileSdkVersion') ? rootProject.ext.compileSdkVersion : 36
+    defaultConfig {
+        minSdk = project.hasProperty('minSdkVersion') ? rootProject.ext.minSdkVersion : 24
+        targetSdk = project.hasProperty('targetSdkVersion') ? rootProject.ext.targetSdkVersion : 36
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_21
+        targetCompatibility JavaVersion.VERSION_21
+    }
+}
+
+// Match the Java 21 target the Capacitor plugins use, whatever JDK runs Gradle.
+kotlin {
+    compilerOptions {
+        jvmTarget = org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_21
+    }
+}
+
+repositories {
+    google()
+    mavenCentral()
+}
+
+dependencies {
+    implementation project(':capacitor-android')
+    // Periodic wake-up (15 min minimum). See FandayCalendarPlugin for what it can and cannot do.
+    implementation "androidx.work:work-runtime:2.10.2"
+}

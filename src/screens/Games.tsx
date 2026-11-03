@@ -1,10 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { data, type Game, type League, type Team } from '../data/index.ts'
-import { calendar } from '../calendar/index.ts'
-import { syncGames } from '../calendar/sync.ts'
 import { formatTime, formatWeekday } from '../lib/time.ts'
-import { FUNCTIONS_URL } from '../lib/env.ts'
 import { useStore } from '../store/useStore.ts'
 
 export function GameRow({ g }: { g: Game }) {
@@ -29,10 +26,11 @@ export function GameRow({ g }: { g: Game }) {
 }
 
 export default function Games() {
-  const { follows, setSync } = useStore()
+  const follows = useStore((s) => s.follows)
+  const syncStatus = useStore((s) => s.syncStatus)
   const [games, setGames] = useState<Game[]>([])
   const [official, setOfficial] = useState<Array<{ team: Team; league: League }>>([])
-  const [synced, setSynced] = useState<string>('')
+  const synced = { syncing: 'Syncing your calendar…', ok: 'Calendar up to date', denied: 'Calendar access is off', error: '', idle: '' }[syncStatus]
   const [error, setError] = useState('')
   const [loading, setLoading] = useState(true)
   const [attempt, setAttempt] = useState(0)
@@ -50,10 +48,6 @@ export default function Games() {
         if (!live) return
         setGames(list)
         setOfficial(teams.filter((t) => officialLeagues.has(t.leagueId)).map((team) => ({ team, league: leagues.find((l) => l.id === team.leagueId)! })))
-        // Mock calendar for now; the native plugin replaces it in a later PR (see src/calendar/index.ts).
-        const res = await syncGames(calendar, list, useStore.getState().eventIds, { goBaseUrl: FUNCTIONS_URL })
-        if (!live) return
-        if (res.granted) { setSync(res.ids, res.calendarId); setSynced('Synced just now') } else setSynced('Calendar access is off')
       } catch { if (live) setError('Could not load your games.') } finally { if (live) setLoading(false) }
     })()
     return () => { live = false }
