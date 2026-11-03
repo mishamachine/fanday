@@ -1,7 +1,7 @@
 import 'jsr:@supabase/functions-js/edge-runtime.d.ts'
 import { createClient } from 'https://esm.sh/@supabase/supabase-js@2.118.0'
 import { parseGoPath, resolveTarget } from './target.ts'
-import { makeLimiter } from './ratelimit.ts'
+import { clientKey, makeLimiter } from './ratelimit.ts'
 
 // GET /functions/v1/go/{game}/{slot}  (slot: watch | tickets | sponsor)
 // Calendar events carry this link instead of the partner URL, so partners can be swapped without rewriting events
@@ -28,7 +28,7 @@ Deno.serve(async (req) => {
   const target = resolveTarget(row as never, parsed.slot)
   if (!target) return new Response('Not found', { status: 404 })
 
-  const caller = req.headers.get('x-forwarded-for')?.split(',')[0].trim() || 'unknown'
+  const caller = clientKey(req.headers, Number(Deno.env.get('TRUSTED_PROXY_HOPS')) || 1) // platform-set, not the client's first XFF entry
   if (allowCount(caller)) {
     // Best effort: a failed count must never block the redirect.
     const { error: cErr } = await admin.rpc('record_link_click', { p_game: parsed.gameId, p_slot: parsed.slot })

@@ -1,6 +1,6 @@
 import { webcrypto as crypto } from 'node:crypto'
 import { eq, ok, done } from './_t.mjs'
-import { appleConfigFrom, appleClientSecret, revokeAppleAuthorization, appleGate } from '../supabase/functions/delete-account/apple.ts'
+import { appleConfigFrom, appleClientSecret, revokeAppleAuthorization, appleGate, allowedRedirectUris } from '../supabase/functions/delete-account/apple.ts'
 
 // A throwaway P-256 key made right here for the test. Not a real Apple key.
 const kp = await crypto.subtle.generateKey({ name: 'ECDSA', namedCurve: 'P-256' }, true, ['sign', 'verify'])
@@ -21,17 +21,33 @@ eq('claims', dec(b), { iss: 'TEAM123456', iat: 1_800_000_000, exp: 1_800_000_300
 ok('signature verifies with the public key', await crypto.subtle.verify({ name: 'ECDSA', hash: 'SHA-256' }, kp.publicKey, Buffer.from(s, 'base64url'), new TextEncoder().encode(`${h}.${b}`)))
 
 // Revoke flow against a fake Apple.
+const idToken = (sub) => `x.${Buffer.from(JSON.stringify({ sub })).toString('base64url')}.y`
 const calls = []
-const fakeApple = (tokenOk, revokeOk) => async (url, init) => {
+const fakeApple = (tokenOk, revokeOk, sub = 'APPLE-SUB-1') => async (url, init) => {
   calls.push([String(url), Object.fromEntries(init.body)])
-  if (String(url).endsWith('/auth/token')) return new Response(JSON.stringify({ refresh_token: 'RT' }), { status: tokenOk ? 200 : 400 })
+  if (String(url).endsWith('/auth/token')) return new Response(JSON.stringify({ refresh_token: 'RT', id_token: idToken(sub) }), { status: tokenOk ? 200 : 400 })
   return new Response('', { status: revokeOk ? 200 : 400 })
 }
-eq('revoke ok', await revokeAppleAuthorization(cfg, 'com.bbprojectfactory.fanday', 'CODE', fakeApple(true, true)), true)
+const SUB = { expectedSub: 'APPLE-SUB-1' }
+eq('revoke ok', await revokeAppleAuthorization(cfg, 'com.bbprojectfactory.fanday', 'CODE', SUB, fakeApple(true, true)), 'revoked')
 eq('exchanged the code, then revoked the refresh token', [calls[0][0], calls[0][1].code, calls[1][0], calls[1][1].token, calls[1][1].token_type_hint],
   ['https://appleid.apple.com/auth/token', 'CODE', 'https://appleid.apple.com/auth/revoke', 'RT', 'refresh_token'])
-eq('bad code: false, no revoke call', await revokeAppleAuthorization(cfg, 'x', 'BAD', fakeApple(false, true)), false)
-eq('revoke rejected: false', await revokeAppleAuthorization(cfg, 'x', 'CODE', fakeApple(true, false)), false)
+eq('native flow: no redirect_uri sent', 'redirect_uri' in calls[0][1], false)
+calls.length = 0
+const web = 'https://smhddbnctlkbwppzrsry.supabase.co/auth/v1/callback'
+await revokeAppleAuthorization(cfg, 'com.example.services', 'CODE', { ...SUB, redirectUri: web }, fakeApple(true, true))
+eq('web flow: redirect_uri sent on /auth/token, exactly as given', calls[0][1].redirect_uri, web)
+calls.length = 0
+eq('id_token sub of another Apple account: mismatch', await revokeAppleAuthorization(cfg, 'x', 'CODE', SUB, fakeApple(true, true, 'SOMEONE-ELSE')), 'mismatch')
+eq('...and nothing was revoked', calls.map((c) => c[0].split('/').pop()), ['token'])
+eq('missing expected sub: mismatch, not revoke', await revokeAppleAuthorization(cfg, 'x', 'CODE', { expectedSub: '' }, fakeApple(true, true)), 'mismatch')
+eq('bad code: failed', await revokeAppleAuthorization(cfg, 'x', 'BAD', SUB, fakeApple(false, true)), 'failed')
+eq('revoke rejected: failed', await revokeAppleAuthorization(cfg, 'x', 'CODE', SUB, fakeApple(true, false)), 'failed')
+
+// Redirect allow-list.
+eq('default allow-list is the project auth callback', allowedRedirectUris(env({ SUPABASE_URL: 'https://p.supabase.co/' })), ['https://p.supabase.co/auth/v1/callback'])
+eq('APPLE_REDIRECT_URIS overrides', allowedRedirectUris(env({ SUPABASE_URL: 'https://p.supabase.co', APPLE_REDIRECT_URIS: 'https://a.example/cb, https://b.example/cb' })), ['https://a.example/cb', 'https://b.example/cb'])
+eq('nothing configured: empty (web flow refused)', allowedRedirectUris(env({})), [])
 
 // Fail closed: an Apple user is never deleted unless secrets exist and a code was sent.
 eq('non-Apple user passes with no secrets', appleGate(false, null, undefined).ok, true)

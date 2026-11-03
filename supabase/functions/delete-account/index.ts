@@ -1,8 +1,8 @@
 import 'jsr:@supabase/functions-js/edge-runtime.d.ts'
 import { createClient } from 'https://esm.sh/@supabase/supabase-js@2.118.0'
-import { appleConfigFrom, appleGate, REVOKE_FAILED, revokeAppleAuthorization } from './apple.ts'
+import { allowedRedirectUris, appleConfigFrom, appleGate, BAD_REDIRECT, REVOKE_FAILED, REVOKE_MISMATCH, revokeAppleAuthorization } from './apple.ts'
 
-// POST { confirm: 'DELETE', apple_authorization_code?, apple_client_id? } with the user's bearer token.
+// POST { confirm: 'DELETE', apple_authorization_code?, apple_client_id?, apple_redirect_uri? } with the user's bearer token.
 // 1. FAILS CLOSED for Apple users: if the account has an Apple identity, the Apple secrets (APPLE_TEAM_ID, APPLE_KEY_ID,
 //    APPLE_PRIVATE_KEY) must exist, the app must send a fresh authorization code (iOS: native sheet; web/Android: Sign in
 //    with Apple JS popup, client id = Services ID), and Apple must accept the revoke. Otherwise we return an error and
@@ -43,7 +43,19 @@ Deno.serve(async (req) => {
       // Only our own bundle id or Services ID may be used as the client id.
       const allowed = [BUNDLE_ID, Deno.env.get('APPLE_SERVICES_ID')].filter(Boolean)
       const clientId = allowed.includes(b.apple_client_id) ? b.apple_client_id : BUNDLE_ID
-      appleRevoked = await revokeAppleAuthorization(cfg, clientId, b.apple_authorization_code).catch((e) => { console.error('apple revoke', e); return false })
+      // Web/JS flow (Services ID): Apple needs the exact redirect_uri the client used, and we only accept known ones.
+      let redirectUri: string | undefined
+      if (clientId !== BUNDLE_ID) {
+        if (typeof b.apple_redirect_uri !== 'string' || !allowedRedirectUris((k) => Deno.env.get(k)).includes(b.apple_redirect_uri)) {
+          return json({ code: BAD_REDIRECT.code, error: BAD_REDIRECT.error }, BAD_REDIRECT.status)
+        }
+        redirectUri = b.apple_redirect_uri
+      }
+      const ident = (user.identities ?? []).find((i) => i.provider === 'apple')
+      const expectedSub = String((ident?.identity_data as { sub?: string } | undefined)?.sub ?? ident?.id ?? '')
+      const res = await revokeAppleAuthorization(cfg, clientId, b.apple_authorization_code, { redirectUri, expectedSub }).catch((e) => { console.error('apple revoke', e); return 'failed' as const })
+      appleRevoked = res === 'revoked'
+      if (res === 'mismatch') { console.error('delete-account: Apple sub mismatch for user', user.id); return json({ code: REVOKE_MISMATCH.code, error: REVOKE_MISMATCH.error }, REVOKE_MISMATCH.status) }
       if (!appleRevoked) { console.error('delete-account: Apple revoke failed for user', user.id); return json({ code: REVOKE_FAILED.code, error: REVOKE_FAILED.error }, REVOKE_FAILED.status) }
     }
 

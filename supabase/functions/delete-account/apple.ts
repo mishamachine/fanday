@@ -28,17 +28,47 @@ export async function appleClientSecret(cfg: AppleConfig, clientId: string, nowS
 }
 
 export type Fetch = typeof fetch
+export type RevokeResult = 'revoked' | 'failed' | 'mismatch'
 
-/** Exchange the one-time authorization code for a refresh token, then revoke it. Returns true when Apple accepted the revoke. */
-export async function revokeAppleAuthorization(cfg: AppleConfig, clientId: string, authorizationCode: string, f: Fetch = fetch): Promise<boolean> {
+const jwtPayload = (jwt: string): Record<string, unknown> | null => {
+  try {
+    const p = jwt.split('.')[1].replace(/-/g, '+').replace(/_/g, '/')
+    return JSON.parse(new TextDecoder().decode(Uint8Array.from(atob(p.padEnd(Math.ceil(p.length / 4) * 4, '=')), (c) => c.charCodeAt(0))))
+  } catch { return null }
+}
+
+export interface RevokeOpts {
+  /** Required for codes from the web/JS flow (client id = Services ID): must equal the redirect_uri the client used. */
+  redirectUri?: string
+  /** The user's Apple identity id (Supabase identity_data.sub). The id_token's sub must match before anything is revoked. */
+  expectedSub: string
+}
+
+/**
+ * Exchange the one-time authorization code for tokens, check the id_token belongs to THIS user, then revoke.
+ * 'mismatch' = the code was for a different Apple account (nothing revoked); 'failed' = Apple refused or was unreachable.
+ * The id_token comes straight from Apple over TLS in this response, so its signature is not re-verified here.
+ */
+export async function revokeAppleAuthorization(cfg: AppleConfig, clientId: string, authorizationCode: string, opts: RevokeOpts, f: Fetch = fetch): Promise<RevokeResult> {
   const secret = await appleClientSecret(cfg, clientId)
   const form = (o: Record<string, string>) => ({ method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: new URLSearchParams(o) })
-  const tok = await f('https://appleid.apple.com/auth/token', form({ client_id: clientId, client_secret: secret, code: authorizationCode, grant_type: 'authorization_code' }))
-  if (!tok.ok) return false
-  const { refresh_token } = await tok.json().catch(() => ({}))
-  if (!refresh_token) return false
+  const exchange: Record<string, string> = { client_id: clientId, client_secret: secret, code: authorizationCode, grant_type: 'authorization_code' }
+  if (opts.redirectUri) exchange.redirect_uri = opts.redirectUri
+  const tok = await f('https://appleid.apple.com/auth/token', form(exchange))
+  if (!tok.ok) return 'failed'
+  const { refresh_token, id_token } = await tok.json().catch(() => ({}))
+  if (!refresh_token || !id_token) return 'failed'
+  const sub = jwtPayload(id_token)?.sub
+  if (typeof sub !== 'string' || !opts.expectedSub || sub !== opts.expectedSub) return 'mismatch'
   const rev = await f('https://appleid.apple.com/auth/revoke', form({ client_id: clientId, client_secret: secret, token: refresh_token, token_type_hint: 'refresh_token' }))
-  return rev.ok
+  return rev.ok ? 'revoked' : 'failed'
+}
+
+/** Redirect URIs the server accepts from the web flow: APPLE_REDIRECT_URIS (comma list) or the project's Supabase auth callback. */
+export function allowedRedirectUris(env: (k: string) => string | undefined): string[] {
+  const list = (env('APPLE_REDIRECT_URIS') ?? '').split(',').map((x) => x.trim()).filter(Boolean)
+  const url = env('SUPABASE_URL')?.replace(/\/$/, '')
+  return list.length ? list : url ? [`${url}/auth/v1/callback`] : []
 }
 
 export type Gate = { ok: true } | { ok: false; status: number; code: string; error: string }
@@ -51,3 +81,5 @@ export function appleGate(hasApple: boolean, cfg: AppleConfig | null, authorizat
   return { ok: true }
 }
 export const REVOKE_FAILED: Gate = { ok: false, status: 502, code: 'apple_revoke_failed', error: 'Apple did not confirm the removal. Nothing was deleted. Please try again.' }
+export const REVOKE_MISMATCH: Gate = { ok: false, status: 403, code: 'apple_identity_mismatch', error: 'That Apple account is not the one linked to this account. Nothing was deleted.' }
+export const BAD_REDIRECT: Gate = { ok: false, status: 400, code: 'apple_redirect_not_allowed', error: 'Apple confirmation could not be verified. Nothing was deleted.' }

@@ -1,12 +1,13 @@
 // Sign in with Apple JS: gets a fresh one-time authorization code on web and Android (where there is no native Apple
 // sheet) so delete-account can revoke the Apple grant server-side. Popup mode; the redirect URI is the Supabase callback
 // already registered as a Return URL for the Services ID (auth-setup-checklist.md section 2). Not yet run against Apple [unverified].
+import { randomNonce } from './authUtil.ts'
 const SRC = 'https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/en_US/appleid.auth.js'
 
 interface AppleIDGlobal {
   auth: {
-    init(cfg: { clientId: string; scope: string; redirectURI: string; usePopup: boolean }): void
-    signIn(): Promise<{ authorization: { code: string } }>
+    init(cfg: { clientId: string; scope: string; redirectURI: string; state: string; nonce: string; usePopup: boolean }): void
+    signIn(): Promise<{ authorization: { code: string; state?: string } }>
   }
 }
 
@@ -22,11 +23,14 @@ function loadScript(): Promise<AppleIDGlobal> {
   })
 }
 
+/** Fresh code for account deletion. state and nonce are random per call; the state Apple returns must match ours. */
 export async function getAppleWebAuthorizationCode(servicesId: string, redirectURI: string): Promise<string> {
   const apple = await loadScript()
-  apple.auth.init({ clientId: servicesId, scope: '', redirectURI, usePopup: true })
+  const state = randomNonce(), nonce = randomNonce()
+  apple.auth.init({ clientId: servicesId, scope: '', redirectURI, state, nonce, usePopup: true })
   try {
     const res = await apple.auth.signIn()
+    if (res.authorization.state !== state) throw new Error('state')
     return res.authorization.code
   } catch (e) {
     const code = (e as { error?: string }).error

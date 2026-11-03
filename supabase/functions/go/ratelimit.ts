@@ -12,3 +12,17 @@ export function makeLimiter(max: number, windowMs: number, maxKeys = 5000) {
     return h.n <= max
   }
 }
+
+/**
+ * Rate-limit key from request headers. The FIRST x-forwarded-for entry is whatever the client sent, so it is never used.
+ * Order: cf-connecting-ip (set by the platform's Cloudflare edge, which overwrites client values), else the entry the
+ * trusted proxy chain appended: `hops` from the right (default 1 = the last entry). Hosted Supabase's exact header
+ * behaviour is not documented [unverified]; set TRUSTED_PROXY_HOPS if more than one proxy appends. With no usable
+ * header all callers share one 'unknown' bucket, which only means fewer counted clicks, never a blocked redirect.
+ */
+export function clientKey(h: { get(name: string): string | null }, hops = 1): string {
+  const cf = h.get('cf-connecting-ip')?.trim()
+  if (cf) return cf
+  const parts = (h.get('x-forwarded-for') ?? '').split(',').map((x) => x.trim()).filter(Boolean)
+  return parts[parts.length - Math.max(1, hops)] ?? 'unknown'
+}
