@@ -3,7 +3,8 @@ import { useNavigate, useParams } from 'react-router-dom'
 import { Browser } from '@capacitor/browser'
 import { data, type Team } from '../data/index.ts'
 import { TopBar } from '../components/ui.tsx'
-import { isNative } from '../lib/env.ts'
+import { isNative, platform } from '../lib/env.ts'
+import { officialCalendarTarget } from '../lib/officialCalendar.ts'
 
 /** NBA / NHL: Wikipedia has no start times, so one tap hands the team's own calendar link to the phone. */
 export default function OfficialCalendar() {
@@ -17,10 +18,9 @@ export default function OfficialCalendar() {
 
   async function add() {
     if (!team?.officialCalendarUrl) return
-    // webcal:// opens the system calendar's subscribe sheet; the phone keeps the feed current.
-    const url = team.officialCalendarUrl.replace(/^https?:/, 'webcal:')
-    if (isNative) await Browser.open({ url })
-    else window.location.href = url
+    const url = officialCalendarTarget(team.officialCalendarUrl, platform)
+    if (isNative) await Browser.open({ url }) // system browser; webcal:// hands off to the calendar app on iOS
+    else window.open(url, '_blank', 'noopener')
   }
 
   return (

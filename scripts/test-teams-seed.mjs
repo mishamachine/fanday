@@ -13,7 +13,15 @@ ok('every team belongs to a known league', teams.every((t) => LEAGUES.some((l) =
 eq('team ids unique', new Set(teams.map((t) => t.id)).size, teams.length)
 ok('short names unique within a league (ingest matches on them)', Object.keys(want).every((l) => new Set(by(l).map((t) => t.short_name)).size === by(l).length))
 ok('short names are neutral text', teams.every((t) => /^[A-Z0-9]{2,4}$/.test(t.short_name)))
-ok('NBA/NHL: no wiki_page, official link slot present', [...by('nba'), ...by('nhl')].every((t) => t.wiki_page === null && 'official_calendar_url' in t))
+ok('NBA/NHL: no wiki_page', [...by('nba'), ...by('nhl')].every((t) => t.wiki_page === null))
+const links = JSON.parse(readFileSync(new URL('../supabase/seed/official-calendar-links.json', import.meta.url), 'utf8'))
+const alias = { 'LA Clippers': 'Los Angeles Clippers' }
+const linkFor = (l, name) => links.find((x) => x.league === l && (alias[x.team] ?? x.team) === name)?.url
+const lacking = [...by('nba'), ...by('nhl')].filter((t) => !t.official_calendar_url).map((t) => t.name)
+eq('every NBA and NHL team has an official calendar URL', lacking, [])
+ok('URLs are https and equal the verified links file', [...by('nba'), ...by('nhl')].every((t) => /^https:\/\//.test(t.official_calendar_url) && t.official_calendar_url === linkFor(t.league_id, t.name)))
+eq('links file has 62 entries, all verified 2026-11-03', [links.length, links.every((x) => x.verified_on === '2026-11-03')], [62, true])
+ok('only NBA/NHL teams carry an official URL', teams.filter((t) => !['nba', 'nhl'].includes(t.league_id)).every((t) => t.official_calendar_url === null))
 ok('all other teams have a wiki_page', teams.filter((t) => !['nba', 'nhl'].includes(t.league_id)).every((t) => t.wiki_page))
 ok('NCAA stems end in "football" / "basketball" (ingest appends " team")', by('ncaaf').every((t) => /football$/.test(t.wiki_page)) && by('ncaab').every((t) => /basketball$/.test(t.wiki_page)))
 const ars = (l) => by(l).find((t) => t.name === 'Arsenal')
