@@ -1,38 +1,27 @@
 import type { Game, Team } from './types.ts'
 import { LEAGUES } from './leagues.ts'
 
-// MOCK DATA. Placeholder teams so every league can be explored before the ingest fills the `teams` table.
-// Names are plain text; badges are neutral abbreviations. No logos, no league or team imagery.
-const T: Record<string, Array<[string, string]>> = {
-  epl: [['ARS', 'Arsenal'], ['CHE', 'Chelsea'], ['LIV', 'Liverpool'], ['MCI', 'Manchester City'], ['MUN', 'Manchester United'], ['TOT', 'Tottenham']],
-  nfl: [['KC', 'Chiefs'], ['DEN', 'Broncos'], ['LV', 'Raiders'], ['SF', '49ers'], ['DAL', 'Cowboys'], ['PHI', 'Eagles']],
-  nba: [['LAL', 'Lakers'], ['BOS', 'Celtics'], ['GSW', 'Warriors'], ['NYK', 'Knicks']],
+import { SEED_TEAMS } from './teams.ts'
+
+// Teams: the real seed (src/data/teams.ts) wherever it has any. PLACEHOLDER teams below only fill leagues the seed does
+// not cover yet (WNBA, MLB, Liga MX, Brasileirao, IPL, NRL); they do not exist in the database. Names are plain text and
+// badges are neutral abbreviations: no logos, no league or team imagery.
+const PLACEHOLDER: Record<string, Array<[string, string]>> = {
   wnba: [['SEA', 'Storm'], ['LVA', 'Aces'], ['NYL', 'Liberty']],
   mlb: [['LAD', 'Dodgers'], ['NYY', 'Yankees'], ['BOS', 'Red Sox']],
-  nhl: [['BOS', 'Bruins'], ['TOR', 'Maple Leafs'], ['EDM', 'Oilers'], ['NYR', 'Rangers']],
-  mls: [['MIA', 'Inter Miami'], ['LAFC', 'LAFC'], ['SEA', 'Sounders']],
-  ncaaf: [['ALA', 'Alabama'], ['OSU', 'Ohio State'], ['MICH', 'Michigan']],
-  ncaab: [['DUKE', 'Duke'], ['UNC', 'North Carolina'], ['KU', 'Kansas']],
-  laliga: [['BAR', 'Barcelona'], ['RMA', 'Real Madrid'], ['ATM', 'Atletico Madrid']],
-  seriea: [['JUV', 'Juventus'], ['INT', 'Inter'], ['MIL', 'Milan']],
-  bundesliga: [['BAY', 'Bayern Munich'], ['BVB', 'Dortmund'], ['LEV', 'Leverkusen']],
-  ligue1: [['PSG', 'Paris Saint-Germain'], ['OM', 'Marseille'], ['LYO', 'Lyon']],
-  ucl: [['RMA', 'Real Madrid'], ['BAY', 'Bayern Munich'], ['ARS', 'Arsenal']],
   ligamx: [['AME', 'America'], ['CHI', 'Guadalajara'], ['TIG', 'Tigres']],
   brasileirao: [['FLA', 'Flamengo'], ['PAL', 'Palmeiras'], ['COR', 'Corinthians']],
   ipl: [['MI', 'Mumbai'], ['CSK', 'Chennai'], ['RCB', 'Bengaluru']],
-  afl: [['COL', 'Collingwood'], ['GEE', 'Geelong'], ['SYD', 'Sydney']],
   nrl: [['PEN', 'Panthers'], ['BRO', 'Broncos'], ['STO', 'Storm']],
 }
+const seeded = new Set(SEED_TEAMS.map((t) => t.leagueId))
 
-export const MOCK_TEAMS: Team[] = LEAGUES.flatMap((l) =>
-  (T[l.id] ?? []).map(([short, name]) => ({
-    id: `${l.id}-${short.toLowerCase()}`,
-    leagueId: l.id,
-    name,
-    shortName: short,
-    officialCalendarUrl: l.source === 'official_link' ? `https://example.invalid/${l.id}/${short.toLowerCase()}.ics` : null,
-  })))
+export const MOCK_TEAMS: Team[] = [
+  ...SEED_TEAMS,
+  ...LEAGUES.filter((l) => !seeded.has(l.id)).flatMap((l) => (PLACEHOLDER[l.id] ?? []).map(([short, name]) => ({
+    id: `${l.id}-${short.toLowerCase()}`, leagueId: l.id, name, shortName: short, officialCalendarUrl: null,
+  }))),
+]
 
 const DAY = 86_400_000
 const iso = (ms: number) => new Date(ms).toISOString()
@@ -46,10 +35,10 @@ export function mockGames(now: Date = new Date()): Game[] {
     previousKickoffAt: null, watchUrl: null, ticketsUrl: null, sponsorText: null, sponsorUrl: null, ...o,
   })
   return [
-    g({ id: 'mock-1', leagueId: 'nfl', sport: 'american_football', homeTeamId: 'nfl-kc', awayTeamId: 'nfl-den', homeName: 'Chiefs', awayName: 'Broncos',
+    g({ id: 'mock-1', leagueId: 'nfl', sport: 'american_football', homeTeamId: 'nfl-kansas-city-chiefs', awayTeamId: 'nfl-denver-broncos', homeName: 'Chiefs', awayName: 'Broncos',
       countryCode: 'US', at: t0 + 3 * DAY + 20.25 * 3_600_000, previousKickoffAt: iso(t0 + 3 * DAY + 19.33 * 3_600_000),
       venue: 'Arrowhead Stadium', broadcast: 'CBS', watchUrl: 'https://example.invalid/watch', ticketsUrl: 'https://example.invalid/tickets' }),
-    g({ id: 'mock-2', leagueId: 'epl', sport: 'soccer', homeTeamId: 'epl-ars', awayTeamId: 'epl-che', homeName: 'Arsenal', awayName: 'Chelsea',
+    g({ id: 'mock-2', leagueId: 'epl', sport: 'soccer', homeTeamId: 'epl-arsenal', awayTeamId: 'epl-chelsea', homeName: 'Arsenal', awayName: 'Chelsea',
       countryCode: 'GB', at: t0 + 5 * DAY + 12.5 * 3_600_000, venue: 'Emirates Stadium', broadcast: 'Sky Sports' }),
     g({ id: 'mock-3', leagueId: 'ipl', sport: 'cricket', homeTeamId: 'ipl-mi', awayTeamId: 'ipl-csk', homeName: 'Mumbai', awayName: 'Chennai',
       countryCode: 'IN', at: t0 + 7 * DAY, kickoffAt: null, timeTbc: true }),

@@ -25,6 +25,10 @@ grant execute on function auth.uid() to anon, authenticated, service_role;
 await db.exec(read('migrations/0001_init.sql'))
 await db.exec(read('seed.sql'))
 await db.exec(read('seed.sql')) // idempotent
+await db.exec(read('seed_teams.sql')); await db.exec(read('seed_teams.sql')) // loads into the real schema, idempotent
+ok('teams seed: 324 rows, every league FK valid, Arsenal once per league', (await db.query('select count(*)::int c from public.teams')).rows[0].c === 324
+  && (await db.query(`select count(*)::int c from public.teams where id in ('epl-arsenal','ucl-arsenal')`)).rows[0].c === 2)
+ok('teams seed: NBA/NHL have no wiki_page; every other seeded team has one', (await db.query(`select count(*)::int c from public.teams where (league_id in ('nba','nhl')) <> (wiki_page is null)`)).rows[0].c === 0)
 await db.exec(`
 insert into auth.users (id, email, is_anonymous) values ('${A}','a@x.com',false), ('${B}','b@x.com',false), ('${ANON}',null,true), ('${ANON2}',null,true);
 insert into public.teams (id, league_id, name, short_name) values ('nfl-kc','nfl','Chiefs','KC'), ('nfl-den','nfl','Broncos','DEN'), ('epl-ars','epl','Arsenal','ARS');

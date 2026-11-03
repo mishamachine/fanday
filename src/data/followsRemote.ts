@@ -14,6 +14,7 @@ export async function saveRemoteFollows(userId: string, teamIds: string[]): Prom
   const have = await loadRemoteFollows()
   const gone = have.filter((t) => !keep.has(t))
   if (gone.length) await supabase.from('follows').delete().in('team_id', gone)
+  // One row at a time: placeholder teams (leagues the seed doesn't cover yet) don't exist in the database and would fail the whole batch.
   const add = teamIds.filter((t) => !have.includes(t))
-  if (add.length) await supabase.from('follows').insert(add.map((team_id) => ({ user_id: userId, team_id })))
+  await Promise.allSettled(add.map((team_id) => supabase!.from('follows').insert({ user_id: userId, team_id })))
 }
