@@ -22,19 +22,19 @@ for (const f of files) {
   if (/\b(drop|alter|truncate)\s+(table|schema|function|view|type|extension|role|policy)\s+(if\s+exists\s+)?(?!fanday\.)\S/i.test(sql.replace(/drop policy if exists \w+\s+on fanday\.\w+/gi, '').replace(/alter table fanday\./gi, 'ALTER_OK'))) bad.push('drop/alter/truncate outside fanday')
   if (/\bon\s+schema\s+(?!fanday\b)/i.test(sql)) bad.push('grant/revoke on another schema')
   if (/\bcreate\s+(extension|role|user)\b/i.test(sql)) bad.push('creates extension/role')
-  const authRefs = [...sql.matchAll(/\bauth\.(\w+)/gi)].map((m) => m[1].toLowerCase()).filter((x) => !['users', 'uid'].includes(x))
+  const authRefs = [...sql.matchAll(/\bauth\.(\w+)/gi)].map((m) => m[1].toLowerCase()).filter((x) => !['users', 'uid', 'identities'].includes(x))
   if (authRefs.length) bad.push(`touches auth.${authRefs.join(',')}`)
   ok(`lint ${f}: only fanday objects`, bad.length === 0, bad.join('; '))
 }
 // auth.users is only ever read: no insert/update/delete/alter on it
-ok('auth.users is only read (no write statement)', !files.some((f) => /\b(insert\s+into|update|delete\s+from|alter\s+table)\s+auth\./i.test(strip(read(f)))))
+ok('auth.users and auth.identities are only read (no write statement)', !files.some((f) => /\b(insert\s+into|update|delete\s+from|alter\s+table)\s+auth\./i.test(strip(read(f)))))
 // every function is SECURITY DEFINER with an empty search_path, or SECURITY INVOKER with an empty search_path
 const fnBlocks = strip(read('migrations/fanday_0001_init.sql') + read('migrations/fanday_0002_ingest.sql')).split(/create or replace function /i).slice(1)
 ok('every function sets search_path = \'\'', fnBlocks.length >= 20 && fnBlocks.every((b) => /set search_path = ''/.test(b.split(/\$\$|\$[a-z]*\$/)[0] + b.slice(0, 600))), `${fnBlocks.length} functions`)
 
 // ---- the proof
 const db = await makeStandIn()
-for (const [id, email, meta] of [[U.A, 'a@x.com', '{}'], [U.B, 'b@x.com', '{"fanday_created":true}'], [U.C, 'c@x.com', '{}'], [U.D, 'd@x.com', '{"fanday_created":true}']]) {
+for (const [id, email, meta] of [[U.A, 'a@x.com', '{}'], [U.B, 'b@x.com', '{}'], [U.C, 'c@x.com', '{}'], [U.D, 'd@x.com', '{}']]) {
   await db.exec(`insert into auth.users (id, email, raw_app_meta_data) values ('${id}','${email}','${meta}')`)
 }
 await db.exec(`insert into public.user_progress (user_id, lesson_id) values ('${U.A}',1),('${U.C}',1); insert into public.user_settings (user_id, settings) values ('${U.A}','{"x":1}');
@@ -61,7 +61,7 @@ ok('CATALOG OUTSIDE fanday IS BYTE-IDENTICAL after apply + 2 reapplies', before 
 const fan = (await db.query(`select (select count(*)::int from pg_class c join pg_namespace n on n.oid=c.relnamespace where n.nspname='fanday' and c.relkind='r') t,
   (select count(*)::int from pg_proc p join pg_namespace n on n.oid=p.pronamespace where n.nspname='fanday') f,
   (select count(*)::int from fanday.leagues) l, (select count(*)::int from fanday.teams) tm, (select count(*)::int from fanday.teams where tz is not null) tz`)).rows[0]
-ok('fanday got its tables, functions and seeds (14 tables, 19 leagues, 434 teams, 30 MLS zones)', fan.t === 14 && fan.f >= 20 && fan.l === 19 && fan.tm === 434 && fan.tz === 30, JSON.stringify(fan))
+ok('fanday got its tables, functions and seeds (15 tables, 19 leagues, 434 teams, 30 MLS zones)', fan.t === 15 && fan.f >= 20 && fan.l === 19 && fan.tm === 434 && fan.tz === 30, JSON.stringify(fan))
 ok('no trigger on auth.users or on any fanday table (FK system triggers on auth.users are covered by the snapshot: unchanged)', (await db.query(`select count(*)::int c from pg_trigger t join pg_class c on c.oid=t.tgrelid join pg_namespace n on n.oid=c.relnamespace
   where not t.tgisinternal and ((n.nspname='auth' and c.relname='users') or n.nspname='fanday')`)).rows[0].c === 0)
 ok('nothing fanday owns lives in public', (await db.query(`select count(*)::int c from pg_depend d join pg_proc p on p.oid=d.objid where false`)).rows[0].c === 0

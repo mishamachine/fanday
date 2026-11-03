@@ -15,15 +15,16 @@ ok('email: subject starts with "Fanday:"', SUBJECT.startsWith('Fanday:'))
 
 // ---- handler with fakes
 function world({ existing = [], failSend = false } = {}) {
-  const w = { users: new Set(existing), created: [], links: [], sent: [], counters: new Map(), salt: 'salt-1', errors: [] }
+  const w = { users: new Set(existing), created: [], links: [], sent: [], origins: [], counters: new Map(), salt: 'salt-1', errors: [] }
   w.deps = {
     rpc: async (fn, a) => {
       if (fn === 'rl_salt') return { data: w.salt, error: null }
       if (fn === 'rl_hit') { const k = `${a.p_scope}|${a.p_key}|${a.p_window}`; const n = (w.counters.get(k) ?? 0) + 1; w.counters.set(k, n); return { data: n <= a.p_limit, error: null } }
       if (fn === 'auth_user_id_by_email') return { data: w.users.has(a.p_email) ? 'uid' : null, error: null }
+      if (fn === 'set_user_origin') { w.origins.push([a.p_user, a.p_created]); return { data: null, error: null } }
       return { data: null, error: { message: 'unknown' } }
     },
-    createUser: async (e) => { w.users.add(e); w.created.push({ email: e, app_metadata: { fanday_created: true } }) },
+    createUser: async (e) => { w.users.add(e); w.created.push({ email: e }); return `uid-${e}` },
     generateLink: async (e) => { w.links.push(e); return `hash-${e}` },
     send: async (m) => { if (failSend) throw new Error('smtp down'); w.sent.push(m) },
     template: { subject: SUBJECT, html: TEMPLATE_HTML },
@@ -40,7 +41,7 @@ const known = await j(await call(w, { email: 'known@x.com', redirect: NATIVE }))
 const fresh = await j(await call(w, { email: 'new@x.com', redirect: NATIVE }, { 'x-forwarded-for': '1.1.1.1, 2.2.2.2' }))
 const junk = await j(await call(w, { email: 'not-an-email', redirect: NATIVE }))
 eq('same reply for an existing address, a new address and a malformed one', [known, fresh, junk].map((x) => [x.status, x.body]), [[200, GENERIC], [200, GENERIC], [200, GENERIC]])
-eq('only the NEW address is created, with fanday_created = true; the existing user is not touched', w.created, [{ email: 'new@x.com', app_metadata: { fanday_created: true } }])
+eq('only the NEW address is created and recorded in fanday.user_origin as created_by_fanday; the existing user is not touched', [w.created, w.origins], [[{ email: 'new@x.com' }], [['uid-new@x.com', true]]])
 eq('a link is sent to both real addresses, none to the malformed one', w.sent.map((m) => m.to), ['known@x.com', 'new@x.com'])
 ok('mail: subject starts "Fanday:", link carries token_hash, redirect honoured', w.sent.every((m) => m.subject.startsWith('Fanday:') && m.text.includes(`${NATIVE}?token_hash=hash-`) && m.html.includes('token_hash=hash-')))
 

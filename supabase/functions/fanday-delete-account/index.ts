@@ -10,7 +10,7 @@ import { deleteAccount } from './delete.ts'
 //    FANDAY_APPLE_PRIVATE_KEY) must exist, the app must send a fresh authorization code, and Apple must accept the revoke. Otherwise we
 //    return an error and delete NOTHING.
 // 2. Always delete every Fanday row of the user.
-// 3. Delete the auth user ONLY IF app_metadata.fanday_created = true AND the user has no rows in any table outside `fanday`.
+// 3. Delete the auth user ONLY IF fanday.user_origin.created_by_fanday is true AND the user has no rows in any table outside `fanday`.
 //    Otherwise keep the auth user and unlink the Apple identity Fanday added.
 const CORS = { 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type' }
 const json = (body: unknown, status = 200) => new Response(JSON.stringify(body), { status, headers: { ...CORS, 'Content-Type': 'application/json' } })

@@ -9,7 +9,8 @@ for (const f of ['migrations/fanday_0001_init.sql', 'migrations/fanday_0002_inge
 const mk = (n) => `${n}${n}${n}${n}${n}${n}${n}${n}-0000-4000-8000-00000000000${n}`
 const [P1, P2, P3, P4, P5, P6, P7] = ['1', '2', '3', '4', '5', '6', '7'].map(mk)
 const user = async (id, created, apple = false) => {
-  await db.exec(`insert into auth.users (id, email, raw_app_meta_data) values ('${id}','${id.slice(0, 2)}@x.com','${created ? '{"fanday_created":true}' : '{}'}');
+  await db.exec(`insert into auth.users (id, email) values ('${id}','${id.slice(0, 2)}@x.com');
+    ${created ? `insert into fanday.user_origin (user_id, created_by_fanday) values ('${id}', true);` : `insert into fanday.user_origin (user_id, created_by_fanday) values ('${id}', false);`}
     insert into auth.identities (id, user_id, provider) values (gen_random_uuid(), '${id}', 'email'), ${apple ? `('${id.replace(/^../, 'ab')}','${id}','apple')` : `(gen_random_uuid(),'${id}','email2')`};
     insert into auth.sessions (user_id) values ('${id}');
     insert into fanday.profiles (user_id, email) values ('${id}','x'); insert into fanday.follows (user_id, team_id) values ('${id}','epl-arsenal');
@@ -47,6 +48,7 @@ ok('check: a brand-new table with a user_id column is caught (catalog-driven, no
   await db.exec(`create table public.newapp_things (id serial primary key, user_id uuid); insert into public.newapp_things (user_id) values ('${P6}')`)
   return (await dec(P6)).foreign_rows === true
 })())
+ok('check: no origin row at all -> treated as not created by Fanday', await (async () => { await db.exec(`insert into auth.users (id, email) values ('99999999-0000-4000-8000-000000000001','n@x.com')`); return (await dec('99999999-0000-4000-8000-000000000001')).deletable === false })())
 ok('check: unknown user -> not deletable; user_has_foreign_rows is service_role only', (await dec('99999999-9999-9999-9999-999999999999')).deletable === false
   && !!(await as('authenticated', P1, `select fanday.user_has_foreign_rows('${P1}')`)).error && !!(await as('anon', null, `select fanday.auth_user_deletable('${P1}')`)).error)
 
@@ -78,7 +80,8 @@ const P8 = '88888888-0000-4000-8000-000000000008'
 r = await deleteAccount(P8, deps({ failDelete: true }), { appleIdentityId: null })
 ok('a failed auth-user delete is reported (caller returns 500 and the client retries); the retry then succeeds', !r.ok && (await exists(P8))
   && (await deleteAccount(P8, deps(), { appleIdentityId: null })).authUserDeleted === true && !(await exists(P8)))
-ok('nothing of other users was touched by any delete', (await count('public.user_progress', P2)) === 1 && (await db.query(`select count(*)::int c from auth.users`)).rows[0].c === 6)
+ok('origin row is removed with the account (deleted user) and with an unlink', (await db.query(`select count(*)::int c from fanday.user_origin where user_id in ('${P1}','${P2}','${P8}')`)).rows[0].c === 0)
+ok('nothing of other users was touched by any delete', (await count('public.user_progress', P2)) === 1 && (await db.query(`select count(*)::int c from auth.users`)).rows[0].c === 7)
 
 // Signed-in claim token rows of a deleted user go too
 await db.exec(`insert into fanday.device_tokens (token_hash, claimed_by, claimed_at) values ('\\x0102', '${P3}', now())`)

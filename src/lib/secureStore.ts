@@ -1,31 +1,24 @@
-import { registerPlugin } from '@capacitor/core'
+import { SecureStoragePlugin } from 'capacitor-secure-storage-plugin'
 import { isNative } from './env.ts'
 
-// Secret storage for the device token: iOS Keychain / Android EncryptedSharedPreferences through a Capacitor plugin;
-// localStorage on web only. The plugin API below is that of `capacitor-secure-storage-plugin` (get/set/remove by key).
-// DEPENDENCY NOT ADDED BY THIS PR (needs Al-Jazari's OK): until it is installed and `cap sync`ed, native builds keep the token in memory
-// only, so a native install would re-register on every launch. It must land before a store build.
-interface SecureStoragePlugin {
-  get(o: { key: string }): Promise<{ value: string }>
-  set(o: { key: string; value: string }): Promise<{ value: boolean }>
-  remove(o: { key: string }): Promise<{ value: boolean }>
-}
-const plugin = registerPlugin<SecureStoragePlugin>('SecureStoragePlugin')
+// Secret storage for the device token: iOS Keychain / Android Keystore-backed encrypted storage through
+// capacitor-secure-storage-plugin (pinned); localStorage on web only. If the native call fails the token is kept in memory for this
+// launch (never written to localStorage on native), so a failure costs a re-registration, not a leak.
 const memory = new Map<string, string>()
 
 export const secureStore = {
   async get(key: string): Promise<string | null> {
     if (!isNative) { try { return localStorage.getItem(key) } catch { return null } }
-    try { return (await plugin.get({ key })).value || memory.get(key) || null } catch { return memory.get(key) ?? null }
+    try { return (await SecureStoragePlugin.get({ key })).value || memory.get(key) || null } catch { return memory.get(key) ?? null } // get() rejects for a missing key
   },
   async set(key: string, value: string): Promise<void> {
     if (!isNative) { try { localStorage.setItem(key, value) } catch { /* private mode */ } return }
     memory.set(key, value)
-    try { await plugin.set({ key, value }) } catch { /* plugin missing: memory only */ }
+    try { await SecureStoragePlugin.set({ key, value }) } catch { /* memory only */ }
   },
   async remove(key: string): Promise<void> {
     memory.delete(key)
     if (!isNative) { try { localStorage.removeItem(key) } catch { /* ignore */ } return }
-    try { await plugin.remove({ key }) } catch { /* ignore */ }
+    try { await SecureStoragePlugin.remove({ key }) } catch { /* missing key */ }
   },
 }

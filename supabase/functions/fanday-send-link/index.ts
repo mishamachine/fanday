@@ -16,9 +16,10 @@ Deno.serve((req) => {
   return handle(req, {
     rpc: (fn, args) => admin.rpc(fn, args),
     createUser: async (email) => {
-      const { error } = await admin.auth.admin.createUser({ email, email_confirm: true, app_metadata: { fanday_created: true } })
+      const { data, error } = await admin.auth.admin.createUser({ email, email_confirm: true })
       // A race with another sign-up for the same address is fine: the user exists, and generateLink below still works.
       if (error && !/already|registered|exists/i.test(error.message)) throw new Error('createUser failed')
+      return error ? null : (data.user?.id ?? null)
     },
     generateLink: async (email) => {
       const { data, error } = await admin.auth.admin.generateLink({ type: 'magiclink', email })

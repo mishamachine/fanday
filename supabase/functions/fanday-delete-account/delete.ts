@@ -17,10 +17,12 @@ export async function deleteAccount(userId: string, d: DeleteDeps, opts: { apple
   if (rows.error) return { ok: false, error: rows.error.message }
   if (deletable) {
     const err = await d.deleteAuthUser(userId)
-    if (err) return { ok: false, error: err }
+    if (err) return { ok: false, error: err }   // origin row kept, so the retry takes the same path
+    await d.rpc('delete_user_origin', { p_user: userId }) // best effort: purge_orphaned_user_rows sweeps it otherwise
     return { ok: true, authUserDeleted: true, appleUnlinked: null }
   }
   // Unlink only: the Fanday rows are gone, the auth user stays (another app may use it). Remove the Apple identity Fanday added.
+  await d.rpc('delete_user_origin', { p_user: userId })
   const unlinked = opts.appleIdentityId ? await d.unlinkIdentity(opts.appleIdentityId).catch(() => false) : null
   return { ok: true, authUserDeleted: false, appleUnlinked: unlinked }
 }

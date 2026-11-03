@@ -5,12 +5,12 @@ import { ALLOWED_REDIRECTS, buildLink, GENERIC, normalizeEmail, renderEmail } fr
 // which addresses have an account: not by the body, the status, nor (because the work runs after the reply) the timing.
 // Refused up front, before any work: a redirect that is not in ALLOWED_REDIRECTS (400) or a body that is not JSON (400).
 // Limits (counters only, nothing identifying stored): 10/hour per caller, 3/hour per address, 20/hour overall (Gmail stays far below its caps).
-// Link: Auth admin generateLink type 'magiclink' (GoTrue creates the user if missing; we create it first so we can set
-// app_metadata.fanday_created = true on users THIS function makes, which is what fanday-delete-account later relies on).
+// Link: Auth admin generateLink type 'magiclink'. A missing user is created by us first, and recorded in fanday.user_origin
+// (created_by_fanday = true) via set_user_origin; fanday-delete-account relies on that table. Nothing is written to auth app_metadata.
 
 export interface Deps {
   rpc: Rpc
-  createUser(email: string): Promise<void>                 // admin.createUser({ email, email_confirm: true, app_metadata: { fanday_created: true } })
+  createUser(email: string): Promise<string | null>        // admin.createUser({ email, email_confirm: true }) -> new user id (null if it already existed)
   generateLink(email: string): Promise<string | null>      // admin.generateLink({ type: 'magiclink', email }) -> properties.hashed_token
   send(msg: { to: string; subject: string; html: string; text: string }): Promise<void>
   template: { subject: string; html: string }
@@ -42,7 +42,10 @@ export async function handle(req: Request, d: Deps): Promise<Response> {
       if (!ok) return
       const found = await d.rpc('auth_user_id_by_email', { p_email: email })
       if (found.error) throw new Error('lookup failed')
-      if (!found.data) await d.createUser(email)
+      if (!found.data) {
+        const id = await d.createUser(email)
+        if (id) { const o = await d.rpc('set_user_origin', { p_user: id, p_created: true }); if (o.error) throw new Error('origin failed') }
+      }
       const hashed = await d.generateLink(email)
       if (!hashed) throw new Error('no link')
       const mail = renderEmail(d.template.html, buildLink(b.redirect as string, hashed))

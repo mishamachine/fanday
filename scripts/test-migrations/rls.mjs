@@ -40,6 +40,30 @@ ok('A can set prefs; cannot unlock Pro or rewrite email', (await as('authenticat
   && !!(await as('authenticated', A, `update fanday.profiles set pro_unlocked=true where user_id='${A}'`)).error
   && !!(await as('authenticated', A, `update fanday.profiles set email='evil@x.com' where user_id='${A}'`)).error)
 
+// ---- origin: who created the auth user (kept inside fanday)
+const mkUser = async (n, { age = '0 minutes', providers = ['google'] } = {}) => {
+  const id = `${n}${n}${n}${n}${n}${n}${n}${n}-0000-4000-8000-00000000000${n}`
+  await db.exec(`insert into auth.users (id, email, created_at) values ('${id}','o${n}@x.com', now() - interval '${age}');
+    ${providers.map((p) => `insert into auth.identities (user_id, provider) values ('${id}','${p}');`).join('')}`)
+  return id
+}
+const origin = async (id) => (await db.query(`select created_by_fanday c from fanday.user_origin where user_id='${id}'`)).rows[0]?.c ?? null
+const [O1, O2, O3, O4, O5, O6] = [await mkUser(1), await mkUser(2, { age: '1 hour' }), await mkUser(3), await mkUser(4, { providers: ['google', 'email'] }), await mkUser(5, { providers: ['apple'] }), await mkUser(6, { providers: ['email'] })]
+await db.exec(`insert into public.user_progress (user_id, lesson_id) values ('${O3}', 1)`)
+for (const o of [O1, O2, O3, O4, O5, O6]) await as('authenticated', o, 'select fanday.ensure_profile()')
+ok('origin: brand-new Google user with no other rows -> created_by_fanday = true; brand-new Apple-only user -> true', (await origin(O1)) === true && (await origin(O5)) === true)
+ok('origin: older than 10 minutes -> false', (await origin(O2)) === false)
+ok('origin: has a Woofabulary row -> false', (await origin(O3)) === false)
+ok('origin: identities beyond google/apple (email) -> false, also for an email-only user', (await origin(O4)) === false && (await origin(O6)) === false)
+await db.exec(`insert into public.user_progress (user_id, lesson_id) values ('${O1}', 1)`)
+await as('authenticated', O1, 'select fanday.ensure_profile()')
+ok('origin: recorded once, never overwritten by a later call', (await origin(O1)) === true)
+ok('origin: set_user_origin is service_role only and never overwrites', !!(await as('authenticated', O1, `select fanday.set_user_origin('${O1}', false)`)).error && !!(await as('anon', null, `select fanday.set_user_origin('${O1}', false)`)).error
+  && !(await svc(`select fanday.set_user_origin('${O1}', false)`)).error && (await origin(O1)) === true
+  && !(await svc(`select fanday.set_user_origin('99999999-0000-4000-8000-000000000009', true)`)).error && (await origin('99999999-0000-4000-8000-000000000009')) === true)
+ok('origin: table is closed to clients', String(await n('authenticated', O1, 'select 1 from fanday.user_origin')).startsWith('ERR:') && String(await n('anon', null, 'select 1 from fanday.user_origin')).startsWith('ERR:'))
+await db.exec(`delete from fanday.user_origin where user_id='99999999-0000-4000-8000-000000000009'; delete from fanday.profiles where user_id in ('${O1}','${O2}','${O3}','${O4}','${O5}','${O6}'); delete from fanday.user_origin where user_id in ('${O1}','${O2}','${O3}','${O4}','${O5}','${O6}')`)
+
 // ---- signed-in RLS (tables)
 await db.exec(`insert into fanday.follows (user_id, team_id) values ('${A}','nfl-kc-x'), ('${B}','nfl-den-x');
 insert into fanday.devices (id, user_id, platform) values ('bbbbbbbb-0000-0000-0000-00000000000a','${A}','ios'), ('bbbbbbbb-0000-0000-0000-00000000000b','${B}','android');

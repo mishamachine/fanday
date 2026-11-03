@@ -94,6 +94,15 @@ create table if not exists fanday.profiles (
   created_at              timestamptz not null default now()
 );
 
+-- Who created the auth user, kept INSIDE fanday (nothing is written to auth.users). Deleting the auth user on account deletion is allowed
+-- only when created_by_fanday is true (and the user owns nothing outside fanday). Written by fanday-send-link (users it creates) and
+-- by ensure_profile() (first Google/Apple sign-in); a row is never overwritten.
+create table if not exists fanday.user_origin (
+  user_id            uuid primary key,
+  created_by_fanday  boolean not null,
+  created_at         timestamptz not null default now()
+);
+
 -- One row per signed-out install. Only the sha256 of the 32-byte token is stored; the token itself lives on the phone.
 create table if not exists fanday.device_tokens (
   id           uuid primary key default gen_random_uuid(),
@@ -179,6 +188,7 @@ alter table fanday.sponsors       enable row level security;
 alter table fanday.games          enable row level security;
 alter table fanday.game_changes   enable row level security;
 alter table fanday.profiles       enable row level security;
+alter table fanday.user_origin    enable row level security;
 alter table fanday.device_tokens  enable row level security;
 alter table fanday.follows        enable row level security;
 alter table fanday.devices        enable row level security;
@@ -246,7 +256,7 @@ create policy usage_events_own_select on fanday.usage_events for select to authe
 
 -- ---------------------------------------------------------------- privileges (defence in depth beside RLS)
 revoke all on fanday.leagues, fanday.teams, fanday.sponsors, fanday.games, fanday.game_changes, fanday.profiles,
-  fanday.device_tokens, fanday.follows, fanday.devices, fanday.device_events, fanday.link_clicks, fanday.usage_events,
+  fanday.user_origin, fanday.device_tokens, fanday.follows, fanday.devices, fanday.device_events, fanday.link_clicks, fanday.usage_events,
   fanday.rate_counters, fanday.rl_salts from anon, authenticated;
 
 grant select on fanday.leagues, fanday.teams, fanday.sponsors, fanday.games, fanday.game_changes to anon, authenticated;
@@ -260,15 +270,27 @@ grant select, insert on fanday.usage_events to authenticated;
 grant all on all tables in schema fanday to service_role;
 grant usage, select on all sequences in schema fanday to service_role;
 
--- ---------------------------------------------------------------- signed-in users: lazy profile (replaces the auth.users triggers)
+-- ---------------------------------------------------------------- signed-in users: lazy profile and origin (replaces the auth.users triggers)
+-- Also records, once, whether Fanday created this auth user. It says true only if ALL hold: the auth user was created in the last
+-- 10 minutes; it owns no row outside fanday; its identities are only google and/or apple (so an email or other-app user is never claimed);
+-- and no origin row exists yet. Otherwise false. (Users made by fanday-send-link are recorded true by that function, via set_user_origin.)
 create or replace function fanday.ensure_profile() returns void
 language plpgsql security definer set search_path = '' as $$
-declare v_uid uuid := auth.uid();
+declare v_uid uuid := auth.uid(); v_created timestamptz; v_true boolean;
 begin
   if v_uid is null then raise exception 'not authenticated' using errcode = '28000'; end if;
   insert into fanday.profiles (user_id, email)
     select u.id, u.email from auth.users u where u.id = v_uid
   on conflict (user_id) do update set email = excluded.email;
+  if not exists (select 1 from fanday.user_origin o where o.user_id = v_uid) then
+    select u.created_at into v_created from auth.users u where u.id = v_uid;
+    v_true := v_created is not null
+      and v_created > now() - interval '10 minutes'
+      and exists (select 1 from auth.identities i where i.user_id = v_uid)
+      and not exists (select 1 from auth.identities i where i.user_id = v_uid and i.provider not in ('google', 'apple'))
+      and not fanday.user_has_foreign_rows(v_uid);
+    insert into fanday.user_origin (user_id, created_by_fanday) values (v_uid, coalesce(v_true, false)) on conflict (user_id) do nothing;
+  end if;
 end $$;
 revoke all on function fanday.ensure_profile() from public, anon;
 grant execute on function fanday.ensure_profile() to authenticated;
@@ -463,19 +485,30 @@ begin
   return false;
 end $$;
 
--- The rule from the brief: the auth user may be deleted only if Fanday created it (app_metadata.fanday_created = true, set by
--- fanday-send-link) AND it owns nothing outside `fanday`.
+-- The rule: the auth user may be deleted only if Fanday created it (fanday.user_origin.created_by_fanday) AND it owns nothing outside `fanday`.
 create or replace function fanday.auth_user_deletable(p_user uuid) returns jsonb
 language plpgsql security definer set search_path = '' as $$
 declare v_created boolean; v_foreign boolean;
 begin
-  select coalesce((u.raw_app_meta_data ->> 'fanday_created') = 'true', false) into v_created from auth.users u where u.id = p_user;
+  select o.created_by_fanday into v_created from fanday.user_origin o where o.user_id = p_user;
   v_created := coalesce(v_created, false);
+  if not exists (select 1 from auth.users u where u.id = p_user) then v_created := false; end if;
   v_foreign := fanday.user_has_foreign_rows(p_user);
   return jsonb_build_object('fanday_created', v_created, 'foreign_rows', v_foreign, 'deletable', v_created and not v_foreign);
 end $$;
 
--- Deletes every Fanday row of a signed-in user. Always runs on account deletion.
+-- fanday-send-link records the users it creates. Never overwrites an existing row.
+create or replace function fanday.set_user_origin(p_user uuid, p_created boolean) returns void
+language sql security definer set search_path = '' as $$
+  insert into fanday.user_origin (user_id, created_by_fanday) values (p_user, p_created) on conflict (user_id) do nothing;
+$$;
+-- Removes the origin row once the account is gone or unlinked (kept until then so a failed auth-user delete can be retried).
+create or replace function fanday.delete_user_origin(p_user uuid) returns void
+language sql security definer set search_path = '' as $$
+  delete from fanday.user_origin where user_id = p_user;
+$$;
+
+-- Deletes every Fanday row of a signed-in user except user_origin (see delete_user_origin). Always runs on account deletion.
 create or replace function fanday.delete_user_data(p_user uuid) returns jsonb
 language plpgsql security definer set search_path = '' as $$
 declare v_f int; v_d int; v_u int; v_p int; v_t int;
@@ -512,10 +545,11 @@ begin
   delete from fanday.devices      d where d.user_id is not null and not exists (select 1 from auth.users u where u.id = d.user_id); get diagnostics v_c = row_count; v_n := v_n + v_c;
   delete from fanday.usage_events e where e.user_id is not null and not exists (select 1 from auth.users u where u.id = e.user_id); get diagnostics v_c = row_count; v_n := v_n + v_c;
   delete from fanday.profiles     p where not exists (select 1 from auth.users u where u.id = p.user_id); get diagnostics v_c = row_count; v_n := v_n + v_c;
+  delete from fanday.user_origin  o where not exists (select 1 from auth.users u where u.id = o.user_id); get diagnostics v_c = row_count; v_n := v_n + v_c;
   return v_n;
 end $$;
 
 revoke all on function fanday.auth_user_id_by_email(text), fanday.user_has_foreign_rows(uuid), fanday.auth_user_deletable(uuid),
-  fanday.delete_user_data(uuid), fanday.cleanup_unused_device_tokens(int), fanday.purge_orphaned_user_rows() from public, anon, authenticated;
+  fanday.set_user_origin(uuid, boolean), fanday.delete_user_origin(uuid), fanday.delete_user_data(uuid), fanday.cleanup_unused_device_tokens(int), fanday.purge_orphaned_user_rows() from public, anon, authenticated;
 grant execute on function fanday.auth_user_id_by_email(text), fanday.user_has_foreign_rows(uuid), fanday.auth_user_deletable(uuid),
-  fanday.delete_user_data(uuid), fanday.cleanup_unused_device_tokens(int), fanday.purge_orphaned_user_rows() to service_role;
+  fanday.set_user_origin(uuid, boolean), fanday.delete_user_origin(uuid), fanday.delete_user_data(uuid), fanday.cleanup_unused_device_tokens(int), fanday.purge_orphaned_user_rows() to service_role;
