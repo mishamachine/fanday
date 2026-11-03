@@ -105,4 +105,20 @@ eq('access denied: nothing changes', [d.granted, d.state], [false, r.state])
   const b2 = await syncGames(c, [], b.state, ctx, windowStart)
   eq('unfollowed game inside the window is removed, history stays', [b2.stats.removed, b2.stats.retained, 'old' in b2.state], [1, 1, true])
 }
+
+// Lost state: the sweep must not delete history. Events from before stay; strays are only swept from the window on.
+{
+  const c = new MockCalendar()
+  const windowStart = Date.parse('2026-11-06')
+  const old = mk('old', { kickoffAt: '2026-10-01T12:00:00.000Z', gameDate: '2026-10-01' })
+  const a = await syncGames(c, [old, mk('g1')], {}, ctx, windowStart)
+  // storage cleared: state is {} while the calendar still holds both events
+  const lost = await syncGames(c, [mk('g1')], {}, ctx, windowStart)
+  eq('empty state: sweep skipped (nothing deleted)', lost.stats.orphans, 0)
+  eq('history event survives the lost-state run', (await c.listEvents(a.calendarId, [a.state.old.eventIdentifier])).length, 1)
+  const next = await syncGames(c, [mk('g1')], lost.state, ctx, windowStart)
+  eq('next run sweeps the old duplicate of the in-window game only', next.stats.orphans, 1)
+  eq('history still there after the sweep', (await c.listEvents(a.calendarId, [a.state.old.eventIdentifier])).length, 1)
+  eq('old duplicate of g1 is gone', (await c.listEvents(a.calendarId, [a.state.g1.eventIdentifier])).length, 0)
+}
 done()

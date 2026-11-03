@@ -31,10 +31,10 @@ export class MockCalendar implements CalendarPlugin {
 
   async deleteEvent(_calendarId: string, eventIdentifier: string) { this.events.delete(eventIdentifier) }
 
-  async removeOrphans(calendarId: string, keep: string[]) {
+  async removeOrphans(calendarId: string, keep: string[], fromMs = Number.NEGATIVE_INFINITY) {
     const k = new Set(keep)
     let n = 0
-    for (const [id, e] of this.events) if (e.calendarId === calendarId && !k.has(id)) { this.events.delete(id); n++ }
+    for (const [id, e] of this.events) if (e.calendarId === calendarId && !k.has(id) && Date.parse(e.startsAt) >= fromMs) { this.events.delete(id); n++ }
     return n
   }
 

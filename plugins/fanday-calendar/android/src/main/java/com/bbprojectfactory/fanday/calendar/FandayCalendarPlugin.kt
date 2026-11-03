@@ -95,6 +95,6 @@ class FandayCalendarPlugin : Plugin() {
     @PluginMethod
     fun removeOrphans(call: PluginCall) = guarded(call) {
         val keep = (call.getArray("keep") ?: JSArray()).toList<String>().mapNotNull { it.toLongOrNull() }.toSet()
-        call.resolve(JSObject().put("removed", store.removeOrphans(keep)))
+        call.resolve(JSObject().put("removed", store.removeOrphans(keep, call.getDouble("fromMs")?.toLong())))
     }
 }

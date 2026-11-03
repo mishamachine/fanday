@@ -61,10 +61,10 @@ class CalendarStore(private val cr: ContentResolver, private val prefs: SharedPr
                 "${Calendars._ID}=? AND ${Calendars.ACCOUNT_NAME}=? AND ${Calendars.ACCOUNT_TYPE}=?", arrayOf(stored.toString(), ACCOUNT, localType), null,
             )?.use { it.moveToFirst() } == true
         ) return stored
-        // Stored id lost: our account is ours alone, so a calendar in it can be re-adopted.
+        // Stored id missing or stale: re-adopt only a calendar this app made (account, NAME and OWNER_ACCOUNT all ours); else create a new one.
         cr.query(
             Calendars.CONTENT_URI, arrayOf(Calendars._ID),
-            "${Calendars.ACCOUNT_NAME}=? AND ${Calendars.ACCOUNT_TYPE}=?", arrayOf(ACCOUNT, localType), null,
+            "${Calendars.ACCOUNT_NAME}=? AND ${Calendars.ACCOUNT_TYPE}=? AND ${Calendars.NAME}=? AND ${Calendars.OWNER_ACCOUNT}=?", arrayOf(ACCOUNT, localType, ACCOUNT, ACCOUNT), null,
         )?.use { if (it.moveToFirst()) { val id = it.getLong(0); prefs.edit().putLong(KEY, id).apply(); return id } }
         return null
     }
@@ -74,7 +74,7 @@ class CalendarStore(private val cr: ContentResolver, private val prefs: SharedPr
         val v = ContentValues().apply {
             put(Calendars.ACCOUNT_NAME, ACCOUNT)
             put(Calendars.ACCOUNT_TYPE, localType)
-            put(Calendars.NAME, title)
+            put(Calendars.NAME, ACCOUNT) // fixed, so re-adoption can recognise our own calendar
             put(Calendars.CALENDAR_DISPLAY_NAME, title)
             put(Calendars.CALENDAR_COLOR, parseColor(colorHex))
             put(Calendars.CALENDAR_ACCESS_LEVEL, Calendars.CAL_ACCESS_OWNER)
@@ -136,12 +136,14 @@ class CalendarStore(private val cr: ContentResolver, private val prefs: SharedPr
         return out
     }
 
-    /** Delete every event in OUR calendar whose _ID is not in [keep] (duplicates, strays). */
-    fun removeOrphans(keep: Set<Long>): Int {
+    /** Delete events in OUR calendar that start at or after [fromMs] and whose _ID is not in [keep] (duplicates, strays). */
+    fun removeOrphans(keep: Set<Long>, fromMs: Long?): Int {
         val cal = ourId() ?: return 0
         val (scope, args) = inCal(cal)
         val stray = ArrayList<Long>()
-        cr.query(Events.CONTENT_URI, arrayOf(Events._ID), "$scope AND ${Events.DELETED}=0", args, null)?.use {
+        // fromMs: only events starting at or after it; older ones are history and are never swept.
+        val since = if (fromMs != null) " AND ${Events.DTSTART}>=?" else ""
+        cr.query(Events.CONTENT_URI, arrayOf(Events._ID), "$scope AND ${Events.DELETED}=0$since", if (fromMs != null) arrayOf(*args, fromMs.toString()) else args, null)?.use {
             while (it.moveToNext()) if (it.getLong(0) !in keep) stray.add(it.getLong(0))
         }
         stray.forEach { delete(it) }

@@ -14,7 +14,7 @@ interface Native {
   upsertEvent(o: Omit<WireEvent, 'eventIdentifier' | 'calendarId'> & { existingIdentifier?: string }): Promise<{ eventIdentifier: string }>
   deleteEvent(o: { eventIdentifier: string }): Promise<void>
   listEvents(o: { eventIdentifiers: string[] }): Promise<{ events: WireEvent[] }>
-  removeOrphans(o: { keep: string[] }): Promise<{ removed: number }>
+  removeOrphans(o: { keep: string[]; fromMs?: number }): Promise<{ removed: number }>
   scheduleBackgroundSync(o: { intervalMinutes: number }): Promise<void>
   cancelBackgroundSync(): Promise<void>
   addListener(name: 'syncDue', cb: () => void): Promise<PluginListenerHandle>
@@ -56,7 +56,7 @@ export class NativeCalendar implements CalendarPlugin {
   async listEvents(_calendarId: string, eventIdentifiers: string[]) {
     return (await plugin.listEvents({ eventIdentifiers })).events.map(fromWire)
   }
-  async removeOrphans(_calendarId: string, keep: string[]) { return (await plugin.removeOrphans({ keep })).removed }
+  async removeOrphans(_calendarId: string, keep: string[], fromMs?: number) { return (await plugin.removeOrphans({ keep, fromMs })).removed }
   async scheduleBackgroundSync(intervalMinutes: number) { await plugin.scheduleBackgroundSync({ intervalMinutes }) }
   async cancelBackgroundSync() { await plugin.cancelBackgroundSync() }
   async onSyncDue(cb: () => void) { const h = await plugin.addListener('syncDue', cb); return () => { void h.remove() } }

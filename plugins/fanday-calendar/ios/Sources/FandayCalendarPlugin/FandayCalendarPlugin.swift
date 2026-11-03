@@ -189,9 +189,12 @@ public class FandayCalendarPlugin: CAPPlugin, CAPBridgedPlugin {
         guard let cal = ourCalendar() else { call.resolve(["removed": 0]); return }
         let keep = Set(call.getArray("keep", String.self) ?? [])
         let now = Date()
-        let pred = store.predicateForEvents(withStart: now.addingTimeInterval(-2 * 365 * 86400), end: now.addingTimeInterval(2 * 365 * 86400), calendars: [cal])
+        // fromMs: only events starting at or after it; older ones are history and are never swept.
+        let floor = now.addingTimeInterval(-2 * 365 * 86400)
+        let from = call.getDouble("fromMs").map { max(Date(timeIntervalSince1970: $0 / 1000), floor) } ?? floor
+        let pred = store.predicateForEvents(withStart: from, end: now.addingTimeInterval(2 * 365 * 86400), calendars: [cal])
         var removed = 0
-        for ev in store.events(matching: pred) where isOurs(ev) && !keep.contains(ev.eventIdentifier ?? "") {
+        for ev in store.events(matching: pred) where isOurs(ev) && ev.startDate >= from && !keep.contains(ev.eventIdentifier ?? "") {
             if (try? store.remove(ev, span: .thisEvent, commit: false)) != nil { removed += 1 }
         }
         do { try store.commit() } catch { call.reject("Could not commit the sweep: \(error.localizedDescription)"); return }

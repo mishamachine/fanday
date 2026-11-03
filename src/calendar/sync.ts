@@ -53,8 +53,11 @@ export async function syncGames(cal: CalendarPlugin, games: Game[], state: Devic
   }
   stats.unchanged = plan.unchanged.length
   stats.retained = plan.retained.length
-  if (cal.removeOrphans && stats.failed === 0) {
-    try { stats.orphans = await cal.removeOrphans(calendarId, Object.values(next).map((d) => d.eventIdentifier)) } catch { stats.failed++ }
+  // No sweep when we came in with no state (first run, or the app's storage was cleared): events already in the calendar
+  // may be ours from before and we cannot tell them from strays. Next run sweeps; and it only ever touches events from the
+  // fetch window on, so played games (history) are never swept even if the state was lost.
+  if (cal.removeOrphans && stats.failed === 0 && Object.keys(state).length > 0) {
+    try { stats.orphans = await cal.removeOrphans(calendarId, Object.values(next).map((d) => d.eventIdentifier), Number.isFinite(windowStartMs) ? windowStartMs : undefined) } catch { stats.failed++ }
   }
   return { granted: true, calendarId, state: next, stats }
 }
