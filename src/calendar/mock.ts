@@ -31,6 +31,13 @@ export class MockCalendar implements CalendarPlugin {
 
   async deleteEvent(_calendarId: string, eventIdentifier: string) { this.events.delete(eventIdentifier) }
 
+  async removeOrphans(calendarId: string, keep: string[]) {
+    const k = new Set(keep)
+    let n = 0
+    for (const [id, e] of this.events) if (e.calendarId === calendarId && !k.has(id)) { this.events.delete(id); n++ }
+    return n
+  }
+
   async listEvents(calendarId: string, ids: string[]) {
     return ids.map((i) => this.events.get(i)).filter((e): e is StoredEvent => !!e && e.calendarId === calendarId)
   }

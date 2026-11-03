@@ -12,8 +12,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // TypeScript); iOS decides if and when it runs, so this is best effort. Sync on app open is the dependable path.
         BGTaskScheduler.shared.register(forTaskWithIdentifier: "com.bbprojectfactory.fanday.refresh", using: nil) { task in
             NotificationCenter.default.post(name: Notification.Name("FandayBackgroundRefresh"), object: nil)
+            // Expiration and the timer run on different queues: the lock makes sure the task is completed exactly once.
+            let lock = NSLock()
             var finished = false
-            let finish = { (ok: Bool) in if !finished { finished = true; task.setTaskCompleted(success: ok) } }
+            let finish = { (ok: Bool) in
+                lock.lock(); defer { lock.unlock() }
+                if !finished { finished = true; task.setTaskCompleted(success: ok) }
+            }
             task.expirationHandler = { finish(false) }
             DispatchQueue.main.asyncAfter(deadline: .now() + 25) { finish(true) }
             let next = BGAppRefreshTaskRequest(identifier: "com.bbprojectfactory.fanday.refresh")

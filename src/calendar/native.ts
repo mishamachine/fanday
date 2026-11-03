@@ -9,10 +9,12 @@ interface WireEvent {
 interface Native {
   requestAccess(): Promise<{ granted: boolean }>
   createCalendar(o: { title: string; colorHex?: string }): Promise<{ calendarId: string }>
-  deleteCalendar(o: { calendarId: string }): Promise<void>
-  upsertEvent(o: Omit<WireEvent, 'eventIdentifier' | 'calendarId'> & { calendarId: string; existingIdentifier?: string }): Promise<{ eventIdentifier: string }>
-  deleteEvent(o: { calendarId: string; eventIdentifier: string }): Promise<void>
-  listEvents(o: { calendarId: string; eventIdentifiers: string[] }): Promise<{ events: WireEvent[] }>
+  // No method carries a calendar id: native code resolves the one Fanday calendar it created itself, so JS cannot point it elsewhere.
+  deleteCalendar(): Promise<void>
+  upsertEvent(o: Omit<WireEvent, 'eventIdentifier' | 'calendarId'> & { existingIdentifier?: string }): Promise<{ eventIdentifier: string }>
+  deleteEvent(o: { eventIdentifier: string }): Promise<void>
+  listEvents(o: { eventIdentifiers: string[] }): Promise<{ events: WireEvent[] }>
+  removeOrphans(o: { keep: string[] }): Promise<{ removed: number }>
   scheduleBackgroundSync(o: { intervalMinutes: number }): Promise<void>
   cancelBackgroundSync(): Promise<void>
   addListener(name: 'syncDue', cb: () => void): Promise<PluginListenerHandle>
@@ -46,14 +48,15 @@ export function fromWire(w: WireEvent): StoredEvent {
 export class NativeCalendar implements CalendarPlugin {
   requestAccess() { return plugin.requestAccess() }
   createCalendar(opts: { title: string; colorHex?: string }) { return plugin.createCalendar(opts) }
-  async deleteCalendar(calendarId: string) { await plugin.deleteCalendar({ calendarId }) }
-  upsertEvent(calendarId: string, event: CalendarEventInput, existingIdentifier?: string | null) {
-    return plugin.upsertEvent({ calendarId, existingIdentifier: existingIdentifier ?? undefined, ...toWire(event) })
+  async deleteCalendar(_calendarId: string) { await plugin.deleteCalendar() }
+  upsertEvent(_calendarId: string, event: CalendarEventInput, existingIdentifier?: string | null) {
+    return plugin.upsertEvent({ existingIdentifier: existingIdentifier ?? undefined, ...toWire(event) })
   }
-  async deleteEvent(calendarId: string, eventIdentifier: string) { await plugin.deleteEvent({ calendarId, eventIdentifier }) }
-  async listEvents(calendarId: string, eventIdentifiers: string[]) {
-    return (await plugin.listEvents({ calendarId, eventIdentifiers })).events.map(fromWire)
+  async deleteEvent(_calendarId: string, eventIdentifier: string) { await plugin.deleteEvent({ eventIdentifier }) }
+  async listEvents(_calendarId: string, eventIdentifiers: string[]) {
+    return (await plugin.listEvents({ eventIdentifiers })).events.map(fromWire)
   }
+  async removeOrphans(_calendarId: string, keep: string[]) { return (await plugin.removeOrphans({ keep })).removed }
   async scheduleBackgroundSync(intervalMinutes: number) { await plugin.scheduleBackgroundSync({ intervalMinutes }) }
   async cancelBackgroundSync() { await plugin.cancelBackgroundSync() }
   async onSyncDue(cb: () => void) { const h = await plugin.addListener('syncDue', cb); return () => { void h.remove() } }

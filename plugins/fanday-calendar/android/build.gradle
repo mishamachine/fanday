@@ -48,6 +48,4 @@ repositories {
 
 dependencies {
     implementation project(':capacitor-android')
-    // Periodic wake-up (15 min minimum). See FandayCalendarPlugin for what it can and cannot do.
-    implementation "androidx.work:work-runtime:2.10.2"
 }

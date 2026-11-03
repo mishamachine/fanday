@@ -26,12 +26,13 @@ public class FandayCalendarPlugin: CAPPlugin, CAPBridgedPlugin {
         CAPPluginMethod(name: "upsertEvent", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "deleteEvent", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "listEvents", returnType: CAPPluginReturnPromise),
+        CAPPluginMethod(name: "removeOrphans", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "scheduleBackgroundSync", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "cancelBackgroundSync", returnType: CAPPluginReturnPromise)
     ]
 
     private var store = EKEventStore()
-    private let calendarTitleKey = "FandayCalendarId"
+    private let calendarIdKey = "FandayCalendarId"
 
     override public func load() {
         NotificationCenter.default.addObserver(forName: .fandayBackgroundRefresh, object: nil, queue: .main) { [weak self] _ in
@@ -65,6 +66,8 @@ public class FandayCalendarPlugin: CAPPlugin, CAPBridgedPlugin {
     }
 
     // MARK: calendar
+    // Safety rule: JS never names a calendar. Everything below works on the one calendar whose identifier THIS plugin
+    // stored when it created it (UserDefaults). It is never found by title, so a user's own "Fanday" calendar is never adopted.
 
     /// iCloud first, then On My iPhone (local), then whatever the user's default calendar lives in.
     private func candidateSources() -> [EKSource] {
@@ -75,10 +78,20 @@ public class FandayCalendarPlugin: CAPPlugin, CAPBridgedPlugin {
         return out
     }
 
+    private func ourCalendar() -> EKCalendar? {
+        guard let id = UserDefaults.standard.string(forKey: calendarIdKey), let c = store.calendar(withIdentifier: id), c.allowsContentModifications else { return nil }
+        return c
+    }
+
+    private func isOurs(_ ev: EKEvent) -> Bool {
+        guard let id = UserDefaults.standard.string(forKey: calendarIdKey) else { return false }
+        return ev.calendar?.calendarIdentifier == id
+    }
+
     @objc func createCalendar(_ call: CAPPluginCall) {
         guard guardAccess(call) else { return }
+        if let cal = ourCalendar() { call.resolve(["calendarId": cal.calendarIdentifier]); return }
         let title = call.getString("title") ?? "Fanday"
-        if let existing = findCalendar(title: title) { call.resolve(["calendarId": existing.calendarIdentifier]); return }
         for source in candidateSources() {
             let cal = EKCalendar(for: .event, eventStore: store)
             cal.title = title
@@ -86,7 +99,7 @@ public class FandayCalendarPlugin: CAPPlugin, CAPBridgedPlugin {
             if let hex = call.getString("colorHex"), let c = Self.color(hex: hex) { cal.cgColor = c }
             do {
                 try store.saveCalendar(cal, commit: true)
-                UserDefaults.standard.set(cal.calendarIdentifier, forKey: calendarTitleKey)
+                UserDefaults.standard.set(cal.calendarIdentifier, forKey: calendarIdKey)
                 call.resolve(["calendarId": cal.calendarIdentifier])
                 return
             } catch { continue } // e.g. iCloud calendars switched off: try the next source
@@ -94,18 +107,12 @@ public class FandayCalendarPlugin: CAPPlugin, CAPBridgedPlugin {
         call.reject("Could not create the Fanday calendar on this device.", "NO_SOURCE")
     }
 
-    private func findCalendar(title: String) -> EKCalendar? {
-        if let id = UserDefaults.standard.string(forKey: calendarTitleKey), let c = store.calendar(withIdentifier: id), c.allowsContentModifications { return c }
-        return store.calendars(for: .event).first(where: { $0.title == title && $0.allowsContentModifications })
-    }
-
     @objc func deleteCalendar(_ call: CAPPluginCall) {
         guard guardAccess(call) else { return }
-        guard let id = call.getString("calendarId") else { call.reject("calendarId is required"); return }
-        if let cal = store.calendar(withIdentifier: id) {
+        if let cal = ourCalendar() {
             do { try store.removeCalendar(cal, commit: true) } catch { call.reject("Could not remove the calendar: \(error.localizedDescription)"); return }
         }
-        UserDefaults.standard.removeObject(forKey: calendarTitleKey)
+        UserDefaults.standard.removeObject(forKey: calendarIdKey)
         call.resolve()
     }
 
@@ -113,13 +120,13 @@ public class FandayCalendarPlugin: CAPPlugin, CAPBridgedPlugin {
 
     @objc func upsertEvent(_ call: CAPPluginCall) {
         guard guardAccess(call) else { return }
-        guard let calId = call.getString("calendarId"), let cal = store.calendar(withIdentifier: calId) else { call.reject("No such calendar", "NO_CALENDAR"); return }
+        guard let cal = ourCalendar() else { call.reject("No Fanday calendar", "NO_CALENDAR"); return }
         guard let title = call.getString("title"), let startMs = call.getDouble("startMs"), let endMs = call.getDouble("endMs") else { call.reject("title, startMs and endMs are required"); return }
         let allDay = call.getBool("allDay") ?? false
 
-        // Update in place when the stored identifier still points at one of our events; otherwise make a new one.
+        // Update in place only when the stored identifier is one of OUR events; anything else (gone, or someone else's) makes a new event.
         var event: EKEvent? = nil
-        if let existing = call.getString("existingIdentifier"), let found = store.event(withIdentifier: existing), found.calendar.calendarIdentifier == calId { event = found }
+        if let existing = call.getString("existingIdentifier"), let found = store.event(withIdentifier: existing), isOurs(found) { event = found }
         let ev = event ?? EKEvent(eventStore: store)
         ev.calendar = cal
         ev.title = title
@@ -150,6 +157,7 @@ public class FandayCalendarPlugin: CAPPlugin, CAPBridgedPlugin {
         guard guardAccess(call) else { return }
         guard let id = call.getString("eventIdentifier") else { call.reject("eventIdentifier is required"); return }
         if let ev = store.event(withIdentifier: id) {
+            guard isOurs(ev) else { call.reject("That event is not in the Fanday calendar.", "NOT_OURS"); return }
             do { try store.remove(ev, span: .thisEvent, commit: true) } catch { call.reject("Could not delete the event: \(error.localizedDescription)"); return }
         }
         call.resolve() // already gone is fine
@@ -157,13 +165,13 @@ public class FandayCalendarPlugin: CAPPlugin, CAPBridgedPlugin {
 
     @objc func listEvents(_ call: CAPPluginCall) {
         guard guardAccess(call) else { return }
-        guard let calId = call.getString("calendarId") else { call.reject("calendarId is required"); return }
+        guard let cal = ourCalendar() else { call.resolve(["events": []]); return }
         let ids = call.getArray("eventIdentifiers", String.self) ?? []
         var out: [JSObject] = []
         for id in ids {
-            guard let ev = store.event(withIdentifier: id), ev.calendar.calendarIdentifier == calId else { continue }
+            guard let ev = store.event(withIdentifier: id), isOurs(ev) else { continue }
             var o: JSObject = [
-                "eventIdentifier": ev.eventIdentifier ?? id, "calendarId": calId, "title": ev.title ?? "", "notes": ev.notes ?? "",
+                "eventIdentifier": ev.eventIdentifier ?? id, "calendarId": cal.calendarIdentifier, "title": ev.title ?? "", "notes": ev.notes ?? "",
                 "startMs": ev.startDate.timeIntervalSince1970 * 1000, "endMs": ev.endDate.timeIntervalSince1970 * 1000, "allDay": ev.isAllDay
             ]
             if let loc = ev.location { o["location"] = loc }
@@ -172,6 +180,22 @@ public class FandayCalendarPlugin: CAPPlugin, CAPBridgedPlugin {
             out.append(o)
         }
         call.resolve(["events": out])
+    }
+
+    /// Delete events in OUR calendar whose identifier is not in `keep` (duplicates, or identifiers iCloud changed under us).
+    /// EventKit predicates span at most 4 years, so this sweeps 2 years back to 2 years ahead.
+    @objc func removeOrphans(_ call: CAPPluginCall) {
+        guard guardAccess(call) else { return }
+        guard let cal = ourCalendar() else { call.resolve(["removed": 0]); return }
+        let keep = Set(call.getArray("keep", String.self) ?? [])
+        let now = Date()
+        let pred = store.predicateForEvents(withStart: now.addingTimeInterval(-2 * 365 * 86400), end: now.addingTimeInterval(2 * 365 * 86400), calendars: [cal])
+        var removed = 0
+        for ev in store.events(matching: pred) where isOurs(ev) && !keep.contains(ev.eventIdentifier ?? "") {
+            if (try? store.remove(ev, span: .thisEvent, commit: false)) != nil { removed += 1 }
+        }
+        do { try store.commit() } catch { call.reject("Could not commit the sweep: \(error.localizedDescription)"); return }
+        call.resolve(["removed": removed])
     }
 
     // MARK: background (best effort; iOS decides if and when it runs)

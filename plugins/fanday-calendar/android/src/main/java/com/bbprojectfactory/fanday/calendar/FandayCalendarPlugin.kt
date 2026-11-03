@@ -17,12 +17,7 @@ import com.getcapacitor.annotation.PermissionCallback
     permissions = [Permission(strings = [Manifest.permission.READ_CALENDAR, Manifest.permission.WRITE_CALENDAR], alias = "calendar")],
 )
 class FandayCalendarPlugin : Plugin() {
-    private val store by lazy { CalendarStore(context.contentResolver) }
-
-    override fun load() { live = this }
-    override fun handleOnDestroy() { if (live === this) live = null }
-
-    fun fireSyncDue() { notifyListeners("syncDue", JSObject()) }
+    private val store by lazy { CalendarStore(context.contentResolver, context.getSharedPreferences("fanday_calendar", android.content.Context.MODE_PRIVATE)) }
 
     private fun hasAccess() = getPermissionState("calendar") == PermissionState.GRANTED
 
@@ -41,6 +36,8 @@ class FandayCalendarPlugin : Plugin() {
         try { body() } catch (e: Exception) { call.reject(e.message ?: "Calendar error", e) }
     }
 
+    // No method takes a calendar id: the store resolves its own calendar. Event ids come from JS but are only ever
+    // matched inside that calendar.
     private fun id(call: PluginCall, key: String): Long? = call.getString(key)?.toLongOrNull()
 
     @PluginMethod
@@ -51,15 +48,12 @@ class FandayCalendarPlugin : Plugin() {
 
     @PluginMethod
     fun deleteCalendar(call: PluginCall) = guarded(call) {
-        val calId = id(call, "calendarId") ?: return@guarded call.reject("calendarId is required")
-        store.deleteCalendar(calId)
+        store.deleteCalendar()
         call.resolve()
     }
 
     @PluginMethod
     fun upsertEvent(call: PluginCall) = guarded(call) {
-        val calId = id(call, "calendarId") ?: return@guarded call.reject("calendarId is required")
-        if (!store.calendarExists(calId)) return@guarded call.reject("No such calendar", "NO_CALENDAR")
         val data = EventData(
             title = call.getString("title") ?: return@guarded call.reject("title is required"),
             location = call.getString("location"),
@@ -70,7 +64,7 @@ class FandayCalendarPlugin : Plugin() {
             allDayDate = call.getString("allDayDate"),
             alarmMinutesBefore = call.getInt("alarmMinutesBefore"),
         )
-        val eventId = store.upsert(calId, data, id(call, "existingIdentifier"))
+        val eventId = store.upsert(data, id(call, "existingIdentifier"))
         call.resolve(JSObject().put("eventIdentifier", eventId.toString()))
     }
 
@@ -83,10 +77,9 @@ class FandayCalendarPlugin : Plugin() {
 
     @PluginMethod
     fun listEvents(call: PluginCall) = guarded(call) {
-        val calId = id(call, "calendarId") ?: return@guarded call.reject("calendarId is required")
         val ids = (call.getArray("eventIdentifiers") ?: JSArray()).toList<String>().mapNotNull { it.toLongOrNull() }
         val events = JSArray()
-        for (r in store.list(calId, ids)) {
+        for (r in store.list(ids)) {
             val o = JSObject()
                 .put("eventIdentifier", r.id.toString()).put("calendarId", r.calendarId.toString())
                 .put("title", r.title).put("notes", r.notes)
@@ -100,19 +93,8 @@ class FandayCalendarPlugin : Plugin() {
     }
 
     @PluginMethod
-    fun scheduleBackgroundSync(call: PluginCall) {
-        SyncWorker.schedule(context, (call.getInt("intervalMinutes") ?: 15).toLong())
-        call.resolve()
-    }
-
-    @PluginMethod
-    fun cancelBackgroundSync(call: PluginCall) {
-        SyncWorker.cancel(context)
-        call.resolve()
-    }
-
-    companion object {
-        /** The plugin instance while the app process is alive; SyncWorker reads it. */
-        @Volatile var live: FandayCalendarPlugin? = null
+    fun removeOrphans(call: PluginCall) = guarded(call) {
+        val keep = (call.getArray("keep") ?: JSArray()).toList<String>().mapNotNull { it.toLongOrNull() }.toSet()
+        call.resolve(JSObject().put("removed", store.removeOrphans(keep)))
     }
 }

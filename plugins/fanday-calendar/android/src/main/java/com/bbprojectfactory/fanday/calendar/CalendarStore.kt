@@ -3,6 +3,7 @@ package com.bbprojectfactory.fanday.calendar
 import android.content.ContentResolver
 import android.content.ContentUris
 import android.content.ContentValues
+import android.content.SharedPreferences
 import android.net.Uri
 import android.provider.CalendarContract
 import android.provider.CalendarContract.Calendars
@@ -37,26 +38,42 @@ data class StoredRow(
 )
 
 /**
- * CalendarContract access for the app's own LOCAL calendar. Every write goes through the sync-adapter URI form for
- * (account "Fanday", type ACCOUNT_TYPE_LOCAL): that is how an app owns a local calendar, and it makes deletes real
- * (without it the provider only flags rows as DELETED for a sync adapter that never comes).
+ * CalendarContract access for the app's own LOCAL calendar. Safety rule: JS never names a calendar or an account. Every
+ * query, insert, update and delete is scoped to account "Fanday" + ACCOUNT_TYPE_LOCAL + the calendar id stored natively
+ * in [prefs], and by-id writes are `_ID=? AND CALENDAR_ID=?`. The sync-adapter URI form is used only for that account:
+ * it is how an app owns a local calendar, and it makes deletes real instead of DELETED flags.
  */
-class CalendarStore(private val cr: ContentResolver) {
+class CalendarStore(private val cr: ContentResolver, private val prefs: SharedPreferences) {
     private fun asSyncAdapter(uri: Uri): Uri = uri.buildUpon()
         .appendQueryParameter(CalendarContract.CALLER_IS_SYNCADAPTER, "true")
         .appendQueryParameter(Calendars.ACCOUNT_NAME, ACCOUNT)
         .appendQueryParameter(Calendars.ACCOUNT_TYPE, CalendarContract.ACCOUNT_TYPE_LOCAL)
         .build()
 
-    fun ensureCalendar(title: String, colorHex: String?): Long {
+    private val localType = CalendarContract.ACCOUNT_TYPE_LOCAL
+    private fun inCal(id: Long) = "${Events.CALENDAR_ID}=? AND ${Events.ACCOUNT_NAME}=? AND ${Events.ACCOUNT_TYPE}=?" to arrayOf(id.toString(), ACCOUNT, localType)
+
+    /** Our calendar's id, verified to still exist in our account; null if it does not. */
+    fun ourId(): Long? {
+        val stored = prefs.getLong(KEY, -1L)
+        if (stored >= 0 && cr.query(
+                Calendars.CONTENT_URI, arrayOf(Calendars._ID),
+                "${Calendars._ID}=? AND ${Calendars.ACCOUNT_NAME}=? AND ${Calendars.ACCOUNT_TYPE}=?", arrayOf(stored.toString(), ACCOUNT, localType), null,
+            )?.use { it.moveToFirst() } == true
+        ) return stored
+        // Stored id lost: our account is ours alone, so a calendar in it can be re-adopted.
         cr.query(
             Calendars.CONTENT_URI, arrayOf(Calendars._ID),
-            "${Calendars.ACCOUNT_NAME}=? AND ${Calendars.ACCOUNT_TYPE}=?", arrayOf(ACCOUNT, CalendarContract.ACCOUNT_TYPE_LOCAL), null,
-        )?.use { if (it.moveToFirst()) return it.getLong(0) }
+            "${Calendars.ACCOUNT_NAME}=? AND ${Calendars.ACCOUNT_TYPE}=?", arrayOf(ACCOUNT, localType), null,
+        )?.use { if (it.moveToFirst()) { val id = it.getLong(0); prefs.edit().putLong(KEY, id).apply(); return id } }
+        return null
+    }
 
+    fun ensureCalendar(title: String, colorHex: String?): Long {
+        ourId()?.let { return it }
         val v = ContentValues().apply {
             put(Calendars.ACCOUNT_NAME, ACCOUNT)
-            put(Calendars.ACCOUNT_TYPE, CalendarContract.ACCOUNT_TYPE_LOCAL)
+            put(Calendars.ACCOUNT_TYPE, localType)
             put(Calendars.NAME, title)
             put(Calendars.CALENDAR_DISPLAY_NAME, title)
             put(Calendars.CALENDAR_COLOR, parseColor(colorHex))
@@ -67,23 +84,24 @@ class CalendarStore(private val cr: ContentResolver) {
             put(Calendars.CALENDAR_TIME_ZONE, TimeZone.getDefault().id)
         }
         val uri = cr.insert(asSyncAdapter(Calendars.CONTENT_URI), v) ?: error("Could not create the Fanday calendar")
-        return ContentUris.parseId(uri)
+        val id = ContentUris.parseId(uri)
+        prefs.edit().putLong(KEY, id).apply()
+        return id
     }
 
-    fun calendarExists(id: Long): Boolean =
-        cr.query(ContentUris.withAppendedId(Calendars.CONTENT_URI, id), arrayOf(Calendars._ID), null, null, null)?.use { it.moveToFirst() } ?: false
-
-    fun deleteCalendar(id: Long) {
-        cr.delete(asSyncAdapter(ContentUris.withAppendedId(Calendars.CONTENT_URI, id)), null, null)
+    fun deleteCalendar() {
+        val id = ourId() ?: return
+        cr.delete(asSyncAdapter(Calendars.CONTENT_URI), "${Calendars._ID}=? AND ${Calendars.ACCOUNT_NAME}=? AND ${Calendars.ACCOUNT_TYPE}=?", arrayOf(id.toString(), ACCOUNT, localType))
+        prefs.edit().remove(KEY).apply()
     }
 
-    /** Update the event when [existing] is still one of this calendar's events, otherwise insert. Returns the _ID. */
-    fun upsert(calendarId: Long, e: EventData, existing: Long?): Long {
-        val v = toValues(calendarId, e)
-        if (existing != null && ownedBy(calendarId, existing)) {
-            cr.update(asSyncAdapter(ContentUris.withAppendedId(Events.CONTENT_URI, existing)), v, null, null)
-            writeReminder(existing, e.alarmMinutesBefore)
-            return existing
+    /** Update the event when [existing] is one of OUR events, otherwise insert. Returns the _ID. */
+    fun upsert(e: EventData, existing: Long?): Long {
+        val cal = ourId() ?: error("No Fanday calendar")
+        val v = toValues(cal, e)
+        if (existing != null && ownedBy(cal, existing)) {
+            val n = cr.update(asSyncAdapter(Events.CONTENT_URI), v, "${Events._ID}=? AND ${Events.CALENDAR_ID}=?", arrayOf(existing.toString(), cal.toString()))
+            if (n > 0) { writeReminder(existing, e.alarmMinutesBefore); return existing }
         }
         val uri = cr.insert(asSyncAdapter(Events.CONTENT_URI), v) ?: error("Could not insert the event")
         val id = ContentUris.parseId(uri)
@@ -91,17 +109,21 @@ class CalendarStore(private val cr: ContentResolver) {
         return id
     }
 
+    /** Deletes the event only if it is in our calendar; anything else is left alone. */
     fun delete(id: Long) {
-        cr.delete(asSyncAdapter(ContentUris.withAppendedId(Events.CONTENT_URI, id)), null, null)
+        val cal = ourId() ?: return
+        cr.delete(asSyncAdapter(Events.CONTENT_URI), "${Events._ID}=? AND ${Events.CALENDAR_ID}=?", arrayOf(id.toString(), cal.toString()))
     }
 
-    fun list(calendarId: Long, ids: List<Long>): List<StoredRow> {
+    fun list(ids: List<Long>): List<StoredRow> {
+        val cal = ourId() ?: return emptyList()
+        val (scope, args) = inCal(cal)
         val out = ArrayList<StoredRow>()
         for (id in ids) {
             cr.query(
                 Events.CONTENT_URI,
                 arrayOf(Events._ID, Events.CALENDAR_ID, Events.TITLE, Events.EVENT_LOCATION, Events.DESCRIPTION, Events.DTSTART, Events.DTEND, Events.ALL_DAY),
-                "${Events._ID}=? AND ${Events.CALENDAR_ID}=? AND ${Events.DELETED}=0", arrayOf(id.toString(), calendarId.toString()), null,
+                "${Events._ID}=? AND $scope AND ${Events.DELETED}=0", arrayOf(id.toString(), *args), null,
             )?.use { c ->
                 if (c.moveToFirst()) {
                     out.add(StoredRow(
@@ -114,11 +136,23 @@ class CalendarStore(private val cr: ContentResolver) {
         return out
     }
 
-    private fun ownedBy(calendarId: Long, id: Long): Boolean =
-        cr.query(
-            Events.CONTENT_URI, arrayOf(Events._ID),
-            "${Events._ID}=? AND ${Events.CALENDAR_ID}=? AND ${Events.DELETED}=0", arrayOf(id.toString(), calendarId.toString()), null,
-        )?.use { it.moveToFirst() } ?: false
+    /** Delete every event in OUR calendar whose _ID is not in [keep] (duplicates, strays). */
+    fun removeOrphans(keep: Set<Long>): Int {
+        val cal = ourId() ?: return 0
+        val (scope, args) = inCal(cal)
+        val stray = ArrayList<Long>()
+        cr.query(Events.CONTENT_URI, arrayOf(Events._ID), "$scope AND ${Events.DELETED}=0", args, null)?.use {
+            while (it.moveToNext()) if (it.getLong(0) !in keep) stray.add(it.getLong(0))
+        }
+        stray.forEach { delete(it) }
+        return stray.size
+    }
+
+    private fun ownedBy(cal: Long, id: Long): Boolean {
+        val (scope, args) = inCal(cal)
+        return cr.query(Events.CONTENT_URI, arrayOf(Events._ID), "${Events._ID}=? AND $scope AND ${Events.DELETED}=0", arrayOf(id.toString(), *args), null)
+            ?.use { it.moveToFirst() } ?: false
+    }
 
     private fun toValues(calendarId: Long, e: EventData) = ContentValues().apply {
         put(Events.CALENDAR_ID, calendarId)
@@ -170,6 +204,7 @@ class CalendarStore(private val cr: ContentResolver) {
 
     companion object {
         const val ACCOUNT = "Fanday"
+        private const val KEY = "calendar_id"
         private const val DAY_MS = 24L * 60 * 60 * 1000
     }
 }

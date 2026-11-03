@@ -14,10 +14,10 @@ ok('revision is a uint32', Number.isInteger(revision(ev())) && revision(ev()) >=
 
 // new
 let p = planSync([want('g1')], {}, new Set())
-eq('new game: create', keys(p), { create: ['g1'], update: [], recreate: [], remove: [], unchanged: [] })
+eq('new game: create', keys(p), { create: ['g1'], update: [], recreate: [], remove: [], unchanged: [], retained: [] })
 // unchanged
 p = planSync([want('g1')], { g1: have('e1') }, new Set(['e1']))
-eq('same content, identifier present: unchanged', keys(p), { create: [], update: [], recreate: [], remove: [], unchanged: ['g1'] })
+eq('same content, identifier present: unchanged', keys(p), { create: [], update: [], recreate: [], remove: [], unchanged: ['g1'], retained: [] })
 // changed
 p = planSync([want('g1', { startsAt: '2026-11-07T15:00:00.000Z' })], { g1: have('e1') }, new Set(['e1']))
 eq('changed content: update with the stored identifier', [keys(p).update, p.update[0].eventIdentifier], [['g1'], 'e1'])
@@ -32,5 +32,9 @@ p = planSync([want('g1')], { g1: { eventIdentifier: 'e1', rev: null } }, new Set
 eq('rev null: update', keys(p).update, ['g1'])
 // mixed, plus duplicates
 p = planSync([want('n'), want('n'), want('c', { venue: 1, title: 'c2' }), want('u'), want('l')], { c: have('ec'), u: have('eu', {}), l: have('el'), r: have('er') }, new Set(['ec', 'eu', 'er']))
-eq('mixed plan', keys(p), { create: ['n'], update: ['c'], recreate: ['l'], remove: ['r'], unchanged: ['u'] })
+eq('mixed plan', keys(p), { create: ['n'], update: ['c'], recreate: ['l'], remove: ['r'], unchanged: ['u'], retained: [] })
+// played game outside the window is retained; inside the window it is removed
+const old = { eventIdentifier: 'eo', rev: 1, endsAt: '2026-10-01T14:00:00.000Z' }
+p = planSync([], { old, inw: { eventIdentifier: 'ei', rev: 1, endsAt: '2026-11-07T14:00:00.000Z' }, noend: { eventIdentifier: 'en', rev: 1 } }, new Set(), Date.parse('2026-11-06'))
+eq('window: old retained, in-window and unknown-end removed', [p.retained, p.remove.map((r) => r.gameId)], [['old'], ['inw', 'noend']])
 done()

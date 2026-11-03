@@ -30,6 +30,8 @@ export interface CalendarPlugin {
   deleteEvent(calendarId: string, eventIdentifier: string): Promise<void>
   /** Read back events by the identifiers we stored. Unknown identifiers are simply missing from the result. */
   listEvents(calendarId: string, eventIdentifiers: string[]): Promise<StoredEvent[]>
+  /** Delete events in the Fanday calendar whose identifier is not in `keep` (duplicates, identifiers the OS changed). Returns how many. */
+  removeOrphans?(calendarId: string, keep: string[]): Promise<number>
   /** Native only: ask the OS to wake the app roughly every N minutes (Android >= 15, iOS best effort) and fire onSyncDue. */
   scheduleBackgroundSync?(intervalMinutes: number): Promise<void>
   cancelBackgroundSync?(): Promise<void>
