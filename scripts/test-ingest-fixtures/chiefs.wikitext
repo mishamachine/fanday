@@ -1,0 +1,1134 @@
+<!-- FIXTURE. Page: 2026 Kansas City Chiefs season
+     Source: https://en.wikipedia.org/wiki/2026_Kansas_City_Chiefs_season
+     Revision id: 1383408476  (permanent link: https://en.wikipedia.org/w/index.php?oldid=1383408476)
+     Fetched: 2026-11-02 from the MediaWiki API (action=query&prop=revisions&rvprop=content|ids&rvslots=main&format=json),
+     User-Agent: Fanday/0.1 (machinemisha+fanday@gmail.com). Unmodified wikitext below this comment.
+     Text (c) Wikipedia contributors, licensed CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/);
+     authors are listed in the page history. Used here only as test data. -->
+{{Short description|57th season in the NFL, 67th season in franchise history}}
+{{Use mdy dates|date=January 2026}}
+{{Use American English|date=March 2026}}
+{{Infobox gridiron football team season
+| logo            = 
+| team            = Kansas City Chiefs
+| year            = 2026
+| record          = 5–2
+| division_place  = 2nd [[AFC West]]
+| playoffs        = 
+| owner           = [[Lamar Hunt#Personal life|The Hunt Family]]<br>([[Clark Hunt]] Chairman and CEO)
+| general_manager = [[Brett Veach]]
+| president       = [[Mark Donovan (American football)|Mark Donovan]]
+| coach           = [[Andy Reid]]
+| off_coach       = [[Eric Bieniemy]]
+| def_coach       = [[Steve Spagnuolo]]
+| stadium         = [[Arrowhead Stadium]]
+| uniform         = Uniform Set of the Kansas City Chiefs.svg
+| shortnavlink    = Chiefs seasons
+}}
+The [[2026 NFL season|2026 season]] is the [[Kansas City Chiefs]]' 57th in the [[National Football League]] (NFL), their 67th overall, their tenth under the leadership of general manager [[Brett Veach]] and their 14th under [[List of Kansas City Chiefs head coaches|head coach]] [[Andy Reid]]. The Chiefs will seek to improve upon their 6–11 record from [[2025 Kansas City Chiefs season|2025]], make the playoffs after a one-year absence, and reclaim the AFC West title. 
+
+The Chiefs started 5–0 for the second time in three seasons, and became the last undefeated team in the AFC. 
+
+Because [[Pittsburgh Steelers]]' coach [[Mike Tomlin]] resigned and the [[Baltimore Ravens]] fired [[John Harbaugh]], Andy Reid is now the longest-tenured active head coach (with one team, and with multiple consecutively) in the NFL, with his tenure starting in the [[2013 Kansas City Chiefs season|2013 season]] with the Chiefs.<ref>{{Cite web |last=Gering |first=Brett |title=Kansas City Chiefs Hire Andy Reid as New Head Coach |url=https://bleacherreport.com/articles/1466869-kansas-city-chiefs-hire-andy-reid-as-new-head-coach |access-date=2026-10-04 |website=bleacherreport.com |language=en}}</ref>
+{{TOC limit|3}}
+
+==Offseason==
+
+===Futures contracts===
+Futures contracts are signed beginning with the conclusion of the previous season. They typically consist of players who spent a portion of the previous season on the practice squad of a team.
+
+{| class="wikitable" style="text-align:center"
+|+ 
+! colspan=2 style="{{NFLPrimaryStyle|Kansas City Chiefs|year=2026|border=2}}"| 2026 Kansas City Chiefs Futures contracts
+|-
+!style="{{NFLAltPrimaryStyle|Kansas City Chiefs|year=2025|border=2}}"| Player
+!style="{{NFLAltPrimaryStyle|Kansas City Chiefs|year=2025|border=2}}"| Position
+|-
+| [[Andrew Armstrong (American football)|Andrew Armstrong]] || WR
+|-
+| [[Kam Arnold]] || LB
+|-
+| [[Jason Brownlee]] || WR
+|-
+| [[Jake Haener]] || QB
+|-
+| [[Marcus Harris (defensive tackle)|Marcus Harris]] || DT
+|-
+| [[Jimmy Holiday (American football)|Jimmy Holiday]] || WR
+|-
+| [[Tanner McCalister]] || DB
+|-
+| [[ShunDerrick Powell]] || RB
+|-
+| [[Matt Waletzko]] || OT
+|-
+| [[Tre Watson]] || TE
+|}
+<ref>{{Cite web|last=McCullen|first=Matt|title=Looking at the Chiefs "Reserve/Future" Signees Heading into the 2026 Offseason|url=https://www.chiefs.com/news/looking-at-the-chiefs-reserve-future-signees-heading-into-the-2026-offseason|website=Chiefs.com|date=February 27, 2026|access-date=August 29, 2026}}</ref>
+
+===Players lost===
+Below are players who were on the roster at the end of the 2025 season, but were either released or did not re-sign after their contract expired.
+
+{| class="wikitable" style="text-align:center"
+|+ 
+! colspan=4 style="{{NFLPrimaryStyle|Kansas City Chiefs|year=2026|border=2}}"| 2026 Kansas City Chiefs Players lost
+|-
+!style="{{NFLAltPrimaryStyle|Kansas City Chiefs|year=2026|border=2}}"| Player
+!style="{{NFLAltPrimaryStyle|Kansas City Chiefs|year=2026|border=2}}"| Position
+!style="{{NFLAltPrimaryStyle|Kansas City Chiefs|year=2026|border=2}}"| Reason
+!style="{{NFLAltPrimaryStyle|Kansas City Chiefs|year=2026|border=2}}"| New team
+|-
+| [[Jaylen Watson]] || CB || {{tooltip|UFA|Unrestricted free agent}} || [[Los Angeles Rams]]
+|-
+| [[Leo Chenal]] || LB || UFA || [[Washington Commanders]]
+|-
+| [[Bryan Cook (American football)|Bryan Cook]] || S || UFA || [[Cincinnati Bengals]]
+|-
+| [[Charles Omenihu]] || DE || UFA || Washington Commanders
+|-
+| [[Isiah Pacheco]] || RB || UFA || [[Detroit Lions]]
+|-
+| [[Derrick Nnadi]] || DT || UFA || [[Indianapolis Colts]]
+|-
+| [[Joshua Williams (cornerback)|Joshua Williams]] || CB || UFA || [[Tennessee Titans]]
+|-
+| [[Gardner Minshew]]|| QB || UFA || [[Arizona Cardinals]]
+|-
+| [[Marquise Brown]]|| WR || UFA || [[Philadelphia Eagles]]
+|-
+| [[Jerry Tillery]]|| DT || UFA || Indianapolis Colts
+|-
+| [[Dameon Pierce]]|| RB || UFA || Philadelphia Eagles
+|-
+| [[Mike Danna]]|| DE || Released || [[Buffalo Bills]]
+|-
+| [[Jawaan Taylor]]|| T || Released || [[Atlanta Falcons]]
+|}
+<ref>{{cite web |title=Ranking Chiefs’ free-agency departures by how badly they’ll be missed|url=https://www.arrowheadpride.com/kansas-city-chiefs-free-agency/196813/ranking-chiefs-free-agency-departures-how-badly-missed |website=Arrowhead Pride|access-date=March 18, 2026}}</ref><ref name="transactions">{{cite web |title=Chiefs Transactions|url=https://www.chiefs.com/team/transactions/ |website=Chiefs.com|access-date=August 26, 2026}}</ref><ref>{{cite web |title=AP source: Eagles land receiver Marquise Brown on one-year deal|url=https://www.sportsnet.ca/nfl/article/ap-source-eagles-land-receiver-marquise-brown-on-one-year-deal/|website=[[Sportsnet]]|access-date=March 18, 2026}}</ref><ref>{{cite web |title=Colts sign DT Jerry Tillery|url=https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/colts-sign-dt-jerry-tillery|website=[[NBC Sports]]|access-date=March 18, 2026}}</ref><ref>{{cite web |title=Eagles agree to terms with RB Dameon Pierce|url=https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/eagles-agree-to-terms-with-rb-dameon-pierce|website=[[NBC Sports]]|access-date=March 19, 2026}}</ref>
+
+===Signings===
+{| class="wikitable" style="text-align:center"
+|+ 
+! colspan=3 style="{{NFLPrimaryStyle|Kansas City Chiefs|year=2026|border=2}}"| 2026 Kansas City Chiefs signings
+|-
+!style="{{NFLAltPrimaryStyle|Kansas City Chiefs|year=2026|border=2}}"| Player
+!style="{{NFLAltPrimaryStyle|Kansas City Chiefs|year=2026|border=2}}"| Position
+!style="{{NFLAltPrimaryStyle|Kansas City Chiefs|year=2026|border=2}}"| Previous team
+|-
+| [[Kenneth Walker III]] || RB || [[Seattle Seahawks]]
+|-
+| [[Khyiris Tonga]] || DT || [[New England Patriots]]
+|-
+| [[Alohi Gilman]] || S || [[Baltimore Ravens]]
+|-
+| [[Emari Demercado]] ||RB || Arizona Cardinals
+|-
+| [[Kader Kohou]] || CB || [[Miami Dolphins]]
+|-
+| [[Kaiir Elam]] || CB || Tennessee Titans
+|-
+| [[James Winchester (American football)|James Winchester]] || LS || Kansas City Chiefs
+|-
+| [[Travis Kelce]] || TE || Kansas City Chiefs
+|-
+| [[Tyquan Thornton]] || WR || Kansas City Chiefs
+|-
+| [[Jack Cochrane]] || LB || Kansas City Chiefs
+|-
+| [[Mike Caliendo]] || G || Kansas City Chiefs
+|-
+| [[L'Jarius Sneed]] || CB || Tennessee Titans
+|-
+| [[Mason Pline]] || TE || [[New Orleans Saints]]
+|-
+| [[Emmanuel Ogbah]] || DE || [[Jacksonville Jaguars]]
+|-
+| Niles King || DE || [[Los Angeles Chargers]]
+|-
+| [[Cam Jones]] || LB || [[New York Giants]]
+|}
+<ref>{{cite web |title=Chiefs Free Agency: Recapping 5 external signings from first week|url=https://www.arrowheadpride.com/kansas-city-chiefs-free-agency/196813/ranking-chiefs-free-agency-departures-how-badly-missed |website=Arrowhead Pride|access-date=March 18, 2026}}</ref><ref>{{cite web |title=Catching Up on the Chiefs Roster Moves as the NFL League Year Begins|url=https://www.chiefs.com/news/catching-up-on-the-chiefs-roster-moves-as-the-nfl-league-year-begins-x3713 |website=Chiefs.com|access-date=March 18, 2026}}</ref><ref>{{cite web |last1=McMullen |first1=Matt |title=Five Things to Know About New Chiefs CB Kaiir Elam |url=https://www.chiefs.com/news/five-things-to-know-about-new-chiefs-cb-kaiir-elam |website=Chiefs.com |access-date=6 May 2026}}</ref><ref name="transactions" /><ref>{{cite web |title=Report: Veteran DE Ogbah returns to Chiefs on one-year deal|url=https://www.tsn.ca/nfl/article/report-veteran-de-ogbah-returns-to-chiefs-on-one-year-deal/ |website=[[The Sports Network|TSN]]|access-date=August 11, 2026}}</ref>
+
+===Trades===
+Trades below only are for trades that included a player. Draft pick only trades will go in draft section.
+
+{| class="wikitable" style="text-align:center"
+|+ 
+! colspan=3 style="{{NFLPrimaryStyle|Kansas City Chiefs|year=2026|border=2}}"| 2026 Kansas City Chiefs trades
+|-
+!style="{{NFLAltPrimaryStyle|Kansas City Chiefs|year=2026|border=2}}"| Team
+!style="{{NFLAltPrimaryStyle|Kansas City Chiefs|year=2026|border=2}}"| Received
+!style="{{NFLAltPrimaryStyle|Kansas City Chiefs|year=2026|border=2}}"| Compensation
+|-
+| Los Angeles Rams || 1st round selection<br>5th round selection<br>6th round selection<br>[[2026 NFL draft]]<br>3rd round selection<br>2027 NFL draft || [[Trent McDuffie]]
+|-
+| [[New York Jets]] || [[Justin Fields]] || 6th round selection<br>2027 NFL draft
+|-
+| Atlanta Falcons || 6th round selection<br>2027 NFL draft || [[Wanya Morris (American football)|Wanya Morris]]<br />7th round selection<br>2027 NFL draft
+|-
+| New York Giants || [[Joshua Ezeudu]] || 7th round selection<br>2028 NFL draft
+|-
+| Baltimore Ravens || [[Diego Pounds]] || 6th round conditional selection<br>2028 NFL draft
+|}
+<ref name="McDuffie">{{cite web |title=Sources: Chiefs trade Trent McDuffie to Rams for four draft picks|url=https://www.espn.com/nfl/story/_/id/48100518/sources-chiefs-trade-trent-mcduffie-rams-four-draft-picks |website=[[ESPN]]|access-date=March 18, 2026}}</ref><ref>{{cite web |title=AP source: Jets agree to trade quarterback Justin Fields to Chiefs|url=https://www.sportsnet.ca/nfl/article/report-chiefs-finalizing-trade-for-jets-qb-justin-fields/ |website=[[Sportsnet]]|access-date=March 18, 2026}}</ref><ref>{{cite web|last=McMullen|first=Matt|title=Chiefs Trade OT Wanya Morris to Atlanta|url=https://www.chiefs.com/news/chiefs-trade-ot-wanya-morris-to-atlanta|website=chiefs.com|date=June 16, 2026|access-date=June 16, 2026}}</ref><ref>{{cite web |last1=Rivera |first1=Joe |title=Chiefs add Patrick Mahomes protection in low-risk trade with Giants|url= https://www.usatoday.com/story/sports/nfl/chiefs/2026/08/25/chiefs-giants-josh-ezeudu-trade-details/91467715007/ |website=USAtoday.com |access-date=25 August 2026}}</ref><ref>{{cite web |last1=Sweeney |first1=Pete |title=Chiefs make a trade for Ravens tackle Diego Pounds. Here’s the exchange|url= https://www.kansascity.com/sports/nfl/kansas-city-chiefs/article317060459.html |website=[[Kansas City Star]] |access-date=August 29, 2026}}</ref>
+
+===Draft===
+{{main|2026 NFL draft}}
+{{col-begin}}
+{{col-2}}
+{| class="wikitable" style="text-align:center"
+|+ 2026 Kansas City Chiefs draft selections
+|-
+!style="{{NFLPrimaryStyle|Kansas City Chiefs|year=2026|border=2}}"| Round
+!style="{{NFLPrimaryStyle|Kansas City Chiefs|year=2026|border=2}}"| Selection
+!style="{{NFLPrimaryStyle|Kansas City Chiefs|year=2026|border=2}}"| Player
+!style="{{NFLPrimaryStyle|Kansas City Chiefs|year=2026|border=2}}"| Position
+!style="{{NFLPrimaryStyle|Kansas City Chiefs|year=2026|border=2}}"| College
+!style="{{NFLPrimaryStyle|Kansas City Chiefs|year=2026|border=2}}"| Notes
+|-
+! rowspan="3" | [[List of Kansas City Chiefs first-round draft picks|1]] || 6
+| [[Mansoor Delane]] || [[Cornerback|CB]] || [[2025 LSU Tigers football team|LSU]] || From Browns{{refn|group="t-"|name=trade1}} 
+|- 
+! 9 
+|colspan="3" style="background:#BFBFBF"| ''Traded to the Cleveland Browns''{{refn|The Chiefs traded picks 9, 74 and 148 to the [[2026 Cleveland Browns season|Cleveland Browns]] in exchange for a pick 6.<ref>{{Cite web |last=Russo |first=Kelsey |title=Browns trade No. 6 pick to the Chiefs in exchange for No. 9 pick |url=https://www.clevelandbrowns.com/news/browns-trade-no-6-pick-to-the-chiefs-in-exchange-for-no-9-pick |date=April 23, 2026 |website=clevelandbrowns.com |language=en-US}}</ref>|group="t-"|name=trade1}} || 
+|-
+! 29
+| [[Peter Woods (American football)|Peter Woods]] || [[Defensive tackle|DT]] || [[2025 Clemson Tigers football team|Clemson]] || From Rams{{refn|The Chiefs traded [[Trent McDuffie]] to the [[2026 Los Angeles Rams season|Los Angeles Rams]] in exchange for picks 29, 169, 210, and a 2027 third-round selection.<ref name="McDuffie" />|group="t-"|name=trade2}}
+|-
+! 2 || 40
+| [[R Mason Thomas]] || [[Defensive end|DE]] || [[2025 Oklahoma Sooners football team|Oklahoma]] ||
+|-
+! 3 || 74
+|colspan="3" style="background:#BFBFBF"| ''Traded to the Cleveland Browns''{{refn|group="t-"|name=trade1}} || 
+|-
+!rowspan="2"| 4 || 109
+| [[Jadon Canady]] || [[Safety (gridiron football position)|S]] || [[2025 Oregon Ducks football team|Oregon]] ||
+|-
+! 125
+|colspan="3" style="background:#BFBFBF"| ''Traded to the New England Patriots''{{refn|The Chiefs traded a fourth-round selection (125th overall) and a 2025 third-round selection to the [[2026 New England Patriots season|New England Patriots]] in exchange for a 2025 third-round selection.<ref>{{Cite web |last=Koch |first=Jared |title= Patriots, Chiefs Pull Off NFL Draft Trade |url=https://www.si.com/nfl/patriots/news/new-england-patriots-kansas-city-chiefs-nfl-draft-trade |date=April 25, 2025 |website=Sports Illustrated |language=en-US}}</ref>|group="t-"|name=trade3}} || From Bears{{refn|The Chiefs traded [[Joe Thuney]] to the [[2026 Chicago Bears season|Chicago Bears]] in exchange for a fourth-round selection (125th overall).<ref>{{Cite web |last=Koch |first=Jared |title=Roster Moves: Bears acquire Joe Thuney, Jonah Jackson via trade |url=https://www.chicagobears.com/news/chicago-bears-acquire-joe-thuney-jonah-jackson-trade-kansas-city-chiefs-los-angeles-rams-offensive-line |date=March 12, 2025 |website=chicagobears.com |language=en-US}}</ref>|group="t-"|name=trade4}}
+|-
+!rowspan="4"| 5 || 148
+|colspan="3" style="background:#BFBFBF"| ''Traded to the Cleveland Browns''{{refn|group="t-"|name=trade1}} ||
+|-
+! 161
+| [[Emmett Johnson]] || [[Running back|RB]] || [[2025 Nebraska Cornhuskers football team|Nebraska]] || From Steelers{{refn|The Chiefs traded picks 169 and 210 to the [[2026 Pittsburgh Steelers season|Pittsburgh Steelers]] in exchange for picks 161 and 249.<ref>{{Cite web |last=Varley |first=Teresa |title=Steelers select Nowakowski in fifth round |url=https://www.steelers.com/news/steelers-select-nowakowski-in-fifth-round |date=April 25, 2025 |website=Steelers.com |language=en-US}}</ref>|group="t-"|name=trade5}}
+|-
+! 169
+|colspan="3" style="background:#BFBFBF"| ''Traded to the Pittsburgh Steelers''{{refn|group="t-"|name=trade5}} || From Rams{{refn|group="t-"|name=trade2}}
+|-
+! 176
+| [[Cyrus Allen]] || [[Wide receiver|WR]] || [[2025 Cincinnati Bearcats football team|Cincinnati]] || Compensatory selection
+|-
+! rowspan="2"|6 || 191
+|colspan="3" style="background:#BFBFBF"| ''Traded to the New England Patriots''{{refn|The Chiefs traded a sixth-round selection (191st overall) to the [[2024 New England Patriots season|New England Patriots]] in exchange for [[Josh Uche]].<ref>{{Cite web |last=Patra |first=Kevin |title= Patriots trading OLB Josh Uche to Chiefs for 2026 sixth-round pick |url=https://www.nfl.com/news/patriots-trading-olb-josh-uche-to-chiefs-for-2026-sixth-round-pick |date=October 28, 2024 |website=NFL.com |language=en-US}}</ref>|group="t-"|name=trade6}} ||
+|-
+! 210
+|colspan="3" style="background:#BFBFBF"| ''Traded to the Pittsburgh Steelers''{{refn|group="t-"|name=trade5}} || From Rams{{refn|group="t-"|name=trade2}}
+|-
+! rowspan="2"|7 || 225
+|colspan="3" style="background:#BFBFBF"| ''Traded to the Dallas Cowboys''{{refn|The Chiefs traded a conditional seventh-round selection (225th overall) to the [[2024 Dallas Cowboys season|Dallas Cowboys]] in exchange for [[Peyton Hendershot]].<ref>{{Cite web |last=Harris |first=Nick |title=Cowboys trade TE Peyton Hendershot to Kansas City |url=https://www.dallascowboys.com/news/cowboys-trade-te-peyton-hendershot-to-kansas-city |date=August 27, 2024 |website=dallascowboys.com |language=en-US}}</ref>|group="t-"|name=trade7}} ||
+|-
+! 249
+| [[Garrett Nussmeier]] || [[Quarterback|QB]] || [[2025 LSU Tigers football team|LSU]] || From Steelers{{refn|group="t-"|name=trade5}}
+|}
+{{col-2}}
+
+{| class="wikitable" style="text-align:center"
+|+ 2026 Kansas City Chiefs undrafted free agents
+|-
+!style="{{NFLPrimaryStyle|Kansas City Chiefs|year=2024|border=2}}"| Name
+!style="{{NFLPrimaryStyle|Kansas City Chiefs|year=2024|border=2}}"| Position
+!style="{{NFLPrimaryStyle|Kansas City Chiefs|year=2024|border=2}}"| College
+!style="{{NFLPrimaryStyle|Kansas City Chiefs|year=2024|border=2}}"| Ref.
+|-
+| [[Jaydn Ott]]
+| [[Running back|RB]]
+| [[2025 Oklahoma Sooners football team|Oklahoma]]
+|rowspan="20"| <ref>{{Cite web |date=April 26, 2026 |title=2026 NFL undrafted free agent tracker: Full list of UDFA signings by team after NFL Draft |url=https://www.cbssports.com/nfl/draft/news/2026-nfl-udfa-tracker-signings-by-team/ |access-date=April 26, 2026 |website=[[CBS Sports]]}}</ref><ref>{{cite web|title=Breaking Down the Chiefs 2026 Undrafted Free Agent Class|url=https://www.chiefs.com/news/breaking-down-the-chiefs-2026-undrafted-free-agent-class-|author=McMullen, Matt|website=Chiefs.com|date=May 1, 2026}}</ref>
+|-
+| Pete Nygra
+| [[Center (gridiron football)|C]]
+| [[2025 Louisville Cardinals football team|Louisville]]
+|-
+| [[Xavier Nwankpa]]
+| [[Safety (gridiron football position)|S]]
+| [[2025 Iowa Hawkeyes football team|Iowa]]
+|-
+| [[John Michael Gyllenborg]]
+| [[Tight end|TE]]
+| [[2025 Wyoming Cowboys football team|Wyoming]]
+|-
+| [[Josh Thompson (offensive lineman)|Josh Thompson]]
+| [[Lineman (gridiron football)#Offensive line|IOL]]
+| [[2025 LSU Tigers football team|LSU]]
+|-
+| Bryce Phillips
+| [[Defensive back|DB]]
+| [[2025 San Diego State Aztecs football team|San Diego State]]
+|-
+| [[Wesley Bissainthe]]
+| [[Linebacker|LB]]
+| [[2025 Miami Hurricanes football team|Miami (FL)]]
+|-
+| [[Vincent Anthony Jr.]]
+| [[Edge rusher|EDGE]]
+| [[2025 Duke Blue Devils football team|Duke]]
+|-
+| [[Jeff Caldwell (American football)|Jeff Caldwell]]
+| [[Wide receiver|WR]]
+| [[2025 Cincinnati Bearcats football team|Cincinnati]]
+|-
+| [[Cole Brevard]]
+| [[Defensive tackle|DT]]
+| [[2025 Texas Longhorns football team|Texas]]
+|-
+| [[Jacob De Jesus]]
+| [[Wide receiver|WR]]
+| [[2025 California Golden Bears football team|California]]
+|-
+| Anthony Dunn
+| [[Edge rusher|EDGE]]
+| [[2025 Toledo Rockets football team|Toledo]]
+|-
+| [[Omari Evans]]
+| [[Wide receiver|WR]]
+| [[2025 Washington Huskies football team|Washington]]
+|-
+| [[Ethan Hurkett]]
+| [[Edge rusher|EDGE]]
+| [[2025 Iowa Hawkeyes football team|Iowa]]
+|-
+| [[Amari McNeill]]
+| [[Defensive tackle|DT]]
+| [[2025 Colorado Buffaloes football team|Colorado]]
+|-
+| [[Damon Payne]]
+| [[Defensive tackle|DT]]
+| [[2025 Michigan Wolverines football team|Michigan]]
+|-
+| D'Arco Perkins-McAllister
+| [[Cornerback|CB]]
+| [[2025 Louisiana–Monroe Warhawks football team|UL Monroe]]
+|-
+| [[DeShon Singleton]]
+| [[Safety (gridiron football position)|S]]
+| [[2025 Nebraska Cornhuskers football team|Nebraska]]
+|-
+| [[E. J. Smith (American football)|EJ Smith]]
+| [[Running back|RB]]
+| [[2025 Texas A&M Aggies football team|Texas A&M]]
+|-
+| [[Zelmar Vedder]]
+| [[Cornerback|CB]]
+| [[2025 Houston Cougars football team|Houston]]
+|-
+| [[Kahlil Benson]]
+| [[Offensive tackle|OT]]
+| [[2025 Indiana Hoosiers football team|Indiana]]
+|rowspan="3"| <ref>{{cite web|url=https://www.chiefs.com/news/chiefs-sign-three-tryout-players-following-rookie-camp|title=Chiefs Sign Three Tryout Players Following Rookie Camp|website=Chiefs.com|first=Matt|last=McMullen|date=May 4, 2026|access-date=May 22, 2026}}</ref>
+|-
+| [[Xavier Loyd]]
+| [[Wide receiver|WR]]
+| [[2025 Missouri Tigers football team|Missouri]]
+|-
+| Marlen Sewell
+| [[Defensive back|DB]]
+| [[2025 Vanderbilt Commodores football team|Vanderbilt]]
+|-
+| Jeff Weimer
+| [[Wide receiver|WR]]
+| [[2026 West Virginia Mountaineers football team|West Virginia]]
+| <ref>{{cite web|url=https://www.si.com/nfl/chiefs/onsi/chiefs-add-wr-jeff-weimer-to-fill-open-training-camp-roster-spot|title=Chiefs Add WR Jeff Weimer to Fill Open Training Camp Roster Spot|website=[[Sports Illustrated]]|first=Foote|last=Jordan|date=August 3, 2026|access-date=August 29, 2026}}</ref>
+|}
+
+{{col-end}}
+
+'''Draft trades'''
+<references group="t-" />
+
+==Staff==
+{{Kansas City Chiefs staff}}
+
+==Current roster==
+{{Kansas City Chiefs roster}}
+
+==Preseason==
+{| class="wikitable" style="text-align:center"
+! style="{{NFLPrimaryStyle|Kansas City Chiefs|year=2026|border=2}}"| Week
+! style="{{NFLPrimaryStyle|Kansas City Chiefs|year=2026|border=2}}"| Date
+! style="{{NFLPrimaryStyle|Kansas City Chiefs|year=2026|border=2}}"| Opponent
+! style="{{NFLPrimaryStyle|Kansas City Chiefs|year=2026|border=2}}"| Result
+! style="{{NFLPrimaryStyle|Kansas City Chiefs|year=2026|border=2}}"| Record
+! style="{{NFLPrimaryStyle|Kansas City Chiefs|year=2026|border=2}}"| Venue
+! style="{{NFLPrimaryStyle|Kansas City Chiefs|year=2026|border=2}}"| Recap
+|- {{Game-lost}}
+! 1 
+| {{dow tooltip|August 15, 2026}}
+| [[2026 Los Angeles Rams season|Los Angeles Rams]]
+| '''L''' 12–20
+| 0–1
+| [[Arrowhead Stadium]]
+| [https://www.nfl.com/games/rams-at-chiefs-2026-pre-1 Recap]
+|- {{Game-lost}}
+! 2
+| {{dow tooltip|August 22, 2026}}
+| at [[2026 Tampa Bay Buccaneers season|Tampa Bay Buccaneers]]
+| '''L''' 15–16
+| 0–2
+| [[Raymond James Stadium]]
+| [https://www.nfl.com/games/chiefs-at-buccaneers-2026-pre-2 Recap]
+|- {{Game-tied}}
+! 3
+| {{dow tooltip|August 28, 2026}}
+| [[2026 Seattle Seahawks season|Seattle Seahawks]]
+| '''T''' 9–9
+| 0–2–1
+| Arrowhead Stadium
+| [https://www.nfl.com/games/seahawks-at-chiefs-2026-pre-3 Recap]
+|}
+
+==Regular season==
+===Schedule===
+{| class="wikitable" style="text-align:center"
+!style="{{NFLPrimaryStyle|Kansas City Chiefs|year=2026|border=2}}"| Week
+!style="{{NFLPrimaryStyle|Kansas City Chiefs|year=2026|border=2}}"| Date
+!style="{{NFLPrimaryStyle|Kansas City Chiefs|year=2026|border=2}}"| Time ([[Central Time Zone|{{color|white|CT}}]])
+!style="{{NFLPrimaryStyle|Kansas City Chiefs|year=2026|border=2}}"| Opponent
+!style="{{NFLPrimaryStyle|Kansas City Chiefs|year=2026|border=2}}"| Result
+!style="{{NFLPrimaryStyle|Kansas City Chiefs|year=2026|border=2}}"| Record
+!style="{{NFLPrimaryStyle|Kansas City Chiefs|year=2026|border=2}}"| Venue
+!style="{{NFLPrimaryStyle|Kansas City Chiefs|year=2026|border=2}}"| TV
+!style="{{NFLPrimaryStyle|Kansas City Chiefs|year=2026|border=2}}"| Recap
+|- {{Game-won}}
+! [[#Week 1: vs. Denver Broncos|1]]
+| {{dow tooltip|September 14, 2026}}
+| 7:15{{nbsp}}p.m.
+| '''[[2026 Denver Broncos season|Denver Broncos]]'''
+| '''W''' 31–10
+| 1–0
+| [[Arrowhead Stadium]]
+| [[Monday Night Football|ESPN]]/[[NFL on ABC|ABC]]
+| [https://www.nfl.com/games/broncos-at-chiefs-2026-reg-1 Recap]
+|- {{Game-won}}
+! [[#Week 2: vs. Indianapolis Colts|2]]
+| September 20
+| 7:20{{nbsp}}p.m.
+| [[2026 Indianapolis Colts season|Indianapolis Colts]]
+| '''W''' 33–30 {{small|(OT)}}
+| 2–0
+| Arrowhead Stadium
+| [[NFL on NBC|NBC]]
+| [https://www.nfl.com/games/colts-at-chiefs-2026-reg-2 Recap]
+|- {{Game-won}}
+! [[#Week 3: at Miami Dolphins|3]]
+| September 27
+| 12:00{{nbsp}}p.m.
+| at [[2026 Miami Dolphins season|Miami Dolphins]]
+| '''W''' 24–10
+| 3–0
+| [[Hard Rock Stadium]]
+| [[NFL on CBS|CBS]]
+| [https://www.nfl.com/games/chiefs-at-dolphins-2026-reg-3 Recap]
+|- {{Game-won}}
+! [[#Week 4: at Las Vegas Raiders|4]]
+| October 4
+| 3:25{{nbsp}}p.m.
+| at '''[[2026 Las Vegas Raiders season|Las Vegas Raiders]]'''
+| '''W''' 30–27
+| 4–0
+| [[Allegiant Stadium]]
+| CBS
+| [https://www.nfl.com/games/chiefs-at-raiders-2026-reg-4 Recap]
+|- 
+! 5
+| colspan=8| ''[[Bye (sports)|Bye]]''
+|- {{Game-won}}
+! [[#Week 6: vs. Los Angeles Chargers|6]]
+| October 18
+| 3:25{{nbsp}}p.m.
+| '''[[2026 Los Angeles Chargers season|Los Angeles Chargers]]'''
+| '''W''' 22–6
+| 5–0
+| Arrowhead Stadium
+| CBS
+| [https://www.nfl.com/games/chargers-at-chiefs-2026-reg-6 Recap]
+|- {{Game-lost}}
+! [[#Week 7: at Seattle Seahawks|7]]
+| October 25
+| 7:20{{nbsp}}p.m.
+| at [[2026 Seattle Seahawks season|Seattle Seahawks]]
+| '''L''' 3–20
+| 5–1
+| [[Lumen Field]]
+| NBC
+| [https://www.nfl.com/games/chiefs-at-seahawks-2026-reg-7 Recap]
+|- {{Game-lost}}
+! [[#Week 8: at Denver Broncos|8]]
+| November 1
+| 3:25{{nbsp}}p.m.
+| at '''[[2026 Denver Broncos season|Denver Broncos]]'''
+| '''L''' 24–28
+| 5–2
+| [[Empower Field at Mile High]]
+| CBS
+| [https://www.nfl.com/games/chiefs-at-broncos-2026-reg-8 Recap]
+|- <!--{{Game-won}} or {{Game-lost}}-->
+! [[#Week 9: vs. New York Jets|9]]
+| November 8
+| 12:00{{nbsp}}p.m.
+| [[2026 New York Jets season|New York Jets]]
+| <!--RESULT-->
+| <!--RECORD-->
+| Arrowhead Stadium
+| CBS
+| <!--[https://www.nfl.com/games/jets-at-chiefs-2026-reg-9 Recap]-->
+|- <!--{{Game-won}} or {{Game-lost}}-->
+! 10 <!--UNHIDE ONLY ONE WEEK AT A TIME [[#Week 10: at Atlanta Falcons|10]]-->
+| November 15
+| 12:00{{nbsp}}p.m.
+| at [[2026 Atlanta Falcons season|Atlanta Falcons]]
+| <!--RESULT-->
+| <!--RECORD-->
+| [[Mercedes-Benz Stadium]]
+| CBS
+| <!--[https://www.nfl.com/games/chiefs-at-falcons-2026-reg-10 Recap]-->
+|- <!--{{Game-won}} or {{Game-lost}}-->
+! 11 <!--UNHIDE ONLY ONE WEEK AT A TIME [[#Week 11: vs. Arizona Cardinals|11]]-->
+| November 22
+| 12:00{{nbsp}}p.m.
+| [[2026 Arizona Cardinals season|Arizona Cardinals]]
+| <!--RESULT-->
+| <!--RECORD-->
+| Arrowhead Stadium
+| CBS
+| <!--[https://www.nfl.com/games/cardinals-at-chiefs-2026-reg-11 Recap]-->
+|- <!--{{Game-won}} or {{Game-lost}}-->
+! 12 <!--UNHIDE ONLY ONE WEEK AT A TIME [[#Week 12: at Buffalo Bills|12]]-->
+| [[NFL on Thanksgiving Day|November 26]]
+| 7:20{{nbsp}}p.m.
+| at [[2026 Buffalo Bills season|Buffalo Bills]]
+| <!--RESULT-->
+| <!--RECORD-->
+| [[Highmark Stadium]]
+| NBC
+| <!--[https://www.nfl.com/games/chiefs-at-bills-2026-reg-12 Recap]-->
+|- <!--{{Game-won}} or {{Game-lost}}-->
+! 13 <!--UNHIDE ONLY ONE WEEK AT A TIME [[#Week 13: at Los Angeles Rams|13]]-->
+| {{dow tooltip|December 3, 2026}}
+| 7:15{{nbsp}}p.m.
+| at [[2026 Los Angeles Rams season|Los Angeles Rams]]
+| <!--RESULT-->
+| <!--RECORD-->
+| [[SoFi Stadium]]
+| [[Thursday Night Football|Prime Video]]
+| <!--[https://www.nfl.com/games/chiefs-at-rams-2026-reg-13 Recap]-->
+|- <!--{{Game-won}} or {{Game-lost}}-->
+! 14 <!--UNHIDE ONLY ONE WEEK AT A TIME [[#Week 14: at Cincinnati Bengals|14]]-->
+| December 13
+| 3:25{{nbsp}}p.m.
+| at [[2026 Cincinnati Bengals season|Cincinnati Bengals]]
+| <!--RESULT-->
+| <!--RECORD-->
+| [[Paycor Stadium]]
+| [[NFL on Fox|Fox]]
+| <!--[https://www.nfl.com/games/chiefs-at-bengals-2026-reg-14 Recap]-->
+|- <!--{{Game-won}} or {{Game-lost}}-->
+! 15 <!--UNHIDE ONLY ONE WEEK AT A TIME [[#Week 15: vs. New England Patriots|15]]-->
+| {{dow tooltip|December 21, 2026}}
+| 7:15{{nbsp}}p.m.
+| [[2026 New England Patriots season|New England Patriots]]
+| <!--RESULT-->
+| <!--RECORD-->
+| Arrowhead Stadium
+| ESPN/ABC
+| <!--[https://www.nfl.com/games/patriots-at-chiefs-2026-reg-15 Recap]-->
+|- <!--{{Game-won}} or {{Game-lost}}-->
+! 16 <!--UNHIDE ONLY ONE WEEK AT A TIME [[#Week 16: vs. San Francisco 49ers|16]]-->
+| December 27
+| 3:25{{nbsp}}p.m.
+| [[2026 San Francisco 49ers season|San Francisco 49ers]]
+| <!--RESULT-->
+| <!--RECORD-->
+| Arrowhead Stadium
+| CBS
+| <!--[https://www.nfl.com/games/49ers-at-chiefs-2026-reg-16 Recap]-->
+|- <!--{{Game-won}} or {{Game-lost}}-->
+! 17 <!--UNHIDE ONLY ONE WEEK AT A TIME [[#Week 17: at Los Angeles Chargers|17]]-->
+| January 2/3
+| {{abbr|TBD|To be determined}}
+| at '''[[2026 Los Angeles Chargers season|Los Angeles Chargers]]'''
+| <!--RESULT-->
+| <!--RECORD-->
+| SoFi Stadium
+| {{abbr|TBD|To be determined}}
+| <!--[https://www.nfl.com/games/chiefs-at-chargers-2026-reg-17 Recap]-->
+|- <!--{{Game-won}} or {{Game-lost}}-->
+! 18 <!--UNHIDE ONLY ONE WEEK AT A TIME [[#Week 18: vs. Las Vegas Raiders|18]]-->
+| January 9/10
+| {{abbr|TBD|To be determined}}
+| '''[[2026 Las Vegas Raiders season|Las Vegas Raiders]]'''
+| <!--RESULT-->
+| <!--RECORD-->
+| Arrowhead Stadium
+| {{abbr|TBD|To be determined}}
+| <!--[https://www.nfl.com/games/raiders-at-chiefs-2026-reg-18 Recap]-->
+|}
+'''Notes'''
+* Intra-division opponents are in '''bold''' text.
+* Networks and times from Weeks 10–17 and dates from Weeks 13–17 are subject to change as a result of [[NFL on American television#Flexible scheduling|flexible scheduling]]; Week 12 is exempt, as it occurs on Thanksgiving.<ref name="FlexibleScheduling">{{cite web |title=2026 Flexible Scheduling Procedures and Scheduling for Week 18 |url=https://www.nfl.com/legal/flexible-scheduling-procedures |work=[[National Football League|NFL]] |date=May 14, 2026 |accessdate=May 14, 2026}}</ref>
+* The date, time and network for Week 17 will be finalized by no later than the end of Week 15.<ref>{{cite web |title=NFL Week 17 Schedule 2026: Games, Times, Matchups & Tickets |url=https://www.nfl.com/schedules/2026/by-week/week-17 |work=NFL |date=May 14, 2026 |accessdate=May 14, 2026}}</ref>
+* The date, time and network for Week 18 will be finalized at the end of Week 17.<ref name="FlexibleScheduling"/>
+
+===Game summaries===
+====Week 1: vs. Denver Broncos====
+{{Americanfootballbox
+|titlestyle={{NFLPrimaryStyle|Kansas City Chiefs|year=2026|border=2}};text-align:center;
+|state=autocollapse
+|title=Week 1: Denver Broncos at Kansas City Chiefs{{nbsp}}– Game summary
+|date={{dow tooltip|September 14, 2026}}
+|time=7:15{{nbsp}}p.m. [[Central Time Zone|CDT]]
+|road=Broncos 
+|R1=7|R2=0|R3=3|R4=0
+|home='''Chiefs'''
+|H1=7|H2=7|H3=10|H4=7
+|stadium=[[Arrowhead Stadium]], [[Kansas City, Missouri]]
+|attendance=73,543
+|weather=Fair, {{convert|91|F|C}}
+|referee=[[Clay Martin]]
+|TV=[[Monday Night Football|ESPN]]/[[NFL on ABC|ABC]]
+|TVAnnouncers=[[Joe Buck]], [[Troy Aikman]], [[Lisa Salters]], and [[Laura Rutledge]]
+|reference=[https://www.nfl.com/games/broncos-at-chiefs-2026-reg-1 Recap], [https://static.www.nfl.com/image/upload/v1789442485/gamecenter/a9a890ed-4feb-11f1-abca-2c54536568a9.pdf Game Book]
+|scoring=
+'''First quarter''' 
+*KC – [[Patrick Mahomes]] 15-yard run ([[Harrison Butker]] kick), 8:11. ''Chiefs 7–0. '''Drive: 10 plays, 46 yards, 5:19.''''' 
+*DEN – [[Evan Engram]] 19-yard pass from [[Bo Nix]] ([[Wil Lutz]] kick), 3:48. ''Tied 7–7. '''Drive: 7 plays, 68 yards, 4:23.''''' 
+'''Second quarter''' 
+*KC – [[Rashee Rice]] 13-yard pass from Patrick Mahomes (Harrison Butker kick), 1:39. ''Chiefs 14–7. '''Drive: 10 plays, 80 yards, 3:02.''''' 
+'''Third quarter''' 
+*KC – [[Kenneth Walker III (running back)|Kenneth Walker III]] 60-yard run (Harrison Butker kick), 12:43. ''Chiefs 21–7. '''Drive: 4 plays, 69 yards, 2:17.''''' 
+*DEN – Wil Lutz 31-yard field goal, 7:34. ''Chiefs 21–10. '''Drive: 4 plays, -8 yards, 2:00.''''' 
+*KC – Harrison Butker 28-yard field goal, 3:17. ''Chiefs 24–10. '''Drive: 7 plays, 58 yards, 4:17.''''' 
+'''Fourth quarter''' 
+*KC – Kenneth Walker III 1-yard pass from Patrick Mahomes (Harrison Butker kick), 14:39. ''Chiefs 31–10. '''Drive: 4 plays, 34 yards, 0:48.''''' 
+|stats=
+'''Top passers''' 
+*DEN – Bo Nix – 17/28, 131 yards, TD, INT 
+*KC – Patrick Mahomes – 15/27, 184 yards, 2 TD, INT
+'''Top rushers''' 
+*DEN – [[J. K. Dobbins]] – 8 rushes, 36 yards 
+*KC – Kenneth Walker III – 23 rushes, 173 yards, TD 
+'''Top receivers''' 
+*DEN – Evan Engram – 4 receptions, 43 yards, TD 
+*KC – [[Travis Kelce]] – 3 receptions, 71 yards
+}}
+With the dominant win, the Chiefs secured their first win since Week 12 of [[2025 Kansas City Chiefs season|2025]], snapping a six-game losing streak from the previous season. This was also their first win against Denver since Week 10 of [[2024 Kansas City Chiefs season|2024]], snapping a three-game losing streak.
+
+====Week 2: vs. Indianapolis Colts====
+{{Americanfootballbox
+|titlestyle={{NFLPrimaryStyle|Kansas City Chiefs|year=2026|border=2}};text-align:center;
+|state=autocollapse
+|title=Week 2: Indianapolis Colts at Kansas City Chiefs{{nbsp}}– Game summary
+|date=September 20
+|time=7:20{{nbsp}}p.m. CDT
+|road=Colts
+|R1=7|R2=13|R3=0|R4=7|R5=3
+|home='''Chiefs'''
+|H1=10|H2=7|H3=7|H4=3|H5=6
+|stadium=Arrowhead Stadium, Kansas City, Missouri
+|attendance=73,351
+|weather=Cloudy, {{convert|71|F|C}}
+|referee=[[Craig Wrolstad]]
+|TV=[[NFL on NBC|NBC]]
+|TVAnnouncers=[[Mike Tirico]], [[Cris Collinsworth]] and [[Melissa Stark]]
+|reference=[https://www.nfl.com/games/colts-at-chiefs-2026-reg-2 Recap], [https://static.www.nfl.com/image/upload/v1789963155/gamecenter/aa048ee1-4feb-11f1-abca-2c54536568a9.pdf Game Book]
+|scoring=
+'''First quarter''' 
+*IND – [[Tyler Warren]] 1-yard pass from [[Daniel Jones (American football)|Daniel Jones]] ([[Spencer Shrader]] kick), 8:25. ''Colts 7–0. '''Drive: 11 plays, 65 yards, 6:35.''''' 
+*KC – [[Harrison Butker]] 46-yard field goal, 6:09. ''Colts 7–3. '''Drive: 6 plays, 36 yards, 2:16.''''' 
+*KC – [[Travis Kelce]] 13-yard pass from [[Patrick Mahomes]] (Harrison Butker kick), 4:34. ''Chiefs 10–7. '''Drive: 2 plays, 16 yards, 0:44.''''' 
+'''Second quarter''' 
+*IND – Spencer Shrader 42-yard field goal, 14:48. ''Tied 10–10. '''Drive: 11 plays, 34 yards, 4:46.''''' 
+*IND – Spencer Shrader 49-yard field goal, 9:49. ''Colts 13–10. '''Drive: 6 plays, 28 yards, 2:58.''''' 
+*KC – [[Xavier Worthy]] 1-yard pass from Patrick Mahomes (Harrison Butker kick), 2:25. ''Chiefs 17–13. '''Drive: 12 plays, 70 yards, 7:19.''''' 
+*IND – [[Jonathan Taylor]] 24-yard run (Spencer Shrader kick), 0:59. ''Colts 20–17. '''Drive: 6 plays, 72 yards, 1:26.''''' 
+'''Third quarter''' 
+*KC – [[Jalen Royals]] 1-yard pass from Patrick Mahomes (Harrison Butker kick), 8:01. ''Chiefs 24–20. '''Drive: 14 plays, 80 yards, 6:59.''''' 
+'''Fourth quarter''' 
+*KC – Harrison Butker 28-yard field goal, 14:15. ''Chiefs 27–20. '''Drive: 13 plays, 81 yards, 6:24.''''' 
+*IND – Jonathan Taylor 5-yard run (Spencer Shrader kick), 5:37. ''Tied 27–27. '''Drive: 13 plays, 64 yards, 8:38.''''' 
+'''Overtime'''
+*KC – Harrison Butker 31-yard field goal, 5:09. ''Chiefs 30–27. '''Drive: 11 plays, 55 yards, 4:51.''''' 
+*IND – Spencer Shrader 38-yard field goal, 3:11. ''Tied 30–30. '''Drive: 5 plays, 45 yards, 1:58.''''' 
+*KC – Harrison Butker 40-yard field goal, 0:00. ''Chiefs 33–30. '''Drive: 7 plays, 46 yards, 3:11.'''''
+|stats=
+'''Top passers''' 
+*IND – Daniel Jones – 22/31, 210 yards, TD, INT 
+*KC – Patrick Mahomes – 32/47, 382 yards, 3 TD 
+'''Top rushers''' 
+*IND – Jonathan Taylor – 24 rushes, 92 yards, 2 TD 
+*KC – [[Kenneth Walker III (running back)|Kenneth Walker III]] – 24 rushes, 117 yards 
+'''Top receivers''' 
+*IND – [[Josh Downs]] – 7 receptions, 72 yards 
+*KC – Travis Kelce – 9 receptions, 101 yards, TD
+}}
+
+====Week 3: at Miami Dolphins====
+{{Americanfootballbox
+|titlestyle={{NFLPrimaryStyle|Kansas City Chiefs|year=2026|border=2}};text-align:center;
+|state=autocollapse
+|title=Week 3: Kansas City Chiefs at Miami Dolphins{{nbsp}}– Game summary
+|date=September 27
+|time=1:00{{nbsp}}p.m. [[Eastern Time Zone|EDT]]/12:00{{nbsp}}p.m. CDT
+|road='''Chiefs'''
+|R1=7|R2=7|R3=0|R4=10
+|home=Dolphins
+|H1=7|H2=0|H3=3|H4=0
+|stadium=[[Hard Rock Stadium]], [[Miami Gardens, Florida]]
+|attendance=59,216
+|weather=Partly cloudy, {{convert|86|F|C}}
+|referee=Alex Moore
+|TV=[[NFL on CBS|CBS]]
+|TVAnnouncers=[[Kevin Harlan]], [[Trent Green]] and [[Melanie Collins]]
+|reference=[https://www.nfl.com/games/chiefs-at-dolphins-2026-reg-3 Recap], [https://static.www.nfl.com/image/upload/v1790539584/gamecenter/aa04b0d8-4feb-11f1-abca-2c54536568a9.pdf Game Book]
+|scoring=
+'''First quarter''' 
+*KC – [[Kenneth Walker III (running back)|Kenneth Walker III]] 10-yard run ([[Harrison Butker]] kick), 12:54. ''Chiefs 7–0. '''Drive: 4 plays, 67 yards, 2:06.''''' 
+*MIA – [[Ollie Gordon II]] 3-yard run ([[Riley Patterson]] kick), 3:27. ''Tied 7–7. '''Drive: 17 plays, 91 yards, 9:27.''''' 
+'''Second quarter''' 
+*KC – Kenneth Walker III 5-yard pass from [[Patrick Mahomes]] (Harrison Butker kick), 12:58. ''Chiefs 14–7. '''Drive: 10 plays, 65 yards, 5:29.''''' 
+'''Third quarter''' 
+*MIA – Riley Patterson 37-yard field goal, 10:10. ''Chiefs 14–10. '''Drive: 9 plays, 56 yards, 4:50.''''' 
+'''Fourth quarter''' 
+*KC – Harrison Butker 34-yard field goal, 11:35. ''Chiefs 17–10. '''Drive: 13 plays, 80 yards, 6:36.''''' 
+*KC – [[Travis Kelce]] 11-yard pass from Patrick Mahomes (Harrison Butker kick), 2:55. ''Chiefs 24–10. '''Drive: 5 plays, 47 yards, 3:01.'''''
+|stats=
+'''Top passers''' 
+*KC – Patrick Mahomes – 20/24, 246 yards, 2 TD, INT 
+*MIA – [[Malik Willis]] – 20/36, 210 yards, INT 
+'''Top rushers''' 
+*KC – Kenneth Walker III – 18 rushes, 70 yards, TD 
+*MIA – Malik Willis – 9 rushes, 56 yards 
+'''Top receivers''' 
+*KC – [[Rashee Rice]] – 7 receptions, 88 yards 
+*MIA – [[Chris Bell (wide receiver)|Chris Bell]] – 4 receptions, 67 yards
+}}
+
+====Week 4: at Las Vegas Raiders====
+{{Americanfootballbox
+|titlestyle={{NFLPrimaryStyle|Kansas City Chiefs|year=2026|border=2}};text-align:center;
+|state=autocollapse
+|title=Week 4: Kansas City Chiefs at Las Vegas Raiders{{nbsp}}– Game summary
+|date=October 4
+|time=3:25{{nbsp}}p.m. CDT/1:25{{nbsp}}p.m. [[Pacific Time Zone|PDT]]
+|road='''Chiefs'''
+|R1=7|R2=3|R3=0|R4=20
+|home=Raiders
+|H1=7|H2=6|H3=0|H4=14
+|stadium=[[Allegiant Stadium]], [[Paradise, Nevada]]
+|attendance=62,593
+|weather=None (indoor stadium)
+|referee=Brad Rogers
+|TV=CBS
+|TVAnnouncers=[[Jim Nantz]], [[J.J. Watt]], [[Tracy Wolfson]]
+|reference=[https://www.nfl.com/games/chiefs-at-raiders-2026-reg-4 Recap], [https://static.www.nfl.com/image/upload/v1791157975/gamecenter/aa4b6d71-4feb-11f1-abca-2c54536568a9.pdf Game Book]
+|scoring=
+'''First quarter'''
+*LV – [[Ian Thomas (American football)|Ian Thomas]] 27-yard pass from [[Kirk Cousins]] ([[Matt Gay]] kick), 8:10. ''Raiders 7–0. '''Drive: 4 plays, 50 yards, 2:16.'''''
+*KC – [[Tyquan Thornton]] 2-yard pass from [[Patrick Mahomes]] ([[Harrison Butker]] kick), 2:23. ''Tied 7–7. '''Drive: 10 plays, 69 yards, 5:47.'''''
+'''Second quarter'''
+*LV – Matt Gay 32-yard field goal, 3:19. ''Raiders 10–7. '''Drive: 15 plays, 75 yards, 8:00.'''''
+*KC – Harrison Butker 28-yard field goal, 1:22. ''Tied 10–10. '''Drive: 10 plays, 70 yards, 1:57.'''''
+*LV – Matt Gay 48-yard field goal, 0:00. ''Raiders 13–10. '''Drive: 8 plays, 41 yards, 1:22.'''''
+'''Third quarter'''
+* ''No scoring plays''
+'''Fourth quarter'''
+*KC – Tyquan Thornton 8-yard pass from Patrick Mahomes (Harrison Butker kick), 14:50. ''Chiefs 17–13. '''Drive: 3 plays, 84 yards, 0:40.'''''
+*LV – Matt Gay 44-yard field goal, 11:12. ''Chiefs 17–16. '''Drive: 7 plays, 19 yards, 3:38.'''''
+*LV – Matt Gay 48-yard field goal, 4:53. ''Raiders 19–17. '''Drive: 8 plays, 60 yards, 4:43.'''''
+*KC – [[Kenneth Walker III]] 2-yard run (pass failed), 3:21. ''Chiefs 23–19. '''Drive: 4 plays, 65 yards, 1:32.'''''
+*KC – Kenneth Walker III 22-yard run (Harrison Butker kick), 3:02. ''Chiefs 30–19. '''Drive: 1 play, 22 yards, 0:08.'''''
+*LV – [[Brock Bowers]] 20-yard pass from Kirk Cousins (Kirk Cousins–[[Cody White (wide receiver)|Cody White]] pass), 1:46. ''Chiefs 30–27. '''Drive: 5 plays, 65 yards, 1:16.'''''
+|stats=
+'''Top passers''' 
+*KC – Patrick Mahomes – 15/30, 225 yards, 2 TD 
+*LV – Kirk Cousins – 31/52, 365 yards, 2 TD, INT 
+'''Top rushers''' 
+*KC – Kenneth Walker III – 22 rushes, 177 yards, 2 TD 
+*LV – [[Ashton Jeanty]] – 15 rushes, 58 yards 
+'''Top receivers''' 
+*KC – Tyquan Thornton – 5 receptions, 111 yards, 2 TD 
+*LV – Brock Bowers – 6 receptions, 86 yards, TD
+}}
+
+====Week 6: vs. Los Angeles Chargers====
+{{Americanfootballbox
+|titlestyle={{NFLPrimaryStyle|Kansas City Chiefs|year=2026|border=2}};text-align:center;
+|state=autocollapse
+|title=Week 6: Los Angeles Chargers at Kansas City Chiefs{{nbsp}}– Game summary
+|date=October 18
+|time=3:25{{nbsp}}p.m. CDT
+|road=Chargers
+|R1=3|R2=0|R3=3|R4=0
+|home='''Chiefs'''
+|H1=9|H2=10|H3=0|H4=3
+|stadium=Arrowhead Stadium, Kansas City, Missouri
+|attendance=73,640
+|weather=Sunny, {{convert|68|F|C}}
+|referee=[[Alan Eck]]
+|TV=CBS
+|TVAnnouncers=Kevin Harlan, Trent Green, and Melanie Collins
+|reference=[https://www.nfl.com/games/chargers-at-chiefs-2026-reg-6 Recap], [https://static.www.nfl.com/image/upload/v1792366328/gamecenter/aab59281-4feb-11f1-abca-2c54536568a9.pdf Game Book]
+|scoring=
+'''First quarter'''
+*KC – [[Harrison Butker]] 44-yard field goal, 11:20. ''Chiefs 3–0. '''Drive: 7 plays, 41, yards, 3:40.'''''
+*KC – [[Kenneth Walker III]] 33-yard run (kick failed), 7:21. ''Chiefs 9–0. '''Drive: 6 plays, 67 yards, 3:07.'''''
+*LAC – [[Cameron Dicker]] 23-yard field goal, 1:33. ''Chiefs 9–3. '''Drive: 11 plays, 60 yards, 5:48.'''''
+'''Second quarter'''
+*KC – Kenneth Walker III 2–yard run (Harrison Butker kick), 1:49. ''Chiefs 16–3. '''Drive: 8 plays, 80 yards, 3:40.'''''
+*KC – Harrison Butker 50-yard field goal, 0:20. ''Chiefs 19–3. '''Drive: 3 plays, 38 yards, 0:23.'''''
+'''Third quarter'''
+*LAC – Cameron Dicker 30-yard field goal, 10:44. ''Chiefs 19–6. '''Drive: 9 plays, 60 yards, 4:16.'''''
+'''Fourth quarter'''
+*KC – Harrison Butker 30-yard field goal, 3:52. ''Chiefs 22–6. '''Drive: 11 plays, 50 yards, 3:52.'''''
+|stats=
+'''Top passers''' 
+*LAC – [[Justin Herbert]] – 22/37, 204 yards, INT 
+*KC – [[Patrick Mahomes]] – 23/30, 272 yards, INT
+'''Top rushers''' 
+*LAC – Justin Herbert – 5 rushes, 26 yards 
+*KC – Kenneth Walker III – 19 rushes, 128 yards, 2 TD 
+'''Top receivers''' 
+*LAC – [[Quentin Johnston]] – 1 reception, 57 yards 
+*KC – [[Xavier Worthy]] – 7 receptions, 73 yards
+}}
+
+====Week 7: at Seattle Seahawks====
+{{Americanfootballbox
+|titlestyle={{NFLPrimaryStyle|Kansas City Chiefs|year=2026|border=2}};text-align:center;
+|state=autocollapse
+|title=Week 7: Kansas City Chiefs at Seattle Seahawks{{nbsp}}– Game summary
+|date=October 25
+|time=7:20{{nbsp}}p.m. CDT/5:20{{nbsp}}p.m. PDT
+|road=Chiefs
+|R1=0|R2=0|R3=3|R4=0
+|home='''Seahawks'''
+|H1=0|H2=10|H3=3|H4=7
+|stadium=[[Lumen Field]], [[Seattle, Washington]]
+|attendance=68,740
+|weather=Cloudy, {{convert|55|F|C}}
+|referee=[[John Hussey (American football official)|John Hussey]]
+|TV=NBC
+|TVAnnouncers=Mike Tirico, Cris Collinsworth and Melissa Stark
+|reference=[https://www.nfl.com/games/chiefs-at-seahawks-2026-reg-7 Recap], [https://static.www.nfl.com/image/upload/v1792984889/gamecenter/aaf7040e-4feb-11f1-abca-2c54536568a9.pdf Game Book]
+|scoring=
+'''First quarter'''
+* ''No scoring plays''
+'''Second quarter'''
+*SEA – [[Jason Myers]] 25-yard field goal, 8:22. ''Seahawks 3–0. '''Drive: 15 plays, 86 yards, 8:26.'''''
+*SEA – [[Jaxon Smith-Njigba]] 28-yard pass from [[Sam Darnold]] (Jason Myers kick), 1:44. ''Seahawks 10–0. '''Drive: 10 plays, 66 yards, 4:16.'''''
+'''Third quarter'''
+*SEA – Jason Myers 35-yard field goal, 8:09. ''Seahawks 13–0. '''Drive: 13 plays, 57 yards, 6:51.'''''
+*KC – [[Harrison Butker]] 50-yard field goal, 1:42. ''Seahawks 13–3. '''Drive: 13 plays, 44 yards, 6:27.'''''
+'''Fourth quarter'''
+*SEA – [[Emanuel Wilson (American football)|Emanuel Wilson]] 21-yard run (Jason Myers kick), 3:47. ''Seahawks 20–3. '''Drive: 9 plays, 65 yards, 4:46.'''''
+|stats=
+'''Top passers''' 
+*KC – [[Patrick Mahomes]] – 19/33, 165 yards, INT 
+*SEA – Sam Darnold – 20/28, 257 yards, TD, INT
+'''Top rushers''' 
+*KC – [[Kenneth Walker III]] – 14 rushes, 36 yards 
+*SEA – Emanuel Wilson – 24 rushes, 100 yards, TD 
+'''Top receivers''' 
+*KC – [[Travis Kelce]] – 4 receptions, 44 yards
+*SEA – Jaxon Smith-Njigba – 9 receptions, 150 yards, TD
+}}
+With the loss, the Chiefs started 5–1 for the fourth time in nine seasons. This marked [[Kenneth Walker III]]'s return to [[Lumen Field]] to face his former team.
+
+====Week 8: at Denver Broncos====
+{{Americanfootballbox
+|titlestyle={{NFLPrimaryStyle|Kansas City Chiefs|year=2026|border=2}};text-align:center;
+|state=autocollapse
+|title=Week 8: Kansas City Chiefs at Denver Broncos{{nbsp}}– Game summary
+|date=November 1
+|time=3:25{{nbsp}}p.m. CST/2:25{{nbsp}}p.m. [[Mountain Time Zone|MST]]
+|road=Chiefs
+|R1=7|R2=10|R3=7|R4=0
+|home='''Broncos'''
+|H1=3|H2=10|H3=0|H4=15
+|stadium=[[Empower Field at Mile High]], [[Denver, Colorado]]
+|attendance=76,831
+|weather=Cloudy, {{convert|63|F|C}}
+|referee=[[Clete Blakeman]]
+|TV=CBS
+|TVAnnouncers=Jim Nantz, JJ Watt and Tracy Wolfson
+|reference=[https://www.nfl.com/games/chiefs-at-broncos-2026-reg-8 Recap], [https://static.www.nfl.com/image/upload/v1793580202/gamecenter/ab166dc7-4feb-11f1-abca-2c54536568a9.pdf Game Book]
+|scoring=
+'''First quarter'''
+*DEN – [[Wil Lutz]] 39-yard field goal, 9:43. ''Broncos 3–0. '''Drive: 8 plays, 62 yards, 3:58.'''''
+*KC – [[Rashee Rice]] 11-yard pass from [[Patrick Mahomes]] ([[Harrison Butker]] kick), 6:04. ''Chiefs 7–3. '''Drive: 7 plays, 69 yards, 3:39.'''''
+'''Second quarter'''
+*DEN – Wil Lutz 45-yard field goal, 14:08. ''Chiefs 7–6. '''Drive: 9 plays, 44 yards, 2:59.'''''
+*KC – [[Emmett Johnson]] 73-yard pass from Patrick Mahomes (Harrison Butker kick), 7:40. ''Chiefs 14–6. '''Drive: 9 plays, 65 yards, 3:18.'''''
+*DEN – [[Jaylen Waddle]] 1-yard pass from [[Bo Nix]] (Wil Lutz kick), 1:15. ''Chiefs 14–13. '''Drive: 12 plays, 69 yards, 6:25.'''''
+*KC – Harrison Butker 45-yard field goal, 0:19. ''Chiefs 17–13. '''Drive: 6 plays, 47 yards, 0:56.'''''
+'''Third quarter'''
+*KC – [[Noah Gray]] 4-yard pass from Patrick Mahomes (Harrison Butker kick), 1:38. ''Chiefs 24–13. '''Drive: 11 plays, 63 yards, 5:24.'''''
+'''Fourth quarter'''
+*DEN – [[Nate Adkins]] 2-yard pass from [[Bo Nix]] (Bo Nix–Jaylen Waddle pass), 8:55. ''Chiefs 24–21. '''Drive: 9 plays, 80 yards, 4:18.'''''
+*DEN – [[Jonah Coleman]] 5-yard run (Wil Lutz kick), 1:56. ''Broncos 28–24. '''Drive: 2 plays, 56 yards, 0:35.'''''
+|stats=
+'''Top passers''' 
+*KC – Patrick Mahomes – 30/41, 321 yards, 3 TD
+*DEN – Bo Nix – 20/32, 222 yards, 2 TD
+'''Top rushers''' 
+*KC – [[Kenneth Walker III]] – 21 rushes, 69 yards 
+*DEN – Jonah Coleman – 11 rushes, 41 yards, TD 
+'''Top receivers''' 
+*KC – Emmett Johnson – 5 receptions, 128 yards, TD
+*DEN – Jonah Coleman – 4 receptions, 63 yards
+}}
+The Broncos came from behind to defeat the Chiefs 28–24 at home, seizing the top spot in the AFC West. The Chiefs had held a 24–13 lead heading into the fourth quarter; however, quarterback Bo Nix led an offensive surge, resulting in 15 unanswered points. With less than two minutes remaining, Patrick Mahomes drove the Chiefs deep into opposing territory, but on the game’s final play—a 4th and goal attempt—defensive lineman Malcolm Roach recorded a sack to seal the victory for Denver. With this result, the Broncos improved to 6–2 and took over the top spot in their division.
+
+====Week 9: vs. New York Jets====
+{{Americanfootballbox
+|titlestyle={{NFLPrimaryStyle|Kansas City Chiefs|year=2026|border=2}};text-align:center;
+|state=autocollapse
+|title=Week 9: New York Jets at Kansas City Chiefs{{nbsp}}– Game summary
+|date=November 8
+|time=12:00{{nbsp}}p.m. CST
+|road=Jets
+|R1=0|R2=0|R3=0|R4=0
+|home=Chiefs
+|H1=0|H2=0|H3=0|H4=0
+|stadium=Arrowhead Stadium, Kansas City, Missouri
+|attendance=
+|weather=<!--{{convert|--|F|C}}-->
+|referee=
+|TV=CBS
+|TVAnnouncers=Jim Nantz, J.J. Watt, Tracy Wolfson
+|reference=[https://www.nfl.com/games/jets-at-chiefs-2026-reg-9 Preview]
+|scoring=
+|stats=
+}}
+<!--
+====Week 10: at Atlanta Falcons====
+{{Americanfootballbox
+|titlestyle={{NFLPrimaryStyle|Kansas City Chiefs|year=2026|border=2}};text-align:center;
+|state=autocollapse
+|title=Week 10: Kansas City Chiefs at Atlanta Falcons{{nbsp}}– Game summary
+|date=November 15
+|time=1:00{{nbsp}}p.m. EST/12:00{{nbsp}}p.m. CST
+|road=Chiefs
+|R1=0|R2=0|R3=0|R4=0
+|home=Falcons
+|H1=0|H2=0|H3=0|H4=0
+|stadium=[[Mercedes-Benz Stadium]], [[Atlanta, Georgia]]
+|attendance=
+|weather={{abbr|TBD|To be determined}} ([[retractable roof]] stadium)
+|referee=
+|TV=CBS
+|TVAnnouncers=
+|reference=[https://www.nfl.com/games/chiefs-at-falcons-2026-reg-10 Preview]
+|scoring=
+|stats=
+}}
+
+====Week 11: vs. Arizona Cardinals====
+{{Americanfootballbox
+|titlestyle={{NFLPrimaryStyle|Kansas City Chiefs|year=2026|border=2}};text-align:center;
+|state=autocollapse
+|title=Week 11: Arizona Cardinals at Kansas City Chiefs{{nbsp}}– Game summary
+|date=November 22
+|time=12:00{{nbsp}}p.m. CST
+|road=Cardinals
+|R1=0|R2=0|R3=0|R4=0
+|home=Chiefs
+|H1=0|H2=0|H3=0|H4=0
+|stadium=Arrowhead Stadium, Kansas City, Missouri
+|attendance=
+|weather=
+|referee=
+|TV=CBS
+|TVAnnouncers=
+|reference=[https://www.nfl.com/games/cardinals-at-chiefs-2026-reg-11 Preview]
+|scoring=
+|stats=
+}}
+
+====Week 12: at Buffalo Bills====
+'''[[NFL on Thanksgiving Day|Thanksgiving Day games]]'''
+{{Americanfootballbox
+|titlestyle={{NFLPrimaryStyle|Kansas City Chiefs|year=2026|border=2}};text-align:center;
+|state=autocollapse
+|title=Week 12: Kansas City Chiefs at Buffalo Bills{{nbsp}}– Game summary
+|date={{dow tooltip|November 26, 2026}}
+|time=8:20{{nbsp}}p.m. EST/7:20{{nbsp}}p.m. CST
+|road=Chiefs
+|R1=0|R2=0|R3=0|R4=0
+|home=Bills
+|H1=0|H2=0|H3=0|H4=0
+|stadium=[[New Highmark Stadium]], [[Orchard Park, New York]]
+|attendance=
+|weather=
+|referee=
+|TV=NBC
+|TVAnnouncers=Mike Tirico, Cris Collinsworth and Melissa Stark
+|reference=[https://www.nfl.com/games/chiefs-at-bills-2026-reg-12 Preview]
+|scoring=
+|stats=
+}}
+
+====Week 13: at Los Angeles Rams====
+{{Americanfootballbox
+|titlestyle={{NFLPrimaryStyle|Kansas City Chiefs|year=2026|border=2}};text-align:center;
+|state=autocollapse
+|title=Week #: Kansas City Chiefs at Los Angeles Rams{{nbsp}}– Game summary
+|date={{dow tooltip|December 3, 2026}}
+|time=7:15{{nbsp}}p.m. CST/5:15{{nbsp}}p.m. PST
+|road=Chiefs
+|R1=0|R2=0|R3=0|R4=0
+|home=Rams
+|H1=0|H2=0|H3=0|H4=0
+|stadium=SoFi Stadium, Inglewood, California
+|attendance=
+|weather={{abbr|TBD|To be determined}} (fixed roof)
+|referee=
+|TV=[[NFL on Prime Video|Prime Video]]
+|TVAnnouncers=[[Al Michaels]], [[Kirk Herbstreit]] and [[Kaylee Hartung]]
+|reference=[https://www.nfl.com/games/chiefs-at-rams-2026-reg-# Preview]
+|scoring=
+|stats=
+}}
+
+====Week 14: at Cincinnati Bengals====
+{{Americanfootballbox
+|titlestyle={{NFLPrimaryStyle|Kansas City Chiefs|year=2026|border=2}};text-align:center;
+|state=autocollapse
+|title=Week 14: Kansas City Chiefs at Cincinnati Bengals{{nbsp}}– Game summary
+|date=December 13
+|time=4:25{{nbsp}}p.m. EST/3:25{{nbsp}}p.m. CST
+|road=Chiefs
+|R1=0|R2=0|R3=0|R4=0
+|home=Bengals
+|H1=0|H2=0|H3=0|H4=0
+|stadium=[[Paycor Stadium]], [[Cincinnati, Ohio]]
+|attendance=
+|weather=
+|referee=
+|TV=[[NFL on Fox|Fox]]
+|TVAnnouncers=[[Kevin Burkhardt]], [[Tom Brady]], [[Erin Andrews]] and [[Tom Rinaldi]]
+|reference=[https://www.nfl.com/games/chiefs-at-bengals-2026-reg-14 Preview]
+|scoring=
+|stats=
+}}
+
+====Week 15: vs. New England Patriots====
+{{Americanfootballbox
+|titlestyle={{NFLPrimaryStyle|Kansas City Chiefs|year=2026|border=2}};text-align:center;
+|state=autocollapse
+|title=Week 15: New England Patriots at Kansas City Chiefs{{nbsp}}– Game summary
+|date={{dow tooltip|December 21, 2026}}
+|time=7:15{{nbsp}}p.m. CST
+|road=Patriots
+|R1=0|R2=0|R3=0|R4=0
+|home=Chiefs
+|H1=0|H2=0|H3=0|H4=0
+|stadium=Arrowhead Stadium, Kansas City, Missouri
+|attendance=
+|weather=
+|referee=
+|TV=ESPN/ABC
+|TVAnnouncers=Joe Buck, Troy Aikman and Lisa Salters
+|reference=[https://www.nfl.com/games/patriots-at-chiefs-2026-reg-15 Preview]
+|scoring=
+|stats=
+}}
+
+====Week 16: vs. San Francisco 49ers====
+{{Americanfootballbox
+|titlestyle={{NFLPrimaryStyle|Kansas City Chiefs|year=2026|border=2}};text-align:center;
+|state=autocollapse
+|title=Week 16: San Francisco 49ers at Kansas City Chiefs{{nbsp}}– Game summary
+|date=December 27
+|time=3:25{{nbsp}}p.m. CST
+|road=49ers
+|R1=0|R2=0|R3=0|R4=0
+|home=Chiefs
+|H1=0|H2=0|H3=0|H4=0
+|stadium=Arrowhead Stadium, Kansas City, Missouri
+|attendance=
+|weather=
+|referee=
+|TV=CBS
+|TVAnnouncers=Jim Nantz, JJ Watt and Tracy Wolfson
+|reference=[https://www.nfl.com/games/49ers-at-chiefs-2026-reg-16 Preview]
+|scoring=
+|stats=
+}}
+
+====Week 17: at Los Angeles Chargers====
+{{Americanfootballbox
+|titlestyle={{NFLPrimaryStyle|Kansas City Chiefs|year=2026|border=2}};text-align:center;
+|state=autocollapse
+|title=Week 17: Kansas City Chiefs at Los Angeles Chargers{{nbsp}}– Game summary
+|date=January 2/3
+|time=TBD{{nbsp}}p.m. CST/TBD{{nbsp}}p.m. PST
+|road=Chiefs
+|R1=0|R2=0|R3=0|R4=0
+|home=Chargers
+|H1=0|H2=0|H3=0|H4=0
+|stadium=SoFi Stadium, Inglewood, California
+|attendance=
+|weather={{abbr|TBD|To be determined}} (fixed roof)
+|referee=
+|TV=TBD
+|TVAnnouncers=
+|reference=[https://www.nfl.com/games/chiefs-at-chargers-2026-reg-17 Preview]
+|scoring=
+|stats=
+}}
+
+====Week 18: vs. Las Vegas Raiders====
+{{Americanfootballbox
+|titlestyle={{NFLPrimaryStyle|Kansas City Chiefs|year=2026|border=2}};text-align:center;
+|state=autocollapse
+|title=Week 18: Las Vegas Raiders at Kansas City Chiefs{{nbsp}}– Game summary
+|date=January 9/10
+|time=TBD{{nbsp}}p.m. CST
+|road=Raiders
+|R1=0|R2=0|R3=0|R4=0
+|home=Chiefs
+|H1=0|H2=0|H3=0|H4=0
+|stadium=Arrowhead Stadium, Kansas City, Missouri
+|attendance=
+|weather=
+|referee=
+|TV=TBD
+|TVAnnouncers=
+|reference=[https://www.nfl.com/games/raiders-at-chiefs-2026-reg-18 Preview]
+|scoring=
+|stats=
+}}-->
+
+===Standings===
+====Division====
+{{2026 AFC West standings|team=KC}}
+====Conference====
+{{2026 AFC standings|team=KC}}
+
+==Notes==
+{{Notelist}}
+
+==References==
+{{reflist}}
+
+==External links==
+* {{official website|https://www.chiefs.com/}}
+
+{{Kansas City Chiefs}}
+{{Kansas City Chiefs seasons}}
+{{2026 NFL season by team}}
+
+[[Category:Kansas City Chiefs seasons]]
+[[Category:2026 in sports in Missouri|Kansas City Chiefs]]
+[[Category:2026 NFL season by team|Kansas City]]

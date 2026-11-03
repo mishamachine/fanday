@@ -1,0 +1,1793 @@
+<!-- FIXTURE. Page: 2026–27 FC Bayern Munich season
+     Source: https://en.wikipedia.org/wiki/2026%E2%80%9327_FC_Bayern_Munich_season
+     Revision id: 1383429966  (permanent link: https://en.wikipedia.org/w/index.php?oldid=1383429966)
+     Fetched: 2026-11-02 from the MediaWiki API (action=query&prop=revisions&rvprop=content|ids&rvslots=main&format=json),
+     User-Agent: Fanday/0.1 (machinemisha+fanday@gmail.com). Unmodified wikitext below this comment.
+     Text (c) Wikipedia contributors, licensed CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/);
+     authors are listed in the page history. Used here only as test data. -->
+{{Short description|128th season in existence of FC Bayern Munich}}
+{{Use dmy dates|date=May 2026}}
+{{Infobox football club season
+| club = [[FC Bayern Munich|Bayern Munich]]
+| season = [[2026–27 in German football|2026–27]]
+| ownertitle = President
+| owner = [[Herbert Hainer]]
+| mgrtitle = Head coach
+| manager = [[Vincent Kompany]]
+| stadium = [[Allianz Arena]]
+| league = [[Bundesliga]]
+| league result = ''[[2026–27 Bundesliga|1st]]''
+| cup1 = [[DFB-Pokal]]
+| cup1 result = ''[[2026–27 DFB-Pokal|Round of 16]]''
+| cup2 = [[Franz Beckenbauer Supercup]]
+| cup2 result = '''[[2026 Franz Beckenbauer Supercup|Winners]]'''
+| cup3 = [[UEFA Champions League]]
+| cup3 result = ''[[2026–27 UEFA Champions League|League phase]]''
+| league topscorer = <br>[[Michael Olise]] (6)
+| season topscorer = <br>Michael Olise (12)
+| highest attendance = 
+| lowest attendance = 
+| average attendance = 
+| largest win = Bayern Munich 7–0 [[1. FC Union Berlin|Union Berlin]]<br>18 September 2026, Bundesliga
+| largest loss = 
+| pattern_la1 = _bayern2627h
+| pattern_b1 = _bayern2627h
+| pattern_ra1 = _bayern2627h
+| pattern_sh1 = _bayern2627h
+| pattern_so1 = _bayern2627hl
+| leftarm1 = FF0000
+| body1 = FF0000
+| rightarm1 = FF0000
+| shorts1 = FF0000
+| socks1 = FF0000
+| pattern_la2 = _bayern2627a
+| pattern_b2 = _bayern2627a
+| pattern_ra2 = _bayern2627a
+| pattern_sh2 = _bayern2627a
+| pattern_so2 = _bayern2627al
+| leftarm2 = FFFFFF
+| body2 = FFFFFF
+| rightarm2 = FFFFFF
+| shorts2 = 000F5A
+| socks2 = FFFFFF
+| pattern_la3 = _bayern2627t
+| pattern_b3 = _bayern2627t
+| pattern_ra3 = _bayern2627t
+| pattern_sh3 = _bayern2627t
+| pattern_so3 = 
+| leftarm3 = 00003C
+| body3 = 00003C
+| rightarm3 = 00003C
+| socks3 = 00003C
+| prevseason = [[2025–26 FC Bayern Munich season|2025–26]]
+| nextseason = ''[[2027–28 FC Bayern Munich season|2027–28]]''
+}}
+<!-- Note: The following pages were redirects to [[2026–27_FC_Bayern_Munich_season]] before draftification:
+*[[Draft:2026–27 FC Bayern Munich season]]
+*[[2026-27 FC Bayern Munich season]]
+-->
+The '''2026–27 season''' is the [[List of FC Bayern Munich seasons|128th season]] in the history of [[FC Bayern Munich|Bayern Munich]], and the club's 62nd consecutive season in the top flight of [[Football in Germany|German football]]. In addition to the [[2026–27 Bundesliga|domestic league]], the club is participating in this season's editions of the [[2026–27 DFB-Pokal|DFB-Pokal]], the [[2026 Franz Beckenbauer Supercup|Franz Beckenbauer Supercup]], and the [[2026–27 UEFA Champions League|UEFA Champions League]].
+
+This is the first season since [[2017–18 FC Bayern Munich season|2017–18]] without [[Leon Goretzka]], and the first season since [[2023–24 FC Bayern Munich season|2023–24]] without [[Raphaël Guerreiro]], who both departed from the club when their contracts expired, on 30 June 2026.<ref name="Leon Goretzka">{{cite news |date=30 January 2026 |title=Leon Goretzka to leave Bayern in summer |url=https://fcbayern.com/en/news/2026/01/leon-goretzka-to-leave-bayern-in-summer-after-eight-years |url-status=live |archive-url=https://web.archive.org/web/20260208194803/https://fcbayern.com/en/news/2026/01/leon-goretzka-to-leave-bayern-in-summer-after-eight-years |archive-date=8 February 2026 |access-date=29 March 2026 |publisher=FC Bayern Munich}}</ref><ref name="Raphaël Guerreiro">{{cite news |date=30 March 2026 |title=FC Bayern thanks Raphaël Guerreiro |url=https://fcbayern.com/en/news/2026/03/leaving-in-the-summer-fc-bayern-thanks-raphael-guerreiro |url-status=live |archive-url=https://web.archive.org/web/20260514112153/https://fcbayern.com/en/news/2026/03/leaving-in-the-summer-fc-bayern-thanks-raphael-guerreiro |archive-date=14 May 2026 |access-date=16 May 2026 |publisher=FC Bayern Munich}}</ref>
+
+==Players==
+{{Updated|13 October 2026|<ref name="Squad">{{cite web |title=First Team |publisher=FC Bayern München AG |url=https://fcbayern.com/en/teams/first-team |access-date=29 August 2025 |archive-date=30 November 2016 |archive-url=https://web.archive.org/web/20161130105017/https://fcbayern.com/en/teams/first-team |url-status=live }}</ref>}}
+{{Fs start}}
+{{Fs player|no=1|pos=GK|nat=GER|name=[[Manuel Neuer]]|other=[[captain (association football)|captain]]}}
+{{Fs player|no=2|pos=DF|nat=FRA|name=[[Dayot Upamecano]]}}
+{{Fs player|no=3|pos=DF|nat=KOR|name=[[Kim Min-jae (footballer)|Kim Min-jae]]}}
+{{Fs player|no=4|pos=DF|nat=GER|name=[[Jonathan Tah]]}}
+{{Fs player|no=6|pos=MF|nat=GER|name=[[Joshua Kimmich]]|other=[[Vice-captain (association football)|vice-captain]]}}
+{{Fs player|no=7|pos=FW|nat=GER|name=[[Serge Gnabry]]}}
+{{Fs player|no=8|pos=MF|nat=GER|name=[[Tom Bischof]]}}
+{{Fs player|other=3rd captain|no=9|pos=FW|nat=ENG|name=[[Harry Kane]]}}
+{{Fs player|no=10|pos=MF|nat=GER|name=[[Jamal Musiala]]}}
+{{Fs player|no=11|pos=DF|nat=GER|name=[[Nathaniel Brown (footballer)|Nathaniel Brown]]}}
+{{Fs player|no=14|pos=FW|nat=COL|name=[[Luis Díaz (footballer, born 1997)|Luis Díaz]]}}
+{{Fs player|no=17|pos=FW|nat=FRA|name=[[Michael Olise]]}}
+{{Fs player|no=19|pos=DF|nat=CAN|name=[[Alphonso Davies]]}} 
+{{Fs player|no=21|pos=DF|nat=JPN|name=[[Hiroki Itō (footballer, born 1999)|Hiroki Itō]]}}
+{{Fs player|no=23|pos=DF|nat=FRA|name=[[Sacha Boey]]}}
+{{Fs player|no=26|pos=GK|nat=GER|name=[[Sven Ulreich]]}}
+{{Fs player|no=27|pos=MF|nat=AUT|name=[[Konrad Laimer]]}}
+{{Fs player|no=30|pos=DF|nat=GER|name=[[Cassiano Kiala]]}}
+{{Fs player|no=34|pos=MF|nat=MAR|name=[[Ismael Saibari]]}}
+{{Fs mid}}
+{{Fs player|no=35|pos=GK|nat=GER|name=[[Jannis Bärtl]]}}
+{{Fs player|no=38|pos=GK|nat=GER|name=[[David Podar-Știube]]}}
+{{Fs player|no=39|pos=MF|nat=SEN|name=[[Bara Sapoko Ndiaye]]}}
+{{Fs player|no=40|pos=GK|nat=GER|name=[[Jonas Urbig]]}}
+{{Fs player|no=42|pos=MF|nat=GER|name=[[Lennart Karl]]}}
+{{Fs player|no=43|pos=DF|nat=CRO|name=[[Filip Pavić]]}}
+{{Fs player|no=44|pos=DF|nat=CRO|name=[[Josip Stanišić]]}}
+{{Fs player|no=45|pos=MF|nat=GER|name=[[Aleksandar Pavlović (footballer)|Aleksandar Pavlović]]}}
+{{Fs player|no=46|pos=FW|nat=GER|name=[[Tim Binder]]}}
+{{Fs player|no=47|pos=MF|nat=POR|name=[[David Santos Daiber]]}}
+{{Fs player|no=48|pos=FW|nat=GER|name=[[Bastian Assomo]]}}
+{{Fs player|no=49|pos=FW|nat=BRA|name=[[Maycon Cardozo]]}}
+{{Fs player|no=|pos=GK|nat=GER|name=[[Leon Klanac]]}}
+{{Fs player|no=|pos=GK|nat=GER|name=[[Leonard Prescott]]}}
+{{Fs player|no=|pos=DF|nat=GER|name=[[Tarek Buchmann]]}}
+{{Fs player|no=|pos=DF|nat=GER|name=[[Vincent Manuba]]}}
+{{Fs player|no=|pos=MF|nat=ITA|name=[[Guido Della Rovere]]}}
+{{Fs player|no=|pos=MF|nat=KOS|name=[[Erblin Osmani]]}}
+{{Fs end}}
+
+== Transfers ==
+
+===In===
+{| class="wikitable"
+|-
+!Date
+!Pos.
+!Player
+!From
+!Type
+!Fee
+!{{abbr|Ref.|Reference}}
+|-
+|30 March 2026{{efn|name=fn0}}
+|[[Midfielder|MF]]
+|{{flagicon|AUT}} [[Matteo Silvio Marić|Matteo Marić]]
+|{{fbaicon|AUT}} [[FC Red Bull Salzburg|Red Bull Salzburg]]
+|style="text-align: center;"|Transfer
+|style="text-align: center;"|Undisclosed
+|<ref>{{cite news |title=FC Bayern verpflichtet Offensivtalent Matteo Maric |url=https://fcbayern.com/de/news/2026/03/fc-bayern-verpflichtet-offensivtalent-matteo-maric |publisher=FC Bayern Munich |date=30 March 2026 |language=de}}</ref><ref>{{cite web |title=Servus, Matteo!|url=https://www.instagram.com/p/DWggfoQCMn4/?igsh=MWxybjkyb3Zvb2l5dw== |website=Instagram |publisher=FC Bayern Campus |access-date=30 March 2026 |date=30 March 2026}}</ref> 
+|-
+| rowspan="16" |30 June 2026
+|[[Defender (association football)|DF]]
+|{{flagicon|FRA}} [[Sacha Boey]]
+|{{fbaicon|TUR}} [[Galatasaray S.K. (football)|Galatasaray]]
+| style="text-align: center;" rowspan="16" |Loan return
+|rowspan="16" {{N/A}}
+|
+|-
+|[[Midfielder|MF]]
+|{{flagicon|POR}} [[João Palhinha]]
+|{{fbaicon|ENG}} [[Tottenham Hotspur F.C.|Tottenham Hotspur]]
+|
+|-
+|[[Forward (association football)|FW]]
+|{{flagicon|ESP}} [[Bryan Zaragoza]]
+|{{fbaicon|ITA}} [[AS Roma|Roma]]
+| 
+|-
+|[[Midfielder|MF]]
+|{{flagicon|GER}} [[Arijon Ibrahimović]]
+|{{fbaicon|GER}} [[1. FC Heidenheim]]
+|
+|-
+|[[Midfielder|MF]]
+|{{flagicon|PER|football}} [[Felipe Chávez]]
+|{{fbaicon|GER}} [[1. FC Köln]]
+| 
+|-
+|[[Midfielder|MF]]
+|{{flagicon|CRO}} [[Lovro Zvonarek]]
+|rowspan="2"|{{fbaicon|SUI}} [[Grasshopper Club Zurich|Grasshoppers]] 
+|  
+|-
+|[[Midfielder|MF]]
+|{{flagicon|DEN}} [[Jonathan Asp Jensen]]
+|
+|-
+|[[Goalkeeper (association football)|GK]]
+|{{flagicon|GER}} [[Alexander Nübel]]
+|{{fbaicon|GER}} [[VfB Stuttgart]]
+| 
+|-
+|[[Defender (association football)|DF]]
+|{{flagicon|GER}} [[Tarek Buchmann]]
+|{{fbaicon|GER}} [[1. FC Nürnberg]]
+| 
+|-
+|[[Forward (association football)|FW]]
+|{{flagicon|GER}} [[Armindo Sieb]]
+|{{fbaicon|GER}} [[1. FSV Mainz 05|Mainz 05]]
+|
+|-
+|[[Midfielder|MF]]
+|{{flagicon|GER}} [[Noël Aséko Nkili]]
+|{{fbaicon|GER}} [[Hannover 96]]
+|<ref>{{cite news |url=https://fcbayern.com/en/news/2026/03/noel-aseko-to-return-to-bayern |title=Noel Aseko Nkili to return to Bayern from Hannover |publisher=FC Bayern Munich |date=19 March 2026 }}</ref> 
+|-
+|[[Defender (association football)|DF]]
+|{{flagicon|GER}} [[Benedikt Wimmer]]
+|{{fbaicon|GER}} [[SV Sandhausen]]
+|
+|-
+|[[Forward (association football)|FW]]
+|{{flagicon|GER}} [[Richard Christian Meier|Richard Meier]]
+|rowspan="3"|{{fbaicon|GER}} [[SpVgg Unterhaching]] 
+|  
+|-
+|[[Forward (association football)|FW]]
+|{{flagicon|GER}} [[Gibson Adu]]
+|
+|-
+|[[Forward (association football)|FW]]
+|{{flagicon|GER}} Jason Eckl
+| 
+|-
+|[[Defender (association football)|DF]]
+|{{flagicon|GER}} [[Maximilian Sebastian Marc Hennig|Maximilian Hennig]]
+|{{fbaicon|AUT}} [[TSV Hartberg]]
+| 
+|-
+|1 July 2026
+|[[Midfielder|MF]]
+|{{flagicon|MAR}} [[Ismael Saibari]]
+|{{fbaicon|NED}} [[PSV Eindhoven]]
+|rowspan="4" style="text-align: center;"|Transfer
+|style="text-align: center;"|Undisclosed
+|<ref>{{cite news |url=https://fcbayern.com/en/news/2026/07/fc-bayern-sign-ismael-saibari |title=FC Bayern sign Ismael Saibari |publisher=FC Bayern Munich |date=1 July 2026 |access-date=1 July 2026 }}</ref><ref>{{cite news |last=Stafford-Bloor |first=Sebastian |last2=O'Keeffe |first2=Greg |url=https://www.nytimes.com/athletic/7361936/2026/06/15/ismael-saibari-bayern-munich-transfer/ |title=Bayern Munich reach agreement in principle with PSV for Morocco international Ismael Saibari |publisher=The Athletic |date=30 June 2026 |access-date=1 July 2026 }}</ref>
+|-
+|3 July 2026
+|[[Defender (association football)|DF]]
+|{{flagicon|GER}} [[Nathaniel Brown (footballer)|Nathaniel Brown]]
+|{{fbaicon|GER}} [[Eintracht Frankfurt]]
+|style="text-align: center;"|€55,000,000
+|<ref>{{cite news |url=https://fcbayern.com/en/news/2026/07/fc-bayern-sign-nathaniel-brown-from-eintracht-frankfurt |title=FC Bayern sign Nathaniel Brown |publisher=FC Bayern Munich |date=3 July 2026 |access-date=3 July 2026 }}</ref><ref>{{cite web |last1=Mones |first1=Simon |title=FC Bayern holt DFB-Star Brown: Ein Umstand macht Wechsel 'noch spezieller' |url=https://www.fnp.de/sport/fussball/bayern-muenchen-holt-frankfurt-talent-brown-zr-94381363.html |website=FNP |access-date=3 July 2026 |language=de |date=3 July 2026}}</ref>
+|-
+|23 July 2026
+|[[Midfielder|MF]]
+|{{flagicon|CZE}} [[Matouš Srb]]
+|{{fbaicon|CZE}} [[SK Slavia Prague|Slavia Prague]]
+|rowspan="2" style="text-align: center;"|Undisclosed
+|<ref>{{cite news |url= https://fcbayern.com/de/news/2026/07/das-ist-amateure-neuzugang-matous-srb |title=Das ist Amateure-Neuzugang Matouš Srb |publisher=FC Bayern Munich |language=de |date=23 July 2026}}</ref><ref>{{cite news |url= https://fcbayern.com/de/news/2026/07/fc-bayern-verpflichtet-matous-srb |title=FC Bayern verpflichtet Offensivtalent Matouš Srb |publisher=FC Bayern Munich |language=de |date=23 July 2026}}</ref>
+|-
+|10 August 2026
+|[[Midfielder|MF]]
+|{{flagicon|SEN}} [[Bara Sapoko Ndiaye]]
+|{{fbaicon|GAM}} Gambinos Stars
+|<ref>{{cite web |title=FC Bayern verpflichtet Bara Sapoko Ndiaye fest |url= https://fcbayern.com/de/news/2026/08/fc-bayern-verpflichtet-bara-sapoko-ndiaye-fest |website=FC Bayern Munich |language=de | date = 10 August 2026 | access-date = 26 August 2026}}</ref>
+|}
+{{notelist|refs=
+{{efn|name=fn0|Transfer became effective on 1 July 2026, at the start of the 2026–27 season.}}
+}}
+:Total spending: {{loss}} €55,000,000
+
+=== Out ===
+{| class="wikitable"
+!Date
+!Pos.
+!Player
+!To
+!Type
+!Fee
+!{{abbr|Ref.|Reference}}
+|-
+|19 April 2026{{efn|name=fn1}}
+|[[Forward (association football)|FW]] 
+|{{flagicon|GER}} [[Sadiki Chemwor]]
+|{{fbaicon|GER}} [[Eintracht Frankfurt]]
+|colspan="2" style="text-align: center;"|End of contract
+|<ref>{{cite news|url=https://en.eintracht.de/news/sadiki-chemwor-wird-adlertraeger-176548 |title=Sadiki Chemwor to join the Eagles: The 18-year-old attacker will move from Bayern Munich to Frankfurt on 1 July 2026 |publisher=Eintracht Frankfurt |date=19 April 2026}}</ref>
+|-
+|19 May 2026{{efn|name=fn1}}
+|[[Defender (association football)|DF]]
+|{{flagicon|GER}} [[Paul Scholl]]
+|{{fbaicon|GER}} [[Karlsruher SC]] 
+|rowspan="5" style="text-align: center;"|Transfer
+|style="text-align: center;"|€150,000 
+|<ref>{{cite news |title =Kaufoption gezogen: KSC verpflichtet Paul Scholl fest |url=https://www.ksc.de/profis/saison/news/show/article/kaufoption-gezogen-ksc-verpflichtet-paul-scholl-fest/ |publisher=Karlsruher SC |language=de |date=19 May 2026}}</ref>
+|-
+|24 May 2026{{efn|name=fn1}}
+|[[Midfielder|MF]]
+|{{flagicon|IRQ}} [[Jussef Nasrawe]]
+|{{fbaicon|AUT}} [[SV Ried]] 
+|style="text-align: center;"|€100,000
+|<ref>{{cite web |title=Ried bindet Bayern-Talent Nasrawe fest |url=https://www.kicker.de/ried-bindet-bayern-talent-nasrawe-fest-4000000074231/transfermeldung |website=kicker |access-date=17 August 2026 |language=de |date=24 May 2026}}</ref>
+|-
+|28 May 2026{{efn|name=fn1}}
+|[[Defender (association football)|DF]]
+|{{flagicon|USA}} [[Grayson Dettoni]]
+|{{fbaicon|GER}} [[SV Darmstadt 98|Darmstadt 98]] 
+|style="text-align: center;"|€250,000
+|<ref>{{cite web |date=28 May 2026 |title=Kaufoption gezogen: Dettoni bleibt eine Lilie |url=https://www.sv98.de/kaufoption-gezogen-dettoni-bleibt-eine-lilie/ |publisher=SV Darmstadt 98 |language=de}}</ref>
+|-
+|5 June 2026
+|[[Goalkeeper (association football)|GK]]
+|{{flagicon|ISR}} [[Daniel Peretz]]
+|{{fbaicon|ENG}} [[Southampton F.C.|Southampton]]
+|style="text-align: center;"|€8,000,000
+|<ref>{{cite news |title=Saints seal permanent Peretz signing |url=https://www.southamptonfc.com/en/news/article/saints-seal-permanent-peretz-signing |date=5 June 2026 |access-date=5 June 2026 |publisher=Southampton F.C.}}</ref> 
+|-
+|12 June 2026{{efn|name=fn1}}
+|[[Midfielder|MF]]
+|{{flagicon|GER}} [[Maurice Krattenmacher]]
+|{{fbaicon|GER}} [[SV Elversberg]]
+|style="text-align: center;"|€2,000,000
+|<ref>{{cite web |url=https://sv07elversberg.de/maurice-krattenmacher-wechselt-an-die-kaiserlinde/ |title=Maurice Krattenmacher wechselt an die Kaiserlinde |language=de |publisher=SV Elversberg |date=12 June 2026 }}</ref>
+|-
+|13 June 2026{{efn|name=fn1}}
+|[[Midfielder|MF]]
+|{{flagicon|ESP}} [[Javi Fernández (footballer, born 2006)|Javi Fernández]]
+|{{fbaicon|GER}} [[1. FC Nürnberg]]
+|style="text-align: center;"|Loan
+|style="text-align: center;"|Undisclosed
+|<ref>{{cite news |date=13 June 2026 |title=Erneute Leihe: Javier Fernandez bleibt beim FCN |url= https://www.fcn.de/news/artikel/erneute-leihe-javier-fernandez-bleibt-beim-fcn/ |publisher=1. FC Nürnberg |language=de}}</ref>
+|-
+|15 June 2026{{efn|name=fn1}}
+|[[Defender (association football)|DF]]
+|{{flagicon|CRO}} [[Ljubo Puljić]]
+|{{fbaicon|ITA}} [[Atalanta BC|Atalanta]]
+|style="text-align: center;"|Transfer 
+|style="text-align: center;"|€2,800,000
+|<ref>{{cite news |url=https://www.atalanta.it/news/u23-dal-bayern-monaco-ecco-puljic |title=U23, dal Bayern Monaco ecco Puljić |language=it |publisher=Atalanta BC |date=15 June 2026}}</ref>
+|-
+|18 June 2026{{efn|name=fn1}}
+|[[Defender (association football)|DF]]
+|{{flagicon|USA}} [[Robert Deziel Jr.]]
+|{{fbaicon|POL}} [[Legia Warsaw]] 
+|colspan="2" style="text-align: center;"|End of contract
+|<ref>{{cite web |date=18 June 2026 |title=Robert Deziel Jr w Legii Warszawa |url=https://legia.com/pilka-nozna/deziel/87352 |access-date=18 June 2026 |publisher=Legia Warsaw |language=pl}}</ref>
+|-
+|23 June 2026{{efn|name=fn1}}
+|[[Goalkeeper (association football)|GK]]
+|{{flagicon|GER}} [[Max Schmitt (footballer)|Max Schmitt]]
+|{{fbaicon|GER}} [[SSV Jahn Regensburg|Jahn Regensburg]]
+|style="text-align: center;"|Transfer
+|rowspan="2" style="text-align: center;"|Undisclosed 
+|<ref>{{cite news |publisher=SSV Jahn Regensburg |url=https://www.ssv-jahn.de/aktuelles/detail/torhueter-max-schmitt-kommt-vom-fc-bayern-zum-ssv-jahn |title=Torhüter Max Schmitt kommt vom FC Bayern zum SSV Jahn |date=23 June 2026 |language=de}}</ref>
+|-
+|24 June 2026{{efn|name=fn1}}
+|[[Defender (association football)|DF]]
+|{{flagicon|AUT}} [[Magnus Dalpiaz]]
+|{{fbaicon|AUT}} [[TSV Hartberg]]
+|style="text-align: center;"|Loan 
+|<ref>{{cite web |title=Neuzugang Magnus Dalpiaz |url=https://tsv-hartberg-fussball.at/neuzugang-magnus-dalpiaz/ |publisher=TSV Hartberg |date=24 June 2026}}</ref> 
+|-
+|27 June 2026{{efn|name=fn1}}
+|[[Forward (association football)|FW]]
+|{{flagicon|SWE}} [[Jonah Kusi-Asare]]
+|{{fbaicon|ENG}} [[Fulham F.C.|Fulham]]
+|style="text-align: center;"|Transfer 
+|style="text-align: center;"|€6,000,000
+|<ref>{{cite news |date=27 June 2026 |title=Kusi-Asare signs permanently |url=https://www.fulhamfc.com/news/2026/june/27/kusi-asare-signs-permanently/ |publisher=Fulham F.C.}}</ref> 
+|-
+| rowspan="9" |30 June 2026
+|[[Midfielder|MF]]
+|{{flagicon|GER}} [[Leon Goretzka]]
+|{{fbaicon|ENG}} [[Aston Villa F.C.|Aston Villa]]
+| colspan="2" rowspan="7" style="text-align: center;"| End of contract
+|<ref name="Leon Goretzka"/><ref>{{Cite web |date=27 August 2026 |title=Villa announce Goretzka signing |url=https://www.avfc.co.uk/news/2026/august/27/signing-villa-announce-goretzka-signing/ |access-date=27 August 2026 |website=Aston Villa F.C.}}</ref>
+|-
+|[[Defender (association football)|DF]]
+|{{flagicon|POR}} [[Raphaël Guerreiro]]
+| style="text-align: center;" rowspan="3" |''Unattached'' 
+|<ref name="Raphaël Guerreiro"/>
+|-
+|[[Midfielder|MF]]
+|{{flagicon|GER}} [[Kurt Rüger]]
+|
+|-
+|[[Defender (association football)|DF]]
+|{{flagicon|GER}} [[Steve Breitkreuz]]
+|
+|-
+|[[Defender (association football)|DF]]
+|{{flagicon|GER}} [[Maximilian Schuhbauer]]
+|{{fbaicon|GER}} [[SV Wacker Burghausen]]
+|<ref>{{Cite web|url= https://www.wacker1930.de/maximilian-schuhbauer-wechselt-nach-burghausen/ |title=Maximilian Schuhbauer wechselt nach Burghausen |publisher=SV Wacker Burghausen|language=de|date=11 August 2025}}</ref>
+|-
+|[[Forward (association football)|FW]]
+|{{flagicon|GER}} [[Simon Zöls]]
+|{{fbaicon|GER}} [[Sportfreunde Lotte|VfL Sportfreunde Lotte]]
+|<ref>{{cite web |title=Neuzugang vom FC Bayern! |url= https://www.instagram.com/p/Dc5v1cLxVBh/?stkn=MzBwbncxcDVnMzdm |website=instagram.com |publisher=sflotte |date=3 September 2026}}</ref>
+|-
+|[[Defender (association football)|DF]]
+|{{flagicon|GER}} [[Allan Bohomo]]
+|{{fbaicon|ITA}} [[Hellas Verona FC|Hellas Verona]]
+|<ref>{{Cite web|url=https://www.calciohellas.it/2026/07/27/ufficiale-lex-bayern-bohomo-e-un-nuovo-difensore-del-verona/ |title=UFFICIALE – L’ex Bayern Bohomo è un nuovo difensore del Verona. Tesserato il giovane difensore classe 2008 reduce dall’esperienza al Bayern Monaco |website=calciohellas.it|date=27 July 2026|language=it}}</ref><ref>{{Cite web|url=https://www.mondoprimavera.com/calciomercato/hellas-verona-primavera-allan-bohomo-bayern-monaco/ |title=Hellas Verona Primavera, ufficiale l’arrivo di Allan Bohomo dal Bayern Monaco. L’Hellas Verona Primavera ufficializza l’arrivo del difensore centrale Allan Bohomo dal Bayern Monaco. Contratto fino al 2028. |website=mondoprimavera.com|date=29 July 2026|language=it}}</ref><ref>{{Cite web|url= https://www.sprintesport.it/nazionali/2026/07/30/news/scommessa-internazionale-per-la-primavera-chi-e-il-gigante-di-193-centimetri-cresciuto-tra-lipsia-e-bayern-757750/ |title= Scommessa internazionale per la Primavera: chi è il gigante di 193 centimetri cresciuto tra Lipsia e Bayern. Allan Bohomo è un nuovo calciatore del Verona: il difensore classe 2008 giocherà nell'Under 20 gialloblù |website=sprintesport.it|date=30 July 2026|language=it}}</ref> 
+|-
+|[[Forward (association football)|FW]]
+|{{flagicon|SEN}} [[Nicolas Jackson]]
+|{{fbaicon|ENG}} [[Chelsea F.C.|Chelsea]]
+|  colspan="2" rowspan="2" style="text-align: center;"| Loan return 
+|<ref>{{cite news |title=Nicolas Jackson departs Chelsea on loan |url=https://www.chelseafc.com/en/news/article/nicolas-jackson-departs-chelsea-on-loan |access-date=27 August 2026 |publisher=Chelsea FC |date=1 September 2025}}</ref>
+|-
+|[[Midfielder|MF]]
+|{{flagicon|SEN}} [[Bara Sapoko Ndiaye]]
+|{{fbaicon|GAM}} Gambinos Stars
+|
+|-
+|4 July 2026
+|[[Defender (association football)|DF]]
+|{{flagicon|TUR}} [[Deniz Ofli]]
+|{{fbaicon|GER}} [[Karlsruher SC]]
+|style="text-align: center;"|Loan
+|rowspan="8" style="text-align: center;"|Undisclosed
+|<ref>{{cite news |url=https://www.ksc.de/profis/saison/news/show/article/naechster-neuzugang-deniz-ofli-kommt-per-leihe-aus-muenchen/ |title=Nächster Neuzugang: Deniz Ofli kommt per Leihe aus München |publisher=Karlsruher SC |language=de |date=4 July 2026 |access-date=4 July 2026}}</ref>
+|-
+|7 July 2026
+|[[Goalkeeper (association football)|GK]]
+|{{flagicon|GER}} [[Alexander Nübel]]
+|{{fbaicon|TUR}} [[Beşiktaş J.K.|Beşiktaş]]
+|style="text-align: center;"|Transfer  
+|<ref>{{cite news |publisher=Beşiktaş J.K. |url=https://bjk.com.tr/tr/haber/94690/besiktasimiza-hos-geldin-alexander-nubel.html |title=Beşiktaşımıza Hoş Geldin Alexander Nübel |date=8 July 2026 |language=tr}}</ref> 
+|-
+|9 July 2026
+|[[Forward (association football)|FW]]
+|{{flagicon|GER}} [[Richard Meier (footballer)|Richard Meier]]
+|{{fbaicon|GER}} [[SV Meppen]]
+|style="text-align: center;"|Loan 
+|<ref>{{cite web |date=9 July 2026 |title=Richard Meier wechselt zum SV Meppen |url=https://www.svmeppen.de/post/richard-meier-wechselt-zum-sv-meppen |publisher=SV Meppen |language=de}}</ref>
+|-
+|13 July 2026
+|[[Midfielder|MF]]
+|{{flagicon|DEN}} [[Jonathan Asp Jensen]]
+|{{fbaicon|ESP}} [[Deportivo de A Coruña|Deportivo A Coruña]]
+|rowspan="2" style="text-align: center;"|Transfer 
+|<ref>{{cite news |title=Jonathan Asp Jensen, Nuevo Jugador del Dépor |url=https://www.rcdeportivo.es/es/noticias/jonathan-asp-jensen-nuevo-jugador-del-depor |access-date=13 July 2026 |publisher=Deportivo de A Coruña |language=es}}</ref>
+|-
+|16 July 2026
+|[[Midfielder|MF]]
+|{{flagicon|CRO}} [[Lovro Zvonarek]]
+|{{fbaicon|POR}} [[C.F. Estrela da Amadora|Estrela da Amadora]] 
+|<ref>{{cite news |publisher=FC Bayern Munich |url=https://fcbayern.com/de/news/2026/07/lovro-zvonarek-wechselt-nach-portugal |title=Lovro Zvonarek wechselt zu CF Estrela Amadora |date=16 July 2026 |language=de}}</ref><ref>{{cite web|url=https://estrelamadora.pt/bem-vindo-lovro-zvonarek/ |title=Bem-Vindo Lovro Zvonarek |publisher=C.F. Estrela da Amadora |language=pt |access-date=21 September 2026}}</ref> 
+|-
+|17 July 2026
+|[[Defender (association football)|DF]]
+|{{flagicon|GER}} [[Julien Yanda]]
+|{{fbaicon|ESP}} [[CD Eldense|Eldense]]
+|style="text-align: center;"|Loan
+|<ref>{{cite news |url=https://www.cdeldense.es/noticias/julien-yanda-nuevo-jugador-del-cd-eldense |title=Julien Yanda, nuevo jugador del CD Eldense |publisher=CD Eldense |language=es |date=17 July 2026}}</ref> 
+|-
+|18 July 2026
+|[[Midfielder|MF]]
+|{{flagicon|GER}} [[Noël Aséko Nkili]]
+|{{fbaicon|GER}} [[Eintracht Frankfurt]]
+|rowspan="3" style="text-align: center;"|Transfer 
+|<ref>{{cite news |url=https://en.eintracht.de/news/eintracht-frankfurt-verpflichtet-noel-aseko-178249/ |title=Eintracht Frankfurt sign Noel Aseko |publisher=Eintracht Frankfurt |date=18 July 2026}}</ref>
+|-
+|13 August 2026
+|[[Forward (association football)|FW]]
+|{{flagicon|GER}} [[Armindo Sieb]]
+|{{fbaicon|USA}} [[Los Angeles FC]] 
+|<ref>{{cite web |title=LAFC Signs German Forward Armindo Sieb from Bayern Munich |url=https://www.lafc.com/news/lafc-signs-german-forward-armindo-sieb-from-bayern-munich |website=lafc.com |access-date=13 August 2026 |date=13 August 2026}}</ref><ref>{{cite web |last1=Sigal |first1=Jonathan |title=LAFC acquire Armindo Sieb from Bayern Munich |url=https://www.mlssoccer.com/news/lafc-acquire-armindo-sieb-from-bayern-munich |website=mlssoccer.com/ |access-date=13 August 2026 |date=13 August 2026}}</ref>
+|-
+|rowspan="2"|26 August 2026
+|[[Midfielder|MF]]
+|{{flagicon|POR}} [[João Palhinha]]
+|{{fbaicon|POR}} [[S.L. Benfica|Benfica]] 
+|style="text-align: center;"|€14,000,000
+|<ref>{{Cite web|url=https://www.slbenfica.pt/pt-pt/agora/noticias/2026/08/26/futebol-benfica-joao-palhinha-reforco-contratacao|title=João Palhinha é reforço do Benfica!|publisher=S.L. Benfica|language=pt|date=26 August 2026|access-date=26 August 2026}}</ref>
+|-
+|[[Midfielder|MF]]
+|{{flagicon|PER|football}} [[Felipe Chávez]]
+|{{fbaicon|GER}} [[1. FC Magdeburg]] 
+|rowspan="2" style="text-align: center;"|Loan
+|rowspan="3" style="text-align: center;"|Undisclosed
+|<ref>{{Cite news|url= https://1.fc-magdeburg.de/news/detail/verstaerkung-vom-deutschen-rekordmeister |title= Felipe Chávez wechselt leihweise vom FC Bayern München zu unserem 1. FC Magdeburg. |publisher=1. FC Magdeburg|date=26 August 2026}}</ref>
+|-
+|rowspan="2"|27 August 2026 
+|[[Forward (association football)|FW]]
+|{{flagicon|ESP}} [[Bryan Zaragoza]]
+|{{fbaicon|ESP}} [[RCD Espanyol|Espanyol]] 
+|<ref>{{cite web|url= https://www.rcdespanyol.com/en/new/bryan-zaragoza,-new-espanyol-player/20655 |title= Bryan Zaragoza, new Espanyol player |publisher=RCD Espanyol|date=27 August 2026}}</ref> 
+|-
+|[[Forward (association football)|FW]]
+|{{flagicon|GER}} [[Wisdom Mike]]
+|{{fbaicon|BEL}} [[Club Brugge KV|Club Brugge]] 
+|style="text-align: center;"|Transfer 
+|<ref>{{cite web |url=https://www.clubbrugge.be/en/news/wisdom-mike-to-club-brugge |title=Wisdom Mike to Club Brugge |publisher=Club Brugge KV |date=27 August 2026 }}</ref>
+|-
+|31 August 2026 
+|[[Goalkeeper (association football)|GK]]
+|{{flagicon|GER}} [[Hannes Heilmair]]
+|''Unattached'' 
+|colspan="2" style="text-align: center;"|Contract termination 
+|
+|-
+|rowspan="3"|1 September 2026 
+|[[Midfielder|MF]]
+|{{flagicon|GER}} [[Arijon Ibrahimović]]
+|{{fbaicon|GER}} [[FC Augsburg]] 
+|style="text-align: center;"|Loan 
+|rowspan="3" style="text-align: center;"|Undisclosed 
+|<ref>{{cite web |url= https://www.fcaugsburg.de/article/fca-holt-u21-nationalspieler-arijon-ibrahimovic-23403 |title= FCA holt U21-Nationalspieler Arijon Ibrahimović |publisher=FC Augsburg |language=de |date=1 September 2026 }}</ref>
+|-
+|[[Forward (association football)|FW]]
+|{{flagicon|GER}} [[Gibson Adu]]
+|{{fbaicon|GER}} [[Greifswalder FC]] 
+|rowspan="2" style="text-align: center;"|Transfer 
+|<ref>{{cite web |url= https://greifswalder-fc.de/news/alle-neuigkeiten/gibson-adu-wechselt-von-bayern-muenchen-nach-greifswald.html |title= Gibson Adu wechselt von Bayern München nach Greifswald |publisher=Greifswalder FC |language=de |date=1 September 2026 }}</ref> 
+|-
+|[[Defender (association football)|DF]]
+|{{flagicon|GER}} Luis Schäfer
+|{{fbaicon|GER}} [[SpVgg Unterhaching]] 
+|<ref>{{cite web |title=Farewell from FCBayern: Luis Schäfer joins SpVgg Unterhaching. |url= https://www.instagram.com/p/Dcx9y8VoHYZ/?igsi=MTlwNmt0ZjdueG54cw== |website=instagram.com |publisher=fcbayerncampus |date=1 September 2026}}</ref><ref>{{cite web |title=Willkommen in der Haching-Familie, Luis Schäfer! |url= https://www.instagram.com/p/Dcx-VKgNIvi/?igsi=ZnA1MWlpejA1cW1o |website=instagram.com |publisher=spvgg_unterhaching |date=2 September 2026}}</ref>
+|}
+{{notelist|refs=
+{{efn|name=fn1|Transfer became effective on 1 July 2026, at the start of the 2026–27 season.}}
+}} 
+:Total income: {{gain}} €33,300,000
+:Balance: {{loss}} €21,700,000
+
+==Pre-season and friendlies==
+{{legend2|#CCFFCC|Win|border=1px solid #AAAAAA}}
+{{legend2|#FFFFCC|Draw|border=1px solid #AAAAAA}}
+{{legend2|#FFCCCC|Loss|border=1px solid #AAAAAA}}
+{{legend2|#FFFFFF|Fixtures|border=1px solid #AAAAAA}}
+
+{{Football box collapsible
+|round       = [[Exhibition game#Club football|Friendly]]
+|date        = {{Start date|2026|7|25|df=y}}
+|time        = 15:30 [[Central European Summer Time|CEST]]
+|team1       = [[SV Wehen Wiesbaden|Wehen Wiesbaden]]
+|score       = 2–1
+|report      = https://fcbayern.com/en/news/matchreports/2026/07/match-report-wehen-wiesbaden-fc-bayern-pre-season-friendly
+|team2       = Bayern Munich 
+|goals1      = 
+*[[Ibrahim Ati Allah|Ati Allah]] {{goal|10}}
+*[[Lukas Schleimer|Schleimer]] {{goal|83}}
+|goals2      = 
+*[[Richard Ajayi|Ajayi]] {{yel|19}}
+*[[Tom Bischof|Bischof]] {{goal|57|pen.}}
+|stadium     = [[Brita-Arena]]
+|location    = [[Wiesbaden]]
+|attendance  = 12,000
+|referee     = Christian Ballweg
+|result      = L
+}}
+{{Football box collapsible
+|round       = [[Exhibition game#Club football|Friendly]]
+|date        = {{Start date|2026|7|30|df=y}}
+|time        = 18:00 [[Central European Summer Time|CEST]]
+|team1       = [[FC Rottach-Egern]]
+|score       = 0–15
+|report      = https://fcbayern.com/en/news/matchreports/2026/07/match-report-fc-rottach-egern-v-fc-bayern-300726
+|team2       = Bayern Munich 
+|goals1      = 
+|goals2      = 
+*[[Filip Pavić|Pavić]] {{goal|8}}
+*[[Arijon Ibrahimović|Ibrahimović]] {{goal|9||45+2}}
+*[[Felipe Chávez|Chávez]] {{goal|10||13}}
+*[[Maycon Cardozo|Cardozo]] {{goal|45+3||50}}
+*[[Armindo Sieb|Sieb]] {{goal|51||59}} 
+*[[João Palhinha|Palhinha]] {{goal|56}}
+*[[Bara Sapoko Ndiaye|Ndiaye]] {{goal|67}}
+*[[Bastian Assomo|Assomo]] {{goal|67}}
+*[[Aleksandar Pavlović (footballer)|Pavlović]] {{goal|86}}
+*[[Joshua Kimmich|Kimmich]] {{goal|88}}
+*Nuraj {{goal|90+3}}
+|stadium     = Stadion am Birkenmoos
+|location    = [[Rottach-Egern]]
+|attendance  = 2,926
+|referee     = Assad Nouhoum
+|result      = W
+}}
+{{Football box collapsible
+|round       = [[Exhibition game#Club football|Friendly]]
+|date        = {{Start date|2026|8|4|df=y}}
+|time        = 20:00 [[Time in South Korea|KST]]<br>13:00 [[Central European Summer Time|CEST]]
+|team1       = [[Jeju SK FC|Jeju SK]]
+|score       = 1–2
+|report      = https://fcbayern.com/en/news/matchreports/2026/08/match-report-jeju-sk-fc-v-fc-bayern-040826
+|team2       = Bayern Munich 
+|goals1      = 
+*[[Lee Chang-min (footballer)|Lee]] {{goal|15}}
+|goals2      = 
+*[[Felipe Chávez|Chávez]] {{goal|11}}
+*[[Bastian Assomo|Assomo]] {{goal|41}}
+|stadium     = [[Jeju World Cup Stadium]]
+|location    = [[Seogwipo]], South Korea
+|attendance  = 22,519
+|referee     = Shin Yong-jun
+|result      = W
+}}
+{{Football box collapsible
+|round       = [[Exhibition game#Club football|Friendly]]
+|date        = {{Start date|2026|8|7|df=y}}
+|time        = 20:00 [[Hong Kong Time|HKT]]<br>14:00 [[Central European Summer Time|CEST]]
+|team1       = Bayern Munich
+|score       = 2–1
+|report      = https://fcbayern.com/en/news/matchreports/2026/08/match-report-fc-bayern-v-aston-villa-070826
+|team2       = [[Aston Villa F.C.|Aston Villa]]
+|goals1      = 
+*[[Maycon Cardozo|Cardozo]] {{yel|26}}
+*[[Kim Min-jae (footballer)|Kim]] {{goal|37}}
+*[[Luis Díaz (footballer, born 1997)|Díaz]] {{goal|73}}
+*[[Sacha Boey|Boey]] {{yel|78}}
+|goals2      = 
+*[[João Gomes (footballer, born 2001)|João Gomes]] {{goal|83}}
+|stadium     = [[Kai Tak Sports Park]]
+|location    = [[Kowloon]], Hong Kong
+|attendance  = 38,176
+|referee     = Poon Chun Kit
+|result      = W
+}}
+{{Football box collapsible
+|round       = [[Telekom Cup]]
+|date        = {{Start date|2026|8|15|df=y}}
+|time        = 15:30 [[Central European Summer Time|CEST]]
+|team1       = Bayern Munich
+|score       = 3–1
+|report      = https://fcbayern.com/en/news/matchreports/2026/08/match-report-telekom-cup-fc-bayern-v-rb-leipzig-150826
+|team2       = [[RB Leipzig]]
+|goals1      = 
+*[[Luis Díaz (footballer, born 1997)|Díaz]] {{goal|13}}
+*[[Nathaniel Brown (footballer)|Brown]] {{goal|58}}
+*[[Jamal Musiala|Musiala]] {{goal|81}}
+|goals2      = 
+*[[Brajan Gruda|Gruda]] {{goal|53}}
+|stadium     = [[Allianz Arena]]
+|location    = [[Munich]]
+|attendance  = 75,000
+|referee     = [[Robert Hartmann (referee)|Robert Hartmann]]
+|result      = W
+}}
+{{Football box collapsible
+|round       = [[Exhibition game#Club football|Friendly]]
+|date        = {{Start date|2026|8|18|df=y}}
+|time        = 18:00 [[Central European Summer Time|CEST]]
+|team1       = [[1. FC Heidenheim]]
+|score       = 2–4
+|report      = https://fcbayern.com/en/news/matchreports/2026/08/match-report-fc-heidenheim-v-fc-bayern-180826
+|team2       = Bayern Munich
+|goals1      = 
+*[[Yannik Wagner|Wagner]] {{Goal|5}}
+*[[Luca Kerber|Kerber]] {{yel|21}}
+*[[Julian Niehues|Niehues]] {{Goal|44}}
+|goals2      = 
+*[[Felipe Chávez|Chávez]] {{Goal|25}}
+*[[Tim Binder|Binder]] {{yel|43}}
+*[[Arijon Ibrahimović|Ibrahimović]] {{Goal|47|pen.}}
+*[[Luis Díaz (footballer, born 1997)|Díaz]] {{Goal|78}}
+*[[Michael Olise|Olise]] {{yel|81}}
+*[[Nathaniel Brown (footballer)|Brown]] {{Goal|83}}
+|stadium     = [[Voith-Arena]]
+|location    = [[Heidenheim an der Brenz|Heidenheim]]
+|attendance  = 11,727
+|referee     = [[Martin Petersen]]
+|result      = W
+}}
+{{Football box collapsible
+|round       = [[Exhibition game#Club football|Friendly]]
+|date        = {{Start date|2027|1|5|df=y}}
+|time        = 
+|team1       = Bayern Munich
+|score       = 
+|report      = <ref>{{cite web |title=Special match in Nairobi: FC Bayern to take on Ajax |url=https://fcbayern.com/en/news/2026/10/special-match-in-nairobi-fc-bayern-to-take-on-ajax |publisher=FC Bayern München |access-date=28 October 2026 |date=28 October 2026}}</ref>
+|team2       = [[AFC Ajax|Ajax]]
+|goals1      = 
+|goals2      = 
+|stadium     = [[Nyayo National Stadium]]
+|location    = [[Nairobi]], Kenya
+|attendance  = 
+|referee     = 
+|result      = 
+}}
+
+==Competitions==
+===Overall record===
+{{Fb overview2
+|c=4
+|c1=[[2026–27 Bundesliga|Bundesliga]] |fm1=28 August 2026 |lm1=22 May 2027 |sr1=Matchday 1 |fp1=TBD |w1=5 |d1=3 |l1=0 |f1=27 |a1=8
+|c2=[[2026–27 DFB-Pokal|DFB-Pokal]] |fm2=2 September 2026 |lm2=TBD |sr2=First round |fp2=TBD |w2=2 |d2=0 |l2=0 |f2=10 |a2=2
+|c3=[[2026 Franz Beckenbauer Supercup|Franz Beckenbauer Supercup]] |dm3=22 August 2026 |sr3=Final |fp3=Winners |w3=1 |d3=0 |l3=0 |f3=2 |a3=1
+|c4=[[2026–27 UEFA Champions League|UEFA Champions League]] |fm4=10 September 2026 |lm4=TBD |sr4=League phase |fp4=TBD |w4=1 |d4=2 |l4=0 |f4=10 |a4=5
+|u=31 October 2026
+|s=[https://int.soccerway.com/teams/germany/fc-bayern-munchen/961/ Soccerway]
+}}
+
+===Bundesliga===
+{{main|2026–27 Bundesliga}}
+
+====League table====
+{{2026–27 Bundesliga table|showteam=MUN}}
+
+====Results summary====
+{{Fb_rs |hw=3 |hd=1 |hl=0 |hgf=20 |hga=4 |aw=2 |ad=2 |al=0 |agf=7 |aga=4}}
+{{Fb_rs footer |u=31 October 2026 |s=[https://www.kicker.de/bundesliga/heimtabelle-auswaertstabelle/2026-27/ kicker.de]|date=July 2026}}
+
+====Results by round====
+{{#invoke:sports rbr table|table|legendpos=b
+| updated = 31 October 2026
+| header = Round
+| label1 = Ground
+| res1 = H/A/A/H/A/H/A/H/A/H/A/H/A/H/A/H/A/A/H/H/A/H/A/H/A/H/A/H/A/H/A/H/A/H
+| label2 = Result
+| res2 = W/D/W/W/D/W/W/D//////////////////////////
+| label3 = Position
+| pos3 = 1/6/4/2/3/1/1/1//////////////////////////
+| label4 = Points
+| res4 = 3p/4p/7p/10p/11p/14p/17p/18p//////////////////////////
+| color_W = green2 |text_W = Win
+| color_D = yellow2 |text_D = Draw
+| color_L = red2 |text_L = Loss
+| text_H = Home |text_A = Away
+| color_1 = gold |color_2-4 = green1 |color_5 = blue1 |color_6 = yellow1 |color_16 = red2 |color_17–18 = red1
+| source = [https://www.bundesliga.com/en/bundesliga/matchday/2026-2027/fc-bayern-muenchen/ Bundesliga]
+}}
+
+====Matches====
+The Bundesliga fixtures were released on 2 July 2026.
+
+{{legend2|#BBF3BB|Win|border=1px solid #AAAAAA}}
+{{legend2|#FFFFBB|Draw|border=1px solid #AAAAAA}}
+{{legend2|#FFBBBB|Loss|border=1px solid #AAAAAA}}
+{{legend2|#FFFFFF|Fixtures|border=1px solid #AAAAAA}}
+
+{{Football box collapsible
+| round      = 1
+| date       = 28 August 2026
+| time       = 20:30 [[Central European Summer Time|CEST]]
+| team1      = Bayern Munich
+| score      = 5–1
+| report     = https://datencenter.dfb.de/datencenter/bundesliga/2026-2027/1-spieltag/fc-bayern-muenchen-vfb-stuttgart-2419234
+| team2      = [[VfB Stuttgart]]
+| goals1     = 
+*[[Dayot Upamecano|Upamecano]] {{goal|21}}
+*[[Michael Olise|Olise]] {{goal|55}}
+*[[Josha Vagnoman|Vagnoman]] {{goal|58|o.g.}}
+*[[Kim Min-jae (footballer)|Kim]] {{yel|81}}
+*[[Aleksandar Pavlović (footballer)|Pavlović]] {{goal|82}}
+*[[Luis Díaz (footballer, born 1997)|Díaz]] {{goal|90+2}}
+| goals2     = 
+*[[Josha Vagnoman|Vagnoman]] {{goal|52}}
+*[[Jeff Chabot|Chabot]] {{yel|62}}
+*[[Finn Jeltsch|Jeltsch]] {{yel|68}}
+*[[Grischa Prömel|Prömel]] {{yel|90+2}}
+| stadium    = [[Allianz Arena]]
+| location   = [[Munich]]
+| attendance = 75,000
+| referee    = [[Sören Storks]]
+| result     = W
+}}
+{{Football box collapsible
+| round      = 2
+| date       = 5 September 2026
+| time       = 18:30 [[Central European Summer Time|CEST]]
+| team1      = [[FC Schalke 04|Schalke 04]]
+| score      = 0–0
+| report     = https://datencenter.dfb.de/datencenter/bundesliga/2026-2027/2-spieltag/fc-schalke-04-fc-bayern-muenchen-2419266
+| team2      = Bayern Munich
+| goals1     = 
+*[[Junior Dina Ebimbe|Dina Ebimbe]] {{yel|31}}
+*[[Nikola Katić|Katić]] {{yel|73}}
+| goals2     = 
+*[[Dayot Upamecano|Upamecano]] {{yel|35}}
+*[[Aleksandar Pavlović (footballer)|Pavlović]] {{yel|72}}
+| stadium    = [[Arena AufSchalke|Veltins-Arena]]
+| location   = [[Gelsenkirchen]]
+| attendance = 62,094
+| referee    = Robert Schröder
+| result     = D
+}}
+{{Football box collapsible
+| round      = 3
+| date       = 13 September 2026
+| time       = 17:30 [[Central European Summer Time|CEST]]
+| team1      = [[SV Elversberg]]
+| score      = 1–2
+| report     = https://datencenter.dfb.de/datencenter/bundesliga/2026-2027/3-spieltag/sv-elversberg-fc-bayern-muenchen-2419301
+| team2      = Bayern Munich
+| goals1     = 
+*[[Francis Onyeka|Onyeka]] {{yel|7}}
+*[[Maurice Krattenmacher|Krattenmacher]] {{goal|61}}
+*[[Felix Keidel|Keidel]] {{yel|63}}
+| goals2     = 
+*[[Lennart Karl|Karl]] {{goal|26}}
+*[[Harry Kane|Kane]] {{goal|72}}
+| stadium    = [[Waldstadion an der Kaiserlinde|Ursapharm-Arena]]
+| location   = [[Spiesen-Elversberg]]
+| attendance = 9,307
+| referee    = [[Sascha Stegemann]]
+| result     = W
+}}
+{{Football box collapsible
+|round      = 4
+|date       = 18 September 2026
+|time       = 20:30 [[Central European Summer Time|CEST]]
+|team1      = Bayern Munich
+|score      = 7–0
+|report     = https://datencenter.dfb.de/datencenter/bundesliga/2026-2027/4-spieltag/fc-bayern-muenchen-1-fc-union-berlin-2419295
+|team2      = [[1. FC Union Berlin|Union Berlin]]
+|goals1     = 
+*[[Jamal Musiala|Musiala]] {{goal|18}}
+*[[Harry Kane|Kane]] {{goal|39|pen.|54}}
+*[[Michael Olise|Olise]] {{goal|43||73||76}}
+*[[Dayot Upamecano|Upamecano]] {{yel|45+2}}
+*[[Ismael Saibari|Saibari]] {{goal|70}}
+|goals2     = 
+*[[Felix Uduokhai|Uduokhai]] {{yel|38}}
+*[[Rani Khedira|Khedira]] {{yel|42}}
+*[[Livan Burcu|Burcu]] {{yel|78}}
+|stadium    = [[Allianz Arena]]
+|location   = [[Munich]]
+|attendance = 75,000
+|referee    = [[Benjamin Brand]]
+|result     = W
+}}
+{{Football box collapsible
+| round      = 5
+| date       = 10 October 2026
+| time       = 15:30 [[Central European Summer Time|CEST]]
+| team1      = [[FC Augsburg]]
+| score      = 2–2
+| report     = https://datencenter.dfb.de/datencenter/bundesliga/2026-2027/5-spieltag/fc-augsburg-fc-bayern-muenchen-2419326
+| team2      = Bayern Munich
+| goals1     = 
+*[[Robin Fellhauer|Fellhauer]] {{goal|1}}
+*[[Chrislain Matsima|Matsima]] {{yel|42}}
+*[[Rodrigo Ribeiro (footballer, born 2005)|Ribeiro]] {{yel|43}}, {{goal|64}}
+*[[Hennes Behrens|Behrens]] {{yel|62}}
+| goals2     = 
+*[[Ismael Saibari|Saibari]] {{goal|55}}
+*[[Nathaniel Brown (footballer)|Brown]] {{goal|80}}
+| stadium    = [[Augsburg Arena|WWK Arena]]
+| location   = [[Augsburg]]
+| attendance = 30,660
+| referee    = [[Sven Jablonski]]
+| result     = D
+}}
+{{Football box collapsible
+| round      = 6
+| date       = 17 October 2026
+| time       = 18:30 [[Central European Summer Time|CEST]]
+| team1      = Bayern Munich
+| score      = 6–1
+| report     = https://datencenter.dfb.de/datencenter/bundesliga/2026-2027/6-spieltag/fc-bayern-muenchen-rb-leipzig-2419337
+| team2      = [[RB Leipzig]]
+| goals1     = 
+*[[Luis Díaz (footballer, born 1997)|Díaz]] {{goal|12||47||69}}
+*[[Aleksandar Pavlović (footballer)|Pavlović]] {{goal|26}}
+*[[Michael Olise|Olise]] {{goal|34}}
+*[[Konrad Laimer|Laimer]] {{yel|51}}
+*[[Harry Kane|Kane]] {{goal|53}}
+| goals2     = 
+*[[Andrija Maksimović|Maksimović]] {{goal|90+1}}
+| stadium    = [[Allianz Arena]]
+| location   = [[Munich]]
+| attendance = 75,000
+| referee    = [[Tobias Stieler]]
+| result     = W
+}}
+{{Football box collapsible
+|round      = 7
+|date       = 25 October 2026
+|time       = 17:30 [[Central European Time|CET]]
+|team1      = [[SC Freiburg]]
+|score      = 1–3
+|report     = https://datencenter.dfb.de/datencenter/bundesliga/2026-2027/7-spieltag/sc-freiburg-fc-bayern-muenchen-2419368
+|team2      = Bayern Munich
+|goals1     = 
+*[[Lucas Höler|Höler]] {{yel|25}}
+*[[Jan-Niklas Beste|Beste]] {{yel|55}}
+*[[Tom Bischof|Bischof]] {{goal|82|o.g.}}
+*[[Maximilian Eggestein|Eggestein]] {{yel|85}}
+|goals2     = 
+*[[Dayot Upamecano|Upamecano]] {{goal|16}}
+*[[Serge Gnabry|Gnabry]] {{goal|42}}
+*[[Jonathan Tah|Tah]] {{yel|65}}
+*[[Michael Olise|Olise]] {{goal|90+5}}
+|stadium    = [[Europa-Park Stadion]]
+|location   = [[Freiburg im Breisgau|Freiburg]]
+|attendance = 34,700
+|referee    = [[Felix Zwayer]]
+|result     = W
+}}
+{{Football box collapsible
+| round      = [[Der Klassiker|8]] 
+| date       = 31 October 2026
+| time       = 18:30 [[Central European Time|CET]]
+| team1      = Bayern Munich
+| score      = 2–2
+| report     = https://datencenter.dfb.de/datencenter/bundesliga/2026-2027/8-spieltag/fc-bayern-muenchen-borussia-dortmund-2419379
+| team2      = [[Borussia Dortmund]]
+| goals1     = 
+*[[Konrad Laimer|Laimer]] {{goal|38}}, {{yel|74}}
+*[[Josip Stanišić|Stanišić]] {{yel|53}}
+*[[Dayot Upamecano|Upamecano]] {{goal|66}}
+| goals2     = 
+*[[Jobe Bellingham|Bellingham]] {{yel|6}}
+*[[Serhou Guirassy|Guirassy]] {{goal|60}}
+*[[Fábio Silva (footballer, born 2002)|Silva]] {{goal|89}}
+| stadium    = [[Allianz Arena]]
+| location   = [[Munich]]
+| attendance = 75,000
+| referee    = [[Tobias Stieler]]
+| result     = D
+}}
+{{Football box collapsible
+|round      = 9
+|date       = 7 November 2026
+|time       = 15:30 [[Central European Time|CET]]
+|team1      = [[1. FSV Mainz 05|Mainz 05]]
+|score      = 
+|report     = https://datencenter.dfb.de/datencenter/bundesliga/2026-2027/9-spieltag/1-fsv-mainz-05-fc-bayern-muenchen-2419411
+|team2      = Bayern Munich
+|goals1     = 
+|goals2     = 
+|stadium    = [[Mewa Arena]]
+|location   = [[Mainz]]
+|attendance = 
+|referee    = 
+|result     = 
+}}
+{{Football box collapsible
+|round      = 10
+|date       = 20 November 2026
+|time       = 20:30 [[Central European Time|CET]]
+|team1      = Bayern Munich
+|score      = 
+|report     = https://datencenter.dfb.de/datencenter/bundesliga/2026-2027/10-spieltag/fc-bayern-muenchen-1-fc-koeln-2419425
+|team2      = [[1. FC Köln]]
+|goals1     = 
+|goals2     = 
+|stadium    = [[Allianz Arena]]
+|location   = [[Munich]]
+|attendance = 
+|referee    = 
+|result     = 
+}}
+{{Football box collapsible
+| round      = 11
+| date       = 28 November 2026
+| time       = 15:30 [[Central European Time|CET]]
+| team1      = [[Hamburger SV]]
+| score      = 
+| report     = https://datencenter.dfb.de/datencenter/bundesliga/2026-2027/11-spieltag/hamburger-sv-fc-bayern-muenchen-2419450
+| team2      = Bayern Munich
+| goals1     = 
+| goals2     = 
+| stadium    = [[Volksparkstadion]]
+| location   = [[Hamburg]]
+| attendance = 
+| referee    = 
+| result     = 
+}}
+{{Football box collapsible
+| round      = 12
+| date       = 4–6 December 2026
+| time       = --:-- [[Central European Time|CET]]
+| team1      = Bayern Munich
+| score      = 
+| report     = https://datencenter.dfb.de/datencenter/bundesliga/2026-2027/12-spieltag/fc-bayern-muenchen-sc-paderborn-07-2419453
+| team2      = [[SC Paderborn 07|SC Paderborn]]
+| goals1     = 
+| goals2     = 
+| stadium    = [[Allianz Arena]]
+| location   = [[Munich]]
+| attendance = 
+| referee    = 
+| result     = 
+}}
+{{Football box collapsible
+| round      = 13
+| date       = 11–13 December 2026
+| time       = --:-- [[Central European Time|CET]]
+| team1      = [[TSG 1899 Hoffenheim|TSG Hoffenheim]]
+| score      = 
+| report     = https://datencenter.dfb.de/datencenter/bundesliga/2026-2027/13-spieltag/tsg-hoffenheim-fc-bayern-muenchen-2419476
+| team2      = Bayern Munich
+| goals1     = 
+| goals2     = 
+| stadium    = [[Rhein-Neckar-Arena|SNP Arena]]
+| location   = [[Sinsheim]]
+| attendance = 
+| referee    = 
+| result     = 
+}}
+{{Football box collapsible
+| round      = 14
+| date       = 18–20 December 2026
+| time       = --:-- [[Central European Time|CET]]
+| team1      = Bayern Munich
+| score      = 
+| report     = https://datencenter.dfb.de/datencenter/bundesliga/2026-2027/14-spieltag/fc-bayern-muenchen-werder-bremen-2419478
+| team2      = [[SV Werder Bremen|Werder Bremen]]
+| goals1     = 
+| goals2     = 
+| stadium    = [[Allianz Arena]]
+| location   = [[Munich]]
+| attendance = 
+| referee    = 
+| result     = 
+}}
+{{Football box collapsible
+| round      = 15
+| date       = 8–10 January 2027
+| time       = --:-- [[Central European Time|CET]]
+| team1      = [[Borussia Mönchengladbach]]
+| score      = 
+| report     = https://datencenter.dfb.de/datencenter/bundesliga/2026-2027/15-spieltag/borussia-moenchengladbach-fc-bayern-muenchen-2419517
+| team2      = Bayern Munich
+| goals1     = 
+| goals2     = 
+| stadium    = [[Borussia-Park]]
+| location   = [[Mönchengladbach]]
+| attendance = 
+| referee    = 
+| result     = 
+}}
+{{Football box collapsible
+| round      = 16
+| date       = 12–14 January 2027
+| time       = --:-- [[Central European Time|CET]]
+| team1      = Bayern Munich
+| score      = 
+| report     = https://datencenter.dfb.de/datencenter/bundesliga/2026-2027/16-spieltag/fc-bayern-muenchen-bayer-leverkusen-2419509
+| team2      = [[Bayer 04 Leverkusen|Bayer Leverkusen]]
+| goals1     = 
+| goals2     = 
+| stadium    = [[Allianz Arena]]
+| location   = [[Munich]]
+| attendance = 
+| referee    = 
+| result     = 
+}}
+{{Football box collapsible
+| round      = 17
+| date       = 15–17 January 2027
+| time       = --:-- [[Central European Time|CET]]
+| team1      = [[Eintracht Frankfurt]]
+| score      = 
+| report     = https://datencenter.dfb.de/datencenter/bundesliga/2026-2027/17-spieltag/eintracht-frankfurt-fc-bayern-muenchen-2419548
+| team2      = Bayern Munich
+| goals1     = 
+| goals2     = 
+| stadium    = [[Waldstadion (Frankfurt)|Deutsche Bank Park]]
+| location   = [[Frankfurt]]
+| attendance = 
+| referee    = 
+| result     = 
+}}
+{{Football box collapsible
+| round      = 18
+| date       = 22–24 January 2027
+| time       = --:-- [[Central European Time|CET]]
+| team1      = [[VfB Stuttgart]]
+| score      = 
+| report     = https://datencenter.dfb.de/datencenter/bundesliga/2026-2027/18-spieltag/vfb-stuttgart-fc-bayern-muenchen-2419554
+| team2      = Bayern Munich
+| goals1     = 
+| goals2     = 
+| stadium    = [[MHPArena]]
+| location   = [[Stuttgart]]
+| attendance = 
+| referee    = 
+| result     = 
+}}
+{{Football box collapsible
+| round      = 19
+| date       = 29–31 January 2027
+| time       = --:-- [[Central European Time|CET]]
+| team1      = Bayern Munich
+| score      = 
+| report     = https://datencenter.dfb.de/datencenter/bundesliga/2026-2027/19-spieltag/fc-bayern-muenchen-fc-schalke-04-2419574
+| team2      = [[FC Schalke 04|Schalke 04]]
+| goals1     = 
+| goals2     = 
+| stadium    = [[Allianz Arena]]
+| location   = [[Munich]]
+| attendance = 
+| referee    = 
+| result     = 
+}}
+{{Football box collapsible
+|round      = 20
+|date       = 5–7 February 2027
+|time       = --:-- [[Central European Time|CET]]
+|team1      = Bayern Munich
+|score      = 
+|report     = https://datencenter.dfb.de/datencenter/bundesliga/2026-2027/20-spieltag/fc-bayern-muenchen-sv-elversberg-2419576
+|team2      = [[SV Elversberg]]
+|goals1     = 
+|goals2     = 
+|stadium    = [[Allianz Arena]]
+|location   = [[Munich]]
+|attendance = 
+|referee    = 
+|result     = 
+}}
+{{Football box collapsible
+| round      = 21
+| date       = 12–14 February 2027
+| time       = --:-- [[Central European Time|CET]]
+| team1      = [[1. FC Union Berlin|Union Berlin]]
+| score      = 
+| report     = https://datencenter.dfb.de/datencenter/bundesliga/2026-2027/21-spieltag/1-fc-union-berlin-fc-bayern-muenchen-2419612
+| team2      = Bayern Munich
+| goals1     = 
+| goals2     = 
+| stadium    = [[Stadion An der Alten Försterei]]
+| location   = [[Berlin]]
+| attendance = 
+| referee    = 
+| result     = 
+}}
+{{Football box collapsible
+|round      = 22
+|date       = 19–21 February 2027
+|time       = --:-- [[Central European Time|CET]]
+|team1      = Bayern Munich
+|score      = 
+|report     = https://datencenter.dfb.de/datencenter/bundesliga/2026-2027/22-spieltag/fc-bayern-muenchen-fc-augsburg-2419619
+|team2      = [[FC Augsburg]]
+|goals1     = 
+|goals2     = 
+|stadium    = [[Allianz Arena]]
+|location   = [[Munich]]
+|attendance = 
+|referee    = 
+|result     = 
+}}
+{{Football box collapsible
+|round      = 23
+| date      = 26–28 February 2027
+| time      = --:-- [[Central European Time|CET]]
+|team1      = [[RB Leipzig]]
+|score      = 
+|report     = https://datencenter.dfb.de/datencenter/bundesliga/2026-2027/23-spieltag/rb-leipzig-fc-bayern-muenchen-2419641
+|team2      = Bayern Munich
+|goals1     = 
+|goals2     = 
+|stadium    = [[Red Bull Arena (Leipzig)|Red Bull Arena]]
+|location   = [[Leipzig]]
+|attendance = 
+|referee    = 
+|result     = 
+}}
+{{Football box collapsible
+| round      = 24
+| date       = 2–4 March 2027
+| time       = --:-- [[Central European Time|CET]]
+| team1      = Bayern Munich
+| score      = 
+| report     = https://datencenter.dfb.de/datencenter/bundesliga/2026-2027/24-spieltag/fc-bayern-muenchen-sc-freiburg-2419666
+| team2      = [[SC Freiburg]]
+| goals1     = 
+| goals2     = 
+| stadium    = [[Allianz Arena]]
+| location   = [[Munich]]
+| attendance = 
+| referee    = 
+| result     = 
+}}
+{{Football box collapsible
+|round      = [[Der Klassiker|25]]
+|date       = 5–7 March 2027
+|time       = --:-- [[Central European Time|CET]]
+|team1      = [[Borussia Dortmund]]
+|score      = 
+|report     = https://datencenter.dfb.de/datencenter/bundesliga/2026-2027/25-spieltag/borussia-dortmund-fc-bayern-muenchen-2419685
+|team2      = Bayern Munich
+|goals1     = 
+|goals2     = 
+|stadium    = [[Westfalenstadion|Signal Iduna Park]]
+|location   = [[Dortmund]]
+|attendance = 
+|referee    = 
+|result     = 
+}}
+{{Football box collapsible
+| round      = 26
+| date       = 12–14 March 2027
+| time       = --:-- [[Central European Time|CET]]
+| team1      = Bayern Munich
+| score      = 
+| report     = https://datencenter.dfb.de/datencenter/bundesliga/2026-2027/26-spieltag/fc-bayern-muenchen-1-fsv-mainz-05-2419704
+| team2      = [[1. FSV Mainz 05|Mainz 05]]
+| goals1     = 
+| goals2     = 
+| stadium    = [[Allianz Arena]]
+| location   = [[Munich]]
+| attendance = 
+| referee    = 
+| result     = 
+}}
+{{Football box collapsible
+| round      = 27
+| date       = 19–21 March 2027
+| time       = --:-- [[Central European Time|CET]]
+| team1      = [[1. FC Köln]]
+| score      = 
+| report     = https://datencenter.dfb.de/datencenter/bundesliga/2026-2027/27-spieltag/1-fc-koeln-fc-bayern-muenchen-2419753
+| team2      = Bayern Munich
+| goals1     = 
+| goals2     = 
+| stadium    = [[RheinEnergieStadion]]
+| location   = [[Cologne]]
+| attendance = 
+| referee    = 
+| result     = 
+}}
+{{Football box collapsible
+| round      = 28
+| date       = 2–4 April 2027
+| time       = --:-- [[Central European Summer Time|CEST]]
+| team1      = Bayern Munich
+| score      = 
+| report     = https://datencenter.dfb.de/datencenter/bundesliga/2026-2027/28-spieltag/fc-bayern-muenchen-hamburger-sv-2419779
+| team2      = [[Hamburger SV]]
+| goals1     = 
+| goals2     = 
+| stadium    = [[Allianz Arena]]
+| location   = [[Munich]]
+| attendance = 
+| referee    = 
+| result     = 
+}}
+{{Football box collapsible
+|round      = 29
+|date       = 9–11 April 2027
+|time       = --:-- [[Central European Summer Time|CEST]]
+|team1      = [[SC Paderborn 07|SC Paderborn]]
+|score      = 
+|report     = https://datencenter.dfb.de/datencenter/bundesliga/2026-2027/29-spieltag/sc-paderborn-07-fc-bayern-muenchen-2419803
+|team2      = Bayern Munich
+|goals1     = 
+|goals2     =
+|stadium    = [[Home Deluxe Arena]]
+|location   = [[Paderborn]]
+|attendance = 
+|referee    = 
+|result     = 
+}}
+{{Football box collapsible
+|round      = 30
+|date       = 16–18 April 2027
+|time       = --:-- [[Central European Summer Time|CEST]]
+|team1      = Bayern Munich
+|score      = 
+|report     = https://datencenter.dfb.de/datencenter/bundesliga/2026-2027/30-spieltag/fc-bayern-muenchen-tsg-hoffenheim-2419806
+|team2      = [[TSG 1899 Hoffenheim|TSG Hoffenheim]]
+|goals1     = 
+|goals2     = 
+|stadium    = [[Allianz Arena]]
+|location   = [[Munich]]
+|attendance = 
+|referee    = 
+|result     = 
+}}
+{{Football box collapsible
+|round      = 31
+|date       = 23–25 April 2027
+|time       = --:-- [[Central European Summer Time|CEST]]
+|team1      = [[SV Werder Bremen|Werder Bremen]]
+|score      = 
+|report     = https://datencenter.dfb.de/datencenter/bundesliga/2026-2027/31-spieltag/werder-bremen-fc-bayern-muenchen-2419833
+|team2      = Bayern Munich
+|goals1     = 
+|goals2     = 
+|stadium    = [[Weserstadion]]
+|location   = [[Bremen]]
+|attendance = 
+|referee    = 
+|result     = 
+}}
+{{Football box collapsible
+|round      = 32
+|date       = 7–9 May 2027
+|time       = --:-- [[Central European Summer Time|CEST]]
+|team1      = Bayern Munich
+|score      = 
+|report     = https://datencenter.dfb.de/datencenter/bundesliga/2026-2027/32-spieltag/fc-bayern-muenchen-borussia-moenchengladbach-2419835
+|team2      = [[Borussia Mönchengladbach]]
+|goals1     = 
+|goals2     = 
+|stadium    = [[Allianz Arena]]
+|location   = [[Munich]]
+|attendance = 
+|referee    = 
+|result     = 
+}}
+{{Football box collapsible
+|round      = 33
+|date       = 14–16 May 2027
+|time       = --:-- [[Central European Summer Time|CEST]]
+|team1      = [[Bayer 04 Leverkusen|Bayer Leverkusen]]
+|score      = 
+|report     = https://datencenter.dfb.de/datencenter/bundesliga/2026-2027/33-spieltag/bayer-leverkusen-fc-bayern-muenchen-2419799
+|team2      = Bayern Munich
+|goals1     = 
+|goals2     = 
+|stadium    = [[BayArena]]
+|location   = [[Leverkusen]]
+|attendance = 
+|referee    = 
+|result     = 
+}}
+{{Football box collapsible
+|round      = 34
+|date       = 22 May 2027
+|time       = 15:30 [[Central European Summer Time|CEST]]
+|team1      = Bayern Munich
+|score      = 
+|report     = https://datencenter.dfb.de/datencenter/bundesliga/2026-2027/34-spieltag/fc-bayern-muenchen-eintracht-frankfurt-2419811
+|team2      = [[Eintracht Frankfurt]]
+|goals1     = 
+|goals2     = 
+|stadium    = [[Allianz Arena]]
+|location   = [[Munich]]
+|attendance = 
+|referee    = 
+|result     = 
+}}
+
+===DFB-Pokal===
+{{main|2026–27 DFB-Pokal}}
+
+The first round draw was held on 6 June 2026.<ref>{{cite news |url=https://www.dfb.de/news/deniz-aytekin-lost-erste-pokalrunde-aus|title=Deniz Aytekin lost erste Pokalrunde aus|website=DFB.de |publisher=[[German Football Association]] |date=2 June 2026|access-date=2 June 2026|language=de}}</ref><ref>{{cite news |url=https://www.dfb.de/news/erste-pokalrunde-osnabrueck-gegen-bayern-hebc-hamburg-gegen-bvb|title=Erste Pokalrunde: Osnabrück gegen Bayern, HEBC Hamburg gegen BVB|website=DFB.de |publisher=[[German Football Association]] |date=6 June 2026|access-date=6 June 2026|language=de}}</ref>
+
+{{Football box collapsible
+|round      = [[2026–27 DFB-Pokal#First round|First round]]
+|date       = 2 September 2026
+|time       = 20:45 [[Central European Summer Time|CEST]]
+|team1      = [[VfL Osnabrück]]
+|score      = 1–4
+|report     = https://datencenter.dfb.de/datencenter/dfb-pokal/2026-27/1-runde/vfl-osnabrueck-fc-bayern-muenchen-2418327
+|team2      = Bayern Munich
+|goals1     = 
+*[[Robin Meißner|Meißner]] {{goal|5}}
+|goals2     = 
+*[[Harry Kane|Kane]] {{goal|18||86|pen.}}
+*[[Tom Bischof|Bischof]] {{goal|24}}
+*[[Michael Olise|Olise]] {{goal|73}}
+|stadium    = [[Stadion an der Bremer Brücke]]
+|location   = [[Osnabrück]]
+|attendance = 15,741
+|referee    = Richard Hempel
+|result     = W
+}}
+{{Football box collapsible
+|round      = [[2026–27 DFB-Pokal#Second round|Second round]]
+|date       = 28 October 2026
+|time       = 20:45 [[Central European Time|CET]]
+|team1      = Bayern Munich
+|score      = 6–1
+|report     = https://datencenter.dfb.de/datencenter/dfb-pokal/2026-27/2-runde/fc-bayern-muenchen-1-fc-magdeburg-2430558
+|team2      = [[1. FC Magdeburg]]
+|goals1     = 
+*[[Michael Olise|Olise]] {{goal|10||50|pen.}}
+*[[Ismael Saibari|Saibari]] {{goal|21}}
+*[[Alphonso Davies|Davies]] {{goal|70}}
+*[[Nathaniel Brown (footballer)|Brown]] {{goal|73}}, {{yel|84}}
+*[[Aleksandar Pavlović (footballer)|Pavlović]] {{yel|89}}
+*[[David Santos Daiber|Daiber]] {{goal|90+3}}
+|goals2     = 
+*[[Mateusz Żukowski|Żukowski]] {{goal|15}}
+*[[Falko Michel|Michel]] {{yel|81}}
+*[[Anselmo García MacNulty|García MacNulty]] {{yel|87}}
+*[[Pierre Nadjombe|Nadjombe]] {{yel|90+1}}
+|stadium    = [[Allianz Arena]]
+|location   = [[Munich]]
+|attendance = 75,000
+|referee    = [[Harm Osmers]]
+|result     = W
+}}
+{{Football box collapsible
+|round      = [[2026–27 DFB-Pokal#Round of 16|Round of 16]]
+|date       = 1–2 December 2026
+|time       = 20:45 [[Central European Time|CET]]
+|team1      = Bayern Munich
+|score      = 
+|report     = https://datencenter.dfb.de/datencenter/dfb-pokal/2026-27/achtelfinale/fc-bayern-muenchen-hertha-bsc-2431933
+|team2      = [[Hertha BSC]]
+|goals1     = 
+|goals2     = 
+|stadium    = [[Allianz Arena]]
+|location   = [[Munich]]
+|attendance = 
+|referee    = 
+|result     = 
+}}
+
+===Franz Beckenbauer Supercup===
+{{main|2026 Franz Beckenbauer Supercup}}
+
+{{Football box collapsible
+| round      = [[2026 Franz Beckenbauer Supercup#Match|Final]]
+| date       = 22 August 2026
+| time       = 20:30 [[Central European Summer Time|CEST]]
+| team1      = [[Borussia Dortmund]]
+| score      = 1–2
+| report     = https://datencenter.dfb.de/datencenter/franz-beckenbauer-supercup/2026/finale/2412838
+| team2      = Bayern Munich
+| goals1     = 
+*[[Fábio Silva (footballer, born 2002)|Silva]] {{goal|75}}
+*[[Ramy Bensebaini|Bensebaini]] {{sentoff|0|90}}
+| goals2     = 
+*[[Nathaniel Brown (footballer)|Brown]] {{goal|28}}
+*[[Luis Díaz (footballer, born 1997)|Díaz]] {{yel|45+1}}
+*[[Michael Olise|Olise]] {{goal|45+1}}
+| stadium    = [[Westfalenstadion|Signal Iduna Park]]
+| location   = [[Dortmund]]
+| attendance = 81,365
+| referee    = Daniel Schlager
+| result     = W
+}}
+
+===UEFA Champions League===
+{{main|2026–27 UEFA Champions League}}
+
+====League phase====
+{{main|2026–27 UEFA Champions League league phase}}
+
+The league phase draw was held on 27 August 2026.
+
+{{2026–27 UEFA Champions League league phase table|showteam=BAY}}
+
+{{#invoke:sports rbr table|table|legendpos=b
+| updated = 21 October 2026
+| header = Round
+| label1 = Ground
+| res1 = H/A/H/A/A/H/A/H
+| label2 = Result
+| res2 = W/D/D/////
+| label3 = Position
+| pos3 = 2/10/14/////
+| label4 = Points
+| pos4 = 3p/4p/5p/////
+| color_W = green1 |text_W = Win
+| color_D = yellow1 |text_D = Draw
+| color_L = red1 |text_L = Loss
+| text_H = Home |text_A = Away
+| color_1–8 = green1 |color_9–16 = blue1 |color_17–24 = blue2
+| source = [https://www.uefa.com/uefachampionsleague/fixtures-results/ UEFA]
+}}
+
+{{Football box collapsible
+|round      = [[2026–27 UEFA Champions League league phase#Bayern Munich v Bodø/Glimt|1]]
+|date       = 10 September 2026
+|time       = 21:00 [[Central European Summer Time|CEST]]
+|team1      = Bayern Munich {{fbaicon|GER}}
+|score      = 5–0
+|report     = https://www.uefa.com/uefachampionsleague/match/2049565/
+|team2      = {{fbaicon|NOR}} [[FK Bodø/Glimt|Bodø/Glimt]]
+|goals1     = 
+*[[Jamal Musiala|Musiala]] {{goal|47}}
+*[[Harry Kane|Kane]] {{goal|61}}
+*[[Alphonso Davies|Davies]] {{goal|77}}
+*[[Michael Olise|Olise]] {{goal|83||90+2}}
+|goals2     = 
+*[[Sondre Brunstad Fet|Fet]] {{yel|58}}
+*[[Odin Bjørtuft|Bjørtuft]] {{sentoff|0|87}}
+|stadium    = [[Allianz Arena]]
+|location   = [[Munich]], Germany
+|attendance = 75,000<ref>{{cite web |url=https://www.uefa.com/newsfiles/UCL/2027/2049565_FR.pdf |title=Full Time Summary Matchday 1 – Bayern München v Bodø/Glimt |work=[[UEFA]] |publisher=Union of European Football Associations |date=10 September 2026 |access-date=10 September 2026}}</ref>
+|referee    = [[Rade Obrenović]] ([[Football Association of Slovenia|Slovenia]])
+|result     = W
+}}
+{{Football box collapsible
+|round      = [[2026–27 UEFA Champions League league phase#Viking v Bayern Munich|2]]
+|date       = 13 October 2026
+|time       = 21:00 [[Central European Summer Time|CEST]]
+|team1      = [[Viking FK|Viking]] {{fbaicon|NOR}}
+|score      = 3–3
+|report     = https://www.uefa.com/uefachampionsleague/match/2049578/
+|team2      = {{fbaicon|GER}} Bayern Munich
+|goals1     = 
+*[[Gianni Stensness|Stensness]] {{goal|2}}
+*[[Peter Christiansen (footballer, born 1999)|Christiansen]] {{goal|38}}
+*[[Kristoffer Haugen|K. Haugen]] {{yel|53}}
+*[[Jesper Daland|Daland]] {{yel|68}}
+*[[Herman Haugen|H. Haugen]] {{goal|90}}
+|goals2     = 
+*[[Konrad Laimer|Laimer]] {{yel|52}}
+*[[Harry Kane|Kane]] {{goal|54|pen.|60}}
+*[[Ismael Saibari|Saibari]] {{yel|68}}
+*[[Luis Díaz (footballer, born 1997)|Díaz]] {{goal|71}}
+*[[Michael Olise|Olise]] {{sentoff|2|74|74}}
+|stadium    = [[Viking Stadion]]
+|location   = [[Stavanger]], Norway
+|attendance = 15,466
+|referee    = [[Georgi Kabakov]] ([[Bulgarian Football Union|Bulgaria]])
+|result     = D
+}}
+{{Football box collapsible
+|round      = [[2026–27 UEFA Champions League league phase#Bayern Munich v Arsenal|3]]
+|date       = 21 October 2026
+|time       = 21:00 [[Central European Summer Time|CEST]]
+|team1      = Bayern Munich {{fbaicon|GER}}
+|score      = 2–2
+|report     = https://www.uefa.com/uefachampionsleague/match/2049598/
+|team2      = {{fbaicon|ENG}} [[Arsenal F.C.|Arsenal]]
+|goals1     = 
+*[[Alphonso Davies|Davies]] {{goal|35}}
+*[[Harry Kane|Kane]] {{goal|61|pen.}}
+|goals2     = 
+*[[Kai Havertz|Havertz]] {{yel|13}}
+*[[Eberechi Eze|Eze]] {{goal|25}}
+*[[Ezri Konsa|Konsa]] {{yel|39}}
+*[[Declan Rice|Rice]] {{goal|82}}
+|stadium    = [[Allianz Arena]]
+|location   = [[Munich]], Germany
+|attendance = 75,000
+|referee    = [[Davide Massa]] ([[Italian Football Federation|Italy]])
+|result     = D
+}}
+{{Football box collapsible
+|round      = [[2026–27 UEFA Champions League league phase#Atlético Madrid v Bayern Munich|4]]
+|date       = 3 November 2026
+|time       = 21:00 [[Central European Time|CET]]
+|team1      = [[Atlético Madrid]] {{fbaicon|ESP}}
+|score      = 
+|report     = https://www.uefa.com/uefachampionsleague/match/2049608/
+|team2      = {{fbaicon|GER}} Bayern Munich
+|goals1     = 
+|goals2     = 
+|stadium    = [[Metropolitano Stadium]]
+|location   = [[Madrid]], Spain
+|attendance = 
+|referee    = [[François Letexier]] ([[French Football Federation|France]])
+|result     = 
+}}
+{{Football box collapsible
+|round      = [[2026–27 UEFA Champions League league phase#Lille v Bayern Munich|5]]
+|date       = 25 November 2026
+|time       = 21:00 [[Central European Time|CET]]
+|team1      = [[Lille OSC|Lille]] {{fbaicon|FRA}}
+|score      = 
+|report     = https://www.uefa.com/uefachampionsleague/match/2049639/
+|team2      = {{fbaicon|GER}} Bayern Munich
+|goals1     = 
+|goals2     = 
+|stadium    = [[Stade Pierre-Mauroy]]
+|location   = [[Villeneuve-d'Ascq]], France
+|attendance = 
+|referee    = 
+|result     = 
+}}
+{{Football box collapsible
+|round      = [[2026–27 UEFA Champions League league phase#Bayern Munich v Slavia Prague|6]]
+|date       = 8 December 2026
+|time       = 21:00 [[Central European Time|CET]]
+|team1      = Bayern Munich {{fbaicon|GER}}
+|score      = 
+|report     = https://www.uefa.com/uefachampionsleague/match/2049643/
+|team2      = {{fbaicon|CZE}} [[SK Slavia Prague|Slavia Prague]]
+|goals1     = 
+|goals2     = 
+|stadium    = [[Allianz Arena]]
+|location   = [[Munich]], Germany
+|attendance = 
+|referee    = 
+|result     = 
+}}
+{{Football box collapsible
+|round      = [[2026–27 UEFA Champions League league phase#Manchester United v Bayern Munich|7]]
+|date       = 20 January 2027
+|time       = 20:00 [[Greenwich Mean Time|GMT]]
+|team1      = [[Manchester United F.C.|Manchester United]] {{fbaicon|ENG}}
+|score      = 
+|report     = https://www.uefa.com/uefachampionsleague/match/2049671/
+|team2      = {{fbaicon|GER}} Bayern Munich
+|goals1     = 
+|goals2     = 
+|stadium    = [[Old Trafford]]
+|location   = [[Manchester]], England
+|attendance = 
+|referee    = 
+|result     = 
+}}
+{{Football box collapsible
+|round      = [[2026–27 UEFA Champions League league phase#Bayern Munich v Real Betis|8]]
+|date       = 27 January 2027
+|time       = 21:00 [[Central European Time|CET]]
+|team1      = Bayern Munich {{fbaicon|GER}}
+|score      = 
+|report     = https://www.uefa.com/uefachampionsleague/match/2049680/
+|team2      = {{fbaicon|ESP}} [[Real Betis]]
+|goals1     = 
+|goals2     = 
+|stadium    = [[Allianz Arena]]
+|location   = [[Munich]], Germany
+|attendance = 
+|referee    = 
+|result     = 
+}}
+
+==Statistics==
+===Appearances and goals===
+{{Efs start|[[2026–27 Bundesliga|Bundesliga]]|[[2026–27 DFB-Pokal|DFB-Pokal]]|[[2026 Franz Beckenbauer Supercup|Franz Beckenbauer Supercup]]|[[2026–27 UEFA Champions League|Champions League]]}}
+|-
+! colspan="18" style=background:#dcdcdc; text-align:center| Goalkeepers
+{{Efs player|no=1|name=[[Manuel Neuer]]|pos=GK|nat=GER                                  |4    |0 |0    |0 |1    |0 |2    |0 }}
+{{Efs player|no=26|name=[[Sven Ulreich]]|pos=GK|nat=GER                                 |0    |0 |0    |0 |0    |0 |0    |0 }}
+{{Efs player|no=35|name=[[Jannis Bärtl]]|pos=GK|nat=GER                                 |0    |0 |0    |0 |0    |0 |0    |0 }}
+{{Efs player|no=38|name=[[David Podar-Știube]]|pos=GK|nat=GER                           |0    |0 |0    |0 |0    |0 |0    |0 }}
+{{Efs player|no=40|name=[[Jonas Urbig]]|pos=GK|nat=GER                                  |4    |0 |2    |0 |0    |0 |1    |0 }} 
+{{Efs player|no=|name=[[Leon Klanac]]|pos=GK|nat=GER                                    |0    |0 |0    |0 |0    |0 |0    |0 }} 
+{{Efs player|no=|name=[[Leonard Prescott]]|pos=GK|nat=GER                               |0    |0 |0    |0 |0    |0 |0    |0 }} 
+|-
+! colspan="18" style=background:#dcdcdc; text-align:center| Defenders
+{{Efs player|no=2 |name=[[Dayot Upamecano]]|pos=DF|nat=FRA                              |8    |3 |0    |0 |0    |0 |2+1  |0 }}
+{{Efs player|no=3 |name=[[Kim Min-jae (footballer)|Kim Min-jae]]|pos=DF|nat=KOR         |4+1  |0 |1    |0 |1    |0 |2    |0 }}
+{{Efs player|no=4 |name=[[Jonathan Tah]]|pos=DF|nat=GER                                 |4+1  |0 |2    |0 |1    |0 |2+1  |0 }}
+{{Efs player|no=11|name=[[Nathaniel Brown (footballer)|Nathaniel Brown]]|pos=DF|nat=GER |5+3  |1 |2    |1 |1    |1 |1+1  |0 }}
+{{Efs player|no=19|name=[[Alphonso Davies]]|pos=DF|nat=CAN                              |5+2  |0 |0+2  |1 |0+1  |0 |2+1  |2 }}
+{{Efs player|no=21|name=[[Hiroki Itō (footballer, born 1999)|Hiroki Itō]]|pos=DF|nat=JPN|0+1  |0 |1    |0 |0    |0 |0+2  |0 }}
+{{Efs player|no=23|name=[[Sacha Boey]]|pos=DF|nat=FRA                                   |0+2  |0 |0+1  |0 |0    |0 |0    |0 }}
+{{Efs player|no=30|name=[[Cassiano Kiala]]|pos=DF|nat=GER                               |0    |0 |0    |0 |0    |0 |0    |0 }}
+{{Efs player|no=43|name=[[Filip Pavić]]|pos=DF|nat=CRO                                  |0    |0 |0    |0 |0    |0 |0    |0 }}
+{{Efs player|no=44|name=[[Josip Stanišić]]|pos=DF|nat=CRO                               |4+3  |0 |2    |0 |1    |0 |1+2  |0 }}
+{{Efs player|no=|name=[[Tarek Buchmann]]|pos=DF|nat=GER                                 |0    |0 |0    |0 |0    |0 |0    |0 }} 
+{{Efs player|no=|name=[[Vincent Manuba]]|pos=DF|nat=GER                                 |0    |0 |0    |0 |0    |0 |0    |0 }} 
+|-
+! colspan="18" style=background:#dcdcdc; text-align:center| Midfielders
+{{Efs player|no=6 |name=[[Joshua Kimmich]]|pos=MF|nat=GER                               |6+1  |0 |1    |0 |1    |0 |2    |0 }}
+{{Efs player|no=8|name=[[Tom Bischof]]|pos=MF|nat=GER                                   |2+5  |0 |2    |1 |0+1  |0 |2+1  |0 }}
+{{Efs player|no=10|name=[[Jamal Musiala]]|pos=MF|nat=GER                                |1+2  |1 |0    |0 |0    |0 |1    |1 }}
+{{Efs player|no=27|name=[[Konrad Laimer]]|pos=MF|nat=AUT                                |5    |1 |1+1  |0 |1    |0 |3    |0 }}
+{{Efs player|no=34|name=[[Ismael Saibari]]|pos=MF|nat=MAR                               |5+3  |2 |2    |1 |0+1  |0 |1+2  |0 }}
+{{Efs player|no=39|name=[[Bara Sapoko Ndiaye]]|pos=MF|nat=SEN                           |0    |0 |0+1  |0 |0    |0 |0+1  |0 }}
+{{Efs player|no=42|name=[[Lennart Karl]]|pos=MF|nat=GER                                 |3+4  |1 |1+1  |0 |0    |0 |1+2  |0 }}
+{{Efs player|no=45|name=[[Aleksandar Pavlović (footballer)|Aleksandar Pavlović]]|pos=MF|nat=GER  |7    |2 |0+2  |0 |2    |0 |1    |0 }}
+{{Efs player|no=47|name=[[David Santos Daiber]]|pos=MF|nat=POR                          |0    |0 |0+1  |1 |0    |0 |0    |0 }}
+{{Efs player|no=|name=[[Guido Della Rovere]]|pos=MF|nat=ITA                             |0    |0 |0    |0 |0    |0 |0    |0 }} 
+{{Efs player|no=|name=[[Erblin Osmani]]|pos=MF|nat=KOS                                  |0    |0 |0    |0 |0    |0 |0    |0 }} 
+|-
+! colspan="18" style=background:#dcdcdc; text-align:center| Forwards
+{{Efs player|no=7|name=[[Serge Gnabry]]|pos=FW|nat=GER                                 |2+3   |1 |1    |0 |0    |0 |1    |0 }}
+{{Efs player|no=9|name=[[Harry Kane]]|pos=FW|nat=ENG                                   |7+1   |4 |1    |2 |1    |0 |3    |4 }}
+{{Efs player|no=14|name=[[Luis Díaz (footballer, born 1997)|Luis Díaz]]|pos=FW|nat=COL |5+1   |4 |1    |0 |1    |0 |2+1  |1 }}
+{{Efs player|no=17|name=[[Michael Olise]]|pos=FW|nat=FRA                               |7+1   |6 |2    |3 |1    |1 |2    |2 }}
+{{Efs player|no=46|name=[[Tim Binder]]|pos=FW|nat=GER                                  |0     |0 |0+1  |0 |0    |0 |0    |0 }}
+{{Efs player|no=48|name=[[Bastian Assomo]]|pos=FW|nat=GER                              |0     |0 |0    |0 |0    |0 |0    |0 }}
+{{Efs player|no=49|name=[[Maycon Cardozo]]|pos=FW|nat=BRA                              |0     |0 |0    |0 |0    |0 |0    |0 }}
+|- 
+! colspan="18" style=background:#dcdcdc; text-align:center| Players transferred/loaned out during the season
+{{Efs player|no=16|name=[[João Palhinha]]|pos=MF|nat=POR                               |0     |0 |0    |0 |0    |0 |0    |0 }}
+{{Efs player|no=22|name=[[Arijon Ibrahimović]]|pos=MF|nat=GER                          |0     |0 |0    |0 |0    |0 |0    |0 }} 
+{{Efs player|no=28|name=[[Bryan Zaragoza]]|pos=FW|nat=ESP                              |0     |0 |0    |0 |0    |0 |0    |0 }} 
+{{Efs player|no=32|name=[[Felipe Chávez]]|pos=MF|nat=PER                               |0     |0 |0    |0 |0    |0 |0    |0 }} 
+{{Efs player|no=36|name=[[Wisdom Mike]]|pos=FW|nat=GER                                 |0     |0 |0    |0 |0    |0 |0    |0 }} 
+|-
+{{Fb cs footer|u=31 October 2026|s=[[#Competitions|Competitions]]|date=October 2026}}
+
+===Goalscorers===
+''The list is sorted by squad number when total goals are equal.''
+{| class="wikitable sortable" style="text-align:center"
+|-
+!width=15|{{Tooltip|Rank|Rank}}
+!width=15|{{Tooltip|No.|Squad number}}
+!width=15|{{Tooltip|Pos.|Position}}
+!width=15|{{Tooltip|Nat.|Nationality}}
+!width=175|Player
+!width=80|[[2026–27 Bundesliga|Bundesliga]]
+!width=80|[[2026–27 DFB-Pokal|DFB-Pokal]]
+!width=100|[[2026 Franz Beckenbauer Supercup|Franz Beckenbauer Supercup]]
+!width=130|[[2026–27 UEFA Champions League|Champions League]]
+!width=80|Total
+|-
+!1
+|17 ||FW ||{{flagicon|FRA}} || [[Michael Olise]]
+|6||3||1||2||'''12'''
+|-
+!2
+|9 ||FW ||{{flagicon|ENG}} || [[Harry Kane]]
+|4||2||0||4||'''10'''
+|-
+!3
+|14 ||FW ||{{flagicon|COL}} || [[Luis Díaz (footballer, born 1997)|Luis Díaz]]
+|4||0||0||1||'''5'''
+|-
+!rowspan="4"|4
+|2 ||DF ||{{flagicon|FRA}} || [[Dayot Upamecano]]
+|3||0||0||0||'''3'''
+|-
+|11 ||DF ||{{flagicon|GER}} || [[Nathaniel Brown (footballer)|Nathaniel Brown]]
+|1||1||1||0||'''3'''
+|-
+|19 ||DF ||{{flagicon|CAN}} || [[Alphonso Davies]]
+|0||1||0||2||'''3'''
+|-
+|34 ||MF ||{{flagicon|MAR}} || [[Ismael Saibari]]
+|2||1||0||0||'''3'''
+|-
+!rowspan="2"|8
+|10 ||MF ||{{flagicon|GER}} || [[Jamal Musiala]]
+|1||0||0||1||'''2'''
+|-
+|45 ||MF ||{{flagicon|GER}} || [[Aleksandar Pavlović (footballer)|Aleksandar Pavlović]]
+|2||0||0||0||'''2'''
+|-
+!rowspan="5"|10
+|7 ||FW ||{{flagicon|GER}} || [[Serge Gnabry]]
+|1||0||0||0||'''1'''
+|-
+|8 ||MF ||{{flagicon|GER}} || [[Tom Bischof]]
+|0||1||0||0||'''1'''
+|-
+|27 ||MF ||{{flagicon|AUT}} || [[Konrad Laimer]]
+|1||0||0||0||'''1'''
+|-
+|42 ||MF ||{{flagicon|GER}} || [[Lennart Karl]]
+|1||0||0||0||'''1'''
+|-
+|47 ||MF ||{{flagicon|POR}} || [[David Santos Daiber]]
+|0||1||0||0||'''1'''
+|-
+|colspan="5"|[[Own goal#Association football|Own goals]] ||1||0||0||0||'''1'''
+|-
+!colspan="5"|Totals
+!27!!10!!2!!10!!49
+|}
+{{Fb rs footer|u=31 October 2026|s=[[#Competitions|Competitions]]|date=July 2026}}
+
+===Assists===
+''The list is sorted by squad number when total assists are equal.''
+{| class="wikitable sortable" style="text-align:center"
+|-
+!width=15|{{Tooltip|Rank|Rank}}
+!width=15|{{Tooltip|No.|Squad number}}
+!width=15|{{Tooltip|Pos.|Position}}
+!width=15|{{Tooltip|Nat.|Nationality}}
+!width=175|Player
+!width=80|[[2026–27 Bundesliga|Bundesliga]]
+!width=80|[[2026–27 DFB-Pokal|DFB-Pokal]]
+!width=100|[[2026 Franz Beckenbauer Supercup|Franz Beckenbauer Supercup]]
+!width=130|[[2026–27 UEFA Champions League|Champions League]]
+!width=80|Total
+|-
+!1
+|9 ||FW ||{{flagicon|ENG}} || [[Harry Kane]]
+|5||0||0||2||'''7'''
+|-
+!2
+|17 ||FW ||{{flagicon|FRA}} || [[Michael Olise]]
+|3||1||1||1||'''6'''
+|-
+!3
+|6 ||MF ||{{flagicon|GER}} || [[Joshua Kimmich]]
+|3||0||0||1||'''4'''
+|-
+!rowspan="3"|4
+|19 ||FW ||{{flagicon|CAN}} || [[Alphonso Davies]]
+|2||1||0||0||'''3'''
+|-
+|34 ||MF ||{{flagicon|MAR}} || [[Ismael Saibari]]
+|3||0||0||0||'''3'''
+|-
+|42 ||FW ||{{flagicon|GER}} || [[Lennart Karl]]
+|0||2||0||1||'''3'''
+|-
+!rowspan="4"|7
+|8 ||MF ||{{flagicon|GER}} || [[Tom Bischof]]
+|2||0||0||0||'''2'''
+|-
+|11 ||DF ||{{flagicon|GER}} || [[Nathaniel Brown (footballer)|Nathaniel Brown]]
+|2||0||0||0||'''2'''
+|-
+|14 ||FW ||{{flagicon|COL}} || [[Luis Díaz (footballer, born 1997)|Luis Díaz]]
+|1||1||0||0||'''2'''
+|-
+|45 ||FW ||{{flagicon|GER}} || [[Aleksandar Pavlović (footballer)|Aleksandar Pavlović]]
+|1||1||0||0||'''2'''
+|-
+!rowspan="4"|11
+|10 ||MF ||{{flagicon|GER}} || [[Jamal Musiala]]
+|1||0||0||0||'''1'''
+|-
+|27 ||MF ||{{flagicon|AUT}} || [[Konrad Laimer]]
+|0||0||0||1||'''1'''
+|-
+|34 ||MF ||{{flagicon|MAR}} || [[Ismael Saibari]]
+|0||1||0||0||'''1'''
+|-
+|44 ||DF ||{{flagicon|CRO}} || [[Josip Stanišić]]
+|0||1||0||0||'''1'''
+|-
+!colspan="5"|Totals
+!23!!8!!1!!5!!37
+|}
+{{Fb rs footer|u=31 October 2026|s=[https://fbref.com/en/squads/054efa67/2026-2027/all_comps/Bayern-Munich-Stats-All-Competitions FBref.com]|date=July 2026}}
+
+==References==
+{{Reflist}}
+
+==External links==
+*{{Official website|https://fcbayern.com/en}}
+
+{{FC Bayern Munich}}
+{{FC Bayern Munich seasons}}
+{{2026–27 in German football}}
+
+{{DEFAULTSORT:2026-27 FC Bayern Munich Season}}
+[[Category:FC Bayern Munich seasons]]
+[[Category:German football clubs 2026–27 season|Bayern Munich]]
+[[Category:2026–27 UEFA Champions League participants seasons|Bayern Munich]]

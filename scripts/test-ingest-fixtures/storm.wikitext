@@ -1,0 +1,771 @@
+<!-- FIXTURE. Page: 2026 Seattle Storm season
+     Source: https://en.wikipedia.org/wiki/2026_Seattle_Storm_season
+     Revision id: 1378892095  (permanent link: https://en.wikipedia.org/w/index.php?oldid=1378892095)
+     Fetched: 2026-11-03 from the MediaWiki API (action=query&prop=revisions&rvprop=content|ids&rvslots=main&format=json),
+     User-Agent: Fanday/0.1 (machinemisha+fanday@gmail.com). Unmodified wikitext below this comment.
+     Text (c) Wikipedia contributors, licensed CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/);
+     authors are listed in the page history. Used here only as test data. -->
+{{More citations needed|date=May 2026}}
+{{Use mdy dates|date=February 2026}}
+{{WNBA season
+| team       = Seattle Storm
+| year       = 2026
+| attendance = 
+| wins       = 8
+| losses     = 36
+| conf       = [[Western Conference (WNBA)|Western]]
+| conf_place = 8th
+| coach      = [[Sonia Raman]]
+| arena      = [[Climate Pledge Arena]]
+| points     = 
+| rebounds   = 
+| assists    = 
+| playoffs   = Did not qualify
+| television = 
+}}
+
+The '''2026 Seattle Storm season''' was the 27th season for the [[Seattle Storm]] of the [[Women's National Basketball Association]] and their first under head coach [[Sonia Raman]]. The Storm failed to qualify for the playoffs and finished at the bottom of the league standings, with 8 wins and 36 losses—the worst record in franchise history.<ref>{{cite news |last=Allen |first=Percy |date=September 23, 2026 |title=Seattle Storm close worst season in franchise history with loss to Dallas Wings |url=https://www.seattletimes.com/sports/storm/seattle-storm-close-worst-season-in-franchise-history-with-loss-to-dallas-wings/ |work=[[The Seattle Times]] |accessdate=October 2, 2026}}</ref> The team also set the record for most losses in an WNBA season.<ref>{{cite news |last=Allen |first=Percy |date=September 20, 2026 |title=Seattle Storm fall to Aces, set WNBA record for most losses in a season |url=https://www.seattletimes.com/sports/storm/seattle-storm-fall-to-aces-set-wnba-record-for-most-losses-in-a-season/ |work=The Seattle Times |accessdate=October 2, 2026}}</ref>
+
+==Draft==
+{{see also|2026 WNBA draft}}
+The draft was held on April 13, 2026, at 7:30 pm EDT, and broadcast on [[WNBA on ESPN|ESPN]].<ref>{{Cite web |title=2026 WNBA Schedule Release: Key Dates and What to Know |url=https://www.wnba.com/news/2026-regular-season-key-dates |access-date=2026-02-04 |website=WNBA |language=en}}</ref>
+
+{| class="wikitable sortable sortable" style="text-align: center"
+! width="5%" style="{{WNBA color cell|Seattle Storm}}" | Round
+! width="3%" style="{{WNBA color cell|Seattle Storm}}" | Pick
+! width="15%" style="{{WNBA color cell|Seattle Storm}}" | Player
+! width=3%" style="{{WNBA color cell|Seattle Storm}}" | Position
+! width="15%" style="{{WNBA color cell|Seattle Storm}}" | Nationality
+! width="15%" style="{{WNBA color cell|Seattle Storm}}" | College/Club
+! width="20%" style="{{WNBA color cell|Seattle Storm}}" | Outcome
+! width="1%" style="{{WNBA color cell|Seattle Storm}}" class="unsortable"| Ref.
+|-
+| 1
+| 3
+| [[Awa Fam]]
+| C
+| {{Flagu|Spain}}/{{Flagu|Senegal}}
+| [[Valencia Basket (women)|Valencia]] {{small|([[Liga Femenina de Baloncesto|Spain]])}}
+|Signed rookie contract April 16
+Made opening day roster
+|<ref name="Awa Fam Signed">{{Cite web |title=Storm Select Awa Fam with the No.3 Overall Pick|url=https://storm.wnba.com/news/storm-select-awa-fam-with-the-no-3-overall-pick|access-date=2026-06-02 |website=WNBA |language=en}}</ref><ref name="2026 Season Opener Roster">{{Cite web |title=Storm Sets Roster for 2026 Season Opener|url=https://www.oursportscentral.com/services/releases/storm-sets-roster-for-2026-season-opener/n-6358757|access-date=2026-06-02 |website=oursportcentral |language=en}}</ref>
+|-
+| 1
+| 14
+| [[Taina Mair]]
+| G
+| {{Flagu|United States}}
+| [[Duke Blue Devils women's basketball|Duke]]
+|Signed rookie contract April 16
+Made opening day roster
+Waived May 4
+Signed player development contract May 6
+|<ref name="2026 Season Opener Roster">{{Cite web |title=Storm Sets Roster for 2026 Season Opener|url=https://www.oursportscentral.com/services/releases/storm-sets-roster-for-2026-season-opener/n-6358757|access-date=2026-06-02 |website=oursportcentral |language=en}}</ref><ref name="Taina Mair Waived">{{Cite web |title=Storm Waives Taina Mair|url=https://storm.wnba.com/news/storm-waives-taina-mair|access-date=2026-06-02 |website=WNBA |language=en}}</ref><ref name="Taina Mair Development Contract">{{Cite web |title=Storm Signs Taina Mair to Player Development Contract|url=https://storm.wnba.com/news/storm-signs-taina-mair-to-player-development-contract|access-date=2026-06-02 |website=WNBA |language=en}}</ref>
+|-
+| 2
+| 16
+| [[Marta Suárez]]
+| F
+| {{Flagu|Spain}}
+| [[TCU Horned Frogs women's basketball|TCU]]
+|Traded to the [[Golden State Valkyries]] with a 2028 second-round pick in exchange for [[Flau'jae Johnson|Flau'Jae Johnson]] (No. 8)
+| <ref name="Suárez Trade">{{Cite web |title=Storm Trades for NCAA Champion Flau’jae Johnson |url=https://storm.wnba.com/news/storm-trades-for-ncaa-champion-flaujae-johnson|access-date=2026-06-02 |website=WNBA |language=en}}</ref>
+|-
+| 3
+| 39
+| [[Grace VanSlooten]]
+| F
+| {{Flagu|United States}}
+| [[Michigan State Spartans women's basketball|Michigan State]]
+|Signed rookie contract April 17
+Made opening day roster
+Waived May 18
+|<ref name="2026 Season Opener Roster">{{Cite web |title=Storm Sets Roster for 2026 Season Opener|url=https://www.oursportscentral.com/services/releases/storm-sets-roster-for-2026-season-opener/n-6358757|access-date=2026-06-02 |website=oursportcentral |language=en}}</ref><ref name="Grace Vanslooten Waived">{{Cite web |title=Storm Waives Grace Vanslooten |url=https://storm.wnba.com/news/storm-waives-grace-vanslooten|access-date=2026-06-02 |website=WNBA |language=en}}</ref>
+|}
+
+==Transactions==
+<!--{{main|List of 2026 WNBA season transactions}}-->
+
+===Front office and coaching===
+{| class="wikitable sortable sortable" style="text-align:center"
+! style="{{WNBA color cell|Seattle Storm}}" width="19%" |Date
+! style="{{WNBA color cell|Seattle Storm}}" |Details
+! style="{{WNBA color cell|Seattle Storm}}"  width="1%" class="unsortable"| Ref.
+|-
+| September 21, 2025
+| Announced that Head Coach [[Noelle Quinn]]'s contract will not be renewed for the 2026 season.
+| <ref>{{cite web |date=September 21, 2025 |title=Seattle Storm Announce Head Coaching Change |url=https://storm.wnba.com/news/seattle-storm-announce-head-coaching-change |website=[[WNBA]] |publisher=NBA Media Ventures, LLC}}</ref>
+|-
+| October 28, 2025
+| [[Sonia Raman]]
+| <ref>{{cite web |date=October 28, 2025 |title=Seattle Storm Name Sonia Raman as Head Coach |url=https://storm.wnba.com/news/coach-sonia-raman |website=[[WNBA]] |publisher=NBA Media Ventures, LLC}}</ref>
+|}
+
+===Free agency===
+====Core Designation====
+{| class="wikitable sortable sortable" style="text-align: center"
+! style="{{WNBA color cell|Seattle Storm}}" width="10%" | Player
+! style="{{WNBA color cell|Seattle Storm}}" width="10%" | Date
+! style="{{WNBA color cell|Seattle Storm}}" width="10%" | Notes
+! style="{{WNBA color cell|Seattle Storm}}" width="1%" class="unsortable" | Ref.
+|-
+|Ezi Magbegor
+|April 12, 2026
+|Three-Year Extension
+|<ref name="Magbegor Contract Extension">{{Cite web |title=Seattle Storm Re-Signs All-Defensive Standout Ezi Magbegor|url=https://storm.wnba.com/news/seattle-storm-re-signs-all-defensive-standout-ezi-magbegor|access-date=2026-06-13 |website=WNBA |language=en}}</ref><ref name="Magbegor Core Designation ">{{Cite web |title=WNBA Free Agency 2026 News on Sabrina Ionescu, Napheesa Collier, Kelsey Plum Contract and More |url=https://bleacherreport.com/articles/25415672-wnba-free-agency-2026-news-sabrina-ionescu-napheesa-collier-kelsey-plum-contract-and-more|access-date=2026-06-13 |website=Bleacher Report |language=en}}</ref>
+|}
+====Re-signed/Extensions====
+{| class="wikitable sortable sortable" style="text-align: center"
+! style="background:#FEE11A;" width="10%" width="10%" | Player
+! style="background:#FEE11A;" width="10%" width="10%" | Date
+! style="background:#FEE11A;" width="10%" width="10%" | Notes
+! style="background:#FEE11A;" width="10%" width="1%" class="unsortable" | Ref.
+|-
+|Zia Cooke
+| rowspan="2" |April 11, 2026
+| rowspan="2" |One-Year Contract
+| rowspan="2" |<ref name="Cooke & Holmes Resigned">{{Cite web |title=Zia Cooke and Mackenzie Holmes Return to the Storm
+|url=https://storm.wnba.com/news/zia-and-mack-return-to-the-storm |access-date=2026-06-13 |website=WNBA |language=en}}</ref>
+|-
+|Mackenzie Holmes
+|}
+==== Additions====
+{| class="wikitable sortable sortable" style="text-align: center"
+! style="{{WNBA color cell|Seattle Storm}}" width="10%" | Player
+! style="{{WNBA color cell|Seattle Storm}}" width="10%" | Date
+! style="{{WNBA color cell|Seattle Storm}}" width="10%" | Notes
+! style="{{WNBA color cell|Seattle Storm}}" width="10%" | Former Team
+! style="{{WNBA color cell|Seattle Storm}}" width="1%" class="unsortable" | Ref.
+|-
+|Natisha Hiedeman
+|April 11, 2026
+|Two-Year Contract
+|[[Minnesota Lynx]]
+|<ref name="Natisha Hiedeman Signed">{{Cite web |title=Natisha Hiedeman Signs with Storm|url=https://storm.wnba.com/news/natisha-hiedeman-signs-with-storm|access-date=2026-06-02 |website=WNBA |language=en}}</ref>
+|-
+|Stefanie Dolson
+| rowspan="2" | April 12, 2026
+| rowspan="2" | Single-Year Contract
+| rowspan="2" | [[Washington Mystics]]
+|<ref name="Stefanie Dolson Signed">{{Cite web |title=Storm Sign Two-Time All Star Stefanie Dolson|url=https://storm.wnba.com/news/storm-signs-two-time-all-star-stefanie-dolson|access-date=2026-06-02 |website=WNBA |language=en}}</ref>
+|-
+|Jade Melbourne
+|<ref name="Jade Melbourne Signed">{{Cite web |title=Seattle Storm Signs Olympian Jade Melbourne|url=https://storm.wnba.com/news/seattle-storm-signs-olympian-jade-melbourne|access-date=2026-06-02 |website=WNBA |language=en}}</ref>
+|}
+====Subtractions / unsigned====
+{| class="wikitable sortable sortable" style="text-align: center"
+! style="background:#FEE11A;" color:white" width="10%" | Player
+! style="background:#FEE11A;" color:white" width="10%" | Date
+! style="background:#FEE11A;" color:white" width="10%" |Reason 
+! style="background:#FEE11A;" color:white" width="10%" | New Team
+! style="background:#FEE11A;" color:white" width="1%" class="unsortable" | Ref.]
+|-
+|[[Tiffany Mitchell (basketball)|Tiffany Mitchell]]
+|September 18
+|Free Agency - unrestricted
+| —
+|<ref name="Tiffany Mitchell Single-Season Contract"> {{Cite web |title=Veteran Guard Tiffany Mitchell Signs with Seattle 
+|url=https://storm.wnba.com/news/veteran-guard-tiffany-mitchell-signs-with-seattle|access-date=2026-06-29 |website=WNBA |language=en}}</ref>
+|-
+|[[Nika Mühl]]
+|April 3
+|Expansion Draft
+|[[Portland Fire]]
+|<ref name="Nika Mühl Expansion Draft"> {{Cite web |title=Nika Mühl Selected in 2026 WNBA Expansion Draft 
+|url=https://storm.wnba.com/news/nika-muhl-selected-in-2026-wnba-expansion-draft|access-date=2026-06-29 |website=WNBA |language=en}}</ref>
+|-
+|[[Nneka Ogwumike]]
+|April 9
+|rowspan = "5"| Free Agency - unrestricted
+|[[Los Angeles Sparks]]
+|<ref name="Nneka Ogwumike FA"> {{Cite web |title=Sparks Sign Franchise Legend Nneka Ogwumike|url=https://www.wnba.com/news/los-angeles-sparks-sign-nneka-ogwumike|access-date=2026-06-29 |website=WNBA |language=en}}</ref>
+|-
+|[[Brittney Sykes]]
+|April 10
+|[[Toronto Tempo]]
+|<ref name="Brittney Sykes FA"> {{Cite web |title=Toronto Tempo Sign Brittney Sykes to Multi-Year Contract
+|url=https://www.wnba.com/news/toronto-tempo-sign-brittney-sykes|access-date=2026-06-29 |website=WNBA |language=en}}</ref>
+|-
+|[[Erica Wheeler]]
+|rowspan = "2"| April 11
+|Los Angeles Sparks
+|<ref name="Erica Wheeler FA"> {{Cite web |title=Sparks Sign WNBA All-Star Erica Wheeler
+|url=https://sparks.wnba.com/news/sparks-sign-wnba-all-star-erica-wheeler|access-date=2026-06-29 |website=WNBA |language=en}}</ref>
+|-
+|[[Skylar Diggins]]
+|[[Chicago Sky]]
+|<ref name="Skylar Diggins FA"> {{Cite web |title=Chicago Sky sign Seven-Time All-Star Skylar Diggins|url=https://www.wnba.com/news/chicago-sky-sign-skylar-diggins|access-date=2026-06-29 |website=WNBA |language=en}}</ref>
+|-
+|[[Gabby Williams]]
+|April 12
+|[[Golden State Valkyries]]
+|<ref name="Gabby Williams FA"> {{Cite web |title=Golden State Valkyries Sign WNBA All-Star Forward Gabby Williams to Multi-Year Deal|url=https://www.wnba.com/news/valkyries-sign-gabby-williams|access-date=2026-06-29 |website=WNBA |language=en}}</ref>
+|}
+
+==Roster==
+{{Seattle Storm roster}}
+
+===Depth===
+{| style="text-align:center; {{NBA color cell|Seattle Storm}}"; color:white"
+!width="50"|Pos.
+!width="250"|Starter
+!width="250"|Bench
+|-style="height:40px; background:white; color:#092C57"
+! {{color box|#FEE11A}} | [[Point guard|<span style="color: black;">PG</span>]]
+| '''[[Natisha Hiedeman]]'''
+| [[Zia Cooke]]
+|-style="height:40px; background:white; color:#092C57"
+! {{color box|#FEE11A}} | [[Shooting guard|<span style="color: black;">SG</span>]]
+| '''[[Jade Melbourne]]'''
+| [[Lexie Brown]]
+|-style="height:40px; background:white; color:#092C57"
+! {{color box|#FEE11A}} | [[Small forward|<span style="color: black;">SF</span>]]
+| '''[[Flau'jae Johnson]]'''
+| [[Katie Lou Samuelson]] 
+|-style="height:40px; background:white; color:#092C57"
+! {{color box|#FEE11A}}  | [[Power forward (basketball)|<span style="color: black;">PF</span>]]
+| '''[[Awa Fam]]'''
+| [[Mackenzie Holmes]] <br> [[Jordan Horston]]
+|-style="height:40px; background:white; color:#092C57"
+! {{color box|#FEE11A}}  | [[Center (basketball)|<span style="color: black;">C</span>]]
+| '''[[Dominique Malonga (basketball)|Dominique Malonga]]'''
+| [[Ezi Magbegor]] [[File:Cruz Roja.svg|8px]] <br> [[Stefanie Dolson]] 
+|}
+
+==Schedule==
+
+===Preseason===
+Source:<ref name="2026 schedule"/>
+{{WNBA game log start|Seattle Storm|pre-season=yes|end_year=2026|note=<br>Total: 1–1 (Home: 1–0; Road: 0–1)}}
+{{WNBA game log section|Seattle Storm|April|first=yes
+| home_wins   = 1
+| home_losses = 0
+| road_wins   = 0
+| road_losses = 1
+}}
+|- {{game-lost}}
+| 1
+| April 25
+| @ [[2026 Golden State Valkyries season|Golden State]]
+| [https://www.wnba.com/game/1012600005 L 76–78]
+| [[Zia Cooke|Cooke]], [[Flau'jae Johnson|Johnson]] (12)
+| [[Dominique Malonga (basketball)|Dominique Malonga]] (5)
+| [[Taina Mair]] (4)
+| [[Chase Center]]<br>18,064
+| 0–1
+|- {{game-won}}
+| 2
+| April 29
+| [[2026 Portland Fire season|Portland]]
+| [https://www.wnba.com/game/1012600006 W 91–81]
+| Flau'jae Johnson (20)
+| Dominique Malonga (11)
+| Taina Mair (5)
+| [[Climate Pledge Arena]]<br>8,627
+| 1–1
+{{WNBA game log end|SEA|pre-season=yes|end_year=2026}}
+
+===Regular season===
+Source:<ref name="2026 schedule">{{Cite web |title=WNBA Schedule - Games, Scores & Events |url=https://www.wnba.com/schedule?season=2026&month=all&team=storm |access-date=2026-02-04 |website=WNBA |language=en}}</ref>
+{{WNBA game log start|Seattle Storm|end_year=2026|note=<br>Total: 8–35 (Home: 6–15; Road: 2–20)}}
+{{WNBA game log section|Seattle Storm|May|first=yes
+| home_wins   = 2
+| home_losses = 3
+| road_wins   = 1
+| road_losses = 3
+}}
+|- {{game-lost}}
+| 1
+| May 8
+| [[2026 Golden State Valkyries season|Golden State]]
+| [https://www.wnba.com/game/1022600003 L 80–91]
+| [[Dominique Malonga (basketball)|Dominque Malonga]] (21)
+| Dominque Malonga (8)
+| [[Lexie Brown|Brown]], [[Stefanie Dolson|Dolson]], [[Natisha Hiedeman|Hiedeman]], [[Jade Melbourne|Melbourne]] (3)
+| [[Climate Pledge Arena]]<br>14,200
+| 0–1
+|- {{game-won}}
+| 2
+| May 10
+| @ [[2026 Connecticut Sun season|Connecticut]]
+| [https://www.wnba.com/game/1022600007 W 89–82]
+| Lexie Brown (17)
+| Dominque Malonga (7)
+| Jade Melbourne (6)
+| [[Mohegan Sun Arena]]<br>7,374
+| 1–1
+|- {{game-lost}}
+| 3
+| May 13
+| @ [[2026 Toronto Tempo season|Toronto]]
+| [https://www.wnba.com/game/1022600015 L 73–86]
+| Dominique Malonga (21)
+| Dominique Malonga (7)
+| Jade Melbourne (6)
+| [[Coca-Cola Coliseum]]<br>8,142
+| 1–2
+|- {{game-lost}}
+| 4
+| May 17
+| @ [[2026 Indiana Fever season|Indiana]]
+| [https://www.wnba.com/game/1022600027 L 78–89]
+| Natisha Hiedeman (19)
+| [[Flau'jae Johnson]] (6)
+| [[Zia Cooke]] (4)
+| [[Gainbridge Fieldhouse]]<br>14,505
+| 1–3
+|- {{game-lost}}
+| 5
+| May 20
+| Connecticut
+| [https://www.wnba.com/game/1022600034 L 78–80]
+| Natisha Hiedeman (20)
+| [[Mackenzie Holmes]] (6)
+| Natisha Hiedeman (5)
+| Climate Pledge Arena<br>9,024
+| 1–4
+|- {{game-won}}
+| 6
+| May 22
+| Connecticut
+| [https://www.wnba.com/game/1022600040 W 77–59]
+| Zia Cooke (25)
+| Flau'jae Johnson (7)
+| Natisha Hiedeman (6)
+| Climate Pledge Arena<br>9,741
+| 2–4
+|- {{game-won}}
+| 7
+| May 24
+| [[2026 Washington Mystics season|Washington]]
+| [https://www.wnba.com/game/1022600046 W 97–85]
+| Natisha Hiedeman (24)
+| Flau'jae Johnson (6)
+| Jade Melbourne (6)
+| Climate Pledge Arena<br>10,559
+| 3–4
+|- {{game-lost}}
+| 8
+| May 27
+| Washington
+| [https://www.wnba.com/game/1022600053 L 64–78]
+| Jade Melbourne (15)
+| Mackenzie Holmes (10)
+| [[Jordan Horston|Horston]], Melbourne (3)
+| Climate Pledge Arena<br>9,202
+| 3–5
+|- {{game-lost}}
+| 9
+| May 30
+| @ Toronto
+| [https://www.wnba.com/game/1022600060 L 72–93]
+| Natisha Hiedeman (18)
+| Mackenzie Holmes (7)
+| Natisha Hiedeman (7)
+| Coca-Cola Coliseum<br>8,210
+| 3–6
+
+{{WNBA game log section|Seattle Storm|June
+| home_wins   = 2
+| home_losses = 4
+| road_wins   = 0
+| road_losses = 5
+}}
+|- {{game-lost}}
+| bgcolor=#FED8B1| 10
+| [[WNBA Commissioner's Cup|June 1]]
+| @ [[2026 Dallas Wings season|Dallas]]
+| [https://www.wnba.com/game/1022600064 L 56–79]
+| [[Flau'jae Johnson]] (16)
+| Flau'jae Johnson (10)
+| [[Natisha Hiedeman|Hiedeman]], [[Mackenzie Holmes|Holmes]], [[Katie Lou Samuelson|Samuelson]] (2)
+| [[College Park Center]]<br>6,251
+| 3–7
+|- {{game-lost}}
+| bgcolor=#FED8B1| 11
+| [[WNBA Commissioner's Cup|June 3]]
+| [[2026 Phoenix Mercury season|Phoenix]]
+| [https://www.wnba.com/game/1022600071 L 68–72]
+| [[Awa Fam]] (18)
+| Fam, Holmes (6)
+| Flau'jae Johnson (5)
+| [[Climate Pledge Arena]]<br>9,109
+| 3–8
+|- {{game-lost}}
+| bgcolor=#FED8B1| 12
+| [[WNBA Commissioner's Cup|June 6]]
+| @ [[2026 Minnesota Lynx season|Minnesota]]
+| [https://www.wnba.com/game/1022600077 L 68–88]
+| Hiedeman, [[Jade Melbourne|Melbourne]] (14)
+| Flau'jae Johnson (6)
+| Natisha Hiedeman (5)
+| [[Target Center]]<br>10,801
+| 3–9
+|- {{game-lost}}
+| bgcolor=#FED8B1| 13
+| [[WNBA Commissioner's Cup|June 8]]
+| @ [[2026 Las Vegas Aces season|Las Vegas]]
+| [https://www.wnba.com/game/1022600085 L 91–101]
+| [[Dominique Malonga (basketball)|Dominique Malonga]] (19)
+| [[Jordan Horston]] (7)
+| Flau'jae Johnson (7)
+| [[Michelob Ultra Arena]]<br>10,261
+| 3–10
+|- {{game-lost}}
+| bgcolor=#FED8B1| 14
+| [[WNBA Commissioner's Cup|June 10]]
+| [[2026 Los Angeles Sparks season|Los Angeles]]
+| [https://www.wnba.com/game/1022600090 L 83–88]
+| Natisha Hiedeman (16)
+| Flau'jae Johnson (12)
+| Flau'jae Johnson (6)
+| Climate Pledge Arena<br>9,309
+| 3–11
+|- {{game-lost}}
+| bgcolor=#FED8B1| 15
+| [[WNBA Commissioner's Cup|June 12]]
+| [[2026 Golden State Valkyries season|Golden State]]
+| [https://www.wnba.com/game/1022600096 L 72–76]
+| Natisha Hiedeman (26)
+| Dominique Malonga (8)
+| Hiedeman, Horston (5)
+| Climate Pledge Arena<br>10,648
+| 3–12
+|- {{game-lost}}
+| bgcolor=#FED8B1| 16
+| [[WNBA Commissioner's Cup|June 17]]
+| @ [[2026 Portland Fire season|Portland]]
+| [https://www.wnba.com/game/1022600112 L 89–94]
+| Dominique Malonga (28)
+| Dominique Malonga (11)
+| Jade Melbourne (8)
+| [[Moda Center]]<br>13,084
+| 3–13
+|- {{game-lost}}
+| 17
+| June 20
+| @ Phoenix
+| [https://www.wnba.com/game/1022600118 L 73–93]
+| Natisha Hiedeman (20)
+| Awa Fam (10)
+| Natisha Hiedeman (4)
+| [[Mortgage Matchup Center]]<br>9,662
+| 3–14
+|- {{game-lost}}
+| 18
+| June 22
+| Dallas
+| [https://www.wnba.com/game/1022600126 L 110–112 (OT)]
+| Dominique Malonga (37)
+| Dominique Malonga (12)
+| Natisha Hiedeman (11)
+| Climate Pledge Arena<br>14,200
+| 3–15
+|- {{game-won}}
+| 19
+| June 25
+| [[2026 New York Liberty season|New York]]
+| [https://www.wnba.com/game/1022600134 W 99–88]
+| Flau'jae Johnson (28)
+| Dominique Malonga (10)
+| Jade Melbourne (7)
+| Climate Pledge Arena<br>11,968
+| 4–15
+|- {{game-won}}
+| 20
+| June 27
+| [[2026 Atlanta Dream season|Atlanta]]
+| [https://www.wnba.com/game/1022600140 W 105–90]
+| Flau'jae Johnson (24)
+| Johnson, Malonga (11)
+| Natisha Hiedeman (6)
+| Climate Pledge Arena<br>13,643
+| 5–15
+
+{{WNBA game log section|Seattle Storm|July
+| home_wins   = 0
+| home_losses = 4
+| road_wins   = 1
+| road_losses = 6
+}}
+|- {{game-lost}}
+| 21
+| July 2
+| @ [[2026 Phoenix Mercury season|Phoenix]]
+| [https://www.wnba.com/game/1022600147 L 67–90]
+| [[Awa Fam|Fam]], [[Natisha Hiedeman|Hiedeman]] (13)
+| Fam, [[Dominique Malonga (basketball)|Malonga]] (6)
+| [[Jade Melbourne]] (5)
+| [[Mortgage Matchup Center]]<br>10,055
+| 5–16
+|- {{game-lost}}
+| 22
+| July 4
+| [[2026 Portland Fire season|Portland]]
+| [https://www.wnba.com/game/1022600151 L 72–77]
+| Dominique Malonga (22)
+| [[Flau'jae Johnson]] (8)
+| Natisha Hiedeman (4)
+| [[Climate Pledge Arena]]<br>10,251
+| 5–17
+|- {{game-won}}
+| 23
+| July 6
+| @ [[2026 Los Angeles Sparks season|Los Angeles]]
+| [https://www.wnba.com/game/1022600156 W 82–64]
+| Flau'jae Johnson (23)
+| Dominique Malonga (9)
+| Hiedeman, Melbourne (4)
+| [[Crypto.com Arena]]<br>12,160
+| 6–17
+|- {{game-lost}}
+| 24
+| July 9
+| @ [[2026 Atlanta Dream season|Atlanta]]
+| [https://www.wnba.com/game/1022600162 L 78–89]
+| Natisha Hiedeman (20)
+| Dominique Malonga (9)
+| Flau'jae Johnson (5)
+| [[Gateway Center Arena]]<br>3,617
+| 6–18
+|- {{game-lost}}
+| 25
+| July 12
+| @ [[2026 Washington Mystics season|Washington]]
+| [https://www.wnba.com/game/1022600172 L 79–84]
+| Natisha Hiedeman (31)
+| Dominique Malonga (15)
+| Hiedeman, Johnson (3)
+| [[CareFirst Arena]]<br>4,200
+| 6–19
+|- {{game-lost}}
+| 26
+| July 15
+| @ [[2026 Chicago Sky season|Chicago]]
+| [https://www.wnba.com/game/1022600179 L 90–95]
+| Flau'jae Johnson (25)
+| Dominique Malonga (12)
+| Jade Melbourne (5)
+| [[Wintrust Arena]]<br>9,025
+| 6–20
+|- {{game-lost}}
+| 27
+| July 17
+| @ [[2026 Indiana Fever season|Indiana]]
+| [https://www.wnba.com/game/1022600184 L 107–110]
+| Dominique Malonga (28)
+| Dominique Malonga (14)
+| Natisha Hiedeman (8)
+| [[Gainbridge Fieldhouse]]<br>17,274
+| 6–21
+|- {{game-lost}}
+| 28
+| July 20
+| [[2026 Minnesota Lynx season|Minnesota]]
+| [https://www.wnba.com/game/1022600196 L 102–105]
+| Flau'jae Johnson (26)
+| Awa Fam (11)
+| Natisha Hiedeman (10)
+| Climate Pledge Arena<br>12,500
+| 6–22
+|- {{game-lost}}
+| 29
+| July 22
+| Minnesota
+| [https://www.wnba.com/game/1022600198 L 76–86]
+| Dominique Malonga (21)
+| Awa Fam (10)
+| Johnson, Melbourne (4)
+| Climate Pledge Arena<br>13,106
+| 6–23
+|- align=center
+|colspan=9 bgcolor="#bbcaff"|'''[[2026 WNBA All-Star Game|All-Star Game]]'''
+|- {{game-lost}}
+| 30
+| July 28
+| Indiana
+| [https://www.wnba.com/game/1022600205 L 95–105]
+| Natisha Hiedeman (33)
+| [[Stefanie Dolson|Dolson]], Hiedeman (6)
+| Hiedeman, Melbourne (4)
+| Climate Pledge Arena<br>18,343
+| 6–24
+|- {{game-lost}}
+| 31
+| July 31
+| @ Atlanta
+| [https://www.wnba.com/game/1022600213 L 89–98]
+| Natisha Hiedeman (23)
+| Dominique Malonga (13)
+| Jade Melbourne (6)
+| Gateway Center Arena<br>3,610
+| 6–25
+
+{{WNBA game log section|Seattle Storm|August
+| home_wins   = 2
+| home_losses = 3
+| road_wins   = 0
+| road_losses = 4
+}}
+|-{{game-lost}}
+| 32
+| August 3
+| @ [[2026 New York Liberty season|New York]]
+| [https://www.wnba.com/game/1022600223 L 83–95]
+| [[Flau'jae Johnson]] (25)
+| [[Awa Fam]] (9)
+| [[Natisha Hiedeman]] (7)
+| [[Barclays Center]]<br>15,312
+| 6–26
+|- {{game-lost}}
+| 33
+| August 5
+| @ New York
+| [https://www.wnba.com/game/1022600227 L 86–92]
+| [[Dominique Malonga (basketball)|Dominique Malonga]] (31)
+| Dominique Malonga (10)
+| [[Jade Melbourne]] (7)
+| Barclays Center<br>16,971
+| 6–27
+|- {{game-lost}}
+| 34
+| August 8
+| @ [[2026 Portland Fire season|Portland]]
+| [https://www.wnba.com/game/1022600238 L 93–100]
+| Jade Melbourne (23)
+| Dominique Malonga (9)
+| [[Ezi Magbegor]] (6)
+| [[Moda Center]]<br>15,294
+| 6–28
+|- {{game-won}}
+| 35
+| August 10
+| [[2026 Chicago Sky season|Chicago]]
+| [https://www.wnba.com/game/1022600244 W 97–88]
+| Dominique Malonga (26)
+| Dominique Malonga (10)
+| Natisha Hiedeman (9)
+| [[Climate Pledge Arena]]<br>11,655
+| 7–28
+|- {{game-lost}}
+| 36
+| August 14
+| Portland
+| [https://www.wnba.com/game/1022600255 L 82–84]
+| Awa Fam (20)
+| Dominique Malonga (12)
+| Hiedeman, Malonga (5)
+| Climate Pledge Arena<br>12,596
+| 7–29
+|- {{game-lost}}
+| 37
+| August 16
+| Chicago
+| [https://www.wnba.com/game/1022600259 L 80–82]
+| Dominique Malonga (19)
+| Dominique Malonga (13)
+| Johnson, Melbourne (6)
+| Climate Pledge Arena<br>12,916
+| 7–30
+|- {{game-lost}}
+| 38
+| August 23
+| @ [[2026 Dallas Wings season|Dallas]]
+| [https://www.wnba.com/game/1022600278 L 70–92]
+| Flau'jae Johnson (23)
+| Fam, Johnson (6)
+| [[Zia Cooke|Cooke]], Magbegor (3)
+| [[College Park Center]]<br>6,251
+| 7–31
+|- {{game-won}}
+| 39
+| August 26
+| [[2026 Toronto Tempo season|Toronto]]
+| [https://www.wnba.com/game/1022600288 W 90–78]
+| Flau'jae Johnson (20)
+| Dominique Malonga (7)
+| Jade Melbourne (7)
+| Climate Pledge Arena<br>11,558
+| 8–31
+|- {{game-lost}}
+| 40
+| August 30
+| [[2026 Los Angeles Sparks season|Los Angeles]]
+| [https://www.wnba.com/game/1022600298 L 74–90]
+| Flau'jae Johnson (19)
+| Dominique Malonga (15)
+| [[Stefanie Dolson|Dolson]], Malonga, Melbourne (3)
+| Climate Pledge Arena<br>14,200
+| 8–32
+
+{{WNBA game log section|Seattle Storm|September
+| home_wins   = 0
+| home_losses = 2
+| road_wins   = 0
+| road_losses = 2
+}}
+|- {{game-lost}}
+| 41
+| September 17
+| [[2026 Las Vegas Aces season|Las Vegas]]
+| [https://www.wnba.com/game/1022600305 L 77–114]
+| [[Flau'jae Johnson]] (25)
+| [[Awa Fam]] (9)
+| [[Natisha Hiedeman]] (7)
+| [[Climate Pledge Arena]]<br>14,200
+| 8–33
+|- {{game-lost}}
+| 42
+| September 19
+| @ [[2026 Golden State Valkyries season|Golden State]]
+| [https://www.wnba.com/game/1022600311 L 57–70]
+| Flau'jae Johnson (17)
+| Awa Fam (9)
+| Natisha Hiedeman (3)
+| [[Chase Center]]<br>18,064
+| 8–34
+|- {{game-lost}}
+| 43
+| September 20
+| @ Las Vegas
+| [https://www.wnba.com/game/1022600316 L 77–98]
+| Flau'jae Johnson (29)
+| [[Dominique Malonga (basketball)|Dominique Malonga]] (8)
+| Flau'jae Johnson (6)
+| [[Michelob Ultra Arena]]<br>10,263
+| 8–35
+|- {{game-lost}}
+| 44
+| September 23
+| [[2026 Dallas Wings season|Dallas]]
+| [https://www.wnba.com/game/1022600325 L 91–103]
+| Dominique Malonga (29)
+| Dominique Malonga (8)
+| Natisha Hiedeman (14)
+| Climate Pledge Arena<br>14,200
+| 8–36
+
+{{WNBA game log end|SEA|end_year=2026}}
+'''Notes:'''
+*Games highlighted in {{colorbox|#FED8B1}} represent [[2026 WNBA Commissioner's Cup|Commissioner's Cup]] games.
+
+==Standings==
+{{2026 WNBA standings|team=SEA|notes=yes}}
+<!--
+==Playoffs==
+{{see also|2026 WNBA playoffs}}
+{{trim|{{#section-h:2026 WNBA playoffs|Bracket}}}}-->
+
+==References==
+{{Reflist}}
+
+==External links==
+* [https://storm.wnba.com/ Official team website]
+
+{{Seattle Storm}}
+{{2026 WNBA season by team}}
+
+[[Category:2026 WNBA season|Seattle Storm]]
+[[Category:Seattle Storm seasons]]
+[[Category:2026 in sports in Washington (state)|Seattle Storm]]
+[[Category:2026 in Seattle|Seattle Storm]]

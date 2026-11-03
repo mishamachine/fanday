@@ -1,0 +1,1593 @@
+<!-- FIXTURE. Page: 2026–27 Paris Saint-Germain FC season
+     Source: https://en.wikipedia.org/wiki/2026%E2%80%9327_Paris_Saint-Germain_FC_season
+     Revision id: 1383459425  (permanent link: https://en.wikipedia.org/w/index.php?oldid=1383459425)
+     Fetched: 2026-11-02 from the MediaWiki API (action=query&prop=revisions&rvprop=content|ids&rvslots=main&format=json),
+     User-Agent: Fanday/0.1 (machinemisha+fanday@gmail.com). Unmodified wikitext below this comment.
+     Text (c) Wikipedia contributors, licensed CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/);
+     authors are listed in the page history. Used here only as test data. -->
+{{Short description|57th season in existence of Paris Saint-Germain}}
+{{Infobox football club season
+| club = [[Paris Saint-Germain FC|Paris Saint-Germain]]
+| season = [[2026–27 in French football|2026–27]]
+| image = 
+| image_size = 
+| alt = 
+| caption = 
+| chrtitle = President
+| chairman = [[Nasser Al-Khelaifi]]
+| ownertitle = 
+| owner = 
+| mgrtitle = Head coach
+| manager = [[Luis Enrique]]
+| stdtitle = 
+| stadium = [[Parc des Princes]]
+| league = [[Ligue 1]]
+| league result = ''[[2026–27 Ligue 1|1st]]''
+| cup1 = [[Coupe de France]]
+| cup1 result = ''[[2026–27 Coupe de France|Round of 64]]''
+| cup2 = [[Trophée des Champions]]
+| cup2 result = [[2026 Trophée des Champions|Runners-up]]
+| cup3 = [[UEFA Champions League]]
+| cup3 result = ''[[2026–27 UEFA Champions League|League phase]]''
+| cup4 = [[UEFA Super Cup]]
+| cup4 result = '''[[2026 UEFA Super Cup|Winners]]'''
+| cup5 = {{nowrap|[[FIFA Intercontinental Cup]]}}
+| cup5 result = ''[[2026 FIFA Intercontinental Cup|Final]]''
+| league topscorer = <br>[[Ferran Torres]] (4)
+| season topscorer = <br>Ferran Torres (7)
+| highest attendance = 47,926<br>vs [[Le Mans FC|Le Mans]], Ligue 1, 10 October 2026<br>vs [[Olympique Lyonnais|Lyon]], Ligue 1, 26 October 2026
+| lowest attendance = 46,945<br>vs [[AS Monaco FC|Monaco]], Ligue 1, 4 September 2026
+| average attendance = {{formatnum:{{#expr: (46945 + 47926 + 47926 + 0 + 0 + 0 + 0 + 0 + 0 + 0 + 0 + 0 + 0 + 0 + 0 + 0 + 0) / 3 round 0}}}}
+| largest win = 6–1 vs [[ŠK Slovan Bratislava|Slovan Bratislava]], Champions League, 9 September 2026
+| largest loss = 0–1 vs [[RC Lens|Lens]], Trophée des Champions, 16 August 2026<br>1–2 vs Monaco, Ligue 1, 4 September 2026
+| pattern_la1 = _psg2627h
+| pattern_b1 = _psg2627h
+| pattern_ra1 = _psg2627h
+| pattern_sh1 = _psg2627h
+| pattern_so1 = _psg2627hl
+| leftarm1 = 0000CC
+| body1 = 0000CC
+| rightarm1 = 0000CC
+| shorts1 = 0000CC
+| socks1 = 0000CC
+| pattern_la2 = _psg2627a
+| pattern_b2 = _psg2627a
+| pattern_ra2 = _psg2627a
+| pattern_sh2 = _psg2627a
+| pattern_so2 = _psg2627al
+| leftarm2 = FFFFFF
+| body2 = FFFFFF
+| rightarm2 = FFFFFF
+| shorts2 = FFFFFF
+| socks2 = FFFFFF
+| pattern_la3 = _psg2526t
+| pattern_b3 = _psg2526t
+| pattern_ra3 = _psg2526t
+| pattern_sh3 = _psg2526t
+| pattern_so3 = _psg2526t
+| leftarm3 = ed0000
+| body3 = ed0000
+| rightarm3 = ed0000
+| shorts3 = ed0000
+| socks3 = FF0000
+| prevseason = [[2025–26 Paris Saint-Germain FC season|2025–26]]
+| nextseason = ''2027–28''
+| updated = 30 October 2026
+}}
+The '''2026–27 season''' is the 57th season in the history of [[Paris Saint-Germain FC|Paris Saint-Germain]], and the club's 53rd consecutive season in the [[Ligue 1|French top flight]]. The club is participating in [[2026–27 Ligue 1|Ligue 1]], the [[2026–27 Coupe de France|Coupe de France]], the [[2026 Trophée des Champions|Trophée des Champions]], the [[2026–27 UEFA Champions League|UEFA Champions League]], the [[2026 UEFA Super Cup|UEFA Super Cup]] and the [[2026 FIFA Intercontinental Cup|FIFA Intercontinental Cup]].
+
+==Kits==
+{|
+|{{football kit
+ |pattern_la = _psg2627h
+ |pattern_b = _psg2627h
+ |pattern_ra = _psg2627h
+ |pattern_sh = _psg2627h
+ |pattern_so = _psg2627hl
+ |leftarm = 0000CC
+ |body = 0000CC
+ |rightarm = 0000CC
+ |shorts = 0000CC
+ |socks = 0000CC
+ |title      = Home
+}}
+|{{football kit
+ |pattern_la = _psg2627a
+ |pattern_b  = _psg2627a
+ |pattern_ra = _psg2627a
+ |pattern_sh = _psg2627a
+ |pattern_so = _psg2627al
+ |leftarm    = FFFFFF
+ |body       = FFFFFF
+ |rightarm   = FFFFFF
+ |shorts     = FFFFFF
+ |socks      = FFFFFF
+ |title      = Away
+}}
+|{{football kit
+ |pattern_la = _psg2526t
+ |pattern_b  = _psg2526t
+ |pattern_ra = _psg2526t
+ |pattern_sh = _psg2526t
+ |pattern_so = _psg2526tl
+ |leftarm    = FFFFFF
+ |body       = FFFFFF
+ |rightarm   = FFFFFF
+ |shorts     = FFFFFF
+ |socks      = FFFFFF
+ |title      = Third
+}}
+|{{football kit
+ |pattern_la = _psg2526f
+ |pattern_b  = _psg2526f
+ |pattern_ra = _psg2526f
+ |pattern_sh = _psg2526f
+ |pattern_so = _psg2526fl
+ |leftarm    = FFFFFF
+ |body       = FFFFFF
+ |rightarm   = FFFFFF
+ |shorts     = FFFFFF
+ |socks      = FFFFFF
+ |title      = Fourth
+}}
+|{{football kit
+ |pattern_la = _psg2526ne
+ |pattern_b  = _psg2526ne
+ |pattern_ra = _psg2526ne
+ |pattern_sh = _psg2526ne
+ |pattern_so =
+ |leftarm    = FFFFFF
+ |body       = FFFFFF
+ |rightarm   = FFFFFF
+ |shorts     = FFFFFF
+ |socks      = 000000
+ |title      = Fifth
+}}
+|}
+
+==Squad information==
+<small>Players and squad numbers last updated on 4 September 2026.</small><br /><small>Note: Flags indicate national team as has been defined under [[FIFA eligibility rules]]. Players may hold more than one non-FIFA nationality.</small>
+{| class="wikitable plainrowheaders sortable"style="text-align:center;font-size:85%;width:95%"
+|-
+! style="background:#DD0000; color:white; scope="col";text-align:center;width:10x";| No.
+! style="background:#DD0000; color:white; scope="col";text-align:center;width:160x";| Player
+! style="background:#DD0000; color:white; scope="col";text-align:center;width:20x";| Nat.
+! style="background:#DD0000; color:white; scope="col";text-align:center;width:80x";| Position(s)
+! style="background:#DD0000; color:white; scope="col";text-align:center;width:180x";| Date of birth (age)
+! style="background:#DD0000; color:white; scope="col";text-align:center;width:20x";| Contract ends
+! style="background:#DD0000; color:white; scope="col";text-align:center;width:60x";| Transfer fee
+! style="background:#DD0000; color:white; scope="col";text-align:center;width:180x";|Signed from
+|-
+! colspan="12"  style="background:#1112AB; color:white; text-align:center;"| Goalkeepers
+|-
+| 16
+| style="text-align: left;" | {{sortname|Alessandro|Longoni}}
+| {{flagicon|ITA}}
+| style="text-align: left;" | [[Goalkeeper (association football)|GK]]
+| style="text-align: left;" | {{Birth date and age|df=yes|2008|1|31}}
+| 2031
+| Free transfer
+| style="text-align: left;" | {{fbaicon|ITA}} [[Milan Futuro]]
+|-
+| 30
+| style="text-align: left;" | {{sortname|Lucas|Chevalier}}
+| {{flagicon|FRA}}
+| style="text-align: left;" | [[Goalkeeper (association football)|GK]]
+| style="text-align: left;" | {{Birth date and age|df=yes|2001|11|6}}
+| 2030
+| €40M
+| style="text-align: left;" | {{fbaicon|FRA}} [[Lille OSC|Lille]]
+|-
+| 39
+| style="text-align: left;" | {{sortname|Matvey|Safonov}}
+| {{flagicon|RUS}}
+| style="text-align: left;" | [[Goalkeeper (association football)|GK]]
+| style="text-align: left;" | {{Birth date and age|df=yes|1999|2|25}}
+| 2029
+| €20M
+| style="text-align: left;" | {{fbaicon|RUS}} [[FC Krasnodar|Krasnodar]]
+|-
+! colspan="8"  style="background:#1112AB; color:white; text-align:center;"| Defenders
+|-
+| 2
+| style="text-align: left;" | {{sortname|Achraf|Hakimi}} ([[Captain (association football)#Vice-Captain|VC]])
+| {{flagicon|MAR}}
+| style="text-align: left;" | [[Right back (association football)|RB]]
+| style="text-align: left;" | {{Birth date and age|df=yes|1998|11|4}}
+| 2029
+| €68M
+| style="text-align: left;" | {{fbaicon|ITA}} [[Inter Milan]]
+|-
+| 4
+| style="text-align: left;" | {{sortname|Lucas|Beraldo}}
+| {{flagicon|BRA}}
+| style="text-align: left;" | [[Centre-back|CB]] / [[Defensive midfielder|DM]] 
+| style="text-align: left;" | {{Birth date and age|df=yes|2003|11|24}}
+| 2031
+| €20M
+| style="text-align: left;" | {{fbaicon|BRA}} [[São Paulo FC|São Paulo]]
+|-
+| 5
+| style="text-align: left;" | {{sortname|Marquinhos|}} ([[Captain (association football)|C]])
+| {{flagicon|BRA}}
+| style="text-align: left;" | [[Centre-back|CB]]
+| style="text-align: left;" | {{Birth date and age|df=yes|1994|5|14}}
+| 2028
+| €31.4M
+| style="text-align: left;" | {{fbaicon|ITA}} [[AS Roma|Roma]]
+|-
+| 6
+| style="text-align: left;" | {{sortname|Illia|Zabarnyi}}
+| {{flagicon|UKR}}
+| style="text-align: left;" | [[Centre-back|CB]]
+| style="text-align: left;" | {{Birth date and age|df=yes|2002|9|1}}
+| 2030
+| €63M
+| style="text-align: left;" | {{fbaicon|ENG}} [[AFC Bournemouth|Bournemouth]]
+|-
+| 12
+| style="text-align: left;" | {{sortname|Lucas|Digne}}
+| {{flagicon|FRA}}
+| style="text-align: left;" | [[Left back (association football)|LB]]
+| style="text-align: left;" | {{Birth date and age|df=yes|1993|7|20}}
+| 2029
+| €7M
+| style="text-align: left;" | {{fbaicon|ENG}} [[Aston Villa F.C|Aston Villa]]
+|-
+| 21
+| style="text-align: left;" | {{sortname|Lucas|Hernandez}}
+| {{flagicon|FRA}}
+| style="text-align: left;" | [[Left back (association football)|LB]]
+| style="text-align: left;" | {{Birth date and age|df=yes|1996|2|14}}
+| 2028
+| €45M
+| style="text-align: left;" | {{fbaicon|GER}} [[FC Bayern Munich|Bayern Munich]]
+|-
+| 25
+| style="text-align: left;" | {{sortname|Nuno|Mendes|Nuno Mendes (footballer, born 2002)}}
+| {{flagicon|POR}}
+| style="text-align: left;" | [[Left back (association football)|LB]]
+| style="text-align: left;" | {{Birth date and age|df=yes|2002|6|19}}
+| 2029
+| €38M
+| style="text-align: left;" | {{fbaicon|POR}} [[Sporting CP]]
+|-
+| 42
+| style="text-align: left;" | {{sortname|David|Boly}} 
+| {{flagicon|FRA}}
+| style="text-align: left;" | [[Right back (association football)|RB]]
+| style="text-align: left;" | {{Birth date and age|df=yes|2009|1|22}}
+| 2027
+| N/A
+| style="text-align: left;" | {{fbaicon|FRA}} [[Paris Saint-Germain FC Youth Academy|Youth Sector]]
+|-
+| 51
+| style="text-align: left;" | {{sortname|Willian|Pacho}}
+| {{flagicon|ECU}}
+| style="text-align: left;" | [[Centre-back|CB]]
+| style="text-align: left;" | {{Birth date and age|df=yes|2001|10|16}}
+| 2031
+| €40M
+| style="text-align: left;" | {{fbaicon|GER}} [[Eintracht Frankfurt]]
+|-
+! colspan="12"  style="background:#1112AB; color:white; text-align:center;"| Midfielders
+|-
+| 8
+| style="text-align: left;" | {{sortname|Fabián|Ruiz}}
+| {{flagicon|ESP}}
+| style="text-align: left;" | [[Midfielder|CM]]
+| style="text-align: left;" | {{Birth date and age|df=yes|1996|4|4}}
+| 2028
+| €22.5M
+| style="text-align: left;" | {{fbaicon|ITA}} [[SSC Napoli|Napoli]]
+|-
+| 11
+| style="text-align: left;" | {{sortname|Maghnes|Akliouche}}
+| {{flagicon|FRA}}
+| style="text-align: left;" | [[Attacking midfielder|AM]] / [[Winger (association football)|RW]]
+| style="text-align: left;" | {{Birth date and age|df=yes|2002|2|25}}
+| 2031
+| €50M 
+| style="text-align: left;" | {{fbaicon|FRA}} [[AS Monaco FC|Monaco]]
+|-
+| 17
+| style="text-align: left;" | {{sortname|Vitinha|}} ([[Captain (association football)#Vice-Captain|VC]])
+| {{flagicon|POR}}
+| style="text-align: left;" | [[Midfielder|DM]]
+| style="text-align: left;" | {{Birth date and age|df=yes|2000|2|13}}
+| 2029
+| €41.5M
+| style="text-align: left;" | {{fbaicon|POR}} [[FC Porto|Porto]]
+|-
+| 24
+| style="text-align: left;" | {{sortname|Senny|Mayulu}}
+| {{flagicon|FRA}}
+| style="text-align: left;" | [[Midfielder|CM]]
+| style="text-align: left;" | {{Birth date and age|df=yes|2006|5|17}}
+| 2031
+| N/A
+| style="text-align: left;" | {{fbaicon|FRA}} [[Paris Saint-Germain FC Youth Academy|Youth Sector]]
+|-
+| 27
+| style="text-align: left;" | {{sortname|Dro|Fernández}}
+| {{flagicon|ESP}}
+| style="text-align: left;" | [[Central midfielder|CM]]
+| style="text-align: left;" | {{Birth date and age|df=yes|2008|1|12}}
+| 2030
+| €8.2M
+| style="text-align: left;" | {{fbaicon|ESP}} [[FC Barcelona|Barcelona]]
+|-
+| 33
+| style="text-align: left;" | {{sortname|Warren|Zaïre-Emery}}
+| {{flagicon|FRA}}
+| style="text-align: left;" | [[Midfielder|CM]] / [[Right-back|RB]] / [[Left-back|LB]] 
+| style="text-align: left;" | {{Birth date and age|df=yes|2006|3|8}}
+| 2029
+| N/A
+| style="text-align: left;" | {{fbaicon|FRA}} [[Paris Saint-Germain FC Youth Academy|Youth Sector]]
+|-
+| 87
+| style="text-align: left;" | {{sortname|João|Neves}}
+| {{flagicon|POR}}
+| style="text-align: left;" | [[Midfielder|CM]]
+| style="text-align: left;" | {{Birth date and age|df=yes|2004|9|27}}
+| 2031
+| €65.92M
+| style="text-align: left;" | {{fbaicon|POR}} [[S.L. Benfica|Benfica]]
+|-
+! colspan="12"  style="background:#1112AB; color:white; text-align:center;"| Forwards
+|-
+| 7
+| style="text-align: left;" | {{sortname|Khvicha|Kvaratskhelia}}
+| {{flagicon|GEO}}
+| style="text-align: left;" | [[Left winger|LW]]
+| style="text-align: left;" | {{Birth date and age|df=yes|2001|2|12}}
+| 2029
+| €70M
+| style="text-align: left;" | {{fbaicon|ITA}} [[SSC Napoli|Napoli]]
+|-
+| 9
+| style="text-align: left;" | {{sortname|Ferran|Torres}}
+| {{flagicon|ESP}}
+| style="text-align: left;" | [[Centre-forward|CF]]
+| style="text-align: left;" | {{Birth date and age|df=yes|2000|2|29}}
+| 2031
+| €48.5M
+| style="text-align: left;" | {{fbaicon|ESP}} [[FC Barcelona|Barcelona]]
+|-
+| 10
+| style="text-align: left;" | {{sortname|Ousmane|Dembélé}} ([[Captain (association football)#Vice-Captain|VC]])
+| {{flagicon|FRA}}
+| style="text-align: left;" | [[Centre-forward|CF]] / [[Winger (association football)|RW]] 
+| style="text-align: left;" | {{Birth date and age|df=yes|1997|5|15}}
+| 2028
+| €50M
+| style="text-align: left;" | {{fbaicon|ESP}} [[FC Barcelona|Barcelona]]
+|-
+| 14
+| style="text-align: left;" | {{sortname|Désiré|Doué}}
+| {{flagicon|FRA}}
+| style="text-align: left;" | [[Winger (association football)|RW]] / [[Winger (association football)|LW]] 
+| style="text-align: left;" | {{Birth date and age|df=yes|2005|6|3}}
+| 2029
+| €50M
+| style="text-align: left;" | {{fbaicon|FRA}} [[Stade Rennais FC|Rennes]] 
+|-
+| 22
+| style="text-align: left;" | {{sortname|Mika|Godts}}
+| {{flagicon|BEL}}
+| style="text-align: left;" | [[Winger (association football)|LW]]
+| style="text-align: left;" | {{Birth date and age|df=yes|2005|6|7}}
+| 2031
+| €45M
+| style="text-align: left;" | {{fbaicon|NED}} [[AFC Ajax|Ajax]] 
+|-
+| 47
+| style="text-align: left;" | {{sortname|Quentin|Ndjantou}}
+| {{flagicon|FRA}}
+| style="text-align: left;" | [[Left winger|LW]] / [[Centre-forward|CF]]
+| style="text-align: left;" | {{Birth date and age|df=yes|2007|7|23}}
+| 2028
+| N/A
+| style="text-align: left;" | {{fbaicon|FRA}} [[Paris Saint-Germain FC Youth Academy|Youth Sector]]
+|}
+
+== Transfers ==
+
+=== In ===
+{| class="wikitable plainrowheaders sortable"
+!{{Abbr|No.|Squad number}}
+!{{Abbr|Pos.|Position}}
+! scope="col" |Player
+!Transferred from
+! style="width: 65px;" |Fee
+! scope="col" |Date
+! scope="col" |Source
+|-
+| align="center" |—
+| align="center" |{{sort|3|MF}}
+|{{sort|Ayari, Khalil|{{flagicon|TUN}} [[Khalil Ayari]]}}
+|{{fbaicon|TUN}} [[Stade Tunisien]]
+|€1 million
+|{{dts|1 July 2026}}
+|<ref>{{cite web |title=Le PSG lève l’option d’achat de Khalil Ayari |access-date=7 August 2026 |url=https://www.footmercato.net/a8037702108015002495-le-psg-annonce-larrivee-de-khalil-ayari |date=3 February 2026 |website=Foot Mercato |language=fr}}</ref><ref>{{cite news |title=Le PSG officialise l'annonce pour Khalil Ayari |url=https://www.paristeam.fr/actu-psg/transferts/le-psg-officialise-l-annonce-pour-khalil-ayari-71600 |access-date=7 August 2026 |date=3 February 2026 |website=ParisTeam |language=fr}}</ref>
+|-
+| align="center" |16
+| align="center" |{{sort|1|GK}}
+|{{sort|Longini, Alessandro|{{flagicon|ITA}} [[Alessandro Longoni]]}}
+| Unattached
+| Free
+|{{dts|6 July 2026}}
+|<ref>{{cite news |date=6 July 2026 |title=Alessandro Longoni joins Paris Saint-Germain until 2031 |publisher=Paris Saint-Germain FC |url=https://www.psg.fr/en/content/alessandro-longoni-joins-paris-saint-germain-until-2031-psg-news-transfer-2026-2027 |access-date=6 July 2026}}</ref>
+|-
+| align="center" |11
+| align="center" |{{sort|3|MF}}
+|{{sort|Akliouche, Maghnes|{{flagicon|FRA}} [[Maghnes Akliouche]]}}
+|{{fbaicon|FRA}} [[AS Monaco FC|Monaco]]
+|€50 million
+|{{dts|6 August 2026}}
+|<ref>{{cite news |date=6 August 2026 |title=Maghnes Akliouche signs for Paris Saint-Germain until 2031 |publisher=Paris Saint-Germain FC |url=https://www.psg.fr/en/content/maghnes-akliouche-signs-for-paris-saint-germain-20262027 |access-date=6 August 2026}}</ref><ref>{{cite web |date=6 August 2026 |title=Mercato : Maghnes Akliouche s'engage avec le PSG en provenance de l'AS Monaco contre 50 M€ |url=https://www.lequipe.fr/Football/Actualites/Mercato-maghnes-akliouche-s-engage-avec-le-psg-contre-50-m-et-8364/1709349 |access-date=9 August 2026 |publisher=L'Équipe |language=fr}}</ref>
+|-
+| align="center" |12
+| align="center" |{{sort|2|DF}}
+|{{sort|Digne, Lucas|{{flagicon|FRA}} [[Lucas Digne]]}}
+|{{fbaicon|ENG}} [[Aston Villa F.C|Aston Villa]]
+|€7 million
+|{{dts|9 August 2026}}
+|<ref>{{cite news |date=6 August 2026 |title=Lucas Digne signs for Paris Saint-Germain for three seasons |publisher=Paris Saint-Germain FC |url=https://www.psg.fr/en/content/lucas-digne-signs-for-paris-saint-germain-for-three-seasons |access-date=9 August 2026}}</ref><ref>{{Cite web |last= |first= |date=2026-08-09 |title=🚨 Official: Lucas Digne returns to PSG a decade later |url=https://sports.yahoo.com/articles/official-lucas-digne-returns-to-psg-a-decade-later-171000952.html |access-date=2026-08-25 |website=Yahoo Sports |language=en-US}}</ref>
+|-
+| align="center" |9
+| align="center" |{{sort|4|FW}}
+|{{sort|Torres, Ferran|{{flagicon|ESP}} [[Ferran Torres]]}}
+|{{fbaicon|ESP}} [[FC Barcelona|Barcelona]]
+|€48.5 million{{Citation needed|date=September 2026}}
+|{{dts|15 August 2026}}
+|<ref>{{cite news |date=15 August 2026 |title=Ferran Torres joins Paris Saint-Germain |website=psg.fr |publisher=Paris Saint-Germain FC |url=https://www.psg.fr/en/content/ferran-torres-joins-paris-saint-germain-psg-news-2026-2027 |access-date=15 August 2026}}</ref>
+|-
+| align="center" |22
+| align="center" |{{sort|4|FW}}
+|{{sort|Godts, Mika|{{flagicon|BEL}} [[Mika Godts]]}}
+|{{fbaicon|NED}} [[AFC Ajax|Ajax]]
+|{{nowrap|€45 million<ref group="upper-alpha">Up to €10 million in bonuses</ref>}}
+|{{dts|15 August 2026}}
+|<ref>{{cite news |date=15 August 2026 |title=Mika Godts joins Paris Saint-Germain |website=psg.fr |publisher=Paris Saint-Germain FC |url=https://www.psg.fr/en/content/mika-godts-joins-paris-saint-germain-psg-club-news-2026-2027 |access-date=15 August 2026}}</ref><ref>{{Cite news |last=Imber |first=Leon |date=2026-08-15 |title=Paris Saint-Germain sign Mika Godts from Ajax in deal worth up to €55million |url=https://www.nytimes.com/athletic/7515030/2026/08/15/mika-godts-psg-ajax-signing/ |access-date=2026-08-15 |work=The New York Times |language=en-US |issn=0362-4331}}</ref>
+|}
+
+=== Out ===
+{| class="wikitable plainrowheaders sortable"
+!{{Abbr|Pos.|Position}}
+! scope="col" |Player
+!Transferred to
+! style="width: 65px;" |Fee
+! scope="col" |Date
+! scope="col" |Source
+|-
+| align="center" |{{sort|2|DF}}
+|{{sort|Kamara, Noham|{{flagicon|FRA}} [[Noham Kamara]]}}
+|{{fbaicon|FRA}} [[Olympique Lyonnais|Lyon]]
+|€4.1 million
+|{{dts|10 June 2026}}
+|<ref>{{cite web |date=10 June 2026 |title=Noham Kamara signs permanent deal with Olympique Lyonnais |publisher=Paris Saint-Germain FC |url=https://www.psg.fr/en/content/noham-kamara-signs-permanent-deal-with-olympique-lyonnais |access-date=10 June 2026}}</ref><ref>{{cite web |date=10 June 2026 |title=Mercato : l'OL lève l'option d'achat du défenseur du PSG Noham Kamara |url=https://www.lequipe.fr/Football/Actualites/Mercato-l-ol-leve-l-option-d-achat-de-noham-kamara/1683656 |access-date=25 July 2026 |publisher=L'Équipe |language=fr}}</ref>
+|-
+| align="center" |{{sort|4|FW}}
+|{{sort|Ramos, Goncalo|{{flagicon|POR}} [[Gonçalo Ramos]]}}
+|{{fbaicon|ITA}} [[AC Milan|Milan]]
+|€74 million
+|{{dts|30 June 2026}}
+|<ref>{{cite news |date=30 June 2026 |title=Official Statement: Gonçalo Ramos |publisher=AC Milan |url= https://www.acmilan.com/en/news/articles/media/2026-06-30/official-statement-goncalo-ramos |access-date=30 June 2026}}</ref><ref>{{cite web |date=30 June 2026 |title=Mercato I Gonçalo Ramos quitte le PSG et signe à l'AC Milan pour plus de 70 millions d'euros |url=https://www.eurosport.fr/football/transferts/2026-2027/mercato-i-goncalo-ramos-quitte-le-psg-et-signe-a-lac-milan-pour-plus-de-70-millions-deuros_sto23314751/story.shtml |access-date=26 July 2026 |website=Eurosport |language=fr}}</ref>
+|-
+| align="center" |{{sort|4|FW}}
+|{{sort|Housni, Ilyes|{{flagicon|MAR}} [[Ilyes Housni]]}}
+|{{fbaicon|FRA}} [[AS Nancy Lorraine|Nancy]]
+|Free
+|1 July 2026
+|<ref>{{cite news |date=24 June 2026 |title=Attaquant de 21 ans, Ilyes Housni est la troisième recrue nancéienne de l’été |publisher=AS Nancy Lorraine |language=fr |url=https://www.asnl.net/58/actualites/actualites/fiche/30628 |access-date=24 June 2026}}</ref>
+|-
+| align="center" |{{sort|3|MF}}
+|{{sort|Jangéal, Mathis|{{flagicon|FRA}} [[Mathis Jangéal]]}}
+|{{fbaicon|POR}} [[F.C. Famalicão|Famalicão]]
+|Free
+|1 July 2026
+|<ref>{{cite news |date=27 June 2026 |title=Mathis Jangeal assina por cinco temporadas|publisher=FC Famalicão |language=pt |url=https://www.fcfamalicao.pt/en/mathis-jangeal-assina-por-cinco-temporadas/ |access-date=27 June 2026}}</ref>
+|-
+| align="center" |{{sort|4|FW}}
+|{{sort|Mounguengue, Pierre|{{flagicon|FRA}} [[Pierre Mounguengue]]}}
+|{{fbaicon|UKR}} [[FC Dynamo Kyiv|Dynamo Kyiv]]
+|Free
+|1 July 2026
+|<ref>{{cite news |date=24 June 2026 |title=Pierre Mounguengue is a Dynamo player |publisher=FC Dynamo Kyiv |url=https://fcdynamo.com/en/news/pjer-mungenge-gravec-dinamo |access-date=24 June 2026}}</ref>
+|-
+| align="center" |{{sort|1|GK}}
+|{{sort|Marin, Renato|{{flagicon|ITA}} [[Renato Marin]]}}
+|{{fbaicon|POR}} [[C.D. Nacional|Nacional]]
+|Loan
+|{{dts|6 July 2026}}
+|<ref>{{cite news |date=6 July 2026 |title=Renato Marin prêté une saison au CD Nacional |publisher=Paris Saint-Germain FC |language=fr |url=https://www.psg.fr/content/renato-marin-prete-une-saison-au-cd-nacional-paris-saint-germain-2026-2027 |access-date=6 July 2026}}</ref>
+|-
+|align="center" |{{sort|3|MF}}
+|{{sort|Moscardo, Gabriel|{{flagicon|BRA}} [[Gabriel Moscardo]]}}
+|{{fbaicon|ESP}} [[RCD Espanyol|Espanyol]]
+|Loan
+|{{dts|8 July 2026}}
+|<ref>{{cite news |date=6 July 2026 |title=Gabriel Moscardo loaned out to RCD Espanyol |publisher=Paris Saint-Germain FC |language=fr |url=https://www.psg.fr/en/content/gabriel-moscardo-loaned-out-to-rcd-espanyol-paris-saint-germain-2026-2027 |access-date=8 July 2026}}</ref>
+|-
+|align="center" |{{sort|3|MF}}
+|{{sort|Lee Kang-in|{{flagicon|KOR}} [[Lee Kang-in]]}}
+|{{fbaicon|ESP}} [[Atlético Madrid]]
+|€35 million<ref group="upper-alpha">Up to €5 million in bonuses</ref>
+|{{dts|25 July 2026}}
+|<ref>{{cite web |date=25 July 2026 |title=Kang-In Lee rejoint l’Atlético de Madrid |publisher=Paris Saint-Germain FC |language=fr |url=https://www.psg.fr/content/kang-in-lee-rejoint-latletico-de-madrid-paris-saint-germain-psg-mercato-2026-2027 |access-date=25 July 2026}}</ref><ref>{{Cite web |date=2026-07-25 |title=A new number seven in town! Atletico Madrid complete stunning €35m swoop for PSG star Kang-in Lee {{!}} Goal.com |url=https://www.goal.com/en/lists/atletico-madrid-complete-35m-transfer-for-psg-star-kang-in-lee/blt38120e4e1157feb6 |access-date=2026-08-25 |website=www.goal.com |language=en}}</ref>
+|-
+| align="center" |{{Sort|2|DF}}
+|{{sort|El Hannach, Naoufel|{{flagicon|MAR}} [[Naoufel El Hannach]]}}
+|{{fbaicon|FRA}} [[Montpellier HSC|Montpellier]]
+|Loan
+|{{dts|30 July 2026}}
+|<ref>{{cite news |title=Naoufel El Hannach prêté au Montpellier HSC |url=https://www.psg.fr/content/naoufel-el-hannach-prete-au-montpellier-hsc-paris-saint-germain-mercato-2026-2027 |access-date=7 August 2026 |date=30 July 2026 |language=fr |publisher=Paris Saint-Germain FC}}</ref>
+|-
+|align="center" |{{sort|4|FW}}
+|{{sort|Kolo Muani, Randal|{{flagicon|FRA}} [[Randal Kolo Muani]]}}
+|{{fbaicon|ITA}} [[Juventus FC|Juventus]]
+|{{nowrap|€38 million<ref group="upper-alpha">Up to €12 million in bonuses</ref>}}
+|{{dts|2 August 2026}}
+|<ref>{{cite news |date=2 August 2026 |title=Randal Kolo Muani completes move to Juventus |publisher=Paris Saint-Germain FC |url=https://www.psg.fr/en/content/randal-kolo-muani-completes-move-to-juventus-psg-2026 |access-date=2 August 2026}}</ref><ref>{{cite news |date=2 August 2026 |title=Changement de dernière minute pour Kolo Muani |url=https://www.culturepsg.com/news/mercato/changement-de-derniere-minute-pour-kolo-muani/60215 |access-date=3 August 2026 |website=CulturePSG |language=fr}}</ref>
+|-
+| align="center" |{{sort|3|MF}}
+|{{sort|Ayari, Khalil|{{flagicon|TUN}} [[Khalil Ayari]]}}
+|{{fbaicon|FRA}} [[USL Dunkerque|Dunkerque]]
+|Loan
+|{{dts|4 August 2026}}
+|<ref>{{cite news |title=Khalil Ayari prêté à l'US Dunkerque |url=https://www.psg.fr/content/khalil-ayari-prete-a-lus-dunkerque-psg-news-2026-2027 |access-date=7 August 2026 |date=4 August 2026 |publisher=Paris Saint-Germain FC |language=fr}}</ref>
+|-
+|align="center" |{{sort|4|FW}}
+|{{sort|Nsoki, Noah|{{flagicon|FRA}} [[Noah Nsoki]]}}
+|{{fbaicon|CRO}} [[GNK Dinamo Zagreb|Dinamo Zagreb]]
+|Free
+|{{dts|8 August 2026}}
+|<ref>{{Cite web |last=NicolasB |date=2026-08-08 |title=Official – This forward leaves PSG for Dinamo Zagreb. |url=https://en.parisfans.fr/official-nsoki-leaves-psg-and-signs-in-croatia.html |access-date=2026-08-24 |website=ParisFans |language=en-US}}</ref>
+|-
+| align="center" |{{sort|2|DF}}
+|{{sort|Zague, Yoram|{{flagicon|FRA}} [[Yoram Zague]]}}
+|{{fbaicon|CYP}} [[Pafos FC|Pafos]]
+|Loan
+|{{dts|25 August 2026}}
+|<ref>{{cite news |date=25 August 2026 |title=Yoram Zague joins Pafos FC on loan |publisher=Paris Saint-Germain |language=en |url=https://www.psg.fr/en/content/yoram-zague-joins-pafos-fc-on-loan-paris-saint-germain-20262027 |access-date=25 August 2026}}</ref>
+|-
+|align="center" |{{sort|4|FW}}
+|{{sort|Barcola, Bradley|{{flagicon|FRA}} [[Bradley Barcola]]}}
+|{{fbaicon|ENG}} [[Liverpool F.C.|Liverpool]]
+|{{nowrap|€125 million<ref group="upper-alpha">Up to €20 million in bonuses</ref>}}{{Citation needed|date=September 2026}}
+|{{dts|31 August 2026}}
+|<ref>{{cite news |date=31 August 2026 |title=Bradley Barcola signs for Liverpool FC |publisher=Paris Saint-Germain FC |url=https://www.psg.fr/en/content/bradley-barcola-signs-for-liverpool-fc-psg-mercato-news-2026-2027 |access-date=31 August 2026}}</ref>
+|-
+| align="center" |{{sort|4|FW}}
+|{{sort|Mbaye, Ibrahim|{{flagicon|SEN}} [[Ibrahim Mbaye]]}}
+|{{fbaicon|ENG}} [[Aston Villa F.C.|Aston Villa]]
+|€55 million{{Citation needed|date=September 2026}}
+|{{dts|1 September 2026}}
+|<ref>{{cite web |date=1 September 2026 |title=Ibrahim Mbaye signs for Aston Villa |publisher=Paris Saint-Germain FC |url=https://www.psg.fr/en/content/ibrahim-mbaye-signs-for-aston-villa-psg-club-news-2026-2027 |access-date=1 September 2026}}</ref>
+|-
+| align="center" |{{sort|3|MF}}
+|{{sort|Sanches, Renato|{{flagicon|POR}} [[Renato Sanches]]}}
+|Released
+|Free
+|{{dts|1 September 2026}}
+|<ref>{{Cite web |title=Transferts : le contrat de Renato Sanches au PSG a été résilié |url=https://www.lequipe.fr/Football/Actualites/Transferts-le-contrat-de-renato-sanches-au-psg-a-ete-resilie/1715345 |access-date=2026-09-08 |website=L'Équipe |language=fr}}</ref>
+|}
+{{reflist|group=upper-alpha}}
+
+== Pre-season and friendlies ==
+{{legend2|#CCFFCC|Win|border=1px solid #AAAAAA}}
+{{legend2|#FFFFCC|Draw|border=1px solid #AAAAAA}}
+{{legend2|#FFCCCC|Loss|border=1px solid #AAAAAA}}
+{{legend2|#FFFFFF|Fixtures|border=1px solid #AAAAAA}}
+
+{{Football box collapsible
+|round = [[Exhibition game#Club football|Friendly]]
+|date = 5 August 2026
+|time = 21:00 [[Central European Summer Time|CEST]] ([[UTC+02:00|UTC+2]])
+|team1 = [[RCD Mallorca|Mallorca]]
+|score = 3–0
+|report = https://www.psg.fr/en/matches/mens-football/2026/mallorca-vs-paris-2026-08-05
+|team2 = Paris Saint-Germain
+|goals1 =
+*[[Zito Luvumbo|Luvumbo]] {{goal|21}}
+*[[Jan Virgili|Virgili]] {{goal|40}}
+*[[Antonio Raíllo|Raíllo]] {{goal|51}}
+*[[Antoniu Roca|Roca]] {{yel|62}}
+|goals2 =
+|stadium = [[Estadi Mallorca Son Moix]]
+|location = [[Palma de Mallorca|Palma]], Spain
+|attendance = 17,524
+|referee = Víctor García Verdura ([[Royal Spanish Football Federation|Spain]])
+|result = L
+}}
+{{Football box collapsible
+|round = [[Exhibition game#Club football|Friendly]]
+|date = 8 August 2026
+|time = 17:00 [[Central European Summer Time|CEST]] ([[UTC+02:00|UTC+2]])
+|team1 = Paris Saint-Germain
+|score = 1–1
+|report = https://www.psg.fr/en/matches/mens-football/2026/paris-vs-man-utd-2026-08-08
+|team2 = [[Manchester United F.C.|Manchester United]]
+|goals1 =
+*[[Ibrahim Mbaye|Mbaye]] {{goal|2}}
+|goals2 =
+*[[Ayden Heaven|Heaven]] {{yel|16}}
+*[[Bryan Mbeumo|Mbeumo]] {{goal|32}}
+|stadium = [[Ullevi]]
+|location = [[Gothenburg]], Sweden
+|attendance = 
+|referee = Joakim Sars ([[Swedish Football Association|Sweden]])
+|result = D
+}}
+
+== Competitions ==
+=== Overall record ===
+{{Fb overview2
+|c=6
+|c1=[[2026–27 Ligue 1|Ligue 1]] |fm1=23 August 2026 |lm1=29 May 2027 |sr1=Matchday 1 |fp1=TBD |w1=6 |d1=2 |l1=1 |f1=21 |a1=10
+|c2=[[2026–27 Coupe de France|Coupe de France]] |fm2=19–21 December 2026 |lm2=TBD |sr2={{nowrap|Round of 64}} |fp2=TBD |w2=0 |d2=0 |l2=0 |f2=0 |a2=0
+|c3=[[2026 Trophée des Champions|Trophée des Champions]] |dm3=16 August 2026 |sr3=Final |fp3={{won|place=2|Runners-up}} |w3=0 |d3=0 |l3=1 |f3=0 |a3=1
+|c4=[[2026–27 UEFA Champions League|UEFA Champions League]] |fm4=9 September 2026 |lm4=TBD |sr4={{nowrap|League phase}} |fp4=TBD |w4=3 |d4=0 |l4=0 |f4=14 |a4=5
+|c5=[[2026 UEFA Super Cup|UEFA Super Cup]] |dm5=12 August 2026  |sr5=Final |fp5=Winners |w5=1 |d5=0 |l5=0 |f5=2 |a5=1
+|c6={{nowrap|[[2026 FIFA Intercontinental Cup|FIFA Intercontinental Cup]]}} |dm6={{nowrap|16 December 2026}} |sr6=Final |fp6=TBD |w6=0 |d6=0 |l6=0 |f6=0 |a6=0
+|u=30 October 2026
+|s=[https://int.soccerway.com/teams/france/paris-saint-germain-fc/886/ Soccerway]
+}}
+
+=== Ligue 1 ===
+{{Main|2026–27 Ligue 1}}
+
+==== League table ====
+{{2026–27 Ligue 1 table|showteam=PSG}}
+
+====Results summary====
+{{Fb_rs |hw=2 |hd=0 |hl=1 |hgf=6 |hga=3 |aw=4 |ad=2 |al=0 |agf=15 |aga=7}}
+{{Fb_rs footer |u=30 October 2026 |s=[https://ligue1.com/competitions/ligue1mcdonalds?tab=standings Ligue 1] |date=August 2026}}
+
+====Results by round====
+{{#invoke:sports rbr table|table|legendpos=b
+| updated=30 October 2026
+| header=Round
+| label1=Ground
+| res1=A/A/H/A/A/H/A/H/A/H/A/H/A/H/A/A/H/A/H/A/H/H/H/A/H/A/H/H/A/H/A/H/A/H
+| label2=Result
+| res2=D/D/L/W/W/W/W/W/W/////////////////////////
+| label3=Position
+| pos3=8/12/13/7/6/6/2/1/1/////////////////////////
+| color_W=green2|text_W=Win
+| color_D=yellow2|text_D=Draw
+| color_L=red2|text_L=Loss
+| text_H=Home|text_A=Away
+| color1=gold|color_2–3=green1|color_4=green2|color_5=blue1|color_6=yellow1|color_16=red2|color_17–18=red1
+| source=[https://ligue1.com/competitions/ligue1mcdonalds?tab=standings Ligue 1]
+}}
+
+====Matches====
+The league fixtures were announced on 10 June 2026.<ref>{{cite news | url=https://ligue1.com/en/articles/l1_article_5292-the-2026-27-ligue-1-mc-donald-s-calendar-is-released | title=The 2026/27 Ligue 1 McDonald's calendar is released | date=10 June 2026 | website=Ligue 1}}</ref>
+
+{{Football box collapsible
+|round = 1
+|date = 23 August 2026
+|time = 20:45 [[Central European Summer Time|CEST]] ([[UTC+02:00|UTC+2]])
+|team1 = [[Stade Rennais FC|Rennes]]
+|score = 2–2
+|report = https://ligue1.com/en/match-sheet/l1_championship_match_73827
+|team2 = Paris Saint-Germain
+|goals1 =
+*[[Sebastian Szymański|Szymański]] {{goal|9}}
+*[[Esteban Lepaul|Lepaul]] {{goal|38}}
+*[[Adrien Thomasson|Thomasson]] {{yel|42}}
+*[[Musa Al-Taamari|Al-Taamari]] {{yel|63}}
+|goals2 =
+*[[Ferran Torres|Torres]] {{goal|71||82}}
+*[[Marquinhos]] {{yel|78}}
+*[[Achraf Hakimi|Hakimi]] {{yel|84}}
+|stadium = [[Roazhon Park]]
+|location = [[Rennes]]
+|attendance = 28,255
+|referee = Bastien Dechepy
+|result = D
+}}
+{{Football box collapsible
+|round = 2
+|date = 28 August 2026
+|time = 20:45 [[Central European Summer Time|CEST]] ([[UTC+02:00|UTC+2]])
+|team1 = [[Lille OSC|Lille]]
+|score = 2–2
+|report = https://ligue1.com/en/match-sheet/l1_championship_match_73832
+|team2 = Paris Saint-Germain
+|goals1 =
+*[[Hákon Haraldsson|Haraldsson]] {{goal|21}}
+*[[Benjamin André|André]] {{yel|52}}
+*[[Dilane Bakwa|Bakwa]] {{goal|84}}
+*[[Romain Perraud|Perraud]] {{yel|90+4}}
+|goals2 =
+*[[Fabián Ruiz|Fabián]] {{yel|39}}
+*[[Vitinha]] {{goal|90+1}}
+*[[Marquinhos]] {{goal|90+5}}
+|stadium = [[Stade Pierre-Mauroy]]
+|location = [[Villeneuve-d'Ascq]]
+|attendance = 47,793
+|referee = Éric Wattellier
+|result = D
+}}
+{{Football box collapsible
+|round = 3
+|date = 4 September 2026
+|time = 21:05 [[Central European Summer Time|CEST]] ([[UTC+02:00|UTC+2]])
+|team1 = Paris Saint-Germain
+|score = 1–2
+|report = https://ligue1.com/en/match-sheet/l1_championship_match_73845
+|team2 = [[AS Monaco FC|Monaco]]
+|goals1 =
+*[[Marquinhos]] {{goal|31}}
+*[[Lucas Hernandez|Hernandez]] {{yel|68}}
+|goals2 =
+*[[Flávio Nazinho|Nazinho]] {{goal|58}}
+*[[Jordan Teze|Teze]] {{yel|68}}
+*[[Stanis Idumbo|Idumbo]] {{goal|72}} 
+|stadium = [[Parc des Princes]]
+|location = [[Paris]]
+|attendance = 46,945
+|referee = [[Jérôme Brisard]]
+|result = L
+}}
+{{Football box collapsible
+|round = 4
+|date = 13 September 2026
+|time = 20:45 [[Central European Summer Time|CEST]] ([[UTC+02:00|UTC+2]])
+|team1 = [[Stade Brestois 29|Brest]]
+|score = 0–1
+|report = https://ligue1.com/en/match-sheet/l1_championship_match_73849
+|team2 = Paris Saint-Germain
+|goals1 =
+*[[Kamory Doumbia|Doumbia]] {{yel|31}}
+|goals2 =
+*[[Ferran Torres|Torres]] {{goal|5}}
+*[[Vitinha]] {{yel|84}}
+*[[Dro Fernández|Fernández]] {{yel|87}}
+|stadium = [[Stade Francis-Le Blé]]
+|location = [[Brest, France|Brest]]
+|attendance = 14,944
+|referee = [[Willy Delajod]]
+|result = W
+}}
+{{Football box collapsible
+|round = [[Le Classique|5]]
+|date = 20 September 2026
+|time = 20:45 [[Central European Summer Time|CEST]] ([[UTC+02:00|UTC+2]])
+|team1 = [[Olympique de Marseille|Marseille]]
+|score = 1–2
+|report = https://ligue1.com/en/match-sheet/l1_championship_match_73861
+|team2 = Paris Saint-Germain
+|goals1 =
+*[[Timothy Weah|Weah]] {{sentoff|2|32|77}}
+*[[Angel Gomes|Gomes]] {{goal|72}}, {{yel|90}}
+*[[Keyliane Abdallah|Abdallah]] {{yel|81}}
+|goals2 =
+*[[Nuno Mendes (footballer, born 2002)|Mendes]] {{yel|39}}
+*[[Ferran Torres|Torres]] {{goal|66}}
+*[[Marquinhos]] {{goal|74}}
+|stadium = [[Stade Vélodrome]]
+|location = [[Marseille]]
+|attendance =61,499 
+|referee = [[François Letexier]]
+|result = W
+}}
+{{Football box collapsible
+|round = 6
+|date = 10 October 2026
+|time = 20:45 [[Central European Summer Time|CEST]] ([[UTC+02:00|UTC+2]])
+|team1 = Paris Saint-Germain
+|score = 3–1
+|report = https://ligue1.com/en/match-sheet/l1_championship_match_73872
+|team2 = [[Le Mans FC|Le Mans]]
+|goals1 =
+*[[Lucas Beraldo|Beraldo]] {{goal|19|pen.}}
+*[[Khvicha Kvaratskhelia|Kvaratskhelia]] {{goal|61}}
+*[[Maghnes Akliouche|Akliouche]] {{goal|68}}
+*[[Désiré Doué|Doué]] {{penmiss}} {{small|90+3'}}
+|goals2 =
+*[[Dame Gueye|Gueye]] {{yel|47}}
+*[[Louis Mafouta|Mafouta]] {{goal|54}}, {{yel|65}}
+*[[Rayan Bamba|Bamba]] {{yel|90+2}}
+*[[Billal Brahimi|Brahimi]] {{yel|90+2}}
+*[[Noa Boissé|Boissé]] {{yel|90+3}}
+|stadium = [[Parc des Princes]]
+|location = [[Paris]]
+|attendance = 47,926
+|referee = Mathieu Vernice
+|result = W
+}}
+{{Football box collapsible
+|round = 7
+|date = 17 October 2026
+|time = 17:15 [[Central European Summer Time|CEST]] ([[UTC+02:00|UTC+2]])
+|team1 = [[RC Strasbourg Alsace|Strasbourg]]
+|score = 1–3
+|report = https://ligue1.com/en/match-sheet/l1_championship_match_73882
+|team2 = Paris Saint-Germain
+|goals1 =
+*[[Gio Reyna|Reyna]] {{goal|17}}
+*[[Conrad Harder|Harder]] {{yel|76}}
+*[[Dário Essugo|Essugo]] {{yel|78}}
+|goals2 =
+*[[Ousmane Dembélé|Dembélé]] {{penmiss}} {{small|72'}}, {{goal|85}}
+*[[Illia Zabarnyi|Zabarnyi]] {{goal|77}}
+*[[Désiré Doué|Doué]] {{goal|90+3}}
+|stadium = [[Stade de la Meinau]]
+|location = [[Strasbourg]]
+|attendance = 31,331
+|referee = [[Willy Delajod]]
+|result = W
+}}
+{{Football box collapsible
+|round = 8
+|date = 26 October 2026
+|time = 20:30 [[Central European Time|CET]] ([[UTC+01:00|UTC+1]])
+|team1 = Paris Saint-Germain
+|score = 2–0
+|report = https://ligue1.com/en/match-sheet/l1_championship_match_73890
+|team2 = [[Olympique Lyonnais|Lyon]]
+|goals1 =
+*[[Vitinha]] {{yel|31}}
+*[[Maghnes Akliouche|Akliouche]] {{yel|51}}
+*[[Senny Mayulu|Mayulu]] {{goal|72}}
+*[[Mika Godts|Godts]] {{goal|84}}
+|goals2 =
+*[[Ernest Nuamah|Nuamah]] {{yel|74}}
+|stadium = [[Parc des Princes]]
+|location = [[Paris]]
+|attendance = 47,926
+|referee = [[Jérôme Brisard]]
+|result = W
+}}
+{{Football box collapsible
+|round = 9
+|date = 30 October 2026
+|time = 19:00 [[Central European Time|CET]] ([[UTC+01:00|UTC+1]])
+|team1 = [[Le Havre AC|Le Havre]]
+|score = 1–5
+|report = https://ligue1.com/en/match-sheet/l1_championship_match_73893/stats
+|team2 = Paris Saint-Germain
+|goals1 =
+*[[Josh Maja|Maja]] {{goal|18}}
+|goals2 =
+*[[Mika Godts|Godts]] {{goal|26}}
+*[[Achraf Hakimi|Hakimi]] {{goal|28||55||69}}
+*[[Senny Mayulu|Mayulu]] {{goal|62}}
+|stadium = [[Stade Océane]]
+|location = [[Le Havre]]
+|attendance = 23,714
+|referee = [[François Letexier]]
+|result = W
+}}
+{{Football box collapsible
+|round = 10
+|date = 7 November 2026
+|time = 20:45 [[Central European Time|CET]] ([[UTC+01:00|UTC+1]])
+|team1 = Paris Saint-Germain
+|score = 
+|report = https://ligue1.com/en/match-sheet/l1_championship_match_73908
+|team2 = [[ES Troyes AC|Troyes]]
+|goals1 =
+|goals2 =
+|stadium = [[Parc des Princes]]
+|location = [[Paris]]
+|attendance = 
+|referee = 
+|result = 
+}}
+{{Football box collapsible
+|round = 11
+|date = 21 November 2026
+|time = 17:15 [[Central European Time|CET]] ([[UTC+01:00|UTC+1]])
+|team1 = [[OGC Nice|Nice]]
+|score = 
+|report = https://ligue1.com/en/match-sheet/l1_championship_match_73908
+|team2 = Paris Saint-Germain
+|goals1 =
+|goals2 =
+|stadium = [[Allianz Riviera]]
+|location = [[Nice]]
+|attendance = 
+|referee = 
+|result = 
+}}
+{{Football box collapsible
+|round = 12
+|date = 28 November 2026
+|time = 20:45 [[Central European Time|CET]] ([[UTC+01:00|UTC+1]])
+|team1 = Paris Saint-Germain
+|score = 
+|report = https://ligue1.com/en/match-sheet/l1_championship_match_73927
+|team2 = [[FC Lorient|Lorient]]
+|goals1 =
+|goals2 =
+|stadium = [[Parc des Princes]]
+|location = [[Paris]]
+|attendance = 
+|referee = 
+|result = 
+}}
+{{Football box collapsible
+|round = 13
+|date = 4 December 2026
+|time = 20:45 [[Central European Time|CET]] ([[UTC+01:00|UTC+1]])
+|team1 = [[Toulouse FC|Toulouse]]
+|score = 
+|report = https://ligue1.com/en/match-sheet/l1_championship_match_73936
+|team2 = Paris Saint-Germain
+|goals1 = 
+|goals2 =
+|stadium = [[Stadium de Toulouse]]
+|location = [[Toulouse]]
+|attendance = 
+|referee = 
+|result = 
+}}
+{{Football box collapsible
+|round = [[Paris derby|14]]
+|date = 12 December 2026
+|time = 17:15 [[Central European Time|CET]] ([[UTC+01:00|UTC+1]])
+|team1 = Paris Saint-Germain
+|score = 
+|report = https://ligue1.com/en/match-sheet/l1_championship_match_73945
+|team2 = [[Paris FC]]
+|goals1 =
+|goals2 =
+|stadium = [[Parc des Princes]]
+|location = [[Paris]]
+|attendance = 
+|referee = 
+|result = 
+}}
+{{Football box collapsible
+|round = 15
+|date = 3 January 2027
+|time = 20:45 [[Central European Time|CET]] ([[UTC+01:00|UTC+1]])
+|team1 = [[RC Lens|Lens]]
+|score = 
+|report = https://ligue1.com/en/match-sheet/l1_championship_match_73949
+|team2 = Paris Saint-Germain
+|goals1 =
+|goals2 =
+|stadium = [[Stade Bollaert-Delelis]]
+|location = [[Lens, Pas-de-Calais|Lens]]
+|attendance = 
+|referee = 
+|result = 
+}}
+{{Football box collapsible
+|round = 16
+|date = 16 January 2027
+|time = 17:15 [[Central European Time|CET]] ([[UTC+01:00|UTC+1]])
+|team1 = [[Angers SCO|Angers]]
+|score = 
+|report = https://ligue1.com/en/match-sheet/l1_championship_match_73956
+|team2 = Paris Saint-Germain
+|goals1 =
+|goals2 =
+|stadium = [[Stade Raymond Kopa]]
+|location = [[Angers]]
+|attendance = 
+|referee = 
+|result = 
+}}
+{{Football box collapsible
+|round = 17
+|date = 23 January 2027
+|time = 20:45 [[Central European Time|CET]] ([[UTC+01:00|UTC+1]])
+|team1 = Paris Saint-Germain
+|score = 
+|report = https://ligue1.com/en/match-sheet/l1_championship_match_73970
+|team2 = [[AJ Auxerre|Auxerre]]
+|goals1 =
+|goals2 =
+|stadium = [[Parc des Princes]]
+|location = [[Paris]]
+|attendance = 
+|referee = 
+|result = 
+}}
+{{Football box collapsible
+|round = 18
+|date = 30 January 2027
+|time = 17:15 [[Central European Time|CET]] ([[UTC+01:00|UTC+1]])
+|team1 = [[AS Monaco FC|Monaco]]
+|score = 
+|report = https://ligue1.com/en/match-sheet/l1_championship_match_73979
+|team2 = Paris Saint-Germain
+|goals1 =
+|goals2 =
+|stadium = [[Stade Louis II]]
+|location = [[Monaco]]
+|attendance = 
+|referee = 
+|result = 
+}}
+{{Football box collapsible
+|round = [[Le Classique|19]]
+|date = 7 February 2027
+|time = 20:45 [[Central European Time|CET]] ([[UTC+01:00|UTC+1]])
+|team1 = Paris Saint-Germain
+|score = 
+|report = https://ligue1.com/en/match-sheet/l1_championship_match_73988
+|team2 = [[Olympique de Marseille|Marseille]]
+|goals1 =
+|goals2 =
+|stadium = [[Parc des Princes]]
+|location = [[Paris]]
+|attendance = 
+|referee = 
+|result = 
+}}
+{{Football box collapsible
+|round = 20
+|date = 14 February 2027
+|time = --:-- [[Central European Time|CET]] ([[UTC+01:00|UTC+1]])
+|team1 = [[Le Mans FC|Le Mans]]
+|score = 
+|report = https://ligue1.com/en/match-sheet/l1_championship_match_73994
+|team2 = Paris Saint-Germain
+|goals1 =
+|goals2 =
+|stadium = [[Stade Marie-Marvingt]]
+|location = [[Le Mans]]
+|attendance = 
+|referee = 
+|result = 
+}}
+{{Football box collapsible
+|round = 21
+|date = 21 February 2027
+|time = --:-- [[Central European Time|CET]] ([[UTC+01:00|UTC+1]])
+|team1 = Paris Saint-Germain
+|score = 
+|report = https://ligue1.com/en/match-sheet/l1_championship_match_74007
+|team2 = [[Stade Brestois 29|Brest]]
+|goals1 =
+|goals2 =
+|stadium = [[Parc des Princes]]
+|location = [[Paris]]
+|attendance = 
+|referee = 
+|result = 
+}}
+{{Football box collapsible
+|round = 22
+|date = 28 February 2027
+|time = 20:45 [[Central European Time|CET]] ([[UTC+01:00|UTC+1]])
+|team1 = Paris Saint-Germain
+|score = 
+|report = https://ligue1.com/en/match-sheet/l1_championship_match_74016
+|team2 = [[RC Lens|Lens]]
+|goals1 = 
+|goals2 = 
+|stadium = [[Parc des Princes]]
+|location = [[Paris]]
+|attendance = 
+|referee = 
+|result = 
+}}
+{{Football box collapsible
+|round = 23
+|date = 7 March 2027
+|time = --:-- [[Central European Time|CET]] ([[UTC+01:00|UTC+1]])
+|team1 = Paris Saint-Germain
+|score = 
+|report = 
+|team2 = [[Stade Rennais FC|Rennes]]
+|goals1 =
+|goals2 =
+|stadium = [[Parc des Princes]]
+|location = [[Paris]]
+|attendance = 
+|referee = 
+|result = 
+}}
+{{Football box collapsible
+|round = 24
+|date = 14 March 2027
+|time = --:-- [[Central European Time|CET]] ([[UTC+01:00|UTC+1]])
+|team1 = [[AJ Auxerre|Auxerre]]
+|score = 
+|report = https://ligue1.com/en/match-sheet/l1_championship_match_74028
+|team2 = Paris Saint-Germain
+|goals1 =
+|goals2 =
+|stadium = [[Stade de l'Abbé-Deschamps]]
+|location = [[Auxerre]]
+|attendance = 
+|referee = 
+|result = 
+}}
+{{Football box collapsible
+|round = 25
+|date = 21 March 2027
+|time = --:-- [[Central European Time|CET]] ([[UTC+01:00|UTC+1]])
+|team1 = Paris Saint-Germain
+|score = 
+|report = https://ligue1.com/en/match-sheet/l1_championship_match_74042
+|team2 = [[RC Strasbourg Alsace|Strasbourg]]
+|goals1 =
+|goals2 =
+|stadium = [[Parc des Princes]]
+|location = [[Paris]]
+|attendance = 
+|referee = 
+|result = 
+}}
+{{Football box collapsible
+|round = [[Paris derby|26]]
+|date = 4 April 2027
+|time = --:-- [[Central European Summer Time|CEST]] ([[UTC+02:00|UTC+2]])
+|team1 = [[Paris FC]]
+|score = 
+|report = https://ligue1.com/en/match-sheet/l1_championship_match_74053
+|team2 = Paris Saint-Germain
+|goals1 =
+|goals2 =
+|stadium = [[Stade Jean-Bouin (Paris)|Stade Jean-Bouin]]
+|location = [[Paris]]
+|attendance = 
+|referee = 
+|result = 
+}}
+{{Football box collapsible
+|round = 27
+|date = 11 April 2027
+|time = --:-- [[Central European Summer Time|CEST]] ([[UTC+02:00|UTC+2]])
+|team1 = Paris Saint-Germain
+|score = 
+|report = https://ligue1.com/en/match-sheet/l1_championship_match_74062
+|team2 = [[Le Havre AC|Le Havre]]
+|goals1 =
+|goals2 =
+|stadium = [[Parc des Princes]]
+|location = [[Paris]]
+|attendance = 
+|referee = 
+|result = 
+}}
+{{Football box collapsible
+|round = 28
+|date = 18 April 2027
+|time = --:-- [[Central European Summer Time|CEST]] ([[UTC+02:00|UTC+2]])
+|team1 = Paris Saint-Germain
+|score = 
+|report = https://ligue1.com/en/match-sheet/l1_championship_match_74070
+|team2 = [[Lille OSC|Lille]]
+|goals1 =
+|goals2 =
+|stadium = [[Parc des Princes]]
+|location = [[Paris]]
+|attendance = 
+|referee = 
+|result = 
+}}
+{{Football box collapsible
+|round = 29
+|date = 25 April 2027
+|time = --:-- [[Central European Time|CET]] ([[UTC+01:00|UTC+1]])
+|team1 = [[FC Lorient|Lorient]]
+|score = 
+|report = https://ligue1.com/en/match-sheet/l1_championship_match_74075
+|team2 = Paris Saint-Germain
+|goals1 =
+|goals2 =
+|stadium = [[Stade du Moustoir]]
+|location = [[Lorient]]
+|attendance = 
+|referee = 
+|result = 
+}}
+{{Football box collapsible
+|round = 30
+|date = 2 May 2027
+|time = --:-- [[Central European Summer Time|CEST]] ([[UTC+02:00|UTC+2]])
+|team1 = Paris Saint-Germain
+|score = 
+|report = https://ligue1.com/en/match-sheet/l1_championship_match_74086
+|team2 = [[Angers SCO|Angers]]
+|goals1 =
+|goals2 =
+|stadium = [[Parc des Princes]]
+|location = [[Paris]]
+|attendance = 
+|referee = 
+|result = 
+}}
+{{Football box collapsible
+|round = 31
+|date = 9 May 2027
+|time = 20:45 [[Central European Summer Time|CEST]] ([[UTC+02:00|UTC+2]])
+|team1 = [[Olympique Lyonnais|Lyon]]
+|score = 
+|report = https://ligue1.com/en/match-sheet/l1_championship_match_74096
+|team2 = Paris Saint-Germain
+|goals1 =
+|goals2 =
+|stadium = [[Parc Olympique Lyonnais]]
+|location = [[Décines-Charpieu]]
+|attendance = 
+|referee = 
+|result = 
+}}
+{{Football box collapsible
+|round = 32
+|date = 16 May 2027
+|time = --:-- [[Central European Summer Time|CEST]] ([[UTC+02:00|UTC+2]])
+|team1 = Paris Saint-Germain
+|score = 
+|report = https://ligue1.com/en/match-sheet/l1_championship_match_74106
+|team2 = [[OGC Nice|Nice]]
+|goals1 =
+|goals2 =
+|stadium = [[Parc des Princes]]
+|location = [[Paris]]
+|attendance = 
+|referee = 
+|result = 
+}}
+{{Football box collapsible
+|round = 33
+|date = 22 May 2027
+|time = 21:00 [[Central European Summer Time|CEST]] ([[UTC+02:00|UTC+2]])
+|team1 = [[ES Troyes AC|Troyes]]
+|score = 
+|report = https://ligue1.com/en/match-sheet/l1_championship_match_74117
+|team2 = Paris Saint-Germain
+|goals1 =
+|goals2 =
+|stadium = [[Stade de l'Aube]]
+|location = [[Troyes]]
+|attendance = 
+|referee = 
+|result = 
+}}
+{{Football box collapsible
+|round = 34
+|date = 29 May 2027
+|time = 21:00 [[Central European Summer Time|CEST]] ([[UTC+02:00|UTC+2]])
+|team1 = Paris Saint-Germain
+|score = 
+|report = https://ligue1.com/en/match-sheet/l1_championship_match_74124
+|team2 = [[Toulouse FC|Toulouse]]
+|goals1 =
+|goals2 =
+|stadium = [[Parc des Princes]]
+|location = [[Paris]]
+|attendance = 
+|referee = 
+|result = 
+}}
+
+=== Coupe de France ===
+{{Main|2026–27 Coupe de France}}
+
+{{Football box collapsible
+|round = [[2026–27 Coupe de France#Round of 64|Round of 64]]
+|date = 19–21 December 2026 
+|time = --:-- [[Central European Time|CET]] ([[UTC+01:00|UTC+1]])
+|team1 = 
+|score = 
+|report = 
+|team2 = 
+|goals1 =
+|goals2 =
+|stadium = 
+|location = 
+|attendance = 
+|referee = 
+|result = 
+}}
+
+=== Trophée des Champions ===
+{{main|2026 Trophée des Champions}}
+
+{{Football box collapsible
+|round = [[2026 Trophée des Champions#Match|Final]]
+|date = 16 August 2026
+|time = 20:45 [[Central European Summer Time|CEST]] ([[UTC+02:00|UTC+2]])
+|team1 = [[RC Lens|Lens]]
+|score = 1–0
+|report = https://ligue1.com/en/match-sheet/l1_championship_match_2636517
+|team2 = Paris Saint-Germain
+|goals1 =
+*[[Florian Thauvin|Thauvin]] {{goal|32}}
+*[[Kyllian Antonio|Antonio]] {{sentoff|0|39}}
+*[[Andrija Bulatović|Bulatović]] {{yel|90}}
+|goals2 =
+*[[Désiré Doué|Doué]] {{yel|64}}
+*[[Nuno Mendes (footballer, born 2002)|Mendes]] {{sentoff|0|86}}
+*[[Fabián Ruiz|Fabián]] {{yel|89}}
+*[[Achraf Hakimi|Hakimi]] {{yel|90}}
+|stadium = [[Stade Bollaert-Delelis]]
+|location = [[Lens, Pas-de-Calais|Lens]]
+|attendance = 38,223
+|referee = Jérémie Pignard
+|result = L
+}}
+
+=== UEFA Champions League ===
+{{Main|2026–27 UEFA Champions League}}
+
+==== League phase ====
+{{Main|2026–27 UEFA Champions League league phase}}
+
+The draw for the league phase was held on 27 August 2026. The league phase fixtures were announced on 29 August 2026.<ref>{{cite news | url=https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures/ | title=2026/27 Champions League: All the league phase fixtures | publisher=UEFA | date=29 August 2026 }}</ref>
+
+{{2026–27 UEFA Champions League league phase table|showteam=PSG}}
+
+{{#invoke:sports rbr table|table|legendpos=b
+| updated=20 October 2026
+| header=Round
+| label1=Ground
+| res1=H/A/H/A/H/A/A/H
+| label2=Result
+| res2=W/W/W/////
+| label3=Position
+| pos3=1/1/1/////
+| color_W=green2|text_W=Win
+| color_D=yellow2|text_D=Draw
+| color_L=red2|text_L=Loss
+| text_H=Home|text_A=Away
+| color_1-8=green1|color_9-16=blue1|color_17-24=blue2
+| source=[https://www.uefa.com/uefachampionsleague/fixtures-results/ UEFA]
+}}
+
+{{Football box collapsible
+|round = [[2026–27 UEFA Champions League league phase#Paris Saint-Germain v Slovan Bratislava|1]]
+|date = 9 September 2026
+|time = 21:00 [[Central European Summer Time|CEST]] ([[UTC+02:00|UTC+2]])
+|team1 = Paris Saint-Germain {{fbaicon|FRA}}
+|score = 6–1
+|report = https://www.uefa.com/uefachampionsleague/match/2049559/
+|team2 = {{fbaicon|SVK}} [[ŠK Slovan Bratislava|Slovan Bratislava]]
+|goals1 =
+*[[Ousmane Dembélé|Dembélé]] {{goal|17||23}}
+*[[Ferran Torres|Torres]] {{goal|31||47||57}}
+*[[Fabián Ruiz|Fabián]] {{goal|88}}
+|goals2 =
+*[[César Blackman|Blackman]] {{yel|53}}
+*[[Suleiman Camara|Su. Camara]] {{goal|59}}
+|stadium = [[Parc des Princes]]
+|location = [[Paris]], France
+|attendance = 47,511
+|referee = [[Mykola Balakin]] ([[Ukrainian Association of Football|Ukraine]])
+|result = W
+}}
+{{Football box collapsible
+|round = [[2026–27 UEFA Champions League league phase#Manchester City v Paris Saint-Germain|2]]
+|date = 14 October 2026
+|time = 20:00 [[British Summer Time|BST]]
+|team1 = [[Manchester City F.C.|Manchester City]] {{fbaicon|ENG}}
+|score = 2–4
+|report = https://www.uefa.com/uefachampionsleague/match/2049580/
+|team2 = {{fbaicon|FRA}} Paris Saint-Germain
+|goals1 =
+*[[Erling Haaland|Haaland]] {{goal|53||75}}
+*[[Antoine Semenyo|Semenyo]] {{yel|61}}
+|goals2 =
+*[[Désiré Doué|Doué]] {{goal|13}}
+*[[Ousmane Dembélé|Dembélé]] {{goal|15}}
+*[[Vitinha]] {{goal|32}}
+*[[Maghnes Akliouche|Akliouche]] {{goal|63}}
+*[[Warren Zaïre-Emery|Zaïre-Emery]] {{yel|69}}
+*[[Ferran Torres|Torres]] {{penmiss}} {{small|90'}}
+|stadium = [[Etihad Stadium]]
+|location = [[Manchester]], England
+|attendance = 60,021
+|referee = [[Sven Jablonski]] ([[German Football Association|Germany]])
+|result = W
+}}
+{{Football box collapsible
+|round = [[2026–27 UEFA Champions League league phase#Paris Saint-Germain v Barcelona|3]]
+|date = 20 October 2026
+|time = 21:00 [[Central European Summer Time|CEST]] ([[UTC+02:00|UTC+2]])
+|team1 = Paris Saint-Germain {{fbaicon|FRA}}
+|score = 4–2
+|report = https://www.uefa.com/uefachampionsleague/match/2049589/
+|team2 = {{fbaicon|ESP}} [[FC Barcelona|Barcelona]]
+|goals1 =
+*[[Désiré Doué|Doué]] {{goal|38}}
+*[[Lucas Hernandez|Hernandez]] {{goal|72}}
+*[[Vitinha]] {{goal|81}}
+*[[Fabián Ruiz|Fabián]] {{goal|86}}
+|goals2 =
+*[[João Cancelo|Cancelo]] {{yel|17}}
+*[[Xavi Espart|Espart]] {{goal|55}}
+*[[Lamine Yamal|Yamal]] {{goal|79}}
+|stadium = [[Parc des Princes]]
+|location = [[Paris]], France
+|attendance = 47,421
+|referee = [[Michael Oliver (referee)|Michael Oliver]] ([[The Football Association|England]])
+|result = W
+}}
+{{Football box collapsible
+|round = [[2026–27 UEFA Champions League league phase#Villarreal v Paris Saint-Germain|4]]
+|date = 3 November 2026
+|time = 21:00 [[Central European Time|CET]] ([[UTC+01:00|UTC+1]])
+|team1 = [[Villarreal CF|Villarreal]] {{fbaicon|ESP}}
+|score = 
+|report = https://www.uefa.com/uefachampionsleague/match/2049612/
+|team2 = {{fbaicon|FRA}} Paris Saint-Germain
+|goals1 =
+|goals2 =
+|stadium = [[Estadio de la Cerámica]]
+|location = [[Villarreal]], Spain
+|attendance = 
+|referee = [[Felix Zwayer]] ([[German Football Association|Germany]])
+|result = 
+}}
+{{Football box collapsible
+|round = [[2026–27 UEFA Champions League league phase#Paris Saint-Germain v Roma|5]]
+|date = 25 November 2026
+|time = 21:00 [[Central European Time|CET]] ([[UTC+01:00|UTC+1]])
+|team1 = Paris Saint-Germain {{fbaicon|FRA}}
+|score = 
+|report = https://www.uefa.com/uefachampionsleague/match/2049634/
+|team2 = {{fbaicon|ITA}} [[AS Roma|Roma]]
+|goals1 =
+|goals2 =
+|stadium = [[Parc des Princes]]
+|location = [[Paris]], France
+|attendance = 
+|referee = 
+|result = 
+}}
+{{Football box collapsible
+|round = [[2026–27 UEFA Champions League league phase#Aston Villa v Paris Saint-Germain|6]]
+|date = 8 December 2026
+|time = 20:00 [[Greenwich Mean Time|GMT]]
+|team1 = [[Aston Villa F.C.|Aston Villa]] {{fbaicon|ENG}}
+|score = 
+|report = https://www.uefa.com/uefachampionsleague/match/2049646/
+|team2 = {{fbaicon|FRA}} Paris Saint-Germain
+|goals1 =
+|goals2 =
+|stadium = [[Villa Park]]
+|location = [[Birmingham]], England
+|attendance = 
+|referee = 
+|result = 
+}}
+{{Football box collapsible
+|round = [[2026–27 UEFA Champions League league phase#Como v Paris Saint-Germain|7]]
+|date = 20 January 2027
+|time = 21:00 [[Central European Time|CET]] ([[UTC+01:00|UTC+1]])
+|team1 = [[Como 1907|Como]] {{fbaicon|ITA}}
+|score = 
+|report = https://www.uefa.com/uefachampionsleague/match/2049675/
+|team2 = {{fbaicon|FRA}} Paris Saint-Germain
+|goals1 =
+|goals2 =
+|stadium = [[Stadio Giuseppe Sinigaglia]]
+|location = [[Como]], Italy
+|attendance = 
+|referee = 
+|result = 
+}}
+{{Football box collapsible
+|round = [[2026–27 UEFA Champions League league phase#Paris Saint-Germain v Galatasaray|8]]
+|date = 27 January 2027
+|time = 21:00 [[Central European Time|CET]] ([[UTC+01:00|UTC+1]])
+|team1 = Paris Saint-Germain {{fbaicon|FRA}}
+|score = 
+|report = https://www.uefa.com/uefachampionsleague/match/2049679/
+|team2 = {{fbaicon|TUR}} [[Galatasaray S.K. (football)|Galatasaray]]
+|goals1 =
+|goals2 =
+|stadium = [[Parc des Princes]]
+|location = [[Paris]], France
+|attendance = 
+|referee = 
+|result = 
+}}
+
+===UEFA Super Cup===
+{{main|2026 UEFA Super Cup}}
+
+{{Football box collapsible
+|round = [[2026 UEFA Super Cup#Match|Final]]
+|date = 12 August 2026
+|time = 21:00 [[Central European Summer Time|CEST]] ([[UTC+02:00|UTC+2]])
+|team1 = Paris Saint-Germain {{fbaicon|FRA}} 
+|score = 2–1
+|report = https://www.uefa.com/uefasupercup/match/2048319/
+|team2 = {{fbaicon|ENG}} [[Aston Villa F.C.|Aston Villa]]
+|goals1 =
+*[[Khvicha Kvaratskhelia|Kvaratskhelia]] {{goal|20}}
+*[[Désiré Doué|Doué]] {{goal|61}}
+|goals2 =
+*[[Brian Madjo|Madjo]] {{goal|45}}
+*[[Pau Torres|Torres]] {{yel|51}}
+*[[João Gomes (footballer, born 2001)|João Gomes]] {{yel|64}}
+*[[John McGinn|McGinn]] {{yel|72}}
+|stadium = [[Red Bull Arena (Salzburg)|Stadion Salzburg]]
+|location = [[Salzburg]], Austria
+|attendance = 27,681
+|referee = [[Omar Artan]] ([[Somali Football Federation|Somalia]])
+|result = W
+}}
+
+=== FIFA Intercontinental Cup ===
+{{main|2026 FIFA Intercontinental Cup|2026 FIFA Intercontinental Cup final}}
+
+{{Football box collapsible
+|round = [[2026 FIFA Intercontinental Cup final|Final]]
+|date = 16 December 2026
+|time = --:-- [[Arabia Standard Time|AST]] ([[UTC+03:00|UTC+3]])
+|team1 = Paris Saint-Germain {{fbaicon|FRA}} 
+|score = 
+|report = 
+|team2 = TBD
+|goals1 =
+|goals2 =
+|stadium = [[Ahmad bin Ali Stadium]]
+|location = [[Al Rayyan (city)|Al Rayyan]], Qatar
+|attendance = 
+|referee =  
+|result = 
+}}
+
+==Statistics==
+===Appearances and goals===
+{{Efs start|[[2026–27 Ligue 1|Ligue 1]]|[[2026–27 Coupe de France|Coupe de France]]|[[2026 Trophée des Champions|Trophée des<br>Champions]]|[[2026–27 UEFA Champions League|UEFA<br>Champions League]]|[[2026 UEFA Super Cup|UEFA<br>Super Cup]]|[[2026 FIFA Intercontinental Cup|FIFA<br>Intercontinental Cup]]}}
+|-
+! colspan="18" style="background:#dcdcdc; text-align:center"| Goalkeepers
+{{Efs player|no=16|name=[[Alessandro Longoni]]|pos=GK|nat=ITA                              |0    |0 |0    |0 |0    |0 |0    |0 |0    |0 |0    |0 }}
+{{Efs player|no=30|name=[[Lucas Chevalier]]|pos=GK|nat=FRA                                 |0    |0 |0    |0 |0    |0 |0    |0 |0    |0 |0    |0 }}
+{{Efs player|no=39|name=[[Matvey Safonov]]|pos=GK|nat=RUS                                  |9    |0 |0    |0 |1    |0 |3    |0 |1    |0 |0    |0 }}
+|-
+! colspan="18" style="background:#dcdcdc; text-align:center"| Defenders
+{{Efs player|no=2 |name=[[Achraf Hakimi]]|pos=DF|nat=MAR                                   |7+1  |3 |0    |0 |1    |0 |3    |0 |1    |0 |0    |0 }}
+{{Efs player|no=4 |name=[[Lucas Beraldo]]|pos=DF|nat=BRA                                   |3+4  |1 |0    |0 |1    |0 |0+2  |0 |0+1  |0 |0    |0 }}
+{{Efs player|no=5 |name=[[Marquinhos]]|pos=DF|nat=BRA                                      |5    |3 |0    |0 |0    |0 |2    |0 |1    |0 |0    |0 }}
+{{Efs player|no=6 |name=[[Illia Zabarnyi]]|pos=DF|nat=UKR                                  |4    |1 |0    |0 |1    |0 |1+1  |0 |0    |0 |0    |0 }}
+{{Efs player|no=12|name=[[Lucas Digne]]|pos=DF|nat=FRA                                     |3+1  |0 |0    |0 |1    |0 |0+1  |0 |0    |0 |0    |0 }}
+{{Efs player|no=21|name=[[Lucas Hernandez]]|pos=DF|nat=FRA                                 |4+2  |0 |0    |0 |0    |0 |1+2  |1 |0+1  |0 |0    |0 }}
+{{Efs player|no=25|name=[[Nuno Mendes (footballer, born 2002)|Nuno Mendes]]|pos=DF|nat=POR |2+1  |0 |0    |0 |0+1  |0 |2    |0 |1    |0 |0    |0 }}
+{{Efs player|no=42|name=[[David Boly]]|pos=DF|nat=FRA                                      |0+1  |0 |0    |0 |0    |0 |0    |0 |0    |0 |0    |0 }}  
+{{Efs player|no=51|name=[[Willian Pacho]]|pos=DF|nat=ECU                                   |6    |0 |0    |0 |1    |0 |3    |0 |1    |0 |0    |0 }}
+|-
+! colspan="18" style="background:#dcdcdc; text-align:center"| Midfielders
+{{Efs player|no=8 |name=[[Fabián Ruiz]]|pos=MF|nat=ESP                                     |4+3  |0 |0    |0 |0+1  |0 |3    |2 |0+1  |0 |0    |0 }}
+{{Efs player|no=11|name=[[Maghnes Akliouche]]|pos=MF|nat=FRA                               |6+3  |1 |0    |0 |1    |0 |2+1  |1 |1    |0 |0    |0 }}
+{{Efs player|no=17|name=[[Vitinha]]|pos=MF|nat=POR                                         |6+2  |1 |0    |0 |1    |0 |3    |2 |1    |0 |0    |0 }}
+{{Efs player|no=24|name=[[Senny Mayulu]]|pos=MF|nat=FRA                                    |1+2  |2 |0    |0 |0+1  |0 |0+2  |0 |0+1  |0 |0    |0 }}
+{{Efs player|no=27|name=[[Dro Fernández]]|pos=MF|nat=ESP                                   |3+3  |0 |0    |0 |0+1  |0 |1    |0 |0    |0 |0    |0 }}
+{{Efs player|no=33|name=[[Warren Zaïre-Emery]]|pos=MF|nat=FRA                              |8+1  |0 |0    |0 |1    |0 |1+1  |0 |1    |0 |0    |0 }}
+{{Efs player|no=87|name=[[João Neves]]|pos=MF|nat=POR                                      |7    |0 |0    |0 |0    |0 |1+1  |0 |1    |0 |0    |0 }}
+|-
+! colspan="18" style="background:#dcdcdc; text-align:center"| Forwards
+{{Efs player|no=7 |name=[[Khvicha Kvaratskhelia]]|pos=FW|nat=GEO                           |5+2  |1 |0    |0 |1    |0 |1+1  |0 |1    |1 |0    |0 }}
+{{Efs player|no=9 |name=[[Ferran Torres]]|pos=FW|nat=ESP                                   |6+3  |4 |0    |0 |0    |0 |1+2  |3 |0    |0 |0    |0 }}
+{{Efs player|no=10|name=[[Ousmane Dembélé]]|pos=FW|nat=FRA                                 |3+2  |1 |0    |0 |0+1  |0 |3    |3 |0+1  |0 |0    |0 }}
+{{Efs player|no=14|name=[[Désiré Doué]]|pos=FW|nat=FRA                                     |5+3  |1 |0    |0 |1    |0 |2    |2 |1    |1 |0    |0 }}
+{{Efs player|no=22|name=[[Mika Godts]]|pos=FW|nat=BEL                                      |2+6  |2 |0    |0 |0    |0 |0+1  |0 |0    |0 |0    |0 }}
+{{Efs player|no=47|name=[[Quentin Ndjantou]]|pos=FW|nat=FRA                                |0+2  |0 |0    |0 |0    |0 |0    |0 |0    |0 |0    |0 }}
+|-
+! colspan="18" style="background:#dcdcdc; text-align:center"| Players loaned out during the season
+|-
+{{Fb cs footer|s=[[#Competitions|Competitions]]|u=30 October 2026|date=August 2026}}
+
+==References==
+{{Reflist}}
+
+==External links==
+*[https://www.psg.fr/ PSG.FR | Official site of Paris Saint-Germain]
+
+{{Paris Saint-Germain FC seasons}}
+{{2026–27 in French football}}
+
+{{DEFAULTSORT:2026-27 Paris Saint-Germain F.C. Season}}
+[[Category:Paris Saint-Germain FC seasons]]
+[[Category:French football clubs 2026–27 season|Paris Saint-Germain]]
+[[Category:2026 in Paris|Paris Saint-Germain F. C.]]
+[[Category:2027 in Paris|Paris Saint-Germain F. C.]]
+[[Category:2026–27 UEFA Champions League participants seasons|Paris Saint-Germain]]
+[[Category:2026 FIFA Intercontinental Cup participants seasons|Paris Saint-Germain]]

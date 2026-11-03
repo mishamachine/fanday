@@ -1,0 +1,100 @@
+# Fanday Wikipedia ingest.
+#   daily    once a day at 10:00 UTC, all leagues
+#   gameday  every 3 hours, only pages with a game in the next 36 hours
+# Each call also keeps the free Supabase project active (the function reads the database).
+# Needs the repository secret INGEST_SECRET (same value as the Supabase function secret). Babar adds both.
+name: ingest
+
+on:
+  schedule:
+    - cron: '0 10 * * *'
+    - cron: '15 */3 * * *'
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'daily = all leagues, gameday = pages with a game in the next 36 hours'
+        type: choice
+        options: [daily, gameday]
+        default: daily
+      league:
+        description: 'Optional league slug (for example epl) to limit a manual run'
+        type: string
+        required: false
+  pull_request:
+    paths:
+      - 'supabase/functions/ingest-wikipedia/**'
+      - 'scripts/test-ingest*'
+      - '.github/workflows/ingest.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version: 24
+      - name: Run ingest tests
+        run: |
+          set -e
+          for f in scripts/test-ingest-*.mjs; do
+            echo "== $f"
+            node "$f"
+          done
+
+  call:
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    concurrency:
+      group: ingest
+      cancel-in-progress: false
+    env:
+      FUNCTION_URL: https://smhddbnctlkbwppzrsry.supabase.co/functions/v1/ingest-wikipedia
+      INGEST_SECRET: ${{ secrets.INGEST_SECRET }}
+      EVENT_SCHEDULE: ${{ github.event.schedule }}
+      INPUT_MODE: ${{ inputs.mode }}
+      INPUT_LEAGUE: ${{ inputs.league }}
+    steps:
+      - name: Call ingest-wikipedia
+        run: |
+          set -euo pipefail
+          if [ -z "${INGEST_SECRET:-}" ]; then
+            echo "::error::Repository secret INGEST_SECRET is not set."
+            exit 1
+          fi
+          if [ "${EVENT_SCHEDULE:-}" = "0 10 * * *" ]; then MODE=daily
+          elif [ -n "${EVENT_SCHEDULE:-}" ]; then MODE=gameday
+          else MODE="${INPUT_MODE:-daily}"; fi
+          if [ -n "${INPUT_LEAGUE:-}" ] && ! printf '%s' "$INPUT_LEAGUE" | grep -Eq '^[a-z0-9_]{1,32}$'; then
+            echo "::error::league must be lower-case letters, digits or underscore."
+            exit 1
+          fi
+          echo "mode=$MODE league=${INPUT_LEAGUE:-all}"
+          CURSOR=0
+          for i in $(seq 1 800); do   # 2 pages per call; a full daily run is a few hundred calls
+            BODY=$(jq -nc --arg mode "$MODE" --argjson cursor "$CURSOR" --arg league "${INPUT_LEAGUE:-}" \
+              '{mode: $mode, cursor: $cursor} + (if $league == "" then {} else {league: $league} end)')
+            curl --silent --show-error --fail-with-body --max-time 170 --retry 2 --retry-delay 10 \
+              -X POST "$FUNCTION_URL" \
+              -H "Content-Type: application/json" \
+              -H "x-ingest-secret: ${INGEST_SECRET}" \
+              -d "$BODY" -o response.json
+            jq -c '{mode, planned, cursor, nextCursor, done, pagesFetched, pagesMissing: (.pagesMissing | length), gamesParsed, created, updated, held, vanished, changes, warnings: (.warnings | length), unmatchedTeams: (.unmatchedTeams | length), elapsedMs}' response.json
+            jq -r '(.warnings // [])[] | "::warning::" + .' response.json
+            jq -r '(.rolled // [])[] | "::notice::Season rollover " + .' response.json
+            jq -r '(.pagesFilled // [])[] | "::notice::Wikipedia page found " + .' response.json
+            if [ "$(jq -r '.done' response.json)" = "true" ]; then
+              jq -r 'if (.unmatchedTeams | length) > 0 then "::warning::Unmatched teams: " + (.unmatchedTeams | join(", ")) else empty end' response.json
+              exit 0
+            fi
+            CURSOR=$(jq -r '.nextCursor' response.json)
+            sleep 1
+          done
+          echo "::error::Ingest did not finish within 800 calls."
+          exit 1

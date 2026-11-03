@@ -1,0 +1,3115 @@
+<!-- FIXTURE. Page: 2026 Alabama Crimson Tide football team
+     Source: https://en.wikipedia.org/wiki/2026_Alabama_Crimson_Tide_football_team
+     Revision id: 1383482255  (permanent link: https://en.wikipedia.org/w/index.php?oldid=1383482255)
+     Fetched: 2026-11-02 from the MediaWiki API (action=query&prop=revisions&rvprop=content|ids&rvslots=main&format=json),
+     User-Agent: Fanday/0.1 (machinemisha+fanday@gmail.com). Unmodified wikitext below this comment.
+     Text (c) Wikipedia contributors, licensed CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/);
+     authors are listed in the page history. Used here only as test data. -->
+{{Short description|American college football season}}
+{{Use mdy dates|date=January 2025}}
+{{Use American English|date=February 2026}}
+{{Infobox college sports team season
+| year = 2026
+| team = Alabama Crimson Tide
+| sport = football
+| image = Alabama_Athletics_logo.svg
+| image_size = 150
+| conference = [[Southeastern Conference]]
+| short_conf = SEC
+| CFPRank = 
+| CoachRank = 9
+| APRank = 9
+| record = 6–2
+| conf_record = 4–2
+| head_coach = [[Kalen DeBoer]]
+| hc_year = 3rd
+| off_coach = [[Ryan Grubb]]
+| oc_year = 2nd  
+| off_scheme = [[Air raid offense|Run and gun]]
+| def_coach = [[Kane Wommack]]
+| dc_year = 3rd
+| codef_coach1 = [[Maurice Linguist]]
+| codc1_year = 3rd 
+| def_scheme = [[Nickel defense|4–2–5, Swarm]]
+| captain =  
+| captain2 = 
+| captain3 = 
+| captain4 = 
+| stadium = [[Bryant–Denny Stadium|Saban Field at Bryant–Denny Stadium]]
+| champion =
+| bowl = 
+| bowl_result = 
+| uniform = 
+}}
+{{2026 Southeastern Conference football standings}}
+
+The '''2026 Alabama Crimson Tide football team''' represents the [[University of Alabama]] during the [[2026 NCAA Division I FBS football season]]. The season is the Crimson Tide's 132nd overall season, and 93rd as a member of the [[Southeastern Conference]] (SEC). The Crimson Tide play their home games on [[Bryant–Denny Stadium|Saban Field at Bryant–Denny Stadium]] located in [[Tuscaloosa, Alabama]], under third year coach [[Kalen DeBoer]].
+
+==Offseason==
+
+{{AmFootball position key modern}}
+
+===Entered NFL draft===
+{{See also|2026 NFL draft}}
+
+The deadline for players to declare for the NFL draft was January{{nbsp}}2026.
+
+10 Alabama players were drafted in 2026.
+
+{| class="wikitable" text-align:center;
+{{CollegePrimaryHeader|team=Alabama Crimson Tide|Player|Position|Round|Pick|Drafted by}}
+|-
+| [[Kadyn Proctor]]
+| OT
+| 1
+| 12
+| [[Miami Dolphins]]
+|-
+| [[Ty Simpson]]
+| QB
+| 1 
+| 13
+| [[Los Angeles Rams]]
+|-
+| [[Germie Bernard]]
+| WR
+| 2
+| 47
+| [[Pittsburgh Steelers]]
+|-
+| [[LT Overton]]
+| DT
+| 4
+| 137
+| [[Dallas Cowboys]]
+|-
+| [[Parker Brailsford]]
+| C
+| 5
+| 146
+| [[Cleveland Browns]]
+|-
+| [[Justin Jefferson (linebacker)|Justin Jefferson]]
+| LB
+| 5
+| 149
+| Cleveland Browns 
+|-
+| [[Josh Cuevas]]
+| TE
+| 5
+| 173
+| [[Baltimore Ravens]]
+|-
+| [[Domani Jackson]]
+| CB
+| 6
+| 201
+| [[Green Bay Packers]]
+|-
+| [[Tim Keenan III]]
+| DT
+| 7
+| 232
+| Los Angeles Rams
+|-
+| [[Jam Miller]]
+| RB
+| 7
+| 245
+| [[New England Patriots]]
+|}
+
+===Total picks by school===
+{| class="wikitable sortable" style="text-align: center;"
+|-
+!Team
+!Round 1
+!Round 2
+!Round 3
+!Round 4
+!Round 5
+!Round 6
+!Round 7
+!Total
+|-
+|Alabama
+| 2
+| 1
+| 0
+| 1
+| 3
+| 1
+| 2
+| 10
+|-
+|}
+
+===Departures===
+Over the course of the off-season, Alabama lost 50 total players. 22 players in transfer portal, 13 players graduated, 16 players declared for the 2026 NFL draft.
+
+{| class="wikitable sortable collapsible"
+|-
+|+ class="nowrap"| 2026 Alabama offseason departures
+|-
+! style="text-align:center; {{CollegePrimaryStyle|Alabama Crimson Tide|border=2|color=white}}" |Name !! style="text-align:center; {{CollegePrimaryStyle|Alabama Crimson Tide|border=2|color=white}}" |Pos. !! style="text-align:center; {{CollegePrimaryStyle|Alabama Crimson Tide|border=2|color=white}}" |Height !! style="text-align:center; {{CollegePrimaryStyle|Alabama Crimson Tide|border=2|color=white}}" |Weight !! style="text-align:center; {{CollegePrimaryStyle|Alabama Crimson Tide|border=2|color=white}}"| Year !! style="text-align:center; {{CollegePrimaryStyle|Alabama Crimson Tide|border=2|color=white}}" |Hometown !! style="text-align:center; {{CollegePrimaryStyle|Alabama Crimson Tide|border=2|color=white}}" | Notes
+|- 
+| [[Germie Bernard]] || WR || 6'1 || 203  || Senior || [[Las Vegas, NV]] || Declared by 2026 NFL Draft
+|-
+| [[Domani Jackson]] || DB || 6'1 || 190 || ''[[File:Redshirt.svg|10px|Redshirt]]'' Senior || [[Santa Ana, CA]] || Declared by 2026 NFL Draft
+|-
+| [[Deontae Lawson]] || LB || 6'2 || 230 || ''[[File:Redshirt.svg|10px|Redshirt]]'' Senior || [[Mobile, AL]] || Declared by 2026 NFL Draft
+|-
+| [[Justin Jefferson (linebacker)|Justin Jefferson]] || LB || 6'6 || 220 || ''[[File:Redshirt.svg|10px|Redshirt]]'' Senior || [[Memphis, TN]] || Declared by 2026 NFL Draft
+|- 
+| [[Nikhai Hill-Green]] || LB || 6'2 || 230 ||  Graduated Student || [[Baltimore, MD]] || Declared by 2026 NFL Draft 
+|-
+| [[LT Overton]] || DL || 6′3 || 265 || Senior || [[College Station, TX]] || Declared by 2026 NFL Draft
+|-  
+| [[Jam Miller]] || RB || 5'10 || 211 || Senior || [[Tyler, TX]] || Declared by 2026 NFL Draft
+|- 
+| [[Jaeden Roberts]] || OL || 6'5 || 316 || ''[[File:Redshirt.svg|10px|Redshirt]]'' Senior || [[Houston, TX]] || Declared by 2026 NFL Draft
+|-
+| [[Tim Keenan III]] || DL || 6'2 || 315 ||  ''[[File:Redshirt.svg|10px|Redshirt]]'' Senior || [[Birmingham, AL]] || Declared by 2026 NFL Draft
+|-
+| DaShawn Jones || DB || 6'0 || 181 || ''[[File:Redshirt.svg|10px|Redshirt]]'' Senior || [[Baltimore, MD]] || Declared by 2026 NFL Draft
+|-
+| Peyton Yates || DB || 5'10 || 180 || Senior || [[Eads, Tennessee|Eads, TN]] || Graduated 
+|-
+| Reid Schuback || K || 6'0 || 185 || Senior || [[Poway, CA]] || Graduated 
+|-
+| JD Baird || LB || 5'8 || 190 || Senior || [[Tuscaloosa, AL]] || Graduated 
+|-
+| Gene VanDeMark || OL || 6'0 || 185 || ''[[File:Redshirt.svg|10px|Redshirt]]'' Senior || [[Lodi, NJ]] || Graduated 
+|-
+| [[Kam Dewberry]] || OL || 6'4 || 330 || Senior || [[Humble, TX]] || Declared by 2026 NFL Draft
+|-
+| Blake Doud || P || 6'5 || 215 || ''[[File:Redshirt.svg|10px|Redshirt]]'' Senior || [[Parker, CO]] || Graduated 
+|-
+| Alex Rozier || LS || 6'4 || 220 || Senior || [[Hattiesburg, MS]] || Graduated 
+|-
+| Peyton Fox || TE || 6'4 || 225 || Senior || [[Pelham, AL]] || Graduated 
+|-
+| Peter Knudson || TE || 6'4 || 240 || Senior || [[McCall, ID]] || Graduated 
+|-
+| Brody Dalton || TE || 6'5 || 250 || Senior || [[Fyffe, AL]] || Graduated 
+|-
+| Cade Carruth || QB || 6'1 || 195 || Senior || [[Trussville, AL]] || Graduated 
+|- 
+| Jay Loper Jr. || WR || 5'11 || 180 || Senior || [[Daphne, AL]] || Graduated 
+|-
+| Dre Washington || RB || 5'9 || 218 || Senior || [[Hemphill, TX]] || Declared by 2026 NFL Draft 
+|-
+| Michael Lorino III || RB || 6'0 || 185 || Senior || [[Birmingham, AL]] || Graduated 
+|-
+| [[Ty Simpson]] || QB || 6'2 || 203 || ''[[File:Redshirt.svg|10px|Redshirt]]'' Senior || [[Martin, Tennessee|Martin, TN]] || Declared by 2026 NFL Draft
+|- 
+| [[Kadyn Proctor]] || OL || 6'7 || 360 || Junior || [[Des Moines, IA]] || Declared by 2026 NFL Draft
+|- 
+| [[Parker Brailsford]] || OL || 6'2 || 275 || ''[[File:Redshirt.svg|10px|Redshirt]]'' Junior || [[Mesa, AZ]] || Declared by 2026 NFL Draft
+|- 
+| [[Josh Cuevas]] || TE || 6'3 || 239 || ''[[File:Redshirt.svg|10px|Redshirt]]'' Senior || [[Los Angeles, CA]] || Declared by 2026 NFL Draft
+|-
+|}
+
+===Transfer portal===
+====Outgoing transfers====
+Twenty-two Alabama players elected to enter the NCAA Transfer Portal during or after the 2025 season.
+
+{| class="wikitable sortable"
+|-
+! style="text-align:center; {{CollegePrimaryStyle| Alabama Crimson Tide |border=2|color=white}}" |Name !! style="text-align:center; {{CollegePrimaryStyle| Alabama Crimson Tide |border=2|color=white}}" |No.!! style="text-align:center; {{CollegePrimaryStyle| Alabama Crimson Tide |border=2|color=white}}" |Pos. !! style="text-align:center; {{CollegePrimaryStyle| Alabama Crimson Tide |border=2|color=white}}" |Height !! style="text-align:center; {{CollegePrimaryStyle| Alabama Crimson Tide |border=2|color=white}}" |Weight !! style="text-align:center; {{CollegePrimaryStyle| Alabama Crimson Tide |border=2|color=white}}" |Hometown !! style="text-align:center; {{CollegePrimaryStyle| Alabama Crimson Tide |border=2|color=white}}" |Class !! style="text-align:center; {{CollegePrimaryStyle| Alabama Crimson Tide |border=2|color=white}}" | New school 
+|-align="center"
+| Bubba Hampton || 6 || WR || 5'10 || 175 || [[Daingerfield, TX]] || ''[[File:Redshirt.svg|10px|Redshirt]]'' Freshman || [[Oregon State Beavers football|Oregon State]]
+|-align="center"
+| Kameron Howard || 6 || DB || 5'11 || 189 || [[Clinton, Maryland|Clinton, MD]] || ''[[File:Redshirt.svg|10px|Redshirt]]'' Sophomore || [[Boston College Eagles football|Boston College]] 
+|-align="center"
+| Roq Montgomery || 55 || OL || 6'3 || 332 || [[Anniston, Alabama|Anniston, AL]] || ''[[File:Redshirt.svg|10px|Redshirt]]'' Sophomore || [[Western Kentucky Hilltoppers football|Western Kentucky]]
+|-align="center"
+| Richard Young || 9 || RB || 5'11 || 212 || [[Lehigh Acres, Florida|Lehigh Acres, FL]] || ''[[File:Redshirt.svg|10px|Redshirt]]'' Sophomore || [[Colorado Buffaloes football|Colorado]]
+|- align="center"
+| [[Jaylen Mbakwe]] || 3 || WR || 5'11 || 190 || [[Pinson, Alabama|Pinson, AL]] || Sophomore || [[Georgia Tech Yellow Jackets football|Georgia Tech]]
+|- align="center"
+| Jalen Hale || 8 || WR || 6'1 || 189 || [[Longview, TX]] || ''[[File:Redshirt.svg|10px|Redshirt]]'' Sophomore || [[SMU Mustangs football|SMU]] 
+|- align="center"
+| Joseph Ionata || 69 || OL || 6'5 || 294 || [[Clearwater, Florida|Clearwater, FL]] || ''[[File:Redshirt.svg|10px|Redshirt]]'' Freshman || Georgia Tech 
+|- align="center"
+| Olaus Alinen || 73 || OL || 6'6 || 326 || [[Pori|Pori, Finland]] || ''[[File:Redshirt.svg|10px|Redshirt]]'' Junior  || [[Kentucky Wildcats football|Kentucky]] 
+|- align="center"
+| Noah Carter || 24 || LB || 6'4 || 220 || [[Peoria, Arizona|Peoria, AZ]] || ''[[File:Redshirt.svg|10px|Redshirt]]'' Freshman  || Georgia Tech 
+|- align="center"
+| [[Keon Keeley]] || 31 || LB/DL || 6'5 || 242 || [[Tampa, FL]] || ''[[File:Redshirt.svg|10px|Redshirt]]'' Junior || [[Notre Dame Fighting Irish football|Notre Dame]] 
+|- align="center"
+| [[Cam Calhoun]] || 9 || CB || 6'0 || 177 || [[Cincinnati, OH]] || ''[[File:Redshirt.svg|10px|Redshirt]]'' Junior || [[Ohio State Buckeyes football|Ohio State]]
+|- align="center"
+| Cole Adams || 7 || WR || 5'10 || 186 || [[Owasso, OK]] || ''[[File:Redshirt.svg|10px|Redshirt]]'' Sophomore || [[Vanderbilt Commodores football|Vanderbilt]] 
+|- align="center"
+| Peter Notaro || 37 || K || 5'11 || 188 || [[Wexford, PA]] || Freshman || [[West Virginia Mountaineers football|West Virginia]] 
+|- align="center"
+| David Bird || 45 || LS || 6'0 || 220 || [[Phoenix, AZ]] || Sophomore || TBD 
+|- align="center"
+| Micah Debose || 65 || OL || 6'5 || 330 || [[Mobile, AL]] || ''[[File:Redshirt.svg|10px|Redshirt]]'' Freshman || Vanderbilt 
+|- align="center"
+| [[Wilkin Formby]] || 75 || OL || 6'7 || 320 || [[Tuscaloosa, AL]] || ''[[File:Redshirt.svg|10px|Redshirt]]'' Sophomore || [[Texas A&M Aggies football|Texas A&M]] 
+|- align="center"
+| Kelby Collins || 17 || DL || 6'4 || 275 || [[Gardendale, AL]] || Junior || [[South Carolina Gamecocks football|South Carolina]] 
+|- align="center"
+| [[James Smith (American football)|James Smith]] || 23 || DL || 6'3 || 296 || [[Montgomery, AL]] || ''[[File:Redshirt.svg|10px|Redshirt]]'' Junior || Ohio State
+|-align="center"
+| Arkel Anugwom || 76 || OL || 6'6" || 332 || [[Antioch, TN]] || Junior || [[Northwestern Wildcats football|Northwestern]] 
+|-align="center"
+| [[Isaiah Horton]] || 1 || WR || 6'4" || 205 || [[Nashville, TN]] || ''[[File:Redshirt.svg|10px|Redshirt]]'' Junior || Texas A&M 
+|- align="center"
+| [[Qua Russaw]] || 4 || LB || 6'3 || 242 || [[Montgomery, Alabama|Montgomery, AL]] || ''[[File:Redshirt.svg|10px|Redshirt]]'' Sophomore || Ohio State
+|- align="center"
+| Jordan Renaud || 11 || DL || 6'4 || 261 || [[Sarasota, FL]] || {{redshirt}} Sophomore || [[Ole Miss Rebels football|Ole Miss]]
+|}
+
+Note: Players with a dash in the new school column didn't land on a new team for the 2025 season.
+{{notelist}}
+
+====Acquisitions====
+Over the off-season, Alabama added twenty-one players from the transfer portal. According to 247 Sports, Alabama had the No. 15 ranked transfer class in the country.<ref>{{Cite web|url=https://247sports.com/Season/2026-Football/TransferTeamRankings/|title=2026 Transfer Football Team Rankings|website=247 Sports}}</ref>
+
+{| class="wikitable sortable"
+|-
+! style="text-align:center; {{CollegePrimaryStyle|Alabama Crimson Tide|border=2|color=white}}" |Name !! style="text-align:center; {{CollegePrimaryStyle|Alabama Crimson Tide|border=2|color=white}}" |Pos. !! style="text-align:center; {{CollegePrimaryStyle|Alabama Crimson Tide|border=2|color=white}}" |Height !! style="text-align:center; {{CollegePrimaryStyle|Alabama Crimson Tide|border=2|color=white}}" |Weight !! style="text-align:center; {{CollegePrimaryStyle| Alabama Crimson Tide|border=2|color=white}}" |Hometown !! style="text-align:center; {{CollegePrimaryStyle|Alabama Crimson Tide|border=2|color=white}}" |Year !! style="text-align:center; {{CollegePrimaryStyle|Alabama Crimson Tide|border=2|color=white}}" | Eligibility Remaining !! style="text-align:center; {{CollegePrimaryStyle|Alabama Crimson Tide|border=2|color=white}}" | Prev school 
+|-align="center"
+| Josh Ford || TE || 6'6 || 265 || [[Stillwater, Oklahoma|Stillwater, OK]] || Sophomore || 3 || [[Oklahoma State Cowboys football|Oklahoma State]] 
+|-align="center"
+| Kaden Strayhorn || OL || 6'2 || 308 || [[Novi, MI]] || {{redshirt}} Freshman || 4 || [[Michigan Wolverines football|Michigan]] 
+|-align="center"
+| [[Devan Thompkins]] || DL || 6'5 || 285 || [[Tracy, CA]] || {{redshirt}} Junior || 1 || [[USC Trojans football|USC]] 
+|-align="center"
+| [[Caleb Woodson]] || LB || 6'3 || 230 || [[Haymarket, VA]] || {{redshirt}} Junior || 1 || [[Virginia Tech Hokies football|Virginia Tech]] 
+|-align="center"
+| Ethan Stangle || LS || 6'1 || 220 || [[Bel Air, MD]] || {{redshirt}} Junior || 1 || [[Syracuse Orange football|Syracuse]] 
+|-align="center"
+| Adam Watford || P || 5'11 || 190 || [[Dothan, AL]] || Junior || 1 || [[North Alabama Lions football|North Alabama]]<br /><small>([[NCAA Division I Football Championship|FCS]])</small>
+|-align="center"
+| Carmelo O'Neal || S || 6'4 || 200 || [[Atlanta, GA]] || Sophomore || 2 || [[Mercer Bears football|Mercer]]<br /><small>([[NCAA Division I Football Championship|FCS]])</small> 
+|-align="center"
+| Jaxon Shuttlesworth || TE || 6'5 || 230 || [[Chelsea, AL]] || {{redshirt}} Freshman || 3 || [[Jacksonville State Gamecocks football|Jacksonvile State]]
+|-align="center"
+| Kedrick Bingley-Jones || DL || 6'4 || 320 || [[Concord, NC]] || {{redshirt}} Senior || 1 || [[Mississippi State Bulldogs football|Mississippi State]]
+|-align="center"
+| [[Noah Rogers]] || WR || 6'2 || 205 || [[Raleigh, NC]] || {{redshirt}} Sophomore || 2 || [[NC State Wolfpack football|NC State]] 
+|-align="center"
+| [[Ty Haywood]] || OL || 6'5 || 285 || [[Denton, TX]] || {{redshirt}} Freshman || 4 || Michigan
+|-align="center"
+| Lorcan Quinn || K || 6'1 || 188 || [[Donoughmore|Donoughmore, Ireland]] || Freshman || 3 || [[Marshall Thundering Herd football|Marshall]] 
+|-align="center"
+| Caleb Smith || DL || 6'5 || 270 || [[Birmingham, AL]] || {{redshirt}} Freshman || 4 || [[Washington Huskies football|Washington]]
+|-align="center"
+| Racin Delgatty || OL || 6'3 || 300 || [[La Cañada Flintridge, California|La Cañada Flintridge, CA]] || {{redshirt}} Sophomore || 2 || [[Cal Poly Mustangs football|Cal Poly]]<br /><small>([[NCAA Division I Football Championship|FCS]])</small>
+|-align="center"
+| Nick Brooks || OL || 6'7 || 349 || [[Cedar Rapids, Iowa|Cedar Rapids, IA]] || Freshman || 3 || [[Texas Longhorns football|Texas]] 
+|-align="center"
+| Ethan Fields || OL || 6'3 || 320 || [[Geismar, LA]] || {{redshirt}} Sophomore || 2 || [[Ole Miss Rebels football|Ole Miss]] 
+|-align="center"
+| Terrance Green || DL || 6'5 || 330 || [[Cypress, TX]] || {{redshirt}} Sophomore || 2 || [[Oregon Ducks football|Oregon]] 
+|-align="center"
+| Desmond Umeozulu || LB || 6'6 || 255 || [[Upper Marlboro, MD]] || Junior || 1 || [[South Carolina Gamecocks football|South Carolina]]
+|-align="center"
+| Jayvin Q. James || OL || 6'5 || 320 || [[Deerfield Beach, FL]] || {{redshirt}} Sophomore || 2 || Mississippi State 
+|-align="center"
+| Khalifa Keith || RB || 6'1 || 235 || [[Birmingham, AL]] || Sophomore || 2 || [[Appalachian State Mountaineers football|Appalachian State]]
+|-align="center"
+| Leslie Black || DL || 6'5 || 280 || [[Statesboro, GA]] || Sophomore || 2 || [[West Georgia Wolves football|West Georgia]]<br /><small>([[NCAA Division I Football Championship|FCS]])</small>
+|}
+
+====2026 recruits====
+{{Main|2026 college football recruiting class}}
+
+The following recruits and transfers have signed letters of intent or verbally committed to the Alabama Crimson Tide football program for the 2026 recruiting year.
+
+{{see also|American football positions|Glossary of American football|Recruiting (college athletics)}}
+{{College athlete recruit start|40=No|collapse=no|year=2026}}
+{{College athlete recruit entry
+| recruit      = [[Jireh Edwards]]
+| position     = #1 Safety
+| hometown     = [[Baltimore, MD]]
+| highschool   = [[Saint Frances Academy (Baltimore)|St. Frances Academy]]
+| feet         = 6
+| inches       = 2
+| weight       = 210
+| 40           = 
+| commitdate   = 07/05/25
+| On3 stars =5 
+| 247 stars    = 5
+| espn grade   = 90
+| espn stars   = 5
+| grayshirt    = 
+}}
+{{College athlete recruit entry
+| recruit      = [[Ezavier Crowell]]*
+| position     = #3 Running back
+| hometown     = [[Jackson, AL]]
+| highschool   = Jackson High School
+| feet         = 5
+| inches       = 11
+| weight       = 210
+| 40           = 
+| commitdate   = 06/26/25
+| On3 stars =5
+| 247 stars    = 5
+| espn grade   = 90
+| espn stars   = 5
+| grayshirt    = 
+}}
+{{College athlete recruit entry
+| recruit      = [[Xavier Griffin]]
+| position     = #3 Outside linebacker
+| hometown     = [[Cullman, AL]]
+| highschool   = [[Gainesville High School (Georgia)|Gainesville HS]] (GA)
+| feet         = 6
+| inches       = 4
+| weight       = 205
+| 40           = 
+| commitdate   = 06/29/25
+| On3 stars =4 
+| 247 stars    = 5
+| espn grade   = 89
+| espn stars   = 4
+| grayshirt    = 
+}}
+{{College athlete recruit entry
+| recruit      = [[Jorden Edmonds]]
+| position     = #3 Cornerback
+| hometown     = [[Marietta, GA]]
+| highschool   = [[Sprayberry High School]]
+| feet         = 6
+| inches       = 0
+| weight       = 205
+| 40           = 
+| commitdate   = 03/26/25
+| On3 stars =4 
+| 247 stars    = 5
+| espn grade   = 86
+| espn stars   = 4
+| grayshirt    = 
+}}
+{{College athlete recruit entry
+| recruit      = [[Cederian Morgan]]
+| position     = #5 Wide receiver 
+| hometown    = [[Alexander City, AL]]
+| highschool  = [[Benjamin Russell High School]]
+| feet         = 6
+| inches       =4
+| weight       =210
+| 40           = 
+| commitdate   =07/02/25
+| On3 stars =4 
+| 247 stars    =4
+| espn grade   =86
+| espn stars   = 4
+| grayshirt    = 
+}}
+{{College athlete recruit entry
+| recruit      =  Nolan Wilson
+| position     =  #7 Defensive end
+| hometown    = [[Picayune, MS]]
+| highschool  = [[Picayune Memorial High School]]
+| feet         = 6
+| inches       =5
+| weight       =250
+| 40           = 
+| commitdate   =07/04/25
+| On3 stars =4 
+| 247 stars    =4
+| espn grade   =84
+| espn stars   = 4
+| grayshirt    = 
+}}
+{{College athlete recruit entry
+| recruit      =  Zyan Gibson
+| position     =  #8 Cornerback
+| hometown    = [[Gadsden, AL]]
+| highschool  = [[Gadsden City High School]] 
+| feet         = 6
+| inches       =0
+| weight       =175
+| 40           = 
+| commitdate   =12/25/24
+| On3 stars =4 
+| 247 stars    =4
+| espn grade   =84
+| espn stars   = 4
+| grayshirt    = 
+}}
+{{College athlete recruit entry
+| recruit      =  Jamarion Matthews
+| position     =  #12 Defensive end 
+| hometown    = [[Gainesville, GA]]
+| highschool  = Gainesville High School
+| feet         = 6
+| inches       =3
+| weight       =255
+| 40           = 
+| commitdate   =02/21/25
+| On3 stars =4 
+| 247 stars    =4
+| espn grade   =83
+| espn stars   = 4
+| grayshirt    = 
+}}{{College athlete recruit entry
+| recruit      = [[Jett Thomalla]]
+| position     = #5 Quarterback
+| hometown     = [[Omaha, NE]]
+| highschool   = [[Millard South High School]]
+| feet         = 6
+| inches       = 4
+| weight       = 200
+| 40           = 
+| commitdate   = 06/17/25
+| On3 stars    = 4 
+| 247 stars    = 4
+| espn grade   = 83
+| espn stars   = 4
+| grayshirt    = 
+}}
+{{College athlete recruit entry
+| recruit      = Mack Sutter
+| position     = #5 Tight end
+| hometown    = [[Dunlap, IL]]
+| highschool  = [[Dunlap High School]]
+| feet         = 6
+| inches       =5
+| weight       =220
+| 40           = 
+| commitdate   =06/26/25
+| On3 stars =4 
+| 247 stars    =4
+| espn grade   =82
+| espn stars   = 4
+| grayshirt    = 
+}}
+{{College athlete recruit entry
+| recruit      =  Kamhariyan Johnson
+| position     =  Defensive end
+| hometown    = [[Muscle Shoals, AL]]
+| highschool  = [[Muscle Shoals High School]]
+| feet         = 6
+| inches       = 3
+| weight       = 260
+| 40           = 
+| commitdate   =04/12/25
+| On3 stars =4 
+| 247 stars    =3
+| espn grade   =80
+| espn stars   = 4
+| grayshirt    = 
+}}
+{{College athlete recruit entry
+| recruit      = Chris Booker
+| position     = Offensive guard
+| hometown    = [[Atlanta, GA]]
+| highschool  = Hapeville Charter High School
+| feet         = 6
+| inches       = 4
+| weight       = 280
+| 40           = 
+| commitdate   = 02/20/25
+| On3 stars =3 
+| 247 stars    = 3
+| espn grade   = 79
+| espn stars   = 3
+| grayshirt    = 
+}}
+{{College athlete recruit entry
+| recruit      = Rihyael Kelley 
+| position     = Safety 
+| hometown    = [[Cincinnati, OH]]
+| highschool  = [[Winton Woods High School]]
+| feet         = 6
+| inches       = 3
+| weight       = 180
+| 40           = 
+| commitdate   = 06/23/25
+| On3 stars =3 
+| 247 stars    = 3
+| espn grade   = 79
+| espn stars   = 3
+| grayshirt    = 
+}} 
+{{College athlete recruit entry
+| recruit      =  Malique Franklin
+| position     =  Defensive end
+| hometown    = [[Daphne, AL]]
+| highschool  = [[Daphne High School]]
+| feet         = 6
+| inches       =5
+| weight       =250
+| 40           = 
+| commitdate   =12/02/25
+| On3 stars =3 
+| 247 stars    =3
+| espn grade   =79
+| espn stars   = 3
+| grayshirt    = 
+}}
+{{College athlete recruit entry
+| recruit      = Corey Howard
+| position     = Defensive end 
+| hometown     = [[Valdosta, GA]]
+| highschool   = [[Valdosta High School]]
+| feet         = 6
+| inches       = 6
+| weight       = 230
+| 40           = 
+| commitdate   = 10/19/25
+| On3 stars =3 
+| 247 stars    = 3
+| espn grade   = 79
+| espn stars   = 3
+| grayshirt    = 
+}}
+{{College athlete recruit entry
+| recruit      = Bryson Cooley 
+| position     = Offensive guard
+| hometown    = [[Laurel, MS]]
+| highschool  = [[West Jones High School]]
+| feet         = 6
+| inches       = 6
+| weight       = 320
+| 40           = 
+| commitdate   = 06/11/24
+| On3 stars = 3 
+| 247 stars    = 3
+| espn grade   = 79
+| espn stars   = 3
+| grayshirt    = 
+}} 
+{{College athlete recruit entry
+| recruit      =  Tayden-Evan Kaawa
+| position     =  Quarterback
+| hometown    = [[Orem, Utah|East Orem, UT]]
+| highschool  = [[Orem High School]]
+| feet ‎ =  6
+| inches       =5
+| weight       =235
+| 40           = 
+| commitdate   =07/02/25
+| On3 stars =3 
+| 247 stars    =3
+| espn grade   =78
+| espn stars   = 3
+| grayshirt    = 
+}}
+{{College athlete recruit entry
+| recruit      =  Jared Doughty
+| position     =  Offensive tackle
+| hometown    = [[College Park, GA]]
+| highschool  = [[Banneker High School (Georgia)|Benjamin E. Banneker High School]]
+| feet         =6
+| inches       =5
+| weight       =270
+| 40           = 
+| commitdate   =10/05/25
+| On3 stars =4 
+| 247 stars    = 4
+| espn grade   = 78
+| espn stars   = 3
+| grayshirt    = 
+}}
+{{College athlete recruit entry
+| recruit      =  Treshawn Brown
+| position     =  Running back
+| hometown    = [[Huntsville, TX]]
+| highschool  = [[Huntsville High School (Texas)|Huntsville HS]]
+| feet         = 5
+| inches       =9
+| weight       =190
+| 40           = 
+| commitdate   =12/04/25
+| On3 stars =3 
+| 247 stars    =3
+| espn grade   =77
+| espn stars   = 3
+| grayshirt    = 
+}}
+{{College athlete recruit entry
+| recruit      = Tyrell Miller
+| position     = #1 Offensive guard
+| hometown     = [[Newark, CA]]
+| highschool   = [[College of San Mateo]] (JC)
+| feet         = 6
+| inches       = 5
+| weight       = 305
+| 40           = 
+| commitdate   = 11/29/25
+| On3 stars =3 
+| 247 stars    = 3
+| espn grade   = 77
+| espn stars   = 3
+| grayshirt    = 
+}}
+{{College athlete recruit entry
+| recruit      =  Amari Sabb
+| position     =  Athlete
+| hometown    = [[Glassboro, NJ]]
+| highschool  = [[Glassboro High School]]
+| feet         = 5
+| inches       = 9
+| weight       = 165
+| 40           = 
+| commitdate   =02/03/26
+| On3 stars =3 
+| 247 stars    =3
+| espn grade   =76
+| espn stars   = 3
+| grayshirt    = 
+}} 
+{{College athlete recruit entry
+| recruit      =  Bear Fretwell 
+| position     =  Offensive tackle
+| hometown    = [[Brooklet, GA]]
+| highschool  = [[Southeast Bulloch High School]]
+| feet         = 6
+| inches       =6
+| weight       =290
+| 40           = 
+| commitdate   =07/25/25
+| On3 stars =3 
+| 247 stars    =3
+| espn grade   =76
+| espn stars   = 3
+| grayshirt    = 
+}} 
+{{College athlete recruit entry
+| recruit      = Nick Sherman
+| position     = #6 Cornerback 
+| hometown    = [[Tuscaloosa, AL]]
+| highschool  = [[Itawamba Community College]] (JC)
+| feet         = 6
+| inches       = 1
+| weight       = 200
+| 40           = 
+| commitdate   = 12/14/25
+| On3 stars =3 
+| 247 stars    =3
+| espn grade   =76
+| espn stars   = 3
+| grayshirt    = 
+}} 
+{{College athlete recruit entry
+| recruit      =  Zay Hall 
+| position     =  Inside linebacker 
+| hometown    = Tuscaloosa, AL
+| highschool  = [[Hillcrest High School (Tuscaloosa, Alabama)|Hillcrest HS]]
+| feet         = 6
+| inches       =2
+| weight       =225
+| 40           = 
+| commitdate   =06/27/25
+| On3 stars =3 
+| 247 stars    =3
+| espn grade   =76
+| espn stars   = 3
+| grayshirt    = 
+}} 
+{{College athlete recruit entry
+| recruit      =  Tyler Henderson
+| position     =  Wide receiver 
+| hometown    = [[Vicksburg, Mississippi|Vicksburg, MS]]
+| highschool  = [[Mississippi Gulf Coast Community College|Mississippi Gulf Coast CC]] (JC)
+| feet         = 6
+| inches       = 0
+| weight       = 175
+| 40           = 
+| commitdate   =02/14/26
+| On3 stars =3 
+| 247 stars    =3
+| espn grade   =76
+| espn stars   = 3
+| grayshirt    = 
+}} 
+{{College athlete recruit entry
+| recruit      =  Eli Deutsch 
+| position     =  #12 Long snapper
+| hometown    = [[Franklin, Milwaukee County, Wisconsin|Franklin, WI]]
+| highschool  = [[Franklin High School (Wisconsin)|Franklin HS]]
+| feet         = 6
+| inches       =2
+| weight       =225
+| 40           = 
+| commitdate   =06/24/25
+| On3 stars = 
+| 247 stars    =
+| espn grade   =68
+| espn stars   = 2
+| grayshirt    = 
+}} 
+{{College athlete recruit entry
+| recruit      = Maurice Mathis Jr.
+| position     = Wide receiver 
+| hometown    = [[Warner Robins, GA]]
+| highschool  = [[Houston County High School (Georgia)|Houston County HS]]
+| feet         = 6
+| inches       = 1
+| weight       = 180
+| 40           = 
+| commitdate   = 01/17/26
+| On3 stars = 
+| 247 stars    = 3
+| espn grade   =
+| espn stars   = 
+| grayshirt    = 
+}} 
+{{College athlete recruit entry
+| recruit      = Aubrey Walker 
+| position     = Athlete
+| hometown    = [[Moody, AL]]
+| highschool  = [[Moody High School]]
+| feet         = 5
+| inches       = 10
+| weight       = 165
+| 40           = 
+| commitdate   = 01/22/26
+| On3 stars = 
+| 247 stars    = 3
+| espn grade   =
+| espn stars   = 
+| grayshirt    = 
+}} 
+{{College athlete recruit entry
+| recruit      = George French 
+| position     = Defensive back
+| hometown    = [[Birmingham, AL]]
+| highschool  = [[Homewood High School]]
+| feet         = 6
+| inches       = 1
+| weight       = 180
+| 40           = 
+| commitdate   = 02/18/26
+| On3 stars = 
+| 247 stars    = 3
+| espn grade   =
+| espn stars   = 
+| grayshirt    = 
+}} 
+{{College athlete recruit entry
+| recruit      = Jude Cascone
+| position     = Tight end
+| hometown    = [[Marietta, GA]]
+| highschool  = [[George Walton Comprehensive High School|Walton High School]]
+| feet         = 6
+| inches       = 2
+| weight       = 225
+| 40           = 
+| commitdate   = 11/30/25
+| On3 stars = 
+| 247 stars    = 3
+| espn grade   =
+| espn stars   = 
+| grayshirt    = 
+}} 
+{{College Athlete Recruit End
+| 40 = yes
+| year = 2026
+| On3 ref title = 2026 Alabama Football  recruits
+| On3 school    = Alabama  
+| 247 ref title    = Alabama Football 2026 commits
+| 247 school       = Alabama
+| espn ref title   = 2026 Player commitments - Alabama
+| espn schoolid    = 333
+| access-date = February 18, 2026
+| On3 overall = 4 
+| 247 overall = 2
+| espn overall = 
+| collapse = yes
+}}
+{{small|*Originally class of 2027, but [[reclassification (education)|reclassified]] to 2026.}}
+
+<small>'''*'''= [[247Sports.com#247Sports Composite|247Sports Composite rating]]; ratings are out of 1.00. ''(five stars= 1.00–.98, four stars= .97–.90, three stars= .80–.89)''</small><br>
+<small>'''†'''= Despite being rated as a four and five star recruit by [[ESPN]], [[On3.com]] and [[247Sports.com]], TBD and TBD received a four star [[247Sports.com#247Sports Composite|247Sports Composite rating]].</small><br>
+<small>'''Δ'''= TBD left the Alabama program following signing but prior to the 2026 season.</small>
+
+'''2026 Overall class rankings'''
+
+{| class="wikitable"
+{{CollegePrimaryHeader|team=Alabama Crimson Tide|Website|National rank|Conference rank|5 star recruits|4 star recruits|3 star recruits|Total}}
+|-
+| ESPN <ref>{{cite web|title=Alabama 2026 Recruiting Class|url=https://www.espn.com/college-sports/football/recruiting/school/_/id/333/class/2026|website=ESPN}}</ref> || -- || -- || 1 || 10 || 11 || 23
+|-
+| On3 Recruits/Rivals <ref>{{cite web|title=Alabama 2026 Recruiting Class|url=https://www.on3.com/college/alabama-crimson-tide/football/2026/commits/|website=On3.com}}</ref> || #4 || #1 || 3 || 11 || 8 || 22
+|-
+| 247 Sports<ref>{{cite web|title=Alabama 2026 Recruiting Class|url=https://247sports.com/college/alabama/Season/2026-Football/Commits/|website=247sports.com}}</ref> || #2 || #2 || 4 || 10 || 8 || 22
+|-
+|}
+
+{{clear}}
+
+====Walk-ons====
+{| class="wikitable sortable"
+|-
+! style="text-align:center; {{CollegePrimaryStyle|Alabama Crimson Tide|border=2|color=white}}" |Name !! style="text-align:center; {{CollegePrimaryStyle|Alabama Crimson Tide|border=2|color=white}}" |Pos. !! style="text-align:center; {{CollegePrimaryStyle|Alabama Crimson Tide|border=2|color=white}}" |Height !! style="text-align:center; {{CollegePrimaryStyle|Alabama Crimson Tide|border=2|color=white}}" |Weight !! style="text-align:center; {{CollegePrimaryStyle|Alabama Crimson Tide|border=2|color=white}}" |Hometown !! style="text-align:center; {{CollegePrimaryStyle|Alabama Crimson Tide|border=2|color=white}}" | High school
+|-"align="center"
+|  ||  ||  ||  || - || - 
+|}
+
+===Coaching changes===
+====Coaching staff departures====
+{| class="wikitable"
+! style="text-align:center; {{CollegePrimaryStyle|Alabama Crimson Tide|border=2|color=white}}"|Name
+! style="text-align:center; {{CollegePrimaryStyle|Alabama Crimson Tide|border=2|color=white}}"|Position
+! style="text-align:center; {{CollegePrimaryStyle|Alabama Crimson Tide|border=2|color=white}}"|New Team
+! style="text-align:center; {{CollegePrimaryStyle|Alabama Crimson Tide|border=2|color=white}}"|New Position 
+! style="text-align:center; {{CollegePrimaryStyle|Alabama Crimson Tide|border=2|color=white}}"|Source
+|-"align="center"
+|[[JaMarcus Shephard]] || Co-offensive coordinator/[[Wide receivers]] coach || Accepted job at [[Oregon State Beavers football|Oregon State]] || Head coach || 
+|-
+|[[Nick Sheridan]] || Co-offensive coordinator/[[Quarterbacks]] coach || Accepted job at [[Michigan State Spartans football|Michigan State]] || Quarterbacks coach || 
+|-
+|[[Chris Kapilovic]] || [[Offensive line]] coach || Accepted job at Auburn Tigers || Offensive analyst || 
+|-
+|}
+
+====Coaching staff additions====
+
+{| class="wikitable"
+! style="text-align:center; {{CollegePrimaryStyle|Alabama Crimson Tide|border=2|color=white}}"|Name 
+! style="text-align:center; {{CollegePrimaryStyle|Alabama Crimson Tide|border=2|color=white}}"|New Position
+! style="text-align:center; {{CollegePrimaryStyle|Alabama Crimson Tide|border=2|color=white}}"|Previous Team
+! style="text-align:center; {{CollegePrimaryStyle|Alabama Crimson Tide|border=2|color=white}}"|Previous Position 
+! style="text-align:center; {{CollegePrimaryStyle|Alabama Crimson Tide|border=2|color=white}}"|Source
+|-align="center"
+|[[Derrick Nix (American football)|Derrick Nix]] || [[Wide receiver]]s coach || [[Auburn Tigers football|Auburn]] || Co-offensive coordinator/[[Running back]] coach ||  
+|-align="center"
+|[[Adrian Klemm]] || [[Offensive line]] coach || [[USC Trojans football|USC]] || Offensive analyst || <ref>{{cite news|url=https://www.al.com/alabamafootball/2026/01/what-to-know-about-alabama-footballs-next-offensive-line-coach-adrian-klemm.html|title=What to know about Alabama football’s next offensive line coach, Adrian Klemm|work=[[AL.com]]|first=Matt|last=Stahl|date=January 28, 2026|access-date=February 21, 2026}}</ref><ref>{{cite news|url=https://tide1009.com/alabama-hires-adrian-klemm-ol-official/|title=Alabama Football Officially Announces Hire of Offensive Line Coach Adrian Klemm|publisher=[[WTBC (AM)|WTBC]]|first=Wyatt|last=Fulton|date=February 4, 2026|access-date=February 21, 2026}}</ref>
+|-align="center"
+|[[Richard Owens (American football)|Richard Owens]] || [[Tight end]]s coach || [[Louisville Cardinals football|Louisville]] || [[Offensive line]] coach || <ref>{{cite news|url=https://www.tuscaloosanews.com/story/sports/college/football/2026/02/16/kalen-deboer-speaks-alabama-football-tight-ends-coach-richard-owens/88649439007/|title=What Kalen DeBoer said about Alabama football new tight ends coach|work=[[The Tuscaloosa News]]|first=Colin|last=Gay|date=February 16, 2026|access-date=February 21, 2026}}</ref>
+|-
+|}
+
+===Returning starters===
+The Crimson Tide return 0 starters from the previous season. They return 0 on offense, 0 on defense, and 0 on special teams. 
+
+{{columns-start|num=3}}
+
+{| class="wikitable"
+|+ '''Offense'''
+|-
+! Player
+! Class
+! Position
+|-
+| 
+| 
+| QB
+|-
+| 
+| 
+| RB
+|-
+| 
+| 
+| WR
+|-
+| 
+| 
+| TE
+|-
+| 
+| 
+| OL
+|-
+| colspan="3"  style="font-size:8pt; text-align:left;"|'''Reference:'''
+|}
+{{column}}
+{| class="wikitable"
+|+'''Defense'''
+|-;
+! Player
+! Class
+! Position
+|-
+| 
+| 
+| EDGE
+|-
+| 
+| 
+| LB
+|-
+| 
+| 
+| DL
+|-
+| colspan="3"  style="font-size:8pt; text-align:left;"|'''Reference:'''
+|}
+{{column}}
+{| class="wikitable"
+|+ '''Special teams'''
+|-
+! Player
+! Class
+! Position
+|-
+|  
+|  
+| K
+|-
+|  
+|  
+| P
+|-
+|  
+|  
+| LS
+|-
+|  
+|  
+| H
+|-
+| colspan="3"  style="font-size:8pt; text-align:left;"|'''Reference:'''
+|}
+{{columns-end}}
+
+'''*''' Bowl game not played.
+'''^''' Waiting decision for 2026 season.
+'''†''' Indicates player was a starter in 2025 but missed all of 2026 due to injury.
+
+==Preseason==
+
+===SEC media days===  
+
+==== Preseason media poll ====
+Preseason polls were released on July 24, 2026.<ref>{{cite web |title= 2026 SEC Football Preseason Media Poll, All-SEC Team announced|url=https://www.secsports.com/news/2026/07/2026-sec-football-preseason-media-poll-all-sec-team-announced}}</ref>
+
+{{col-begin}}
+{{col-2}}
+
+{| class="wikitable" style="display: inline-table;"
+|+ SEC
+|- align="center"
+{{CollegePrimaryHeader|team=Southeastern Conference|Predicted finish|Team|Votes (1st place)|border=2}}
+|- align="center" 
+| 1 
+!Georgia 
+| 2,519 
+|- align="center" 
+| 2 
+!Texas
+| 2,449
+|- align="center" 
+| 3 
+!Ole Miss
+| 2,004
+|- align="center" 
+| 4
+!Texas A&M
+| 1,967
+|- align="center" 
+| 5 
+!LSU
+| 1,961
+|- align="center"
+!style={{CollegePrimaryStyle|Alabama Crimson Tide}}| 6
+!style="{{CollegePrimaryStyle|Alabama Crimson Tide}}"|Alabama
+!style={{CollegePrimaryStyle|Alabama Crimson Tide}}| 1,930 
+|- align="center" 
+| 7 
+!Oklahoma 
+| 1,914
+|- align="center"
+| 8 
+!Tennessee
+| 1,320
+|- align="center" 
+| 9 
+!Florida
+| 1,217 
+|- align="center"
+| 10 
+!Missouri
+| 1,105
+|- align="center"
+| 11
+!South Carolina  
+| 956
+|- align="center"
+| 12 
+!Auburn 
+| 936
+|- align="center"
+| 13 
+!Vanderbilt
+| 751
+|- align="center"
+| 14 
+!Kentucky 
+| 546
+|- align="center"
+| 15 
+!Mississippi State
+| 467
+|- align="center"
+| 16 
+!Arkansas 
+| 262
+|}
+
+{{col-3-of-3}}
+{| class="wikitable"
+|- align="center"
+|align="center" Colspan="3" |'''Media poll (SEC Championship)'''
+|- align="center"
+{{CollegePrimaryHeader|team=Southeastern Conference|Rank|Team|Votes|border=2}} 
+|- align="center" 
+| 1 
+!Georgia 
+| 88 
+|- align="center" 
+| 2 
+!Texas
+| 57
+|- align="center" 
+| 3 
+!Ole Miss
+| 6
+|- align="center" 
+| 4 
+!Texas A&M
+| 5
+|- align="center" 
+| 5 
+!style="{{CollegePrimaryStyle|Alabama Crimson Tide}}"|Alabama
+!style={{CollegePrimaryStyle|Alabama Crimson Tide}}| 3
+|- align="center" 
+| 6
+!Oklahoma 
+| 2
+|- align="center" 
+| 7
+!LSU
+| 2 
+|- align="center" 
+| 8
+!Kentucky 
+| 1 
+|}
+
+{{col-end}}
+
+===2026 All-SEC Preseason teams=== 
+{{col-begin}}
+{{col-2}}
+
+==== Media ====
+'''First Team'''
+
+{| class="wikitable"
+! Position
+! Player
+! Class 
+|-
+| colspan="4" style="text-align:center; {{CollegePrimaryStyle|Alabama Crimson Tide}}"| '''Offense'''  
+|- style="text-align:center;"
+! rowspan="1" |WR
+| Ryan Coleman–Williams 
+| rowspan=2|Jr.
+|-
+! rowspan="2" |DB
+| Zabien Brown
+|-
+| Bray Hubbard
+| Sr.
+|}
+
+'''Second Team'''
+
+{| class="wikitable"
+! Position
+! Player
+! Class 
+|-
+| colspan="4" style="text-align:center; {{CollegePrimaryStyle|Alabama Crimson Tide}}"| '''Offense'''  
+|- style="text-align:center;"
+! rowspan="1" |OL
+|Michael Carroll
+|So.
+|-
+|}
+
+'''Third Team'''
+
+{| class="wikitable"
+! Position
+! Player
+! Class 
+|- 
+| colspan="4" style="text-align:center; {{CollegePrimaryStyle|Alabama Crimson Tide}}"| '''Defense''' 
+|- style="text-align:center;"
+! rowspan="1" |LB
+|Yhonzae Pierre
+|R-Jr.
+|-
+|- style="text-align:center;" 
+! rowspan="1" |DB
+| Keon Sabb
+| Sr.
+|-
+|}
+
+{{col-2}}
+
+==== Coaches ====
+'''First Team'''
+
+{| class="wikitable"
+! Position
+! Player
+! Class 
+|-
+| colspan="4" style="text-align:center; {{CollegePrimaryStyle|Alabama Crimson Tide}}"| '''Defense'''  
+|- style="text-align:center;"
+! rowspan="2" |DB
+| Bray Hubbard
+| Sr.
+|- 
+| Zabien Brown 
+| Jr.
+|-
+|}
+
+'''Second Team'''
+
+{| class="wikitable"
+! Position
+! Player
+! Class 
+|-
+| colspan="4" style="text-align:center; {{CollegePrimaryStyle|Alabama Crimson Tide}}"| '''Offense'''  
+|- style="text-align:center;"
+! rowspan="1" |WR 
+| Ryan Coleman-Williams
+| Jr.
+|- 
+|- style="text-align:center;"
+! rowspan="1" |OL
+| Michael Carroll
+| So.
+|- 
+|}
+
+'''Third Team'''
+
+{| class="wikitable"
+! Position
+! Player
+! Class 
+|-
+| colspan="4" style="text-align:center; {{CollegePrimaryStyle|Alabama Crimson Tide}}"| '''Defense''' 
+|- style="text-align:center;"
+! rowspan="1" |DB
+| Keon Sabb
+| rowspan=2|Sr.
+|-
+|- style="text-align:center;"
+! rowspan="1" | LB 
+| Yhonzae Pierre
+|} 
+{{col-end}}
+
+
+''Source:<ref>{{cite web|title=2026 Preseason Coaches All-SEC Football Team announced|url=https://www.secsports.com/news/2026/08/2026-preseason-coaches-all-sec-football-team-announced|access-date=2026-08-19|date=2026-08-19}}</ref>''
+
+===Award watch lists===
+<small>Listed in the order that they were released</small>
+{| class="wikitable"
+{{CollegePrimaryHeader|team=Alabama Crimson Tide|Award|Player|Position|Year|Source}}
+|-align="center" 
+![[Lott Trophy]]
+|[[Bray Hubbard]]
+|Safety
+|Sr.
+|<ref>{{cite web |title=2026 Lott IMPACT Trophy Watch List Candidates |url=https://lottimpacttrophy.org/impact-news/2026-lott-impact-trophy-watch-list-candidates/}}</ref>
+|-
+|-align="center" 
+! [[Bobby Dodd Coach of the Year Award|Dodd Trophy]]
+| [[Kalen DeBoer]]
+| Head coach
+| –—
+|<ref>{{cite web|title=Dodd Trophy Releases 2026 Preseason Watch List|url=https://chick-fil-apeachbowl.com/news/2026/7/9/the-dodd-trophy-presented-by-pnc-dodd-trophy-releases-2026-preseason-watch-list.aspx|date=July 9, 2026|access-date=July 9, 2026}}</ref>
+|-
+|-align="center" 
+! [[Maxwell Award]]
+| [[Ryan Coleman-Williams]]
+| Wide receiver 
+| Jr.
+| <ref>{{cite web|title=2026 Maxwell Award full Preseason Watchlist revealed|url=https://www.on3.com/news/2026-maxwell-award-full-preseason-watchlist-revealed/|date=August 3, 2026|access-date=August 3, 2026}}</ref>
+|-
+|-align="center" 
+! [[Outland Trophy]]
+|  [[Michael Carroll (offensive lineman)|Michael Carroll]]
+| Offensive lineman
+| So.
+|<ref>{{cite web|title= Outland Trophy celebrates 81st season, unveils 2026 preseason watch list l|url=https://www.sportswriters.net/fwaa/news/2026/08/04/outland-trophy-celebrates-80th-season-unveils-preseason-watch-list}}</ref>
+|-
+|-align="center" 
+! rowspan=2|[[Bronko Nagurski Trophy]] 
+|Bray Hubbard
+|Safety
+|Sr.
+|rowspan=2|<ref>{{cite web|title= FWAA unveils 2026 Bronko Nagurski Trophy Preseason Watch List|url=https://www.sportswriters.net/fwaa/news/2026/08/04/2026-bronko-nagurski-trophy-preseason-watch-list-unveiled}}</ref>
+|-
+|-align="center" 
+|[[Zabien Brown]]
+|Cornerback
+|Jr.
+|- 
+|-align="center" 
+![[Lou Groza Award]] 
+|Lorcan Quinn
+|Placekicker
+|So.
+|<ref>{{cite web|url=https://lougrozaaward.com/news/lou-groza-award-announces-2026-preseason-watch-list/|title= LOU GROZA AWARD ANNOUNCES 2026 PRESEASON WATCH LIST|date=August 7, 2026|access-date=August 7, 2026}}</ref><br><ref>{{cite web|url=https://lougrozaaward.com/watchlist/2026/|title=2026 PRESEASON WATCH LIST|date=August 7, 2026|access-date=August 7, 2026}}</ref><br>
+|- 
+|-align="center" 
+! [[Wuerffel Trophy]] 
+|Bray Hubbard
+|Safety
+|Sr.
+|<ref>{{cite web |last1=Klein |first1=Shailey |title=2026 Allstate Wuerffel Trophy Watch List recognizes 113 college football players for community service – Allstate Wuerffel Trophy |url=https://wuerffeltrophy.org/2026-allstate-wuerffel-trophy-watch-list-recognizes-113-college-football-players-for-community-service/ |website=wuerffeltrophy.org |access-date=11 August 2026}}</ref>
+|-
+|-align="center" 
+! rowspan=2|[[Jim Thorpe Award]]
+|Bray Hubbard
+|Safety
+|Sr.
+|rowspan=2|<ref>{{Cite tweet|user=jimthorpeaward|number=2087574445032366297 |title=The names to know in 2026. 👀🏆 Meet the 35 defensive backs named to the 2026 @Paycom Jim Thorpe Award Preseason Watch List.}}</ref>
+|-
+|-align="center" 
+|Zabien Brown
+|Cornerback
+|Jr.
+|-
+|-align="center" 
+! [[Butkus Award]]
+| [[Caleb Woodson]]
+| Linebacker
+| Sr.
+| <ref>{{cite web |title=BUTKUS AWARD® ANNOUNCES 2026 COLLEGIATE WATCH LIST FOR 42nd SEASON {{!}} Regional Radio Sports Network |url=https://rrsn.com/butkus-award-announces-2026-collegiate-watch-list-for-42nd-season/ |website=rrsn.com |access-date=13 August 2026}}</ref>
+|- 
+|-align="center" 
+![[Fred Biletnikoff Award|Biletnikoff Award]] 
+|Ryan Coleman–Williams
+|Wide receiver 
+|rowspan=2|Jr.
+|<ref>{{cite web|title=2026 Biletnikoff AwardWatch List |url=https://biletnikoffaward.com/2026-biletnikoff-award-watch-list/}}</ref>
+|- 
+|-align="center" 
+! rowspan=2|Comeback Player of the Year Award
+| Jeremiah Beaman
+| Defensive lineman
+|rowspan=2| <ref>{{cite web |title=2026 Comeback Player of the Year Award Watch List Issued|url=https://comeback-player.com/|website=Comeback Player |access-date=20 August 2026}}</ref>
+|-
+|-align="center" 
+|[[Jah-Marien Latham]]
+| Linebacker
+| 6th year
+|-
+|-align="center" 
+!rowspan=3|[[Bednarik Award]]
+|Bray Hubbard
+|Safety
+|Sr.
+|rowspan=3|<ref>{{Cite tweet|user=MaxwellFootball |number=2090834102052086116 |title=2026 CHUCK BEDNARIK AWARD WATCH LIST REVEALED}}</ref>
+|-
+|-align="center" 
+|Zabien Brown
+|Cornerback
+|Jr.
+|-
+|-align="center" 
+|[[Yhonzae Pierre]]
+|Linebacker
+|Sr.
+|-  
+|-align="center" 
+!rowspan=3|Shaun Alexander Freshman Player of the Year Award
+|[[Ezavier Crowell|EJ Crowell]]
+|Running back
+|rowspan=3|Fr.
+|rowspan=3|<ref>{{cite web|title=3 Alabama freshmen named to Shaun Alexander Award Watch List|url= https://tdalabamamag.com/2026/08/26/3-alabama-freshmen-named-to-shaun-alexander-award-watch-list/}}</ref>
+|-
+|-align="center" 
+|[[Jireh Edwards]]
+|Defensive back
+|-
+|-align="center" 
+|[[Keelon Russell]]
+|Quarterback
+|}
+
+===Preseason All-Americans===
+{| class="wikitable sortable sortable" style="text-align: center"
+|+ style="{{CollegePrimaryStyle|Alabama Crimson Tide}}" |Preseason All-American Honors
+{{CollegeSecondaryHeader|team=Alabama Crimson Tide|Player|Position|Class|Designation|AP|Athlon|CBS Sports|ESPN|SI|SN|USA Today|WCFF}}
+|-
+| [[Bray Hubbard]]
+| CB
+| Sr.
+| '''1st team defense (Athlon)'''
+| {{y}} <ref>{{Cite web |title=The 2026 preseason AP All-America college football team |url=https://apnews.com/article/ap-allamerica-list-c4fe5dd88b56a3ede19e2e90b172b84d}}</ref>
+| {{y}} <ref>{{cite web|url=https://athlonsports.com/college-football/college-football-2026-all-america-team|title=College Football 2026 All-America Team|website=athlonsports.com|publisher=[[Athlon Sports]]|date=June 24, 2026|access-date=June 24, 2026}}</ref>
+| n/a
+| n/a
+| n/a
+| n/a
+| {{y}} <ref>{{cite web |last1=Myerberg |first1=Paul |title=Dante Moore wins QB debate as USA TODAY Sports reveals 2026 Preseason All-America Team |url=https://www.usatoday.com/story/sports/ncaaf/2026/08/19/college-foootball-all-america-team-usa-today-sports-2026-preseason/91338275007/ |website=USA TODAY |access-date=19 August 2026}}</ref>
+| n/a
+|-
+|}
+
+{| class="wikitable" style="text-align:center"
+| colspan="6" style="text-align:center; {{CollegePrimaryStyle|Alabama Crimson Tide}}" | '''Other All-Americans teams'''
+|-
+!  style="width:150px; {{CollegeSecondaryStyle|Alabama Crimson Tide}}" | Player 
+!  style="width:90px; {{CollegeSecondaryStyle|Alabama Crimson Tide}}" | Position
+!  style="width:150px; {{CollegeSecondaryStyle|Alabama Crimson Tide}}" | Class
+!  style="width:150px; {{CollegeSecondaryStyle|Alabama Crimson Tide}}" | Selector(s) 
+|- 
+| [[Bray Hubbard]]
+| CB
+| Sr.
+| '''2nd team defense (CBS, ESPN, Sporting News, Walter Camp)'''
+|-
+| [[Keon Sabb]]
+| CB
+| Sr.
+|'''3rd team defense (Athlon)'''
+|- 
+| [[Ryan Coleman-Williams]]
+| WR
+| Jr.
+|'''3rd team offense (Athlon)'''
+|- 
+| [[Yhonzae Pierre]]
+| WR
+| R-Jr.
+|'''4th team defense (Athlon)'''
+|- 
+| [[Zabien Brown]]
+| CB
+| Jr.
+| '''2nd team defense (AP, CBS, SI, USA Today)''' <br> '''3rd team defense (Athlon)'''
+|- 
+|}
+
+''Sources:''
+
+==Schedule==
+{{CFB schedule
+| rankyear = 2026
+| rankdivision = NCAA Division I FBS
+| poll = [[2026 NCAA Division I FBS football rankings#AP Poll|AP Poll]] (and [[2026 NCAA Division I FBS football rankings#CFP rankings|CFP Rankings]], after November 3) - Released prior to game 
+| timezone = Central
+
+|{{CFB schedule entry
+| date = September 5
+| time = 11:00 a.m.
+| w/l = w
+| nonconf = y 
+| rank = 13
+| opponent = [[2026 East Carolina Pirates football team|East Carolina]]
+| site_stadium = [[Bryant–Denny Stadium]]
+| site_cityst = [[Tuscaloosa, Alabama|Tuscaloosa, AL]]
+| tv = [[SEC on ABC|ABC]]
+| score = 48–10
+| attend = 100,077
+}} 
+|{{CFB schedule entry
+| date = September 12
+| time = 2:30 p.m.
+| w/l = w
+| rank = 12
+| away = y
+| opponent = [[2026 Kentucky Wildcats football team|Kentucky]] 
+| site_stadium = [[Kroger Field]]
+| site_cityst = [[Lexington, Kentucky|Lexington, KY]]
+| gamename = ''[[SEC Nation]]''
+| tv = ABC 
+| score = 45–17
+| attend = 61,820
+}}
+|{{CFB schedule entry
+| date = September 19
+| time = 2:30 p.m.
+| w/l = w
+| nonconf = y
+| rank = 10
+| opponent = [[2026 Florida State Seminoles football team|Florida State]]
+| site_stadium = Bryant–Denny Stadium
+| site_cityst = Tuscaloosa, AL
+| tv = ABC/ESPN2
+| score = 50–36
+| attend = 100,077
+}}
+|{{CFB schedule entry
+| date = September 26
+| time = 6:00 p.m.
+| w/l = w
+| rank = 8
+| opponent = [[2026 South Carolina Gamecocks football team|South Carolina]]
+| site_stadium = Bryant–Denny Stadium
+| site_cityst = Tuscaloosa, AL 
+| tv = [[ESPN College Football|ESPN]]
+| score = 49–18
+| attend = 100,077
+}}
+|{{CFB schedule entry
+| date = October 3
+| time = 11:00 a.m.
+| w/l = w
+| away = y
+| rank = 7
+| opprank = 16
+| opponent = [[2026 Mississippi State Bulldogs football team|Mississippi State]]
+| gamename = [[Alabama–Mississippi State football rivalry|rivalry]], ''SEC Nation''
+| site_stadium = [[Davis Wade Stadium]]
+| site_cityst = [[Starkville, Mississippi|Starkville, MS]]
+| tv = ABC 
+| score = 56–23
+| attend = 60,417
+}}
+|{{CFB schedule entry
+| date = October 10
+| time = 6:30 p.m.
+| w/l = l
+| rank = 6
+| opponent = [[2026 Georgia Bulldogs football team|Georgia]]
+| opprank = 2
+| site_stadium = Bryant–Denny Stadium
+| site_cityst = Tuscaloosa, AL
+| gamename = ''[[College GameDay (football TV program)|College GameDay]]'', [[Alabama–Georgia football rivalry|rivalry]]
+| tv = [[Saturday Night Football|ABC]]
+| score = 17–20
+| attend = 100,077
+}}
+|{{CFB schedule entry
+| date = October 17
+| time = 2:30 p.m.
+| w/l = l
+| away = y
+| rank = 6
+| opprank = 14
+| opponent = [[2026 Tennessee Volunteers football team|Tennessee]]
+| site_stadium = [[Neyland Stadium]]
+| site_cityst = [[Knoxville, Tennessee|Knoxville, TN]]
+| gamename = [[Third Saturday in October]], ''SEC Nation''
+| tv = ABC
+| score = 10–26
+| attend = 101,915
+}}
+|{{CFB schedule entry
+| date = October 24
+| time = 2:30 p.m.
+| w/l = w
+| rank = 13
+| homecoming = y
+| opponent = [[2026 Texas A&M Aggies football team|Texas A&M]]
+| site_stadium = Bryant–Denny Stadium
+| site_cityst = Tuscaloosa, AL
+| tv = ABC
+| score = 31–20
+| attend = 100,077
+}}
+|{{CFB schedule entry
+| date = November 7
+| time = 2:30 p.m.
+| w/l = 
+| rank = 9
+| opprank = 15
+| away = y
+| opponent = [[2026 LSU Tigers football team|LSU]]
+| site_stadium = [[Tiger Stadium (Louisiana)|Tiger Stadium]]
+| site_cityst = [[Baton Rouge, Louisiana|Baton Rouge, LA]]
+| gamename = [[Alabama–LSU football rivalry|rivalry]]
+| tv = ABC
+| score = 
+| attend = 
+}}
+|{{CFB schedule entry
+| date = November 14
+| time = 
+| w/l = 
+| away = y
+| rank =
+| opponent = [[2026 Vanderbilt Commodores football team|Vanderbilt]]
+| opprank = 
+| site_stadium = [[FirstBank Stadium]]
+| site_cityst = [[Nashville, Tennessee|Nashville, TN]]
+| tv = 
+| score = 
+| attend = 
+}}
+|{{CFB schedule entry
+| date = November 21
+| time = 1:00 p.m.
+| w/l =  
+| rank = 
+| nonconf = y 
+| opponent = [[2026 Chattanooga Mocs football team|Chattanooga]]
+| site_stadium = Bryant–Denny Stadium
+| site_cityst = Tuscaloosa, AL
+| tv = [[SEC Network|SECN+]]
+| score = 
+| attend = 
+}}
+|{{CFB schedule entry
+| date = November 28
+| time = 
+| w/l =  
+| rank = 
+| opponent = [[2026 Auburn Tigers football team|Auburn]]
+| site_stadium = Bryant–Denny Stadium
+| site_cityst = Tuscaloosa, AL
+| gamename = [[Iron Bowl]]
+| tv = 
+| score = 
+| attend = 
+}}
+}}
+<ref>{{Cite web|last=Gay|first=Colin|date=December 11, 2025|title=Alabama football 2026 schedule: Tide's opponents for next season|url=https://www.tuscaloosanews.com/story/sports/college/football/2025/12/11/alabama-football-2026-schedule-who-crimson-tide-will-face-kalen-deboer/87622158007/|access-date=11 December 2025|website=The Tuscaloosa News}}</ref><ref>{{cite web|title=2026 Alabama Football Schedule|url=https://fbschedules.com/2026-alabama-football-schedule/|website=FBSchedules.com|access-date=11 December 2025}}</ref>
+
+==Rankings==
+{{Further|2026 NCAA Division I FBS football rankings}}
+{{NCAA Division I FBS CFP ranking movements
+| year            = 2026
+| finalpollweek   = 15
+| cfpfirstweek    = 9
+| AP_pre          = 13
+| coaches_pre     = 11
+| AP_1            = 12
+| coaches_1       = 12
+| AP_2            = 10
+| coaches_2       = 10
+| AP_3            = 8
+| coaches_3       = 8
+| AP_4            = 7
+| coaches_4       = 7
+| AP_5            = 6
+| coaches_5       = 7
+| AP_6            = 6
+| coaches_6       = 7
+| AP_7            = 13
+| coaches_7       = 13
+| AP_8            = 10
+| coaches_8       = 10
+| AP_9            = 9
+| coaches_9       = 9
+| cfp_9           = 
+| AP_10           = 
+| coaches_10      = 
+| cfp_10          = 
+| AP_11           = 
+| coaches_11      = 
+| cfp_11          = 
+| AP_12           = 
+| coaches_12      = 
+| cfp_12          = 
+| AP_13           = 
+| coaches_13      = 
+| cfp_13          = 
+| AP_14           = 
+| coaches_14      = 
+| cfp_14          = 
+| AP_15           = 
+| coaches_15      = 
+}}
+
+==Game summaries==
+===vs East Carolina===
+{{see also|2026 East Carolina Pirates football team}}
+{{Americanfootballbox
+|bg=#fff
+|bg2=#eee
+|titlestyle={{NCAA color cell|Alabama Crimson Tide}};text-align:center;
+|state=autocollapse
+|title=East Carolina Pirates (0–0) at No. 13 Alabama Crimson Tide (0–0) – Game summary
+|date={{tooltip|September 5|Saturday}}
+|time=11:00 a.m. [[Central Time Zone|CDT]]
+|road=Pirates
+|R1=0|R2=7|R3=3|R4=0
+|home='''No. 13 Crimson Tide'''
+|H1=10|H2=28|H3=0|H4=10
+|stadium= [[Bryant–Denny Stadium]] • [[Tuscaloosa, Alabama]]
+|attendance=100,077 
+|weather=Sunny • '''Temperature''': {{convert|90|F|C}} • '''Wind''': S at {{convert|4|mph}}
+|referee=Jason Autrey
+|TV=[[SEC on ABC|ABC]]
+|TVAnnouncers=[[Bob Wischusen]], [[Louis Riddick]], and Stormy Buonantony
+|reference=
+|scoring=
+;First quarter 
+*ALA – Conor Talty 41-yard field goal, 9:30. ''Crimson Tide 3–0. '''Drive: 9 plays, 46 yards, 5:24.'''''
+*ALA – [[Ezavier Crowell|EJ Crowell]] 3-yard run (Conor Talty kick), 4:12. ''Crimson Tide 10–0. '''Drive: 9 plays, 86 yards, 4:02.'''''
+;Second quarter
+*ALA – [[Daniel Hill (running back)|Daniel Hill]] 4-yard run (Conor Talty kick), 14:48. ''Crimson Tide 17–0. '''Drive: 6 plays, 26 yards, 2:24.'''''
+*ECU – Jeremiah Melvin 1-yard pass from [[Mitch Griffis]] (Noah Perez kick), 13:41. ''Crimson Tide 17–7. '''Drive: 3 plays, 75 yards, 1:07.'''''
+*ALA – Daniel Hill 2-yard run (Conor Talty kick), 10:02. ''Crimson Tide 24–7. '''Drive: 7 plays, 86 yards, 3:33.''''' 
+*ALA – [[Yhonzae Pierre]] 27-yard interception return (Conor Talty kick), 9:15. ''Crimson Tide 31–7.''
+*ALA – [[Keelon Russell]] 3-yard run (Conor Talty kick), 0:14. ''Crimson Tide 38–7. '''Drive: 15 plays, 80 yards, 6:11.'''''
+;Third quarter 
+*ECU – Noah Perez 34-yard field goal, 10:54. ''Crimson Tide 38–10. '''Drive: 6 plays, 14 yards, 2:39.'''''
+;Fourth quarter 
+*ALA – [[Trae'shawn Brown]] 2-yard run (Conor Talty kick), 14:57. ''Crimson Tide 45–10. '''Drive: 9 plays, 77 yards, 3:17.'''''
+*ALA – Conor Talty 21-yard field goal, 6:15. ''Crimson Tide 48–10. '''Drive: 12 plays, 70 yards, 7:10.'''''
+}}
+
+{| class="wikitable" style="float:left"
+! Statistics !! style="{{CollegeSecondaryStyle|East Carolina Pirates}}"|ECU!!style="{{NCAA color cell|Alabama Crimson Tide}}"|ALA
+|-
+| First downs || 5 || 28
+|-
+| Plays–yards || 41–162 || 81–487
+|-
+| Rushes–yards || 22–2 || 49–227
+|-
+| Passing yards || 160 || 260
+|-
+| Passing: comp–att–int || 11–19–1 || 19–32–0
+|-
+| Turnovers || 1 || 1
+|-
+| Time of possession || 21:07 || 38:53
+|}
+{| class="wikitable" style="float:right"
+! Team !! Category !! Player !! Statistics
+|-
+! rowspan=3 style="{{CollegeSecondaryStyle|East Carolina Pirates}}|East Carolina 
+| Passing
+| [[Mitch Griffis]]
+| 10/16, 137 yards, TD, INT
+|-
+| Rushing
+| Ashton Gray
+| 6 carries, 17 yards
+|-
+| Receiving
+| Tyler Johnson
+| 1 reception, 68 yards
+|-
+! rowspan=3 style="{{NCAA color cell|Alabama Crimson Tide}}|Alabama
+| Passing
+| [[Keelon Russell]]
+| 18/30, 256 yards
+|-
+| Rushing
+| Keelon Russell
+| 13 carries, 86 yards, TD
+|-
+| Receiving
+| [[Ryan Coleman-Williams]]
+| 5 receptions, 130 yards
+|}
+{{Clear}}
+
+===at Kentucky===
+{{see also|2026 Kentucky Wildcats football team}}
+{{Americanfootballbox
+|bg=#fff
+|bg2=#eee
+|titlestyle={{CollegeSecondaryStyle|Alabama Crimson Tide}};text-align:center;
+|state=autocollapse
+|title= No. 12 Alabama Crimson Tide (1–0) at Kentucky Wildcats (1–0) – Game summary
+|date={{tooltip|September 12|Saturday}}
+|time=2:30 pm
+|road='''No. 12 Crimson Tide'''
+|R1=7|R2=6|R3=18|R4=14
+|home=Wildcats
+|H1=7|H2=10|H3=0|H4=0
+|stadium= [[Kroger Field]] • [[Lexington, Kentucky]]
+|attendance=61,820
+|weather=Cloudy • '''Temperature''': {{convert|78|F|C}} • '''Wind''': S at {{convert|8|mph}}
+|referee=Ted Pitts 
+|TV= ABC
+|TVAnnouncers=[[Sean McDonough]], [[Greg McElroy]], and [[Katie George (sportscaster)|Katie George]] 
+|reference=
+|scoring=
+;First quarter
+*UK – Mi'Quise Humphrey-Grace 2-yard interception return (Adam Zouagui kick), 10:11. ''Wildcats 7–0.''
+*ALA – Luke Metz 34-yard interception return (Conor Talty kick), 6:35. ''Tied 7–7.'' 
+;Second quarter 
+*UK – Henry Boyer 20-yard pass from [[Kenny Minchey]] (Adam Zouagui kick), 14:56. ''Wildcats 14–7. '''Drive: 13 plays, 83 yards, 6:33.'''''
+*ALA – Conor Talty 25-yard field goal, 9:27. ''Wildcats 14–10. '''Drive: 10 plays, 68 yards, 5:29.'''''
+*ALA – Conor Talty 41-yard field goal, 2:09. ''Wildcats 14–13. '''Drive: 8 plays, 44 yards, 4:13.'''''
+*UK – Adam Zouagui 39-yard field goal, 0:00. ''Wildcats 17–13. '''Drive: 9 plays, 33 yards, 0:55.''''' 
+;Third quarter  
+*ALA – Conor Talty 34-yard field goal, 7:10. ''Wildcats 17–16. '''Drive: 9 plays, 43 yards, 3:48.'''''
+*ALA – EJ Crowell 3-yard run (Conor Talty kick), 3:00. ''Crimson Tide 23–17. '''Drive: 5 plays, 21 yards, 2:42.'''''
+*ALA – Daniel Hill 3-yard run (Keelon Russell–[[Lotzeir Brooks]] pass), 0:24. ''Crimson Tide 31–17. '''Drive: 2 plays, 34 yards, 0:25.'''''
+;Fourth quarter 
+*ALA – [[Rico Scott]] 5-yard pass from Keelon Russell (Conor Talty kick), 9:08. ''Crimson Tide 38–17. '''Drive: 9 plays, 74 yards, 5:03.'''''
+*ALA – Trae'shawn Brown 4-yard run (Conor Talty kick), 4:11. ''Crimson Tide 45–17. '''Drive: 5 plays, 43 yards, 2:54.'''''
+}}
+
+{| class="wikitable" style="float:left"
+! Statistics !! style="{{CollegeSecondaryStyle|Alabama Crimson Tide}}"|ALA!!style="{{CollegePrimaryStyle|Kentucky Wildcats}}"|UK
+|-
+| First downs || 21 || 14
+|-
+| Plays–yards || 63–343 || 64–209
+|-
+| Rushes–yards || 40–155 || 32–63
+|-
+| Passing yards || 188 || 146
+|-
+| Passing: comp–att–int || 16–23–2 || 18–32–1
+|-
+| Turnovers || 3 || 3
+|-
+| Time of possession || 32:14 || 27:46
+|}
+{| class="wikitable" style="float:right"
+! Team !! Category !! Player !! Statistics
+|-
+! rowspan=3 style="{{CollegeSecondaryStyle|Alabama Crimson Tide}}"|Alabama
+| Passing
+| Keelon Russell
+| 16/23, 188 yards, TD, 2 INT
+|-
+| Rushing
+| [[Daniel Hill (running back)|Daniel Hill]]
+| 18 carries, 104 yards, TD
+|-
+| Receiving
+| [[Lotzeir Brooks]]
+| 5 receptions, 54 yards
+|-
+! rowspan=3 style="{{CollegePrimaryStyle|Kentucky Wildcats}}|Kentucky
+| Passing
+| [[Kenny Minchey]]
+| 18/31, 146 yards, TD, INT
+|-
+| Rushing
+| Jason Patterson
+| 11 carries, 53 yards
+|-
+| Receiving
+| [[Willie Rodriguez (American football)|Willie Rodriguez]]
+| 8 receptions, 49 yards
+|}
+{{Clear}}
+
+===vs Florida State===
+{{see also|2026 Florida State Seminoles football team}}
+{{Americanfootballbox
+|bg=#fff
+|bg2=#eee
+|titlestyle={{NCAA color cell|Alabama Crimson Tide}};text-align:center;
+|state=autocollapse
+|title=Florida State Seminoles (1–1) at No. 10 Alabama Crimson Tide (2–0) – Game summary
+|date={{tooltip|September 19|Saturday}}
+|time=5:15 p.m (delayed from 3:30 p.m due to a lightning delay)
+|road=Seminoles
+|R1=14 |R2=7 |R3=7 |R4=8
+|home='''No. 10 Crimson Tide'''
+|H1=3 |H2=23 |H3=14 |H4=10
+|stadium=[[Bryant–Denny Stadium]] • [[Tuscaloosa, Alabama]]
+|attendance=100,077
+|weather=Sunny • '''Temperature''': {{convert|92|F|C}} • '''Wind''': S at {{convert|4|mph|km/h}}
+|referee=Kyle Olson
+|TV=ABC
+|TVAnnouncers=Sean McDonough, Greg McElroy, and Katie George
+|reference=[https://seminoles.com/sports/football/stats/2026/alabama/boxscore/16675 Box Score], [https://seminoles.com/news/2026/9/19/football-fsu-falls-in-high-scoring-battle-at-no-10-alabama Recap]
+|scoring=
+;First Quarter
+*FSU - [[Duce Robinson|Robinson,Duce]] 20 yd pass from [[Ashton Daniels|Daniels,Ashton]] (Panikowski,Gabe kick) 7 plays, 72 yards, TOP 03:24
+*ALA - Talty,Conor 32 yd field goal 8 plays, 20 yards, TOP 03:27
+*FSU - [[Ousmane Kromah|Kromah,Ousmane]] 12 yd run (Panikowski,Gabe kick), 3 plays, 69 yards, TOP 01:17
+;Second Quarter
+*ALA - Talty,Conor 43 yd field goal 9 plays, 50 yards, TOP 02:33
+*FSU - Daniels,Ashton 3 yd run (Panikowski,Gabe kick), 9 plays, 75 yards, TOP 04:57
+*ALA - Morgan,Cederian 21 yd pass from Russell,Keelon (Talty,Conor kick) 12 plays, 75 yards, TOP 07:06
+*ALA - Coleman-Williams,Ryan 46 yd pass from Russell,Keelon () 2 plays, 63 yards, TOP 00:14
+*ALA - Edwards,Kaleb 16 yd pass from Russell,Keelon (Talty,Conor kick) 2 plays, 56 yards, TOP 00:12
+;Third Quarter
+*FSU - Thomas,Landen 2 yd pass from Daniels,Ashton (Panikowski,Gabe kick) 9 plays, 75 yards, TOP 05:02
+*ALA - Crowell,EJ 4 yd run (Talty,Conor kick), 8 plays, 75 yards, TOP 04:03
+*ALA - Russell,Keelon 57 yd run (Talty,Conor kick), 3 plays, 64 yards, TOP 01:30
+;Fourth Quarter
+*ALA - Talty,Conor 45 yd field goal 6 plays, 37 yards, TOP 02:17
+*FSU - Daniels,Ashton 6 yd run (Daniels,Ashton rush), 6 plays, 75 yards, TOP 02:26
+*ALA - Brown,Trae'shawn 20 yd run (Talty,Conor kick), 9 plays, 90 yards, TOP 05:02
+}}
+{| class="wikitable" style="float:left"
+! Statistics !! style="{{CollegeSecondaryStyle|Florida State Seminoles}}"|FSU!!style="{{NCAA color cell|Alabama Crimson Tide}}"|ALA
+|-
+| First downs || 17 || 26
+|-
+| Plays–yards || 64–471 || 66–567
+|-
+| Rushes–yards || 35–94 || 36–247
+|-
+| Passing yards || 377 || 320
+|-
+| Passing: {{abbr|comp|Completions}}–{{abbr|att|Attempts}}–{{abbr|int|Interceptions}} || 17–29–3 || 23–30–0
+|-
+| Turnovers || 3 || 0
+|-
+| Time of possession || 27:52 || 32:08
+|}
+{| class="wikitable" style="float:right"
+! Team !! Category !! Player !! Statistics
+|-
+! rowspan=3 style="{{CollegeSecondaryStyle|Florida State Seminoles}}| Florida State
+| Passing
+|[[Ashton Daniels]]
+|17/29, 377 yards, 2 TD, 3 INT
+|-
+| Rushing
+|[[Ousmane Kromah]]
+|17 carries, 80 yards, TD
+|-
+| Receiving
+|[[Duce Robinson]]
+|6 receptions, 135 yards, TD
+|-
+! rowspan=3 style="{{NCAA color cell|Alabama Crimson Tide}}| Alabama
+| Passing
+|Keelon Russell
+|23/30, 320 yards, 3 TD
+|-
+| Rushing
+|[[Trae'shawn Brown]]
+|12 carries, 86 yards, TD
+|-
+| Receiving
+|Lotzeir Brooks
+|8 receptions, 101 yards
+|}
+{{Clear}}
+
+===vs South Carolina===
+{{see also|2026 South Carolina Gamecocks football team}}
+{{Americanfootballbox
+|bg=#fff
+|bg2=#eee
+|titlestyle={{NCAA color cell|Alabama Crimson Tide}};text-align:center;
+|state=autocollapse
+|title=South Carolina Gamecocks (2–1) at No. 8 Alabama Crimson Tide (3–0) – Game summary
+|date={{tooltip|September 26|Saturday}}
+|time=6:00 pm
+|road=Gamecocks
+|R1=0 |R2=10 |R3=0 |R4=8
+|home='''No. 8 Crimson Tide'''
+|H1=14 |H2=21 |H3=0 |H4=14
+|stadium= Bryant–Denny Stadium • Tuscaloosa, Alabama
+|attendance=100,077
+|weather=Sunny • '''Temperature''': {{convert|82|F|C}} • '''Wind''': S at {{convert|6|mph|km/h}}
+|referee=Daniel Gautreaux
+|TV=[[ESPN College Football|ESPN]]
+|TVAnnouncers=[[Dave Pasch]], [[Dusty Dvoracek]], and Taylor McGregor
+|reference=
+|scoring=
+;First quarter
+;Second quarter
+;Third quarter
+;Fourth quarter
+}}
+{| class="wikitable" style="float:left"
+! Statistics !! style="{{CollegeSecondaryStyle|South Carolina Gamecocks|color=white}}"|SC!!style="{{NCAA color cell|Alabama Crimson Tide}}"|ALA
+|-
+| First downs || 22 || 20
+|-
+| Plays–yards || 73–419 || 57–489
+|-
+| Rushes–yards || 40–216 || 30–124
+|-
+| Passing yards || 203 || 365
+|-
+| Passing: comp–att–int || 20–33–1 || 21–27–0
+|-
+| Turnovers || 2 || 0
+|-
+| Time of possession || 29:40 || 30:20
+|}
+{| class="wikitable" style="float:right"
+! Team !! Category !! Player !! Statistics
+|-
+! rowspan=3 style="{{CollegeSecondaryStyle|South Carolina Gamecocks|color=white}}| South Carolina
+| Passing
+| [[LaNorris Sellers]]
+| 18/30, 185 yards, TD, INT
+|-
+| Rushing
+| [[Matt Fuller (American football)|Matt Fuller]]
+| 19 carries, 112 yards, TD
+|-
+| Receiving
+| [[Nyck Harbor]]
+| 3 receptions, 42 yards, TD
+|-
+! rowspan=3 style="{{NCAA color cell|Alabama Crimson Tide}}| Alabama
+| Passing
+| Keelon Russell
+| 21/27, 365 yards, 4 TD
+|-
+| Rushing
+| [[Ezavier Crowell|EJ Crowell]]
+| 6 carries, 50 yards
+|-
+| Receiving
+| Ryan Coleman-Williams
+| 5 receptions, 98 yards, 2 TD
+|}
+{{Clear}}
+
+===at No. 16 Mississippi State (rivalry)===
+{{see also|2026 Mississippi State Bulldogs football team|Alabama–Mississippi State football rivalry}}
+{{Americanfootballbox
+|bg=#fff
+|bg2=#eee
+|titlestyle={{CollegeSecondaryStyle|Alabama Crimson Tide}};text-align:center;
+|state=autocollapse
+|title=No. 7 Alabama Crimson Tide (4–0) at No. 16 Mississippi State Bulldogs (4–0) – Game summary
+|date={{tooltip|October 3|Saturday}}
+|time= 11:00 a.m.
+|road= '''No. 7 Crimson Tide'''
+|R1=14|R2=14|R3=14|R4=14
+|home= No. 16 Bulldogs
+|H1=7|H2=10|H3=6|H4=0
+|stadium= [[Davis Wade Stadium]] • [[Starkville, Mississippi]]
+|attendance=60,417
+|weather=Sunny • '''Temperature''': {{convert|82|F|C}} • '''Wind''': E at {{convert|4|mph|km/h}}
+|referee=Adam Savoie
+|TV=ABC
+|TVAnnouncers=Sean McDonough, Greg McElroy, and Katie George
+|reference=
+|scoring=
+;First quarter 
+;Second quarter  
+;Third quarter  
+;Fourth quarter 
+}}
+{| class="wikitable" style="float:left"
+! Statistics !! style="{{CollegeSecondaryStyle|Alabama Crimson Tide}}"|ALA!!style="{{NCAA color cell|Mississippi State Bulldogs}}"|MSST
+|-
+| First downs || 22 || 21
+|-
+| Plays–yards || 61–483 || 70–302
+|-
+| Rushes–yards || 37–179 || 30–18
+|-
+| Passing yards || 304 || 284
+|-
+| Passing: comp–att–int || 18–24–0 || 22–40–2
+|-
+| Turnovers || 4 || 2
+|-
+| Time of possession || 25:19 || 34:41
+|}
+{| class="wikitable" style="float:right"
+! Team !! Category !! Player !! Statistics
+|-
+! rowspan=3 style="{{CollegeSecondaryStyle|Alabama Crimson Tide}}"|Alabama
+| Passing
+| Keelon Russell
+| 16/22, 285 yards, 3 TD
+|-
+| Rushing
+| Trae'shawn Brown
+| 14 carries, 66 yards, 2 TD
+|-
+| Receiving
+| Lotzeir Brooks
+| 4 receptions, 96 yards
+|-
+! rowspan=3 style="{{NCAA color cell|Mississippi State Bulldogs}}|Mississippi State
+| Passing
+| [[Kamario Taylor]]
+| 19/34, 258 yards, 3 TD, 2 INT
+|-
+| Rushing
+| Kolin Wilson
+| 10 carries, 27 yards
+|-
+| Receiving
+| [[Anthony Evans III]]
+| 12 receptions, 166 yards, 2 TD
+|}
+{{Clear}}
+
+===vs No. 2 Georgia (rivalry)===
+{{see also|2026 Georgia Bulldogs football team|Alabama–Georgia football rivalry}}
+Both Alabama and Georgia are undefeated this season going into the weekend. Due to expected heavy weather from [[Hurricane Isaias (2026)|Hurricane Isaias]], various pre-game events have been postponed or cancelled,<ref name="isaias-26">{{cite web |last1=Spencer |first1=Sarah |title=Alabama announces adjusted game day operations for Georgia game |url=https://www.dawgnation.com/football/alabama-announces-adjusted-gameday-operations-georgia-game/6CGK7WPMBZDBBMN3SK2XJF2JOQ/ |publisher=Dawg Nation |date=October 8, 2026}}</ref> including president [[Donald Trump]]'s previously-planned attendance.<ref name="reuters-uga-bama-trump">{{cite news |title=Donald Trump says he will attend Georgia-Alabama game |url=https://www.reuters.com/sports/donald-trump-says-he-will-attend-georgia-alabama-game--flm-2026-10-03/ |access-date=5 October 2026 |agency=Reuters |date=October 3, 2026}}</ref><ref name="ajc-bluestein-26-trump">{{cite news |last1=Bluestein |first1=Greg |title=Trump cancels plans to attend UGA-Alabama game, citing hurricane |url=https://www.ajc.com/politics/2026/10/trump-cancels-plans-to-attend-uga-alabama-game-citing-hurricane/ |work=The Atlanta Journal-Constitution |date=October 9, 2026}}</ref>
+{{Americanfootballbox
+|bg=#fff
+|bg2=#eee
+|titlestyle={{NCAA color cell|Alabama Crimson Tide}};text-align:center;
+|state=autocollapse
+|title=No. 2 Georgia Bulldogs (5–0) at No. 6 Alabama Crimson Tide (5–0) – Game summary
+|date={{tooltip|October 10|Saturday}}
+|time=6:30 p.m. CDT
+|road='''No. 2 Bulldogs'''
+|R1=3|R2=7|R3=7|R4=3
+|home=No. 6 Crimson Tide 
+|H1=0|H2=14|H3=3|H4=0
+|stadium= Bryant–Denny Stadium • Tuscaloosa, Alabama
+|attendance= 100,077
+|weather= 
+|referee=Kyle Olson
+|TV=[[Saturday Night Football|ABC]]
+|TVAnnouncers=[[Chris Fowler]], [[Kirk Herbstreit]], [[Holly Rowe]], and [[Laura Rutledge]]
+|reference=
+|scoring=
+;First quarter 
+*(3:25) UGA – [[Peyton Woodring]] 43-yard field goal (''Drive: 7 plays, 36 yards, 4:15; '''Georgia 3–0''''')
+;Second quarter 
+*(7:09) UGA – [[London Humphreys]] 20-yard pass from [[Gunner Stockton]], Peyton Woodring kick (''Drive: 9 plays, 93 yards, 5:08; '''Georgia 10–0''''')
+*(5:49) ALA – [[Marshall Pritchett]] 22-yard pass from [[Keelon Russell]], Connor Talty kick (''Drive: 3 plays, 89 yards, 1:12; '''Georgia 10–7''''')
+*(0:03) ALA – [[EJ Crowell]] 1-yard run, Connor Talty kick (''Drive: 12 plays, 80 yards, 1:42; '''Alabama 14–10''''')
+;Third quarter 
+*(10:38) UGA – Gunner Stockton 14-yard run, Peyton Woodring kick (''Drive: 8 plays, 75 yards, 4:22; '''Georgia 17–14''''')
+*(5:07) ALA – Connor Talty 39-yard field goal (''Drive: 10 plays, 54 yards, 5:31; '''Tied 17–17''''')
+;Fourth quarter 
+*(5:25) UGA – Peyton Woodring 23-yard field goal (''Drive: 10 plays, 84 yards, 5:19; '''Georgia 20–17''''')
+}}
+{| class="wikitable" style="float:left"
+! Statistics !! style="{{CollegeSecondaryStyle|Georgia Bulldogs|color=white}}"|UGA!!style="{{NCAA color cell|Alabama Crimson Tide}}"|ALA
+|-
+| First downs || 21 || 17
+|-
+| Plays–yards || 61−455 || 60−346
+|-
+| Rushes–yards || 39−206 || 29−161
+|-
+| Passing yards || 249 || 185
+|-
+| Passing: comp–att–int || 18−22−1 || 16−31−0
+|-
+| Turnovers || 1 || 1
+|-
+| Time of possession || 33:28 || 26:32
+|}
+{| class="wikitable" style="float:right"
+! Team !! Category !! Player !! Statistics
+|-
+! rowspan=3 style="{{CollegeSecondaryStyle|Georgia Bulldogs|color=white}}|Georgia 
+| Passing
+| [[Gunner Stockton]]
+| 18/22, 249 yards, TD, INT
+|-
+| Rushing
+| [[Dwight Phillips Jr.]]
+| 17 carries, 120 yards
+|-
+| Receiving
+| [[Jaden Reddell]]
+| 1 reception, 53 yards
+|-
+! rowspan=3 style="{{NCAA color cell|Alabama Crimson Tide}}| Alabama
+| Passing
+| Keelon Russell
+| 16/31, 185 yards, TD
+|-
+| Rushing
+| Trae'shawn Brown
+| 9 carries, 90 yards
+|-
+| Receiving
+| Ryan Coleman-Williams
+| 3 receptions, 39 yards
+|}
+{{Clear}}
+
+===at No. 14 Tennessee (Third Saturday in October)===
+{{see also|2026 Tennessee Volunteers football team|Third Saturday in October}}
+{{Americanfootballbox
+|bg=#fff
+|bg2=#eee
+|titlestyle={{NCAA color cell|Alabama Crimson Tide}};text-align:center;
+|state=autocollapse
+|title=No. 6 Alabama Crimson Tide (5–1) at No. 14 Tennessee Volunteers (5–1) – Game summary
+|date={{tooltip|October 17|Saturday}}
+|time=2:30 p.m. CDT
+|road=No. 6 Crimson Tide
+|R1=0|R2=10|R3=0|R4=0
+|home='''No. 14 Volunteers'''
+|H1=9|H2=3|H3=7|H4=7
+|stadium= [[Neyland Stadium]] • [[Knoxville, Tennessee]]
+|attendance=101,915
+|weather=Cloudy • '''Temperature''': {{convert|59|F|C}} • '''Wind''': N {{convert|10|mph|km/h}}
+|referee=Tim Barker
+|TV=ABC
+|TVAnnouncers=Sean McDonough, Greg McElroy, and Katie George
+|reference=
+|scoring=
+;First quarter 
+;Second quarter  
+;Third quarter  
+;Fourth quarter 
+}}
+{| class="wikitable" style="float:left"
+! Statistics !! style="{{NCAA color cell|Alabama Crimson Tide}}"|ALA!!style="{{NCAA color cell|Tennessee Volunteers}}"|TENN
+|-
+| First downs || 12 || 20
+|-
+| Plays–yards || 55–201 || 72-347
+|-
+| Rushes–yards || 26–54 || 41–150
+|-
+| Passing yards || 147 || 197
+|-
+| Passing: comp–att–int || 19–29–2 || 21–31–1
+|-
+| Turnovers || 4 || 2
+|-
+| Time of possession || 24:16 || 35:44
+|}
+{| class="wikitable" style="float:right"
+! Team !! Category !! Player !! Statistics
+|-
+! rowspan=3 style="{{NCAA color cell|Alabama Crimson Tide}}"|Alabama
+| Passing
+| [[Keelon Russell]]
+| 19/29, 147 yards, 1 INT
+|-
+| Rushing
+| Keelon Russell
+| 11 carries, 43 yards, 1 TD
+|-
+| Receiving
+| [[Marshall Pritchett]]
+| 6 receptions, 39 yards
+|-
+! rowspan=3 style="{{NCAA color cell|Tennessee Volunteers}}|Tennessee
+| Passing
+| [[George MacIntyre (quarterback)|George MacIntyre]]
+| 21/31, 197 yards, 1 INT
+|-
+| Rushing
+| [[DeSean Bishop]]
+| 32 carries, 159 yards, 2 TD
+|-
+| Receiving
+| [[Mike Matthews (wide receiver)|Mike Matthews]]
+| 7 receptions, 85 yards
+|}
+{{Clear}}
+
+===vs Texas A&M===
+{{see also|2026 Texas A&M Aggies football team}}
+{{Americanfootballbox
+|bg=#fff
+|bg2=#eee
+|titlestyle={{NCAA color cell|Alabama Crimson Tide}};text-align:center;
+|state=autocollapse
+|title=Texas A&M Aggies (4–3) at No. 13 Alabama Crimson Tide (5–2) – Game summary
+|date={{tooltip|October 24|Saturday}}
+|time=2:30 p.m. CDT
+|road=Aggies
+|R1=7|R2=10|R3=3|R4=0
+|home='''No. 13 Crimson Tide'''
+|H1=10|H2=7|H3=0|H4=14
+|stadium= Bryant–Denny Stadium • Tuscaloosa, Alabama
+|attendance=100,077
+|weather=Sunny • '''Temperature''': {{convert|76|F|C}} • '''Wind''': SW {{convert|7|mph|km/h}}
+|referee=Adam Savoie
+|TV=ABC
+|TVAnnouncers=[[Joe Tessitore]], [[Jesse Palmer]], and [[Kris Budden]]
+|reference=
+|scoring=
+;First quarter 
+;Second quarter 
+;Third quarter 
+;Fourth quarter 
+}}
+{| class="wikitable" style="float:left"
+! Statistics !! style="{{CollegeSecondaryStyle|Texas A&M Aggies}}"|TAMU!!style="{{NCAA color cell|Alabama Crimson Tide}}"|ALA
+|-
+| First downs || 18 || 20
+|-
+| Plays–yards || 61–278 || 58–379
+|-
+| Rushes–yards || 40–115 || 28–68
+|-
+| Passing yards || 163 || 311
+|-
+| Passing: comp–att–int || 14–21–2 || 19–30–1
+|-
+| Turnovers || 3 || 1
+|-
+| Time of possession || 33:10 || 26:50
+|}
+{| class="wikitable" style="float:right"
+! Team !! Category !! Player !! Statistics
+|-
+! rowspan=3 style="{{CollegeSecondaryStyle|Texas A&M Aggies}}| Texas A&M
+| Passing
+| [[Marcel Reed]]
+| 14/21, 163 yards, TD, 2 INT
+|-
+| Rushing
+| [[KJ Edwards]]
+| 8 carries, 43 yards
+|-
+| Receiving
+| [[Mario Craver]]
+| 6 receptions, 45 yards, TD
+|-
+! rowspan=3 style="{{NCAA color cell|Alabama Crimson Tide}}| Alabama
+| Passing
+| Keelon Russell
+| 19/30, 311 yards, 3 TD, INT
+|-
+| Rushing
+| Daniel Hill
+| 9 carries, 36 yards
+|-
+| Receiving
+| Rico Scott
+| 6 receptions, 156 yards
+|}
+{{Clear}}
+
+===at No. 15 LSU (rivalry)===
+{{see also|2026 LSU Tigers football team|Alabama–LSU football rivalry}}
+{{Americanfootballbox
+|bg=#fff
+|bg2=#eee
+|titlestyle={{NCAA color cell|Alabama Crimson Tide}};text-align:center
+|state=autocollapse
+|title=No. 9 Alabama Crimson Tide (6–2) at No. 15 LSU Tigers (6–2) – Game summary
+|date={{tooltip|November 7|Saturday}}
+|time=3:30 p.m.
+|road=No. 9 Crimson Tide
+|R1=0 |R2=0 |R3=0 |R4=0
+|home=No. 15 Tigers
+|H1=0 |H2=0 |H3=0 |H4=0
+|stadium= [[Tiger Stadium (Louisiana)|Tiger Stadium]] • [[Baton Rouge, Louisiana]]
+|attendance=&nbsp;
+|weather=&nbsp;
+|referee= 
+|TV=ABC
+|TVAnnouncers= Chris Fowler, Kirk Herbstreit, Holly Rowe, and Laura Rutledge
+|reference=
+|scoring=
+;First quarter
+;Second quarter
+;Third quarter
+;Fourth quarter
+}}
+{| class="wikitable" style="float:left"
+! Statistics !! style="{{CollegePrimaryStyle|Alabama Crimson Tide}}"|ALA!!style="{{CollegePrimaryStyle|LSU Tigers}}"|LSU
+|-
+| First downs ||  || 
+|-
+| Plays–yards ||  || 
+|-
+| Rushes–yards ||  || 
+|-
+| Passing yards ||  || 
+|-
+| Passing: comp–att–int ||  || 
+|-
+| Turnovers ||  || 
+|-
+| Time of possession ||  || 
+|}
+{| class="wikitable" style="float:right"
+! Team !! Category !! Player !! Statistics
+|-
+! rowspan=3 style="{{CollegePrimaryStyle|Alabama Crimson Tide}}"|Alabama
+| Passing
+| 
+|
+|-
+| Rushing
+|
+|
+|-
+| Receiving
+| 
+|
+|-
+! rowspan=3 style="{{CollegePrimaryStyle|LSU Tigers}}|LSU
+| Passing
+| 
+|
+|-
+| Rushing
+| 
+| 
+|-
+| Receiving
+| 
+| 
+|}
+{{Clear}}
+
+===at Vanderbilt===
+{{see also|2026 Vanderbilt Commodores football team}}
+{{Americanfootballbox
+|bg=#fff
+|bg2=#eee
+|titlestyle={{CollegeSecondaryStyle|Alabama Crimson Tide}};text-align:center;
+|state=autocollapse
+|title= Alabama Crimson Tide (0–0) at Vanderbilt Commodores (0–0) – Game summary
+|date={{tooltip|November 14|Saturday}}
+|time=1:00 p.m.
+|road=Crimson Tide
+|R1= |R2= |R3= |R4=
+|home=Commodores
+|H1= |H2= |H3= |H4=
+|stadium= [[FirstBank Stadium]] • [[Nashville, Tennessee]]
+|attendance=&nbsp;
+|weather=&nbsp;
+|referee=
+|TV=
+|TVAnnouncers= 
+|reference=
+|scoring=
+;First quarter
+;Second quarter
+;Third quarter
+;Fourth quarter
+}}
+{| class="wikitable" style="float:left"
+! Statistics !! style="{{CollegeSecondaryStyle|Alabama Crimson Tide}}"|ALA!!style="{{CollegePrimaryStyle|Vanderbilt Commodores}}"|VAN
+|-
+| First downs ||  || 
+|-
+| Plays–yards ||  || 
+|-
+| Rushes–yards ||  || 
+|-
+| Passing yards ||  || 
+|-
+| Passing: comp–att–int ||  || 
+|-
+| Turnovers ||  || 
+|-
+| Time of possession ||  || 
+|}
+{| class="wikitable" style="float:right"
+! Team !! Category !! Player !! Statistics
+|-
+! rowspan=3 style="{{CollegeSecondaryStyle|Alabama Crimson Tide}}|Alabama
+| Passing
+| 
+|
+|-
+| Rushing
+|
+|
+|-
+| Receiving
+| 
+|
+|-
+! rowspan=3 style="{{CollegePrimaryStyle|Vanderbilt Commodores}}|Vanderbilt
+| Passing
+| 
+|
+|-
+| Rushing
+| 
+| 
+|-
+| Receiving
+| 
+| 
+|}
+{{Clear}}
+
+===vs Chattanooga (FCS) === 
+{{see also|2026 Chattanooga Mocs football team}}
+{{Americanfootballbox
+|bg=#fff
+|bg2=#eee
+|titlestyle={{NCAA color cell|Alabama Crimson Tide}};text-align:center;
+|state=autocollapse
+|title=Chattanooga Mocs (FCS) (0–0) at Alabama Crimson Tide (0–0) – Game summary
+|date={{tooltip|November 21|Saturday}}
+|time= 1:00 pm
+|road=Mocs {{small|(FCS)}}
+|R1= |R2= |R3= |R4=
+|home=Crimson Tide
+|H1= |H2= |H3= |H4=
+|stadium= Bryant–Denny Stadium • Tuscaloosa, Alabama
+|attendance=&nbsp;
+|weather=&nbsp;
+|referee=&nbsp;
+|TV=SECN+/[[ESPN+]]
+|TVAnnouncers=&nbsp;
+|reference=
+|scoring=
+;First quarter 
+;Second quarter  
+;Third quarter   
+;Fourth quarter 
+}}
+{| class="wikitable" style="float:left"
+! Statistics !! style="{{CollegeSecondaryStyle|Chattanooga Mocs}}"|UTC!!style="{{NCAA color cell|Alabama Crimson Tide}}"|ALA
+|-
+| First downs ||  || 
+|-
+| Plays–yards ||  || 
+|-
+| Rushes–yards ||  || 
+|-
+| Passing yards ||  || 
+|-
+| Passing: comp–att–int ||  || 
+|-
+| Turnovers ||  || 
+|-
+| Time of possession ||  || 
+|}
+{| class="wikitable" style="float:right"
+! Team !! Category !! Player !! Statistics
+|-
+! rowspan=3 style="{{CollegeSecondaryStyle|Chattanooga Mocs}}| Chattanooga 
+| Passing
+| 
+|
+|-
+| Rushing
+|
+|
+|-
+| Receiving
+| 
+|
+|-
+! rowspan=3 style="{{NCAA color cell|Alabama Crimson Tide}}| Alabama
+| Passing
+| 
+|
+|-
+| Rushing
+| 
+| 
+|-
+| Receiving
+| 
+| 
+|}
+{{Clear}}
+
+===vs Auburn (Iron Bowl)===
+{{see also|2026 Auburn Tigers football team|Iron Bowl}}
+{{Americanfootballbox
+|bg=#fff
+|bg2=#eee
+|titlestyle={{NCAA color cell|Alabama Crimson Tide}};text-align:center;
+|state=autocollapse
+|title=Auburn Tigers (0–0) at Alabama Crimson Tide (0–0) – Game summary
+|date={{tooltip|November 28|Saturday}}
+|time=
+|road=Tigers
+|R1= |R2= |R3= |R4=
+|home=Crimson Tide
+|H1= |H2= |H3= |H4=
+|stadium=Bryant–Denny Stadium • Tuscaloosa, Alabama
+|attendance=&nbsp;
+|weather=&nbsp;
+|referee=&nbsp;
+|TV=&nbsp;
+|TVAnnouncers=&nbsp;
+|reference=
+|scoring=
+;First quarter
+;Second quarter
+;Third quarter
+;Fourth quarter
+}}
+{| class="wikitable" style="float:left"
+! Statistics !! style="{{CollegeSecondaryStyle|Auburn Tigers}}"|AUB!!style="{{NCAA color cell|Alabama Crimson Tide}}"|ALA
+|-
+| First downs ||  || 
+|-
+| Plays–yards ||  || 
+|-
+| Rushes–yards ||  || 
+|-
+| Passing yards ||  || 
+|-
+| Passing: comp–att–int ||  || 
+|-
+| Turnovers ||  || 
+|-
+| Time of possession ||  || 
+|}
+{| class="wikitable" style="float:right"
+! Team !! Category !! Player !! Statistics
+|-
+! rowspan=3 style="{{CollegeSecondaryStyle|Auburn Tigers}}|Auburn
+| Passing
+| 
+|
+|-
+| Rushing
+|
+|
+|-
+| Receiving
+| 
+|
+|-
+! rowspan=3 style="{{CollegePrimaryStyle|Alabama Crimson Tide}}|Alabama
+| Passing
+| 
+|
+|-
+| Rushing
+| 
+| 
+|-
+| Receiving
+| 
+| 
+|}
+{{Clear}}
+
+==Personnel==
+=== Roster ===
+{| class="toccolours" style="text-align: left;"
+| colspan=11 style="{{CollegePrimaryStyle|Alabama Crimson Tide}}"| '''2026 Alabama Crimson Tide Football'''
+|-
+|valign="top"|
+
+'''Quarterbacks'''
+*10 – [[Austin Mack (quarterback)|Austin Mack]] – ''Senior (6'6, 226)''
+*11 - Tayden-Evan Kaawa - ''Freshman (6'5, 235)''
+*12 – [[Keelon Russell]] – ''Sophomore (6'3, 192)''
+*13 – John Gazzaniga – ''Sophomore (6'7, 252)''
+*15 - [[Jett Thomalla]] - ''Freshman (6'4, 200)''
+*19 – John Cooper – ''Junior (6'2, 192)''
+
+'''Running backs''' 
+*0 – AK Dear – ''Sophomore (6'0, 205)''
+*4 - [[Daniel Hill (running back)|Daniel Hill]] - ''Junior (6'1, 231)''
+*6 - Kevin Riley - ''Junior (5'11, 200)''
+*13 – [[Ezavier Crowell|EJ Crowell]] – ''Freshman (5'11, 210)''
+*17 - [[Trae'shawn Brown]] - ''Freshman (5'9, 190)''
+*20 – Khalifa Keith – ''Senior (6'1, 235)''
+*29 – Fredrick Moore – ''Junior (5'9, 160)'' 
+
+'''Wide receivers'''
+*1 - [[Ryan Coleman-Williams]] - ''Junior (6'1, 175)''
+*3 – [[Lotzeir Brooks]] – ''Sophomore (5'9, 185)''
+*5 - [[Noah Rogers]] - ''Senior (6'2, 205)''
+*7 - [[Rico Scott]] - ''Junior (6'1, 198)''
+*8 – [[Cederian Morgan]] – ''Freshman (6'4, 210)''
+*14 - Tyler Henderson - ''Junior (6'1, 173)''
+*21 - Maurice Mathis Jr. - ''Freshman (6'1, 180)''
+*23 – MJ Chirgwin – ''5th year (6'0, 195)''
+*24 - Amari Sabb - ''Freshman (5'9, 155)''
+*26 - Aubrey Walker - ''Freshman (5'10, 170)''
+*27 – Elijah Murray – ''Senior (5'11, 185)''
+*30 – Derek Meadows – ''Sophomore (6'5, 215)''
+*31 – Cooper Mollison – ''Junior (5'10, 177)''
+*42 – Ben Jackson – ''Sophomore (6'2, 170)''
+*83 – Warner Ross – ''Senior (5'10, 183)''
+
+'''Tight ends''' 
+*9 – [[Marshall Pritchett]] – ''Sophomore (6'5, 215)''
+*18 - Mack Sutter – ''Freshman (6'5, 220)''
+*40 - Josh Ford – ''Junior (6'6, 265)''
+*45 - Peyton Fox - ''5th year (6'4, 235)''
+*80 - Jaxon Shuttlesworth – ''Junior (6'5, 230)''
+*81 – [[Kaleb Edwards]] – ''Sophomore (6'6, 220)''
+*85 – Jack Sammarco – '' Junior (6'5, 252)''
+*86 - Jude Cascone - ''Freshman (6'2, 225)''
+*87 – Danny Lewis Jr. – ''5th year (6'5, 255)''
+*88 - Jay Lindsey - ''Junior (6'5, 235)''
+
+'''Specials teams'''
+*31 – Conor Talty – ''Senior (6'2, 195)'' (K)
+*32 – Alex Asparuhov – ''Sophomore (6'3, 190)'' (P)
+*33 - Adam Watford - ''Senior (5'11, 190)'' (P)
+*44 - Alex Rozier - ''5th year (6'4, 215)'' (LS)
+*45 - Jay Williams - ''Junior (6'1, 195)'' (LS)
+*47 - Eli Deutsch - ''Freshman (6'2, 225)'' (LS)
+*61 – Ethan Stangle – ''5th year (6'1, 220)'' (LS)
+*90 - Lorcan Quinn - ''Sophomore (6'1, 188)'' (K)
+*95 - Anderson Green - ''Junior (6'0, 205)'' (P)
+*98 - Tucker Cornelius - ''Junior (6'3, 185)'' (K)
+
+|width="25"|&nbsp;
+| style="font-size:90%; vertical-align:top;"|
+'''Offensive Lineman'''
+*50 - Casey Poe - ''Junior (6'4, 290)''
+*52 – Mal Waldrep Jr. – ''Sophomore (6'5, 280)''
+*53 – Mac Smith – ''Senior (6'3, 270)''
+*54 - Jayvin Q. James - ''Senior (6'5, 320)''
+*55 - Racin Delgatty - ''Senior (6'3, 300)''
+*57 - Bear Fretwell - ''Freshman (6'6, 290)''
+*59 - JD Martin - ''Junior (6'2, 240)''
+*62 – Davis Peterson – ''Senior (6'1, 235)''
+*63 - Bryson Cooley - ''Freshman (6'6, 320)''
+*64 – [[Michael Carroll (offensive lineman)|Michael Carroll]] – ''Sophomore (6'5, 290)''
+*65 - Tyrell Miller - ''Junior (6'5, 305)''
+*66 - Jared Graham – ''Freshman (6'6, 300)'' 
+*68 – Billy Roby – ''Senior (5'11, 245)''
+*69 – Baker Hickman – ''Senior (6'3, 315)''
+*70 - William Sanders - ''Junior (6'3, 290)''
+*71 - Nick Brooks - ''Sophomore (6'7, 349)''
+*72 - [[Ty Haywood]] - ''Sophomore (6'5, 316)''
+*73 - Chris Booker - ''Freshman (6'4, 280)''
+*75 - Ethan Fields - ''Senior (6'3, 320)''
+*77 – Jackson Lloyd – ''Sophomore (6'6, 295)''
+*79 – Kaden Strayhorn – ''Sophomore (6'2, 308)'' 
+
+'''Defensive Lineman'''
+*1 – [[Devan Thompkins]] – ''5th year (6'5, 285)''
+*14 – Fatutoa Henry – ''5th year (6'4, 272)''
+*22 - Kedrick Bingley-Jones - 6th year (6'4, 320)
+*25 – Steve Bolo Mboumoua – ''Junior (6'4, 285)''
+*26 - Kamhariyan Johnson - ''Freshman (6'3, 260)''
+*32 - Corey Howard Jr. - ''Freshman (6'6, 230)''
+*41 - Jamarion Matthews - ''Freshman (6'3, 255)''
+*44 - Nolan Wilson - ''Freshman (6'5, 250)''
+*88 – Isaia Faga – ''Junior (6'2, 291)''
+*90 – London Simmons – ''Sophomore (6'3, 305)''
+*91 - Caleb Smith - ''Sophomore (6'5, 270)''
+*92 – Jeremiah Beaman – ''Junior (6'4, 303)''
+*93 - Malique Franklin - ''Freshman (6'5, 250)''
+*94 – Edric Hill – ''Senior (6'3, 294)''
+*95 - Leslie Black - ''Senior (6'5, 285)''
+*99 – Terrance Green – ''Senior (6'5, 319)''
+
+|width="25"|&nbsp;
+| style="font-size:90%; vertical-align:top;"|
+'''Linebackers'''
+*0 – [[Yhonzae Pierre]] – ''Senior (6'3, 253)''
+*4 – [[Luke Metz]] – ''Sophomore (6'3, 210)''
+*7 – [[Caleb Woodson]] – ''Senior (6'3, 230)''
+*8 – Justin Hill – ''Sophomore (6'3, 220)''
+*9 – Desmond Umeozulu – ''Senior (6'6, 255)''
+*11 - [[Xavier Griffin]] - ''Freshman (6'4, 205)''
+*15 – Duke Johnson – ''Sophomore (6'2, 205)''
+*20 – [[Jah-Marien Latham]] – ''6th year (6'3, 275)''
+*23 – Cayden Jones – ''Junior (6'4, 210)''
+*30 – Bubba Odom – ''Senior (6'4, 235)''
+*34 - Zay Hall - ''Freshman (6'3, 225)''
+*35 – Abudall Sanders Jr. – ''Sophomore (6'2, 210)''
+*36 – QB Reese – ''Junior (6'4, 280)''
+*39 – Jake Ivie – ''Senior (6'0, 205)''
+*41 - Jamarion Matthews - ''Freshman (6'2, 252)'' 
+*82 - Lane Whisenhunt - ''Senior (6'2, 225)''
+
+'''Defensive backs'''
+*2 – [[Zabien Brown]] – ''Junior (6'0, 180)''
+*3 – [[Keon Sabb]] – ''5th year (6'1, 208)''
+*6 – [[Red Morgan (American football)|Red Morgan]] – ''Junior (6'0, 175)''
+*5 – [[Dijon Lee|Dijon Lee Jr.]] – ''Sophomore (6'4, 190)''
+*10 - [[Jireh Edwards]] - ''Freshman (6'2, 210)''
+*12 – Zavier Mincey – ''Junior (6'3, 180)''
+*13 – [[Ivan Taylor]] – ''Sophomore (6'0, 175)''
+*16 - [[Jorden Edmonds]] - ''Freshman (6'0, 205)''
+*17 - Zyan Gibson - ''Freshman (6'0, 175)''
+*18 – [[Bray Hubbard]] – ''Senior (6'2, 195)''
+*19 – Chuck McDonald II – ''Sophomore (6'0, 185)''
+*21 – [[Dre Kirkpatrick Jr]] – ''Junior (5'11, 192)''
+*24 - Rihayel Kelley - ''Freshman (6'0, 175)''
+*27 – Walter Sansing – ''Senior (5'10, 160)''
+*28 – Carmelo O'Neal – ''Junior (6'4, 200)''
+*29 - Nick Sherman - ''Junior (6'1, 200)''
+*31 - George Branch II - ''Freshman (6'1, 180)''
+*32 – Griffin Hanson – ''Sophomore (5'10, 160)'' 
+*34 – London Hill – ''Junior (5'11, 180)'' 
+*38 – Brody McCutcheon – ''Sophomore (6'1, 178)''
+|-
+|
+'''Legend'''
+* '''(C)''' Team captain
+* '''(S)''' Suspended
+* '''(I)''' Ineligible
+* [[File:Cruz Roja.svg|10px|Injured]] Injured
+* [[File:Redshirt.svg|10px|Redshirt]] Redshirt
+|-
+|colspan="7"|<hr /><small>Source and player details, 2026 Alabama Crimson Tide Football Commits (08/04/2026):<ref>{{cite web|url=https://rolltide.com/sports/football/roster|title=2026 Alabama Crimson Tide football roster|work=RollTide.com}}</ref></small>
+|}
+
+=== Coaching staff ===
+[[List of Alabama Crimson Tide head football coaches|Alabama head coach]] [[Kalen DeBoer]] will enter his third season as the Crimson Tide's head coach for the 2026 season. He led the Crimson Tide to a 20–8 record and [[2024 ReliaQuest Bowl (December)|ReliaQuest Bowl]] appearance in his first season.
+{| class="wikitable"
+{{CollegePrimaryHeader|team=Alabama Crimson Tide|Name|Position|Consecutive season at<br />Alabama in current position}}
+|-
+| [[Kalen DeBoer]] || [[Head coach]] ||align=center|3rd
+|-
+| [[Ryan Grubb]] || [[Offensive coordinator]] ||align=center|2nd
+|-
+| [[Bryan Ellis]] || [[Quarterback]]s coach ||align=center|1st
+|-
+| [[Derrick Nix (American football)|Derrick Nix]] || [[Wide receiver]]s coach||align=center|1st
+|-
+| [[Kane Wommack]] || [[Defensive coordinator]] ||align=center|3rd
+|-
+| [[Maurice Linguist]] || Co-[[defensive coordinator]] / [[defensive back|Cornerbacks]] coach ||align=center|3rd
+|-
+| Jason Jones || [[Safety (gridiron football position)|Safeties]] coach||align=center|2nd
+|-
+| [[Richard Owens (American football)|Richard Owens]]|| [[Tight end]]s coach ||align=center|1st
+|-
+| [[Robert Gillespie (American football)|Robert Gillespie]] || Assistant [[head coach]] / [[running back]]s coach ||align=center|6th
+|-
+| [[Adrian Klemm]] || [[Offensive line]] coach ||align=center|1st
+|-
+| [[Freddie Roach (American football)|Freddie Roach]] || Associate [[head coach]] / [[defensive line]] coach ||align=center|7th
+|-
+| [[Chuck Morrell]] || [[Inside linebacker]]s coach ||align=center|3rd
+|-
+| Christian Robinson || [[Outside linebacker]]s coach ||align=center|3rd
+|-
+| Jay Nunez || Special teams coordinator ||align=center|3rd
+|-
+| Brad Aoki || Pass game specialist ||align=center|1st
+|-
+| David Ballou || Head [[Strength and conditioning]] coach ||align=center|7th
+|-
+| colspan="4"  style="font-size:8pt; text-align:center;"|Reference: ''2026 Alabama Crimson Tide Football Media Guide''<ref name=a2>''2026 Alabama Crimson Tide Football Media Guide'', p. 2</ref>
+|}
+
+===Depth chart===
+* Depth chart is a projection and is subject to change.
+
+{{CFB Team Depth Chart
+| OScheme       = Spread Option
+| DScheme       = 4-3
+| SpecialTeams  = Yes
+| KeyReserves   = Yes
+| 3Deep         = Yes
+| QB_Starter    = [[Keelon Russell]]
+| QB_Backup      = [[Austin Mack (quarterback)|Austin Mack]]
+| QB_Third      = ''[[Jett Thomalla]]''
+| RB1_Starter    = [[Daniel Hill (running back)|Daniel Hill]] <br> ''[[Trae'shawn Brown]]''
+| RB1_Backup      = Kevin Riley
+| RB1_Third      = ''[[Ezavier Crowell|EJ Crowell]]''
+| WR1_Starter    = [[Ryan Coleman-Williams]]
+| WR1_Backup      = Derek Meadows
+| WR1_Third      = -
+| WR2_Starter    = [[Rico Scott]]
+| WR2_Backup      = ''[[Cederian Morgan]]''
+| WR2_Third      = -
+| WR3_Starter    = [[Lotzeir Brooks]]
+| WR3_Backup      = Tyler Henderson
+| WR3_Third      = -
+| TE1_Starter    = [[Kaleb Edwards]]
+| TE1_Backup      = Josh Ford
+| TE1_Third      = Danny Lewis Jr.
+| TE2_Starter    = Marshall Pritchett
+| TE2_Backup      = Jay Lindsey
+| TE2_Third      = ''Mack Sutter''
+| LT_Starter    = Jackson Lloyd
+| LT_Backup      = Tyrell Miller
+| LT_Third      = -
+| LG_Starter    = William Sanders
+| LG_Backup      = Mal Walden Jr.
+| LG_Third      = Kaden Strayhorn
+| C_Starter    = Racin Delgatty
+| C_Backup      = Casey Poe
+| C_Third      = -
+| RG_Starter    = [[Michael Carroll (offensive lineman)|Michael Carroll]]
+| RG_Backup      = Ethan Fields
+| RG_Third      =  -
+| RT_Starter    = Jayvin James
+| RT_Backup      = Nick Brooks
+| RT_Third      = -
+| WLB_Starter    = [[Yhonzae Pierre]]
+| ROLB_Backup      = Justin Hill
+| ROLB_Third      = [[Jah-Marien Latham]]
+| WLB_SchoolName =  WOLF
+| MLB_Starter   = [[Luke Metz]]
+| MLB_Backup    = QB Reese
+| MLB_Third     = Abduall Sanders Jr.
+| MLB_SchoolName = MIKE 
+| SLB_Starter    = [[Caleb Woodson]]
+| SLB_Backup      = ''[[Xavier Griffin]]''
+| SLB_Third      = -
+| SLB_SchoolName = STINGER
+| FS_Starter    = [[Bray Hubbard]]
+| FS_Backup      = Zavier Mincey
+| FS_Third      =  -
+| SS_Starter    = [[Keon Sabb]]
+| SS_Backup      = [[Dre Kirkpatrick Jr|Dre Kirkpatrick Jr.]]
+| SS_Third      = [[Ivan Taylor]]
+| SS_SchoolName = SS
+| DB1_Starter    = [[Zabien Brown]]
+| DB1_Backup      = ''Zyan Gibson''
+| DB1_Third      = -
+| DB2_Starter    = [[Dijon Lee|Djion Lee Jr.]]
+| DB2_Backup      = Carmelo O'Neal
+| DB2_Third      = -
+| RDE_Starter    = [[Devan Thompkins]]
+| RDE_Backup      = Desmond Umeozulu
+| RDE_Third      = Fatutoa Henry
+| RDT_Starter    = Terrance Green
+| RDT_Backup      = London Simmons
+| RDT_Third      = Isaia Faga
+| RDT_SchoolName = DL
+| LDT_Starter    = Kedrick Bingley-Jones
+| LDT_Backup      = Edric Hill
+| LDT_Third      = -
+| LDT_SchoolName = DL
+| LDE_Starter    = [[Red Morgan (American football)|Red Morgan]]
+| LDE_Backup      = Chuck McDonald III
+| LDE_Third      = -
+| PK_Starter    = Conor Talty
+| PK_Backup    = Lorcan Quinn
+| P_Starter     = Alex Asparuhov
+| P_Backup     = Adam Watford <br> Anderson Green
+| Kick_Returner = [[Ryan Coleman-Williams]] <br> [[Rico Scott]]
+| Punt_Returner = [[Lotzeir Brooks]] <br> ''[[Trae'shawn Brown]]'' <br> [[Dijon Lee|Djion Lee Jr.]]
+| Long_Snapper  = Ethan Stangle <br> Alex Rozier
+| Holder        =  Alex Asparuhov
+| OffenseRef      = Pro-style
+| DefenseRef      = 4-3
+| Key_Reserve_1 ='''Offense''' (WR) [[Noah Rogers]]
+| Key_Reserve_2 ='''Defense'''
+| Key_Reserve_3 ='''Special teams'''
+| Key_Reserve_4 = '''Out (indefinitely)'''
+| Key_Reserve_5 = '''Out (season)'''
+| Key_Reserve_6 = '''Out (suspended)'''
+| Key_Reserve_7 = '''Out (retired)'''
+| ColWidth      = 170
+| Autosize      = Yes
+| RowHeight     =
+| FontSize      = 100
+| Debug         = no
+}}
+
+''True Freshman''<br/>
+Double Position : * <br/>
+projected Depth Chart Week 1 vs East Carolina
+
+===Injury report===
+{| class="wikitable"
+|-
+! style="text-align:center; {{CollegePrimaryStyle|Alabama Crimson Tide|border=2|color=white}}"|Name !!  style="text-align:center; {{CollegePrimaryStyle| Alabama Crimson Tide |border=2|color=white}}"|Position !! style="text-align:center; {{CollegePrimaryStyle| Alabama Crimson Tide |border=2|color=white}}"|Class !! style="text-align:center; {{CollegePrimaryStyle| Alabama Crimson Tide |border=2|color=white}}"|Injury !! style="text-align:center; {{CollegePrimaryStyle| Alabama Crimson Tide |border=2|color=white}}"|Duration
+|-align="center"
+| / || / || / || / || /
+|-align="center"
+|}
+
+==Statistics==
+
+===Scoring===
+
+====Alabama  vs. non-conference opponents====
+{|
+|- style="text-align:left;"
+|{{Linescore Amfootball| 
+|Road=Opponents
+|R1=14
+|R2=7
+|R3=10
+|R4=8
+|Home=Alabama
+|H1=13
+|H2=51
+|H3=14
+|H4=20
+}}
+|}
+
+====Alabama vs. SEC opponents====
+{|
+|- style="text-align:left;"
+|{{Linescore Amfootball|
+|Road=SEC opponents
+|R1=33
+|R2=40
+|R3=26
+|R4=18
+|Home=Alabama
+|H1=45
+|H2=74
+|H3=35
+|H4=56
+}}
+|}
+
+====Alabama vs. all opponents====
+{|
+|- style="text-align:left;"
+|{{Linescore Amfootball|
+|Road=Opponents
+|R1=47
+|R2=47
+|R3=36
+|R4=26
+|Home=Alabama
+|H1=58
+|H2=125
+|H3=49
+|H4=76
+}}
+|}
+
+==Awards and honors==
+===Regular season honors===
+{| class="wikitable sortable sortable" style="text-align: center"
+|+ style="{{CollegePrimaryStyle|Alabama Crimson Tide}}" |'''SEC Weekly Honors'''
+{{CollegeSecondaryHeader|team=Alabama Crimson Tide|Date|Player|Class|Position|Honors|Ref.|border=2}}
+|-
+| rowspan=3|September 14
+| [[Caleb Woodson]]
+| Sr.
+| rowspan=2|LB
+| rowspan=2|SEC Co-Defensive Player of the Week
+| rowspan=3|<ref>{{cite web|url= https://www.secsports.com/news/2026/09/sec-football-players-of-the-week-sep-14|title= SEC Football Players of the Week: Sept. 14|publisher=secsports.com|date=September 14, 2026|accessdate=September 14, 2026}}</ref>
+|-
+| [[Luke Metz]]
+| So.
+|-
+| [[Devan Thompkins]]
+| 5th Yr.
+| DT
+| Big 12 Defensive Lineman Player of the Week
+|-
+| September 21
+| Conor Talty
+| Sr.
+| PK
+| SEC Special Teams Player of the Week
+|<ref>{{cite web|url= https://www.secsports.com/news/2026/09/sec-football-players-of-the-week-sep-21|title= SEC Football Players of the Week: Sept. 21|publisher=secsports.com|date=September 21, 2026|accessdate=September 21, 2026}}</ref>
+|-
+|rowspan=2|October 5
+|[[London Simmons]]
+|So.
+|DT
+|SEC Defensive Line Player of the Week
+|rowspan=2|<ref>{{cite web|url= https://www.secsports.com/news/2026/10/sec-football-players-of-the-week-oct-5|title= SEC Football Players of the Week: Oct. 5|publisher=secsports.com|date=October 5, 2026|accessdate=October 5, 2026}}</ref>
+|-
+|[[Xavier Griffin]]
+|Fr.
+|LB
+|SEC Freshman Player of the Year
+|-
+|}
+
+'''''Sources:'''''
+
+{| class="wikitable sortable sortable" style="text-align: center"
+|+ style="{{CollegePrimaryStyle|Alabama Crimson Tide}}" |'''National Weekly Honors'''
+{{CollegeSecondaryHeader|team=Alabama Crimson Tide|Date|Player|Class|Position|Honors|Source|border=2}}
+|-
+| 
+| 
+| 
+| 
+| 
+|
+|-
+|}
+
+===Postseason honors===
+==== National awards ====
+{| class="wikitable sortable" style="text-align:center"
+|+ style={{CollegePrimaryStyle|Alabama Crimson Tide}} | National Awards
+! style="{{CollegeSecondaryStyle|Alabama Crimson Tide}};" width="5%" | Recipient
+! style="{{CollegeSecondaryStyle|Alabama Crimson Tide}};" width="9%" | Award
+! style="{{CollegeSecondaryStyle|Alabama Crimson Tide}};" width="5%" | Date awarded
+! style="{{CollegeSecondaryStyle|Alabama Crimson Tide}};" width="1%" class="unsortable" | Ref.
+|-
+| 
+|  
+|
+|
+|}
+
+==== SEC Conference Individual Yearly awards ====
+{| class="wikitable sortable" style="text-align:center"
+|+ style={{CollegePrimaryStyle|Alabama Crimson Tide}} | Southeastern Conference Individual Awards
+! style="{{CollegeSecondaryStyle|Alabama Crimson Tide}};" width="5%" | Recipient
+! style="{{CollegeSecondaryStyle|Alabama Crimson Tide}};" width="9%" | Award
+! style="{{CollegeSecondaryStyle|Alabama Crimson Tide}};" width="5%" | Date awarded
+! style="{{CollegeSecondaryStyle|Alabama Crimson Tide}};" width="1%" class="unsortable" | Ref.
+|-
+| 
+|  
+|
+|
+|}
+
+====All-American honors====
+{{For|the complete All-America selections|2026 College Football All-America Team|2026 All-SEC football team}}
+ 
+{| class="wikitable" style="text-align: center"
+|+ style="{{CollegePrimaryStyle|Alabama Crimson Tide}}" | '''All-SEC'''
+|- align=center
+! style="{{CollegeSecondaryStyle|Alabama Crimson Tide}}" |Player
+! style="{{CollegeSecondaryStyle|Alabama Crimson Tide}}" |Position
+! style="{{CollegeSecondaryStyle|Alabama Crimson Tide}}" |1st/2nd team
+|- 
+| 
+|
+|-
+| colspan="3" | <small>HM = Honorable mention. Source: </small>
+|}
+
+{{columns-start}}
+{| class="wikitable" style="text-align: center"
+|+ style="{{CollegePrimaryStyle|Alabama Crimson Tide|border=no}}" | All-SEC Freshman
+|- align=center
+! style="{{CollegeSecondaryStyle|Alabama Crimson Tide}}" |Player
+! style="{{CollegeSecondaryStyle|Alabama Crimson Tide}}" |Position
+|-
+|
+|
+|-
+| colspan="3" | <small>HM = Honorable mention. Source:  </small>  
+|}
+{{columns-end}}
+
+{| class="wikitable" style="width: 90%;text-align: center;"
+|+ style={{CollegePrimaryStyle|Alabama Crimson Tide}} | NCAA Recognized All-American Honors
+!style={{CollegeSecondaryStyle|Alabama Crimson Tide}} | Player
+!style="{{CollegePrimaryStyle|Alabama Crimson Tide}}" | [[Associated Press|<span style="color:#F56600;">''AP''</span>]]
+!style={{CollegeSecondaryStyle|Alabama Crimson Tide}} |[[College Football All-America Team#AFCA|<span style="color:#F56600;">''AFCA''</span>]]
+!style={{CollegeSecondaryStyle|Alabama Crimson Tide}} |[[College Football All-America Team#Athletic|<span style="color:#F56600;">''Athletic''</span>]]
+!style={{CollegeSecondaryStyle|Alabama Crimson Tide}} |[[College Football All-America Team#Athlon Sports|<span style="color:#F56600;">''Athlon''</span>]]
+!style={{CollegeSecondaryStyle|Alabama Crimson Tide}} |[[College Football All-America Team#Bleacher Report|<span style="color:#F56600;">''BR''</span>]]
+!style={{CollegeSecondaryStyle|Alabama Crimson Tide}} |[[College Football All-America Team#College Football News|<span style="color:#F56600;">''CFN''</span>]]
+! style="{{CollegePrimaryStyle|Alabama Crimson Tide}}" | [[CBS Sports|<span style="color:#F56600;">''CBS Sports''</span>]]
+!style={{CollegeSecondaryStyle|Alabama Crimson Tide}} |[[College Football All-America Team#ESPN|<span style="color:#F56600;">''ESPN''</span>]]
+!style={{CollegeSecondaryStyle|Alabama Crimson Tide}} |[[College Football All-America Team#Fox Sports|<span style="color:#F56600;">''FOX''</span>]]
+!style={{CollegeSecondaryStyle|Alabama Crimson Tide}} |[[College Football All-America Team#FWAA|<span style="color:#F56600;">''FWAA''</span>]] 
+!style={{CollegeSecondaryStyle|Alabama Crimson Tide}} |[[College Football All-America Team#Phil Steele|<span style="color:#F56600;">''Phil Steele''</span>]]
+!style={{CollegeSecondaryStyle|Alabama Crimson Tide}} |[[College Football All-America Team#Sporting News|<span style="color:#F56600;">''TSN''</span>]]
+!style={{CollegeSecondaryStyle|Alabama Crimson Tide}} |[[College Football All-America Team#Sports Illustrated|<span style="color:#F56600;">''SI''</span>]]
+!style={{CollegeSecondaryStyle|Alabama Crimson Tide}} |[[College Football All-America Team#USA Today|<span style="color:#F56600;">''USAT''</span>]]
+! style="{{CollegePrimaryStyle|Alabama Crimson Tide}}" | [[Walter Camp Award|<span style="color:#F56600;">''Walter Camp''</span>]]
+!style={{CollegeSecondaryStyle|Alabama Crimson Tide}} | Designation
+|- align="center"
+|  || || || || || || || || || || || || || || || ||
+|- align="center"
+|-
+| colspan=17 | <small>The NCAA recognizes a selection to all five of the AFCA, FWAA and TSN first teams for unanimous selections and three of five for consensus selections.</small> <small>HM = Honorable mention. Source: </small> 
+|}
+
+==After the season==
+===All-star bowl games===
+
+===NFL draft===
+{{See also|2027 NFL draft}}
+
+The [[NFL draft]] will be held at [[National Mall]] in [[Washington, DC]] on April, 2027.
+
+'''Crimson Tide who were picked in the 2027 NFL draft:'''
+{| class="wikitable"
+{{CollegePrimaryHeader|team=Alabama Crimson Tide|border=2|Round |Pick |Player |Position |NFL Team }}
+|-
+|  ||  ||  ||  ||
+|-
+|}
+
+== Notes ==
+
+== See also ==
+* [[Alabama Crimson Tide football]]
+
+==References==
+{{Reflist}}
+
+{{Alabama Crimson Tide football}}
+[[Category:2026 Southeastern Conference football season|Alabama]]
+[[Category:Alabama Crimson Tide football seasons]]
+[[Category:2026 in sports in Alabama|Alabama Crimson Tide football]]

@@ -1,0 +1,4559 @@
+<!-- FIXTURE. Page: 2026 CR Flamengo season
+     Source: https://en.wikipedia.org/wiki/2026_CR_Flamengo_season
+     Revision id: 1383313464  (permanent link: https://en.wikipedia.org/w/index.php?oldid=1383313464)
+     Fetched: 2026-11-03 from the MediaWiki API (action=query&prop=revisions&rvprop=content|ids&rvslots=main&format=json),
+     User-Agent: Fanday/0.1 (machinemisha+fanday@gmail.com). Unmodified wikitext below this comment.
+     Text (c) Wikipedia contributors, licensed CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/);
+     authors are listed in the page history. Used here only as test data. -->
+{{Use dmy dates|date=December 2025}}
+{{Infobox football club season
+| club = [[CR Flamengo|Flamengo]]
+| season = [[2026 in Brazilian football|2026]]
+| manager = [[Filipe Luís]] (until 3 March 2026) <br> [[Leonardo Jardim]] (from 4 March 2026)
+| mgrtitle = Head coach
+| chairman = [[Luiz Eduardo Baptista]]
+| chrtitle = President
+| stadium = [[Maracanã Stadium|Maracanã]]
+| league = [[Campeonato Brasileiro Série A|Série A]]
+| league result = ''[[2026 Campeonato Brasileiro Série A|1st]]''
+| cup1 = [[Campeonato Carioca]]
+| cup1 result = '''[[2026 Campeonato Carioca|Winners]]'''
+| cup2 = [[Copa do Brasil]]
+| cup2 result = [[2026 Copa do Brasil|Fifth round]]
+| cup3 = [[Copa Libertadores]]
+| cup3 result = [[2026 Copa Libertadores|Semi-finals]]
+| cup4 = [[Supercopa do Brasil]]
+| cup4 result = [[2026 Supercopa do Brasil|Runners-up]]
+| cup5 = [[Recopa Sudamericana]]
+| cup5 result = [[2026 Recopa Sudamericana|Runners-up]]
+| league topscorer = <br> [[Pedro (footballer, born 1997)|Pedro]] (18 goals)
+| season topscorer = <br> [[Pedro (footballer, born 1997)|Pedro]] (27 goals)
+| highest attendance = 72,492 <br><small>(22 October 2026 vs [[Estudiantes de La Plata]], [[2026 Copa Libertadores|Copa Libertadores]])</small>
+| lowest attendance = 5,755 <br><small>(11 January 2026 vs [[Associação Atlética Portuguesa (RJ)|Portuguesa (RJ)]], [[2026 Campeonato Carioca|Campeonato Carioca]])</small>
+| average attendance = 
+| pattern_la1 = _flamengo26h
+| pattern_b1 = _flamengo26hA
+| pattern_ra1 = _flamengo26h
+| pattern_sh1 = _flamengo26h
+| pattern_so1 = _flamengo26hl
+| leftarm1 = 000000
+| body1 = 000000
+| rightarm1 = 000000
+| shorts1 = FFFFFF
+| socks1 = 000000
+| pattern_la2 = _flamengo26a
+| pattern_b2 = _flamengo26aA
+| pattern_ra2 = _flamengo26a
+| pattern_sh2 = _flamengo26a
+| pattern_so2 = 
+| leftarm2 = FFFFFF
+| body2 = FFFFFF
+| rightarm2 = FFFFFF
+| shorts2 = 000000
+| socks2 = FFFFFF
+| pattern_la3 = _flamengo26t
+| pattern_b3 = _flamengo26t
+| pattern_ra3 = _flamengo26t
+| pattern_sh3 = _unionberlin2627a
+| pattern_so3 = _adidasblackl
+| leftarm3 = FF0000
+| body3 = FF0000
+| rightarm3 = FF0000
+| shorts3 = 000000
+| socks3 = FF0000
+| prevseason = [[2025 CR Flamengo season|2025]]
+| nextseason = [[2027 CR Flamengo season|2027]]
+}}
+
+The '''2026 season''' is '''Clube de Regatas do Flamengo's''' 131st year of existence, their 115th football season, and their 56th in the [[Campeonato Brasileiro Série A]], having never been relegated from the top division. In addition to the [[2026 Campeonato Brasileiro Série A]], Flamengo also compete in the [[2026 Supercopa do Brasil]], [[2026 Recopa Sudamericana]], [[2026 Copa Libertadores|2026 CONMEBOL Copa Libertadores]], [[2026 Copa do Brasil]], and the [[2026 Campeonato Carioca]], the top tier of [[Rio de Janeiro (state)|Rio de Janeiro's]] state football.
+
+==Kits==
+'''Supplier:''' [[Adidas]] <br />
+'''Sponsors:''' [[Betano (company)|Betano]] ('''Main sponsor''') / Ademicon ('''Lower shirt''') / Hapvida ('''Back of the shirt''') / Assist Card ('''Lower back''')  / [[Banco de Brasília|Banco BRB]] ('''Shoulder''') / [[Shopee]] ('''Sleeves''') / [[Texaco]] ('''Numbers''') / [[GAC Group]] ('''Shorts''') / WAP ('''Shorts''') / [[Zé Delivery]] ('''Shorts''')
+
+{| style="margin-left:auto; margin-right:auto;" none;"
+|+ '''2026 season Outfield Kits'''
+|{{football kit
+| pattern_la = _flamengo26h
+| pattern_b  = _flamengo26hA
+| pattern_ra = _flamengo26h
+| pattern_sh = _flamengo26h
+| pattern_so = _flamengo26hl
+| leftarm    = FFFFFF
+| body       = FFFFFF
+| rightarm   = FFFFFF
+| shorts     = FFFFFF
+| socks      = FFFFFF
+| title      = Home
+}}
+
+|{{football kit
+| pattern_la = _flamengo26h
+| pattern_b  = _flamengo26hA
+| pattern_ra = _flamengo26h
+| pattern_sh = _flamengo25a
+| pattern_so = _flamengo26hl
+| leftarm    = FFFFFF
+| body       = FFFFFF
+| rightarm   = FFFFFF
+| shorts     = FFFFFF
+| socks      = FFFFFF
+| title      = Home alt.<sup>1</sup>
+}}
+
+|{{football kit
+| pattern_la = _flamengo26h
+| pattern_b  = _flamengo26hA
+| pattern_ra = _flamengo26h
+| pattern_sh = _flamengo26a
+| pattern_so = _flamengo26hl
+| leftarm    = FFFFFF
+| body       = FFFFFF
+| rightarm   = FFFFFF
+| shorts     = FFFFFF
+| socks      = FFFFFF
+| title      = Home alt.<sup>2</sup>
+}}
+
+|{{football kit
+| pattern_la = _flamengo26h
+| pattern_b  = _flamengo26hA
+| pattern_ra = _flamengo26h
+| pattern_sh = _flamengo26h
+| pattern_so = _flamengo25al
+| leftarm    = FFFFFF
+| body       = FFFFFF
+| rightarm   = FFFFFF
+| shorts     = FFFFFF
+| socks      = FFFFFF
+| title      = Home alt.<sup>3</sup>
+}}
+
+|{{football kit
+| pattern_la = _flamengo26h
+| pattern_b  = _flamengo26hA
+| pattern_ra = _flamengo26h
+| pattern_sh = _flamengo26h
+| pattern_so = 
+| leftarm    = FFFFFF
+| body       = FFFFFF
+| rightarm   = FFFFFF
+| shorts     = FFFFFF
+| socks      = FFFFFF
+| title      = Home alt.<sup>4</sup>
+}}
+
+|{{football kit
+| pattern_la = _flamengo26a
+| pattern_b  = _flamengo26aA
+| pattern_ra = _flamengo26a
+| pattern_sh = _flamengo26a
+| pattern_so = 
+| leftarm    = FFFFFF
+| body       = FFFFFF
+| rightarm   = FFFFFF
+| shorts     = FFFFFF
+| socks      = FFFFFF
+| title      = Away
+}}
+
+|{{football kit
+| pattern_la = _flamengo26a
+| pattern_b  = _flamengo26aA
+| pattern_ra = _flamengo26a
+| pattern_sh = _flamengo26h
+| pattern_so = _flamengo25al
+| leftarm    = FFFFFF
+| body       = FFFFFF
+| rightarm   = FFFFFF
+| shorts     = FFFFFF
+| socks      = FFFFFF
+| title      = Away alt.<sup>1</sup>
+}}
+
+|{{football kit
+| pattern_la = _flamengo26a
+| pattern_b  = _flamengo26aA
+| pattern_ra = _flamengo26a
+| pattern_sh = _flamengo26h
+| pattern_so = 
+| leftarm    = FFFFFF
+| body       = FFFFFF
+| rightarm   = FFFFFF
+| shorts     = FFFFFF
+| socks      = FFFFFF
+| title      = Away alt.<sup>2</sup>
+}}
+
+|{{football kit
+| pattern_la = _flamengo26t
+| pattern_b  = _flamengo26t
+| pattern_ra = _flamengo26t
+| pattern_sh = _unionberlin2627a
+| pattern_so = _adidasblackl
+| leftarm    = FFFFFF
+| body       = FFFFFF
+| rightarm   = FFFFFF
+| shorts     = FFFFFF
+| socks      = FF0000
+| title      = Third
+}}
+|}
+
+{| style="margin-left:auto; margin-right:auto;" none;"
+|+ '''2026 season Goalkeeper Kits'''
+|{{football kit
+|pattern_la = _adidasgk26blue
+|pattern_b  = _adidasgk26blue
+|pattern_ra = _adidasgk26blue
+|pattern_sh = _adidasgk26blue
+|pattern_so = _adidasgk26bluel
+|leftarm    = FFFFFF
+|body       = FFFFFF
+|rightarm   = FFFFFF
+|shorts     = 85C5FF
+|socks      = 85C5FF
+|title      = <small>Goalkeeper <!--<sup> </sup> --></small>
+}}
+
+|{{football kit
+|pattern_la = _adidasgk26orange
+|pattern_b  = _adidasgk26orange
+|pattern_ra = _adidasgk26orange
+|pattern_sh = _adidasgk26orange
+|pattern_so = _adidasgk26orangel
+|leftarm    = FFFFFF
+|body       = FFFFFF
+|rightarm   = FFFFFF
+|shorts     = 85C5FF
+|socks      = 85C5FF
+|title      = <small>Goalkeeper <!--<sup> </sup> --></small>
+}}
+
+|{{football kit
+|pattern_la = _adidasgk26yellow
+|pattern_b  = _adidasgk26yellow
+|pattern_ra = _adidasgk26yellow
+|pattern_sh = _adidasgk26yellow
+|pattern_so = _adidasgk26yellowl
+|leftarm    = FFFFFF
+|body       = FFFFFF
+|rightarm   = FFFFFF
+|shorts     = 85C5FF
+|socks      = 85C5FF
+|title      = <small>Goalkeeper <!--<sup> </sup> --></small>
+}}
+
+|{{football kit
+|pattern_la = _adidasoriginalsgk26cyan
+|pattern_b  = _adidasoriginalsgk26cyan
+|pattern_ra = _adidasoriginalsgk26cyan
+|pattern_sh = _adidasoriginalsgk26cyan
+|pattern_so = _adidasoriginalsgk26cyanL
+|leftarm    = 0FB1FF
+|body       = 0FB1FF
+|rightarm   = 0FB1FF
+|shorts     = 0FB1FF
+|socks      = 0FB1FF
+|title      = <small>Goalkeeper<!--<sup> </sup>--></small>
+}}
+
+|{{football kit
+|pattern_la = _juventus2425g1
+|pattern_b  = _juventus2425g1
+|pattern_ra = _juventus2425g1
+|pattern_sh = _adidasblack
+|pattern_so = _adidasblackl
+|leftarm    = FFFFFF
+|body       = FFFFFF
+|rightarm   = FFFFFF
+|shorts     = E0E0E0
+|socks      = E0E0E0
+|title      = <small>Goalkeeper<!--<sup> </sup>--></small>
+}}
+|}
+
+{| style="margin-left:auto; margin-right:auto;" none;"
+|+ '''2025 season Outfield Kits'''
+|{{football kit
+| pattern_la = _flamengo25h
+| pattern_b  = _flamengo25h
+| pattern_ra = _flamengo25h
+| pattern_sh = _flamengo25h
+| pattern_so = _flamengo25hl
+| leftarm    = FFFFFF
+| body       = FFFFFF
+| rightarm   = FFFFFF
+| shorts     = FFFFFF
+| socks      = FFFFFF
+| title      = Home
+}}
+
+|{{football kit
+| pattern_la = _flamengo25a
+| pattern_b  = _flamengo25a
+| pattern_ra = _flamengo25a
+| pattern_sh = _flamengo25a
+| pattern_so = _flamengo25al
+| leftarm    = FFFFFF
+| body       = FFFFFF
+| rightarm   = FFFFFF
+| shorts     = FFFFFF
+| socks      = FFFFFF
+| title      = Away
+}}
+
+|{{football kit
+| pattern_la = _flamengo25a
+| pattern_b  = _flamengo25a
+| pattern_ra = _flamengo25a
+| pattern_sh = _flamengo26h
+| pattern_so = _flamengo25al
+| leftarm    = FFFFFF
+| body       = FFFFFF
+| rightarm   = FFFFFF
+| shorts     = FFFFFF
+| socks      = FFFFFF
+| title      = Away alt.<sup>1</sup>
+}}
+
+|{{football kit
+| pattern_la = _flamengo25t
+| pattern_b  = _flamengo25t
+| pattern_ra = _flamengo25t
+| pattern_sh = _flamengo25t
+| pattern_so = _flamengo25tl
+| leftarm    = F7F0E7
+| body       = F7F0E7
+| rightarm   = F7F0E7
+| shorts     = F7F0E7
+| socks      = F7F0E7
+| title      = Third
+}}
+|}
+
+{| style="margin-left:auto; margin-right:auto;" none;"
+|+ '''2025 season Goalkeeper Kits'''
+|{{football kit
+|pattern_la = _adidastirogk24sbP1
+|pattern_b  = _adidastirogk24sbP
+|pattern_ra = _adidastirogk24sbP1
+|pattern_sh = _adidastirogk23sbP
+|pattern_so = _adidasbluel
+|leftarm    = FFFFFF
+|body       = FFFFFF
+|rightarm   = FFFFFF
+|shorts     = 85C5FF
+|socks      = 85C5FF
+|title      = <small>Goalkeeper<sup>1</sup></small>
+}}
+
+|{{football kit
+|pattern_la = _adidastirogk24rmP1
+|pattern_b  = _adidastirogk24rmP
+|pattern_ra = _adidastirogk24rmP1
+|pattern_sh = _adidastirogk23rmP
+|pattern_so = _adidaswhitel
+|leftarm    = FFFFFF
+|body       = FFFFFF
+|rightarm   = FFFFFF
+|shorts     = FF44A4
+|socks      = FF44A4
+|title      = <small>Goalkeeper<sup>2</sup></small>
+}}
+
+|{{football kit
+|pattern_la = _adidastirogk24syP1
+|pattern_b  = _adidastirogk24syP
+|pattern_ra = _adidastirogk24syP1
+|pattern_sh = _adidastirogk23syP
+|pattern_so = _adidasorangel
+|leftarm    = FFFFFF
+|body       = FFFFFF
+|rightarm   = FFFFFF
+|shorts     = DAFF00
+|socks      = DAFF00
+|title      = <small>Goalkeeper<sup>3</sup></small>
+}}
+
+|{{football kit
+| pattern_la = _juventus2425g3
+| pattern_b  = _juventus2425g3
+| pattern_ra = _juventus2425g3
+| pattern_sh = _adidaswhite
+| pattern_so = _adidaswhitel
+|leftarm     = FC0000
+|body        = FC0000
+|rightarm    = FC0000
+|shorts      = FC0000
+|socks       = FC0000
+|title       = <small>Goalkeeper<sup>4</sup></small>
+}}
+|}
+
+=== Kit information ===
+This is Adidas's 13th year supplying Flamengo kit during its second stint with the team, having taken over from [[Olympikus]] at the beginning of the 2013 season.<ref>{{Cite web |url=http://www.sambafoot.com/en/news/40523_flamengo_approve____150_million_adidas_kit_deal.html |title=Flamengo approve €150 million Adidas kit deal |date=20 December 2012 |publisher=sambafoot.com |access-date=27 February 2020}}</ref><ref>{{Cite web |url=http://www.sportspromedia.com/news/flamengo_announce_record_adidas_deal |title=Flamengo announce record Adidas deal |date=21 December 2012 |publisher=sportspromedia.com |access-date=27 February 2020}}</ref> The deal was renewed for another 5 seasons on 29 April 2024.<ref>{{Cite web |url=https://ge.globo.com/futebol/times/flamengo/noticia/2024/04/29/flamengo-renova-com-fornecedora-de-material-esportivo-veja-detalhes-do-novo-contrato.ghtml |title=Flamengo renova com fornecedora de material esportivo; veja detalhes do novo contrato |publisher=ge.globo |language=pt-BR |date=29 April 2024 |access-date=9 June 2025}}</ref>
+
+*'''Home:''' The club revealed their new home kit for the 2026 season on 16 January. The kit maintain Flamengo's traditional colours of red and black and references the club's kits used in the 1980s, also produced by Adidas during its first stint. The shirt has a polo collar without buttons and its body is predominantly black (just like the previous two seasons) and contains three large black stripes and two large red stripes. It's complemented by white shorts and red socks with a large black stripe.<ref>{{cite web|url=https://ge.globo.com/futebol/times/flamengo/noticia/2026/01/16/flamengo-lanca-uniforme-principal-para-a-temporada-2026-veja-fotos.ghtml|title=Flamengo lança uniforme principal para a temporada 2026; veja fotos|publisher=ge.globo.com|date=2026-01-16|access-date=2026-01-16}}</ref>
+*'''"Away":''' On 10 April, Flamengo released their second kit and retires the term "Away", referring to the kit as "''Manto 1 Branco''" ("White Home kit" in context). The shirt has a white body with two horizontal stripes (red on the top stripe and black on the bottom stripe) centered at chest level, which were last used in 2019. It's complemented by black shorts and white socks<ref>{{cite web|url=https://ge.globo.com/futebol/times/flamengo/noticia/2026/04/10/flamengo-lanca-novo-uniforme-para-a-temporada-2026-veja-fotos.ghtml|title=Flamengo lança novo uniforme para a temporada 2026; veja fotos|publisher=ge.globo.com|date=2026-04-10|access-date=2026-04-25}}</ref>
+*'''GK:''' The new goalkeeper kits are based on Adidas' goalkeeper template for the 2026–27 season.
+
+=== Kit usage ===
+{{Updated|19 March 2026}}
+
+{| class="wikitable" style="font-size:90%;"
+|-
+! Kit !! Combination !! Usage
+|-
+! colspan="3" | Kits from the 2026 season
+|-
+| '''Home'''
+| Black and red-striped shirt, white shorts and red and black socks.
+| {{bulleted list
+ | Campeonato Brasileiro: used at home against Internacional,<ref name="CRF SCI BR1">{{Cite web|url=https://ge.globo.com/rj/futebol/brasileirao-serie-a/jogo/04-02-2026/flamengo-internacional.ghtml|title=Report: Flamengo 1–1 Internacional|publisher=ge.globo.com|date=2026-02-04|access-date=2026-02-04}}</ref> Cruzeiro<ref name="CRF CEC BR1">{{Cite web|url=https://ge.globo.com/rj/futebol/brasileirao-serie-a/jogo/11-03-2026/flamengo-cruzeiro.ghtml|title=Report: Flamengo 2–0 Cruzeiro|publisher=ge.globo.com|date=2026-03-11|access-date=2026-03-16}}</ref> and Remo.<ref name="CRF CR BR1">{{Cite web|url=https://ge.globo.com/rj/futebol/brasileirao-serie-a/jogo/19-03-2026/flamengo-remo.ghtml|title=Report: Flamengo 3–0 Remo|publisher=ge.globo.com|date=2026-03-19|access-date=2026-03-20}}</ref><!--
+ | Copa do Brasil:-->
+ | Supercopa do Brasil: used against Corinthians.<ref name="CRF SCCP SB">{{Cite web|url=https://ge.globo.com/futebol/supercopa-do-brasil/jogo/01-02-2026/flamengo-corinthians.ghtml|title=Report: Flamengo 0–2 Corinthians|publisher=ge.globo.com|date=2026-02-01|access-date=2026-02-02}}</ref>  
+ | Campeonato Carioca: used at home against Vasco da Gama<ref name="CRF CRVG CC">{{Cite web|url=https://ge.globo.com/rj/futebol/campeonato-carioca/jogo/21-01-2026/flamengo-vasco.ghtml|title=Report: Flamengo 1–0 Vasco|publisher=ge.globo.com|date=2026-01-21|access-date=2026-01-22}}</ref> Sampaio Corrêa<ref name="CRF SCFE CC">{{Cite web|url=https://ge.globo.com/rj/futebol/campeonato-carioca/jogo/07-02-2026/flamengo-sampaiocorreiafuteboleesporte.ghtml|title=Report: Flamengo 7–1 Sampaio Corrêa-RJ|publisher=ge.globo.com|date=2026-02-07|access-date=2026-02-09}}</ref> and Madureira;<ref name="CRF MEC CC SF1">{{Cite web|url=https://ge.globo.com/rj/futebol/campeonato-carioca/jogo/22-02-2026/flamengo-madureira.ghtml|title=Report: Flamengo 3–0 Madureira|publisher=ge.globo.com|date=2026-02-22|access-date=2026-02-22}}</ref> used away against Botafogo.<ref name="CRF BFR CC">{{Cite web|url=https://ge.globo.com/rj/futebol/campeonato-carioca/jogo/15-02-2026/botafogo-flamengo.ghtml|title=Report: Botafogo 1–2 Flamengo|publisher=ge.globo.com|date=2026-02-15|access-date=2026-02-15}}</ref>
+ | Recopa Sudamericana: used at home against Lanús.<ref name="CRF CAL RSD2">{{Cite web|url=https://ge.globo.com/recopa-sul-americana/jogo/26-02-2026/flamengo-lanus.ghtml|title=Report: Flamengo 2–3 Lanús|publisher=ge.globo.com|date=2026-02-26|access-date=2026-02-27}}</ref>
+ }}
+|-
+| '''Home''' alt.<sup>1</sup>
+| Black and red-striped shirt, black shorts (2025 season) and red and black socks.
+| {{bulleted list
+ | Campeonato Brasileiro: used away against São Paulo.<ref name="CRF SPFC BR1">{{Cite web|url=https://ge.globo.com/sp/futebol/brasileirao-serie-a/jogo/28-01-2026/sao-paulo-flamengo.ghtml|title=Report: São Paulo 2–1 Flamengo|publisher=ge.globo.com|date=2026-01-25|access-date=2026-01-26}}</ref><!--
+ | Copa do Brasil:-->
+ | Campeonato Carioca: used away against Fluminense;<ref name="CRF FFC CC">{{Cite web|url=https://ge.globo.com/rj/futebol/campeonato-carioca/jogo/25-01-2026/fluminense-flamengo.ghtml|title=Report: Fluminense 2–1 Flamengo|publisher=ge.globo.com|date=2026-01-25|access-date=2026-01-26}}</ref> used in the final against Fluminense.<ref name="CRF FFC CC F">{{Cite web|url=https://ge.globo.com/rj/futebol/campeonato-carioca/jogo/08-03-2026/fluminense-flamengo.ghtml|title=Report: Fluminense (4) 0–0 (5) Flamengo|publisher=ge.globo.com|date=2026-03-08|access-date=2026-03-10}}</ref>
+ }}
+|-
+| '''Away'''
+| White shirt with a horizontal red and black stripe, black shorts and white socks.
+|
+|-
+| '''Goalkeeper'''<!--<sup>3</sup>-->
+| Grey shirt, grey shorts and grey socks.
+| {{bulleted list<!--
+ | Campeonato Brasileiro:
+ | Copa do Brasil:-->
+ | Campeonato Carioca: used at home against Sampaio Corrêa;<ref name="CRF SCFE CC" /> used in the final against Fluminense.<ref name="CRF FFC CC F" />
+ }}
+|-
+! colspan="3" | Kits from the 2025 season
+|-
+| '''Home'''
+| Black and red-striped shirt, white shorts and black and red socks.
+| {{bulleted list<!--
+ | Campeonato Brasileiro:
+ | Copa do Brasil:-->
+ | Campeonato Carioca: used at home against Portuguesa;<ref name="CRF POR-RJ CC">{{Cite web|url=https://ge.globo.com/rj/futebol/campeonato-carioca/jogo/11-01-2026/flamengo-portuguesa-rio.ghtml|title=Report: Flamengo 1–1 Portuguesa-RJ|publisher=ge.globo.com|date=2026-01-11|access-date=2026-01-12}}</ref> used away against Bangu.<ref name="CRF BNG CC">{{Cite web|url=https://ge.globo.com/rj/futebol/campeonato-carioca/jogo/14-01-2026/bangu-flamengo.ghtml|title=Report: Bangu 1–2 Flamengo|publisher=ge.globo.com|date=2026-01-28|access-date=2026-01-28}}</ref>
+ }}
+|-
+| '''Away'''
+| Withe shirt with red and black sleeves, black shorts and white socks.
+<!--| {{bulleted list
+ | Campeonato Brasileiro:
+ | Copa do Brasil:
+ | Campeonato Carioca:
+ }}-->
+|-
+| '''Away''' alt.<sup>1</sup>
+| Withe shirt with red and black sleeves, white shorts (2026 season) and white socks.
+| {{bulleted list
+ | Campeonato Brasileiro: used away against Vitória<ref name="CRF ECV BR1">{{Cite web|url=https://ge.globo.com/ba/futebol/brasileirao-serie-a/jogo/10-02-2026/vitoria-flamengo.ghtml|title=Report: Vitória 1–2 Flamengo|publisher=ge.globo.com|date=2026-02-10|access-date=2026-02-11}}</ref> and Botafogo.<ref name="CRF BFR BR1">{{Cite web|url=https://ge.globo.com/rj/futebol/brasileirao-serie-a/jogo/14-03-2026/botafogo-flamengo.ghtml|title=Report: Botafogo 0–3 Flamengo|publisher=ge.globo.com|date=2026-03-14|access-date=2026-03-16}}</ref><!--
+ | Copa do Brasil:-->
+ | Campeonato Carioca: used away against Madureira.<ref name="CRF MEC CC SF2">{{Cite web|url=https://ge.globo.com/rj/futebol/campeonato-carioca/jogo/02-03-2026/madureira-flamengo.ghtml|title=Report: Madureira 0–8 Flamengo|publisher=ge.globo.com|date=2026-03-02|access-date=2026-03-05}}</ref>
+ | Recopa Sudamericana: used away against Lanús.<ref name="CRF CAL RSD1">{{Cite web|url=https://ge.globo.com/futebol/recopa-sul-americana/jogo/19-02-2026/lanus-flamengo.ghtml|title=Report: Lanús 1–0 Flamengo|publisher=ge.globo.com|date=2026-02-19|access-date=2026-02-20}}</ref>
+ }}
+|-
+| '''Third'''
+| Off-white shirt, off-white shorts and off-white socks; all details in gold, black and red
+| {{bulleted list<!--
+ | Campeonato Brasileiro:
+ | Copa do Brasil:-->
+ | Campeonato Carioca: used away against Volta Redonda.<ref name="CRF VRE CC">{{Cite web|url=https://ge.globo.com/rj/sul-do-rio-costa-verde/futebol/campeonato-carioca/jogo/17-01-2026/volta-redonda-flamengo.ghtml|title=Report: Volta Redonda 3–0 Flamengo|publisher=ge.globo.com|date=2026-01-17|access-date=2026-01-18}}</ref>
+ }}
+|-
+| '''Goalkeeper'''<sup>1</sup>
+| Blue shirt, blue shorts and blue socks.
+| {{bulleted list
+ | Campeonato Brasileiro: used at home against Internacional;<ref name="CRF SCI BR1" /> used away against Vitória.<ref name="CRF ECV BR1" /><!--
+ | Copa do Brasil:-->
+ | Campeonato Carioca: used at home against Portuguesa;<ref name="CRF POR-RJ CC" /> used away against Fluminense.<ref name="CRF FFC CC" />
+ | Recopa Sudamericana: used against Lanús (twice).<ref name="CRF CAL RSD1" /><ref name="CRF CAL RSD2" />
+ }}
+|-
+| '''Goalkeeper'''<sup>2</sup>
+| Pink shirt, pink shorts and pink socks.
+| {{bulleted list
+ | Campeonato Brasileiro: used at home against Cruzeiro;<ref name="CRF CEC BR1" /> used away against São Paulo,<ref name="CRF SPFC BR1" /> Botafogo<ref name="CRF BFR BR1" /> and Remo.<ref name="CRF CR BR1" /><!--
+ | Copa do Brasil:-->
+ | Supercopa do Brasil: used against Corinthians.<ref name="CRF SCCP SB" />
+ | Campeonato Carioca: used at home against Vasco da Gama;<ref name="CRF CRVG CC" /> used away against Bangu.<ref name="CRF BNG CC" />
+ }}
+|-
+| '''Goalkeeper'''<sup>3</sup>
+| Lime shirt, lime shorts and lime socks.
+<!--| {{bulleted list
+ | Campeonato Brasileiro:
+ | Copa do Brasil:
+ | Campeonato Carioca:
+ }}-->
+|-
+| '''Goalkeeper'''<sup>4</sup>
+| Red shirt, red shorts and red socks.
+| {{bulleted list<!--
+ | Campeonato Brasileiro:
+ | Copa do Brasil:-->
+ | Campeonato Carioca: used at home against Madureira;<ref name="CRF MEC CC SF1" /> used away against Volta Redonda,<ref name="CRF VRE CC" /> Botafogo<ref name="CRF BFR CC" /> and Madureira.<ref name="CRF MEC CC SF2" />
+ }}
+|}
+
+==Competitions==
+===Overview===
+{{Fb overview2
+|c=4
+|c1=[[2026 Campeonato Brasileiro Série A|Série A]] |fm1=28 January 2026 |lm1=2 December 2026 |sr1=Matchday 1 |fp1=TBD |w1=22 |d1=7 |l1=4 |f1=68 |a1=28
+|c2=[[2026 Copa do Brasil|Copa do Brasil]] |fm2=22 April 2026 |lm2=14 May 2026 |sr2=Fifth round |fp2=Fifth round |w2=1 |d2=0 |l2=1 |f2=2 |a2=3
+|c3=[[2026 Campeonato Carioca|Campeonato Carioca]] |fm3=11 January 2026 |lm3=8 March 2026 |sr3=Group stage |fp3=Winners |w3=5 |d3=2 |l3=3 |f3=24 |a3=10
+|c4=[[2026 Copa Libertadores|Copa Libertadores]] |fm4=8 April 2026 |lm4=22 October 2026 |sr4=Group stage |fp4=Semi-finals |w4=7 |d4=5 |l4=0 |f4=20 |a4=5
+|c5=[[2026 Supercopa do Brasil|Supercopa do Brasil]] |dm5=1 February 2026 |sr5=Final |fp5=Runners-up |w5=0 |d5=0 |l5=1 |f5=0 |a5=2
+|c6=[[2026 Recopa Sudamericana|Recopa Sudamericana]] |fm6=19 February 2026 |lm6=26 February 2026 |sr6=Final |fp6=Runners-up |w6=0 |d6=0 |l6=2 |f6=2 |a6=4
+|u=29 October 2026
+}}
+
+===Friendlies===
+{{legend2|#CCFFCC|Win|border=1px solid #AAAAAA}}
+{{legend2|#FFFFCC|Draw|border=1px solid #AAAAAA}}
+{{legend2|#FFCCCC|Loss|border=1px solid #AAAAAA}}
+
+''Goals, assists and red cards are shown.''
+
+{{Football box collapsible
+|result=D
+|date=3 July 2026
+|time={{UTZ|15:30|-3}}
+|round=Friendly
+|report=https://www.soccerway.com/match/flamengo-rj-WjxY29qB/river-plate-EVqSBe2f/?mid=dv7M8aNq
+|team1=Flamengo {{flagicon|BRA}}
+|goals1=
+*[[Samuel Lino|Lino]] {{goal|30|[[Jorginho (footballer, born December 1991)|Jorginho]]}}
+*[[Bruno Henrique (footballer, born 1990)|Bruno Henrique]] {{goal|33|[[Samuel Lino|Lino]]}}
+|score=2–2
+|team2={{flagicon|ARG}} [[Club Atlético River Plate|River Plate]]
+|goals2=
+*[[Sebastián Driussi|Driussi]] {{goal|9||38|[[Giovanni González|González]]}}
+|stadium=[[Estádio Algarve]]
+|location=[[Faro, Portugal|Faro]]/[[Loulé]], Portugal
+|attendance=
+|referee=[[Luís Godinho]]
+|note=
+}}
+
+{{Football box collapsible
+|result=W
+|date=8 July 2026
+|time={{UTZ|16:30|-3}}
+|round=Friendly
+|report=https://www.soccerway.com/match/flamengo-rj-WjxY29qB/lausanne-Wd10iFbk/?mid=ER9rOEgD
+|team1=[[FC Lausanne-Sport]] {{flagicon|SWI}}
+|goals1=
+|score=0–2
+|team2={{flagicon|BRA}} Flamengo
+|goals2=
+*[[Lorran (footballer, born 2006)|Lorran]] {{goal|51|[[Wallace Yan]]}}
+*[[Wallace Yan]] {{goal|71}}
+|stadium=[[Estádio Algarve]]
+|location=[[Faro, Portugal|Faro]]/[[Loulé]], Portugal
+|attendance=
+|referee=
+|note=
+}}
+
+{{Football box collapsible
+|result=W
+|date=11 July 2026
+|time={{UTZ|15:30|-3}}
+|round=[[Algarve Football Cup|Algarve Cup]]
+|report=https://www.soccerway.com/match/benfica-zBkyuyRI/flamengo-rj-WjxY29qB/?mid=EXn7DwBk
+|team1=[[2026–27 S.L. Benfica season|Benfica]] {{flagicon|POR}}
+|goals1=
+*[[Vangelis Pavlidis|Pavlidis]] {{goal|45+8|pen.}}
+|score=1–2
+|team2={{flagicon|BRA}} Flamengo
+|goals2=
+*[[Samuel Lino|Lino]] {{goal|45+5|[[Emerson Royal|Royal]]}}
+*[[Wallace Yan]] {{goal|68|[[Samuel Lino|Lino]]}}
+|stadium=[[Estádio Algarve]]
+|location=[[Faro, Portugal|Faro]]/[[Loulé]], Portugal
+|attendance=
+|referee=[[Fábio Veríssimo]]
+|note=
+}}
+
+{{Football box collapsible
+|result=W
+|date=17 July 2026
+|time={{UTZ|20:00|-3}}
+|round=Friendly
+|report=https://www.soccerway.com/match/flamengo-rj-WjxY29qB/olimpia-asuncion-b9eesWQG/?mid=bwfR9AYg
+|team1=Flamengo {{flagicon|BRA}}
+|goals1=
+*[[Pedro]] {{goal|29|[[Samuel Lino|Lino]]}}
+*[[Lorran (footballer, born 2006)|Lorran]] {{goal|32|[[Samuel Lino|Lino]]}}
+*[[Bruno Henrique (footballer, born 1990)|Bruno Henrique]] {{goal|45+1|Lorran}}
+*[[Luiz Araújo (footballer)|L. Araújo]] {{goal|60|[[Samuel Lino|Lino]]}}
+|score=4–2
+|team2={{flagicon|PAR}} [[Club Olimpia|Olimpia]]
+|goals2=
+*[[Eduardo Delmas|Delmas]] {{goal|6}}
+*[[Fernando Cardozo (footballer, born 2001)|Cardozo]] {{goal|55}}
+|stadium=[[Estádio Nacional Mané Garrincha|Mané Garrincha]]
+|location=[[Brasília]], Brasil
+|attendance=52,638
+|referee=
+|note=
+}}
+
+===Supercopa do Brasil===
+{{main|2026 Supercopa do Brasil}}
+Flamengo qualified for the [[2026 Supercopa do Brasil]] by winning the [[2025 Campeonato Brasileiro Série A|Série A]].
+
+''Goals, assists and red cards are shown.''
+{{football box collapsible
+|result=L
+|date=1 February 2026
+|time={{UTZ|16:00|-3}}
+|round=Final <small>''[[Encontro das Nações]]''</small>
+|team1=Flamengo
+|score=0–2
+|report=https://www.soccerway.com/match/corinthians-QBGfQbSe/flamengo-rj-WjxY29qB/?mid=nNZF4v9j
+|team2=[[2026 SC Corinthians Paulista season|Corinthians]]
+|goals1=
+*[[Jorge Carrascal|Carrascal]] {{sent off|0|46}}
+|goals2=
+*[[Gabriel Paulista]] {{goal|26|[[Gustavo Henrique (footballer, born 1993)|Gustavo Henrique]]}}
+*[[Yuri Alberto]] {{goal|90+7|[[Kaio César]]}}
+|location=[[Brasília]]
+|stadium=[[Estádio Nacional Mané Garrincha|Arena BRB Mané Garrincha]]
+|attendance=71,244
+|referee=[[Rafael Rodrigo Klein]]
+|id=}}
+
+===Recopa Sudamericana===
+{{main|2026 Recopa Sudamericana}}
+
+Flamengo qualified for the [[2026 Recopa Sudamericana]] by winning the [[2025 Copa Libertadores]].
+
+''Goals, assists and red cards are shown.''
+{{football box collapsible
+|result=L
+|date=19 February 2026
+|time={{UTZ|21:30|-3}}
+|round=Final (1st leg)
+|team1=[[2026 Club Atlético Lanús season|Lanús]] {{flagicon|ARG}}
+|score=1–0
+|report=https://www.soccerway.com/match/flamengo-rj-WjxY29qB/lanus-Y9yh1J7G/?mid=f9UNmOWN
+|team2={{flagicon|BRA}} Flamengo
+|goals1=
+*[[Rodrigo Castillo (footballer, born 1999)|Castillo]] {{goal|77|[[Sasha Marcich|Marcich]]}}
+|goals2=
+|location=[[Lanús]], [[Argentina]]
+|stadium=[[Estadio Ciudad de Lanús – Néstor Díaz Pérez|Ciudad de Lanús]]
+|attendance=
+|referee=[[Alexis Herrera (referee)|Alexis Herrera]] ([[Venezuelan Football Federation|Venezuela]])
+|id=}}
+
+{{football box collapsible
+|result=L
+|date=26 February 2026
+|time={{UTZ|21:30|-3}}
+|round=Final (2nd leg)
+|team1=Flamengo {{flagicon|BRA}}
+|score=2–3
+|report=https://www.soccerway.com/match/flamengo-rj-WjxY29qB/lanus-Y9yh1J7G/?mid=juGgr2fo
+|team2={{flagicon|ARG}} [[2026 Club Atlético Lanús season|Lanús]]
+|goals1=
+*[[Giorgian de Arrascaeta|de Arrascaeta]] {{goal|37|pen.}}
+*[[Jorginho (footballer, born December 1991)|Jorginho]] {{goal|85|pen.}}
+|goals2=
+*[[Rodrigo Castillo (footballer, born 1999)|Castillo]] {{goal|29}}
+*[[José Canale|Canale]] {{goal|118|[[Matías Sepúlveda|Sepúlveda]]}}
+*[[Dylan Aquino|Aquino]] {{goal|120+2}}
+|aggregatescore=2–4
+|location=[[Rio de Janeiro, Brazil]]
+|stadium=[[Maracanã Stadium|Maracanã]]
+|attendance=64,470
+|referee=[[Gustavo Tejera]] ([[Uruguayan Football Association|Uruguay]])
+|id=}}
+
+===Campeonato Carioca===
+{{main|2026 Campeonato Carioca}}
+
+====Group B====
+{{2026 Campeonato Carioca -Taça Guanabara - Group B|showteam=FLA}}
+
+====Matches====
+
+''Goals, assists and red cards are shown.''
+{{football box collapsible
+|result=D
+|date=11 January 2026
+|time={{UTZ|18:00|-3}}
+|round=5
+|team1=Flamengo
+|score=1–1
+|report=https://www.soccerway.com/match/flamengo-rj-WjxY29qB/portuguesa-rj-MVetMLIi/?mid=b9cUgoTj
+|team2=[[Associação Atlética Portuguesa (RJ)|Portuguesa]]
+|goals1=
+*[[Iago Teodoro|Iago]] {{goal|90+5|[[Wallace Yan]]}}
+|goals2=
+*[[Rhuan Castro|Rhuan]] {{goal|58}}
+|location=[[Volta Redonda]]
+|stadium=[[Estádio Raulino de Oliveira|Raulino de Oliveira]]
+|attendance=5,755
+|referee=[[Pierry Dias dos Santos]]
+|id=}}
+
+{{football box collapsible
+|result=L
+|date=14 January 2026
+|time={{UTZ|21:30|-3}}
+|round=1
+|team1=[[Bangu Atlético Clube|Bangu]]
+|score=2–1
+|report=https://www.soccerway.com/match/bangu-pn9hdjP3/flamengo-rj-WjxY29qB/?mid=zTLWfege
+|team2=Flamengo
+|goals1=
+*[[Patrick (footballer, born 2000)|Patrick]] {{goal|4|[[Garrinsha]]}}
+*[[Garrinsha]] {{goal|13|[[Walber (footballer, born 1993)|Walber]]}}
+|goals2=
+*[[Guilherme Gomes|Gomes]] {{goal|19|[[Daniel Sales (footballer)|Sales]]}}
+|location=[[Bangu, Rio de Janeiro|Bangu]]
+|stadium=[[Estádio Moça Bonita|Moça Bonita]]
+|attendance=7,000
+|referee=[[Jodis Nascimento de Souza]]
+|id=}}
+
+{{football box collapsible
+|result=L
+|date=17 January 2026
+|time={{UTZ|21:30|-3}}
+|round=2
+|team1=[[Volta Redonda FC|Volta Redonda]]
+|score=3–0
+|report=https://www.soccerway.com/match/flamengo-rj-WjxY29qB/volta-redonda-zs0bUylR/?mid=OzakxM1l
+|team2=Flamengo
+|goals1=
+*[[MV (footballer)|MV]] {{goal|17|[[Ygor Catatau|Catatau]]}}
+*[[Rafael Augusto]] {{goal|51|[[Wagninho]]}}
+*[[Dener (footballer, born 1992)|Dener]] {{goal|82|[[Wagninho]]}}
+|goals2=
+*[[João Victor Carbone|Carbone]] {{sent off|2|3|11}}
+|location=[[Volta Redonda]]
+|stadium=[[Estádio Raulino de Oliveira|Raulino de Oliveira]]
+|attendance=4,587
+|referee=[[Yuri Elino Ferreira da Cruz]]
+|id=}}
+
+{{football box collapsible
+|result=W
+|date=21 January 2026
+|time={{UTZ|21:30|-3}}
+|round=3 <small>''[[Clássico dos Milhões]]''</small>
+|team1=Flamengo
+|score=1–0
+|report=https://www.soccerway.com/match/flamengo-rj-WjxY29qB/vasco-2RABlYFn/?mid=xvPOjLGs
+|team2=[[2026 CR Vasco da Gama season|Vasco da Gama]]
+|goals1=
+*[[Jorge Carrascal|Carrascal]] {{goal|69}}
+|goals2=
+*[[Cauan Barros|Barros]] {{sent off|0|51}}
+|location=[[Rio de Janeiro]]
+|stadium=[[Maracanã Stadium|Maracanã]]
+|attendance=50,504
+|referee=[[Bruno Arleu de Araújo]]
+|id=}}
+
+{{football box collapsible
+|result=L
+|date=25 January 2026
+|time={{UTZ|18:00|-3}}
+|round=4 <small>''[[Fla–Flu]]''</small>
+|team1=[[2026 Fluminense FC season|Fluminense]]
+|score=2–1
+|report=https://www.soccerway.com/match/flamengo-rj-WjxY29qB/fluminense-EV9L3kU4/?mid=hlfMaGaC
+|team2=Flamengo
+|goals1=
+*[[Kevin Serna|Serna]] {{goal|52|[[Santiago Moreno (footballer)|Moreno]]}}
+*[[John Kennedy (footballer, born 2002)|John Kennedy]] {{goal|66}}
+|goals2=
+*[[Everton Soares|Everton]] {{goal|73|[[Vitão (footballer, born February 2000)|Vitão]]}}
+|location=[[Rio de Janeiro]]
+|stadium=[[Maracanã Stadium|Maracanã]]
+|attendance=46,525
+|referee=[[Alex Gomes Stefano]]
+|id=}}
+
+{{football box collapsible
+|result=W
+|date=7 February 2026
+|time={{UTZ|21:00|-3}}
+|round=6
+|team1=Flamengo
+|score=7–1
+|report=https://www.soccerway.com/match/flamengo-rj-WjxY29qB/sampaio-correa-fe-6idiTLqA/?mid=x0I38prp
+|team2=[[Sampaio Corrêa Futebol e Esporte|Sampaio Corrêa]]
+|goals1=
+*[[Pedro (footballer, born 1997)|Pedro]] {{goal|16|[[Jorge Carrascal|Carrascal]]|31|[[Samuel Lino|Lino]]}}
+*[[Bruno Henrique (footballer, born 1990)|Bruno Henrique]] {{goal|58|[[Samuel Lino|Lino]]|90+2}}
+*[[Samuel Lino|Lino]] {{goal|67|[[Emerson Royal|Royal]]}}
+*[[Everton Soares|Everton]] {{goal|70|[[Emerson Royal|Royal]]}}
+*[[Douglas Telles|Telles]] {{goal|83|[[Bruno Henrique (footballer, born 1990)|Bruno Henrique]]}}
+|goals2=
+*[[Rodrigo Andrade (footballer, born 1988)|Andrade]] {{goal|45+7|[[Guilherme (footballer, born 1993)|Guilherme]]}}
+|location=[[Rio de Janeiro]]
+|stadium=[[Maracanã Stadium|Maracanã]]
+|attendance=24,967
+|referee=[[Alex Gomes Stefano]]
+|id=}}
+
+====Quarter-final====
+{{football box collapsible
+|result=W
+|date=15 February 2026
+|time={{UTZ|17:30|-3}}
+|round=Single match <small>''[[Clássico da Rivalidade]]''</small>
+|team1=[[2026 Botafogo FR season|Botafogo]]
+|score=1–2
+|report=https://www.soccerway.com/match/botafogo-rj-jXzWoWa5/flamengo-rj-WjxY29qB/?mid=69fQQI5s
+|team2=Flamengo
+|goals1=
+*[[Alexander Barboza|Barboza]] {{goal|54|[[Alex Telles|Telles]]}}
+|goals2=
+*[[Lucas Paquetá|Paquetá]] {{goal|19|[[Bruno Henrique (footballer, born 1990)|Bruno Henrique]]}}
+*[[Erick Pulgar|Pulgar]] {{goal|84}}
+|location=[[Rio de Janeiro]]
+|stadium=[[Estádio Olímpico Nilton Santos|Nilton Santos]]
+|attendance=10,987
+|referee=[[Bruno Arleu de Araújo]]
+|id=}}
+
+====Semi-finals====
+
+{{football box collapsible
+|result=W
+|date=22 February 2026
+|time={{UTZ|20:30|-3}}
+|round=First leg
+|team1=Flamengo
+|score=3–0
+|report=https://www.soccerway.com/match/flamengo-rj-WjxY29qB/madureira-MTCPVw48/?mid=IkF6OKee
+|team2=[[Madureira Esporte Clube|Madureira]]
+|goals1=
+*[[Nicolás de la Cruz|de la Cruz]] {{goal|53}}
+*[[Giorgian de Arrascaeta|de Arrascaeta]] {{goal|64|pen.}}
+*[[Luiz Araújo (footballer)|L. Araújo]] {{goal|86|[[Samuel Lino|Lino]]}}
+|goals2=
+|location=[[Rio de Janeiro]]
+|stadium=[[Maracanã Stadium|Maracanã]]
+|attendance=22,730
+|referee=[[Lucas Coelho Santos]]
+|id=}}
+
+{{football box collapsible
+|result=W
+|date=2 March 2026
+|time={{UTZ|21:00|-3}}
+|round=Second leg
+|team1=[[Madureira Esporte Clube|Madureira]]
+|score=0–8
+|aggregatescore=0–11
+|report=https://www.soccerway.com/match/flamengo-rj-WjxY29qB/madureira-MTCPVw48/?mid=AcXDMbQ7
+|team2=Flamengo
+|goals1=
+*[[Wallace (footballer, born 2004)|Wallace]] {{sent off|0|32}}
+|goals2=
+*[[Lucas Paquetá|Paquetá]] {{goal|5|[[Jorge Carrascal|Carrascal]]|23|[[Jorge Carrascal|Carrascal]]}}
+*[[Jean Vianna]] {{goal|39|o.g.}}
+*[[Pedro (footballer, born 1997)|Pedro]] {{goal|45|[[Alex Sandro]]|48|[[Emerson Royal|Royal]]|49|[[Evertton Araújo|E. Araújo]]|67}}
+*[[Samuel Lino|Lino]] {{goal|88|[[Pedro (footballer, born 1997)|Pedro]]}}
+|location=[[Rio de Janeiro]]
+|stadium=[[Maracanã Stadium|Maracanã]]
+|attendance=25,059
+|referee=[[Carlos Tadeu Ferreira de Castro]]
+|id=}}
+
+====Final====
+
+{{football box collapsible
+|result=D
+|date=8 March 2026
+|time={{UTZ|18:00|-3}}
+|round=Single match <small>''[[Fla–Flu]]''</small>
+|team1=[[2026 Fluminense FC season|Fluminense]]
+|score=0–0
+|report=https://www.soccerway.com/match/flamengo-rj-WjxY29qB/fluminense-EV9L3kU4/?mid=bohghNrJ
+|team2=Flamengo
+|goals1=
+|goals2=
+|penaltyscore=4–5
+|penalties1=
+*[[Paulo Henrique Ganso|Ganso]] {{pengoal}}
+*[[Jefferson Savarino|Savarino]] {{pengoal}}
+*[[Guga (footballer, born 1998)|Guga]] {{penmiss}}
+*[[Guilherme Arana|Arana]] {{pengoal}}
+*[[John Kennedy (footballer, born 2002)|John Kennedy]] {{pengoal}}
+*[[Otávio (footballer, born 1994)|Otávio]] {{penmiss}}
+|penalties2=
+*[[Jorginho (footballer, born December 1991)|Jorginho]] {{pengoal}}
+*[[Luiz Araújo (footballer)|L. Araújo]] {{penmiss}}
+*[[Everton Soares|Everton]] {{pengoal}} 
+*[[Léo Pereira (footballer, born 1996)|Pereira]] {{pengoal}} 
+*[[Lucas Paquetá|Paquetá]] {{pengoal}} 
+*[[Léo Ortiz|Ortiz]] {{pengoal}} 
+|location=[[Rio de Janeiro]]
+|stadium=[[Maracanã Stadium|Maracanã]]
+|attendance=69,315
+|referee=[[Bruno Arleu de Araújo]]
+|id=}}
+
+===Copa Libertadores===
+{{main|2026 Copa Libertadores}}
+
+The draw for the group stage was held on 19 March 2026 on the [[CONMEBOL]] headquarters in [[Luque]], [[Paraguay]].
+
+====Group stage====
+{{main|2026 Copa Libertadores group stage#Group A}}
+{{2026 Copa Libertadores group tables|Group A|show_matches=yes|showteam=FLA}}
+
+====Matches====
+''Goals, assists and red cards are shown.''
+
+{{Football box collapsible
+|result=W
+|round=1
+|date=8 April 2026
+|time={{UTZ|21:30|-3}}
+|team1=[[Cusco FC|Cusco]] {{fbaicon|PER}}
+|score=0–2
+|report=[https://www.conmebol.com/analisis-del-partido?competition=59tpnfrwnvhnhzmnvfyug68hj&season=dk8bg66qizwked9etonwaaln8&match=a610a27eeqjwdcn4se2hyrx1w&disciplina=football CONMEBOL] <br> [https://www.soccerway.com/match/cusco-zDuHd68m/flamengo-rj-WjxY29qB/?mid=dMNSQIQr Report]
+|team2={{fbaicon|BRA}} Flamengo
+|goals1=
+|goals2=
+*[[Bruno Henrique (footballer, born 1990)|Bruno Henrique]] {{goal|59|[[Ayrton Lucas]]}}
+*[[Giorgian de Arrascaeta|de Arrascaeta]] {{goal|90+2}}
+|stadium=[[Estadio Garcilaso|Garcilaso]]
+|location=[[Cusco]], [[Peru]]
+|attendance=
+|referee=[[Derlis López]] ([[Paraguayan Football Association|Paraguay]])
+}}
+
+{{Football box collapsible
+|result=W
+|round=2
+|date=16 April 2026
+|time={{UTZ|21:30|-3}}
+|team1=Flamengo {{fbaicon|BRA}}
+|score=4–1
+|report=[https://www.conmebol.com/analisis-del-partido/?competition=59tpnfrwnvhnhzmnvfyug68hj&season=dk8bg66qizwked9etonwaaln8&match=a6r56ktzpqfhzkucsbrua3z10&disciplina=football CONMEBOL] <br> [https://www.soccerway.com/match/flamengo-rj-WjxY29qB/ind-medellin-p2ADRKlk/?mid=ziFMinVb Report]
+|team2={{fbaicon|COL}} [[Independiente Medellín]]
+|goals1=
+*[[Lucas Paquetá|Paquetá]] {{goal|15|[[Ayrton Lucas]]}}
+*[[Bruno Henrique (footballer, born 1990)|Bruno Henrique]] {{goal|45|[[Giorgian de Arrascaeta|de Arrascaeta]]}}
+*[[Giorgian de Arrascaeta|de Arrascaeta]] {{goal|49|[[Bruno Henrique (footballer, born 1990)|Bruno Henrique]]}}
+*[[Pedro (footballer, born 1997)|Pedro]] {{goal|90+6|[[Luiz Araújo (footballer)|L. Araújo]]}}
+|goals2=
+*[[Yony González|González]] {{goal|40|[[Alexis Serna (footballer)|Serna]]}}
+|stadium=[[Maracanã Stadium|Maracanã]]
+|location=[[Rio de Janeiro, Brazil]]
+|attendance=55,331
+|referee=[[Andrés Matonte]] ([[Uruguayan Football Association|Uruguay]])
+}}
+
+{{Football box collapsible
+|result=D
+|round=3
+|date=29 April 2026
+|time={{UTZ|21:30|-3}}
+|team1=[[Estudiantes de La Plata]] {{fbaicon|ARG}}
+|score=1–1
+|report=[https://www.conmebol.com/analisis-del-partido/?competition=59tpnfrwnvhnhzmnvfyug68hj&season=dk8bg66qizwked9etonwaaln8&match=a74ezbjhtlniwkzrrkjdmoh04&disciplina=football CONMEBOL] <br> [https://www.soccerway.com/match/estudiantes-l-p-p2SkCHXs/flamengo-rj-WjxY29qB/?mid=ryBSvL87 Report]
+|team2={{fbaicon|BRA}} Flamengo
+|goals1=
+*[[Guido Carrillo|Carrillo]] {{goal|55}}
+|goals2=
+*[[Luiz Araújo (footballer)|L. Araújo]] {{goal|33|[[Bruno Henrique (footballer, born 1990)|Bruno Henrique]]}}
+|stadium=[[Estadio Jorge Luis Hirschi|Uno]]
+|location=[[La Plata]], [[Argentina]]
+|attendance=
+|referee=[[Piero Maza]] ([[Football Federation of Chile|Chile]])
+}}
+
+{{Football box collapsible
+|result=W
+|round=4
+|date=7 May 2026
+|time={{UTZ|21:30|-3}}
+|team1=[[Independiente Medellín]] {{fbaicon|COL}}
+|score=0–3 <br> <small>Awarded</small>{{refn|group=note|The Independiente Medellín v Flamengo match was suspended at 0–0 in the 5th minute of play due to disturbances by Independiente Medellín fans.<ref name="DIM_FLA_match"/> The match was subsequently abandoned after a one-hour wait, with CONMEBOL confirming its cancellation and referring the matter to its Disciplinary Commission,<ref name="DIM_FLA_cancelled"/><ref name="CONMEBOL statement DIM_FLA"/> which subsequently awarded Flamengo a 3–0 win.<ref name="DIM_FLA walkover"/>}}
+|report=https://www.soccerway.com/match/flamengo-rj-WjxY29qB/ind-medellin-p2ADRKlk/?mid=ULOyyI6t
+|team2={{fbaicon|BRA}} Flamengo
+|goals1=
+|goals2=
+|stadium=[[Atanasio Girardot Stadium|Atanasio Girardot]]
+|location=[[Medellín]], [[Colombia]]
+|attendance=
+|referee=[[Jesús Valenzuela]] ([[Venezuelan Football Federation|Venezuela]])
+}}
+
+{{Football box collapsible
+|result=W
+|round=5
+|date=20 May 2026
+|time={{UTZ|21:30|-3}}
+|team1=Flamengo {{fbaicon|BRA}}
+|score=1–0
+|report=[https://www.conmebol.com/analisis-del-partido/?competition=59tpnfrwnvhnhzmnvfyug68hj&season=dk8bg66qizwked9etonwaaln8&match=a8kks0ed6ne7kk6kag74ch6ac&disciplina=football CONMEBOL] <br> [https://www.soccerway.com/match/estudiantes-l-p-p2SkCHXs/flamengo-rj-WjxY29qB/?mid=KCSEq4eS Report]
+|team2={{fbaicon|ARG}} [[Estudiantes de La Plata]]
+|goals1=
+*[[Pedro (footballer, born 1997)|Pedro]] {{goal|65}}
+|goals2=
+|stadium=[[Maracanã Stadium|Maracanã]]
+|location=[[Rio de Janeiro, Brazil]]
+|attendance=53,125
+|referee=[[Esteban Ostojich]] ([[Uruguayan Football Association|Uruguay]])
+}}
+
+{{Football box collapsible
+|result=W
+|round=6
+|date=26 May 2026
+|time={{UTZ|21:30|-3}}
+|team1=Flamengo {{fbaicon|BRA}}
+|score=3–0
+|report=[https://www.conmebol.com/analisis-del-partido/?competition=59tpnfrwnvhnhzmnvfyug68hj&season=dk8bg66qizwked9etonwaaln8&match=a9azdleyh8ak00biexv1nepzo&disciplina=football CONMEBOL] <br> [https://www.soccerway.com/match/cusco-zDuHd68m/flamengo-rj-WjxY29qB/?mid=UPjc5KHl Report]
+|team2={{fbaicon|PER}} [[Cusco FC|Cusco]]
+|goals1=
+*[[Bruno Henrique (footballer, born 1990)|Bruno Henrique]] {{goal|80|[[Pedro (footballer, born 1997)|Pedro]]|84}}
+*[[Lucas Paquetá|Paquetá]] {{goal|90+1|pen.}}
+|goals2=
+|stadium=[[Maracanã Stadium|Maracanã]]
+|location=[[Rio de Janeiro, Brazil]]
+|attendance=34,796
+|referee=[[José Burgos (referee)|José Burgos]] ([[Uruguayan Football Association|Uruguay]])
+}}
+
+====Round of 16====
+{{Main|2026 Copa Libertadores final stages}}
+The draw for the round of 16 was held on 29 May 2026.
+
+''Goals, assists and red cards are shown.''
+{{Football box collapsible
+|result=D
+|round=1st leg
+|date=12 August 2026
+|time={{UTZ|21:30|-3}}
+|team1=[[2026 Cruzeiro Esporte Clube season|Cruzeiro]] {{flagicon|BRA}}
+|score=1–1
+|report=https://www.soccerway.com/match/cruzeiro-0SwtclaU/flamengo-rj-WjxY29qB/?mid=WYYGuKrf
+|team2={{flagicon|BRA}} Flamengo
+|goals1=
+*[[Keny Arroyo|Arroyo]] {{goal|53|[[William (footballer, born 1995)|William]]}}
+|goals2=
+*[[Lucas Paquetá|Paquetá]] {{goal|67}}
+|stadium=[[Mineirão]]
+|location=[[Belo Horizonte]], [[Brazil]]
+|attendance=60,046
+|referee=[[Yael Falcón Pérez]] ([[Argentine Football Association|Argentina]])
+|id=
+}}
+
+{{Football box collapsible
+|result=W
+|round=2nd leg
+|date=19 August 2026
+|time={{UTZ|21:30|-3}}
+|team1=Flamengo {{flagicon|BRA}}
+|score=2–1
+|aggregatescore=3–2
+|report=https://www.soccerway.com/match/cruzeiro-0SwtclaU/flamengo-rj-WjxY29qB/?mid=4nXOwbD6
+|team2={{flagicon|BRA}} [[2026 Cruzeiro Esporte Clube season|Cruzeiro]]
+|goals1=
+*[[Giorgian de Arrascaeta|de Arrascaeta]] {{goal|35|[[Pedro (footballer, born 1997)|Pedro]]}}
+*[[Samuel Lino|Lino]] {{goal|62|[[Pedro (footballer, born 1997)|Pedro]]}}
+|goals2=
+*[[Lucas Romero|Romero]] {{goal|51|[[Gerson (footballer, born 1997)|Gerson]]}}
+|stadium=[[Maracanã Stadium|Maracanã]]
+|location=[[Rio de Janeiro]], [[Brazil]]
+|attendance=72,481
+|referee=[[Gustavo Tejera]] ([[Uruguayan Football Association|Uruguay]])
+|id=
+}}
+
+====Quarter-finals====
+{{Main|2026 Copa Libertadores final stages}}
+
+''Goals, assists and red cards are shown.''
+{{Football box collapsible
+|result=W
+|round=1st leg
+|date=10 September 2026
+|time={{UTZ|21:30|-3}}
+|team1=[[Independiente del Valle]] {{flagicon|ECU}}
+|score=0–2
+|report=https://www.soccerway.com/match/flamengo-rj-WjxY29qB/independiente-del-valle-YFwXD2sh/?mid=Qsob4IQ9
+|team2={{flagicon|BRA}} Flamengo
+|goals1=
+|goals2=
+*[[Bruno Henrique (footballer, born 1990)|Bruno Henrique]] {{goal|61|[[Samuel Lino|Lino]]}}
+*[[Léo Pereira (footballer, born 1996)|Pereira]] {{goal|75|[[Emerson Royal|Royal]]}}
+|stadium=[[Atahualpa Olympic Stadium|Olímpico Atahualpa]]
+|location=[[Quito]], [[Ecuador]]
+|attendance=
+|referee=[[Facundo Tello]] ([[Argentine Football Association|Argentina]])
+|id=
+}}
+
+{{Football box collapsible
+|result=D
+|round=2nd leg
+|date=17 September 2026
+|time={{UTZ|21:30|-3}}
+|team1=Flamengo {{flagicon|BRA}}
+|score=1–1
+|aggregatescore=3–1
+|report=https://www.soccerway.com/match/flamengo-rj-WjxY29qB/independiente-del-valle-YFwXD2sh/?mid=beq62deM
+|team2={{flagicon|ECU}} [[Independiente del Valle]]
+|goals1=
+*[[Jorginho (footballer, born December 1991)|Jorginho]] {{sent off|55|65}}
+*[[Giorgian de Arrascaeta|de Arrascaeta]] {{goal|83|[[Agustín Rossi (footballer)|Rossi]]}}
+|goals2=
+*[[Djorkaeff Reasco|Reasco]] {{goal|31}}
+|stadium=[[Maracanã Stadium|Maracanã]]
+|location=[[Rio de Janeiro]], [[Brazil]]
+|attendance=63,534
+|referee=[[Andrés Matonte]] ([[Uruguayan Football Association|Uruguay]])
+|id=
+}}
+
+====Semi-finals====
+{{Main|2026 Copa Libertadores final stages}}
+
+''Goals, assists and red cards are shown.''
+{{Football box collapsible
+|result=D
+|round=1st leg
+|date=15 October 2026
+|time={{UTZ|21:30|-3}}
+|team1=[[Estudiantes de La Plata]] {{flagicon|ARG}}
+|score=0–0
+|report=https://www.soccerway.com/match/estudiantes-l-p-p2SkCHXs/flamengo-rj-WjxY29qB/?mid=KSryyLc3
+|team2={{flagicon|BRA}} Flamengo
+|goals1=
+|goals2=
+|stadium=[[Estadio Jorge Luis Hirschi|Uno]]
+|location=[[La Plata]], [[Argentina]]
+|attendance=
+|referee=[[Juan Gabriel Benítez]] ([[Paraguayan Football Association|Paraguay]])
+|id=
+}}
+
+{{Football box collapsible
+|result=D
+|round=2nd leg
+|date=22 October 2026
+|time={{UTZ|21:30|-3}}
+|team1=Flamengo {{flagicon|BRA}}
+|score=0–0
+|aggregatescore=0–0
+|penaltyscore = 2–3
+|report=https://www.soccerway.com/match/atletico-mg-hGLC5Bah/flamengo-rj-WjxY29qB/?mid=UFKuxZuI
+|team2={{flagicon|ARG}} [[Estudiantes de La Plata]]
+|goals1=
+|goals2=
+|penalties1=
+*[[Giorgian de Arrascaeta|de Arrascaeta]] {{pengoal}}
+*[[Jorginho (footballer, born December 1991)|Jorginho]] {{penmiss}}
+*[[Lucas Paquetá|Paquetá]] {{penmiss}}
+*[[Léo Pereira (footballer, born 1996)|Pereira]] {{pengoal}}
+*[[Bruno Henrique (footballer, born 1990)|Bruno Henrique]] {{penmiss}}
+|penalties2=
+*{{pengoal}} [[José Sosa|Sosa]]
+*{{penmiss}} [[Edwuin Cetré|Cetré]]
+*{{pengoal}} [[Eros Mancuso|Mancuso]]
+*{{pengoal}} [[Tiago Palacios|Palacios]]
+|stadium=[[Maracanã Stadium|Maracanã]]
+|location=[[Rio de Janeiro]], [[Brazil]]
+|attendance=72,492
+|referee=[[Gustavo Tejera]] ([[Uruguayan Football Association|Uruguay]])
+|id=
+}}
+
+===Campeonato Brasileiro===
+{{main|2026 Campeonato Brasileiro Série A}}
+
+====League table====
+{{:2026 Campeonato Brasileiro Série A|showteam=FLA}}
+
+====Results by round====
+{{#invoke:sports rbr table|table|legendpos=b
+|header = Round
+|label1 = Ground
+|res1 = A / H / A / H{{efn|''Matchday 4 originally scheduled for 25 February 2026 was postponed and has been played between matchdays 25 and 26 on 2 September 2026.''}} / H / A / H / A / A / H / A / H / A / H / A / A / H / H / A / H / A / H / A / A / H / A / H / H / A / H / A / H / A / H / H / A / A / H
+|label2 = Result
+|res2 = L / D / W / W / W / W / W / D / L / W / W / W / W / D / W / D / L / W / W / D / D / W / W / L / W / W / W / W / D / W / W / W / W /  /  /  /  / 
+|label3 = Position
+|res3 = 15 / 14 / 10 / 2 / 6 / 5 / 4 / 4 / 6 / 4 / 2 / 2 / 2 / 2 / 2 / 2 / 2 / 2 / 2 / 2 / 2 / 2 / 2 / 2 / 2 / 1 / 1 / 1 / 1 / 1 / 1 / 1 / 1 / 1 /  /  /  / 
+|label4 = Points
+|pos4 = 0p / 1p / 4p / 6p / 7p / 10p / 13p / 14p / 14p / 17p / 20p / 23p / 26p / 27p / 30p / 31p / 31p / 34p / 37p / 38p / 39p / 42p / 45p / 45p / 48p / 54p / 57p / 60p / 61p / 64p / 67p / 70p / 73p /  /  /  /  /
+
+|text_H=Home|text_A=Away
+|color_W=green1|text_W=Win
+|color_D=yellow1|text_D=Draw
+|color_L=red1|text_L=Loss
+|color_P=lightgrey|text_P=Postponed
+|color_1=1st|text_1=Leader
+|color_2-4=green1|text_2-4=Copa Libertadores group stage
+|color_5=green2|text_5=Copa Libertadores second stage
+|color_6-11=blue2|text_6-11=Copa Sudamericana group stage
+|color_17-20=red1|text_17-20=Relegation to Série B
+|source=[[#Matches|Matches]]
+|date=29 October 2026
+}}
+
+;Notes
+{{notelist}}
+
+====Matches====
+''Goals, assists and red cards are shown.''
+
+{{football box collapsible
+|result=L
+|date=28 January 2026
+|time={{UTZ|21:30|-3}}
+|round=1
+|team1=[[2026 São Paulo FC season|São Paulo]]
+|score= 2–1
+|report=https://www.soccerway.com/match/flamengo-rj-WjxY29qB/sao-paulo-QgP0oAUH/?mid=YauoLWJN
+|team2=Flamengo
+|goals1=
+*[[Luciano (footballer, born 1993)|Luciano]] {{goal|61|[[Enzo Díaz (footballer, born 1995)|Díaz]]}}
+*[[Danielzinho (footballer, born 1994)|Danielzinho]] {{goal|71}}
+|goals2=
+*[[Gonzalo Plata|Plata]] {{goal|54|[[Pedro (footballer, born 1997)|Pedro]]}}
+*[[Jorginho (footballer, born December 1991)|Jorginho]] {{sent off|0|90+9}}
+|location=[[São Paulo]]
+|stadium=[[Estádio do Morumbi|Morumbi]]
+|attendance=27,203
+|referee=[[Wilton Pereira Sampaio]]
+|id=}}
+
+{{football box collapsible
+|result=D
+|date=4 February 2026
+|time={{UTZ|19:00|-3}}
+|round=2
+|team1=Flamengo
+|score=1–1
+|report=https://www.soccerway.com/match/flamengo-rj-WjxY29qB/internacional-tSCiHj0I/?mid=SztglVmA
+|team2=[[2026 Sport Club Internacional season|Internacional]]
+|goals1=
+*[[Giorgian de Arrascaeta|de Arrascaeta]] {{goal|68|pen.}}
+|goals2=
+*[[Rafael Santos Borré|Borré]] {{goal|45+2|[[Johan Carbonero|Carbonero]]}}
+|location=[[Rio de Janeiro]]
+|stadium=[[Maracanã Stadium|Maracanã]]
+|attendance=56,421
+|referee=[[Rodrigo José Pereira de Lima]]
+|id=}}
+
+{{football box collapsible
+|result=W
+|date=10 February 2026
+|time={{UTZ|21:30|-3}}
+|round=3
+|team1=[[2026 Esporte Clube Vitória season|Vitória]]
+|score=1–2
+|report=https://www.soccerway.com/match/flamengo-rj-WjxY29qB/vitoria-8bSbHipn/?mid=MaINiPBa
+|team2=Flamengo
+|goals1=
+*[[Matheuzinho (footballer, born 1997)|Matheuzinho]] {{goal|52|[[Gabriel Baralhas|Baralhas]]}}
+*[[Renato Kayzer|Kayzer]] {{penmiss}} 64' ([[Penalty kick (association football)|pen.]])
+|goals2=
+*[[Erick Pulgar|Pulgar]] {{goal|15|[[Everton Soares|Everton]]}}
+*[[Everton Soares|Everton]] {{goal|45+4|[[Léo Ortiz|Ortiz]]}}
+|location=[[Salvador, Bahia|Salvador]]
+|stadium=[[Barradão]]
+|attendance=27,080
+|referee=[[Raphael Claus]]
+|id=}}
+
+{{football box collapsible
+|result=W
+|date=11 March 2026
+|time={{UTZ|21:30|-3}}
+|round=5
+|team1=Flamengo
+|score=2–0
+|report=https://www.soccerway.com/match/cruzeiro-0SwtclaU/flamengo-rj-WjxY29qB/?mid=za4CbXOq
+|team2=[[2026 Cruzeiro Esporte Clube season|Cruzeiro]]
+|goals1=
+*[[Pedro (footballer, born 1997)|Pedro]] {{goal|5}}
+*[[Jorge Carrascal|Carrascal]] {{goal|90+8|[[Samuel Lino|Lino]]}}
+|goals2=
+|location=[[Rio de Janeiro]]
+|stadium=[[Maracanã Stadium|Maracanã]]
+|attendance=47,214
+|referee=[[Flávio Rodrigues de Souza]]
+|id=}}
+
+{{football box collapsible
+|result=W
+|date=14 March 2026
+|time={{UTZ|20:30|-3}}
+|round=6 <small>''[[Clássico da Rivalidade]]''</small>
+|team1=[[2026 Botafogo FR season|Botafogo]]
+|score=0–3
+|report=https://www.soccerway.com/match/botafogo-rj-jXzWoWa5/flamengo-rj-WjxY29qB/?mid=r57xMRM7
+|team2=Flamengo
+|goals1=
+*[[Alexander Barboza|Barboza]] {{sent off|0|45+9}}
+|goals2=
+*[[Samuel Lino|Lino]] {{goal|14|[[Guillermo Varela|Varela]]}}
+*[[Léo Pereira (footballer, born 1996)|Pereira]] {{goal|45+2}}
+*[[Pedro (footballer, born 1997)|Pedro]] {{goal|50|[[Guillermo Varela|Varela]]}}
+|location=[[Rio de Janeiro]]
+|stadium=[[Estádio Olímpico Nilton Santos|Nilton Santos]]
+|attendance=16,176
+|referee=[[Anderson Daronco]]
+|id=}}
+
+{{football box collapsible
+|result=W
+|date=19 March 2026
+|time={{UTZ|20:00|-3}}
+|round=7
+|team1=Flamengo
+|score=3–0
+|report=https://www.soccerway.com/match/flamengo-rj-WjxY29qB/remo-2i0B6Zul/?mid=baSfzIsI
+|team2=[[2026 Clube do Remo season|Remo]]
+|goals1=
+*[[Léo Ortiz|Ortiz]] {{goal|20|[[Giorgian de Arrascaeta|de Arrascaeta]]}}
+*[[Samuel Lino|Lino]] {{goal|49|[[Luiz Araújo (footballer)|L. Araújo]]}}
+*[[Luiz Araújo (footballer)|L. Araújo]] {{goal|55}}
+|goals2=
+|location=[[Rio de Janeiro]]
+|stadium=[[Maracanã Stadium|Maracanã]]
+|attendance=62,075
+|referee=[[Paulo Cesar Zanovelli da Silva]]
+|id=}}
+
+{{football box collapsible
+|result=D
+|date=22 March 2026
+|time={{UTZ|20:30|-3}}
+|round=8 <small>''[[Encontro das Nações]]''</small>
+|team1=[[2026 SC Corinthians Paulista season|Corinthians]]
+|score=1–1
+|report=https://www.soccerway.com/match/corinthians-QBGfQbSe/flamengo-rj-WjxY29qB/?mid=Cx9wGgeA
+|team2=Flamengo
+|goals1=
+*[[Yuri Alberto]] {{goal|19|[[Matheus Bidu|Bidu]]}}
+|goals2=
+*[[Lucas Paquetá|Paquetá]] {{goal|3|[[Pedro (footballer, born 1997)|Pedro]]}}
+*[[Evertton Araújo|E. Araújo]] {{sent off|0|52}}
+|location=[[São Paulo]]
+|stadium=[[Neo Química Arena]]
+|attendance=41,896
+|referee=[[Rodrigo José Pereira de Lima]]
+|id=}}
+
+{{football box collapsible
+|result=L
+|date=2 April 2026
+|time={{UTZ|21:30|-3}}
+|round=9
+|team1=[[2026 Red Bull Bragantino season|Red Bull Bragantino]]
+|score=3–0
+|report=https://www.soccerway.com/match/bragantino-jwKvKhGa/flamengo-rj-WjxY29qB/?mid=2BLqatWg
+|team2=Flamengo
+|goals1=
+*[[Isidro Pitta|Pitta]] {{goal|17|[[Juninho Capixaba|Capixaba]]}}
+*[[Gabriel (footballer, born July 1992)|Gabriel]] {{goal|39|[[Henry Mosquera|Mosquera]]}}
+*[[Lucas Barbosa (footballer, born 2001)|Barbosa]] {{goal|55|[[Agustín Sant'Anna|Sant'Anna]]}}
+|goals2=
+*[[Erick Pulgar|Pulgar]] {{sent off|0|50}}
+|location=[[Bragança Paulista]]
+|stadium=[[Estádio Cícero de Souza Marques|Cícero de Souza Marques]]
+|attendance=5,854
+|referee=[[Fernando Antônio Mendes de Salles Nascimento Filho]]
+|id=}}
+
+{{football box collapsible
+|result=W
+|date=5 April 2026
+|time={{UTZ|17:30|-3}}
+|round=10
+|team1=Flamengo
+|score=3–1
+|report=https://www.soccerway.com/match/flamengo-rj-WjxY29qB/santos-n3QdnjFB/?mid=Ac0S9cpC
+|team2=[[2026 Santos FC season|Santos]]
+|goals1=
+*[[Pedro (footballer, born 1997)|Pedro]] {{goal|64|[[Jorge Carrascal|Carrascal]]}}
+*[[Jorginho (footballer, born December 1991)|Jorginho]] {{goal|71|pen.}}
+*[[Lucas Paquetá|Paquetá]] {{goal|89|[[Gonzalo Plata|Plata]]}}
+|goals2=
+*[[Lautaro Díaz|Díaz]] {{goal|48|[[Christian Oliva|Oliva]]}}
+|location=[[Rio de Janeiro]]
+|stadium=[[Maracanã Stadium|Maracanã]]
+|attendance=68,615
+|referee=[[Anderson Daronco]]
+|id=}}
+
+{{football box collapsible
+|result=W
+|date=12 April 2026
+|time={{UTZ|18:00|-3}}
+|round=11 <small>''[[Fla–Flu]]''</small>
+|team1=[[2026 Fluminense FC season|Fluminense]]
+|score=1–2
+|report=https://www.soccerway.com/match/flamengo-rj-WjxY29qB/fluminense-EV9L3kU4/?mid=UJGGIRSq
+|team2=Flamengo
+|goals1=
+*[[Jefferson Savarino|Savarino]] {{goal|76}}
+|goals2=
+*[[Pedro (footballer, born 1997)|Pedro]] {{goal|7|[[Samuel Lino|Lino]]|51|[[Samuel Lino|Lino]]}}
+*[[Jorge Carrascal|Carrascal]] {{sent off|0|90+4}}
+|location=[[Rio de Janeiro]]
+|stadium=[[Maracanã Stadium|Maracanã]]
+|attendance=44,833
+|referee=[[Raphael Claus]]
+|id=}}
+
+{{football box collapsible
+|result=W
+|date=19 April 2026
+|time={{UTZ|19:30|-3}}
+|round=12
+|team1=Flamengo
+|score=2–0
+|report=https://www.soccerway.com/match/bahia-UeD7XtzM/flamengo-rj-WjxY29qB/?mid=27VXsrde
+|team2=[[2026 Esporte Clube Bahia season|Bahia]]
+|goals1=
+*[[Giorgian de Arrascaeta|de Arrascaeta]] {{goal|17|[[Pedro (footballer, born 1997)|Pedro]]}}
+*[[Lucas Paquetá|Paquetá]] {{goal|80|[[Saúl (footballer, born 1994)|Saúl]]}}
+|goals2=
+|location=[[Rio de Janeiro]]
+|stadium=[[Maracanã Stadium|Maracanã]]
+|attendance=64,565
+|referee=[[Flávio Rodrigues de Souza]]
+|id=}}
+
+{{football box collapsible
+|result=W
+|date=26 April 2026
+|time={{UTZ|20:30|-3}}
+|round=13 <small>''[[Clube de Regatas do Flamengo–Clube Atlético Mineiro rivalry|Flamengo Atlético-MG rivalry]]''</small>
+|team1=[[2026 Clube Atlético Mineiro season|Atlético Mineiro]]
+|score=0–4
+|report=https://www.soccerway.com/match/atletico-mg-hGLC5Bah/flamengo-rj-WjxY29qB/?mid=00zZ6kVN
+|team2=Flamengo
+|goals1=
+|goals2=
+*[[Pedro (footballer, born 1997)|Pedro]] {{goal|8|[[Samuel Lino|Lino]]|84|[[Evertton Araújo|E. Araújo]]}}
+*[[Gonzalo Plata|Plata]] {{goal|31|[[Samuel Lino|Lino]]}}
+*[[Giorgian de Arrascaeta|de Arrascaeta]] {{goal|45+2|[[Guillermo Varela|Varela]]}}
+|location=[[Belo Horizonte]]
+|stadium=[[Arena MRV]]
+|attendance=28,148
+|referee=[[Rafael Rodrigo Klein]]
+|id=}}
+
+{{football box collapsible
+|result=D
+|date=3 May 2026
+|time={{UTZ|16:00|-3}}
+|round=14 <small>''[[Clássico dos Milhões]]''</small>
+|team1=Flamengo
+|score=2–2
+|report=https://www.soccerway.com/match/flamengo-rj-WjxY29qB/vasco-2RABlYFn/?mid=OdjE3ytT
+|team2=[[2026 CR Vasco da Gama season|Vasco da Gama]]
+|goals1=
+*[[Pedro (footballer, born 1997)|Pedro]] {{goal|8|[[Gonzalo Plata|Plata]]}}
+*[[Jorginho (footballer, born December 1991)|Jorginho]] {{goal|60|pen.}}
+|goals2=
+*[[Robert Renan]] {{goal|84|[[Nuno Moreira|Moreira]]}}
+*[[Hugo Moura]] {{goal|90+7|[[Carlos Cuesta (footballer)|Cuesta]]}}
+|location=[[Rio de Janeiro]]
+|stadium=[[Maracanã Stadium|Maracanã]]
+|attendance=61,872
+|referee=[[Wilton Pereira Sampaio]]
+|id=}}
+
+{{football box collapsible
+|result=W
+|date=10 May 2026
+|time={{UTZ|19:30|-3}}
+|round=15
+|team1=[[2026 Grêmio FBPA season|Grêmio]]
+|score=0–1
+|report=https://www.soccerway.com/match/flamengo-rj-WjxY29qB/gremio-E1EFmhVh/?mid=23epNMxJ
+|team2=Flamengo
+|goals1=
+|goals2=
+*[[Jorge Carrascal|Carrascal]] {{goal|68|[[Emerson Royal|Royal]]}}
+|location=[[Porto Alegre]]
+|stadium=[[Arena do Grêmio]]
+|attendance=30,891
+|referee=[[Davi de Oliveira Lacerda]]
+|id=}}
+
+{{football box collapsible
+|result=D
+|date=17 May 2026
+|time={{UTZ|19:30|-3}}
+|round=16
+|team1=[[2026 Club Athletico Paranaense season|Athletico Paranaense]]
+|score=1–1
+|report=https://www.soccerway.com/match/athletico-pr-UoAxb1Tq/flamengo-rj-WjxY29qB/?mid=IZ3K6tin
+|team2=Flamengo
+|goals1=
+*[[Stiven Mendoza|Mendoza]] {{goal|10|[[Gastón Benavídez|Benavídez]]}}
+|goals2=
+*[[Pedro (footballer, born 1997)|Pedro]] {{goal|83|[[Bruno Henrique (footballer, born 1990)|Bruno Henrique]]}}
+*[[Danilo (footballer, born July 1991)|Danilo]] {{sent off|2|69|90+1}}
+|location=[[Curitiba]]
+|stadium=[[Arena da Baixada]]
+|attendance=34,197
+|referee=[[Rafael Rodrigo Klein]]
+|id=}}
+
+{{football box collapsible
+|result=L
+|date=23 May 2026
+|time={{UTZ|21:00|-3}}
+|round=17
+|team1=Flamengo
+|score=0–3
+|report=https://www.soccerway.com/match/flamengo-rj-WjxY29qB/palmeiras-hMn9FTbH/?mid=4Qzy1xLN
+|team2=[[2026 SE Palmeiras season|Palmeiras]]
+|goals1=
+*[[Jorge Carrascal|Carrascal]] {{sent off|0|21}}
+|goals2=
+*[[José Manuel López (footballer)|López]] {{goal|38|[[Allan (footballer, born 2004)|Allan]]}}
+*[[Allan (footballer, born 2004)|Allan]] {{goal|57}}
+*[[Paulinho (footballer, born July 2000)|Paulinho]] {{goal|90+4|[[Jefté]]}}
+|location=[[Rio de Janeiro]]
+|stadium=[[Maracanã Stadium|Maracanã]]
+|attendance=71,205
+|referee=[[Davi de Oliveira Lacerda]]
+|id=}}
+
+{{football box collapsible
+|result=W
+|date=30 May 2026
+|time={{UTZ|16:00|-3}}
+|round=18
+|team1=Flamengo
+|score=3–0
+|report=https://www.soccerway.com/match/coritiba-KGO4pUqO/flamengo-rj-WjxY29qB/?mid=4hXP963e
+|team2=[[2026 Coritiba Foot Ball Club season|Coritiba]]
+|goals1=
+*[[Samuel Lino|Lino]] {{goal|11|[[Pedro (footballer, born 1997)|Pedro]]|70|[[Ayrton Lucas]]}}
+*[[Pedro (footballer, born 1997)|Pedro]] {{goal|60|[[Samuel Lino|Lino]]}}
+|goals2=
+*[[Pedro Rocha (footballer, born 1994)|Rocha]] {{sent off|0|36}}
+|location=[[Rio de Janeiro]]
+|stadium=[[Maracanã Stadium|Maracanã]]
+|attendance=51,270
+|referee=[[Flávio Rodrigues de Souza]]
+|id=}}
+
+{{football box collapsible
+|result=W
+|date=22 July 2026
+|time={{UTZ|21:30|-3}}
+|round=19
+|team1=[[2026 Associação Chapecoense de Futebol season|Chapecoense]]
+|score=0–4
+|report=https://www.soccerway.com/match/chapecoense-sc-jcQV3XP6/flamengo-rj-WjxY29qB/?mid=4S3cXLIG
+|team2=Flamengo
+|goals1=
+|goals2=
+*[[Pedro (footballer, born 1997)|Pedro]] {{goal|26|[[Bruno Henrique (footballer, born 1990)|Bruno Henrique]]|87|[[Samuel Lino|Lino]]}}
+*[[Rafael Thyere]] {{goal|38|o.g.}}
+*[[Lorran (footballer, born 2006)|Lorran]] {{goal|48}}
+|location=[[Chapecó]]
+|stadium=[[Arena Condá]]
+|attendance=13,769
+|referee=[[Rafael Rodrigo Klein]]
+|id=}}
+
+{{football box collapsible
+|result=D
+|date=26 July 2026
+|time={{UTZ|18:30|-3}}
+|round=20
+|team1=Flamengo
+|score=1–1
+|report=https://www.soccerway.com/match/flamengo-rj-WjxY29qB/sao-paulo-QgP0oAUH/?mid=tUYBxHfd
+|team2=[[2026 São Paulo FC season|São Paulo]]
+|goals1=
+*[[Léo Pereira (footballer, born 1996)|Pereira]] {{goal|57|[[Jorginho (footballer, born December 1991)|Jorginho]]}}
+|goals2=
+*[[Jonathan Calleri|Calleri]] {{goal|70|[[Luis Osorio (footballer)|Osorio]]}}
+|location=[[Rio de Janeiro]]
+|stadium=[[Maracanã Stadium|Maracanã]]
+|attendance=70,791
+|referee=[[Anderson Daronco]]
+|id=}}
+
+{{football box collapsible
+|result=D
+|date=29 July 2026
+|time={{UTZ|19:30|-3}}
+|round=21
+|team1=[[2026 Sport Club Internacional season|Internacional]]
+|score=1–1
+|report=https://www.soccerway.com/match/flamengo-rj-WjxY29qB/internacional-tSCiHj0I/?mid=UXLz2XN7
+|team2=Flamengo
+|goals1=
+*[[Vitinho (footballer, born April 1999)|Vitinho]] {{goal|27}}
+|goals2= 
+*[[Samuel Lino|Lino]] {{goal|79|[[Bruno Henrique (footballer, born 1990)|Bruno Henrique]]}}
+|location=[[Porto Alegre]]
+|stadium=[[Estádio Beira-Rio|Beira-Rio]]
+|attendance=18,359
+|referee=[[Matheus Delgado Candançan]]
+|id=}}
+
+{{football box collapsible
+|result=W
+|date=9 August 2026
+|time={{UTZ|19:30|-3}}
+|round=22
+|team1=Flamengo
+|score=2–0
+|report=https://www.soccerway.com/match/flamengo-rj-WjxY29qB/vitoria-8bSbHipn/?mid=IiNB3paC
+|team2=[[2026 Esporte Clube Vitória season|Vitória]]
+|goals1=
+*[[Erick Pulgar|Pulgar]] {{goal|14|[[Léo Pereira (footballer, born 1996)|Pereira]]}}
+*[[Bruno Henrique (footballer, born 1990)|Bruno Henrique]] {{goal|80|[[Jorge Carrascal|Carrascal]]}}
+|goals2=
+|location=[[Rio de Janeiro]]
+|stadium=[[Maracanã Stadium|Maracanã]]
+|attendance=58,226
+|referee=[[Wilton Pereira Sampaio]]
+|id=}}
+
+{{football box collapsible
+|result=W
+|date=16 August 2026
+|time={{UTZ|18:30|-3}}
+|round=23
+|team1=[[2026 Mirassol Futebol Clube season|Mirassol]]
+|score=1–5
+|report=https://www.soccerway.com/match/flamengo-rj-WjxY29qB/mirassol-pQ8ryEe7/?mid=p2c2s0sH
+|team2=Flamengo
+|goals1=
+*[[João Victor (footballer, born January 2007)|João Victor]] {{goal|77|[[Reinaldo (footballer, born 1989)|Reinaldo]]}}
+|goals2=
+*[[Jorge Carrascal|Carrascal]] {{goal|22|[[Gonzalo Plata|Plata]]}}
+*[[Luiz Araújo (footballer)|L. Araújo]] {{goal|53|[[Jorge Carrascal|Carrascal]]}}
+*[[Pedro (footballer, born 1997)|Pedro]] {{goal|56|[[Ayrton Lucas]]|66|[[Jorge Carrascal|Carrascal]]}}
+*[[Samuel Lino|Lino]] {{goal|74|[[Giorgian de Arrascaeta|de Arrascaeta]]}}
+|location=[[Mirassol]]
+|stadium=[[Estádio José Maria de Campos Maia|José Maria de Campos Maia]]
+|attendance=9,914
+|referee=[[Rafael Rodrigo Klein]]
+|id=}}
+
+{{football box collapsible
+|result=L
+|date=22 August 2026
+|time={{UTZ|20:30|-3}}
+|round=24
+|team1=[[2026 Cruzeiro Esporte Clube season|Cruzeiro]]
+|score=2–1
+|report=https://www.soccerway.com/match/cruzeiro-0SwtclaU/flamengo-rj-WjxY29qB/?mid=n3LkYGL0
+|team2=Flamengo
+|goals1=
+*[[Keny Arroyo|Arroyo]] {{goal|55|[[Matheus Henrique]]}}
+*[[Matheus Pereira (footballer, born 1996)|M. Pereira]] {{goal|90+5|[[Lucas Villalba|Villalba]]}}
+|goals2=
+*[[Pedro (footballer, born 1997)|Pedro]] {{goal|22|[[Giorgian de Arrascaeta|de Arrascaeta]]}}
+|location=[[Belo Horizonte]]
+|stadium=[[Mineirão]]
+|attendance=34,166
+|referee=[[Rodrigo José Pereira de Lima]]
+|id=}}
+
+{{football box collapsible
+|result=W
+|date=30 August 2026
+|time={{UTZ|16:00|-3}}
+|round=25 <small>''[[Clássico da Rivalidade]]''</small>
+|team1=Flamengo
+|score=3–0
+|report=https://www.soccerway.com/match/botafogo-rj-jXzWoWa5/flamengo-rj-WjxY29qB/?mid=0lfWpf56
+|team2=[[2026 Botafogo FR season|Botafogo]]
+|goals1=
+*[[Samuel Lino|Lino]] {{goal|13|[[Jorginho (footballer, born December 1991)|Jorginho]]|86|[[Jorge Carrascal|Carrascal]]}}
+*[[Jorge Carrascal|Carrascal]] {{goal|90|[[Everton Soares|Everton]]}}
+|goals2=
+|location=[[Rio de Janeiro]]
+|stadium=[[Maracanã Stadium|Maracanã]]
+|attendance=65,970
+|referee=[[Alex Gomes Stefano]]
+|id=}}
+
+{{football box collapsible
+|result=W
+|date=2 September 2026
+|time={{UTZ|19:30|-3}}
+|round=4
+|team1=Flamengo
+|score=2–0
+|report=https://www.soccerway.com/match/flamengo-rj-WjxY29qB/mirassol-pQ8ryEe7/?mid=QeX6IHJ8
+|team2=[[2026 Mirassol Futebol Clube season|Mirassol]]
+|goals1=
+*[[Jorge Carrascal|Carrascal]] {{goal|14|[[Pedro (footballer, born 1997)|Pedro]]}}
+*[[Lucas Paquetá|Paquetá]] {{goal|43|[[Jorge Carrascal|Carrascal]]}}
+|goals2=
+|location=[[Rio de Janeiro]]
+|stadium=[[Maracanã Stadium|Maracanã]]
+|attendance=60,155
+|referee=[[Anderson Daronco]]
+|note=Fixture originally scheduled for 25 February 2026, postponed due to Flamengo's participation in the [[2026 Recopa Sudamericana]].
+|id=}}
+
+{{football box collapsible
+|result=W
+|date=6 September 2026
+|time={{UTZ|16:00|-3}}
+|round=26
+|team1=[[2026 Clube do Remo season|Remo]]
+|score=0–1
+|report=https://www.soccerway.com/match/flamengo-rj-WjxY29qB/remo-2i0B6Zul/?mid=CpP6O0gS
+|team2=Flamengo
+|goals1=
+*[[Edson Fernando]] {{sent off||90+5}}
+|goals2=
+*[[Samuel Lino|Lino]] {{goal|65|[[Giorgian de Arrascaeta|de Arrascaeta]]}}
+|location=[[Belém]]
+|stadium=[[Mangueirão]]
+|attendance=51,567
+|referee=[[Lucas Casagrande (referee)|Lucas Casagrande]]
+|id=}}
+
+{{football box collapsible
+|result=W
+|date=13 September 2026
+|time={{UTZ|17:30|-3}}
+|round=27 <small>''[[Encontro das Nações]]''</small>
+|team1=Flamengo
+|score=2–1
+|report=https://www.soccerway.com/match/corinthians-QBGfQbSe/flamengo-rj-WjxY29qB/?mid=8GAxJvHk
+|team2=[[2026 SC Corinthians Paulista season|Corinthians]]
+|goals1=
+*[[Lucas Paquetá|Paquetá]] {{goal|48}}
+*[[Bruno Henrique (footballer, born 1990)|Bruno Henrique]] {{goal|89|[[Joaquín Freitas|Freitas]]}}
+|goals2=
+*[[Gui Negão]] {{goal|78|[[Kaio César]]}}
+|location=[[Rio de Janeiro]]
+|stadium=[[Maracanã Stadium|Maracanã]]
+|attendance=70,112
+|referee=[[Wilton Pereira Sampaio]]
+|id=}}
+
+{{football box collapsible
+|result=W
+|date=20 September 2026
+|time={{UTZ|18:30|-3}}
+|round=28
+|team1=Flamengo
+|score=2–1
+|report=https://www.soccerway.com/match/bragantino-jwKvKhGa/flamengo-rj-WjxY29qB/?mid=GGUgrep1
+|team2=[[2026 Red Bull Bragantino season|Red Bull Bragantino]]
+|goals1=
+*[[Guillermo Varela|Varela]] {{goal|13|[[Jorge Carrascal|Carrascal]]}}
+*[[Pedro (footballer, born 1997)|Pedro]] {{goal|71|[[Jorginho (footballer, born December 1991)|Jorginho]]}}
+|goals2=
+*[[Bruno Henrique (footballer, born 1990)|Bruno Henrique]] {{goal|86|o.g.}}
+|location=[[Rio de Janeiro]]
+|stadium=[[Maracanã Stadium|Maracanã]]
+|attendance=66,053
+|referee=[[Rodrigo José Pereira de Lima]]
+|id=}}
+
+{{football box collapsible
+|result=D
+|date=8 October 2026
+|time={{UTZ|19:30|-3}}
+|round=29
+|team1=[[2026 Santos FC season|Santos]]
+|score=2–2
+|report=https://www.soccerway.com/match/flamengo-rj-WjxY29qB/santos-n3QdnjFB/?mid=QRDzcFGi
+|team2=Flamengo
+|goals1=
+*[[Neymar]] {{goal|82|pen.|88|pen.}}
+|goals2=
+*[[Danilo (footballer, born July 1991)|Danilo]] {{goal|43|[[Pedro (footballer, born 1997)|Pedro]]}} 
+*[[Lucas Paquetá|Paquetá]] {{goal|45+4|[[Jorge Carrascal|Carrascal]]}}
+|location=[[Santos, São Paulo|Santos]]
+|stadium=[[Estádio Urbano Caldeira|Vila Belmiro]]
+|attendance=16,600
+|referee=[[Anderson Daronco]]
+|id=}}
+
+{{football box collapsible
+|result=W
+|date=11 October 2026
+|time={{UTZ|17:30|-3}}
+|round=30 <small>''[[Fla–Flu]]''</small>
+|team1=Flamengo
+|score=1–0
+|report=https://www.soccerway.com/match/flamengo-rj-WjxY29qB/fluminense-EV9L3kU4/?mid=OrXc0lNq
+|team2=[[2026 Fluminense FC season|Fluminense]]
+|goals1=
+*[[Jorge Carrascal|Carrascal]] {{goal|65|[[Lucas Paquetá|Paquetá]]}} 
+|goals2=
+|location=[[Rio de Janeiro]]
+|stadium=[[Maracanã Stadium|Maracanã]]
+|attendance=63,300
+|referee=[[Rafael Rodrigo Klein]]
+|id=}}
+
+{{football box collapsible
+|result=W
+|date=18 October 2026
+|time={{UTZ|18:30|-3}}
+|round=31
+|team1=[[2026 Esporte Clube Bahia season|Bahia]]
+|score=0–3
+|report=https://www.soccerway.com/match/bahia-UeD7XtzM/flamengo-rj-WjxY29qB/?mid=QNNOuHtg
+|team2=Flamengo
+|goals1=
+|goals2=
+*[[Jorginho (footballer, born December 1991)|Jorginho]] {{goal|64|pen.}}
+*[[Gonzalo Plata|Plata]] {{goal|73|[[Samuel Lino|Lino]]}}
+*[[Lucas Paquetá|Paquetá]] {{goal|78|[[Guillermo Varela|Varela]]}}
+|location=[[Salvador, Bahia|Salvador]]
+|stadium=[[Casa de Apostas Arena Fonte Nova]]
+|attendance=47,465
+|referee=[[Wilton Pereira Sampaio]]
+|id=}}
+
+{{football box collapsible
+|result=W
+|date=26 October 2026
+|time={{UTZ|20:00|-3}}
+|round=32 <small>''[[Clube de Regatas do Flamengo–Clube Atlético Mineiro rivalry|Flamengo Atlético-MG rivalry]]''</small>
+|team1=Flamengo
+|score=3–2
+|report=https://www.soccerway.com/match/atletico-mg-hGLC5Bah/flamengo-rj-WjxY29qB/?mid=UFKuxZuI
+|team2=[[2026 Clube Atlético Mineiro season|Atlético Mineiro]]
+|goals1=
+*[[Gonzalo Plata|Plata]] {{goal|34|[[Guillermo Varela|Varela]]}}
+*[[Giorgian de Arrascaeta|de Arrascaeta]] {{goal|41|[[Samuel Lino|Lino]]}}
+*[[Jorge Carrascal|Carrascal]] {{goal|90+9|pen.}}
+|goals2=
+*[[Bernard (footballer)|Bernard]] {{goal|7|[[Ángelo Preciado|Preciado]]}}
+*[[Renan Lodi|Lodi]] {{goal|59|[[Victor Hugo (footballer, born 11 May 2004)|Victor Hugo]]}}
+|location=[[Rio de Janeiro]]
+|stadium=[[Maracanã Stadium|Maracanã]]
+|attendance=60,624
+|referee=[[Rodrigo José Pereira de Lima]]
+|id=}}
+
+{{football box collapsible
+|result=W
+|date=29 October 2026
+|time={{UTZ|20:00|-3}}
+|round=33 <small>''[[Clássico dos Milhões]]''</small>
+|team1=[[2026 CR Vasco da Gama season|Vasco da Gama]]
+|score=1–4
+|report=https://www.soccerway.com/match/flamengo-rj-WjxY29qB/vasco-2RABlYFn/?mid=zenVrsg2
+|team2=Flamengo
+|goals1=
+*[[Alan Lescano|Lescano]] {{goal|15|[[Brenner (footballer, born 2000)|Brenner]]}}
+|goals2=
+*[[Pedro (footballer, born 1997)|Pedro]] {{goal|10|[[Guillermo Varela|Varela]]||41}}
+*[[Samuel Lino|Lino]] {{goal|53||85}}
+|location=[[Rio de Janeiro]]
+|stadium=[[Estádio Olímpico Nilton Santos|Nilton Santos]]
+|attendance=28,470
+|referee=[[Bruno Arleu de Araújo]]
+|id=}}
+
+{{football box collapsible
+|result=
+|date=4 November 2026
+|time={{UTZ|19:30|-3}}
+|round=34
+|team1=Flamengo
+|score=
+|report=https://www.soccerway.com/match/flamengo-rj-WjxY29qB/gremio-E1EFmhVh/?mid=I1IqfSI0
+|team2=[[2026 Grêmio FBPA season|Grêmio]]
+|goals1=
+|goals2=
+|location=[[Rio de Janeiro]]
+|stadium=[[Maracanã Stadium|Maracanã]]
+|attendance=
+|referee=[[Paulo Cesar Zanovelli da Silva]]
+|id=}}
+
+{{football box collapsible
+|result=
+|date=18 November 2026
+|time={{UTZ|20:30|-3}}
+|round=35
+|team1=Flamengo
+|score=
+|report=https://www.soccerway.com/match/athletico-pr-UoAxb1Tq/flamengo-rj-WjxY29qB/?mid=0ID26d8N
+|team2=[[2026 Club Athletico Paranaense season|Athletico Paranaense]]
+|goals1=
+|goals2=
+|location=[[Rio de Janeiro]]
+|stadium=[[Maracanã Stadium|Maracanã]]
+|attendance=
+|referee=
+|id=}}
+
+{{football box collapsible
+|result=
+|date=21 November 2026
+|time={{UTZ|16:30|-3}}
+|round=36
+|team1=[[2026 SE Palmeiras season|Palmeiras]]
+|score=
+|report=https://www.soccerway.com/match/flamengo-rj-WjxY29qB/palmeiras-hMn9FTbH/?mid=faNhnYLF
+|team2=Flamengo
+|goals1=
+|goals2=
+|location=[[São Paulo]]
+|stadium=[[Nubank Parque]]
+|attendance=
+|referee=
+|id=}}
+
+{{football box collapsible
+|result=
+|date=28–29 November 2026
+|time={{UTZ|--:--|-3}}
+|round=37
+|team1=[[2026 Coritiba Foot Ball Club season|Coritiba]]
+|score=
+|report=https://www.soccerway.com/match/coritiba-KGO4pUqO/flamengo-rj-WjxY29qB/?mid=feR891Jt
+|team2=Flamengo
+|goals1=
+|goals2=
+|location=[[Curitiba]]
+|stadium=[[Estádio Couto Pereira|Couto Pereira]]
+|attendance=
+|referee=
+|id=}}
+
+{{football box collapsible
+|result=
+|date=2 December 2026
+|time={{UTZ|--:--|-3}}
+|round=38
+|team1=Flamengo
+|score=
+|report=https://www.soccerway.com/match/chapecoense-sc-jcQV3XP6/flamengo-rj-WjxY29qB/?mid=UXLX3cmI
+|team2=[[2026 Associação Chapecoense de Futebol season|Chapecoense]]
+|goals1=
+|goals2=
+|location=[[Rio de Janeiro]]
+|stadium=[[Maracanã Stadium|Maracanã]]
+|attendance=
+|referee=
+|id=}}
+
+=== Copa do Brasil ===
+{{main|2026 Copa do Brasil}}
+
+====Fifth round====
+{{main|2026 Copa do Brasil fifth round}}
+
+''Goals, assists and red cards are shown.''
+
+{{football box collapsible
+|result=W
+|date=22 April 2026
+|time={{UTZ|21:30|-3}}
+|round=1st leg
+|team1=Flamengo
+|score=2–1
+|report=https://www.soccerway.com/match/flamengo-rj-WjxY29qB/vitoria-8bSbHipn/?mid=beDT2GVs
+|team2=[[Esporte Clube Vitória|Vitória]]
+|goals1=
+*[[Evertton Araújo|E. Araújo]] {{goal|10|[[Nicolás de la Cruz|de la Cruz]]}}
+*[[Pedro (footballer, born 1997)|Pedro]] {{goal|52|[[Bruno Henrique (footballer, born 1990)|Bruno Henrique]]}}
+|goals2=
+*[[Erick (footballer, born December 1997)|Erick]] {{goal|11}}
+|location=[[Rio de Janeiro]]
+|stadium=[[Maracanã Stadium|Maracanã]]
+|attendance=44,292
+|referee=[[Anderson Daronco]]
+|id=}}
+{{football box collapsible
+|result=L
+|date=14 May 2026
+|time={{UTZ|21:30|-3}}
+|round=2nd leg
+|team1=[[Esporte Clube Vitória|Vitória]]
+|score=2–0
+|aggregatescore=3–2
+|report=https://www.soccerway.com/match/flamengo-rj-WjxY29qB/vitoria-8bSbHipn/?mid=6LGy1f0f
+|team2=Flamengo
+|goals1=
+*[[Erick (footballer, born December 1997)|Erick]] {{goal|6|[[Gabriel Baralhas|Baralhas]]}}
+*[[Luan Cândido]] {{goal|61}}
+|goals2=
+|location=[[Salvador, Bahia|Salvador]]
+|stadium=[[Barradão]]
+|attendance=30,793
+|referee=[[Raphael Claus]]
+|id=}}
+
+==Management team==
+{{updated|4 March 2026.|<ref>{{cite web |url=http://www.flamengo.com.br/comissao-tecnica |title=Comissão Técnica - Flamengo |website=flamengo.com.br |language=pt-br |access-date=17 December 2021}}</ref>}}
+{| style="width:38%;" class="wikitable"
+|-
+! Position
+! Name
+|-
+! colspan="2" style="background:#dcdcdc; text-align:center"|Board of directors
+|-
+|Director of football
+|{{flagicon|POR}} [[José Boto]]
+|-
+|Assistant director of football
+|{{flagicon|BRA}} [[Bruno Spindel]]
+|-
+! colspan="2" style="background:#dcdcdc; text-align:center"|Coaching staff
+|-
+|Head coach
+|{{flagicon|POR}} [[Leonardo Jardim]]
+|-
+|Assistant head coach
+|{{flagicon|POR}} Antonio Vieira
+|-
+|Assistant head coach
+|{{flagicon|BRA}} [[Márcio de Moraes Torres]]
+|-
+|Goalkeepers trainer
+|{{flagicon|BRA}} [[Rogério Maia]]
+|-
+|Goalkeepers trainer
+|{{flagicon|BRA}} [[Thiago Eller]]
+|-
+|Performance analyst
+|{{flagicon|POR}} Diogo Dias
+|-
+|Performance analyst
+|{{flagicon|POR}} José Barros
+|-
+|Performance analyst
+|{{flagicon|BRA}} [[Arthur Souza]]
+|-
+|Performance analyst
+|{{flagicon|BRA}} [[Victor Saad]]
+|-
+|Head of scouting
+|{{flagicon|UKR}} [[Andrii Fedchenkov]]
+|-
+! colspan="2" style="background:#dcdcdc; text-align:center"|Medical staff
+|-
+|Health and high performance manager
+|{{flagicon|BRA}} [[Fernando Sassaki]]
+|-
+|Fitness coach
+|{{flagicon|BRA}} [[Diogo Linhares]]
+|-
+|Fitness coach
+|{{flagicon|BRA}} [[Arthur Peixoto]]
+|-
+|Fitness coach
+|{{flagicon|BRA}} [[Júnior Bezerra]]
+|-
+|Doctor
+|{{flagicon|BRA}} [[Marcelo Soares (Doctor)|Marcelo Soares]]
+|-
+|Doctor
+|{{flagicon|BRA}} [[Fernando Bassan]]
+|-
+|Physiotherapist
+|{{flagicon|BRA}} [[Laniyan Neves]]
+|-
+|}
+
+==Roster==
+List of currently full members of the professional team, youth players are also often used. Ages on 31 December 2026.
+{{updated|19 September 2026}}<ref>{{cite web|url=http://www.flamengo.com.br/elencos/elenco-profissional|title=ELENCO PROFISSIONAL|website=Flamengo.com.br|language=pt-br|access-date=7 February 2022}}</ref>
+{| class="wikitable sortable" style="text-align:center; font-size:90%; width:90%"
+|-
+! text-align:center;" style="width:5%;"|{{abbr|No.|Squad number}}
+! text-align:center;" style="width:5%;"|{{abbr|Pos.|Primary position}}
+! text-align:center;" style="width:1%;"|{{abbr|Nat.|Nationality}}
+! text-align:center;" style="width:10%;"| Name
+! text-align:center;" style="width:12%;"| Date of birth (age)
+! text-align:center;" style="width:6%;"| Signed in
+! text-align:center;" style="width:6%;"| Contract end
+! text-align:center;" style="width:10%;"| Signed from
+! text-align:center;" style="width:5%;"| [[Transfer (association football)|Transfer fee]]
+! text-align:left;" style="width:10%;"| Notes
+|-
+! colspan="10" style="background:#dcdcdc; text-align:center" |{{sort|0|''Goalkeepers''}}
+|-
+| 1
+| [[Goalkeeper (association football)|GK]]
+| style="text-align:center;"|{{flagicon|ARG}}
+| style="text-align:left;"|[[Agustín Rossi (footballer)|Agustín Rossi]]
+| style="text-align:left;"|{{birth date and age2|2026|12|31|1995|8|21|df=y}}
+| 2023
+| 2027
+| style="text-align:left;"|{{flagicon|ARG}} [[Boca Juniors]]
+| {{sort|0.02|Free}}
+| 
+|-
+| 42
+| [[Goalkeeper (association football)|GK]]
+| style="text-align:center;"|{{flagicon|BRA}}
+| style="text-align:left;"|[[Andrew (footballer)|Andrew]]
+| style="text-align:left;"|{{birth date and age2|2026|12|31|2001|7|1|df=y}}
+| 2026
+| 2029
+| style="text-align:left;"|{{flagicon|POR}} [[Gil Vicente F.C.|Gil Vicente]]
+| {{sort|1.5|[[Euro|€]]1.5m}}
+| 
+|-
+| 49
+| [[Goalkeeper (association football)|GK]]
+| style="text-align:center;"|{{flagicon|BRA}}
+| style="text-align:left;"|[[Dyogo Alves]]
+| style="text-align:left;"|{{birth date and age2|2026|12|31|2004|1|9|df=y}}
+| 2025
+| 2026
+| style="text-align:left;"|[[CR Flamengo (youth)|Youth system]]
+| {{sort|0.01|}}
+|
+|-
+! colspan="10" style="background:#dcdcdc; text-align:center" |{{sort|0|''Defenders''}}
+|-
+| 2
+| [[Full-back (football)|RB]]
+| style="text-align:center;"|{{flagicon|URU}}
+| style="text-align:left;"|[[Guillermo Varela]]
+| style="text-align:left;"|{{birth date and age2|2026|12|31|1993|03|24|df=y}}
+| 2022
+| 2027
+| style="text-align:left;"|{{flagicon|RUS}} [[FC Dynamo Moscow|Dynamo Moscow]]
+| {{sort|0.02|Free}}
+|
+|-
+| 3
+| [[Defender (association football)#Centre-back|CB]]
+| style="text-align:center;"|{{flagicon|BRA}}
+| style="text-align:left;"|[[Léo Ortiz]]
+| style="text-align:left;"|{{birth date and age2|2026|12|31|1996|1|3|df=y}}
+| 2024
+| 2028
+| style="text-align:left;"|{{flagicon|BRA}} [[Red Bull Bragantino]]
+| {{sort|7.0|[[Euro|€]]7.0m}}
+| 
+|-
+| 4
+| [[Defender (association football)#Centre-back|CB]]
+| style="text-align:center;"|{{flagicon|BRA}}
+| style="text-align:left;"|[[Léo Pereira (footballer, born 1996)|Léo Pereira]]
+| style="text-align:left;"|{{birth date and age2|2026|12|31|1996|1|31|df=y}}
+| 2020
+| 2027
+| style="text-align:left;"|{{flagicon|BRA}} [[Club Athletico Paranaense|Athletico Paranaense]]
+| {{sort|6.1|[[Euro|€]]6.1m}}
+| [[Captain (association football)|3rd Vice-captain]]
+|-
+| 6
+| [[Full-back (football)|LB]]
+| style="text-align:center;"|{{flagicon|BRA}}
+| style="text-align:left;"|[[Ayrton Lucas]]
+| style="text-align:left;"|{{birth date and age2|2026|12|31|1997|06|19|df=y}}
+| 2022
+| 2027
+| style="text-align:left;"|{{flagicon|RUS}} [[FC Spartak Moscow|Spartak Moscow]]
+| {{sort|7.0|[[Euro|€]]7.0m}}
+|
+|-
+| 13
+| [[Defender (association football)#Centre-back|CB]]
+| style="text-align:center;"|{{flagicon|BRA}}
+| style="text-align:left;"|[[Danilo (footballer, born July 1991)|Danilo]]
+| style="text-align:left;"|{{birth date and age2|2026|12|31|1991|07|15|df=y}}
+| 2025
+| 2026
+| style="text-align:left;"|{{flagicon|ITA}} [[Juventus FC]]
+| {{sort|0.02|Free}}
+|
+|-
+<!-- 
+| 17
+| [[Full-back (football)|LB]]
+| style="text-align:center;"|{{flagicon|URU}}
+| style="text-align:left;"|[[Matías Viña]]
+| style="text-align:left;"|{{birth date and age2|2026|12|31|1997|11|09|df=y}}
+| 2024
+| 2028
+| style="text-align:left;"|{{flagicon|ITA}} [[AS Roma]]
+| {{sort|9.0|[[Euro|€]]9.0m}}
+|
+|-
+ -->
+| 22
+| [[Full-back (football)|RB]]
+| style="text-align:center;"|{{flagicon|BRA}}
+| style="text-align:left;"|[[Emerson Royal]]
+| style="text-align:left;"|{{birth date and age2|2026|12|31|1999|1|14|df=y}}
+| 2025
+| 2028
+| style="text-align:left;"|{{flagicon|ITA}} [[AC Milan]]
+| {{sort|9.0|[[Euro|€]]9.0m}}
+| 
+|-
+| 26
+| [[Full-back (football)|LB]]
+| style="text-align:center;"|{{flagicon|BRA}}
+| style="text-align:left;"|[[Alex Sandro]]
+| style="text-align:left;"|{{birth date and age2|2026|12|31|1991|1|26|df=y}}
+| 2024
+| 2027
+| align="left" |[[Free transfer (association football)|Free agent]]
+| {{sort|0.02|Free}}
+| [[Captain (association football)|2nd Vice-captain]]
+|-
+| 44
+| [[Defender (association football)#Centre-back|CB]]
+| style="text-align:center;"|{{flagicon|BRA}}
+| style="text-align:left;"|[[Vitão (footballer, born February 2000)|Vitão]]
+| style="text-align:left;"|{{birth date and age2|2026|12|31|2000|2|2|df=y}}
+| 2026
+| 2029
+| style="text-align:left;"|{{flagicon|BRA}} [[SC Internacional|Internacional]]
+| {{sort|10.2|[[Euro|€]]10.2m}}
+| 
+|-
+| 61
+| [[Defender (association football)#Centre-back|CB]]
+| style="text-align:center;"|{{flagicon|BRA}}
+| style="text-align:left;"|[[João Victor (footballer, born January 2007)|João Victor]]
+| style="text-align:left;"|{{birth date and age2|2026|12|31|2007|1|1|df=y}}
+| 2024
+| 2029
+| style="text-align:left;"|[[CR Flamengo (youth)|Youth system]]
+| {{sort|0.01|}}
+|
+|-
+! colspan="10" style="background:#dcdcdc; text-align:center" |{{sort|0|''Midfielders''}}
+|-
+| 5
+| [[Defensive midfielder|DM]]
+| style="text-align:center;"|{{flagicon|CHI}}
+| style="text-align:left;"|[[Erick Pulgar]]
+| style="text-align:left;"|{{birth date and age2|2026|12|31|1994|1|15|df=y}}
+| 2022
+| 2029
+| style="text-align:left;"|{{flagicon|ITA}} [[ACF Fiorentina|Fiorentina]]
+| {{sort|3.0|[[Euro|€]]3.0m}}
+|
+|-
+| 8
+| [[Midfielder#Central midfielder|CM]]
+| style="text-align:center;"|{{flagicon|ESP}}
+| style="text-align:left;"|[[Saúl (footballer, born 1994)|Saúl Ñíguez]]
+| style="text-align:left;"|{{birth date and age2|2026|12|31|1994|11|21|df=y}}
+| 2025
+| 2028
+| style="text-align:left;"|{{flagicon|ESP}} [[Atlético Madrid]]
+| {{sort|0.02|Free}}
+|
+|-
+| 10
+| [[Attacking midfielder|AM]]
+| style="text-align:center;"|{{flagicon|URU}}
+| style="text-align:left;"|[[Giorgian de Arrascaeta]]
+| style="text-align:left;"|{{birth date and age2|2026|12|31|1994|6|1|df=y}}
+| 2019
+| 2028
+| style="text-align:left;"|{{flagicon|BRA}} [[Cruzeiro EC|Cruzeiro]]
+| {{sort|15.0|[[Euro|€]]15.0m}}
+| [[Captain (association football)|Vice-captain]]
+|-
+| 11
+| [[Attacking midfielder|AM]]
+| style="text-align:center;" |{{flagicon|BRA}}
+| style="text-align:left;" |[[Lucas Paquetá]]
+| style="text-align:left;" |{{birth date and age2|2026|12|31|1997|8|27|df=y}}
+| 2026
+| 2030
+| style="text-align:left;" |{{flagicon|ENG}} [[West Ham United F.C.|West Ham United]]
+| {{sort|42.0|[[Euro|€]]42.0m}}
+|
+|-
+| 15
+| [[Attacking midfielder|AM]]
+| style="text-align:center;"|{{flagicon|COL}}
+| style="text-align:left;"|[[Jorge Carrascal]]
+| style="text-align:left;"|{{birth date and age2|2026|12|31|1998|5|25|df=y}}
+| 2025
+| 2029
+| style="text-align:left;"|{{flagicon|RUS}} [[FC Dynamo Moscow|Dynamo Moscow]]
+| {{sort|12.0|[[Euro|€]]12.0m}}
+|
+|-
+| 18
+| [[Midfielder#Central midfielder|CM]]
+| style="text-align:center;"|{{flagicon|URU}}
+| style="text-align:left;"|[[Nicolás de la Cruz]]
+| style="text-align:left;"|{{birth date and age2|2026|12|31|1997|6|1|df=y}}
+| 2024
+| 2028
+| style="text-align:left;"|{{flagicon|ARG}} [[Club Atlético River Plate|River Plate]]
+| {{sort|14.5|[[Euro|€]]14.5m}}
+|
+|-
+| 21
+| [[Defensive midfielder|DM]]
+| style="text-align:center;"|{{flagicon|ITA}}
+| style="text-align:left;"|[[Jorginho (footballer, born December 1991)|Jorginho]]
+| style="text-align:left;"|{{birth date and age2|2026|12|31|1991|12|20|df=y}}
+| 2025
+| 2028
+| style="text-align:left;"|{{flagicon|ENG}} [[Arsenal F.C.|Arsenal]]
+| {{sort|0.02|Free}}
+|
+|-
+<!-- 
+| 29
+| [[Defensive midfielder|DM]]
+| style="text-align:center;"|{{flagicon|BRA}}
+| style="text-align:left;"|[[Allan (footballer, born 1997)|Allan]]
+| style="text-align:left;"|{{birth date and age2|2026|12|31|1997|3|3|df=y}}
+| 2023
+| 2027
+| style="text-align:left;"|{{flagicon|BRA}} [[Clube Atlético Mineiro|Atlético Mineiro]]
+| {{sort|8.2|[[Euro|€]]8.2m}}
+|
+|-
+ -->
+| 52
+| [[Defensive midfielder|DM]]
+| style="text-align:center;"|{{flagicon|BRA}}
+| style="text-align:left;"|[[Evertton Araújo]] [[Image:Injury icon.svg|14px]]
+| style="text-align:left;"|{{birth date and age2|2026|12|31|2003|02|28|df=y}}
+| 2024
+| 2028
+| style="text-align:left;"|[[CR Flamengo (youth)|Youth system]]
+| {{sort|0.01|}}
+|
+|-
+<!-- 
+| 55
+| [[Defensive midfielder|DM]]
+| style="text-align:center;"|{{flagicon|BRA}}
+| style="text-align:left;"|[[Caio Vinicius Garcia Guilhen|Caio Garcia]]
+| style="text-align:left;"|{{birth date and age2|2026|12|31|2004|4|3|df=y}}
+| 2025
+| 2026
+| style="text-align:left;"|[[CR Flamengo (youth)|Youth system]]
+| {{sort|0.01|}}
+|
+|-
+ -->
+! colspan="10" style="background:#dcdcdc; text-align:center" |{{sort|0|''Forwards''}}
+|-
+| 7
+| [[Forward (association football)#Winger|RW]]
+| style="text-align:center;"|{{flagicon|BRA}}
+| style="text-align:left;"|[[Luiz Araújo (footballer)|Luiz Araújo]]
+| style="text-align:left;"|{{birth date and age2|2026|12|31|1996|06|02|df=y}}
+| 2023
+| 2027
+| style="text-align:left;"|{{flagicon|USA}} [[Atlanta United FC|Atlanta United]]
+| {{sort|9.0|[[Euro|€]]9.0m}}
+|
+|-
+| 9
+| [[Forward (association football)|CF]]
+| style="text-align:center;"|{{flagicon|BRA}}
+| style="text-align:left;"|[[Pedro (footballer, born 1997)|Pedro]]
+| style="text-align:left;"|{{birth date and age2|2026|12|31|1997|6|20|df=y}}
+| 2020
+| 2027
+| style="text-align:left;"|{{flagicon|ITA}} [[ACF Fiorentina|Fiorentina]]
+| {{sort|14.0|[[Euro|€]]14.0m}}
+| 
+|-
+<!-- 
+| 11
+| [[Forward (association football)#Winger|LW]]
+| style="text-align:center;"|{{flagicon|BRA}}
+| style="text-align:left;"|[[Everton Soares|Everton]]
+| style="text-align:left;"|{{birth date and age2|2026|12|31|1996|03|22|df=y}}
+| 2022
+| 2026
+| style="text-align:left;"|{{flagicon|POR}} [[S.L. Benfica|Benfica]]
+| {{sort|13.5|[[Euro|€]]13.5m}}
+|
+|-
+ -->
+| 14
+| [[Forward (association football)#Winger|RW]]
+| style="text-align:center;"|{{flagicon|ECU}}
+| style="text-align:left;"|[[Anthony Valencia]]
+| style="text-align:left;"|{{birth date and age2|2026|12|31|2003|07|21|df=y}}
+| 2026
+| 2031
+| style="text-align:left;"|{{flagicon|BEL}} [[Royal Antwerp FC|Royal Antwerp]]
+| {{sort|5.0|[[Euro|€]]5.0m}}
+|
+|-
+| 16
+| [[Forward (association football)#Winger|LW]]
+| style="text-align:center;"|{{flagicon|BRA}}
+| style="text-align:left;"|[[Samuel Lino]]
+| style="text-align:left;"|{{birth date and age2|2026|12|31|1999|12|23|df=y}}
+| 2025
+| 2029
+| style="text-align:left;"|{{flagicon|ESP}} [[Atlético Madrid]]
+| {{sort|22.0|[[Euro|€]]22.0m}}
+|
+|-
+| 19
+| [[Forward (association football)#Winger|RW]]
+| style="text-align:center;"|{{flagicon|ECU}}
+| style="text-align:left;"|[[Gonzalo Plata]]
+| style="text-align:left;"|{{birth date and age2|2025|12|31|2000|11|1|df=y}}
+| 2024
+| 2029
+| style="text-align:left;"|{{flagicon|QAT}} [[Al Sadd SC|Al Sadd]]
+| {{sort|3.8|[[Euro|€]]3.8m}}
+|
+|-
+| 27
+| [[Forward (association football)#Winger|LW]]
+| style="text-align:center;"|{{flagicon|BRA}}
+| style="text-align:left;"|[[Bruno Henrique (footballer, born 1990)|Bruno Henrique]]
+| style="text-align:left;"|{{birth date and age2|2026|12|31|1990|12|30|df=y}}
+| 2019
+| 2027
+| style="text-align:left;"|{{flagicon|BRA}} [[Santos FC|Santos]]
+| {{sort|5.4|[[Euro|€]]5.4m}}
+| [[Captain (association football)|Captain]]
+|-
+<!-- 
+| 28
+| [[Forward (association football)|CF]]
+| style="text-align:center;"|{{flagicon|BRA}}
+| style="text-align:left;"|[[Carlinhos (footballer, born 1997)|Carlinhos]]
+| style="text-align:left;"|{{birth date and age2|2026|12|31|1997|02|12|df=y}}
+| 2024
+| 2027
+| style="text-align:left;"|{{flagicon|BRA}} [[Nova Iguaçu FC|Nova Iguaçu]]
+| {{sort|0.6|[[Euro|€]]0.6m}}
+|
+ -->
+|-
+| 30
+| [[Forward (association football)|CF]]
+| style="text-align:center;"|{{flagicon|ARG}}
+| style="text-align:left;"|[[Joaquín Freitas]]
+| style="text-align:left;"|{{birth date and age2|2026|12|31|2006|12|02|df=y}}
+| 2026
+| 2031
+| style="text-align:left;"|{{flagicon|ARG}} [[Club Atlético River Plate|River Plate]]
+| {{sort|6.0|€6.0m}}
+|
+|-
+<!-- 
+| 99
+| [[Forward (association football)#Winger|RW]]
+| style="text-align:center;"|{{flagicon|BRA}}
+| style="text-align:left;"|[[Lorran (footballer, born 2006)|Lorran]]
+| style="text-align:left;"|{{birth date and age2|2026|12|31|2006|06|04|df=y}}
+| 2023
+| 2029
+| align="left" |[[CR Flamengo (youth)|Youth system]]
+| {{sort|0.01|}}
+|
+|-
+ -->
+|}
+
+* [[Image:Injury icon.svg|14px]] - Currently injured
+
+===New contracts===
+{| class="wikitable sortable" style="width:35%; text-align:center; font-size:95%; text-align:left;"
+|-
+!No.
+!Pos.
+!Player
+!Date
+!Until
+!Source
+|-
+|style="text-align:center;"|–
+|style="text-align:center;"|HC
+|{{flagicon|BRA}} [[Filipe Luís]]
+|{{dts|29 December 2025}}
+|{{dts|31 December 2027}}
+|style="text-align:center;"|<ref>{{cite web|url=https://ge.globo.com/futebol/times/flamengo/noticia/2025/12/29/flamengo-acerta-renovacao-do-tecnico-filipe-luis.ghtml |title=Flamengo anuncia renovação do técnico Filipe Luís; veja detalhes |website=ge.globo |language=pt-BR |date=29 December 2025|access-date=29 December 2025}}</ref>
+|-
+|style="text-align:center;"|27
+|style="text-align:center;"|FW
+|{{flagicon|BRA}} [[Bruno Henrique (footballer, born 1990)|Bruno Henrique]]
+|{{dts|4 May 2026}}
+|{{dts|31 December 2027}}
+|style="text-align:center;"|<ref>{{cite web|url=https://www.flamengo.com.br/noticias/futebol/bruno-henrique-renova-contrato-com-o-flamengo-ate-o-fim-de-2027 |title=Bruno Henrique renova contrato com o Flamengo até o fim de 2027 |website=CR Flamengo |language=pt-BR |date=4 May 2026|access-date=25 June 2026}}</ref>
+|-
+|style="text-align:center;"|26
+|style="text-align:center;"|DF
+|{{flagicon|BRA}} [[Alex Sandro]]
+|{{dts|19 July 2026}}
+|{{dts|31 December 2027}}
+|style="text-align:center;"|<ref>{{cite web|url=https://ge.globo.com/futebol/times/flamengo/noticia/2026/07/19/flamengo-anuncia-renovacao-de-alex-sandro-referencia-para-o-elenco.ghtml |title=Flamengo anuncia renovação de Alex Sandro: "Referência para o elenco" |website=ge.globo |language=pt-BR |date=19 July 2026|access-date=19 July 2026}}</ref>
+|-
+|style="text-align:center;"|5
+|style="text-align:center;"|MF
+|{{flagicon|CHI}} [[Erick Pulgar]]
+|{{dts|2 September 2026}}
+|{{dts|31 December 2029}}
+|style="text-align:center;"|<ref>{{cite web|url=https://ge.globo.com/futebol/times/flamengo/noticia/2026/09/02/flamengo-anuncia-renovacao-de-pulgar.ghtml |title=Flamengo anuncia renovação de Pulgar |website=ge.globo |language=pt-BR |date=2 September 2026|access-date=2 September 2026}}</ref>
+|-
+|}
+
+==Transfers and loans==
+
+===Transfers in===
+{| class="wikitable sortable" style="width:60%; text-align:center; font-size:95%; text-align:left;"
+|-
+!Pos.
+!Player
+!Transferred from
+!data-sort-type="number"|Fee
+!Date
+!Team
+!Source
+|-
+| style="text-align:center;"|DF
+|{{Flagicon|BRA}} [[Vitão (footballer, born February 2000)|Vitão]]
+|{{Flagicon|BRA}} [[SC Internacional|Internacional]]
+|[[Brazilian real|R$]]66.9m / [[Euro|€]]10.2m
+|{{dts|1 January 2026}}
+|First team
+| style="text-align:center;"|<ref>{{cite web |url=https://ge.globo.com/futebol/times/flamengo/noticia/2025/12/30/vitao-e-aprovado-nos-exames-do-flamengo-entenda-o-que-falta-para-o-anuncio.ghtml |title=Vitão é aprovado nos exames do Flamengo; entenda o que falta para o anúncio |publisher=ge.globo |language=pt-BR |date=30 December 2025 |access-date=31 December 2025}}</ref>
+|-
+| style="text-align:center;"|GK
+|{{Flagicon|BRA}} [[Andrew (footballer)|Andrew]]
+|{{Flagicon|POR}} [[Gil Vicente F.C.|Gil Vicente]]
+|[[Brazilian real|R$]]9.4m / [[Euro|€]]1.5m
+|{{dts|15 January 2026}}
+|First team
+| style="text-align:center;"|<ref>{{cite web |url=https://ge.globo.com/futebol/times/flamengo/noticia/2026/01/15/flamengo-anuncia-a-contratacao-do-goleiro-andrew.ghtml |title=Flamengo anuncia a contratação do goleiro Andrew |publisher=ge.globo |language=pt-BR |date=15 January 2026 |access-date=16 January 2026}}</ref>
+|-
+|style="text-align:center;"|MF
+|{{Flagicon|BRA}} [[Lucas Paquetá]]
+|{{Flagicon|ENG}} [[West Ham United F.C.|West Ham United]]
+|[[Brazilian real|R$]]262.1m / [[Euro|€]]42.0m
+|{{dts|30 January 2026}}
+|First team
+| style="text-align:center;"|<ref>{{cite web |url=https://www.bbc.co.uk/sport/football/articles/cly3wdl90wxo |title=West Ham's Paqueta completes £35.5m Flamengo move |publisher=BBC |date=30 January 2026 |access-date=6 February 2026}}</ref>
+|-
+| style="text-align:center;"|DF
+|{{Flagicon|BRA}} [[Gustavo Rodrigues Nunes|Ramires]]
+|{{Flagicon|BRA}} [[Mirassol Futebol Clube|Mirassol]]
+|{{sort|0|Free}}
+|{{dts|3 February 2026}}
+|[[CR Flamengo (youth)|Youth team]]
+| style="text-align:center;"|<ref name="RamiresJosmarErnest">{{cite web |url=https://ge.globo.com/futebol/times/flamengo/noticia/2026/02/04/flamengo-anuncia-destaque-do-avai-e-mais-dois-reforcos-para-a-base.ghtml |title=Flamengo anuncia destaque do Avaí e mais dois reforços para a base |publisher=ge.globo |language=pt-br |date=3 February 2026 |access-date=19 July 2026}}</ref>
+|-
+| style="text-align:center;"|FW
+|{{Flagicon|BRA}} [[Josmar Silva Miranda|Josmar]]
+|{{Flagicon|BRA}} [[Avaí FC|Avaí]]
+|{{sort|0|Free}}
+|{{dts|3 February 2026}}
+|[[CR Flamengo (youth)|Youth team]]
+| style="text-align:center;"|<ref name="RamiresJosmarErnest" />
+|-
+|style="text-align:center;"|MF
+|{{Flagicon|BRA}} [[Rayan Lucas]]
+|{{Flagicon|POR}} [[Sporting CP|Sporting]]
+|{{sort|0.001|Loan return}}
+|{{dts|1 July 2026}}
+|First team
+| style="text-align:center;"|<ref name="Ryan Lucas Lorran">{{cite web |url=https://ge.globo.com/futebol/times/flamengo/noticia/2026/06/25/lorran-e-rayan-lucas-treinam-com-o-grupo-e-podem-ganhar-chance-em-intertemporada-do-flamengo.ghtml |title=Lorran e Rayan Lucas treinam com o grupo e podem ganhar chance em intertemporada do Flamengo |publisher=ge.globo |language=pt-BR |date=25 June 2026 |access-date=25 June 2026}}</ref>
+|-
+|style="text-align:center;"|FW
+|{{Flagicon|BRA}} [[Lorran (footballer, born 2006)|Lorran]]
+|{{Flagicon|ITA}} [[Pisa SC]]
+|{{sort|0.001|Loan return}}
+|{{dts|1 July 2026}}
+|First team
+| style="text-align:center;"|<ref name="Ryan Lucas Lorran" />
+|-
+| style="text-align:center;"|MF
+|{{Flagicon|BRA}} [[Andrew Nathan Vasconcelos de Araujo|Andrew Nathan]]
+|{{Flagicon|BRA}} [[Esporte Clube Bahia|Bahia]]
+|{{sort|0|Free}}
+|{{dts|15 July 2026}}
+|[[CR Flamengo (youth)|Youth team]]
+| style="text-align:center;"|<ref>{{cite web |url=https://ge.globo.com/ba/futebol/noticia/2026/07/15/flamengo-acerta-com-atacante-das-categorias-de-base-do-bahia.ghtml |title=Flamengo acerta com atacante das categorias de base do Bahia |publisher=ge.globo |language=pt-br |date=15 July 2026 |access-date=19 July 2026}}</ref>
+|-
+| style="text-align:center;"|FW
+|{{Flagicon|ECU}} [[Anthony Valencia]]
+|{{Flagicon|BEL}} [[Royal Antwerp FC|Royal Antwerp]]
+|[[Brazilian real|R$]]29.9m / [[Euro|€]]5.0m
+|{{dts|1 September 2026}}
+|First team
+| style="text-align:center;"|<ref>{{cite web |url=https://ge.globo.com/futebol/times/flamengo/noticia/2026/09/01/flamengo-anuncia-a-contratacao-de-anthony-valencia.ghtml |title=Flamengo anuncia a contratação de Anthony Valencia |publisher=ge.globo |language=pt-br |date=1 September 2026 |access-date=1 September 2026}}</ref>
+|-
+| style="text-align:center;"|FW
+|{{Flagicon|ARG}} [[Joaquín Freitas]]
+|{{Flagicon|ARG}} [[Club Atlético River Plate|River Plate]]
+|[[Brazilian real|R$]]35.9m / [[Euro|€]]6.0m
+|{{dts|1 September 2026}}
+|First team
+| style="text-align:center;"|<ref>{{cite web |url=https://ge.globo.com/futebol/times/flamengo/noticia/2026/09/01/flamengo-anuncia-a-contratacao-de-joaquin-freitas-ex-river-plate.ghtml |title=Flamengo anuncia a contratação de Joaquín Freitas, ex-River Plate |publisher=ge.globo |language=pt-br |date=1 September 2026 |access-date=1 September 2026}}</ref>
+|-
+|style="text-align:center;"|DF
+|{{Flagicon|URU}} [[Matías Viña]]
+|{{Flagicon|ARG}} [[Club Atlético River Plate|River Plate]]
+|{{sort|0.001|Loan return}}
+|{{dts|11 September 2026}}
+|First team
+| style="text-align:center;"|<ref name="Matías Viña">{{cite web |url=https://ge.globo.com/futebol/times/cruzeiro/noticia/2026/09/11/cruzeiro-anuncia-contratacao-de-vina.ghtml |title=Cruzeiro anuncia Matías Viña, que pertence ao Flamengo; veja valores do negócio |publisher=ge.globo |language=pt-BR |date=11 September 2026 |access-date=11 September 2026}}</ref>
+|-
+!colspan="3"|Total !![[Brazilian real|R$]]404.2m / [[Euro|€]]64.7m||colspan="3"|
+|}
+
+===Loan in===
+{| class="wikitable sortable" width="60%" style="text-align:center; font-size:95%; text-align:left"
+!Pos.
+!Player
+!Loaned from
+!Fee
+!Start
+!End
+!Team
+!Source
+|-
+| style="text-align:center;"|DF
+|{{flagicon|ESP}} [[Ernest Muñoz]]
+|{{flagicon|BRA}} [[Associação Portuguesa de Desportos|Portuguesa]]
+|{{sort|0|Free}}
+|{{dts|3 February 2026}}
+|{{dts|31 December 2026}}
+|[[CR Flamengo (youth)|Youth team]]
+| style="text-align:center;"|<ref name="RamiresJosmarErnest" />
+|-
+| style="text-align:center;"|MF
+|{{flagicon|ARG}} [[Juan Sayago]]
+|{{flagicon|ARG}} [[Club Atlético River Plate|River Plate]]
+|{{sort|0|Free}}
+|{{dts|12 February 2026}}
+|{{dts|31 December 2026}}
+|[[CR Flamengo (youth)|Youth team]]
+| style="text-align:center;"|<ref>{{cite web |url=https://www.flamengo.com.br/noticias/futebol-de-base/flamengo-contrata-meia-argentino-para-o-sub-20#:~:text=Clube%20de%20Regatas%20do%20Flamengo&text=O%20Flamengo%20acertou%20a%20contrata%C3%A7%C3%A3o,Categorias%20de%20Base%2C%20Alfredo%20Almeida. |title=Flamengo contrata meia argentino para o Sub-20 |publisher=CR Flamengo |language=pt-br |date=13 February 2026 |access-date=23 June 2026}}</ref>
+|-
+| style="text-align:center;"|MF
+|{{flagicon|MEX}} [[Diego Reyes (footballer, born 2007)|Diego Reyes]]
+|{{flagicon|MEX}} [[Club América]]
+|{{sort|0|Free}}
+|{{dts|4 March 2026}}
+|{{dts|31 December 2026}}
+|[[CR Flamengo (youth)|Youth team]]
+| style="text-align:center;"|<ref>{{cite web |url=https://www.flamengo.com.br/noticias/futebol-de-base/flamengo-acerta-emprestimo-do-mexicano-diego-reyes |title=Flamengo acerta empréstimo do mexicano Diego Reyes |publisher=CR Flamengo |language=pt-br |date=4 March 2026 |access-date=19 July 2026}}</ref>
+|-
+!colspan="3"|Total !![[Brazilian real|R$]]0m / [[Euro|€]]0m||colspan="4"|
+|}
+
+===Transfers out===
+{| class="wikitable sortable" style="width:60%; text-align:center; font-size:95%; text-align:left;"
+|-
+!Pos.
+!Player
+!Transferred to
+!Fee
+!Date
+!Team
+!Source
+|-
+| style="text-align:center;"|FW
+|{{flagicon|BRA}} [[Petterson Novaes]]
+|[[Free agent]]
+|{{sort|0.03|Released}}
+|{{dts|15 December 2025}}
+|First team
+| style="text-align:center;"|<ref>{{cite web |url=https://ge.globo.com/futebol/times/flamengo/noticia/2025/12/15/algum-emprestado-volta-ao-flamengo-clube-negocia-rescisoes-e-jogadores-devem-sair.ghtml |title=Algum emprestado volta ao Flamengo? Clube negocia rescisões, e jogadores devem sair |publisher=ge.globo |language=pt-BR |date=15 December 2025 |access-date=17 December 2025}}</ref>
+|-
+| style="text-align:center;"|GK
+|{{flagicon|BRA}} [[Matheus Cunha (footballer, born 2001)|Matheus Cunha]]
+|{{flagicon|BRA}} [[Cruzeiro EC|Cruzeiro]]
+|{{sort|0.005|End of contract}}
+|{{dts|1 January 2026}}
+|First team
+| style="text-align:center;"|<ref>{{cite web |url=https://ge.globo.com/futebol/times/flamengo/noticia/2025/07/19/flamengo-e-notificado-de-pre-contrato-de-matheus-cunha-com-o-cruzeiro.ghtml |title=Flamengo é notificado de pré-contrato de Matheus Cunha com o Cruzeiro |publisher=ge.globo |language=pt-BR |date=19 July 2025 |access-date=13 December 2025}}</ref>
+|-
+| style="text-align:center;"|DF
+|{{flagicon|BRA}} [[Cleiton (footballer, born 2003)|Cleiton]]
+|{{flagicon|GER}} [[VfL Wolfsburg]]
+|{{sort|0.005|End of contract}}
+|{{dts|1 January 2026}}
+|First team
+| style="text-align:center;"|<ref>{{cite web |url=https://ge.globo.com/futebol/times/flamengo/noticia/2025/10/23/em-fim-de-vinculo-com-o-flamengo-cleiton-assina-pre-contrato-com-o-wolfsbug-da-alemanha.ghtml |title=Em fim de vínculo com o Flamengo, Cleiton assina pré-contrato com o Wolfsburg, da Alemanha |publisher=ge.globo |language=pt-BR |date=23 October 2025 |access-date=13 December 2025}}</ref>
+|-
+| style="text-align:center;"|DF
+|{{flagicon|BRA}} [[Pablo (footballer, born 1991)|Pablo]]
+|{{flagicon|BRA}} [[São Bernardo FC|São Bernardo]]
+|{{sort|0.005|End of contract}}
+|{{dts|1 January 2026}}
+|First team
+| style="text-align:center;"|<ref>{{cite web |url=https://ge.globo.com/futebol/times/flamengo/noticia/2025/11/20/pablo-zagueiro-do-flamengo-acerta-contrato-com-sao-bernardo-para-2026.ghtml |title=Pablo, zagueiro do Flamengo, acerta contrato com São Bernardo para 2026 |publisher=ge.globo |language=pt-BR |date=20 November 2025 |access-date=13 December 2025}}</ref>
+|-
+| style="text-align:center;"|FW
+|{{flagicon|BRA}} [[Pedro Leão]]
+|{{flagicon|USA}} [[Orlando City SC|Orlando City]]
+|{{sort|0|Free}}
+|{{dts|1 January 2026}}
+|[[CR Flamengo (youth)|Youth team]]
+| style="text-align:center;"|<ref>{{cite web |url=https://ge.globo.com/futebol/times/flamengo/noticia/2025/12/05/flamengo-encaminha-saida-de-pedro-leao-destaque-do-sub-20-para-o-orlando-city-veja-detalhes.ghtml |title=Flamengo encaminha saída de Pedro Leão, destaque do sub-20, para o Orlando City; veja detalhes
+ |publisher=ge.globo |language=pt-BR |date=12 December 2025 |access-date=13 December 2025}}</ref>
+|-
+| style="text-align:center;"|FW
+|{{flagicon|BRA}} [[Juninho (footballer, born 1996)|Juninho]]
+|{{flagicon|MEX}} [[Pumas UNAM]]
+|[[Brazilian real|R$]]32.3m / [[Euro|€]]5.0m
+|{{dts|1 January 2026}}
+|First team
+| style="text-align:center;"|<ref>{{cite web |url=https://ge.globo.com/futebol/times/flamengo/noticia/2025/12/13/flamengo-negocia-venda-de-juninho-para-o-pumas-do-mexico.ghtml |title=Flamengo encaminha venda de Juninho para o Pumas, do México |publisher=ge.globo |language=pt-BR |date=13 December 2025 |access-date=13 December 2025}}</ref><ref>{{cite web |url=https://ge.globo.com/futebol/times/flamengo/noticia/2025/12/21/flamengo-se-despede-de-juninho-vendido-para-o-futebol-mexicano-as-ruas-jamais-vao-esquecer.ghtml |title=Flamengo se despede de Juninho, vendido para o futebol mexicano: "As ruas jamais vão esquecer" |publisher=ge.globo |language=pt-BR |date=21 December 2025 |access-date=21 December 2025}}</ref>
+|-
+| style="text-align:center;"|MF
+|{{flagicon|BRA}} [[Victor Hugo (footballer, born 11 May 2004)|Victor Hugo]]
+|{{flagicon|BRA}} [[Clube Atlético Mineiro|Atlético Mineiro]]
+|[[Brazilian real|R$]]13.4m / [[Euro|€]]2.2m
+|{{dts|18 January 2026}}
+|First team
+| style="text-align:center;"|<ref>{{cite web |url=https://www.espn.com.br/futebol/atletico-mg/artigo/_/id/16197729/atletico-mg-anuncia-contratacao-victor-hugo-ex-flamengo-santos?fbclid=IwY2xjawPZ9wdleHRuA2FlbQIxMQBzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEeO971bXDHXGnfed_tCPe9KaFDHs0BtqPNYgBlTgRqRFs_pg5VwIxSiR0EXUo_aem_OtD6nzJ0eeisQk6l9InCAA |title=Atlético-MG anuncia contratação de Victor Hugo, ex-Flamengo e Santos |work=ESPN Brasil |language=pt-BR |date=18 January 2026 |access-date=18 January 2026}}</ref>
+|-
+| style="text-align:center;"|FW
+|{{flagicon|BRA}} [[Michael (footballer, born March 1996)|Michael]]
+|[[Free agent]]
+|{{sort|0.03|Released}}
+|{{dts|30 January 2026}}
+|First team
+| style="text-align:center;"|<ref>{{cite web |url=https://ge.globo.com/futebol/times/flamengo/noticia/2026/01/30/michael-rescinde-contrato-com-o-flamengo-e-fica-livre-no-mercado.ghtml |title=Michael rescinde contrato com o Flamengo e fica livre no mercado |publisher=ge.globo |language=pt-BR |date=30 January 2026 |access-date=17 February 2026}}</ref>
+|-
+| style="text-align:center;"|DF
+|{{flagicon|BRA}} [[Iago Teodoro]]
+|{{flagicon|USA}} [[Orlando City SC|Orlando City]]
+|[[Brazilian real|R$]]7.3m / [[Euro|€]]1.2m
+|{{dts|7 February 2026}}
+|First team
+| style="text-align:center;"|<ref>{{cite web |url=https://ge.globo.com/futebol/times/flamengo/noticia/2026/02/07/flamengo-conclui-venda-de-iago-para-o-orlando-city-dos-eua.ghtml |title=Flamengo conclui venda do zagueiro Iago para o Orlando City, dos EUA |publisher=ge.globo |language=pt-BR |date=7 February 2026 |access-date=17 February 2026}}</ref>
+|-
+| style="text-align:center;"|FW
+|{{flagicon|BRA}} [[Ryan Roberto]]
+|{{flagicon|UKR}} [[FC Shakhtar Donetsk|Shakhtar Donetsk]]
+|[[Brazilian real|R$]]56.0m / [[Euro|€]]9.5m
+|{{dts|1 July 2026}}
+|First team
+| style="text-align:center;"|<ref>{{cite web |url=https://ge.globo.com/futebol/times/flamengo/noticia/2026/06/16/ryan-roberto-aceita-proposta-e-flamengo-acerta-venda-ao-shakhtar-donetsk-veja-valores-e-condicoes.ghtml |title=Ryan Roberto aceita proposta, e Flamengo acerta venda ao Shakhtar Donetsk; veja valores e condições |publisher=ge.globo |language=pt-BR |date=16 June 2026 |access-date=22 June 2026}}</ref><ref>{{cite web |url=https://shakhtar.com/en/news/2026/june/20_news/20_ryan-roberto/ |title=Ryan Roberto joins Shakhtar |publisher=FC Shakhtar Donetsk |language=en |access-date=22 June 2026}}</ref>
+|-
+| style="text-align:center;"|DF
+|{{flagicon|BRA}} [[João Pedro Da Mata]]
+|{{flagicon|TUR}} [[Konyaspor]]
+|[[Brazilian real|R$]]1.5m / [[Euro|€]]0.26m
+|{{dts|11 July 2026}}
+|[[CR Flamengo (youth)|Youth team]]
+| style="text-align:center;"|<ref>{{cite web |url=https://www.lance.com.br/flamengo/flamengo-vende-zagueiro-da-mata-destaque-na-base-para-clube-europeu.html |title=Flamengo vende zagueiro Da Mata, destaque na base, para clube europeu |publisher=Lance! |language=pt-BR |date=11 July 2026 |access-date=12 July 2026}}</ref>
+|-
+| style="text-align:center;"|MF
+|{{flagicon|BRA}} [[Rayan Lucas]]
+|{{flagicon|POR}} [[F.C. Alverca|Alverca]]
+|{{sort|0|Free}}
+|{{dts|8 August 2026}}
+|First team
+| style="text-align:center;"|<ref>{{cite web |url=https://www.flamengo.com.br/noticias/futebol/rayan-lucas-e-negociado-com-o-alverca-de-portugal |title=Rayan Lucas é negociado com o Alverca, de Portugal |publisher=flamengo.com.br |language=pt-BR |date=8 August 2026 |access-date=30 August 2026}}</ref>
+|- style="background:#fcc;"
+| style="text-align:center;"|FW
+|{{flagicon|ECU}} [[Gonzalo Plata]]
+|{{flagicon|RUS}} [[FC Dynamo Moscow|Dynamo Moscow]]
+|[[Brazilian real|R$]]60.2m / [[Euro|€]]10.0m
+|{{dts|28 August 2026}}
+|First team
+| style="text-align:center;"|<ref>{{cite web |url=https://ge.globo.com/futebol/times/flamengo/noticia/2026/08/28/plata-se-despede-de-companheiros-no-ninho-e-flamengo-acerta-venda-para-dinamo-moscou.ghtml |title=Flamengo acerta venda de Plata para o Dínamo Moscou; jogador se despede no Ninho |publisher=ge.globo |language=pt-BR |date=28 August 2026 |access-date=30 August 2026}}</ref>
+|-
+| style="text-align:center;"|FW
+|{{flagicon|BRA}} [[Wallace Yan]]
+|{{flagicon|BRA}} [[Red Bull Bragantino]]
+|[[Brazilian real|R$]]36.1m / [[Euro|€]]6.0m
+|{{dts|2 September 2026}}
+|First team
+| style="text-align:center;"|<ref>{{cite web |url=https://ge.globo.com/futebol/times/flamengo/noticia/2026/08/28/bragantino-encaminha-acordo-com-flamengo-e-fica-perto-de-contratar-wallace-yan.ghtml |title=Bragantino fecha acordo com Flamengo e encaminha contratação de Wallace Yan |publisher=ge.globo |language=pt-BR |date=28 August 2026 |access-date=30 August 2026}}</ref>
+|-
+| style="text-align:center;"|FW
+|{{flagicon|BRA}} [[Guilherme Gomes]]
+|{{flagicon|POR}} [[Gil Vicente F.C.|Gil Vicente]]
+|[[Brazilian real|R$]]2.4m / [[Euro|€]]0.4m
+|{{dts|2 September 2026}}
+|First team
+| style="text-align:center;"|<ref>{{cite web |url=https://www.abola.pt/noticias/mercado-gil-vicente-recruta-medio-ao-flamengo-de-leonardo-jardim-2026090221534042890 |title=Mercado: Gil Vicente recruta médio ao Flamengo de Leonardo Jardim |publisher=A Bola |language=pt |date=2 September 2026 |access-date=7 September 2026}}</ref>
+|-
+| style="text-align:center;"|FW
+|{{flagicon|BRA}} [[Everton Soares|Everton]]
+|{{flagicon|BRA}} [[Santos FC|Santos]]
+|{{sort|0|Free}}
+|{{dts|9 September 2026}}
+|First team
+| style="text-align:center;"|<ref>{{cite web|url=https://www.santosfc.com.br/santos-fc-contrata-atacante-everton-cebolinha/|title=Santos FC contrata atacante Everton Cebolinha|publisher=Santos FC|language=pt-BR|date=9 September 2026|accessdate=9 September 2026}}</ref>
+|-
+| style="text-align:center;"|FW
+|{{flagicon|BRA}} [[Lorran (footballer, born 2006)|Lorran]]
+|{{flagicon|UAE}} [[Sharjah FC|Sharjah]]
+|[[Brazilian real|R$]]7.7m / [[Euro|€]]1.3m
+|{{dts|18 September 2026}}
+|First team
+| style="text-align:center;"|<ref>{{cite web |url=https://ge.globo.com/futebol/futebol-internacional/noticia/2026/09/18/sharjah-fc-anuncia-lorran-agora-ex-flamengo-clube-carioca-mantem-30percent.ghtml |title=Sharjah FC anuncia Lorran, agora ex-Flamengo; clube carioca mantém 30% |publisher=ge.globo |language=pt |date=18 September 2026 |access-date=19 September 2026}}</ref>
+|-
+!colspan="3"|Total !![[Brazilian real|R$]]156.7m / [[Euro|€]]25.86m||colspan="3"|
+|}
+
+{{legend2|#fcc|Transfer canceled|border=1px solid #ffcccc}}
+
+===Loan out===
+{| class="wikitable sortable" width="60%" style="text-align:center; font-size:95%; text-align:left"
+|-
+!Pos.
+!Player
+!Loaned to
+!Fee
+!Start
+!End
+!Team
+!Source
+|-
+| style="text-align:center;"|FW
+|{{flagicon|BRA}} [[Carlinhos (footballer, born 1997)|Carlinhos]]
+|{{flagicon|BRA}} [[Clube do Remo|Remo]]
+|{{sort|0|Free}}
+|{{dts|1 January 2026}}
+|{{dts|31 December 2026}}
+|First team
+| style="text-align:center;"|<ref>{{cite web |url=https://ge.globo.com/futebol/times/flamengo/noticia/2025/12/27/flamengo-acerta-emprestimo-de-carlinhos-ao-remo.ghtml |title=Flamengo acerta empréstimo de Carlinhos ao Remo |publisher=ge.globo |language=pt-br |date=27 December 2025 |access-date=27 December 2025}}</ref>
+|-
+| style="text-align:center;"|DF
+|{{flagicon|URU}} [[Matías Viña]]
+|{{flagicon|ARG}} [[CA River Plate|River Plate]]
+|[[Brazilian real|R$]]5.4m / [[Euro|€]]0.4m
+|{{dts|4 January 2026}}
+|{{dts|31 December 2026}}
+|First team
+| style="text-align:center;"|<ref>{{cite web |url=https://ge.globo.com/futebol/times/flamengo/noticia/2026/01/04/flamengo-empresta-vina-ao-river-por-quase-r-3-milhoes-veja-detalhes-do-negocio.ghtml |title=Flamengo empresta Viña ao River; veja detalhes do negócio |publisher=ge.globo |language=pt-br |date=4 January 2026 |access-date=4 January 2026}}</ref>
+|-
+| style="text-align:center;"|MF
+|{{flagicon|BRA}} [[Allan (footballer, born 1997)|Allan]]
+|{{flagicon|BRA}} [[Sport Club Corinthians Paulista|Corinthians]]
+|{{sort|0|Free}}
+|{{dts|9 February 2026}}
+|{{dts|31 December 2026}}
+|First team
+| style="text-align:center;"|<ref>{{cite web |url=https://ge.globo.com/futebol/noticia/2026/02/09/corinthians-e-flamengo-fecham-acordo-pelo-emprestimo-de-allan-ate-o-fim-de-2026.ghtml |title=Corinthians e Flamengo fecham acordo pelo empréstimo de Allan até o fim de 2026 |publisher=ge.globo |language=pt-br |date=9 February 2026 |access-date=17 February 2026}}</ref>
+|-
+| style="text-align:center;"|DF
+|{{flagicon|BRA}} [[Gusttavo de Sousa Oliveira|Gusttavo]]
+|{{flagicon|POR}} [[G.D. Estoril Praia|Estoril Praia]]
+|{{sort|0|Free}}
+|{{dts|5 September 2026}}
+|{{dts|30 June 2027}}
+|First team
+| style="text-align:center;"|<ref>{{cite web |url=https://www.flamengo.com.br/noticias/futebol-de-base/gusttavo-sousa-e-emprestado-ao-estoril-de-portugal |title=Gusttavo Sousa é emprestado ao Estoril, de Portugal |publisher=flamengo.com.br |language=pt-br |date=5 September 2026 |access-date=7 September 2026}}</ref>
+|-
+| style="text-align:center;"|DF
+|{{flagicon|URU}} [[Matías Viña]]
+|{{flagicon|ARG}} [[Club Atlético River Plate|River Plate]]
+|{{sort|0|Free}}
+|{{dts|11 September 2026}}
+|{{dts|31 December 2026}}
+|First team
+| style="text-align:center;"|<ref name="Matías Viña"/>
+|-
+!colspan="3"|Total !![[Brazilian real|R$]]5.4m / [[Euro|€]]0.4m||colspan="4"|
+|}
+
+==Statistics==
+{{updated|29 October 2026}}
+
+===Manager records===
+{| class="wikitable sortable"
+|-
+! rowspan="2" |Name
+! rowspan="2" |Nat
+! colspan="8" |Record
+|-
+!{{Tooltip|G|Games managed}}
+!{{Tooltip|W|Games won}}
+!{{Tooltip|D|Games drawn}}
+!{{Tooltip|L|Games lost}}
+!{{Tooltip|GF|Goals for}}
+!{{Tooltip|GA|Goals against}}
+!{{Tooltip|GD|Goal difference}}
+!{{Tooltip|Win %|Winning percentage}}
+|-
+|align=left|[[Filipe Luís]]
+|{{BRA}}
+{{WDL|12|6|1|5|for=28|against=14|diff=yes}}
+|-
+|align=left|[[Leonardo Jardim]]
+|{{POR}}
+{{WDL|45|29|12|4|for=86|against=32|diff=yes}}
+|-
+|align=left|[[Bruno Pivetti]] (interim) {{efn|name=Bruno Pivetti|Bruno Pivetti was in charge of an under-20 side in the first three [[2026 Campeonato Carioca]] matches, as the main squad was in pre-season training.}}
+|{{BRA}}
+{{WDL|3|0|1|2|for=2|against=6|diff=yes}}
+|-
+!colspan="2"|Total
+{{WDLtot|60|35|14|11|for=116|against=52|diff=yes}}
+|- 
+|}
+
+;Notes
+{{notelist}}
+
+===Appearances===
+{{Fb rs footer|s=[https://int.soccerway.com/teams/brazil/clube-de-regatas-de-flamengo/318/ Soccerway], [https://fbref.com/en/squads/639950ae/Flamengo-Stats FBRef]|date=January 2026}}
+Players in ''italics'' have left the club before the end of the season.
+<br>
+<sup>†</sup> Denotes two way player, available to play for youth and professional team.
+
+{| class="wikitable sortable" style="text-align:center"
+|-
+! rowspan="2"|{{abbr|No.|Squad number}} 
+! rowspan="2"|{{abbr|Pos.|Position}}
+! rowspan="2"|Name
+! colspan="2" style="width:120px;|[[2026 Campeonato Brasileiro Série A|Série A]]
+! colspan="2" style="width:120px;|[[2026 Copa do Brasil|Copa do Brasil]]
+! colspan="2" style="width:120px;|[[2026 Copa Libertadores|Libertadores]]
+! colspan="2" style="width:120px;|[[2026 Campeonato Carioca|Carioca]]
+! colspan="2" style="width:120px;|Other<ref group="Note" name="auto">Includes [[2026 Supercopa do Brasil|Supercopa do Brasil]], [[2026 Recopa Sudamericana|Recopa Sudamericana]].</ref>
+! colspan="3" style="width:120px;|Total
+|-
+!{{abbr|Starts|Appearances as starter}}
+!{{abbr|Subs|Appearances as substitute}}
+!{{abbr|Starts|Appearances as starter}}
+!{{abbr|Subs|Appearances as substitute}}
+!{{abbr|Starts|Appearances as starter}}
+!{{abbr|Subs|Appearances as substitute}}
+!{{abbr|Starts|Appearances as starter}}
+!{{abbr|Subs|Appearances as substitute}}
+!{{abbr|Starts|Appearances as starter}}
+!{{abbr|Subs|Appearances as substitute}}
+!{{abbr|Starts|Appearances as starter}}
+!{{abbr|Subs|Appearances as substitute}}
+!{{abbr|Apps|Total appearances}}
+|-
+! colspan=16 style=background:#dcdcdc; text-align:center|''Goalkeepers''
+|-
+|1
+|GK
+|align="left"|{{flagicon|ARG}} [[Agustín Rossi (footballer)|Agustín Rossi]]
+||33||0||2||0||11||0||2||0||3||0
+!51
+!0
+!51
+|-
+|42
+|GK
+|align="left"|{{flagicon|BRA}} [[Andrew (footballer)|Andrew]]
+||0||0||0||0||1||0||5||0||0||0
+!6
+!0
+!6
+|-
+|49
+|GK
+|align="left"|{{flagicon|BRA}} [[Dyogo Alves]]
+||0||0||0||0||0||0||0||0||–||–
+!0
+!0
+!0
+|-
+|58
+|GK
+|align="left"|{{flagicon|BRA}} [[Léo Nannetti]]<sup>†</sup>
+||–||–||–||–||–||–||3||0||–||–
+!3
+!0
+!3
+|-
+|71
+|GK
+|align="left"|{{flagicon|BRA}} [[Pedro Batista]]<sup>†</sup>
+||–||–||–||–||–||–||0||0||–||–
+!0
+!0
+!0
+|-
+<!-- 
+|84
+|GK
+|align="left"|{{flagicon|BRA}} [[Gabriel Werneck]]<sup>†</sup>
+||–||–||–||–||–||–||–||–||–||–
+!0
+!0
+!0
+|-
+|68
+|GK
+| style="text-align:left;"|{{flagicon|BRA}} [[João Vitor Cangane]]<sup>†</sup>
+||–||–||–||–||–||–||–||–||–||–
+!0
+!0
+!0
+|-
+ -->
+! colspan="16" style="background:#dcdcdc;" text-align:center |''Defenders''
+|-
+|2
+|RB
+|align="left"|{{flagicon|URU}} [[Guillermo Varela]]
+||22||3||0||1||0||4||1||1||3||0
+!26
+!9
+!35
+|-
+|3
+|CB
+|align="left"|{{flagicon|BRA}} [[Léo Ortiz]]
+||27||1||1||0||7||1||3||1||2||1
+!39
+!5
+!44
+|-
+|4
+|CB
+|align="left"|{{flagicon|BRA}} [[Léo Pereira (footballer, born 1996)|Léo Pereira]]
+||28||0||1||0||10||0||2||0||3||0
+!44
+!0
+!44
+|-
+|6
+|LB
+| style="text-align:left;"|{{flagicon|BRA}} [[Ayrton Lucas]]
+||13||6||1||0||8||1||3||0||1||1
+!26
+!8
+!34
+|-
+|13
+|CB
+|align="left"|{{flagicon|BRA}} [[Danilo (footballer, born July 1991)|Danilo]]
+||6||5||2||0||5||0||3||0||1||0
+!17
+!5
+!22
+|-
+|22
+|RB
+| style="text-align:left;"|{{flagicon|BRA}} [[Emerson Royal]]
+||13||3||2||0||12||0||6||0||0||0
+!33
+!3
+!36
+|-
+|26
+|LB
+| style="text-align:left;"|{{flagicon|BRA}} [[Alex Sandro]]
+||18||3||1||1||4||0||3||1||2||0
+!28
+!5
+!33
+|-
+|42
+|CB
+| style="text-align:left;"|{{flagicon|BRA}} [[João Victor Carbone]]<sup>†</sup>
+||–||–||–||–||–||–||1||0||–||–
+!1
+!0
+!1
+|-
+|44
+|CB
+|align="left"|{{flagicon|BRA}} [[Vitão (footballer, born February 2000)|Vitão]]
+||6||4||0||0||2||0||6||0||0||0
+!14
+!4
+!18
+|-
+|46
+|CB
+| style="text-align:left;"|{{flagicon|BRA}} [[Antônio Germano da Silva Neto|Germano]]<sup>†</sup>
+||–||–||–||–||–||–||0||0||–||–
+!0
+!0
+!0
+|-
+|51
+|RB
+| style="text-align:left;"|{{flagicon|BRA}} [[Daniel Sales (footballer)|Daniel Sales]]<sup>†</sup>
+||0||0||–||–||–||–||4||0||0||0
+!4
+!0
+!4
+|-
+|61
+|CB
+| style="text-align:left;"|{{flagicon|BRA}} [[João Victor (footballer, born January 2007)|João Victor]]<sup>†</sup>
+||0||1||–||–||–||–||3||0||–||–
+!3
+!1
+!4
+|-
+<!-- 
+|63
+|LB
+| style="text-align:left;"|{{flagicon|BRA}} [[Felipe Vieira da Silva|Felipe Vieira]]<sup>†</sup>
+||–||–||–||–||–||–||–||–||–||–
+!0
+!0
+!0
+|-
+ -->
+|76
+|RB
+| style="text-align:left;"|{{flagicon|BRA}} [[Wanderson Junior de Souza Vaz|Wanderson]]<sup>†</sup>
+||–||–||–||–||–||–||0||1||–||–
+!0
+!1
+!1
+|-
+|77
+|CB
+| style="text-align:left;"|{{flagicon|BRA}} [[Johnny Góes]]<sup>†</sup>
+||0||1||–||–||–||–||2||0||–||–
+!2
+!1
+!3
+|-
+<!-- 
+|78
+|CB
+| style="text-align:left;"|{{flagicon|BRA}} [[Pedro Fachinetti]]<sup>†</sup>
+||–||–||–||–||–||–||–||–||–||–
+!0
+!0
+!0
+|-
+|83
+|CB
+| style="text-align:left;"|{{flagicon|BRA}} [[Yago Melo]]<sup>†</sup>
+||–||–||–||–||–||–||–||–||–||–
+!0
+!0
+!0
+|-
+|
+|CB
+| style="text-align:left;"|{{flagicon|BRA}} [[Victor Thiago]]<sup>†</sup>
+||–||–||–||–||–||–||–||–||–||–
+!0
+!0
+!0
+|-
+ -->
+|87
+|CB
+| style="text-align:left;"|{{flagicon|BRA}} [[Daniel Thuram]]<sup>†</sup>
+||0||0||–||–||–||–||0||1||–||–
+!0
+!1
+!1
+|-
+! colspan="16" style="background:#dcdcdc;" text-align:center |''Midfielders''
+|-
+|5
+|DM
+| style="text-align:left;"|{{flagicon|CHI}} [[Erick Pulgar]]
+||21||2||–||–||6||1||3||2||3||0
+!35
+!5
+!40
+|-
+|8
+|MF
+| style="text-align:left;"|{{flagicon|ESP}} [[Saúl (footballer, born 1994)|Saúl Ñíguez]]
+||3||8||0||1||2||2||–||–||–||–
+!5
+!11
+!16
+|-
+|10
+|AM
+| style="text-align:left;"|{{flagicon|URU}} [[Giorgian de Arrascaeta]]
+||18||5||0||1||6||3||1||2||3||0
+!28
+!11
+!39
+|-
+|15
+|AM
+| style="text-align:left;"|{{flagicon|COL}} [[Jorge Carrascal]]
+||16||10||1||0||8||3||7||0||3||0
+!35
+!13
+!48
+|-
+|18
+|CM
+| style="text-align:left;"|{{flagicon|URU}} [[Nicolás de la Cruz]]
+||1||13||1||0||2||2||2||0||0||2
+!6
+!17
+!23
+|-
+|20
+|CM
+| style="text-align:left;"|{{flagicon|BRA}} [[Lucas Paquetá]]
+||17||7||–||–||4||5||3||2||1||2
+!25
+!16
+!41
+|-
+|21
+|DM
+| style="text-align:left;"|{{flagicon|ITA}} [[Jorginho (footballer, born December 1991)|Jorginho]]
+||22||4||1||0||8||0||1||0||1||1
+!33
+!5
+!38
+|-
+|52
+|DM
+| style="text-align:left;"|{{flagicon|BRA}} [[Evertton Araújo]]
+||12||8||2||0||6||1||5||1||1||0
+!26
+!10
+!36
+|-
+|56
+|CM
+| style="text-align:left;"|{{flagicon|BRA}} [[Pablo Lúcio]]<sup>†</sup>
+||0||0||–||–||–||–||3||0||–||–
+!3
+!0
+!3
+|-
+<!-- 
+|60
+|CM
+| style="text-align:left;"|{{flagicon|BRA}} [[João Victor Alves Ferreira|João Alves]]<sup>†</sup>
+||–||–||–||–||–||–||–||–||–||–
+!0
+!0
+!0
+|-
+ -->
+|66
+|AM
+| style="text-align:left;"|{{flagicon|BRA}} [[Bruno Fernandes Xavier|Bruno Xavier]]<sup>†</sup>
+||–||–||–||–||–||–||0||0||–||–
+!0
+!0
+!0
+|-
+|67
+|CM
+| style="text-align:left;"|{{flagicon|BRA}} [[Kaio Júnior]]<sup>†</sup>
+||–||–||–||–||–||–||0||0||–||–
+!0
+!0
+!2
+|-
+|69
+|DM
+| style="text-align:left;"|{{flagicon|BRA}} [[Kaio Nóbrega]]<sup>†</sup>
+||–||–||–||–||–||–||1||1||–||–
+!1
+!1
+!2
+|-
+|72
+|CM
+| style="text-align:left;"|{{flagicon|BRA}} [[Lucas Vieira dos Santos|Lucas Vieira]]<sup>†</sup>
+||–||–||–||–||–||–||2||0||–||–
+!2
+!0
+!2
+|-
+|75
+|CM
+| style="text-align:left;"|{{flagicon|BRA}} [[Luiz Felipe Mariano dos Santos|Luiz Felipe]]<sup>†</sup>
+||0||0||–||–||–||–||0||1||–||–
+!0
+!1
+!1
+|-
+|79
+|AM
+| style="text-align:left;"|{{flagicon|BRA}} [[Joshua (footballer, born 2007)|Joshua]]<sup>†</sup>
+||0||1||–||–||–||–||3||0||–||–
+!3
+!1
+!4
+|-
+<!-- 
+|
+|CM
+| style="text-align:left;"|{{flagicon|BRA}} [[Jean Carlos da Silva Lima|Jean Carlos]]<sup>†</sup>
+||–||–||–||–||–||–||–||–||–||–
+!0
+!0
+!0
+|-
+ -->
+! colspan="16" style="background:#dcdcdc;" text-align:center |''Forwards''
+|-
+|7
+|RW
+| style="text-align:left;"|{{flagicon|BRA}} [[Luiz Araújo (footballer)|Luiz Araújo]]
+||6||11||2||0||4||3||1||5||1||0
+!14
+!19
+!33
+|-
+|9
+|CF
+| style="text-align:left;"|{{flagicon|BRA}} [[Pedro (footballer, born 1997)|Pedro]]
+||32||1||1||1||3||7||5||1||1||2
+!42
+!12
+!54
+|-
+|14
+|RW
+| style="text-align:left;"|{{flagicon|ECU}} [[Anthony Valencia]]
+||0||1||–||–||0||0||–||–||–||–
+!0
+!1
+!1
+|-
+|16
+|LW
+| style="text-align:left;"|{{flagicon|BRA}} [[Samuel Lino]]
+||27||5||1||1||9||2||4||3||1||1
+!42
+!12
+!54
+|-
+|19
+|RW
+| style="text-align:left;"|{{flagicon|ECU}} [[Gonzalo Plata]]
+||13||8||0||1||4||6||4||2||2||0
+!23
+!17
+!40
+|-
+|27
+|LW
+| style="text-align:left;"|{{flagicon|BRA}} [[Bruno Henrique (footballer, born 1990)|Bruno Henrique]]
+||4||22||2||0||10||2||2||2||0||2
+!18
+!28
+!46
+|-
+|30
+|CF
+| style="text-align:left;"|{{flagicon|ARG}} [[Joaquín Freitas]]
+||0||7||–||–||0||2||–||–||–||–
+!0
+!9
+!9
+|-
+|39
+|CF
+| style="text-align:left;"|{{flagicon|BRA}} [[Josmar]]<sup>†</sup>
+||0||0||–||–||–||–||–||–||–||–
+!0
+!0
+!0
+|-
+|59
+|RW
+| style="text-align:left;"|{{flagicon|BRA}} [[Alan Santos (footballer, born 2007)|Alan Santos]]<sup>†</sup>
+||–||–||–||–||–||–||1||2||–||–
+!1
+!2
+!3
+|-
+|63
+|RW
+| style="text-align:left;"|{{flagicon|BRA}} [[David Viana (footballer, born 2007)|David Viana]]<sup>†</sup>
+||–||–||–||–||–||–||0||2||–||–
+!0
+!2
+!2
+|-
+<!-- 
+|67
+|CF
+| style="text-align:left;"|{{flagicon|BRA}} [[Rafael Couto Vargas Luiz|Rafael Couto]]<sup>†</sup>
+||–||–||–||–||–||–||–||–||–||–
+!0
+!0
+!0
+|-
+|69
+|CF
+| style="text-align:left;"|{{flagicon|BRA}} [[Guilherme Santos (footballer, born 2007)|Guilherme Santos]]<sup>†</sup>
+||–||–||–||–||–||–||–||–||–||–
+!0
+!0
+!0
+|-
+ -->
+|80
+|CF
+| style="text-align:left;"|{{flagicon|BRA}} [[João Camargo]]<sup>†</sup>
+||–||–||–||–||–||–||0||1||–||–
+!0
+!1
+!1
+|-
+|81
+|CF
+| style="text-align:left;"|{{flagicon|BRA}} [[Douglas Telles]]<sup>†</sup>
+||0||0||–||–||–||–||3||1||0||0
+!3
+!1
+!4
+|-
+! colspan="16" style="background:#dcdcdc;" text-align:center |''Player(s) transferred out during the season''
+|-
+|11
+|LW
+| style="text-align:left;"|{{flagicon|BRA}} ''[[Everton Soares|Everton]]''
+||4||8||1||1||0||1||3||4||1||2
+!9
+!16
+!25
+|-
+|29
+|DM
+| style="text-align:left;"|{{flagicon|BRA}} ''[[Allan (footballer, born 1997)|Allan]]''
+||–||–||–||–||–||–||1||0||–||–
+!1
+!0
+!1
+|-
+|30
+|LW
+| style="text-align:left;"|{{flagicon|BRA}} ''[[Michael (footballer, born March 1996)|Michael]]''
+||–||–||–||–||–||–||0||0||–||–
+!0
+!0
+!0
+|-
+|35
+|DM
+| style="text-align:left;"|{{flagicon|BRA}} ''[[Rayan Lucas]]''
+||–||–||–||–||–||–||–||–||–||–
+!0
+!0
+!0
+|-
+|41
+|CB
+| style="text-align:left;"|{{flagicon|BRA}} ''[[João Pedro Da Mata]]''<sup>†</sup>
+||–||–||–||–||–||–||0||0||–||–
+!0
+!0
+!0
+|-
+|47
+|CF
+| style="text-align:left;"|{{flagicon|BRA}} ''[[Guilherme Gomes]]''<sup>†</sup>
+||0||0||–||–||–||–||3||0||–||–
+!3
+!0
+!3
+|-
+|57
+|CB
+| style="text-align:left;"|{{flagicon|BRA}} ''[[Iago Teodoro]]''<sup>†</sup>
+||–||–||–||–||–||–||3||0||–||–
+!3
+!0
+!3
+|-
+|64
+|CF
+| style="text-align:left;"|{{flagicon|BRA}} ''[[Wallace Yan]]''
+||0||7||0||1||0||2||2||1||–||–
+!2
+!11
+!13
+|-
+|74
+|RB
+| style="text-align:left;"|{{flagicon|BRA}} ''[[Gusttavo de Sousa Oliveira|Gusttavo]]''<sup>†</sup>
+||–||–||–||–||–||–||0||2||–||–
+!0
+!2
+!2
+|-
+|86
+|LW
+| style="text-align:left;"|{{flagicon|BRA}} ''[[Ryan Roberto]]''<sup>†</sup>
+||–||–||–||–||–||–||0||2||–||–
+!0
+!1
+!1
+|-
+|99
+|RW
+| style="text-align:left;"|{{flagicon|BRA}} ''[[Lorran (footballer, born 2006)|Lorran]]''
+||1||2||–||–||–||–||–||–||–||–
+!1
+!2
+!3
+|-
+|}
+{{Reflist|group=Note}}
+
+===Goalscorers===
+{| class="wikitable sortable" style="text-align:center;"
+|-
+! style=width:35px;" |{{Abbr|Rank|Ranking}}
+! style=width:35px;" |{{Abbr|Pos.|Position}}
+! style=width:35px;" |{{Abbr|No.|Squad Number}}
+! style=width:190px;" |Player
+! style=width:110px;" |Série A
+! style=width:110px;" |Copa do Brasil
+! style=width:110px;" |Libertadores
+! style=width:110px;" |Carioca
+! style="width:120px;|Other<ref group="Note" name="auto">Includes [[2026 Supercopa do Brasil|Supercopa do Brasil]], [[2026 Recopa Sudamericana|Recopa Sudamericana]].</ref>
+! style=width:100px;" |Total
+|-
+| rowspan="1" |1
+|FW
+|9
+|style="text-align:left;"|{{flagicon|BRA}} [[Pedro (footballer, born 1997)|Pedro]]
+|18
+|1
+|2
+|6
+|0
+!27
+|-
+| rowspan="1" |2
+|FW
+|16
+|style="text-align:left;"|{{flagicon|BRA}} [[Samuel Lino]]
+|11
+|0
+|1
+|2
+|0
+!14
+|-
+| rowspan="1" |3
+|MF
+|20
+|style="text-align:left;"|{{flagicon|BRA}} [[Lucas Paquetá]]
+|7
+|–
+|3
+|3
+|0
+!13
+|-
+| rowspan="1" |4
+|MF
+|10
+|style="text-align:left;"|{{flagicon|URU}} [[Giorgian de Arrascaeta]]
+|4
+|0
+|4
+|1
+|1
+!10
+|-
+| rowspan="1" |5
+|FW
+|27
+|style="text-align:left;"|{{flagicon|BRA}} [[Bruno Henrique (footballer, born 1990)|Bruno Henrique]]
+|2
+|0
+|5
+|2
+|0
+!9
+|-
+| rowspan="1" |6
+|MF
+|15
+|style="text-align:left;"|{{flagicon|COL}} [[Jorge Carrascal]]
+|7
+|0
+|0
+|1
+|0
+!8
+|-
+| rowspan="3" |7
+|FW
+|7
+|style="text-align:left;"|{{flagicon|BRA}} [[Luiz Araújo (footballer)|Luiz Araújo]]
+|2
+|0
+|1
+|1
+|0
+!4
+|-
+|MF
+|21
+|style="text-align:left;"|{{flagicon|ITA}} [[Jorginho (footballer, born December 1991)|Jorginho]]
+|3
+|0
+|0
+|0
+|1
+!4
+|-
+|FW
+|19
+|style="text-align:left;"|{{flagicon|ECU}} [[Gonzalo Plata]]
+|4
+|0
+|0
+|0
+|0
+!4
+|-
+| rowspan="3" |10
+|MF
+|5
+|style="text-align:left;"|{{flagicon|CHI}} [[Erick Pulgar]]
+|2
+|–
+|0
+|1
+|0
+!3
+|-
+|FW
+|11
+|style="text-align:left;"|{{flagicon|BRA}} ''[[Everton Soares|Everton]]''
+|1
+|0
+|0
+|2
+|0
+!3
+|-
+|DF
+|4
+|style="text-align:left;"|{{flagicon|BRA}} [[Léo Pereira (footballer, born 1996)|Léo Pereira]]
+|2
+|0
+|1
+|0
+|0
+!3
+|-
+| rowspan="9" |13
+|DF
+|2
+|style="text-align:left;"|{{flagicon|URU}} [[Guillermo Varela]]
+|1
+|0
+|0
+|0
+|0
+!1
+|-
+|DF
+|3
+|style="text-align:left;"|{{flagicon|BRA}} [[Léo Ortiz]]
+|1
+|0
+|0
+|0
+|0
+!1
+|-
+|DF
+|13
+|style="text-align:left;"|{{flagicon|BRA}} [[Danilo (footballer, born July 1991)|Danilo]]
+|1
+|0
+|0
+|0
+|0
+!1
+|-
+|MF
+|18
+|style="text-align:left;"|{{flagicon|URU}} [[Nicolás de la Cruz]]
+|0
+|0
+|0
+|1
+|0
+!1
+|-
+|FW
+|47
+|style="text-align:left;"|{{flagicon|BRA}} ''[[Guilherme Gomes]]''
+|0
+|–
+|–
+|1
+|–
+!1
+|-
+|MF
+|52
+|style="text-align:left;"|{{flagicon|BRA}} [[Evertton Araújo]]
+|0
+|1
+|0
+|0
+|0
+!1
+|-
+|DF
+|57
+|style="text-align:left;"|{{flagicon|BRA}} ''[[Iago Teodoro]]''
+|–
+|–
+|–
+|1
+|–
+!1
+|-
+|FW
+|81
+|style="text-align:left;"|{{flagicon|BRA}} [[Douglas Telles]]
+|0
+|–
+|–
+|1
+|–
+!1
+|-
+|FW
+|99
+|style="text-align:left;"|{{flagicon|BRA}} ''[[Lorran (footballer, born 2006)|Lorran]]''
+|1
+|–
+|–
+|–
+|–
+!1
+|-
+| colspan="4" | Own Goal(s) 
+|1
+|0
+|0
+|1
+|0
+!2
+|-
+! colspan="4" |Total||68||2||20||24||2||116
+|}
+{{Reflist|group=Note}}
+
+===Penalty kicks===
+Includes only penalty kicks taken during matches.
+{| class="wikitable sortable" style="text-align:center;"
+|-
+! style=width:35px;" |{{Abbr|Rank|Ranking}}
+! style=width:35px;" |{{Abbr|Pos.|Position}}
+! style=width:35px;" |{{Abbr|No.|Squad Number}}
+! style=width:190px;" |Player
+! style=width:110px;" |Série A
+! style=width:110px;" |Copa do Brasil
+! style=width:110px;" |Libertadores
+! style=width:110px;" |Carioca
+! style="width:120px;|Other<ref group="Note" name="auto">Includes [[2026 Supercopa do Brasil|Supercopa do Brasil]], [[2026 Recopa Sudamericana|Recopa Sudamericana]].</ref>
+! style=width:100px;" |Total
+|-
+| rowspan="1" |1
+|MF
+|21
+|style="text-align:left;"|{{flagicon|ITA}} [[Jorginho (footballer, born December 1991)|Jorginho]]
+|3 / 3
+|– / –
+|– / –
+|– / –
+|1 / 1
+!4 / 4
+|-
+| rowspan="1" |2
+|MF
+|10
+|style="text-align:left;"|{{flagicon|URU}} [[Giorgian de Arrascaeta]]
+|1 / 1
+|– / –
+|– / –
+|1 / 1
+|1 / 1
+!3 / 3
+|-
+| rowspan="2" |3
+|MF
+|15
+|style="text-align:left;"|{{flagicon|COL}} [[Jorge Carrascal]]
+|1 / 1
+|– / –
+|– / –
+|– / –
+|– / –
+!1 / 1
+|-
+|MF
+|20
+|style="text-align:left;"|{{flagicon|BRA}} [[Lucas Paquetá]]
+|– / –
+|– / –
+|1 / 1
+|– / –
+|– / –
+!1 / 1
+|-
+! colspan="4" |Total|| 5 / 5 || 0 / 0 || 1 / 1 || 1 / 1 || 2 / 2 || 9 / 9
+|}
+{{Reflist|group=Note}}
+
+===Assists===
+{| class="wikitable sortable" style="text-align:center;"
+|-
+! style=width:35px;" |{{Abbr|Rank|Ranking}}
+! style=width:35px;" |{{Abbr|Pos.|Position}}
+! style=width:35px;" |{{Abbr|No.|Squad Number}}
+! style=width:190px;" |Player
+! style=width:110px;" |Série A
+! style=width:110px;" |Copa do Brasil
+! style=width:110px;" |Libertadores
+! style=width:110px;" |Carioca
+! style="width:120px;|Other<ref group="Note" name="auto">Includes [[2026 Supercopa do Brasil|Supercopa do Brasil]], [[2026 Recopa Sudamericana|Recopa Sudamericana]].</ref>
+! style=width:100px;" |Total
+|-
+| rowspan="1" |1
+|FW
+|16
+|style="text-align:left;"|{{flagicon|BRA}} [[Samuel Lino]]
+|9
+|0
+|1
+|3
+|0
+!13
+|-
+| rowspan="1" |2
+|MF
+|15
+|style="text-align:left;"|{{flagicon|COL}} [[Jorge Carrascal]]
+|8
+|0
+|0
+|3
+|0
+!11
+|-
+| rowspan="1" |3
+|FW
+|9
+|style="text-align:left;"|{{flagicon|BRA}} [[Pedro (footballer, born 1997)|Pedro]]
+|6
+|0
+|3
+|1
+|0
+!10
+|-
+| rowspan="1" |4
+|FW
+|27
+|style="text-align:left;"|{{flagicon|BRA}} [[Bruno Henrique (footballer, born 1990)|Bruno Henrique]]
+|3
+|1
+|2
+|2
+|0
+!8
+|-
+| rowspan="1" |5
+|FW
+|2
+|style="text-align:left;"|{{flagicon|URU}} [[Guillermo Varela]]
+|6
+|0
+|0
+|0
+|0
+!6
+|-
+| rowspan="2" |6
+|MF
+|10
+|style="text-align:left;"|{{flagicon|URU}} [[Giorgian de Arrascaeta]]
+|4
+|0
+|1
+|0
+|0
+!5
+|-
+|DF
+|22
+|style="text-align:left;"|{{flagicon|BRA}} [[Emerson Royal]]
+|1
+|0
+|1
+|3
+|–
+!5
+|-
+| rowspan="1" |8
+|DF
+|6
+|style="text-align:left;"|{{flagicon|BRA}} [[Ayrton Lucas]]
+|2
+|0
+|2
+|0
+|0
+!4
+|-
+| rowspan="2" |9
+|FW
+|19
+|style="text-align:left;"|{{flagicon|ECU}} [[Gonzalo Plata]]
+|3
+|0
+|0
+|0
+|0
+!3
+|-
+|MF
+|21
+|style="text-align:left;"|{{flagicon|ITA}} [[Jorginho (footballer, born December 1991)|Jorginho]]
+|3
+|0
+|0
+|0
+|0
+!3
+|-
+| rowspan="3" |11
+|FW
+|7
+|style="text-align:left;"|{{flagicon|BRA}} [[Luiz Araújo (footballer)|Luiz Araújo]]
+|1
+|0
+|1
+|0
+|0
+!2
+|-
+|FW
+|11
+|style="text-align:left;"|{{flagicon|BRA}} ''[[Everton Soares|Everton]]''
+|2
+|0
+|0
+|0
+|0
+!2
+|-
+|MF
+|52
+|style="text-align:left;"|{{flagicon|BRA}} [[Evertton Araújo]]
+|1
+|0
+|0
+|1
+|0
+!2
+|-
+| rowspan="11" |14
+|GK
+|1
+|style="text-align:left;"|{{flagicon|ARG}} [[Agustín Rossi (footballer)|Agustín Rossi]]
+|0
+|0
+|1
+|0
+|0
+!1
+|-
+|DF
+|3
+|style="text-align:left;"|{{flagicon|BRA}} [[Léo Ortiz]]
+|1
+|0
+|0
+|0
+|0
+!1
+|-
+|DF
+|4
+|style="text-align:left;"|{{flagicon|BRA}} [[Léo Pereira (footballer, born 1996)|Léo Pereira]]
+|1
+|0
+|0
+|0
+|0
+!1
+|-
+|MF
+|8
+|style="text-align:left;"|{{flagicon|ESP}} [[Saúl (footballer, born 1994)|Saúl Ñiguez]]
+|1
+|0
+|0
+|–
+|–
+!1
+|-
+|MF
+|18
+|style="text-align:left;"|{{flagicon|URU}} [[Nicolás de la Cruz]]
+|0
+|1
+|0
+|0
+|0
+!1
+|-
+|MF
+|20
+|style="text-align:left;"|{{flagicon|BRA}} [[Lucas Paquetá]]
+|1
+|0
+|0
+|0
+|0
+!1
+|-
+|DF
+|26
+|style="text-align:left;"|{{flagicon|BRA}} [[Alex Sandro]]
+|0
+|0
+|0
+|1
+|0
+!1
+|-
+|FW
+|30
+|style="text-align:left;"|{{flagicon|ARG}} [[Joaquín Freitas]]
+|1
+|–
+|–
+|–
+|–
+!1
+|-
+|DF
+|44
+|style="text-align:left;"|{{flagicon|BRA}} [[Vitão (footballer, born February 2000)|Vitão]]
+|0
+|–
+|0
+|1
+|0
+!1
+|-
+|DF
+|51
+|style="text-align:left;"|{{flagicon|BRA}} [[Daniel Sales (footballer)|Daniel Sales]]
+|0
+|–
+|–
+|1
+|–
+!1
+|-
+|FW
+|64
+|style="text-align:left;"|{{flagicon|BRA}} ''[[Wallace Yan]]''
+|0
+|0
+|0
+|1
+|–
+!1
+|-
+! colspan="4" |Total||55||2||11||17||0||85
+|}
+{{Reflist|group=Note}}
+
+===Clean sheets===
+{| class="wikitable sortable" style="text-align: center;"
+|-
+! style=width:35px;" |{{Abbr|Rank|Ranking}}
+! style=width:35px;" |{{Abbr|No.|Squad Number}}
+! style=width:190px;" |Player
+! style=width:110px;" |Série A
+! style=width:110px;" |Copa do Brasil
+! style=width:110px;" |Libertadores
+! style=width:110px;" |Carioca
+! style="width:120px;|Other<ref group="Note" name="auto">Includes [[2026 Supercopa do Brasil|Supercopa do Brasil]], [[2026 Recopa Sudamericana|Recopa Sudamericana]].</ref>
+! style=width:100px;" |Total
+|-
+|rowspan="1" |1
+|1
+|align="left"|{{flagicon|ARG}} [[Agustín Rossi (footballer)|Agustín Rossi]]
+| 14 / 33
+| 0 / 2
+| 6 / 11
+| 2 / 2
+| 0 / 3
+| 22 / 51
+|-
+|rowspan="1" |2
+|42
+|align="left"|{{flagicon|BRA}} [[Andrew (footballer)|Andrew]]
+| – / –
+| – / –
+| 1 / 1
+| 2 / 5
+| – / –
+| 3 / 6
+|-
+|rowspan="1" |3
+|58
+|align="left"|{{flagicon|BRA}} [[Léo Nannetti]]
+| – / –
+| – / –
+| – / –
+| 0 / 3
+| – / –
+| 0 / 3
+|-
+! colspan="3" |Total!! 14 / 33 !! 0 / 2 !! 7 / 12 !! 4 / 10 !! 0 / 3 !! 25 / 60
+|}
+{{Reflist|group=Note}}
+
+===Penalty kick saves===
+Includes only penalty kicks saves during matches. 
+{| class="wikitable sortable" style="text-align: center;"
+|-
+! style=width:35px;" |{{Abbr|Rank|Ranking}}
+! style=width:35px;" |{{Abbr|No.|Squad Number}}
+! style=width:190px;" |Player
+! style=width:110px;" |Série A
+! style=width:110px;" |Copa do Brasil
+! style=width:110px;" |Libertadores
+! style=width:110px;" |Carioca
+! style="width:120px;|Other<ref group="Note" name="auto">Includes [[2026 Supercopa do Brasil|Supercopa do Brasil]], [[2026 Recopa Sudamericana|Recopa Sudamericana]].</ref>
+! style=width:100px;" |Total
+|-
+|rowspan="1" |1
+|1
+|align="left"|{{flagicon|ARG}} [[Agustín Rossi (footballer)|Agustín Rossi]]
+| 1 / 3
+| – / –
+| – / –
+| – / –
+| – / –
+| 1 / 1
+|-
+! colspan="3" |Total!! 1 / 3 !! 0 / 0 !! 0 / 0 !! 0 / 0 !! 0 / 0 !! 1 / 3
+|}
+{{Reflist|group=Note}}
+
+===Season records===
+====Individual====
+* Most matches played in the season in all competitions: '''54''' – [[Pedro (footballer, born 1997)|Pedro]] and [[Samuel Lino]]
+* Most League matches played in the season: '''33''' – [[Agustín Rossi (footballer)|Agustín Rossi]] and [[Pedro (footballer, born 1997)|Pedro]]
+* Most matches played as starter in the season in all competitions: '''51''' – [[Agustín Rossi (footballer)|Agustín Rossi]]
+* Most League matches played as starter in the season: '''33''' – [[Agustín Rossi (footballer)|Agustín Rossi]]
+* Most matches played as substitute in the season in all competitions: '''28''' – [[Bruno Henrique (footballer, born 1990)|Bruno Henrique]]
+* Most League matches played as substitute in the season: '''22''' – [[Bruno Henrique (footballer, born 1990)|Bruno Henrique]]
+* Most goals in the season in all competitions: '''27''' – [[Pedro (footballer, born 1997)|Pedro]]
+* Most League goals in the season: '''18''' – [[Pedro (footballer, born 1997)|Pedro]]
+* Most clean sheets in the season in all competitions: '''22''' – [[Agustín Rossi (footballer)|Agustín Rossi]]
+* Most League clean sheets in the season: '''14''' – [[Agustín Rossi (footballer)|Agustín Rossi]]
+* Most goals scored in a match: '''4'''
+** [[Pedro (footballer, born 1997)|Pedro]] vs [[Madureira Esporte Clube|Madureira]], [[2026 Campeonato Carioca|Campeonato Carioca]], 2 March 2026
+* Goals in consecutive matches in all competitions: '''2''' 
+** [[Everton Soares|Everton]], 7 February 2026 to 10 February 2026
+** [[Erick Pulgar]], 10 February 2026 to 15 February 2026
+** [[Giorgian de Arrascaeta]], 22 February 2026 to 26 February 2026
+** [[Pedro (footballer, born 1997)|Pedro]], 11 March 2026 to 14 March 2026
+** [[Samuel Lino]], 14 March 2026 to 19 March 2026
+** [[Pedro (footballer, born 1997)|Pedro]], 12 April 2026 to 16 April 2026
+** [[Lucas Paquetá]], 16 April 2026 to 19 April 2026
+** [[Giorgian de Arrascaeta]], 16 April 2026 to 19 April 2026
+** [[Pedro (footballer, born 1997)|Pedro]], 22 April 2026 to 26 April 2026
+** [[Pedro (footballer, born 1997)|Pedro]], 17 May 2026 to 20 May 2026
+** [[Pedro (footballer, born 1997)|Pedro]], 30 May 2026 to 22 July 2026
+** [[Samuel Lino]], 16 August 2026 to 19 August 2026
+** [[Jorge Carrascal]], 30 August 2026 to 2 September 2026
+** [[Bruno Henrique (footballer, born 1990)|Bruno Henrique]], 10 September 2026 to 13 September 2026
+* Goals in consecutive League matches: '''2'''
+** [[Pedro (footballer, born 1997)|Pedro]], 11 March 2026 to 14 March 2026
+** [[Samuel Lino]], 14 March 2026 to 19 March 2026
+** [[Pedro (footballer, born 1997)|Pedro]], 5 April 2026 to 12 April 2026
+** [[Giorgian de Arrascaeta]], 19 April 2026 to 26 April 2026
+** [[Pedro (footballer, born 1997)|Pedro]], 26 April 2026 to 3 May 2026
+** [[Pedro (footballer, born 1997)|Pedro]], 30 May 2026 to 22 July 2026
+** [[Pedro (footballer, born 1997)|Pedro]], 16 August 2026 to 22 August 2026
+** [[Jorge Carrascal]], 30 August 2026 to 2 September 2026
+** [[Gonzalo Plata]], 18 October 2026 to 26 October 2026
+* Fastest goal: '''3 minutes'''
+** [[Lucas Paquetá]] vs [[Sport Club Corinthians Paulista|Corinthians]], [[2026 Campeonato Brasileiro Série A|Série A]], 22 March 2026
+* Hat-tricks: '''1'''
+** [[Pedro (footballer, born 1997)|Pedro]] vs [[Madureira Esporte Clube|Madureira]], [[2026 Campeonato Carioca|Campeonato Carioca]], 2 March 2026 (4 goals)
+* Oldest goalscorer: [[Bruno Henrique (footballer, born 1990)|Bruno Henrique]] – {{Age in years and days|1990|12|30|2026|9|13}} (vs [[Sport Club Corinthians Paulista|Corinthians]], [[2026 Campeonato Brasileiro Série A|Série A]], 10 September 2026)
+* Youngest goalscorer: [[Douglas Telles]] – {{Age in years and days|2007|6|1|2026|2|7}} (vs [[Sampaio Corrêa Futebol e Esporte|Sampaio Corrêa]], [[2026 Campeonato Carioca|Campeonato Carioca]], 7 February 2026)
+* Most assists in the season in all competitions: '''13''' – [[Samuel Lino]]
+* Most League assists in the season: '''9''' – [[Samuel Lino]]
+* Most assists in a match: '''2'''
+** [[Samuel Lino]] vs [[Sampaio Corrêa Futebol e Esporte|Sampaio Corrêa]], [[2026 Campeonato Carioca|Campeonato Carioca]], 7 February 2026
+** [[Emerson Royal]] vs [[Sampaio Corrêa Futebol e Esporte|Sampaio Corrêa]], [[2026 Campeonato Carioca|Campeonato Carioca]], 7 February 2026
+** [[Jorge Carrascal]] vs [[Madureira Esporte Clube|Madureira]], [[2026 Campeonato Carioca|Campeonato Carioca]], 2 March 2026
+** [[Guillermo Varela]] vs [[Botafogo FR|Botafogo]], [[2026 Campeonato Brasileiro Série A|Série A]], 14 March 2026
+** [[Samuel Lino]] vs [[Fluminense FC|Fluminense]], [[2026 Campeonato Brasileiro Série A|Série A]], 12 April 2026
+** [[Samuel Lino]] vs [[Clube Atlético Mineiro|Atlético Mineiro]], [[2026 Campeonato Brasileiro Série A|Série A]], 26 April 2026
+** [[Jorge Carrascal]] vs [[Mirassol Futebol Clube|Mirassol]], [[2026 Campeonato Brasileiro Série A|Série A]], 16 August 2026
+** [[Pedro (footballer, born 1997)|Pedro]] vs [[Cruzeiro Esporte Clube|Cruzeiro]], [[2026 Copa Libertadores|Copa Libertadores]], 19 August 2026
+* Assists in consecutive matches in all competitions: '''2'''
+** [[Pedro (footballer, born 1997)|Pedro]], 26 May 2026 to 30 May 2026
+** [[Jorge Carrascal]], 30 August 2026 to 2 September 2026
+* Assists in consecutive League matches: '''3'''
+** [[Guillermo Varela]], 18 October 2026 to 29 October 2026 
+
+====Team====
+* Biggest home win in all competitions:
+** '''7–1''' vs [[Sampaio Corrêa Futebol e Esporte|Sampaio Corrêa]], [[2026 Campeonato Carioca|Campeonato Carioca]], 7 February 2026
+* Biggest League home win:
+** '''3–0''' vs [[Clube do Remo|Remo]],[[2026 Campeonato Brasileiro Série A|Série A]], 19 March 2026
+** '''3–0''' vs [[Coritiba Foot Ball Club|Coritiba]],[[2026 Campeonato Brasileiro Série A|Série A]], 30 May 2026
+** '''3–0''' vs [[Botafogo FR|Botafogo]],[[2026 Campeonato Brasileiro Série A|Série A]], 30 August 2026
+* Biggest away win in all competitions:
+** '''8–0''' vs [[Madureira Esporte Clube|Madureira]], [[2026 Campeonato Carioca|Campeonato Carioca]], 2 March 2026
+* Biggest League away win:
+** '''4–0''' vs [[Clube Atlético Mineiro|Atlético Mineiro]], [[2026 Campeonato Brasileiro Série A|Série A]], 26 April 2026
+** '''4–0''' vs [[Associação Chapecoense de Futebol|Chapecoense]], [[2026 Campeonato Brasileiro Série A|Série A]], 22 July 2026
+** '''5–1''' vs [[Mirassol Futebol Clube|Mirassol]], [[2026 Campeonato Brasileiro Série A|Série A]], 16 August 2026
+* Biggest home loss in all competitions:
+** '''0–3''' vs [[SE Palmeiras|Palmeiras]], [[2026 Campeonato Brasileiro Série A|Série A]], 23 May 2026
+* Biggest League home loss:
+** '''0–3''' vs [[SE Palmeiras|Palmeiras]], [[2026 Campeonato Brasileiro Série A|Série A]], 23 May 2026
+* Biggest away loss in all competitions:
+** '''0–3''' vs [[Volta Redonda FC|Volta Redonda]], [[2026 Campeonato Carioca|Campeonato Carioca]], 17 January 2026
+** '''0–3''' vs [[Red Bull Bragantino]], [[2026 Campeonato Brasileiro Série A|Série A]], 2 April 2026
+* Biggest League away loss:
+** '''0–3''' vs [[Red Bull Bragantino]], [[2026 Campeonato Brasileiro Série A|Série A]], 2 April 2026
+* Highest scoring match in all competitions:
+** '''7–1''' vs [[Sampaio Corrêa Futebol e Esporte|Sampaio Corrêa]], [[2026 Campeonato Carioca|Campeonato Carioca]], 7 February 2026
+** '''8–0''' vs [[Madureira Esporte Clube|Madureira]], [[2026 Campeonato Carioca|Campeonato Carioca]], 2 March 2026
+* Highest scoring League match:
+** '''5–1''' vs [[Mirassol Futebol Clube|Mirassol]], [[2026 Campeonato Brasileiro Série A|Série A]], 16 August 2026
+* Longest winning run in all competitions: '''7''' consecutive match(es)
+** 5 April 2026 to 26 April 2026
+* Longest League winning run: '''5''' consecutive match(es)
+** 30 August 2026 to 20 September 2026
+* Longest unbeaten run in all competitions: '''14''' consecutive match(es)
+** 30 August 2026 to 29 October 2026
+* Longest League unbeaten run: '''10''' consecutive match(es)
+** 30 August 2026 to 29 October 2026 
+* Longest losing run in all competitions: '''3''' consecutive match(es)
+** 25 January 2026 to 1 February 2026
+* Longest League losing run: '''1''' consecutive match(es)
+** 28 January 2026
+** 2 April 2026
+** 23 May 2026
+** 22 August 2026
+* Longest without win run in all competitions: '''4''' consecutive match(es)
+** 25 January 2026 to 4 February 2026
+* Longest without League win run: '''2''' consecutive match(es)
+** 28 January 2026 to 4 February 2026
+** 22 March 2026 to 2 April 2026
+** 17 May 2026 to 23 May 2026
+** 26 July 2026 to 29 July 2029
+* Longest scoring run in all competitions: '''19''' consecutive match(es) 
+** 26 May 2026 to 11 October 2026
+* Longest League scoring run: '''17''' consecutive match(es)
+** 30 May 2026 to 29 October 2026
+* Longest without scoring run in all competitions: '''1''' consecutive match(es)
+** 17 January 2026
+** 1 February 2026
+** 19 February 2026
+** 8 March 2026
+** 2 April 2026
+** 14 May 2026
+** 23 May 2026
+** 15 October 2026
+* Longest League without scoring run: '''1''' consecutive match(es)
+** 2 April 2026
+** 23 May 2026
+* Longest conceding goals run in all competitions: '''8''' consecutive match(es)
+** 25 January 2026 to 19 February 2026
+* Longest League conceding goals run: '''4''' consecutive match(es)
+** 22 March 2026 to 12 April 2026
+* Longest without conceding goals run in all competitions: '''5''' consecutive match(es)
+** 2 March 2026 to 19 March 2026
+* Longest League without conceding goals run: '''3''' consecutive match(es)
+** 11 March 2026 to 19 March 2026
+** 30 August 2026 to 6 September 2026
+
+===National Team statistics===
+{{updated|5 July 2026}}
+Appearances and goals while playing for [[CR Flamengo|Flamengo]], includes only [[FIFA]] matches.
+{| class="wikitable sortable" style="text-align:center"
+|-
+! rowspan="2" |{{abbr|No.|Squad number}} 
+! rowspan="2" |{{abbr|Pos.|Position}}
+! rowspan="2" |Name
+! rowspan="2" style="width:120px;|Nat. Team
+! colspan="2" style="width:120px;|Friendlies
+! colspan="2" style="width:120px;|[[2026 FIFA World Cup|FIFA World Cup]]
+! colspan="2" style="width:120px;|Total
+|-
+!{{abbr|Apps|Appearances}}
+!{{abbr|Goals|Goals scored}}
+!{{abbr|Apps|Appearances}}
+!{{abbr|Goals|Goals scored}}
+!{{abbr|Apps|Appearances}}
+!{{abbr|Goals|Goals scored}}
+|-
+|2
+|{{sort|2|DF}}
+|style="text-align:left;"|[[Guillermo Varela]]
+|style="text-align:left;"|{{flagicon|URU}} [[Uruguay national football team|Uruguay]]
+||2||0||3||0
+!5
+!0
+|-
+|4
+|{{sort|2|DF}}
+|style="text-align:left;"|[[Léo Pereira (footballer, born 1996)|Léo Pereira]]
+|style="text-align:left;"|{{flagicon|BRA}} [[Brazil national football team|Brazil]]
+||4||0||0||0
+!4
+!0
+|-
+|9
+|{{sort|4|FW}}
+|style="text-align:left;"|[[Pedro (footballer, born 1997)|Pedro]]
+|style="text-align:left;"|{{flagicon|BRA}} [[Brazil national football team|Brazil]]
+||–||–||–||–
+!0
+!0
+|-
+|10
+|{{sort|3|MF}}
+|style="text-align:left;"|[[Giorgian de Arrascaeta]]
+|style="text-align:left;"|{{flagicon|URU}} [[Uruguay national football team|Uruguay]]
+||2||0||0||0
+!2
+!0
+|-
+|13
+|{{sort|2|DF}}
+|style="text-align:left;"|[[Danilo (footballer, born July 1991)|Danilo]]
+|style="text-align:left;"|{{flagicon|BRA}} [[Brazil national football team|Brazil]]
+||3||0||5||0
+!8
+!0
+|-
+|14
+|{{sort|4|FW}}
+|style="text-align:left;"|[[Anthony Valencia]]
+|style="text-align:left;"|{{flagicon|ECU}} [[Ecuador national football team|Ecuador]]
+||–||–||–||–
+!0
+!0
+|-
+|15
+|{{sort|3|MF}}
+|style="text-align:left;"|[[Jorge Carrascal]]
+|style="text-align:left;"|{{flagicon|COL}} [[Colombia national football team|Colombia]]
+||3||0||0||0
+!3
+!0
+|-
+|16
+|{{sort|4|FW}}
+|style="text-align:left;"|[[Samuel Lino]]
+|style="text-align:left;"|{{flagicon|BRA}} [[Brazil national football team|Brazil]]
+||–||–||–||–
+!0
+!0
+|-
+|18
+|{{sort|3|MF}}
+|style="text-align:left;"|[[Nicolás de la Cruz]]
+|style="text-align:left;"|{{flagicon|URU}} [[Uruguay national football team|Uruguay]]
+||1||0||3||0
+!4
+!0
+|-
+|19
+|{{sort|4|FW}}
+|style="text-align:left;"|[[Gonzalo Plata]]
+|style="text-align:left;"|{{flagicon|ECU}} [[Ecuador national football team|Ecuador]]
+||2||0||4||1
+!6
+!1
+|-
+|20
+|{{sort|3|MF}}
+|style="text-align:left;"|[[Lucas Paquetá]]
+|style="text-align:left;"|{{flagicon|BRA}} [[Brazil national football team|Brazil]]
+||2||1||4||0
+!6
+!1
+|-
+|26
+|{{sort|2|DF}}
+|style="text-align:left;"|[[Alex Sandro]]
+|style="text-align:left;"|{{flagicon|BRA}} [[Brazil national football team|Brazil]]
+||2||0||1||0
+!3
+!0
+|-
+|}
+
+===Attendance===
+Includes all competition home matches in the 2026 season. Attendances recorded represent actual gate attendance, not paid attendance.
+
+{| class="wikitable plainrowheaders sortable" style="text-align:center"
+|-
+!align=center colspan="5"|Campeonato Carioca
+|-
+! scope="col" ! style="width:200px;"|Stadium
+! scope="col" ! style="width:60px;"|Matches
+! scope="col" ! style="width:60px;"|Average
+! scope="col" ! style="width:150px;"|Highest attendance
+! scope="col" ! style="width:150px;"|Lowest attendance
+|-
+|[[Maracanã Stadium|Maracanã]]
+|3
+|32,734
+|50,504
+|22,730
+|-
+|[[Estádio Raulino de Oliveira|Raulino de Oliveira]]
+|1
+|5,755
+|5,755
+|5,755
+|-
+!Total|| 4 || 25,989 || colspan="3" | 103,956
+|-
+!align=center colspan="5"|Copa do Brasil
+|-
+! scope="col" ! style="width:200px;"|Stadium
+! scope="col" ! style="width:60px;"|Matches
+! scope="col" ! style="width:60px;"|Average
+! scope="col" ! style="width:150px;"|Highest attendance
+! scope="col" ! style="width:150px;"|Lowest attendance
+|-
+|[[Maracanã Stadium|Maracanã]]
+|1
+|44,292
+|44,292
+|44,292
+|-
+!Total|| 1 || 44,292 || colspan="3" | 44,292
+|-
+!align=center colspan="5"|Recopa Sudamericana
+|-
+! scope="col" ! style="width:200px;"|Stadium
+! scope="col" ! style="width:60px;"|Matches
+! scope="col" ! style="width:60px;"|Average
+! scope="col" ! style="width:150px;"|Highest attendance
+! scope="col" ! style="width:150px;"|Lowest attendance
+|-
+|[[Maracanã Stadium|Maracanã]]
+|1
+|64,470
+|64,470
+|64,470
+|-
+!Total|| 1 || 64,470 || colspan="3" | 64,470
+|-
+!align=center colspan="5"|Copa Libertadores
+|-
+! scope="col" ! style="width:200px;"|Stadium
+! scope="col" ! style="width:60px;"|Matches
+! scope="col" ! style="width:60px;"|Average
+! scope="col" ! style="width:150px;"|Highest attendance
+! scope="col" ! style="width:150px;"|Lowest attendance
+|-
+|[[Maracanã Stadium|Maracanã]]
+|6
+|58,626
+|72,492
+|34,796
+|-
+!Total|| 6 || 55,853 || colspan="3" | 351,759
+|-
+!align=center colspan="5"|Série A
+|-
+! scope="col" ! style="width:200px;"|Stadium
+! scope="col" ! style="width:60px;"|Matches
+! scope="col" ! style="width:60px;"|Average
+! scope="col" ! style="width:150px;"|Highest attendance
+! scope="col" ! style="width:150px;"|Lowest attendance
+|-
+|[[Maracanã Stadium|Maracanã]]
+|16
+|62,404
+|70,791
+|47,214
+|-
+!Total|| 16 || 62,404 || colspan="3" | 998,468
+|-
+!Season total|| 28 || 55,823 || colspan="3" | 1,563,045
+|}
+
+==Individual awards==
+{| class="wikitable" style="font-size: 95%; text-align: center"
+|-
+! width="150" |Name
+! width="60" |Position
+! width="60" |Nat.
+! width="550" |Award
+|-
+|}
+
+==Notes==
+{{notelist}}
+{{reflist|group=note}}
+
+==References==
+{{reflist|colwidth=30em}}
+
+==External links==
+* [[Clube de Regatas do Flamengo]]
+* [http://www.flamengo.com.br Flamengo official website] (in Portuguese)
+
+{{Clube de Regatas do Flamengo}}
+{{Clube de Regatas do Flamengo seasons}}
+{{2026 in Brazilian football}}
+
+[[Category:CR Flamengo seasons]]
+[[Category:Brazilian football clubs 2026 season|Flamengo]]
+[[Category:2026 Copa Libertadores participants seasons|Flamengo]]

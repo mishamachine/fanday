@@ -1,0 +1,1464 @@
+<!-- FIXTURE. Page: 2026–27 Club América season
+     Source: https://en.wikipedia.org/wiki/2026%E2%80%9327_Club_Am%C3%A9rica_season
+     Revision id: 1379947540  (permanent link: https://en.wikipedia.org/w/index.php?oldid=1379947540)
+     Fetched: 2026-11-03 from the MediaWiki API (action=query&prop=revisions&rvprop=content|ids&rvslots=main&format=json),
+     User-Agent: Fanday/0.1 (machinemisha+fanday@gmail.com). Unmodified wikitext below this comment.
+     Text (c) Wikipedia contributors, licensed CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/);
+     authors are listed in the page history. Used here only as test data. -->
+{{Infobox football club season
+| club = [[Club América|América]]
+| season = 2026–27
+| manager = [[Guillermo Almada]]
+| chrtitle = President
+| chairman = [[Santiago Baños]]
+| stadium = [[Estadio Azteca]]
+| league = [[2026–27 Liga MX season#Torneo Apertura|Apertura]]
+| league result = Regular phase: ''3rd''
+| league2 = [[2026–27 Liga MX season#Torneo Clausura|Clausura]] 
+| league2 result = 
+| cup1 = [[2026 Leagues Cup|Leagues Cup]]
+| cup1 result = 4th
+| cup2 = [[2027 CONCACAF Champions Cup|CONCACAF Champions Cup]]
+| cup2 result = ''Round one''
+| league topscorer = <br>[[Miguel Borja]]<br>[[Henry Martín]]<br>[[Brian Rodríguez]]<br>(3 each)
+| season topscorer = <br>Brian Rodríguez (6)
+| average attendance = {{Round|{{Average|31368|25634|29778|72990}}|0}}
+| lowest attendance = 25,634 v [[Atlético San Luis]]<br>{{small|(16 August 2026, Apertura)}}
+| highest attendance = 72,990 v [[C.D. Guadalajara|Guadalajara]]<br>{{small|(19 September 2026, Apertura)}}
+| largest win = 3–0 v [[Santos Laguna]] (H)<br>{{small|(2 August 2026, Apertura)}}<br>3–0 v [[Atlético San Luis]] (H)<br>{{small|(16 August 2026, Apertura)}}
+| largest loss = 0–1 v [[Club León|León]] (N)<br>{{small|(6 September 2026, Leagues Cup)}}<br> 3–4 v [[Cruz Azul]] (A)<br>{{small|(12 September 2026, Apertura)}}
+| prevseason = [[2025–26 Club América season|2025–26]]
+| nextseason = ''2027–28''
+| pattern_la1 = _clubamerica2627h
+| pattern_b1 = _clubamerica2627h
+| pattern_ra1 = _clubamerica2627h
+| pattern_sh1 = _clubamerica2627h
+| pattern_so1 = _clubamerica2627h
+| leftarm1 = 
+| body1 = 
+| rightarm1 = 
+| shorts1 = FFFFFF
+| socks1 = FFFF00
+| pattern_la2 = _clubamerica2627a
+| pattern_b2 = _clubamerica2627a
+| pattern_ra2 = _clubamerica2627a
+| pattern_sh2 = _clubamerica2627a
+| pattern_so2 = _clubamerica2627al
+| leftarm2 = 
+| body2 = 
+| rightarm2 = 
+| shorts2 = 
+| socks2 = 
+| pattern_la3 = 
+| pattern_b3 = 
+| pattern_ra3 = 
+| pattern_sh3 = 
+| pattern_so3 = 
+| leftarm3 =
+| body3 =
+| rightarm3 =
+| shorts3 =
+| socks3 =
+| updated = 19 September 2026
+}}
+
+The '''2026–27 [[Club América]] season''' is the club's 82nd consecutive season in the top-flight of Mexican football. In addition to the [[2026–27 Liga MX season|domestic league]], the club will also participate in the [[2026 Leagues Cup|Leagues Cup]] and the [[2027 CONCACAF Champions Cup|CONCACAF Champions Cup]].
+
+This season will be the first since [[2021–22 Club América season|2021–22]] without [[Captain (association football)#Vice-captain|vice-captain]] [[Jonathan dos Santos]], who departed as a free agent following the expiration of his contract.
+
+== Squad information ==
+=== Coaching staff ===
+
+{|class="wikitable 
+|-
+!style="background:#FFFF94;color:#C32148;{{box-shadow border|a|#0001FD|2px}}"| Position
+!style="background:#FFFF94;color:#C32148;{{box-shadow border|a|#0001FD|2px}}"| Staff
+|-
+|-
+|Manager||{{flagicon|URU}} [[Guillermo Almada]]
+|-
+|rowspan="4"|Assistant managers|| {{flagicon|URU}} Darwin Quintana
+|-
+|{{flagicon|URU}} Gianni Michelini
+|-
+|{{flagicon|MEX}} [[Raúl Lara]]
+|-
+|{{flagicon|ESP}} Xavier Mayol 
+|-
+|Goalkeeper coach||{{flagicon|MEX}} Luis Gurrola
+|-
+|rowspan="2"|Fitness coaches||{{flagicon|URU}} Rubens Valenzuela
+|-
+|{{flagicon|MEX}} Francisco Martínez
+|-
+|rowspan="3"|Physiotherapists|| {{flagicon|ARG}} Fernando Gilardi
+|-
+|{{flagicon|MEX}} Octavio Luna
+|-
+|{{flagicon|MEX}} Francisco Faustino
+|-
+|rowspan="3 "|Team doctors
+|{{flagicon|MEX}} Alfonso Díaz 
+|-
+|{{flagicon|MEX}} José Guadalupe Vázquez
+|-
+|{{flagicon|ARG}} Christian Motta
+|}
+Source: [http://www.clubamerica.com.mx/primer-equipo/cuerpo-tecnico Club América]
+
+=== Players ===
+{| class="wikitable" style="text-align:center; font-size:100%;width:80%;"
+|-
+!style="background:#FFFF94;color:#C32148;{{box-shadow border|a|#0001FD|2px}}"| No.
+!style="background:#FFFF94;color:#C32148;{{box-shadow border|a|#0001FD|2px}}"| Pos.
+!style="background:#FFFF94;color:#C32148;{{box-shadow border|a|#0001FD|2px}}"| Nat.
+!style="background:#FFFF94;color:#C32148;{{box-shadow border|a|#0001FD|2px}}"| Name
+!style="background:#FFFF94;color:#C32148;{{box-shadow border|a|#0001FD|2px}}"| Date of birth (age)
+!style="background:#FFFF94;color:#C32148;{{box-shadow border|a|#0001FD|2px}}"| Since
+!style="background:#FFFF94;color:#C32148;{{box-shadow border|a|#0001FD|2px}}"| From
+|-
+! colspan="9" style="background:#FFFF94;color:#C32148;{{box-shadow border|a|#0001FD|2px}}"| Goalkeepers
+|-
+| 1
+| [[Goalkeeper (association football)|GK]] 
+| {{flagicon|MEX}} 
+| align=left| [[Luis Malagón]]
+| {{Birth date and age|df=yes|1997|3|2}} 
+| 2023
+| align=left| {{flagicon|MEX}} [[Club Necaxa|Necaxa]]
+|-
+| 21
+| [[Goalkeeper (association football)|GK]] 
+| {{flagicon|MEX}} 
+| align=left| [[Fernando Tapia]]
+| {{Birth date and age|df=yes|2001|6|17}} 
+| 2026
+| align=left| {{flagicon|MEX}} [[Tigres UANL|UANL]]
+|-
+| 30
+| [[Goalkeeper (association football)|GK]] 
+| {{flagicon|MEX}} 
+| align=left| [[Rodolfo Cota]]
+| {{Birth date and age|df=yes|1987|7|3}} 
+| 2024
+| align=left| {{flagicon|MEX}} [[Club León|León]]
+|-
+| 31
+| [[Goalkeeper (association football)|GK]] 
+| {{flagicon|MEX}} 
+| align=left| [[César Lugo]]
+| {{Birth date and age|df=yes|2003|5|15}} 
+| 2026
+| align=left| [[Club América|Academy]]
+|-
+! colspan="9" style="background:#FFFF94;color:#C32148;{{box-shadow border|a|#0001FD|2px}}"| Defenders
+|-
+| 2
+| [[Defender (association football)|DF]] 
+| {{flagicon|MEX}} || align=left| [[Emilio Lara (footballer)|Emilio Lara]]
+| {{Birth date and age|df=yes|2002|5|18}} 
+| 2021
+| align=left| [[Club América|Academy]]
+|-
+| 3
+| [[Defender (association football)|DF]] 
+| {{flagicon|MEX}} 
+| align=left| [[Israel Reyes]]
+| {{Birth date and age|df=yes|2000|5|23}} 
+| 2023
+| align=left| {{flagicon|MEX}} [[Club Puebla|Puebla]]
+|-
+| 5
+| [[Defender (association football)|DF]] 
+| {{flagicon|MEX}} || align=left| [[Kevin Álvarez (footballer, born 1999)|Kevin Álvarez]]
+| {{Birth date and age|df=yes|1999|1|15}} 
+| 2023
+| align=left| {{flagicon|MEX}} [[C.F. Pachuca|Pachuca]]
+|-
+| 14
+| [[Defender (association football)|DF]] 
+| {{flagicon|URU}} || align=left| [[Santiago Bueno]]
+| {{Birth date and age|df=yes|1998|11|9}} 
+| 2026
+| align=left| {{flagicon|ENG}} [[Wolverhampton Wanderers F.C.|Wolverhampton Wanderers]]
+|-
+| 15
+| [[Defender (association football)|DF]] 
+| {{flagicon|ARG}} || align=left| [[Santiago Ramos Mingo|Santiago Ramos]]
+| {{Birth date and age|df=yes|2001|2|6}} 
+| 2026
+| align=left| {{flagicon|BRA}} [[Esporte Clube Bahia|Bahia]]
+|-
+| 24
+| [[Defender (association football)|DF]] 
+| {{flagicon|MEX}} || align=left| [[Franco Rossano]]
+| {{Birth date and age|df=yes|2005|7|27}} 
+| 2024
+| align=left| [[Club América|Academy]]
+|-
+| 26
+| [[Defender (association football)|DF]] 
+| {{flagicon|COL}} || align=left| [[Cristian Borja (footballer, born 1993)|Cristian Borja]]
+| {{Birth date and age|df=yes|1993|2|18}} 
+| 2024
+| align=left| {{flagicon|POR}} [[S.C. Braga|Braga]]
+|-
+| 29
+| [[Defender (association football)|DF]] 
+| {{flagicon|MEX}} || align=left| [[Ramón Juárez]]
+| {{Birth date and age|df=yes|2001|5|9}}
+| 2019
+| align=left| [[Club América|Academy]]
+|-
+| 32
+| [[Defender (association football)|DF]] 
+| {{flagicon|MEX}} || align=left| [[Miguel Vázquez (footballer)|Miguel Vásquez]]
+| {{Birth date and age|df=yes|2004|2|7}} 
+| 2022
+| align=left| [[Club América|Academy]]
+|-
+! colspan="10" style="background:#FFFF94;color:#C32148;{{box-shadow border|a|#0001FD|2px}}"| Midfielders
+|-
+| 6
+| [[Midfielder (association football)|MF]] 
+| {{flagicon|USA}} || align=left| [[Edwin Cerrillo]] 
+| {{Birth date and age|df=yes|2000|10|3}} 
+| 2026
+| align=left| {{flagicon|USA}} [[LA Galaxy]]
+|-
+| 8
+| [[Midfielder (association football)|MF]] 
+| {{flagicon|ESP}} || align=left| [[Carlos Álvarez (footballer, born 2003)|Carlos Álvarez]] 
+| {{Birth date and age|df=yes|2003|8|6}} 
+| 2026
+| align=left| {{flagicon|ESP}} [[Levante UD|Levante]]
+|-
+| 10
+| [[Midfielder (association football)|MF]] 
+| {{flagicon|USA}} || align=left| [[Alejandro Zendejas]] 
+| {{Birth date and age|df=yes|1998|2|7}} 
+| 2022
+| align=left| {{flagicon|MEX}} [[Club Necaxa|Necaxa]]
+|-
+| 12
+| [[Midfielder (association football)|MF]] 
+| {{flagicon|MEX}} || align=left| [[Isaías Violante]]
+| {{Birth date and age|df=yes|2003|10|20}} 
+| 2025
+| align=left| {{flagicon|MEX}} [[Toluca FC|Toluca]]
+|-
+| 13
+| [[Midfielder|MF]] 
+| {{flagicon|MEX}} || align=left| [[Alan Cervantes]]
+| {{Birth date and age|df=yes|1998|1|17}} 
+| 2024
+| align=left| {{flagicon|MEX}} [[Santos Laguna]]
+|-
+| 20
+| [[Midfielder (association football)|MF]] 
+| {{flagicon|MEX}} || align=left| [[Alexis Gutiérrez]]
+| {{Birth date and age|df=yes|2000|2|26}} 
+| 2025
+| align=left| {{flagicon|MEX}} [[Cruz Azul]]
+|-
+| 22
+| [[Midfielder (association football)|MF]] 
+| {{flagicon|COL}} || align=left| [[Óscar Perea]]
+| {{Birth date and age|df=yes|2005|9|27}} 
+| 2026
+| align=left| {{flagicon|FRA}} [[RC Strasbourg Alsace|Strasbourg]]
+|-
+| 23
+| [[Midfielder (association football)|MF]] 
+| {{flagicon|BRA}} || align=left| [[Raphael Veiga]]
+| {{Birth date and age|df=yes|1995|6|19}}
+| 2026
+| align=left| {{flagicon|BRA}} [[SE Palmeiras|Palmeiras]]
+|-
+| 27
+| [[Midfielder (association football)|MF]] 
+| {{flagicon|BRA}} || align=left| [[Ícaro Da Conceição|Ícaro]]
+| {{Birth date and age|df=yes|2007|5|23}} 
+| 2026
+| align=left| [[Club América|Academy]]
+|-
+| 28
+| [[Midfielder (association football)|MF]] 
+| {{flagicon|MEX}} || align=left| [[Érick Sánchez]]
+| {{Birth date and age|df=yes|1999|9|27}} 
+| 2024
+| align=left| {{flagicon|MEX}} [[C.F. Pachuca|Pachuca]]
+|-
+| 34
+| [[Midfielder (association football)|MF]] 
+| {{flagicon|MEX}} || align=left| [[Dagoberto Espinoza]]
+| {{Birth date and age|df=yes|2004|4|17}} 
+| 2024
+| align=left| [[Club América|Academy]]
+|-
+! colspan="7" style="background:#FFFF94;color:#C32148;{{box-shadow border|a|#0001FD|2px}}"| Forwards
+|-
+| 7
+| [[Forward (association football)|FW]] 
+| {{flagicon|URU}} || align=left| [[Brian Rodríguez]]
+| {{Birth date and age|df=yes|2000|5|20}} 
+| 2022
+| align=left| {{flagicon|USA}} [[Los Angeles FC]]
+|-
+| 9
+| [[Forward (association football)|FW]] 
+| {{flagicon|MEX}} || align=left| [[Henry Martín]]
+| {{Birth date and age|df=yes|1992|9|18}} 
+| 2018
+| align=left| {{flagicon|MEX}} [[Club Tijuana|Tijuana]]
+|-
+| 11
+| [[Forward (association football)|FW]] 
+| {{flagicon|CHI}} || align=left| [[Víctor Dávila]]
+| {{Birth date and age|df=yes|1997|11|4}} 
+| 2024
+| align=left| {{flagicon|RUS}} [[PFC CSKA Moscow|CSKA Moscow]]
+|-
+| 19
+| [[Forward (association football)|FW]] 
+| {{flagicon|COL}} || align=left| [[Raúl Zúñiga]]
+| {{Birth date and age|df=yes|1994|7|13}} 
+| 2025
+| align=left| {{flagicon|MEX}} [[Club Tijuana|Tijuana]]
+|-
+| 93
+| [[Forward (association football)|FW]] 
+| {{flagicon|COL}} || align=left| [[Miguel Borja]]
+| {{Birth date and age|df=yes|1993|1|26}} 
+| 2026
+| align=left| {{flagicon|UAE}} [[Al Wasl F.C.|Al Wasl]]
+|-
+|}
+<small>Players and squad numbers last updated on 11 September 2026.<ref>{{cite web|title=LIGA MX - Página Oficial de la Liga Mexicana del Fútbol Profesional - América|url=http://ligamx.net/cancha/club/1/america#plantilla|website=LigaMX.net}}</ref></small><br><small>Note: Flags indicate national team as has been defined under [[FIFA eligibility rules]]. Players may hold more than one non-FIFA nationality.</small>
+
+== Transfers ==
+=== In ===
+==== Summer ====
+{| class="wikitable" style="text-align:center"
+|-
+!style="background:#FFFF94;color:#C32148;{{box-shadow border|a|#0001FD|2px}}"| No.
+!style="background:#FFFF94;color:#C32148;{{box-shadow border|a|#0001FD|2px}}"| Pos.
+!style="background:#FFFF94;color:#C32148;{{box-shadow border|a|#0001FD|2px}}"| Player
+!style="background:#FFFF94;color:#C32148;{{box-shadow border|a|#0001FD|2px}}"| Transfer from
+!style="background:#FFFF94;color:#C32148;{{box-shadow border|a|#0001FD|2px}}"| Fee
+!style="background:#FFFF94;color:#C32148;{{box-shadow border|a|#0001FD|2px}}"| Date
+!style="background:#FFFF94;color:#C32148;{{box-shadow border|a|#0001FD|2px}}"| Source
+|-
+|-
+|-
+|-
+|24
+|{{sort|4|[[Defender (association football)|DF]]}}
+|style="text-align:left"|{{flagicon|MEX}} [[Franco Rossano]]
+|rowspan=2 style="text-align:left"|{{flagicon|MEX}} [[Club Necaxa|Necaxa]]
+|rowspan=2|End of loan
+|rowspan=2|1 June 2026
+|rowspan=2|<ref>{{Cite web|last1=Edgar Cruz|date=13 May 2026|title=Necaxa da de baja a tres jugadores que van de vuelta al América|url=https://www.estadiodeportes.mx/amp/ligamx/necaxa-da-de-baja-a-tres-jugadores-que-van-de-vuelta-al-america-20260513-0035.html|website=|publisher=Estadio Deportes}}</ref>
+|-
+|2
+|{{sort|4|[[Defender (association football)|DF]]}}
+|style="text-align:left"|{{flagicon|MEX}} [[Emilio Lara (footballer)|Emilio Lara]]
+|-
+|22
+|{{sort|4|[[Defender (association football)|DF]]}}
+|style="text-align:left"|{{flagicon|URU}} [[Thiago Espinosa]]
+|style="text-align:left"| {{flagicon|URU}} [[Racing Club de Montevideo|Racing]]
+|$2,000,000
+|{{dts|9 July 2026}}
+|<ref>{{Cite web|last1=Gustavo Rivadeneyra|date=30 June 2026|title=América compra a Thiago Espinosa tras convencer a Guillermo Almada en la pretemporada|url=https://www.marca.com/mx/futbol/liga-mx/2026/07/01/6a445e5246163fb13f8b45c6.html|website=|publisher=Marca}}</ref>
+|-
+|22
+|{{sort|3|[[Midfielder|MF]]}}
+|style="text-align:left"|{{flagicon|COL}} [[Óscar Perea]]
+|style="text-align:left"| {{flagicon|FRA}} [[RC Strasbourg Alsace|Strasbourg]]
+|On loan
+|{{dts|28 July 2026}}
+|<ref>{{cite web|url=https://www.espn.com.mx/futbol/mexico/nota/_/id/17051658/oscar-perea-america-refuerzo-colombiano-liga-mx-carrera-equipos|title=Óscar Perea, refuerzo del América, y sus conexiones con Liga MX|publisher=ESPN México|language=es|date=28 July 2026}}</ref>
+|-
+|6
+|{{sort|3|[[Midfielder|MF]]}}
+|style="text-align:left"|{{flagicon|USA}} [[Edwin Cerrillo]]
+|style="text-align:left"| {{flagicon|USA}} [[LA Galaxy]]
+|Undisclosed
+|{{dts|2 August 2026}}
+|<ref>{{cite web|url=https://www.espn.com.mx/futbol/mexico/nota/_/id/17073112/america-edwin-cerrillo-apunta-segundo-refuerzo|title=América hace oficial a Edwin Cerrillo como segundo refuerzo|publisher=ESPN México|language=es|date=2 August 2026}}</ref>
+|-
+|93
+|{{sort|2|[[Forward (association football)|FW]]}}
+|style="text-align:left"|{{flagicon|COL}} [[Miguel Borja]]
+|style="text-align:left"| {{flagicon|UAE}} [[Al Wasl F.C.|Al Wasl]]
+|$2,500,000
+|{{dts|20 August 2026}}
+|<ref>{{cite web|url=https://www.espn.com.mx/futbol/mexico/nota/_/id/17139621/america-oficializa-fichaje-miguel-borja-apertura-2026|title=América oficializa fichaje de Miguel Borja para el Apertura 2026|publisher=ESPN México|language=es|date=20 August 2026}}</ref>
+|-
+|8
+|{{sort|3|[[Midfielder|MF]]}}
+|style="text-align:left"|{{flagicon|ESP}} [[Carlos Álvarez (footballer, born 2003)|Carlos Álvarez]]
+|style="text-align:left"| {{flagicon|ESP}} [[Levante UD|Levante]]
+|$6,000,000
+|{{dts|2 September 2026}}
+|<ref>{{cite web|url=https://www.espn.com.mx/futbol/espana/nota/_/id/17200404/america-carlos-alvarez-directivo-levante-asegura-fichaje|title=America anuncia el fichaje de Carlos Álvarez desde el Levante|publisher=ESPN México|language=es|date=2 September 2026}}</ref>
+|-
+|14
+|{{sort|4|[[Defender (association football)|DF]]}}
+|style="text-align:left"|{{flagicon|URU}} [[Santiago Bueno]]
+|style="text-align:left"| {{flagicon|ENG}} [[Wolverhampton Wanderers F.C.|Wolverhampton Wanderers]]
+|On loan
+|{{dts|11 September 2026}}
+|<ref>{{cite web|url=https://www.espn.com.mx/futbol/mexico/nota/_/id/17242750/america-anuncia-santiago-bueno-fichaje-refuerzo-uruguayo|title=América anuncia el fichaje de Santiago Bueno|publisher=ESPN México|language=es|date=11 September 2026}}</ref>
+|-
+|15
+|{{sort|4|[[Defender (association football)|DF]]}}
+|style="text-align:left"|{{flagicon|ARG}} [[Santiago Ramos Mingo|Santiago Ramos]]
+|style="text-align:left"| {{flagicon|BRA}} [[Esporte Clube Bahia|Bahia]]
+|$10,000,000
+|{{dts|11 September 2026}}
+|<ref>{{cite web|url=https://www.espn.com.mx/futbol/mexico/nota/_/id/17243368/america-santiago-ramos-mingo-fichaje-bahia-liga-mx|title=Ramos Mingo: "Todos en el mundo conocen al América"|publisher=ESPN México|language=es|date=11 September 2026}}</ref>
+|-
+!colspan="4" style="background:#FFFF94;color:#C32148;{{box-shadow border|a|#0001FD|2px}}"| Total
+!colspan="3" style="background:#FFFF94;color:#C32148;{{box-shadow border|a|#0001FD|2px}}"| {{ntsh|20.5}}$20.5&nbsp;million
+|}
+
+=== Out ===
+==== Summer ====
+{| class="wikitable" style="text-align:center"
+|-
+!style="background:#FFFF94;color:#C32148;{{box-shadow border|a|#0001FD|2px}}"| No.
+!style="background:#FFFF94;color:#C32148;{{box-shadow border|a|#0001FD|2px}}"| Pos.
+!style="background:#FFFF94;color:#C32148;{{box-shadow border|a|#0001FD|2px}}"| Player
+!style="background:#FFFF94;color:#C32148;{{box-shadow border|a|#0001FD|2px}}"| Transfer to
+!style="background:#FFFF94;color:#C32148;{{box-shadow border|a|#0001FD|2px}}"| Fee
+!style="background:#FFFF94;color:#C32148;{{box-shadow border|a|#0001FD|2px}}"| Date
+!style="background:#FFFF94;color:#C32148;{{box-shadow border|a|#0001FD|2px}}"| Source
+|-
+|6
+|{{sort|3|[[Midfielder|MF]]}}
+|style="text-align:left"|{{flagicon|MEX}} [[Jonathan dos Santos]]
+|colspan="2" align="center" |End of contract{{Efn|Eventually retired}}
+|rowspan=4|1 July 2026
+|<ref>{{cite web|url=https://www.espn.com.mx/futbol/mexico/nota/_/id/16814430/jonathan-dos-santos-salida-america-retiro-liga-mx|title=América anuncia la salida de Jonathan dos Santos|publisher=ESPN México|language=es|date=8 June 2026}}</ref>
+|-
+|14
+|{{sort|4|[[Defender (association football)|DF]]}}
+|style="text-align:left"|{{flagicon|MEX}} [[Néstor Araujo]]
+| colspan="2" align="center" |End of contract{{Efn|Eventually joined [[G.D. Chaves|Chaves]]}}
+|<ref>{{Cite web|last1=Lucia Domínguez|date=4 July 2026|title=America Waves Goodbye to Néstor Araujo as Guillermo Almada Kicks Off a Full-On Roster Makeover|url=https://www.soyfutbol.com/en/news/america-waves-goodbye-to-nestor-araujo-as-guillermo-almada-kicks-off-a-full-on-roster-makeover-20260704-0017.html|website=|publisher=Soy fútbol}}</ref>
+|-
+|15
+|{{sort|4|[[Defender (association football)|DF]]}}
+|style="text-align:left"|{{flagicon|USA}} [[Ralph Orquin]]
+| colspan="2" align="center" |End of contract{{Efn|Eventually joined [[Cruz Azul]]}}
+|<ref>{{Cite web|last1=Federico Mazza Kimeris|date=9 June 2026|title=Ralph Orquin Bids Farewell to Club América|url=https://www.soyfutbol.com/en/news/ralph-orquin-bids-farewell-to-club-america-rejected-by-jardine-greenlighted-by-almada-20260609-0058.html|website=|publisher=Soy fútbol}}</ref>
+|-
+|18
+|{{sort|4|[[Defender (association football)|DF]]}}
+|style="text-align:left"|{{flagicon|MEX}} [[Aarón Mejía]]
+|style="text-align:left"|{{fbicon|MEX}} [[Club Tijuana|Tijuana]]
+|End of loan
+|<ref>{{cite web|url=https://americamonumental.bolavip.com/mercado-de-pases/aaron-mejia-es-baja-de-america-tras-finalizar-su-prestamo-regresa-a-xolos-de-tijuana|title=Aarón Mejía es baja de America tras finalizar su préstamo: Regresa a Xolos de Tijuana|publisher=Águilas Monumental|language=es|date=10 June 2026}}</ref>
+|-
+|–
+|{{sort|4|[[Defender (association football)|DF]]}}
+|style="text-align:left"|{{flagicon|MEX}} [[Cristian Calderón]]
+|style="text-align:left"|{{fbicon|MEX}} [[Pumas UNAM|UNAM]]
+|Undisclosed
+|4 July 2026
+|<ref>{{cite web|url=https://www.espn.com.mx/futbol/mexico/nota/_/id/16956781/cristian-chicote-calderon-a-pumas-liga-mx|title=Cristian 'Chicote' Calderón jugará en Pumas|publisher=ESPN México|language=es|date=4 July 2026}}</ref>
+|-
+|22
+|{{sort|4|[[Defender (association football)|DF]]}}
+|style="text-align:left"|{{flagicon|URU}} [[Thiago Espinosa]]
+|style="text-align:left"|{{fbicon|URU}} [[Peñarol]]
+|rowspan=2|On loan
+|18 July 2026
+|<ref>{{cite web|url= https://www.espn.com.mx/futbol/uruguay/nota/_/id/17018544/thiago-espinosa-diego-aguirre-penarol-america-formativas-regreso-sueno-edad-posicion|title=Thiago Espinosa y su llegada a Peñarol: "No solo es mi sueño, es el sueño de mi familia"|publisher=ESPN México|language=es|date=4 July 2026}}</ref>
+|-
+|17
+|{{sort|3|[[Midfielder|MF]]}}
+|style="text-align:left"|{{flagicon|BRA}} [[Rodrigo Dourado]]
+|style="text-align:left"|{{fbicon|MEX}} [[FC Juárez|Juárez]]
+|8 August 2026
+|<ref>{{Cite tweet|user=fcjuarezoficial|number=2086175358169088069|title=¡Bienvenido a la frontera, Dourado!}}</ref>
+|-
+|36
+|{{sort|3|[[Midfielder|MF]]}}
+|style="text-align:left"|{{flagicon|USA}} [[Miguel Ramírez (footballer, born 2002)|Miguel Ramírez]]
+|style="text-align:left"|{{fbicon|MEX}} [[Tlaxcala F.C.|Tlaxcala]]
+|Undisclosed
+|28 August 2026
+|<ref>{{Cite tweet|user=Coyotes_Oficial|number=2093467786324406700|title=¡Bienvenido, Isco!}}</ref>
+|-
+|37
+|{{sort|2|[[Forward (association football)|FW]]}}
+|style="text-align:left"|{{flagicon|MEX}} [[Esteban Lozano]]
+|style="text-align:left"|{{fbicon|MEX}} [[Santos Laguna]]
+|On loan
+|31 August 2026
+|<ref>{{cite web|url=https://www.clubsantos.mx/en/news/esteban-lozano-se-suma-al-primer-equipo-de-santos-laguna|title=Esteban Lozano joins the first team of Santos Laguna|publisher=Santos Laguna|date=31 August 2026}}</ref>
+|-
+|4
+|{{sort|4|[[Defender (association football)|DF]]}}
+|style="text-align:left"|{{flagicon|URU}} [[Sebastián Cáceres]]
+|style="text-align:left"|{{fbicon|ESP}} [[RC Celta de Vigo|Celta Vigo]]
+|$8,000,000
+|1 September 2026
+|<ref>{{cite web|url=https://www.espn.com.mx/futbol/mexico/nota/_/id/17197878/america-sebastian-caceres-celta-vigo-fichaje-laliga-espana|title=Sebastián Cáceres deja América y jugará en el Celta de España|publisher=ESPN México|language=es|date=1 September 2026}}</ref>
+|-
+|33
+|{{sort|2|[[Forward (association football)|FW]]}}
+|style="text-align:left"|{{flagicon|MEX}} [[Patricio Salas (footballer, born 2004)|Patricio Salas]]
+|style="text-align:left"|{{fbicon|POR}} [[F.C. Famalicão|Famalicão]]
+|On loan
+|2 September 2026
+|<ref>{{cite web|url=https://www.espn.com.mx/futbol/nota/_/id/17199646/patricio-salas-ficha-con-famalicao-de-portugal-deja-al-america|title=Patricio Salas deja al América para unirse al Famalicao de Portugal|publisher=ESPN México|language=es|date=2 September 2026}}</ref>
+|-
+|35
+|{{sort|2|[[Midfielder (association football)|MC]]}}
+|style="text-align:left"|{{flagicon|MEX}} [[Santiago Naveda]]
+|style="text-align:left"|{{fbicon|MEX}} [[Venados de Yucatán|Venados]]
+|On loan
+|7 September 2026
+|<ref>{{cite web|title=Santiago Naveda deja América para jugar con Venados en Expansión MX &#124; TUDN Liga MX &#124; TUDN |url=https://www.tudn.com/futbol/liga-mx/santiago-naveda-deja-america-para-jugar-con-venados-en-expansion-mx|publisher=TUDN México|language=es|date=7 September 2026}}</ref>
+|-
+!colspan="4" style="background:#FFFF94;color:#C32148;{{box-shadow border|a|#0001FD|2px}}"| Total
+!colspan="4" style="background:#FFFF94;color:#C32148;{{box-shadow border|a|#0001FD|2px}}"| {{ntsh|8.0}}$8.0 million
+|}
+{{Notelist}}
+
+== Pre-season and friendlies ==
+On 9 June 2026, [[Major League Soccer]] side [[LA Galaxy]] announced that they would host América in a friendly match.<ref>{{Cite web|date=9 June 2026|title=LA Galaxy to Host Liga MX Side Club América in Summer Friendly on July 11 |url=https://www.lagalaxy.com/news/la-galaxy-to-host-liga-mx-side-club-america-in-summer-friendly-on-july-11|website=|publisher=LA Galaxy}}</ref> On 18 June, [[Club Jaiba Brava|Jaiba Brava]] announced they would host América at the [[Estadio Tamaulipas]] ahead of their season.<ref>{{Cite web|last1=Héctor Rivera|date=18 June 2026|title=¡Viene el América al Estadio Tamaulipas! Fecha, precios y preventa del partido vs Jaiba Brava|url=https://oem.com.mx/elsoldetampico/deportes/viene-el-america-al-estadio-tamaulipas-es-oficial-enfrentara-a-la-jaiba-brava-del-tampico-madero-30629787|website=|publisher=El Sol del Centro}}</ref> On 28 June, América announced that it had played a [[Behind closed doors (sport)|behind closed doors]] friendly match against [[CF Trival Valderas|Trival Valderas]].<ref>{{Cite web|last1=Adair García|date=1 July 2026|title=URJC hosts Club América of Mexico at the Raúl González Blanco stadium|url=https://en.urjc.es/todas-las-noticias-de-actualidad/10979-la-urjc-recibe-al-club-america-de-mexico-en-el-estadio-raul-gonzalez-blanco|website=|publisher=URJC}}</ref> On 25 August, América's [[El Súper Clásico (Mexico)|rivals]], [[C.D. Guadalajara|Guadalajara]], announced that the two teams would play a friendly match at the [[Oakland Coliseum]].<ref>{{Cite web|date=25 August 2026|title=El Clásico de México returns to Oakland!|url=https://www.chivasdecorazon.com.mx/en/noticias/41334/El-Clsico-de-Mxico-regresa-a-Oakland|website=|publisher=Chivas}}</ref> On September 4, América announced a friendly [[Clásico Joven]] match against [[Cruz Azul]] at the [[Snapdragon Stadium]] in [[San Diego]]. <ref>{{Cite web|date=5 September 2026|title=America vs Cruz Azul in San Diego: The 'Clásico Joven' Gets a Rematch—When Is It Happening?|url=https://www.soyfutbol.com/en/news/america-vs-cruz-azul-in-san-diego-the-clasico-joven-gets-a-rematchwhen-is-it-happening-20260905-0003.html|website=|publisher=Soy Futbol}}</ref>
+
+{{legend2|#CCFFCC|Win|border=1px solid #AAAAAA}}
+{{legend2|#FFFFCC|Draw|border=1px solid #AAAAAA}}
+{{legend2|#FFCCCC|Loss|border=1px solid #AAAAAA}}
+{{legend2|#FFFFFF|Fixtures|border=1px solid #AAAAAA}}
+
+{{Football box collapsible
+| round      = [[Exhibition game#Club football|Friendly]]
+| date       = 28 June 2026
+| time       = 14:00 [[Central European Summer Time|CEST]]
+| team1      = [[CF Trival Valderas|Trival Valderas]] {{fbaicon|ESP}}
+| score      = 0–2
+| report     = https://onefootball.com/en/news/america-kick-off-pre-season-with-win-over-spanish-club-43069639
+| team2      = {{fbaicon|MEX}} América
+| goals1     = 
+| goals2     = 
+*[[Raphael Veiga|Veiga]] {{goal}}
+*[[Henry Martín|Martín]] {{goal|pen.}}
+| stadium    = Estadio Raúl González Blanco
+| location   = [[Fuenlabrada]], Spain
+| attendance = 0 ([[Behind closed doors (sport)|behind closed doors]])
+| referee    = 
+| result     = W
+}}
+{{Football box collapsible
+| round      = [[Exhibition game#Club football|Friendly]]
+| date       = 4 July 2026
+| time       = 20:00 [[Central Time Zone|CDT]]
+| team1      = [[Club Jaiba Brava|Jaiba Brava]] {{fbaicon|MEX}}
+| score      = 0–2
+| report     = https://www.marca.com/mx/futbol/liga-mx/2026/07/05/6a49765cc491f76ae648fc48-directo.html
+| team2      = {{fbaicon|MEX}} América
+| goals1     = 
+| goals2     = 
+*[[Alexis Gutiérrez|Gutiérrez]] {{goal|40}}
+*[[Alan Cervantes|Cervantes]] {{goal|84|pen.}}
+| stadium    = [[Estadio Tamaulipas]]
+| location   = [[Tampico]], Mexico
+| attendance = 19,667
+| referee    = Jesús Herrera Armenta
+| result     = W
+}}
+{{Football box collapsible
+| round      = [[Exhibition game#Club football|Friendly]]
+| date       = 11 July 2026
+| time       = 19:30 [[Pacific Time Zone|PDT]]
+| team1      = [[LA Galaxy]] {{fbaicon|USA}}
+| score      = 1–0
+| report     = https://www.lagalaxy.com/news/match-report-la-galaxy-earn-clean-sheet-in-friendly-win-over-club-america
+| team2      = {{fbaicon|MEX}} América
+| goals1     = 
+*[[Joseph Paintsil|Paintsil]] {{goal|26}}
+| goals2     = 
+| stadium    = [[Dignity Health Sports Park]]
+| location   = [[Carson, California|Carson]], United States
+| attendance = 
+| referee    = Victor Rivas ([[United States Soccer Federation|United States]])
+| result     = L
+}}
+{{Football box collapsible
+| round      = [[Exhibition game#Club football|Friendly]]
+| date       = 1 October 2026
+| time       = 19:30 [[Pacific Time Zone|PDT]]
+| team1      = América {{fbaicon|MEX}}
+| score      = 0–0
+| report     = 
+| team2      = {{fbaicon|MEX}} [[Cruz Azul]]
+| goals1     = 
+| goals2     = 
+| stadium    = [[Snapdragon Stadium]]
+| location   = [[San Diego]], United States
+| attendance = 
+| referee    = Tim Ford ([[United States Soccer Federation|United States]])
+| result     = D
+}}
+{{Football box collapsible
+| round      = [[Exhibition game#Club football|El Clásico de México]]
+| date       = 4 October 2026
+| time       = 17:30 [[Pacific Time Zone|PDT]]
+| team1      = [[C.D. Guadalajara|Guadalajara]] {{fbaicon|MEX}}
+| score      = 2–0
+| report     = 
+| team2      = {{fbaicon|MEX}} América
+| goals1     = 
+*[[ Ángel Sepúlveda|Sepúlveda]] {{goal|14|pen.}}, {{goal|22}}
+| goals2     = 
+| stadium    = [[Oakland Coliseum]]
+| location   = [[Oakland, California|Oakland]], United States
+| attendance = 
+| referee    = 
+| result     = L
+}}
+
+==Competitions==
+===Overview===
+{{Fb overview2
+|c=3
+|c1=[[2026–27 Liga MX season#Torneo Apertura|Apertura]] |fm1=18 July 2026 |lm1=TBD |sr1=Matchday 1 |fp1=TBD |w1=5 |d1=2 |l1=1 |f1=17 |a1=8
+|c2=[[2026–27 Liga MX season#Torneo Clausura|Clausura]] |fm2=January 2027 |lm2=TBD  |sr2=Matchday 1 |fp2=TBD |w2=0 |d2=0 |l2=0 |f2=0 |a2=0
+|c3=[[2026 Leagues Cup|Leagues Cup]] |fm3=6 August 2026 |sr3=League phase |lm3=6 September 2026 |fp3=4th |w3=3 |d3=2 |l3=1 |f3=11 |a3=6
+|c4=[[2027 CONCACAF Champions Cup|CONCACAF Champions Cup]] |fm4=February 2027|sr4=Round one |lm4=TBD |fp4=TBD |w4=0 |d4=0 |l4=0 |f4=0 |a4=0
+|u=19 September 2026
+}}
+
+===Apertura 2026===
+{{main|2026–27 Liga MX season#Torneo Apertura}}
+
+====League table====
+{{Apertura 2026 Liga MX table|showteam=AME}}
+
+====Results summary====
+{{Fb rs |hw=3 |hd=1 |hl=0 |hgf=10 |hga=2 |aw=2 |ad=1 |al=1 |agf=7 |aga=6}}
+{{Fb rs footer |u=19 September 2026 |s=[https://ligamx.net/cancha/tablas/tablaGeneralClasificacion/sp/544f5bc44c6944 Liga MX] |date=May 2026}}
+
+====Results by round====
+{{#invoke:sports rbr table|table|legendpos=b|header=Round
+| rnd9=10| rnd10=11| rnd11=12| rnd12=13| rnd13=14| rnd14=7<sup>1</sup>| rnd7=[[Clásico Joven|8]]| rnd8=[[El Súper Clásico (Mexico)|9]]| rnd16=[[Clásico Capitalino|16]] 
+|label1= Ground
+|res1=[[Estadio Corregidora|A]]/[[Estadio Azteca|A]]/H/H/[[Estadio Olímpico Benito Juárez|A]]/H/[[Estadio Azteca|A]]/H/[[Estadio Victoria|A]]/H/[[Estadio León|A]]/[[Estadio Jalisco|A]]/H/H/H/[[Estadio Olímpico Universitario|A]]/[[Estadio Universitario (UANL)|A]]
+|label2= Result
+| res2=W/D/W/W/W/W/L/D/W/D///////
+|label3= Position
+|pos3=8/5/1/1/1/1/2/3/2/1///////
+|label4= Points
+| pos4=3p/4p/7p/10p/13p/16p/16p/17p/20p/21p///////
+<!-- -->
+|text_H=Home|text_A=Away
+| color_W=green2|text_W=Win
+| color_D=yellow2|text_D=Draw
+| color_L=red2|text_L=Loss
+| color_P=lightgrey|text_P=Postponed
+| color_1-8=yellow1|color_16–18=red1
+|updated=10 October 2026
+|source= [https://ligamx.net/cancha/tablas/tablaGeneralClasificacion/sp/8934b8c89a62e0 Liga MX]
+| notes = {{plainlist|
+*<sup>1</sup> Matchday 7 (v. [[Club Tijuana|Tijuana]]) was postponed due to  América's participation in the [[2026 Leagues Cup|Leagues Cup]].}}
+}}
+
+====Regular phase====
+
+The league fixtures were announced on 9 June 2026.<ref>{{Cite web|date=9 June 2026|title=Calendario oficial del Torneo Apertura 2026|url=http://www.ligamx.net/cancha/detallenoticia/47591/calendario-oficial-del-torneo-apertura-2026|website=Liga MX|language=es}}</ref>
+
+{{legend2|#CCFFCC|Win|border=1px solid #AAAAAA}}
+{{legend2|#FFFFCC|Draw|border=1px solid #AAAAAA}}
+{{legend2|#FFCCCC|Loss|border=1px solid #AAAAAA}}
+{{legend2|#FFFFFF|Fixtures|border=1px solid #AAAAAA}}
+
+{{footballbox collapsible
+|date       = 18 July 2026
+|round=1
+|time       = 21:10 [[Central Time Zone|CST]]
+|team1      = [[Querétaro F.C.|Querétaro]]
+|score      = 0–1
+|report     = https://www.espn.com/soccer/match/_/gameId/401877037/america-queretaro
+|team2      = América
+|goals1     = 
+*[[Santiago Homenchenko|Homenchenko]] {{yel|23}}
+*B. Duarte {{yel|65}}
+*[[Lucas Abascia|Abascia]] {{yel|70}}
+*[[Diego Reyes|Reyes]] {{yel|71}}
+*[[Paulo Victor (footballer, born 2001)|Paulo Victor]] {{yel|81}}
+*[[Daniel Parra|Parra]] {{yel|90+7}}
+|goals2     = 
+*[[Alan Cervantes|Cervantes]] {{sentoff|2|27|88}}
+*[[Kevin Álvarez (footballer, born 1999)|Álvarez]] {{yel|42}}
+*[[Ramón Juárez|Juárez]] {{yel|70}}
+*[[Henry Martín|Martín]] {{penmiss}} 73'
+*[[Isaías Violante|Violante]] {{goal|83}}
+|stadium    = [[Estadio Corregidora]]
+|location   = [[Querétaro (city)|Querétaro]]
+|attendance = 30,229
+|referee    = [[Luis Enrique Santander]]
+|result     = W
+}}
+{{footballbox collapsible
+|date       = 24 July 2026
+|round=2
+|time       = 21:00 [[Central Time Zone|CST]]
+|team1      = [[Atlante F.C.|Atlante]]
+|score      = 1–1
+|report     = https://www.espn.com/soccer/match/_/gameId/401877033/america-atlante
+|team2      = América
+|goals1     = 
+*[[Eugenio Pizzuto|Pizzuto]] {{goal|65}}
+*E. Jiménez {{yel|89}}
+|goals2     = 
+*[[Cristian Borja (footballer, born 1993)|Borja]] {{goal|21}}
+*[[Kevin Álvarez (footballer, born 1999)|Álvarez]] {{yel|41}}
+*[[Érick Sánchez|É. Sánchez]] {{yel|67}}
+*[[Henry Martín|Martín]] {{yel|67}}
+|stadium    = [[Estadio Azteca]]
+|location   = [[Mexico City]]
+|attendance = 58,576
+|referee    = [[Katia Itzel García]]
+|result     = D
+}}
+{{footballbox collapsible
+|date       = 2 August 2026
+|round=3
+|time       = 17:00 [[Central Time Zone|CST]]
+|team1      = América
+|score      = 3–0
+|report     = https://www.espn.com/soccer/match/_/gameId/401877020/santos-america
+|team2      = [[Santos Laguna]]
+|goals1     = 
+*[[Henry Martín|Martín]] {{goal|2}}
+*[[Brian Rodríguez|Rodríguez]] {{goal|73}}
+*[[Alejandro Cárdenas (footballer)|Cárdenas]] {{goal|90}}
+|goals2     = 
+*[[Felipe Sánchez|F. Sánchez]] {{yel|30}}
+|stadium    = [[Estadio Azteca]]
+|location   = [[Mexico City]]
+|attendance = 31,368
+|referee    = Víctor Cáceres Hernández
+|result     = W
+}}
+{{footballbox collapsible
+|date       = 16 August 2026
+|round=4
+|time       = 17:00 [[Central Time Zone|CST]]
+|team1      = América
+|score      = 3–0
+|report     = https://www.espn.com/soccer/match/_/gameId/401877014/atletico-de-san-luis-america
+|team2      = [[Atlético San Luis]]
+|goals1     = 
+*[[Ícaro Da Conceição|Ícaro]] {{yel|12}}
+*[[Henry Martín|Martín]] {{yel|21}}
+*[[Raphael Veiga|Veiga]] {{goal|26}}
+*[[Óscar Perea|Perea]] {{goal|52}}
+*D. Arriaga {{goal|66}}
+|goals2     = 
+*[[Robson Bambu|Bambu]] {{sentoff|2|21|47}}
+|stadium    = [[Estadio Azteca]]
+|location   = [[Mexico City]]
+|attendance = 25,634
+|referee    = Maximiliano Quintero Hernández
+|result     = W 
+}}
+{{footballbox collapsible
+|date       = 21 August 2026
+|round=5
+|time       = 21:00 [[Central Time Zone|CST]]
+|team1      = [[FC Juárez|Juárez]]
+|score      = 1–2
+|report     = https://www.espn.com/soccer/match/_/gameId/401877008/america-fc-juarez
+|team2      = América
+|goals1     = 
+*[[Madson (footballer, born 1999)|Madson]] {{yel|11}}
+*[[Óscar Estupiñán|Estupiñán]] {{goal|33}}
+*[[Jesús David Murillo|Murillo]] {{yel|41}}
+*[[Javier Aquino|Aquino]] {{yel|52}}
+*[[Jairo Torres|Torres]] {{yel|77}}
+*[[Francisco Nevárez|Nevárez]] {{yel|82}}
+|goals2     = 
+*[[Henry Martín|Martín]] {{goal|38||53|pen.}}
+*[[Raphael Veiga|Veiga]] {{yel|90+7}}
+|stadium    = [[Estadio Olímpico Benito Juárez]]
+|location   = [[Ciudad Juárez]]
+|attendance = 17,497
+|referee    = Ismael López Peñuelas
+|result     = W
+}}
+{{footballbox collapsible
+|date       = 29 August 2026
+|round=6
+|time       = 19:00 [[Central Time Zone|CST]]
+|team1      = América
+|score      = 2–0
+|report     = https://www.espn.com/soccer/match/_/gameId/401876995/puebla-america
+|team2      = [[Club Puebla|Puebla]]
+|goals1     = 
+*[[Ícaro Da Conceição|Ícaro]] {{goal|24}}
+*[[Brian Rodríguez|B. Rodríguez]] {{goal|77}}
+|goals2     = 
+*S. Sanabria {{yel|69}}
+|stadium    = [[Estadio Azteca]]
+|location   = [[Mexico City]]
+|attendance = 29,778
+|referee    = Salvador Pérez Villalobos
+|result     = W
+}}
+{{footballbox collapsible
+|date       = 12 September 2026
+|round=[[Clásico Joven|8]]
+|time       = 21:15 [[Central Time Zone|CST]]
+|team1      = [[Cruz Azul]]
+|score      = 4–3
+|report     = https://www.espn.com/soccer/match/_/gameId/401876981/america-cruz-azul
+|team2      = América
+|goals1     = 
+*[[Erik Lira|Lira]] {{goal|19}}, {{yel|60}}
+*[[José Paradela|Paradela]] {{goal|35}}, {{yel|90+3}}
+*[[Nicolás Ibáñez (footballer, born 1994)|Ibáñez]] {{penmiss}} 43', {{yel|45+6}}
+*[[Jesús Orozco (Mexican footballer)|Orozco]] {{goal|45}}, {{yel|45+6}}
+*[[Jeremy Márquez|Márquez]] {{yel|63}}
+*[[Gabriel Fernández (footballer, born 1994)|Fernández]] {{goal|72}}
+|goals2     = 
+*[[Alan Cervantes|Cervantes]] {{yel|45+6}}
+*[[Raphael Veiga|Veiga]] {{yel|45+6}}
+*[[Brian Rodríguez|Rodríguez]] {{goal|52}}
+*[[Óscar Perea|Perea]] {{goal|90}}
+*[[Miguel Borja|M. Borja]] {{goal|90}}
+|stadium    = [[Estadio Azteca]]
+|location   = [[Mexico City]]
+|attendance = 40,430
+|referee    = [[Luis Enrique Santander]]
+|result     = L
+}}
+{{footballbox collapsible
+|date       = 19 September 2026
+|round=[[El Súper Clásico (Mexico)|9]]
+|time       = 21:15 [[Central Time Zone|CST]]
+|team1      = América
+|score      = 2–2
+|report     = https://www.espn.com/soccer/match/_/gameId/401876968/guadalajara-america
+|team2      = [[C.D. Guadalajara|Guadalajara]]
+|goals1     = 
+*[[Miguel Borja|M. Borja]] {{goal|71||74}}
+*[[Cristian Borja (footballer, born 1993)|C. Borja]] {{yel|90}}
+|goals2     = 
+*[[Bryan González (Mexican footballer)|B. González]] {{goal|32}}
+*[[Ricardo Marín (footballer)|Marín]] {{goal|45+2}}
+*[[Daniel Aguirre|Aguirre]] {{yel|50}}
+*[[Hugo Camberos|Camberos]] {{yel|84}}
+*[[Fernando González (footballer, born 1994)|F. González]] {{yel|90}}
+|stadium    = [[Estadio Azteca]]
+|location   = [[Mexico City]]
+|attendance = 72,990
+|referee    = Víctor Cáceres Hernández
+|result     = D
+}}
+{{footballbox collapsible
+|date       = 27 September 2026
+|round=10
+|time       = 21:00 [[Central Time Zone|CST]]
+|team1      = [[Club Necaxa|Necaxa]]
+|score      = 2–4
+|report     = https://www.espn.com/soccer/match/_/gameId/401876956/america-necaxa
+|team2      = América
+|goals1     = 
+*[[Owen González|González]] {{goal|36}}
+*[[Julián Carranza|Carranza]] {{goal|42}}
+*[[Raúl Martínez (footballer, born 2003)|Martínez]] {{yel|61}}
+*[[Diego Ochoa (footballer, born 2005)|Ochoa]] {{yel|87}}
+*[[Javier Ruiz (footballer)|Ruiz]] {{yel|89}}
+|goals2     = 
+*[[Erick Sánchez|Sánchez]] {{yel|33}}
+*[[Henry Martín|Martín]] {{goal|38}}, {{goal|45+9}}, {{goal|74}}
+*[[Miguel Borja|M. Borja]] {{goal|55}}
+*[[Cristian Borja (footballer, born 1993)|C. Borja]] {{yel|90+3}}
+|stadium    = [[Estadio Victoria]]
+|location   = [[Aguascalientes (city)|Aguascalientes]]
+|attendance = 20,398
+|referee    = Guillermo Pacheco Larios
+|result     = W
+}}
+{{footballbox collapsible
+|date       = 10 October 2026
+|round=11
+|time       = 21:00 [[Central Time Zone|CST]]
+|team1      = América
+|score      = 1–1
+|report     = https://www.espn.com/soccer/match/_/gameId/401876950/monterrey-america
+|team2      = [[C.F. Monterrey|Monterrey]]
+|goals1     = 
+*[[Cristian Borja (footballer, born 1993)|C. Borja]] {{yel|2}}
+*[[Santiago Bueno|Bueno]] {{goal|45+3}}
+*[[Miguel Borja|M. Borja]] {{Sent off|0|86}}
+|goals2     = 
+*[[Diego Rossi|Rossi]] {{goal|17}}
+*[[Cesar Garza|Garza]] {{yel|60}}
+|stadium    = [[Estadio Azteca]]
+|location   = [[Mexico City]]
+|attendance = 
+|referee    = Óscar Mejía García
+|result     = D
+}}
+{{footballbox collapsible
+|date       = 17 October 2026
+|round=12
+|time       = 19:00 [[Central Time Zone|CST]]
+|team1      = [[Club León|León]]
+|score      = 
+|report     = https://www.espn.com/soccer/match/_/gameId/401876941/america-leon
+|team2      = América
+|goals1     = 
+|goals2     = 
+|stadium    = [[Estadio León]]
+|location   = [[León, Guanajuato|León]]
+|attendance = 
+|referee    = 
+|result     = 
+}}
+{{footballbox collapsible
+|date       = 21 October 2026
+|round=13
+|time       = 19:00 [[Central Time Zone|CST]]
+|team1      = [[Atlas F.C.|Atlas]]
+|score      = 
+|report     = https://www.espn.com/soccer/match/_/gameId/401876932/america-atlas
+|team2      = América
+|goals1     = 
+|goals2     = 
+|stadium    = [[Estadio Jalisco]]
+|location   = [[Guadalajara]]
+|attendance = 
+|referee    = 
+|result     = 
+}}
+{{footballbox collapsible
+|date       = 25 October 2026
+|round=14
+|time       = 17:00 [[Central Time Zone|CST]]
+|team1      = América
+|score      = 
+|report     = https://www.espn.com/soccer/match/_/gameId/401876922/pachuca-america
+|team2      = [[C.F. Pachuca|Pachuca]]
+|goals1     = 
+|goals2     = 
+|stadium    = [[Estadio Azteca]]
+|location   = [[Mexico City]]
+|attendance = 
+|referee    = 
+|result     = 
+}}
+{{footballbox collapsible
+|date       = 28 October 2026
+|round=7
+|time       = 21:00 [[Central Time Zone|CST]]
+|team1      = América
+|score      = 
+|report     = https://www.espn.com/soccer/match/_/gameId/401876986/tijuana-america
+|team2      = [[Club Tijuana|Tijuana]]
+|goals1     = 
+|goals2     = 
+|stadium    = [[Estadio Azteca]]
+|location   = [[Mexico City]]
+|attendance = 
+|referee    = 
+|result     = 
+|note       = The match was originally scheduled for 5 September 2026, but was postponed due to  América's participation in the [[2026 Leagues Cup|Leagues Cup]].<ref>{{cite web|url=https://www.soyfutbol.com/en/leagues/liga-mx-hits-pause-on-four-matchday-7-games-due-to-leagues-cup-madness-20260902-0021.html|title=Liga MX Hits Pause on Four Matchday 7 Games Due to Leagues Cup Madness|publisher=Soy Fútbol|date=2 September 2026}}</ref>
+}}
+{{footballbox collapsible
+|date       = 31 October 2026
+|round=15
+|time       = 21:90 [[Central Time Zone|CST]]
+|team1      = América
+|score      = 
+|report     = https://www.espn.com/soccer/match/_/gameId/401876913/toluca-america
+|team2      = [[Toluca FC|Toluca]]
+|goals1     = 
+|goals2     = 
+|stadium    = [[Estadio Azteca]]
+|location   = [[Mexico City]]
+|attendance = 
+|referee    = 
+|result     = 
+}}
+{{footballbox collapsible
+|date       = 7 November 2026
+|round=[[Clásico Capitalino|16]]
+|time       = 21:00 [[Central Time Zone|CST]]
+|team1      = [[Pumas UNAM|UNAM]]
+|score      = 
+|report     = https://www.espn.com/soccer/match/_/gameId/401876904/america-pumas-unam
+|team2      = América
+|goals1     = 
+|goals2     = 
+|stadium    = [[Estadio Olímpico Universitario]]
+|location   = [[Mexico City]]
+|attendance = 
+|referee    = 
+|result     = 
+}}
+{{footballbox collapsible
+|date       = 21 November 2026
+|round=17
+|time       = 21:00 [[Central Time Zone|CST]]
+|team1      = [[Tigres UANL|UANL]]
+|score      = 
+|report     = https://www.espn.com/soccer/match/_/gameId/401877048/america-tigres-uanl
+|team2      = América
+|goals1     = 
+|goals2     = 
+|stadium    = [[Estadio Universitario (UANL)|Estadio Universitario]]
+|location   = [[San Nicolás de los Garza]]
+|attendance = 
+|referee    = 
+|result     = 
+}}
+
+===Clausura 2027===
+{{main|2026–27 Liga MX season#Torneo Clausura}}
+
+====Results summary====
+{{Fb rs |hw=0 |hd=0 |hl=0 |hgf=0 |hga=0 |aw=0 |ad=0 |al=0 |agf=0 |aga=0}}
+{{Fb rs footer |u= |s=[https://ligamx.net/cancha/tablas/tablaGeneralClasificacion/sp/544f5bc44c6944 Liga MX] |date=May 2026}}
+
+====Results by round====
+{{#invoke:sports rbr table|table|legendpos=b|header=Round
+| 
+|label1= Ground
+|res1= 
+|label2= Result
+| res2=////////////////
+|label3= Position
+|pos3=////////////////
+|label4= Points
+| pos4=////////////////
+<!-- -->
+|text_H=Home|text_A=Away
+| color_W=green2|text_W=Win
+| color_D=yellow2|text_D=Draw
+| color_L=red2|text_L=Loss
+| color_P=lightgrey|text_P=Postponed
+| color_1=1st|color_2–6=green1|color_7–10=yellow1|color_16–18=red1
+|updated=
+|source= [https://ligamx.net/cancha/tablas/tablaGeneralClasificacion/sp/8934b8c89a62e0 Liga MX]
+}}
+
+====Regular phase====
+{{legend2|#CCFFCC|Win|border=1px solid #AAAAAA}}
+{{legend2|#FFFFCC|Draw|border=1px solid #AAAAAA}}
+{{legend2|#FFCCCC|Loss|border=1px solid #AAAAAA}}
+{{legend2|#FFFFFF|Fixtures|border=1px solid #AAAAAA}}
+
+=== Leagues Cup ===
+{{main|2026 Leagues Cup}}
+As a [[Liga MX]] side, América entered the Leagues Cup in the league phase.<ref name="teams">{{cite web|url=https://www.leaguescup.com/news/leagues-cup-2026-set-to-be-played-august-4-september-6-participating-clubs-announced|title=Leagues Cup 2026 Set to be Played August 4-September 6; Participating Clubs Announced|website=leaguescup.com|publisher=Soccer United Marketing, LLC|date=16 December 2025|access-date=13 May 2026}}</ref>
+
+==== League phase ====
+{{main|2026 Leagues Cup league phase}}
+{{2026 Leagues Cup League stage Liga MX Standings|showteam=AME|show_limit=5}}
+
+{{#invoke:sports rbr table|table|legendpos=b
+| header = Round
+| label1 = Ground
+| res1 = H/[[Providence Park|N]]/[[Q2 Stadium|N]]
+| label2 = Result
+| res2 = W/W/D
+| label3 = Position
+| pos3 = 2/1/2
+| label4 = Points
+| pos4 = 3p/6p/7p
+| color_W = green1 |text_W = Win
+| color_D = yellow1 |text_D = Draw
+| color_L = red1 |text_L = Loss
+| text_H = Home |text_A = Away
+| color_1–4 = green1
+|updated=
+| source = [https://www.leaguescup.com/schedule/#club=all&date=2025-05-30 Leagues Cup]
+}}
+
+{{footballbox collapsible
+|date       = 6 August 2026
+|round=[[2026 Leagues Cup league phase#América v San Diego FC|1]]
+|time       = 20:00 [[Central Time Zone|CST]]
+|team1      = América {{fbaicon|MEX}}
+|score      = 3–1
+|report     = https://www.leaguescup.com/competitions/leagues-cup/2026/matches/amevssd-08-06-2026/
+|team2      = {{fbaicon|USA}} [[San Diego FC]]
+|goals1     = 
+*[[Brian Rodríguez|Rodríguez]] {{goal|11}}
+*[[Érick Sánchez|Sánchez]] {{goal|33}}
+*[[Isaías Violante|Violante]] {{goal|45+2}}
+|goals2     = 
+*[[Christopher McVey|McVey]] {{yel|30}}
+*[[Luca Bombino|Bombino]] {{goal|63}}
+*[[Jeppe Tverskov|Tverskov]] {{yel|85}}
+|stadium    = [[Estadio Azteca]]
+|location   = [[Mexico City]], Mexico
+|attendance = 39,993
+|referee    = [[Mario Escobar (referee)|Mario Escobar]] ([[National Football Federation of Guatemala|Guatemala]])
+|result     = W
+}}
+{{footballbox collapsible
+|date       = 9 August 2026
+|round=[[2026 Leagues Cup league phase#América v Portland Timbers|2]]
+|time       = 19:15 [[Pacific Time Zone|PDT]]
+|team1      = América {{fbaicon|MEX}}
+|score      = 3–1
+|report     = https://www.leaguescup.com/competitions/leagues-cup/2026/matches/amevspor-08-09-2026/
+|team2      = {{fbaicon|USA}} [[Portland Timbers]]
+|goals1     = 
+*[[Brian Rodríguez|Rodríguez]] {{goal|6}}
+*[[Ramón Juárez|Juárez]] {{yel|30}}
+*[[Isaías Violante|Violante]] {{goal|63}}
+*[[Dagoberto Espinoza|Espinoza]] {{yel|70}}
+*[[Miguel Vázquez (footballer)|Vázquez]] {{yel|77}}
+*[[Alan Cervantes|Cervantes]] {{yel|79}}
+*[[Óscar Perea|Perea]] {{goal|88}}
+|goals2     = 
+*[[Kristoffer Velde|Velde]] {{goal|19}}, {{yel|90}}
+*[[Diego Chará|Chará]] {{yel|39}}
+*[[Jimer Fory|Fory]] {{yel|59}}
+*[[Brandon Bye|Bye]] {{yel|67}}
+|stadium    = [[Providence Park]]
+|location   = [[Portland, Oregon|Portland]], United States
+|attendance = 20,897
+|referee    = [[Walter López Castellanos|Walter López]] ([[National Football Federation of Guatemala|Guatemala]])
+|result     = W
+}}
+{{footballbox collapsible
+|date       = 13 August 2026
+|round=[[2026 Leagues Cup league phase#América v Austin FC|3]]
+|time       = 18:30 [[Central Time Zone|CDT]]
+|team1      = América {{fbaicon|MEX}}
+|score      = 1–1
+|report     = https://www.leaguescup.com/competitions/leagues-cup/2026/matches/amevsatx-08-13-2026/
+|team2      = {{fbaicon|USA}} [[Austin FC]]
+|goals1     = 
+*[[Alan Cervantes|Cervantes]] {{yel|4}}
+*[[Jon Gallagher|Gallagher]] {{goal|48|o.g.}}
+*[[Érick Sánchez|E. Sánchez]] {{yel|61}}
+|goals2     = 
+*E. Torres {{yel|52}}
+*[[Myrto Uzuni|Uzuni]] {{goal|67}}
+*[[Besard Šabović|Šabović]] {{yel|90+2}}
+| penalties1 =
+*[[Raphael Veiga|Veiga]] {{pengoal}}
+*[[Israel Reyes|Reyes]] {{pengoal}}
+*[[Alan Cervantes|Cervantes]] {{pengoal}}
+*[[Sebastián Cáceres|Cácares]] {{pengoal}}
+*[[Kevin Álvarez (footballer, born 1999)|Álvarez]] {{pengoal}}
+*[[Cristian Borja (footballer, born 1993)|Borja]] {{penmiss}}
+| penaltyscore = 5–6
+| penalties2 =
+*[[Joseph Rosales|Rosales]] {{pengoal}}
+*[[Besard Šabović|Šabović]] {{pengoal}}
+*[[Christian Ramirez (soccer, born 1991)|Ramirez]] {{pengoal}}
+*[[Myrto Uzuni|Uzuni]] {{pengoal}}
+*[[Jorge Alastuey|Alastuey]] {{pengoal}}
+*[[Ilie Sánchez|I. Sánchez]] {{pengoal}}
+|stadium    = [[Q2 Stadium]]
+|location   = [[Austin, Texas|Austin]], United States
+|attendance = 11,281
+|referee    = [[Juan Gabriel Calderón]] ([[Costa Rican Football Federation|Costa Rica]])
+|result     = D
+}}
+
+====Knouckout stage====
+{{main|2026 Leagues Cup knockout stage}}
+
+{{footballbox collapsible
+|date       = 26 August 2026
+|round=[[2026 Leagues Cup knockout stage#América v Columbus Crew|Quarter-finals]]
+|time       = 19:45 [[Pacific Time Zone|PDT]]
+|team1      = América {{fbaicon|MEX}}
+|score      = 2–0
+|report     = https://www.leaguescup.com/competitions/leagues-cup/2026/matches/amevsclb-08-26-2026/
+|team2      = {{fbaicon|USA}} [[Columbus Crew]]
+|goals1     = 
+*[[Raphael Veiga|Veiga]] {{goal|11}}
+*[[Brian Rodríguez|Rodríguez]] {{goal|45+5}}
+*[[Óscar Perea|Perea]] {{yel|86}}
+|goals2     = 
+*[[Brais Méndez|Méndez]] {{penmiss}} 39'
+|stadium    = [[Dignity Health Sports Park]]
+|location   = [[Carson, California|Carson]], United States
+|attendance = 20,637
+|referee    = Marco Ortiz ([[Mexican Football Federation|Mexico]])
+|result     = W
+}}
+{{footballbox collapsible
+|date       = 2 September 2026
+|round=[[2026 Leagues Cup knockout stage#América v Monterrey|Semi-finals]]
+|time       = 20:30 [[Pacific Time Zone|PDT]]
+|team1      = América {{fbaicon|MEX}}
+|score      = 2–2
+|penaltyscore = 4–5
+|report     = https://www.leaguescup.com/competitions/leagues-cup/2026/matches/amevsmty-09-02-2026/
+|team2      = {{fbaicon|MEX}} [[C.F. Monterrey|Monterrey]]
+|goals1 = 
+*[[Ramón Juárez|Juárez]] {{goal|57}}, {{yel|86}}
+*[[Alan Cervantes|Cervantes]] {{goal|63}}
+|goals2 = 
+*[[Diego Rossi|Rossi]] {{goal|49}}
+*[[Lucas Ocampos|Ocampos]] {{yel|56}}, {{goal|69|pen.}}
+|penalties1 = 
+*[[Raphael Veiga|Veiga]] {{pengoal}}
+*[[Brian Rodríguez|Rodríguez]] {{pengoal}}
+*[[Israel Reyes|Reyes]] {{pengoal}}
+*[[Alan Cervantes|Cervantes]] {{penmiss}}
+*[[Érick Sánchez|Sánchez]] {{pengoal}}
+|penalties2 = 
+*{{pengoal}} [[Luca Orellano|Orellano]]
+*{{pengoal}} [[Diego Rossi|Rossi]]
+*{{pengoal}} [[Víctor Guzmán (footballer, born 2002)|Guzmán]]
+*{{pengoal}} [[Jesús Manuel Corona|Corona]]
+*{{pengoal}} [[Hugo Cuypers|Cuypers]]
+|stadium    = [[Dignity Health Sports Park]]
+|location   = [[Carson, California|Carson]], United States
+|attendance = 21,276
+|referee    = [[Mario Escobar (referee)|Mario Escobar]] ([[National Football Federation of Guatemala|Guatemala]])
+|result     = D
+}}
+{{footballbox collapsible
+|date       = 6 September 2026
+|round=[[2026 Leagues Cup knockout stage#León v América|3rd]]
+|time       = 17:00	[[Central Time Zone|CDT]]
+|team1      = [[Club León|León]] {{fbaicon|MEX}}
+|score      = 1–0
+|report     = https://www.mlssoccer.com/competitions/leagues-cup/2026/matches/leovsame-09-06-2026/
+|team2      = {{fbaicon|MEX}} América
+|goals1     = 
+*[[José Iván Rodríguez|J. Rodríguez]] {{yel|31}}
+*[[Salvador Reyes (footballer, born 1998)|S. Reyes]] {{yel|56}}
+*J. Guevarra {{yel|63}}
+*[[Diber Cambindo|Cambindo]] {{goal|80}}
+|goals2     = 
+*[[Alan Cervantes|Cervantes]] {{yel|25}}
+*[[Cristian Borja (footballer, born 1993)|Borja]] {{yel|57}}
+*[[Ramón Juárez|Juárez]] {{yel|89}}
+*[[Brian Rodríguez|B. Rodríguez]] {{yel|90+3}}
+*[[Érick Sánchez|Sánchez]] {{yel|90+6}}
+|stadium    = [[Shell Energy Stadium]]
+|location   = [[Houston]], United States
+|attendance = 21,114
+|referee    = [[Oshane Nation]] ([[Jamaica Football Federation|Jamaica]])
+|result     = L
+}}
+
+===CONCACAF Champions Cup===
+{{main|2027 CONCACAF Champions Cup}}
+
+==Statistics==
+===Appearances and goals===
+{{Efs start|[[2026–27 Liga MX season#Torneo Apertura|Apertura 2026]]|[[2026–27 Liga MX season#Torneo Clausura|Clausura 2027]]|[[2027 CONCACAF Champions Cup|CONCACAF Champions Cup]]|[[2026 Leagues Cup|Leagues Cup]]|}}
+|-
+! colspan="14" style="background:#dcdcdc; text-align:center"| Goalkeepers
+{{Efs player|no=1 |name=[[Luis Malagón]]|pos=GK|nat=MEX                            |0    |0 |0    |0 |0    |0 |0    |0 }}
+{{Efs player|no=21 |name=[[Fernando Tapia]]|pos=GK|nat=MEX                            |2    |0 |0    |0 |0    |0 |1    |0 }}
+{{Efs player|no=30|name=[[Rodolfo Cota]]|pos=GK|nat=MEX                                     |6    |0 |0   |0 |0   |0 |5    |0 }}
+{{Efs player|no=31|name=[[César Lugo]]|pos=GK|nat=MEX                                     |0    |0 |0   |0 |0   |0 |0    |0 }}
+|-
+! colspan="14" style="background:#dcdcdc; text-align:center"| Defenders
+{{Efs player|no=2|name=[[Emilio Lara (footballer)|Emilio Lara]]|pos=DF|nat=MEX                                 |3  |0 |0   |0 |0    |0 |0   |0 }}
+{{Efs player|no=3 |name=[[Israel Reyes]]|pos=DF|nat=MEX                                   |3+2  |0 |0   |0 |0    |0 |5   |0 }}
+{{Efs player|no=5 |name=[[Kevin Álvarez (footballer, born 1999)|Kevin Álvarez]]|pos=DF|nat=MEX                                      |4+1  |0 |0   |0 |0    |0 |5+1   |0 }}
+{{Efs player|no=14|name=[[Santiago Bueno]]|pos=DF|nat=URU                                 |0 |0 |0   |0 |0    |0 |0   |0 }}
+{{Efs player|no=15|name=[[Santiago Ramos Mingo|Santiago Ramos]]|pos=DF|nat=ARG                                 |0 |0 |0   |0 |0    |0 |0   |0 }}
+{{Efs player|no=24|name=[[Franco Rossano]]|pos=DF|nat=MEX                                 |0+1  |0 |0   |0 |0    |0 |0   |0 }}
+{{Efs player|no=26|name=[[Cristian Borja (footballer, born 1993)|Cristian Borja]]|pos=DF|nat=COL                                   |4+2  |1 |0   |0 |0    |0 |5+1   |0 }}
+{{Efs player|no=29|name=[[Ramón Juárez]]|pos=DF|nat=MEX                                  |6+1  |0 |0   |0 |0    |0 |3   |1 }}
+{{Efs player|no=32|name=[[Miguel Vázquez (footballer)|Miguel Vázquez]]|pos=DF|nat=MEX                                     |5  |0 |0   |0 |0    |0 |2   |0 }}
+|-
+! colspan="14" style="background:#dcdcdc; text-align:center"| Midfielders
+{{Efs player|no=6|name=[[Edwin Cerrillo]]|pos=MF|nat=USA                                    |1+2  |0 |0   |0 |0    |0 |2   |0 }}
+{{Efs player|no=8|name=[[Carlos Álvarez (footballer, born 2003)|Carlos Álvarez]]|pos=MF|nat=ESP                                    |0+1 |0 |0   |0 |0    |0 |0   |0 }}
+{{Efs player|no=10|name=[[Alejandro Zendejas]]|pos=MF|nat=USA                                    |1+1  |0 |0   |0 |0    |0 |0   |0 }}
+{{Efs player|no=12|name=[[Isaías Violante]]|pos=MF|nat=MEX                                     |5+2  |1 |0   |0 |0    |0 |5+1   |2 }}
+{{Efs player|no=13|name=[[Alan Cervantes]]|pos=MF|nat=MEX                                     |6  |0 |0   |0 |0    |0 |6   |1 }}
+{{Efs player|no=20 |name=[[Alexis Gutiérrez]]|pos=MF|nat=MEX                                     |2+3  |0 |0   |0 |0    |0 |0+1   |0 }}
+{{Efs player|no=22 |name=[[Óscar Perea]]|pos=MF|nat=COL                                     |2+3 |2 |0   |0 |0    |0 |1+4   |1 }}
+{{Efs player|no=23|name=[[Raphael Veiga]]|pos=MF|nat=BRA                                     |7+1  |1 |0   |0 |0    |0 |4+2   |1 }}
+{{Efs player|no=27|name=[[Ícaro Da Conceição|Ícaro]]|pos=MF|nat=BRA                                     |3+2  |1 |0   |0 |0    |0 |1+4   |0 }}
+{{Efs player|no=28|name=[[Érick Sánchez]]|pos=MF|nat=MEX                                      |5+3  |0 |0   |0 |0    |0 |4+2   |1 }}
+{{Efs player|no=34|name=[[Dagoberto Espinoza]]|pos=MF|nat=MEX                                     |8  |0 |0   |0 |0    |0 |2+2   |0 }}
+{{Efs player|no=35|name=[[Santiago Naveda]]|pos=MF|nat=MEX                                     |0  |0 |0   |0 |0    |0 |0   |0 }}
+{{Efs player|no=186|name=Diego Arriaga{{efn|name=Under-21|Player registered with the under-21 team}}|pos=MF|nat=MEX                                 |2+2  |1 |0   |0 |0    |0 |0+3   |0 }}
+|-
+! colspan="14" style="background:#dcdcdc; text-align:center"| Forwards
+{{Efs player|no=7 |name=[[Brian Rodríguez]]|pos=FW|nat=URU                                   |3+3  |3 |0   |0 |0    |0 |6   |3 }}
+{{Efs player|no=9|name=[[Henry Martín]]|pos=FW|nat=MEX                               |7  |3 |0   |0 |0    |0 |3+2   |0 }}
+{{Efs player|no=11|name=[[Víctor Dávila]]|pos=FW|nat=CHI                                 |0  |0 |0   |0 |0    |0 |0   |0 }}
+{{Efs player|no=19|name=[[Raúl Zúñiga]]|pos=FW|nat=COL                               |0  |0 |0   |0 |0    |0 |0   |0 }}
+{{Efs player|no=93|name=[[Miguel Borja]]|pos=FW|nat=COL                                 |0+2  |3 |0   |0 |0    |0 |0   |0 }}
+{{Efs player|no=189|name=[[Alejandro Cárdenas (footballer)|Alejandro Cárdenas]]{{efn|name=Under-21}}|pos=FW|nat=MEX                                 |1+3  |1 |0   |0 |0    |0 |3+3   |0 }}
+|-
+! colspan="18" style="background:#dcdcdc; text-align:center"| Players transferred out during the season
+{{Efs player|no=4 |name=[[Sebastián Cáceres]]|pos=DF|nat=URU                                |2  |0 |0   |0 |0    |0 |3   |0 }}
+{{Efs player|no=33|name=[[Patricio Salas (footballer, born 2004)|Patricio Salas]]|pos=FW|nat=MEX                                 |0+2  |0 |0   |0 |0    |0 |0+1   |0 }}
+|-
+{{Fb cs footer|u=19 September 2026|s=[[#Competitions|Competitions]]|date=May 2026}}
+{{Notelist}}
+
+=== Assists ===
+''The list is sorted by squad number when total assists are equal.''
+{| class="wikitable sortable" style="text-align: center;"
+|-
+!width=10|Rank
+!width=10|{{Abbr|Pos.|Position}}
+!width=10|{{Abbr|No.|Squad number}}
+!width=180|Player
+!width:85px;"|[[2026–27 Liga MX season#Torneo Apertura|Apertura 2026]]
+!width:85px;"|[[2026–27 Liga MX season#Torneo Clausura|Clausura 2027]]
+!width:85px;"|[[2027 CONCACAF Champions Cup|CONCACAF Champions Cup]]
+!width:85px;"|[[2026 Leagues Cup|Leagues Cup]]
+!width:85px;"|Total
+|-
+! rowspan="1"|1.
+| MF || 23 || {{flagicon|BRA}} [[Raphael Veiga]] || 2 || 0 || 0 || 3 || 5
+|-
+! rowspan="1"|2.
+| FW || 7 || {{flagicon|URU}} [[Brian Rodríguez]] || 1 || 0 || 0 || 3 || 4
+|-
+! rowspan="2"|3.
+| DF || 5 || {{flagicon|MEX}} [[Kevin Álvarez (footballer, born 1999)|Kevin Álvarez]] || 3 || 0 || 0 || 0 || 3
+|-
+| FW || 9 || {{flagicon|MEX}} [[Henry Martín]] || 2 || 0 || 0 || 0 || 2
+|-
+! rowspan="1"|5.
+| MF || 34 || {{flagicon|MEX}} [[Dagoberto Espinoza]] || 2 || 0 || 0 || 0 || 2
+|-
+! rowspan="4"|6.
+| MF || 12 || {{flagicon|MEX}} [[Isaías Violante]] || 1 || 0 || 0 || 0 || 1
+|-
+| DF || 26 || {{flagicon|COL}} [[Cristian Borja (footballer, born 1993)|Cristian Borja]] || 0 || 0 || 0 || 1 || 1
+|-
+| MF || 28 || {{flagicon|MEX}} [[Érick Sánchez]] || 1 || 0 || 0 || 0 || 1
+|-
+| DF || 29 || {{flagicon|MEX}} [[Ramón Juárez]] || 1 || 0 || 0 || 0 || 1
+|-
+!colspan="4"|Totals
+!13!!0!!0!!7!!20
+|}
+{{Fb rs footer|u=19 September 2026|s=[[#Competitions|Competitions]]|date=April 2026}}
+
+=== Disciplinary record ===
+''The list is sorted by squad number when total cards are equal.''
+{| class="wikitable sortable" style="text-align:center"
+|-
+!rowspan="2"|Rank
+!rowspan="2"| {{Abbr|Pos.|Position }}
+!rowspan="2"|{{Abbr|No.|Squad number}}
+!rowspan="2"|Player
+!colspan="3" style="width:85px;"|[[2026–27 Liga MX season#Torneo Apertura|Apertura 2026]]
+!colspan="3" style="width:85px;" |[[2026–27 Liga MX season#Torneo Clausura|Clausura 2027]]
+!colspan="3" style="width:85px;"|[[2027 CONCACAF Champions Cup|CONCACAF Champions Cup]]
+!colspan="3" style="width:85px;"|[[2026 Leagues Cup|Leagues Cup]]
+!colspan="3" style="width:85px;"|Total
+|-
+!{{yel}}
+!{{sentoff|2}}
+!{{sentoff|0}}
+!{{yel}}
+!{{sentoff|2}}
+!{{sentoff|0}}
+!{{yel}}
+!{{sentoff|2}}
+!{{sentoff|0}}
+!{{yel}}
+!{{sentoff|2}}
+!{{sentoff|0}}
+!{{yel}}
+!{{sentoff|2}}
+!{{sentoff|0}}
+|-
+|rowspan="1"|1.
+||MF||13||align=left | {{flagicon|MEX}} [[Alan Cervantes]]
+|1||1||0||0||0||0||0||0||0||3||0||0||4||1||0
+|-
+|rowspan="1"|2.
+||DF||29||align=left | {{flagicon|MEX}} [[Ramón Juárez]]
+|1||0||0||0||0||0||0||0||0||3||0||0||4||0||0
+|-
+|rowspan="1"|3.
+||MF||28||align=left | {{flagicon|MEX}} [[Érick Sánchez]]
+|1||0||0||0||0||0||0||0||0||2||0||0||3||0||0
+|-
+|rowspan="4"|4.
+||DF||5||align=left | {{flagicon|MEX}} [[Kevin Álvarez (footballer, born 1999)|Kevin Álvarez]]
+|2||0||0||0||0||0||0||0||0||0||0||0||2||0||0
+|-
+||FW||9||align=left | {{flagicon|MEX}} [[Henry Martín]]
+|2||0||0||0||0||0||0||0||0||0||0||0||2||0||0
+|-
+||MF||23||align=left | {{flagicon|BRA}} [[Raphael Veiga]]
+|2||0||0||0||0||0||0||0||0||0||0||0||2||0||0
+|-
+||DF||26||align=left | {{flagicon|COL}} [[Cristian Borja (footballer, born 1993)|Cristian Borja]]
+|1||0||0||0||0||0||0||0||0||1||0||0||2||0||0
+|-
+|rowspan="5"|8.
+||FW||7||align=left | {{flagicon|URU}} [[Brian Rodríguez]]
+|0||0||0||0||0||0||0||0||0||1||0||0||1||0||0
+|-
+||MF||22||align=left | {{flagicon|COL}} [[Óscar Perea]]
+|0||0||0||0||0||0||0||0||0||1||0||0||1||0||0
+|-
+||MF||27||align=left | {{flagicon|BRA}} [[Ícaro Da Conceição|Ícaro]]
+|1||0||0||0||0||0||0||0||0||0||0||0||1||0||0
+|-
+||DF||32||align=left | {{flagicon|MEX}} [[Miguel Vázquez (footballer)|Miguel Vázquez]]
+|0||0||0||0||0||0||0||0||0||1||0||0||1||0||0
+|-
+||MF||34||align=left | {{flagicon|MEX}} [[Dagoberto Espinoza]]
+|0||0||0||0||0||0||0||0||0||1||0||0||1||0||0
+|-
+!colspan="4"|Totals
+!11!!1!!0!!0!!0!!0!!0!!0!!0!!13!!0!!0!!24!!1!!0
+|-
+{{Fb cs footer|u=19 September 2026|s=[[#Competitions|Competitions]]|date=May 2026}}
+
+===Clean sheets===
+''The list is sorted by squad number when total clean sheets are equal.''
+{| class="wikitable sortable" style="text-align: center;"
+|-
+!width=10|Rank
+!width=10|{{Abbr|No.|Squad number}}
+!width=200|Player
+!width:85px;"|[[2026–27 Liga MX season#Torneo Apertura|Apertura 2026]]
+!width:85px;"|[[2026–27 Liga MX season#Torneo Clausura|Clausura 2027]]
+!width:85px;"|[[2027 CONCACAF Champions Cup|CONCACAF Champions Cup]]
+!width:85px;"|[[2026 Leagues Cup|Leagues Cup]]
+!width:85px;"|Total
+|-
+! 1.
+| 30 || {{flagicon|MEX}} [[Rodolfo Cota]] || 2 || 0 || 0 || 1 || 3
+|-
+! 2.
+| 21 || {{flagicon|MEX}} [[Fernando Tapia]] || 2 || 0 || 0 || 0 || 2
+|-
+!colspan="3"|Totals
+!4!!0!!0!!1!!5
+|}
+{{Fb rs footer|u=29 August 2026|s=[[#Competitions|Competitions]]|date=May 2026}}
+
+== References ==
+{{reflist}}
+
+== External links ==
+{{Club América}}
+{{Club América seasons}}
+{{2026–27 in Mexican men's football}}
+{{DEFAULTSORT:2026-27 Club America season}}
+
+[[Category:Club América seasons]]
+[[Category:Mexican football clubs 2026–27 season|América, Club]]
+[[Category:2020s in Mexico City]]

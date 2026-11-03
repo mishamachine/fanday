@@ -1,0 +1,2494 @@
+<!-- FIXTURE. Page: 2026 NRL season results
+     Source: https://en.wikipedia.org/wiki/2026_NRL_season_results
+     Revision id: 1381734277  (permanent link: https://en.wikipedia.org/w/index.php?oldid=1381734277)
+     Fetched: 2026-11-03 from the MediaWiki API (action=query&prop=revisions&rvprop=content|ids&rvslots=main&format=json),
+     User-Agent: Fanday/0.1 (machinemisha+fanday@gmail.com). Unmodified wikitext below this comment.
+     Text (c) Wikipedia contributors, licensed CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/);
+     authors are listed in the page history. Used here only as test data. -->
+{{Short description|none}}
+<!--This short description is INTENTIONALLY "none" - please see WP:SDNONE before you consider changing it!--> 
+{{main|2026 NRL season}}
+
+The 2026 NRL season is the 119th of professional rugby league in Australia and the 29th season run by the [[National Rugby League]].
+
+All times are listed in [[Time in Australia|AEST]] ([[UTC+10:00|UTC+10]]).
+
+Scores with an asterisk (*) indicate [[List of National Rugby League golden point games|golden point games]].
+
+== Regular season ==
+=== Round 1 ===
+'''March 1–8'''
+{{See also|Rugby League Las Vegas}}
+{| class="wikitable" style="border-collapse:collapse; text-align:center; width:100%;"
+|- style="text-align:center; background:#f5faff;"  style="background:#c1d8ff;"
+! rowspan="2" |Home
+! rowspan="2" |Score
+! rowspan="2" |Away
+! colspan="4" |Match information
+|-
+! width="17%" |Day & time
+! width="17%" |Venue
+! width="17%" |Referee
+! width="5%" |Attendance
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Newcastle|size=16}} [[Newcastle Knights]]'''
+|28–18
+| align="left" |{{leagueicon|North Queensland|size=16}} [[North Queensland Cowboys]]
+|Sunday 1 March, 12:15pm
+| rowspan="2" |[[Allegiant Stadium]]
+|[[Ashley Klein]]
+| rowspan="2" |45,719
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Canterbury|size=16}} [[Canterbury-Bankstown Bulldogs]]'''
+|15–14*
+| align="left" |{{leagueicon|St. George|size=16}} [[St. George Illawarra Dragons]]
+|Sunday 1 March, 2:30pm
+|[[Grant Atkins]]
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Melbourne|size=16}} [[Melbourne Storm]]'''
+|52–4
+| align="left" |{{leagueicon|Parramatta|size=16}} [[Parramatta Eels]]
+|Thursday 5 March, 7:00{{nbsp}}pm
+|[[Melbourne Rectangular Stadium|AAMI Park]]
+|Todd Smith
+|18,264
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Auckland|size=16}} [[New Zealand Warriors]]'''
+|42–18
+| align="left" |{{leagueicon|Eastern Suburbs|size=16}} [[Sydney Roosters]]
+|Friday 6 March, 5:00{{nbsp}}pm
+|[[Mount Smart Stadium|Go Media Stadium]]
+|Wyatt Raymond
+|24,112
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Brisbane|size=16}} [[Brisbane Broncos]]
+|0–26
+| align="left" |'''{{leagueicon|Penrith|size=16}} [[Penrith Panthers]]'''
+|Friday 6 March, 7:00 pm
+|[[Lang Park|Suncorp Stadium]]
+|[[Adam Gee (referee)|Adam Gee]]
+|45,566
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Cronulla|size=16}} [[Cronulla-Sutherland Sharks]]'''
+|50–10
+| align="left" |{{leagueicon|Gold Coast Titans|size=16}} [[Gold Coast Titans]]
+|Saturday 7 March, 4:30{{nbsp}}pm
+|[[Endeavour Field|Ocean Protect Stadium]]
+|Ziggy Przeklasa-Adamski
+|11,548
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Manly|size=16}} [[Manly Warringah Sea Eagles]]
+|28–29*
+| align="left" |'''{{leagueicon|Canberra|size=16}} [[Canberra Raiders]]'''
+|Saturday 7 March, 6:30{{nbsp}}pm
+|[[Brookvale Oval|4 Pines Park]]
+|Liam Kennedy
+|17,253
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Dolphins|size=16}} [[Dolphins (NRL)|Dolphins]]
+|30–40
+| align="left" |'''{{leagueicon|South Sydney|size=16}} [[South Sydney Rabbitohs]]'''
+|Sunday 8 March, 3:05 pm
+|[[Lang Park|Suncorp Stadium]]
+|Peter Gough
+|20,114
+|- style="text-align:center; background:#f5faff;" 
+| colspan="7" align="left" |Bye: {{leagueicon|Wests Tigers|size=16}} [[Wests Tigers]]
+|-
+! colspan="7" align="left" |Sources:<ref>{{Cite web |title=Draw |url=https://www.nrl.com/draw/?competition=111&round=1&season=2026 |access-date=2025-11-14 |website=National Rugby League |language=en}}</ref> <ref>{{Cite web |title=2026 NRL Telstra Premiership – Round 1 – Results |url=https://www.rugbyleagueproject.org/seasons/nrl-2026/round-1/summary.html |access-date=2026-03-07 |website=Rugby League Project |language=en}}</ref>
+|}
+*For a third consecutive season, the NRL season commenced with a split round, beginning with a double-header at [[Allegiant Stadium]] in Las Vegas, Nevada, as part of NRL's [[Rugby League Las Vegas]] venture.
+
+=== Round 2 ===
+'''March 12–15'''
+{| class="wikitable" style="border-collapse:collapse; text-align:center; width:100%;"
+|- style="text-align:center; background:#f5faff;"  style="background:#c1d8ff;"
+! rowspan="2" |Home
+! rowspan="2" |Score
+! rowspan="2" |Away
+! colspan="4" |Match information
+|-
+! width="17%" |Day & time
+! width="17%" |Venue
+! width="17%" |Referee
+! width="5%" |Attendance
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Brisbane|size=16}} [[Brisbane Broncos]]
+|32–40
+| align="left" |'''{{leagueicon|Parramatta|size=16}} [[Parramatta Eels]]'''
+|Thursday, 7:00{{nbsp}}pm
+|[[Lang Park|Suncorp Stadium]]
+|Wyatt Raymond
+|39,015
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Auckland|size=16}} [[New Zealand Warriors]]'''
+|40–6
+| align="left" |{{leagueicon|Canberra|size=16}} [[Canberra Raiders]]
+|Friday, 5:00{{nbsp}}pm
+|[[Mount Smart Stadium|Go Media Stadium]]
+|Peter Gough
+|23,067
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Eastern Suburbs|size=16}} [[Sydney Roosters]]'''
+|26–18
+| align="left" |{{leagueicon|South Sydney|size=16}} [[South Sydney Rabbitohs]]
+|Friday, 7:00 pm
+|[[Sydney Football Stadium (2022)|Allianz Stadium]]
+|[[Adam Gee (referee)|Adam Gee]]
+|41,424
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Wests Tigers|size=16}} [[Wests Tigers]]'''
+|44–16
+| align="left" |{{leagueicon|North Queensland|size=16}} [[North Queensland Cowboys]]
+|Saturday, 2:00{{nbsp}}pm
+|[[Leichhardt Oval]]
+|[[Grant Atkins]]
+|17,637
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|St. George|size=16}} [[St. George Illawarra Dragons]]
+|20–46
+| align="left" |'''{{leagueicon|Melbourne|size=16}} [[Melbourne Storm]]'''
+|Saturday, 4:30{{nbsp}}pm
+|[[Wollongong Showground|WIN Stadium]]
+|[[Gerard Sutton (referee)|Gerard Sutton]]
+|11,511
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Penrith|size=16}} [[Penrith Panthers]]'''
+|26–6
+| align="left" |{{leagueicon|Cronulla|size=16}} [[Cronulla-Sutherland Sharks]]
+|Saturday, 6:30{{nbsp}}pm
+|[[Carrington Park]]
+|[[Ashley Klein]]
+|12,000
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Manly|size=16}} [[Manly Warringah Sea Eagles]]
+|16–36
+| align="left" |'''{{leagueicon|Newcastle|size=16}} [[Newcastle Knights]]'''
+|Sunday, 3:05 pm
+|[[Brookvale Oval|4 Pines Park]]
+|Todd Smith
+|17,107
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Dolphins|size=16}} [[Dolphins (NRL)|Dolphins]]'''
+|18–14
+| align="left" |{{leagueicon|Gold Coast Titans|size=16}} [[Gold Coast Titans]]
+|Sunday, 5:15 pm
+|[[Lang Park|Suncorp Stadium]]
+|Liam Kennedy
+|16,073
+|- style="text-align:center; background:#f5faff;" 
+| colspan="7" align="left" |Bye: {{leagueicon|Canterbury|size=16}} [[Canterbury-Bankstown Bulldogs]]
+|-
+! colspan="7" align="left" |Source:<ref name=":0">{{Cite web |title=Draw |url=https://www.nrl.com/draw/?competition=111&round=2&season=2026 |access-date=2025-11-14 |website=National Rugby League |language=en}}</ref>
+|}
+
+* The crowd of 41,424 for the Roosters and Rabbitohs match was the biggest crowd ever at Allianz Stadium during a home and away season.
+* [[Alex Johnston (rugby league)|Alex Johnston]] scored his 213th try to surpass the all time try scorer [[Ken Irvine]].<ref>{{cite news|url=https://www.news.com.au/sport/nrl/rabbitohs-vs-roosters-live-nrl-makes-call-on-fans-storming-the-field-for-recordbreaker/news-story/9d6328382ea3ea3b89794e6674b148fd|title=Rabbitohs vs Roosters: Alex Johnston breaks tryscoring record, fans storm field in wild scenes|date=14 March 2026|access-date=15 April 2026|website=[[News.com.au]]|first=Matthew|last=Sullivan}}</ref>
+
+=== Round 3 (Multicultural Round) ===
+'''March 19–22'''
+{| class="wikitable" style="border-collapse:collapse; text-align:center; width:100%;"
+|- style="text-align:center; background:#f5faff;"  style="background:#c1d8ff;"
+! rowspan="2" |Home
+! rowspan="2" |Score
+! rowspan="2" |Away
+! colspan="4" |Match information
+|-
+! width="17%" |Day & time
+! width="17%" |Venue
+! width="17%" |Referee
+! width="5%" |Attendance
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Canberra|size=16}} [[Canberra Raiders]]
+|10–14
+| align="left" |'''{{leagueicon|Canterbury|size=16}} [[Canterbury-Bankstown Bulldogs]]'''
+|Thursday, 7:00{{nbsp}}pm
+|[[Canberra Stadium|GIO Stadium]]
+|[[Adam Gee (referee)|Adam Gee]]
+|13,723
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Eastern Suburbs|size=16}} [[Sydney Roosters]]
+|4–40
+| align="left" |{{leagueicon|Penrith|size=16}} '''[[Penrith Panthers]]'''
+|Friday, 5:00{{nbsp}}pm
+|[[Sydney Football Stadium (2022)|Allianz Stadium]]
+|[[Grant Atkins]]
+|22,128
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Melbourne|size=16}} [[Melbourne Storm]]
+|14–18
+| align="left" |'''{{leagueicon|Brisbane|size=16}} [[Brisbane Broncos]]'''
+|Friday, 7:00 pm
+|[[Melbourne Rectangular Stadium|AAMI Park]]
+|Todd Smith
+|28,245
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Newcastle|size=16}} [[Newcastle Knights]]
+|12–38
+| align="left" |'''{{leagueicon|Auckland|size=16}} [[New Zealand Warriors]]'''
+|Saturday, 3:00{{nbsp}}pm
+|[[Newcastle International Sports Centre|McDonald Jones Stadium]]
+|Liam Kennedy
+|21,682
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Cronulla|size=16}} [[Cronulla-Sutherland Sharks]]
+|10–38
+| align="left" |'''{{leagueicon|Dolphins|size=16}} [[Dolphins (NRL)|Dolphins]]'''
+|Saturday, 4:30{{nbsp}}pm
+|[[Endeavour Field|Ocean Protect Stadium]]
+|[[Gerard Sutton (referee)|Gerard Sutton]]
+|11,096
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|South Sydney|size=16}} [[South Sydney Rabbitohs]]'''
+|20–16
+| align="left" |{{leagueicon|Wests Tigers|size=16}} [[Wests Tigers]]
+|Saturday, 6:30{{nbsp}}pm
+|[[Central Coast Stadium|polytec Stadium]]
+|Wyatt Raymond
+|19,940
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Parramatta|size=16}} [[Parramatta Eels]]'''
+|30–20
+| align="left" |{{leagueicon|St. George|size=16}} [[St. George Illawarra Dragons]]
+|Sunday, 3:05 pm
+|[[Western Sydney Stadium|CommBank Stadium]]
+|[[Ashley Klein]]
+|25,573
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|North Queensland|size=16}} [[North Queensland Cowboys]]'''
+|30–16
+| align="left" |{{leagueicon|Gold Coast Titans|size=16}} [[Gold Coast Titans]]
+|Sunday, 5:15 pm
+|[[North Queensland Stadium|Queensland Country Bank Stadium]]
+|Peter Gough
+|16,999
+|- style="text-align:center; background:#f5faff;" 
+| colspan="7" align="left" |Bye: {{leagueicon|Manly|size=16}} [[Manly Warringah Sea Eagles]]
+|-
+! colspan="7" align="left" |Source:<ref>{{Cite web |title=Draw |url=https://www.nrl.com/draw/?competition=111&round=3&season=2026 |access-date=2025-11-14 |website=National Rugby League |language=en}}</ref>
+|}
+*Melbourne recorded their highest regular season game crowd at AAMI Park since [[2014 NRL season results#round 8|round 8, 2014]].
+*Brisbane won in Melbourne at AAMI Park for the first time since [[2016 NRL season results#round 25|round 25, 2016]].<ref>{{cite news|url=https://www.news.com.au/sport/nrl/broncos-unrecognisable-as-they-come-out-on-top-in-grand-final-rematch/news-story/453f4dd336c46a678eb8154b5cf005bf|title=Broncos unrecognisable as they end Melbourne’s undefeated start to the NRL season|date=21 March 2026|access-date=15 April 2026|first=Ben|last=Talintyre|website=[[News.com.au]]}}</ref>
+
+=== Round 4 ===
+'''March 26–29'''
+{| class="wikitable" style="border-collapse:collapse; text-align:center; width:100%;"
+|- style="text-align:center; background:#f5faff;"  style="background:#c1d8ff;"
+! rowspan="2" |Home
+! rowspan="2" |Score
+! rowspan="2" |Away
+! colspan="4" |Match information
+|-
+! width="17%" |Day & time
+! width="17%" |Venue
+! width="17%" |Referee
+! width="5%" |Attendance
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Manly|size=16}} [[Manly Warringah Sea Eagles]]
+|16–33
+| align="left" |'''{{leagueicon|Eastern Suburbs|size=16}} [[Sydney Roosters]]'''
+|Thursday, 7:00{{nbsp}}pm
+|[[Brookvale Oval|4 Pines Park]]
+|Wyatt Raymond
+|16,082
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Auckland|size=16}} [[New Zealand Warriors]]
+|14–32
+| align="left" |'''{{leagueicon|Wests Tigers|size=16}} [[Wests Tigers]]'''
+|Friday, 5:00{{nbsp}}pm
+|[[Mount Smart Stadium|Go Media Stadium]]
+|[[Adam Gee (referee)|Adam Gee]]
+|24,246
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Brisbane|size=16}} [[Brisbane Broncos]]'''
+|26–12
+| align="left" |{{leagueicon|Dolphins|size=16}} [[Dolphins (NRL)|Dolphins]]
+|Friday, 7:00 pm
+|[[Lang Park|Suncorp Stadium]]
+|[[Ashley Klein]]
+|45,882
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Canterbury|size=16}} [[Canterbury-Bankstown Bulldogs]]
+|16–24
+| align="left" |'''{{leagueicon|Newcastle|size=16}} [[Newcastle Knights]]'''
+|Saturday, 2:00{{nbsp}}pm
+|[[Stadium Australia|Accor Stadium]]
+|Peter Gough
+|20,572
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Penrith|size=16}} [[Penrith Panthers]]'''
+|48–20
+| align="left" |{{leagueicon|Parramatta|size=16}} [[Parramatta Eels]]
+|Saturday, 4:30{{nbsp}}pm
+|[[Western Sydney Stadium|CommBank Stadium]]
+|Todd Smith
+|22,813
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|North Queensland|size=16}} [[North Queensland Cowboys]]'''
+|28–24
+| align="left" |{{leagueicon|Melbourne|size=16}} [[Melbourne Storm]]
+|Saturday, 6:30{{nbsp}}pm
+|[[North Queensland Stadium|Queensland Country Bank Stadium]]
+|[[Gerard Sutton (referee)|Gerard Sutton]]
+|20,931
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Canberra|size=16}} [[Canberra Raiders]]
+|22–34
+| align="left" |'''{{leagueicon|Cronulla|size=16}} [[Cronulla-Sutherland Sharks]]'''
+|Sunday, 3:05 pm
+|[[Canberra Stadium|GIO Stadium]]
+|[[Grant Atkins]]
+|17,457
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Gold Coast Titans|size=16}} [[Gold Coast Titans]]'''
+|22–14
+| align="left" |{{leagueicon|St. George|size=16}} [[St. George Illawarra Dragons]]
+|Sunday, 5:15 pm
+|[[Robina Stadium|Cbus Super Stadium]]
+|Liam Kennedy
+|12,241
+|- style="text-align:center; background:#f5faff;" 
+| colspan="7" align="left" |Bye: {{leagueicon|South Sydney|size=16}} [[South Sydney Rabbitohs]]
+|-
+! colspan="7" align="left" |Source:<ref>{{Cite web |title=Draw |url=https://www.nrl.com/draw/?competition=111&round=4&season=2026 |access-date=2025-11-14 |website=National Rugby League |language=en}}</ref>
+|}
+*Manly Warringah coach [[Anthony Seibold]] became the earliest NRL coach sacked since [[Jason Taylor (rugby league)|Jason Taylor]] in 2017, after the Sea Eagles' 0–3 start to the season.
+*[[Thomas Jenkins (rugby league)|Thomas Jenkins]] became the first player to score 10 tries in the opening four rounds since [[Jack Lindwall]] in [[1947 NSWRFL season|1947]].
+
+=== Round 5 (Easter Round) ===
+'''April 2–6'''
+{| class="wikitable" style="border-collapse:collapse; text-align:center; width:100%;"
+|- style="text-align:center; background:#f5faff;"  style="background:#c1d8ff;"
+! rowspan="2" |Home
+! rowspan="2" |Score
+! rowspan="2" |Away
+! colspan="4" |Match information
+|-
+! width="17%" |Day & time
+! width="17%" |Venue
+! width="17%" |Referee
+! width="5%" |Attendance
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Dolphins|size=16}} [[Dolphins (NRL)|Dolphins]]
+|18–52
+| align="left" |'''{{leagueicon|Manly|size=16}} [[Manly Warringah Sea Eagles]]'''
+|Thursday, 7:00{{nbsp}}pm
+|[[Dolphin Stadium (Brisbane)|Kayo Stadium]]
+|[[Grant Atkins]]
+|10,023
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|South Sydney|size=16}} [[South Sydney Rabbitohs]]'''
+|32–24
+| align="left" |{{leagueicon|Canterbury|size=16}} [[Canterbury-Bankstown Bulldogs]]
+|Friday, 3:05{{nbsp}}pm
+|[[Stadium Australia|Accor Stadium]]
+|Todd Smith
+|49,813
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Penrith|size=16}} [[Penrith Panthers]]'''
+|50–10
+| align="left" |{{leagueicon|Melbourne|size=16}} [[Melbourne Storm]]
+|Friday, 7:00 pm
+|[[Western Sydney Stadium|CommBank Stadium]]
+|[[Ashley Klein]]
+|20,204
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|St. George|size=16}} [[St. George Illawarra Dragons]]
+|0–32
+| align="left" |{{leagueicon|North Queensland|size=16}} '''[[North Queensland Cowboys]]'''
+|Saturday, 4:30{{nbsp}}pm
+|[[Jubilee Stadium|St. George Venues Jubilee Stadium]]
+|Wyatt Raymond
+|8,491
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Gold Coast Titans|size=16}} [[Gold Coast Titans]]
+|12–26
+| align="left" |'''{{leagueicon|Brisbane|size=16}} [[Brisbane Broncos]]'''
+|Saturday, 6:30{{nbsp}}pm
+|[[Robina Stadium|Cbus Super Stadium]]
+|[[Gerard Sutton (referee)|Gerard Sutton]]
+|26,223
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Cronulla|size=16}} [[Cronulla-Sutherland Sharks]]'''
+|36–22
+| align="left" |{{leagueicon|Auckland|size=16}} [[New Zealand Warriors]]
+|Sunday, 2:00 pm
+|[[Endeavour Field|Ocean Protect Stadium]]
+|Ziggy Przeklasa-Adamski
+|13,112
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Newcastle|size=16}} [[Newcastle Knights]]'''
+|32–12
+| align="left" |{{leagueicon|Canberra|size=16}} [[Canberra Raiders]]
+|Sunday, 4:05 pm
+|[[Newcastle International Sports Centre|McDonald Jones Stadium]]
+|[[Adam Gee (referee)|Adam Gee]]
+|23,002
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Parramatta|size=16}} [[Parramatta Eels]]
+|20–22*
+| align="left" |{{leagueicon|Wests Tigers|size=16}} '''[[Wests Tigers]]'''
+|Monday, 4:05 pm
+|[[Western Sydney Stadium|CommBank Stadium]]
+|Peter Gough
+|29,397
+|- style="text-align:center; background:#f5faff;" 
+| colspan="7" align="left" |Bye: {{leagueicon|Eastern Suburbs|size=16}} [[Sydney Roosters]]
+|-
+! colspan="7" align="left" |Source:<ref>{{Cite web |title=Draw |url=https://www.nrl.com/draw/?competition=111&round=5&season=2026 |access-date=2025-11-14 |website=National Rugby League |language=en}}</ref>
+|}
+*For the first time since [[2003 NRL season|2003]], Melbourne conceded 50 points.<ref>{{cite news|url=https://www.foxsports.com.au/nrl/nrl-premiership/nrl-2026-penrith-panthers-vs-melbourne-storm-round-5-live-scores-how-to-watch-teams-videos-nathan-cleary-cameron-munster/news-story/dd5fbca94bf0d83c89319f3024901e94|title=Shocking numbers behind Storm slaughter; ‘unbelievable’ Panthers recruit’s statement|date=4 April 2026|access-date=6 April 2026|first1=Andrew|last1=Jackson|first2=Martin|last2=Gabor|website=[[Fox Sports (Australia)|Fox Sports]]}}</ref>
+*Penrith won 5 games in a row for the first time since [[2022 NRL season|2022]].<ref>{{cite news|url=https://www.smh.com.au/sport/nrl/high-five-records-tumble-as-panthers-run-riot-against-melbourne-20260403-p5zl59.html|title=High five: Records tumble as Panthers run riot against Melbourne|date=3 April 2026|access-date=6 April 2026|newspaper=[[The Sydney Morning Herald|Sydney Morning Herald]]|first=Christian|last=Nicolussi}}</ref>
+
+=== Round 6 ===
+'''April 9–12'''
+{| class="wikitable" style="border-collapse:collapse; text-align:center; width:100%;"
+|- style="text-align:center; background:#f5faff;"  style="background:#c1d8ff;"
+! rowspan="2" |Home
+! rowspan="2" |Score
+! rowspan="2" |Away
+! colspan="4" |Match information
+|-
+! width="17%" |Day & time
+! width="17%" |Venue
+! width="17%" |Referee
+! width="5%" |Attendance
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Canterbury|size=16}} [[Canterbury-Bankstown Bulldogs]]'''
+|32–16
+| align="left" |{{leagueicon|Penrith|size=16}} [[Penrith Panthers]]
+|Thursday, 7:50{{nbsp}}pm
+|[[Stadium Australia|Accor Stadium]]
+|[[Gerard Sutton (referee)|Gerard Sutton]]
+|23,984
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|St. George|size=16}} [[St. George Illawarra Dragons]]
+|18–28
+| align="left" |'''{{leagueicon|Manly|size=16}} [[Manly Warringah Sea Eagles]]'''
+|Friday, 6:00{{nbsp}}pm
+|[[Wollongong Showground|WIN Stadium]]
+|[[Adam Gee (referee)|Adam Gee]]
+|11,381
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Brisbane|size=16}} [[Brisbane Broncos]]
+|31–35
+| align="left" |'''{{leagueicon|North Queensland|size=16}} [[North Queensland Cowboys]]'''
+|Friday, 8:00 pm
+|[[Lang Park|Suncorp Stadium]]
+|[[Ashley Klein]]
+|45,582
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|South Sydney|size=16}} [[South Sydney Rabbitohs]]
+|34–36
+| align="left" |'''{{leagueicon|Canberra|size=16}} [[Canberra Raiders]]'''
+|Saturday, 3:00{{nbsp}}pm
+| rowspan="2" |[[Perth Stadium|Optus Stadium]]
+|Liam Kennedy
+| rowspan="2" |33,404
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Cronulla|size=16}} [[Cronulla-Sutherland Sharks]]
+|22–34
+| align="left" |'''{{leagueicon|Eastern Suburbs|size=16}} [[Sydney Roosters]]'''
+|Saturday, 5:30{{nbsp}}pm
+|Todd Smith
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Melbourne|size=16}} [[Melbourne Storm]]
+|14–38
+| align="left" |'''{{leagueicon|Auckland|size=16}} [[New Zealand Warriors]]'''
+|Saturday, 7:30{{nbsp}}pm
+|[[Melbourne Rectangular Stadium|AAMI Park]]
+|[[Grant Atkins]]
+|26,467
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Parramatta|size=16}} [[Parramatta Eels]]
+|10–52
+| align="left" |'''{{leagueicon|Gold Coast Titans|size=16}} [[Gold Coast Titans]]'''
+|Sunday, 2:00 pm
+|[[Western Sydney Stadium|CommBank Stadium]]
+|Ziggy Przeklasa-Adamski
+|14,382
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Wests Tigers|size=16}} [[Wests Tigers]]'''
+|42–22
+| align="left" |{{leagueicon|Newcastle|size=16}} [[Newcastle Knights]]
+|Sunday, 4:05 pm
+|[[Campbelltown Sports Stadium]]
+|Wyatt Raymond
+|15,221
+|- style="text-align:center; background:#f5faff;" 
+| colspan="7" align="left" |Bye: {{leagueicon|Dolphins|size=16}} [[Dolphins (NRL)|Dolphins]]
+|-
+! colspan="7" align="left" |Source:<ref>{{Cite web |title=Draw |url=https://www.nrl.com/draw/?competition=111&round=6&season=2026 |access-date=2025-11-14 |website=National Rugby League |language=en}}</ref>
+|}
+
+* For the first time since [[2014 NRL season|2014]], the Warriors won in Melbourne following a 17-match losing streak against the Storm.<ref>{{cite news|url=https://www.1news.co.nz/2026/04/12/warriors-to-launch-title-charge-after-snapping-streak/|title=Warriors to launch title charge after snapping streak|date=12 April 2026|access-date=15 April 2026|website=[[1News]]}}</ref><ref>{{cite news|url=https://www.rnz.co.nz/news/sport/592142/monkey-off-our-back-what-we-learnt-from-warriors-win-over-storm|title='Monkey off our back': What we learnt from Warriors win over Storm|date=12 April 2026|access-date=15 April 2026|website=[[RNZ]]|first=Grant|last=Chapman}}</ref>
+
+=== Round 7 ===
+'''April 16–19'''
+{| class="wikitable" style="border-collapse:collapse; text-align:center; width:100%;"
+|- style="text-align:center; background:#f5faff;"  style="background:#c1d8ff;"
+! rowspan="2" |Home
+! rowspan="2" |Score
+! rowspan="2" |Away
+! colspan="4" |Match information
+|-
+! width="17%" |Day & time
+! width="17%" |Venue
+! width="17%" |Referee
+! width="5%" |Attendance
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|North Queensland|size=16}} [[North Queensland Cowboys]]
+|6–38
+| align="left" |'''{{leagueicon|Manly|size=16}} [[Manly Warringah Sea Eagles]]'''
+|Thursday, 7:50{{nbsp}}pm
+|[[North Queensland Stadium|Queensland Country Bank Stadium]]
+| [[Gerard Sutton (referee)|Gerard Sutton]]
+|17,476
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Canberra|size=16}} [[Canberra Raiders]]'''
+|26–22
+| align="left" |{{leagueicon|Melbourne|size=16}} [[Melbourne Storm]]
+|Friday, 6:00{{nbsp}}pm
+|[[Canberra Stadium|GIO Stadium]]
+|Peter Gough
+|17,321
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Dolphins|size=16}} [[Dolphins (NRL)|Dolphins]]
+|22–23*
+| align="left" |'''{{leagueicon|Penrith|size=16}} [[Penrith Panthers]]'''
+|Friday, 8:00 pm
+|[[Marrara Oval|TIO Stadium]]
+|[[Adam Gee (referee)|Adam Gee]]
+|12,570
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Auckland|size=16}} [[New Zealand Warriors]]'''
+|28–20
+| align="left" |{{leagueicon|Gold Coast Titans|size=16}} [[Gold Coast Titans]]
+|Saturday, 3:00{{nbsp}}pm
+|[[Mount Smart Stadium|Go Media Stadium]]
+|Wyatt Raymond
+|24,112
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|South Sydney|size=16}} [[South Sydney Rabbitohs]]'''
+|30–12
+| align="left" |{{leagueicon|St. George|size=16}} [[St. George Illawarra Dragons]]
+|Saturday, 5:30{{nbsp}}pm
+|[[Stadium Australia|Accor Stadium]]
+|Ziggy Przeklasa-Adamski
+|15,116
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Wests Tigers|size=16}} [[Wests Tigers]]
+|20–21
+| align="left" |'''{{leagueicon|Brisbane|size=16}} [[Brisbane Broncos]]'''
+|Saturday, 7:30{{nbsp}}pm
+|[[Campbelltown Sports Stadium]]
+|Todd Smith
+|17,316
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Eastern Suburbs|size=16}} [[Sydney Roosters]]'''
+|38–24
+| align="left" |{{leagueicon|Newcastle|size=16}} [[Newcastle Knights]]
+|Sunday, 2:00 pm
+|[[Sydney Football Stadium (2022)|Allianz Stadium]]
+|[[Ashley Klein]]
+|22,409
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Parramatta|size=16}} [[Parramatta Eels]]'''
+|38–20
+| align="left" |{{leagueicon|Canterbury|size=16}} [[Canterbury-Bankstown Bulldogs]]
+|Sunday, 4:05 pm
+|[[Western Sydney Stadium|CommBank Stadium]]
+|Liam Kennedy
+|25,938
+|- style="text-align:center; background:#f5faff;" 
+| colspan="7" align="left" |Bye: {{leagueicon|Cronulla|size=16}} [[Cronulla-Sutherland Sharks]]
+|-
+! colspan="7" align="left" |Source:<ref>{{Cite web |title=Draw |url=https://www.nrl.com/draw/?competition=111&round=7&season=2026 |access-date=2025-11-14 |website=National Rugby League |language=en}}</ref>
+|}
+
+=== Round 8 (ANZAC Round) ===
+'''April 23–26'''
+{| class="wikitable" style="border-collapse:collapse; text-align:center; width:100%;"
+|- style="text-align:center; background:#f5faff;"  style="background:#c1d8ff;"
+! rowspan="2" |Home
+! rowspan="2" |Score
+! rowspan="2" |Away
+! colspan="4" |Match information
+|-
+! width="17%" |Day & time
+! width="17%" |Venue
+! width="17%" |Referee
+! width="5%" |Attendance
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Wests Tigers|size=16}} [[Wests Tigers]]'''
+|33–14
+| align="left" |{{leagueicon|Canberra|size=16}} [[Canberra Raiders]]
+|Thursday, 7:50{{nbsp}}pm
+|[[Leichhardt Oval]]
+|[[Ashley Klein]]
+|17,153
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|North Queensland|size=16}} [[North Queensland Cowboys]]'''
+|46–34
+| align="left" |{{leagueicon|Cronulla|size=16}} [[Cronulla-Sutherland Sharks]]
+|Friday, 6:00{{nbsp}}pm
+|[[North Queensland Stadium|Queensland Country Bank Stadium]]
+|[[Belinda Sharpe]]
+|17,886
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Brisbane|size=16}} [[Brisbane Broncos]]'''
+|32–12
+| align="left" |{{leagueicon|Canterbury|size=16}} [[Canterbury-Bankstown Bulldogs]]
+|Friday, 8:00 pm
+|[[Lang Park|Suncorp Stadium]]
+|Wyatt Raymond
+|42,775
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|St. George|size=16}} [[St. George Illawarra Dragons]]
+|16–62
+| align="left" |'''{{leagueicon|Eastern Suburbs|size=16}} [[Sydney Roosters]]'''
+|Saturday, 4:00{{nbsp}}pm
+|[[Sydney Football Stadium (2022)|Allianz Stadium]]
+|[[Grant Atkins]]
+|40,381
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Auckland|size=16}} [[New Zealand Warriors]]'''
+|20–18
+| align="left" |{{leagueicon|Dolphins|size=16}} [[Dolphins (NRL)|Dolphins]]
+|Saturday, 6:05{{nbsp}}pm
+|[[Wellington Regional Stadium|Hnry Stadium]]
+|Liam Kennedy
+|34,812
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Melbourne|size=16}} [[Melbourne Storm]]
+|6–48
+| align="left" |'''{{leagueicon|South Sydney|size=16}} [[South Sydney Rabbitohs]]'''
+|Saturday, 8:10{{nbsp}}pm
+|[[Melbourne Rectangular Stadium|AAMI Park]]
+|[[Adam Gee (referee)|Adam Gee]]
+|25,694
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Newcastle|size=16}} [[Newcastle Knights]]
+|12–44
+| align="left" |'''{{leagueicon|Penrith|size=16}} [[Penrith Panthers]]'''
+|Sunday, 2:00 pm
+|[[Newcastle International Sports Centre|McDonald Jones Stadium]]
+|[[Gerard Sutton (referee)|Gerard Sutton]]
+|23,986
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Manly|size=16}} [[Manly Warringah Sea Eagles]]'''
+|33–18
+| align="left" |{{leagueicon|Parramatta|size=16}} [[Parramatta Eels]]
+|Sunday, 4:05 pm
+|[[Brookvale Oval|4 Pines Park]]
+|Peter Gough
+|17,389
+|- style="text-align:center; background:#f5faff;" 
+| colspan="7" align="left" |Bye: {{leagueicon|Gold Coast Titans|size=16}} [[Gold Coast Titans]]
+|-
+! colspan="7" align="left" |Source:<ref>{{Cite web |title=Draw |url=https://www.nrl.com/draw/?competition=111&round=8&season=2026 |access-date=2025-11-14 |website=National Rugby League |language=en}}</ref>
+|}
+*New Zealand recorded their biggest home crowd since [[2012 NRL season results#Round 1|round 1, 2012]] and the biggest NRL crowd ever in Wellington.
+*South Sydney won their first ever game in Victoria, breaking a 20 game losing streak in the state.
+*Melbourne recorded their worst loss at home since [[2001 NRL season|round 20, 2001]].
+
+=== Round 9 ===
+'''May 1–3'''
+{| class="wikitable" style="border-collapse:collapse; text-align:center; width:100%;"
+|- style="text-align:center; background:#f5faff;"  style="background:#c1d8ff;"
+! rowspan="2" |Home
+! rowspan="2" |Score
+! rowspan="2" |Away
+! colspan="4" |Match information
+|-
+! width="17%" |Day & time
+! width="17%" |Venue
+! width="17%" |Referee
+! width="5%" |Attendance
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Canterbury|size=16}} [[Canterbury-Bankstown Bulldogs]]
+|12–28
+| align="left" |'''{{leagueicon|North Queensland|size=16}} [[North Queensland Cowboys]]'''
+|Friday, 6:00{{nbsp}}pm
+|[[Stadium Australia|Accor Stadium]]
+|Peter Gough
+|15,132
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Dolphins|size=16}} [[Dolphins (NRL)|Dolphins]]'''
+|28–10
+| align="left" |{{leagueicon|Melbourne|size=16}} [[Melbourne Storm]]
+|Friday, 8:00 pm
+|[[Lang Park|Suncorp Stadium]]
+|[[Ashley Klein]]
+|24,070
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Gold Coast Titans|size=16}} [[Gold Coast Titans]]
+|12–28
+| align="left" |'''{{leagueicon|Canberra|size=16}} [[Canberra Raiders]]'''
+|Saturday, 3:00{{nbsp}}pm
+|[[Robina Stadium|Cbus Super Stadium]]
+|[[Grant Atkins]]
+|14,913
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Parramatta|size=16}} [[Parramatta Eels]]
+|14–36
+| align="left" |'''{{leagueicon|Auckland|size=16}} [[New Zealand Warriors]]'''
+|Saturday, 5:30{{nbsp}}pm
+|[[Western Sydney Stadium|CommBank Stadium]]
+|[[Gerard Sutton (referee)|Gerard Sutton]]
+|16,657
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Eastern Suburbs|size=16}} [[Sydney Roosters]]'''
+|38–24
+| align="left" |{{leagueicon|Brisbane|size=16}} [[Brisbane Broncos]]
+|Saturday, 7:30{{nbsp}}pm
+|[[Sydney Football Stadium (2022)|Allianz Stadium]]
+|[[Adam Gee (referee)|Adam Gee]]
+|25,239
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Newcastle|size=16}} [[Newcastle Knights]]'''
+|42–38
+| align="left" |{{leagueicon|South Sydney|size=16}} [[South Sydney Rabbitohs]]
+|Sunday, 2:00 pm
+|[[Newcastle International Sports Centre|McDonald Jones Stadium]]
+|Liam Kennedy
+|23,413
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Cronulla|size=16}} [[Cronulla-Sutherland Sharks]]'''
+|52–10
+| align="left" |{{leagueicon|Wests Tigers|size=16}} [[Wests Tigers]]
+|Sunday, 4:05 pm
+|[[Endeavour Field|Ocean Protect Stadium]]
+|Todd Smith
+|14,479
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Penrith|size=16}} [[Penrith Panthers]]'''
+|18–16
+| align="left" |{{leagueicon|Manly|size=16}} [[Manly Warringah Sea Eagles]]
+|Sunday, 6:15 pm
+|[[Western Sydney Stadium|CommBank Stadium]]
+|Wyatt Raymond
+|14,960
+|- style="text-align:center; background:#f5faff;" 
+| colspan="7" align="left" |Bye: {{leagueicon|St. George|size=16}} [[St. George Illawarra Dragons]]
+|-
+! colspan="7" align="left" |Source:<ref>{{Cite web |title=Draw |url=https://www.nrl.com/draw/?competition=111&round=9&season=2026 |access-date=2025-11-14 |website=National Rugby League |language=en}}</ref>
+|}
+*Melbourne lost seven games in a row for the first time in their history.<ref name='mel7'/>
+*South Sydney recorded their highest ever losing score and outright second highest losing score in NRL history.
+
+=== Round 10 ===
+'''May 7–10'''
+{| class="wikitable" style="border-collapse:collapse; text-align:center; width:100%;"
+|- style="text-align:center; background:#f5faff;"  style="background:#c1d8ff;"
+! rowspan="2" |Home
+! rowspan="2" |Score
+! rowspan="2" |Away
+! colspan="4" |Match information
+|-
+! width="17%" |Day & time
+! width="17%" |Venue
+! width="17%" |Referee
+! width="5%" |Attendance
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Dolphins|size=16}} '''[[Dolphins (NRL)|Dolphins]]'''
+|44–12
+| align="left" |{{leagueicon|Canterbury|size=16}} [[Canterbury-Bankstown Bulldogs]]
+|Thursday, 7:50{{nbsp}}pm
+|[[Lang Park|Suncorp Stadium]]
+|[[Grant Atkins]]
+|16,143
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Eastern Suburbs|size=16}} [[Sydney Roosters]]'''
+|28–12
+| align="left" |{{leagueicon|Gold Coast Titans|size=16}} [[Gold Coast Titans]]
+|Friday, 6:00{{nbsp}}pm
+|[[Central Coast Stadium|polytec Stadium]]
+|Peter Gough
+|12,226
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|North Queensland|size=16}} [[North Queensland Cowboys]]
+|30–33*
+| align="left" |'''{{leagueicon|Parramatta|size=16}} [[Parramatta Eels]]'''
+|Friday, 8:00 pm
+|[[North Queensland Stadium|Queensland Country Bank Stadium]]
+|Liam Kennedy
+|17,626
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|St. George|size=16}} [[St. George Illawarra Dragons]]
+|10–44
+| align="left" |'''{{leagueicon|Newcastle|size=16}} [[Newcastle Knights]]'''
+|Saturday, 3:00{{nbsp}}pm
+|[[Wollongong Showground|WIN Stadium]]
+|Todd Smith
+|10,916
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|South Sydney|size=16}} [[South Sydney Rabbitohs]]'''
+|36–12
+| align="left" |{{leagueicon|Cronulla|size=16}} [[Cronulla-Sutherland Sharks]]
+|Saturday, 5:30{{nbsp}}pm
+|[[Stadium Australia|Accor Stadium]]
+|Jarrod Cole
+|16,714
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Manly|size=16}} [[Manly Warringah Sea Eagles]]'''
+|32–4
+| align="left" |{{leagueicon|Brisbane|size=16}} [[Brisbane Broncos]]
+|Saturday, 7:30{{nbsp}}pm
+|[[Brookvale Oval|4 Pines Park]]
+|[[Gerard Sutton (referee)|Gerard Sutton]]
+|17,269
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Melbourne|size=16}} [[Melbourne Storm]]'''
+|44–16
+| align="left" |{{leagueicon|Wests Tigers|size=16}} [[Wests Tigers]]
+|Sunday, 2:00 pm
+|[[Melbourne Rectangular Stadium|AAMI Park]]
+|[[Adam Gee (referee)|Adam Gee]]
+|15,684
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Canberra|size=16}} [[Canberra Raiders]]
+|18–30
+| align="left" |'''{{leagueicon|Penrith|size=16}} [[Penrith Panthers]]'''
+|Sunday, 4:05 pm
+|[[Canberra Stadium|GIO Stadium]]
+|[[Ashley Klein]]
+|18,018
+|- style="text-align:center; background:#f5faff;" 
+| colspan="7" align="left" |Bye: {{leagueicon|Auckland|size=16}} [[New Zealand Warriors]]
+|-
+! colspan="7" align="left" |Source:<ref>{{Cite web |title=Draw |url=https://www.nrl.com/draw/?competition=111&round=10&season=2026 |access-date=2025-11-14 |website=National Rugby League |language=en |archive-date=2026-02-07 |archive-url=https://web.archive.org/web/20260207111812/https://www.nrl.com/draw/?competition=111&season=2026&round=10 |url-status=live }}</ref>
+|}
+* For the first time, a side won by 3 points and from 2 scoring shots in a golden point match in Parramatta's win over North Queensland. [[Mitchell Moses]] kicked the field goal to put Parramatta up 31–30 and win the game, but a penalty was awarded to Parramatta for pressure on the kicker. [[Ronald Volkman]] would convert the penalty goal to make the final score 33–30 to Parramatta, but the field goal is considered the winning play.
+* Melbourne's 44–16 win over the West Tigers ended its club record 7 game losing streak.<ref name='mel7'>{{cite news|url=https://www.smh.com.au/sport/nrl/depleted-tigers-slump-to-sixth-place-as-storm-snap-losing-streak-20260510-p5zvf6.html|title=Depleted Tigers slump to sixth place as Storm snap losing streak|first=Chris|last=Barrett|date=10 May 2026|access-date=10 June 2026|newspaper=[[The Sydney Morning Herald]]}}</ref>
+
+=== Round 11 ([[Magic Round (NRL)|Magic Round]]) ===
+'''May 15–17'''
+{| class="wikitable" style="border-collapse:collapse; text-align:center; width:100%;"
+|- style="text-align:center; background:#f5faff;"  style="background:#c1d8ff;"
+! rowspan="2" |Home
+! rowspan="2" |Score
+! rowspan="2" |Away
+! colspan="4" |Match information
+|-
+! width="17%" |Day & time
+! width="17%" |Venue
+! width="17%" |Referee
+! width="5%" |Attendance
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Cronulla|size=16}} [[Cronulla-Sutherland Sharks]]'''
+|38–16
+| align="left" |{{leagueicon|Canterbury|size=16}} [[Canterbury-Bankstown Bulldogs]]
+|Friday, 6:00{{nbsp}}pm
+| rowspan="8" |[[Lang Park|Suncorp Stadium]]
+|[[Gerard Sutton (referee)|Gerard Sutton]]
+| rowspan="2"|48,673 <!-- 45,236 was announced at venue for the first match, with 48,673 announced for the second match -->
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|South Sydney|size=16}} [[South Sydney Rabbitohs]]
+|10–32
+| align="left" |'''{{leagueicon|Dolphins|size=16}} [[Dolphins (NRL)|Dolphins]]'''
+|Friday, 8:00 pm
+|[[Adam Gee (referee)|Adam Gee]]
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Wests Tigers|size=16}} [[Wests Tigers]]
+|18–46
+| align="left" |'''{{leagueicon|Manly|size=16}} [[Manly Warringah Sea Eagles]]'''
+|Saturday, 3:00{{nbsp}}pm
+|[[Grant Atkins (referee)|Grant Atkins]]
+| rowspan="3"|49,602<!-- 41,396 was announced at venue for this match, increasing to 48,692 for the final match -->
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Eastern Suburbs|size=16}} [[Sydney Roosters]]
+|12–18
+| align="left"|'''{{leagueicon|North Queensland|size=16}} [[North Queensland Cowboys]]'''
+|Saturday, 5:30{{nbsp}}pm
+|Todd Smith
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Parramatta|size=16}} [[Parramatta Eels]]
+|8–34
+| align="left" |'''{{leagueicon|Melbourne|size=16}} [[Melbourne Storm]]'''
+|Saturday, 7:45{{nbsp}}pm
+|Peter Gough
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Gold Coast Titans|size=16}} [[Gold Coast Titans]]
+|12–36
+| align="left" |'''{{leagueicon|Newcastle|size=16}} [[Newcastle Knights]]'''
+|Sunday, 2:00 pm
+|Wyatt Raymond
+| rowspan="3" |50,386
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Auckland|size=16}} [[New Zealand Warriors]]'''
+|42–12
+| align="left" |{{leagueicon|Brisbane|size=16}} [[Brisbane Broncos]]
+|Sunday, 4:05 pm
+|[[Ashley Klein]]
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Penrith|size=16}} [[Penrith Panthers]]'''
+|28–6
+| align="left" |{{leagueicon|St. George|size=16}} [[St. George Illawarra Dragons]]
+|Sunday, 6:25 pm
+|Jarrod Cole
+|- style="text-align:center; background:#f5faff;" 
+| colspan="7" align="left" |Bye: {{leagueicon|Canberra|size=16}} [[Canberra Raiders]]
+|-
+! colspan="7" align="left" |Source:<ref>{{Cite web |title=Draw |url=https://www.nrl.com/draw/?competition=111&round=11&season=2026 |access-date=2025-11-14 |website=National Rugby League |language=en}}</ref>
+|}
+
+=== Round 12 ===
+'''May 21–24'''
+{| class="wikitable" style="border-collapse:collapse; text-align:center; width:100%;"
+|- style="text-align:center; background:#f5faff;"  style="background:#c1d8ff;"
+! rowspan="2" |Home
+! rowspan="2" |Score
+! rowspan="2" |Away
+! colspan="4" |Match information
+|-
+! width="17%" |Day & time
+! width="17%" |Venue
+! width="17%" |Referee
+! width="5%" |Attendance
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Canberra|size=16}} [[Canberra Raiders]]
+| 22–30
+| align="left" |{{leagueicon|Dolphins|size=16}} [[Dolphins (NRL)|'''Dolphins''']]
+|Thursday, 7:50{{nbsp}}pm
+|[[Canberra Stadium|GIO Stadium]]
+| Todd Smith
+| 9,543
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Canterbury|size=16}} [[Canterbury-Bankstown Bulldogs]]'''
+|30–20
+| align="left" |{{leagueicon|Melbourne|size=16}} [[Melbourne Storm]]
+|Friday, 8:00 pm
+|[[Stadium Australia|Accor Stadium]]
+|Wyatt Raymond
+|14,372
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|St. George|size=16}} [[St. George Illawarra Dragons]]
+|12–30
+| align="left" |'''{{leagueicon|Auckland|size=16}} [[New Zealand Warriors]]'''
+|Saturday, 5:30{{nbsp}}pm
+|[[Jubilee Stadium|St. George Venues Jubilee Stadium]]
+|[[Adam Gee (referee)|Adam Gee]]
+|8,741
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Manly|size=16}} [[Manly Warringah Sea Eagles]]'''
+|12–10
+| align="left" |{{leagueicon|Gold Coast Titans|size=16}} [[Gold Coast Titans]]
+|Saturday, 7:30{{nbsp}}pm
+|[[Brookvale Oval|4 Pines Park]]
+|[[Gerard Sutton (referee)|Gerard Sutton]]
+|13,173
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|North Queensland|size=16}} [[North Queensland Cowboys]]'''
+|30–18
+| align="left" |{{leagueicon|South Sydney|size=16}} [[South Sydney Rabbitohs]]
+|Sunday, 4:05 pm
+|[[North Queensland Stadium|Queensland Country Bank Stadium]]
+|[[Grant Atkins (referee)|Grant Atkins]]
+|18,888
+|- style="text-align:center; background:#f5faff;" 
+| colspan="7" align="left" |Bye: {{leagueicon|Brisbane|size=16}} [[Brisbane Broncos]], {{leagueicon|Cronulla|size=16}} [[Cronulla-Sutherland Sharks]], {{leagueicon|Newcastle|size=16}} [[Newcastle Knights]], {{leagueicon|Parramatta|size=16}} [[Parramatta Eels]], {{leagueicon|Penrith|size=16}} [[Penrith Panthers]], {{leagueicon|Eastern Suburbs|size=16}} [[Sydney Roosters]], {{leagueicon|Wests Tigers|size=16}} [[Wests Tigers]]
+|-
+! colspan="7" align="left" |Source:<ref>{{Cite web |title=Draw |url=https://www.nrl.com/draw/?competition=111&round=12&season=2026 |access-date=2025-11-14 |website=National Rugby League |language=en}}</ref>
+|}
+*Canterbury-Bankstown became just the third side to play 2000 first grade games after the Sydney Roosters and South Sydney.
+
+=== Round 13 ===
+'''May 29–31'''
+{| class="wikitable" style="border-collapse:collapse; text-align:center; width:100%;"
+|- style="text-align:center; background:#f5faff;"  style="background:#c1d8ff;"
+! rowspan="2" |Home
+! rowspan="2" |Score
+! rowspan="2" |Away
+! colspan="4" |Match information
+|-
+! width="17%" |Day & time
+! width="17%" |Venue
+! width="17%" |Referee
+! width="5%" |Attendance
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Cronulla|size=16}} [[Cronulla-Sutherland Sharks]]'''
+|28–22
+| align="left" |{{leagueicon|Manly|size=16}} [[Manly Warringah Sea Eagles]]
+|Friday, 8:00 pm
+|[[Endeavour Field|Ocean Protect Stadium]]
+|Todd Smith
+|10,793
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Newcastle|size=16}} [[Newcastle Knights]]'''
+|28–22
+| align="left" |{{leagueicon|Parramatta|size=16}} [[Parramatta Eels]]
+|Saturday, 3:00{{nbsp}}pm
+|[[Newcastle International Sports Centre|McDonald Jones Stadium]]
+|Jarrod Cole
+|23,001
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Wests Tigers|size=16}} [[Wests Tigers]]'''
+|22–16
+| align="left" |{{leagueicon|Canterbury|size=16}} [[Canterbury-Bankstown Bulldogs]]
+|Saturday, 5:30{{nbsp}}pm
+|[[Western Sydney Stadium|CommBank Stadium]]
+|Peter Gough
+|17,505
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Melbourne|size=16}} [[Melbourne Storm]]'''
+|18–4
+| align="left" |{{leagueicon|Eastern Suburbs|size=16}} [[Sydney Roosters]]
+|Saturday, 7:30{{nbsp}}pm
+|[[Melbourne Rectangular Stadium|AAMI Park]]
+|[[Grant Atkins (referee)|Grant Atkins]]
+|16,628
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Brisbane|size=16}} [[Brisbane Broncos]]
+|26–30
+| align="left" |'''{{leagueicon|St. George|size=16}} [[St. George Illawarra Dragons]]'''
+|Sunday, 2:00 pm
+|[[Lang Park|Suncorp Stadium]]
+|Wyatt Raymond
+|42,275
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Canberra|size=16}} [[Canberra Raiders]]'''
+|26–12
+| align="left" |{{leagueicon|North Queensland|size=16}} [[North Queensland Cowboys]]
+|Sunday, 4:05 pm
+|[[Canberra Stadium|GIO Stadium]]
+|[[Ashley Klein]]
+|12,258
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Penrith|size=16}} [[Penrith Panthers]]'''
+|20–18
+| align="left" |{{leagueicon|Auckland|size=16}} [[New Zealand Warriors]]
+|Sunday, 6:15pm
+|[[Western Sydney Stadium|CommBank Stadium]]
+|[[Gerard Sutton (referee)|Gerard Sutton]]
+|17,640
+|- style="text-align:center; background:#f5faff;" 
+| colspan="7" align="left" |Bye: {{leagueicon|Dolphins|size=16}} [[Dolphins (NRL)|Dolphins]], {{leagueicon|Gold Coast Titans|size=16}} [[Gold Coast Titans]], {{leagueicon|South Sydney|size=16}} [[South Sydney Rabbitohs]]
+|-
+! colspan="7" align="left" |Source:<ref>{{Cite web |title=Draw |url=https://www.nrl.com/draw/?competition=111&round=13&season=2026 |access-date=2025-11-14 |website=National Rugby League |language=en}}</ref>
+|}
+*St George Illawarra ended a club record 15 game losing streak in their win against the Brisbane Broncos.<ref>{{cite news|url=https://www.smh.com.au/sport/nrl/dragons-end-15-game-losing-streak-with-biggest-upset-of-the-nrl-season-20260531-p602dg.html |title=Dragons end nine months of hell with massive upset win over Broncos|date=31 May 2026|access-date=7 June 2026|newspaper=[[The Sydney Morning Herald]]|first=Dan|last=Walsh}}</ref>
+
+=== Round 14 ===
+'''June 4–8'''
+{| class="wikitable" style="border-collapse:collapse; text-align:center; width:100%;"
+|- style="text-align:center; background:#f5faff;"  style="background:#c1d8ff;"
+! rowspan="2" |Home
+! rowspan="2" |Score
+! rowspan="2" |Away
+! colspan="4" |Match information
+|-
+! width="17%" |Day & time
+! width="17%" |Venue
+! width="17%" |Referee
+! width="5%" |Attendance
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Manly|size=16}} [[Manly Warringah Sea Eagles]]'''
+|28–14
+| align="left" |{{leagueicon|South Sydney|size=16}} [[South Sydney Rabbitohs]]
+|Thursday, 7:50 pm
+|[[Brookvale Oval|4 Pines Park]]
+|[[Adam Gee (referee)|Adam Gee]]
+|15,451
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Melbourne|size=16}} [[Melbourne Storm]]'''
+|32–30
+| align="left" |{{leagueicon|Newcastle|size=16}} [[Newcastle Knights]]
+|Friday, 6:00 pm
+|[[Melbourne Rectangular Stadium|AAMI Park]]
+|[[Ashley Klein]]
+|14,268
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Canberra|size=16}} [[Canberra Raiders]]
+|0–26
+| align="left" |'''{{leagueicon|Eastern Suburbs|size=16}} [[Sydney Roosters]]'''
+|Friday, 8:00 pm
+|[[Canberra Stadium|GIO Stadium]]
+|[[Gerard Sutton (referee)|Gerard Sutton]]
+|13,836
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|North Queensland|size=16}} [[North Queensland Cowboys]]
+|14–40
+| align="left" |{{leagueicon|Dolphins|size=16}} '''[[Dolphins (NRL)|Dolphins]]'''
+|Saturday, 5:30{{nbsp}}pm
+|[[North Queensland Stadium|Queensland Country Bank Stadium]]
+|Wyatt Raymond
+|21,911
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Brisbane|size=16}} [[Brisbane Broncos]]
+|23–28
+| align="left" |{{leagueicon|Gold Coast Titans|size=16}} '''[[Gold Coast Titans]]'''
+|Saturday, 7:30{{nbsp}}pm
+|[[Lang Park|Suncorp Stadium]]
+|Jarrod Cole 
+|41,087
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Wests Tigers|size=16}} [[Wests Tigers]]
+|0–68
+| align="left" |'''{{leagueicon|Penrith|size=16}} [[Penrith Panthers]]'''
+|Sunday, 2:00 pm
+|[[Western Sydney Stadium|CommBank Stadium]]
+|[[Grant Atkins]]
+|21,803
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Cronulla|size=16}} [[Cronulla-Sutherland Sharks]]'''
+|34–12
+| align="left" |{{leagueicon|St. George|size=16}} [[St. George Illawarra Dragons]]
+|Sunday, 4:05 pm
+|[[Endeavour Field|Ocean Protect Stadium]]
+|Liam Kennedy
+|14,989
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Canterbury|size=16}} [[Canterbury-Bankstown Bulldogs]]'''
+|14–12
+| align="left" |{{leagueicon|Parramatta|size=16}} [[Parramatta Eels]]
+|Monday, 4:00 pm
+|[[Stadium Australia|Accor Stadium]]
+|Todd Smith
+|37,638
+|-
+| colspan="7" align="left" |Bye: {{leagueicon|Auckland|size=16}} [[New Zealand Warriors]]
+
+|-
+! colspan="7" align="left" |Source:<ref>{{Cite web |title=Draw |url=https://www.nrl.com/draw/?competition=111&round=14&season=2026 |access-date=2025-11-14 |website=National Rugby League |language=en}}</ref>
+|}
+
+* Penrith's 68-point victory over the Tigers was the biggest margin of victory in the club's history, surpassing their 60 point win over Manly Warringah in 2004. It was also the second-most points Penrith have scored in a game, after the aforementioned game against Manly which Penrith won 72–12.<ref>{{cite news|url=https://www.westernweekender.com.au/2026/06/records-tumble-as-panthers-tear-tigers-apart-in-68-0-thrashing/|title=Records tumble as Panthers tear Tigers apart in 68-0 thrashing|first=Troy|last=Dodds|newspaper=The Western Weekender|date=7 June 2026|access-date=10 June 2026}}</ref>
+
+=== Round 15 ===
+'''June 11–14'''
+{| class="wikitable" style="border-collapse:collapse; text-align:center; width:100%;"
+|- style="text-align:center; background:#f5faff;"  style="background:#c1d8ff;"
+! rowspan="2" |Home
+! rowspan="2" |Score
+! rowspan="2" |Away
+! colspan="4" |Match information
+|-
+! width="17%" |Day & time
+! width="17%" |Venue
+! width="17%" |Referee
+! width="5%" |Attendance
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|South Sydney|size=16}} [[South Sydney Rabbitohs]]'''
+|48–6
+| align="left" |{{leagueicon|Brisbane|size=16}} [[Brisbane Broncos]]
+|Thursday, 7:50{{nbsp}}pm
+|[[Stadium Australia|Accor Stadium]]
+|[[Grant Atkins (referee)|Grant Atkins]]
+|12,784
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Dolphins|size=16}} [[Dolphins (NRL)|Dolphins]]'''
+|48–10
+| align="left" |{{leagueicon|Eastern Suburbs|size=16}} [[Sydney Roosters]]
+|Friday, 8:00{{nbsp}}pm
+|[[Lang Park|Suncorp Stadium]]
+|Todd Smith
+|20,687
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Auckland|size=16}} [[New Zealand Warriors]]
+|8–10
+| align="left" |'''{{leagueicon|Cronulla|size=16}} [[Cronulla-Sutherland Sharks]]'''
+|Saturday, 5:30{{nbsp}}pm
+|[[Mount Smart Stadium|Go Media Stadium]]
+|[[Gerard Sutton (referee)|Gerard Sutton]]
+|24,938
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Parramatta|size=16}} [[Parramatta Eels]]'''
+|15–12
+| align="left" |{{leagueicon|Canberra|size=16}} [[Canberra Raiders]]
+|Saturday, 7:30 pm
+|[[Western Sydney Stadium|CommBank Stadium]]
+|Ziggy Przeklasa-Adamski
+|16,657
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Wests Tigers|size=16}} [[Wests Tigers]]'''
+|36–28
+| align="left" |{{leagueicon|Gold Coast Titans|size=16}} [[Gold Coast Titans]]
+|Sunday, 4:05{{nbsp}}pm
+|[[Leichhardt Oval]]
+|Wyatt Raymond
+|17,773
+|- style="text-align:center; background:#f5faff;" 
+| colspan="7" align="left" |Bye: {{leagueicon|Canterbury|size=16}} [[Canterbury-Bankstown Bulldogs]], {{leagueicon|Manly|size=16}} [[Manly Warringah Sea Eagles]], {{leagueicon|Melbourne|size=16}} [[Melbourne Storm]], {{leagueicon|Newcastle|size=16}} [[Newcastle Knights]], {{leagueicon|North Queensland|size=16}} [[North Queensland Cowboys]], {{leagueicon|Penrith|size=16}} [[Penrith Panthers]], {{leagueicon|St. George|size=16}} [[St. George Illawarra Dragons]]
+|-
+! colspan="7" align="left" |Source:<ref>{{Cite web |title=Draw |url=https://www.nrl.com/draw/?competition=111&round=15&season=2026 |access-date=2025-11-14 |website=National Rugby League |language=en}}</ref>
+|}
+
+=== Round 16 ===
+'''June 19–21'''
+{| class="wikitable" style="border-collapse:collapse; text-align:center; width:100%;"
+|- style="text-align:center; background:#f5faff;"  style="background:#c1d8ff;"
+! rowspan="2" |Home
+! rowspan="2" |Score
+! rowspan="2" |Away
+! colspan="4" |Match information
+|-
+! width="17%" |Day & time
+! width="17%" |Venue
+! width="17%" |Referee
+! width="5%" |Attendance
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Newcastle|size=16}} [[Newcastle Knights]]'''
+|22–20
+| align="left" |{{leagueicon|St. George|size=16}} [[St. George Illawarra Dragons]]
+|Friday, 8:00 pm
+|[[Newcastle International Sports Centre|McDonald Jones Stadium]]
+|[[Gerard Sutton (referee)|Gerard Sutton]]
+|19,092
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Wests Tigers|size=16}} [[Wests Tigers]]
+|22–36
+| align="left" |'''{{leagueicon|Dolphins|size=16}} [[Dolphins (NRL)|Dolphins]]'''
+|Saturday, 3:00{{nbsp}}pm
+|[[Campbelltown Sports Stadium]]
+|Ziggy Przeklasa-Adamski
+|12,281
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Gold Coast Titans|size=16}} [[Gold Coast Titans]]'''
+|19–18
+| align="left" |{{leagueicon|Penrith|size=16}} [[Penrith Panthers]]
+|Saturday, 5:30{{nbsp}}pm
+|[[Robina Stadium|Cbus Super Stadium]]
+|Peter Gough
+|20,049
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Canterbury|size=16}} [[Canterbury-Bankstown Bulldogs]]'''
+|13–12*
+| align="left" |{{leagueicon|Manly|size=16}} [[Manly Warringah Sea Eagles]]
+|Saturday, 7:30{{nbsp}}pm
+|[[Stadium Australia|Accor Stadium]]
+|[[Adam Gee (referee)|Adam Gee]]
+|18,243
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Auckland|size=16}} [[New Zealand Warriors]]'''
+|38–20
+| align="left" |{{leagueicon|North Queensland|size=16}} [[North Queensland Cowboys]]
+|Sunday, 2:00{{nbsp}}pm
+|[[Te Kaha (stadium)|One New Zealand Stadium]]
+|[[Grant Atkins]]
+|24,365
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Melbourne|size=16}} [[Melbourne Storm]]'''
+|42–20
+| align="left" |{{leagueicon|Canberra|size=16}} [[Canberra Raiders]]
+|Sunday, 4:05{{nbsp}}pm
+|[[Melbourne Rectangular Stadium|AAMI Park]]
+|Todd Smith
+|19,326
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Eastern Suburbs|size=16}} '''[[Sydney Roosters]]'''
+|27–8
+| align="left" |{{leagueicon|Cronulla|size=16}} [[Cronulla-Sutherland Sharks]]
+|Sunday, 6:15{{nbsp}}pm
+|[[Sydney Football Stadium (2022)|Allianz Stadium]]
+|[[Ashley Klein]]
+|20,021
+|- style="text-align:center; background:#f5faff;" 
+| colspan="7" align="left" |Bye: {{leagueicon|Brisbane|size=16}} [[Brisbane Broncos]], {{leagueicon|Parramatta|size=16}} [[Parramatta Eels]], {{leagueicon|South Sydney|size=16}} [[South Sydney Rabbitohs]]
+|-
+! colspan="7" align="left" |Source:<ref>{{Cite web |title=Draw |url=https://www.nrl.com/draw/?competition=111&round=16&season=2026 |access-date=2025-11-14 |website=National Rugby League |language=en |archive-date=2026-02-08 |archive-url=https://web.archive.org/web/20260208224420/https://www.nrl.com/draw/?competition=111&season=2026&round=16 |url-status=live }}</ref>
+|}
+
+=== Round 17 (Beanie for Brain Cancer Round) ===
+'''June 25–28'''
+{| class="wikitable" style="border-collapse:collapse; text-align:center; width:100%;"
+|- style="text-align:center; background:#f5faff;"  style="background:#c1d8ff;"
+! rowspan="2" |Home
+! rowspan="2" |Score
+! rowspan="2" |Away
+! colspan="4" |Match information
+|-
+! width="17%" |Day & time
+! width="17%" |Venue
+! width="17%" |Referee
+! width="5%" |Attendance
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Parramatta|size=16}} [[Parramatta Eels]]
+|12–32
+| align="left" |'''{{leagueicon|South Sydney|size=16}} [[South Sydney Rabbitohs]]'''
+|Thursday, 7:50pm
+|[[Western Sydney Stadium|CommBank Stadium]]
+|[[Gerard Sutton (referee)|Gerard Sutton]]
+|14,365
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Gold Coast Titans|size=16}} [[Gold Coast Titans]]
+|12–30
+| align="left" |'''{{leagueicon|Canterbury|size=16}} [[Canterbury-Bankstown Bulldogs]]'''
+|Friday, 6:00{{nbsp}}pm
+|[[Robina Stadium|Cbus Super Stadium]]
+|Todd Smith
+|13,820
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Brisbane|size=16}} [[Brisbane Broncos]]
+|18–24
+| align="left" |'''{{leagueicon|Eastern Suburbs|size=16}} [[Sydney Roosters]]'''
+|Friday, 8:00{{nbsp}}pm
+|[[Lang Park|Suncorp Stadium]]
+|[[Grant Atkins]]
+|39,826
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Dolphins|size=16}} [[Dolphins (NRL)|Dolphins]]'''
+|26–24
+| align="left" |{{leagueicon|Auckland|size=16}} [[New Zealand Warriors]]
+|Saturday, 3:00{{nbsp}}pm
+|[[Lang Park|Suncorp Stadium]]
+|[[Adam Gee (referee)|Adam Gee]]
+|40,465
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|North Queensland|size=16}} [[North Queensland Cowboys]]'''
+|26–12
+| align="left" |{{leagueicon|Penrith|size=16}} [[Penrith Panthers]]
+|Saturday, 5:30{{nbsp}}pm
+|[[North Queensland Stadium|Queensland Country Bank Stadium]]
+|Wyatt Raymond
+|22,888
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Manly|size=16}} [[Manly Warringah Sea Eagles]]'''
+|30–4
+| align="left" |{{leagueicon|Melbourne|size=16}} [[Melbourne Storm]]
+|Saturday, 7:30{{nbsp}}pm
+|[[Brookvale Oval|4 Pines Park]]
+|[[Ashley Klein]]
+|17,221
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Canberra|size=16}} [[Canberra Raiders]]'''
+|24–16
+| align="left" |{{leagueicon|St. George|size=16}} [[St. George Illawarra Dragons]]
+|Sunday, 2:00 pm
+|[[Canberra Stadium|GIO Stadium]]
+|Ziggy Przeklasa-Adamski
+|12,531
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Newcastle|size=16}} [[Newcastle Knights]]'''
+|12–6
+| align="left" |{{leagueicon|Wests Tigers|size=16}} [[Wests Tigers]]
+|Sunday, 4:05 pm
+|[[Newcastle International Sports Centre|McDonald Jones Stadium]]
+|Peter Gough
+|22,968
+|- style="text-align:center; background:#f5faff;" 
+| colspan="7" align="left" |Bye: {{leagueicon|Cronulla|size=16}} [[Cronulla-Sutherland Sharks]]
+|-
+! colspan="7" align="left" |Source:<ref>{{Cite web |title=Draw |url=https://www.nrl.com/draw/?competition=111&round=17&season=2026 |access-date=2025-11-14 |website=National Rugby League |language=en |archive-date=2025-12-07 |archive-url=https://web.archive.org/web/20251207185221/https://www.nrl.com/draw/?competition=111&round=17&season=2026 |url-status=live }}</ref>
+|}
+
+=== Round 18 ===
+'''July 3–5'''
+{| class="wikitable" style="border-collapse:collapse; text-align:center; width:100%;"
+|- style="text-align:center; background:#f5faff;"  style="background:#c1d8ff;"
+! rowspan="2" |Home
+! rowspan="2" |Score
+! rowspan="2" |Away
+! colspan="4" |Match information
+|-
+! width="17%" |Day & time
+! width="17%" |Venue
+! width="17%" |Referee
+! width="5%" |Attendance
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Penrith|size=16}} [[Penrith Panthers]]'''
+|36–14
+| align="left" |{{leagueicon|South Sydney|size=16}} [[South Sydney Rabbitohs]]
+|Friday, 8:00 pm
+|[[Western Sydney Stadium|CommBank Stadium]]
+|[[Adam Gee (referee)|Adam Gee]]
+|15,163
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|St. George|size=16}} [[St. George Illawarra Dragons]]'''
+|24–10
+| align="left" |{{leagueicon|Wests Tigers|size=16}} [[Wests Tigers]]
+|Saturday, 5:30pm
+|[[Jubilee Stadium|St. George Venues Jubilee Stadium]]
+|Todd Smith
+|12,431
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Brisbane|size=16}} [[Brisbane Broncos]]
+|16–28
+| align="left" |'''{{leagueicon|Cronulla|size=16}} [[Cronulla-Sutherland Sharks]]'''
+|Saturday, 7:30{{nbsp}}pm
+|[[Lang Park|Suncorp Stadium]]
+|[[Gerard Sutton (referee)|Gerard Sutton]]
+|38,998
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Parramatta|size=16}} [[Parramatta Eels]]'''
+|23–14
+| align="left" |{{leagueicon|Manly|size=16}} [[Manly Warringah Sea Eagles]]
+|Sunday, 2:00 pm
+|[[Western Sydney Stadium|CommBank Stadium]]
+|[[Grant Atkins]]
+|18,778
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Newcastle|size=16}} [[Newcastle Knights]]'''
+|13–12
+| align="left" |{{leagueicon|Dolphins|size=16}} [[Dolphins (NRL)|Dolphins]]
+|Sunday, 4:05 pm
+|[[Newcastle International Sports Centre|McDonald Jones Stadium]]
+|Wyatt Raymond
+|16,896
+|- style="text-align:center; background:#f5faff;" 
+| colspan="7" align="left" |Bye: {{leagueicon|Canberra|size=16}} [[Canberra Raiders]], {{leagueicon|Canterbury|size=16}} [[Canterbury-Bankstown Bulldogs]], {{leagueicon|Gold Coast Titans|size=16}} [[Gold Coast Titans]], {{leagueicon|Melbourne|size=16}} [[Melbourne Storm]], {{leagueicon|Auckland|size=16}} [[New Zealand Warriors]], {{leagueicon|North Queensland|size=16}} [[North Queensland Cowboys]], {{leagueicon|Eastern Suburbs|size=16}} [[Sydney Roosters]]
+|-
+! colspan="7" align="left" |Source:<ref>{{Cite web |title=Draw |url=https://www.nrl.com/draw/?competition=111&round=18&season=2026 |access-date=2025-11-14 |website=National Rugby League |language=en}}</ref>
+|}
+
+=== Round 19 ===
+'''July 10–12'''
+{| class="wikitable" style="border-collapse:collapse; text-align:center; width:100%;"
+|- style="text-align:center; background:#f5faff;"  style="background:#c1d8ff;"
+! rowspan="2" |Home
+! rowspan="2" |Score
+! rowspan="2" |Away
+! colspan="4" |Match information
+|-
+! width="17%" |Day & time
+! width="17%" |Venue
+! width="17%" |Referee
+! width="5%" |Attendance
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Wests Tigers|size=16}} [[Wests Tigers]]
+|6–32
+| align="left" |'''{{leagueicon|Auckland|size=16}} [[New Zealand Warriors]]'''
+|Friday, 8:00 pm
+|[[Campbelltown Sports Stadium]]
+|Wyatt Raymond
+|10,445
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Dolphins|size=16}} [[Dolphins (NRL)|Dolphins]]
+|0–66
+| align="left" |'''{{leagueicon|Cronulla|size=16}} [[Cronulla-Sutherland Sharks]]'''
+|Saturday, 3:00{{nbsp}}pm
+|[[Dolphin Stadium (Brisbane)|Kayo Stadium]]
+|Todd Smith
+|10,023
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Canterbury|size=16}} [[Canterbury-Bankstown Bulldogs]]
+|16–40
+| align="left" |'''{{leagueicon|Canberra|size=16}} [[Canberra Raiders]]'''
+|Saturday, 5:30{{nbsp}}pm
+|[[Stadium Australia|Accor Stadium]]
+|[[Gerard Sutton (referee)|Gerard Sutton]]
+|19,801
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Eastern Suburbs|size=16}} [[Sydney Roosters]]'''
+|28–12
+| align="left" |{{leagueicon|Parramatta|size=16}} [[Parramatta Eels]]
+|Saturday, 7:30 pm
+|[[Sydney Football Stadium (2022)|Allianz Stadium]]
+|[[Adam Gee (referee)|Adam Gee]]
+|23,222
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|South Sydney|size=16}} [[South Sydney Rabbitohs]]'''
+|26–24
+| align="left" |{{leagueicon|Newcastle|size=16}} [[Newcastle Knights]]
+|Sunday, 2:00{{nbsp}}pm
+|[[Stadium Australia|Accor Stadium]]
+|[[Grant Atkins]]
+|30,113
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Manly|size=16}} [[Manly Warringah Sea Eagles]]
+|18–19*
+| align="left" |'''{{leagueicon|North Queensland|size=16}} [[North Queensland Cowboys]]'''
+|Sunday, 4:05{{nbsp}}pm
+|[[Brookvale Oval|4 Pines Park]]
+|Peter Gough
+|16,892
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Melbourne|size=16}} [[Melbourne Storm]]'''
+|22–18
+| align="left" |{{leagueicon|Gold Coast Titans|size=16}} [[Gold Coast Titans]]
+|Sunday, 6:15{{nbsp}}pm
+|[[Melbourne Rectangular Stadium|AAMI Park]]
+|Tyson Brough
+|12,386
+|- style="text-align:center; background:#f5faff;" 
+| colspan="7" align="left" |Bye: {{leagueicon|Brisbane|size=16}} [[Brisbane Broncos]], {{leagueicon|Penrith|size=16}} [[Penrith Panthers]], {{leagueicon|St. George|size=16}} [[St. George Illawarra Dragons]]
+|-
+! colspan="7" align="left" |Source:<ref>{{Cite web |title=Draw |url=https://www.nrl.com/draw/?competition=111&round=19&season=2026 |access-date=2025-11-14 |website=National Rugby League |language=en}}</ref>
+|}
+
+=== Round 20 (Women in League Round) ===
+'''July 16–19'''
+{| class="wikitable" style="border-collapse:collapse; text-align:center; width:100%;"
+|- style="text-align:center; background:#f5faff;"  style="background:#c1d8ff;"
+! rowspan="2" |Home
+! rowspan="2" |Score
+! rowspan="2" |Away
+! colspan="4" |Match information
+|-
+! width="17%" |Day & time
+! width="17%" |Venue
+! width="17%" |Referee
+! width="5%" |Attendance
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Penrith|size=16}} [[Penrith Panthers]]
+|12–14
+| align="left" |'''{{leagueicon|Brisbane|size=16}} [[Brisbane Broncos]]'''
+|Thursday, 7:50 pm
+|[[Western Sydney Stadium|CommBank Stadium]]
+|Todd Smith
+|15,437
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Cronulla|size=16}} [[Cronulla-Sutherland Sharks]]'''
+|20–18
+| align="left" |{{leagueicon|Newcastle|size=16}} [[Newcastle Knights]]
+|Friday, 6:00 pm
+|[[Endeavour Field|Ocean Protect Stadium]]
+|[[Ashley Klein]]
+|11,123
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Eastern Suburbs|size=16}} [[Sydney Roosters]]'''
+|14–6
+| align="left" |{{leagueicon|Melbourne|size=16}} [[Melbourne Storm]]
+|Friday, 8:00 pm
+|[[Sydney Football Stadium (2022)|Allianz Stadium]]
+|[[Gerard Sutton (referee)|Gerard Sutton]]
+|16,010
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Canberra|size=16}} [[Canberra Raiders]]'''
+|34–24
+| align="left" |{{leagueicon|South Sydney|size=16}} [[South Sydney Rabbitohs]]
+|Saturday, 3:00{{nbsp}}pm
+|[[Canberra Stadium|GIO Stadium]]
+|Wyatt Raymond
+|19,659
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Auckland|size=16}} [[New Zealand Warriors]]'''
+|20–12
+| align="left" |{{leagueicon|St. George|size=16}} [[St. George Illawarra Dragons]]
+|Saturday, 5:30{{nbsp}}pm
+|[[Mount Smart Stadium|Go Media Stadium]]
+|Jarrod Cole
+|23,895
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Canterbury|size=16}} [[Canterbury-Bankstown Bulldogs]]'''
+|32–0
+| align="left" |{{leagueicon|Wests Tigers|size=16}} [[Wests Tigers]]
+|Saturday, 7:30{{nbsp}}pm
+|[[Stadium Australia|Accor Stadium]]
+|Tyson Brough
+|20,050
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Gold Coast Titans|size=16}} [[Gold Coast Titans]]'''
+|38–32
+| align="left" |{{leagueicon|Manly|size=16}} [[Manly Warringah Sea Eagles]]
+|Sunday, 2:00 pm
+|[[Robina Stadium|Cbus Super Stadium]]
+|[[Adam Gee (referee)|Adam Gee]]
+|15,252
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Dolphins|size=16}} [[Dolphins (NRL)|Dolphins]]'''
+|36–16
+| align="left" |{{leagueicon|North Queensland|size=16}} [[North Queensland Cowboys]]
+|Sunday, 4:05 pm
+|[[Lang Park|Suncorp Stadium]]
+|[[Grant Atkins]]
+|35,213
+|- style="text-align:center; background:#f5faff;" 
+| colspan="7" align="left" |Bye: {{leagueicon|Parramatta|size=16}} [[Parramatta Eels]]
+|-
+! colspan="7" align="left" |Source:<ref>{{Cite web |title=Draw |url=https://www.nrl.com/draw/?competition=111&round=20&season=2026 |access-date=2025-11-14 |website=National Rugby League |language=en}}</ref>
+|}
+
+=== Round 21 ===
+'''July 23–26'''
+{| class="wikitable" style="border-collapse:collapse; text-align:center; width:100%;"
+|- style="text-align:center; background:#f5faff;"  style="background:#c1d8ff;"
+! rowspan="2" |Home
+! rowspan="2" |Score
+! rowspan="2" |Away
+! colspan="4" |Match information
+|-
+! width="17%" |Day & time
+! width="17%" |Venue
+! width="17%" |Referee
+! width="5%" |Attendance
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Parramatta|size=16}} [[Parramatta Eels]]
+|18–24
+| align="left" |'''{{leagueicon|Penrith|size=16}} [[Penrith Panthers]]'''
+|Thursday, 7:50 pm
+|[[Western Sydney Stadium|CommBank Stadium]]
+|[[Gerard Sutton (referee)|Gerard Sutton]]
+|15,562
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Newcastle|size=16}} [[Newcastle Knights]]
+|22–23
+| align="left" |'''{{leagueicon|Eastern Suburbs|size=16}} [[Sydney Roosters]]'''
+|Friday, 6:00 pm
+|[[Newcastle International Sports Centre|McDonald Jones Stadium]]
+|Wyatt Raymond
+|21,313
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|South Sydney|size=16}} [[South Sydney Rabbitohs]]'''
+|28–26
+| align="left" |{{leagueicon|Melbourne|size=16}} [[Melbourne Storm]]
+|Friday, 8:00 pm
+|[[Stadium Australia|Accor Stadium]]
+|[[Ashley Klein]]
+|10,009
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Canberra|size=16}} [[Canberra Raiders]]'''
+|56–10
+| align="left" |{{leagueicon|Wests Tigers|size=16}} [[Wests Tigers]]
+|Saturday, 3:00{{nbsp}}pm
+|[[Canberra Stadium|GIO Stadium]]
+|Jarrod Cole
+|16,223
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Canterbury|size=16}} [[Canterbury-Bankstown Bulldogs]]'''
+|18–6
+| align="left" |{{leagueicon|Auckland|size=16}} [[New Zealand Warriors]]
+|Saturday, 5:30{{nbsp}}pm
+|[[Stadium Australia|Accor Stadium]]
+|[[Adam Gee (referee)|Adam Gee]]
+|22,135
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|North Queensland|size=16}} [[North Queensland Cowboys]]'''
+|18–10
+| align="left" |{{leagueicon|Brisbane|size=16}} [[Brisbane Broncos]]
+|Saturday, 7:30{{nbsp}}pm
+|[[North Queensland Stadium|Queensland Country Bank Stadium]]
+|Tyson Brough
+|25,461
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|St. George|size=16}} [[St. George Illawarra Dragons]]
+|18–38
+| align="left" |'''{{leagueicon|Gold Coast Titans|size=16}} [[Gold Coast Titans]]'''
+|Sunday, 2:00 pm
+|[[Jubilee Stadium|St. George Venues Jubilee Stadium]]
+|Todd Smith
+|9,031
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Manly|size=16}} [[Manly Warringah Sea Eagles]]
+|12–48
+| align="left" |'''{{leagueicon|Cronulla|size=16}} [[Cronulla-Sutherland Sharks]]'''
+|Sunday, 4:05 pm
+|[[Brookvale Oval|4 Pines Park]]
+|[[Grant Atkins]]
+|17,126
+|- style="text-align:center; background:#f5faff;" 
+| colspan="7" align="left" |Bye: {{leagueicon|Dolphins|size=16}} [[Dolphins (NRL)|Dolphins]]
+|-
+! colspan="7" align="left" |Source:<ref>{{Cite web |title=Draw |url=https://www.nrl.com/draw/?competition=111&round=21&season=2026 |access-date=2025-11-14 |website=National Rugby League |language=en}}</ref>
+|}
+*North Queensland recorded their largest home crowd since [[2011 NRL season results#Round 23|round 23, 2011]].
+
+=== Round 22 ===
+'''July 30 – August 2'''
+{| class="wikitable" style="border-collapse:collapse; text-align:center; width:100%;"
+|- style="text-align:center; background:#f5faff;"  style="background:#c1d8ff;"
+! rowspan="2" |Home
+! rowspan="2" |Score
+! rowspan="2" |Away
+! colspan="4" |Match information
+|-
+! width="17%" |Day & time
+! width="17%" |Venue
+! width="17%" |Referee
+! width="5%" |Attendance
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|North Queensland|size=16}} [[North Queensland Cowboys]]
+|12–82
+| align="left" |'''{{leagueicon|Eastern Suburbs|size=16}} [[Sydney Roosters]]'''
+|Thursday, 7:50 pm
+|[[North Queensland Stadium|Queensland Country Bank Stadium]]
+|[[Ashley Klein]]
+|15,835
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|St. George|size=16}} [[St. George Illawarra Dragons]]
+|22–28
+| align="left" |'''{{leagueicon|Dolphins|size=16}} [[Dolphins (NRL)|Dolphins]]'''
+|Friday, 6:00 pm
+|[[Wollongong Showground|WIN Stadium]]
+|Kieren Irons
+|9,218
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Melbourne|size=16}} [[Melbourne Storm]]
+|22–36
+| align="left" |'''{{leagueicon|Canterbury|size=16}} [[Canterbury-Bankstown Bulldogs]]'''
+|Friday, 8:00 pm
+|[[Melbourne Rectangular Stadium|AAMI Park]]
+|[[Gerard Sutton (referee)|Gerard Sutton]]
+|19,243
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Gold Coast Titans|size=16}} [[Gold Coast Titans]]
+|6–42
+| align="left" |'''{{leagueicon|Auckland|size=16}} [[New Zealand Warriors]]'''
+|Saturday, 3:00{{nbsp}}pm
+|[[Robina Stadium|Cbus Super Stadium]]
+|Jarrod Cole
+|25,181
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Penrith|size=16}} [[Penrith Panthers]]'''
+|42–18
+| align="left" |{{leagueicon|Canberra|size=16}} [[Canberra Raiders]]
+|Saturday, 5:30{{nbsp}}pm
+|[[Glen Willow Regional Sports Stadium|Glen Willow Oval]]
+|[[Adam Gee (referee)|Adam Gee]]
+|10,000
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Brisbane|size=16}} [[Brisbane Broncos]]
+|6–30
+| align="left" |'''{{leagueicon|Newcastle|size=16}} [[Newcastle Knights]]'''
+|Saturday, 7:30{{nbsp}}pm
+|[[Lang Park|Suncorp Stadium]]
+|[[Grant Atkins]]
+|37,538
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Cronulla|size=16}} [[Cronulla-Sutherland Sharks]]'''
+|32–16
+| align="left" |{{leagueicon|South Sydney|size=16}} [[South Sydney Rabbitohs]]
+|Sunday, 2:00 pm
+|[[Endeavour Field|Ocean Protect Stadium]]
+|Todd Smith
+|14,125
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Wests Tigers|size=16}} [[Wests Tigers]]
+|13–16
+| align="left" |'''{{leagueicon|Parramatta|size=16}} [[Parramatta Eels]]'''
+|Sunday, 4:05 pm
+|[[Western Sydney Stadium|CommBank Stadium]]
+|Liam Kennedy
+|13,125
+|- style="text-align:center; background:#f5faff;" 
+| colspan="7" align="left" |Bye: {{leagueicon|Manly|size=16}} [[Manly Warringah Sea Eagles]]
+|-
+! colspan="7" align="left" |Source:<ref>{{Cite web |title=Draw |url=https://www.nrl.com/draw/?competition=111&round=22&season=2026 |access-date=2025-11-14 |website=National Rugby League |language=en}}</ref>
+|}
+*The Roosters became the first side to score 80 points since [[1935 NSWRFL season|round 6, 1935]],<ref>{{cite news|url=https://www.1news.co.nz/2026/07/31/roosters-flog-cowboys-with-most-points-since-1935/|title=Roosters flog Cowboys with most points since 1935|date=31 July 2026|access-date=9 August 2026|website=[[1News]]}}</ref> recorded their biggest win since that same match, and became the first team to score 14 tries in a game since [[2003 NRL season|round 24, 2003]].
+* The crowd of 25,181 between the Gold Coast Titans and the New Zealand Warriors at Cbus Super Stadium was the biggest crowd between these two sides.
+
+=== Round 23 (Indigenous Round) ===
+'''August 6–9'''
+{| class="wikitable" style="border-collapse:collapse; text-align:center; width:100%;"
+|- style="text-align:center; background:#f5faff;"  style="background:#c1d8ff;"
+! rowspan="2" |Home
+! rowspan="2" |Score
+! rowspan="2" |Away
+! colspan="4" |Match information
+|-
+! width="17%" |Day & time
+! width="17%" |Venue
+! width="17%" |Referee
+! width="5%" |Attendance
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Gold Coast Titans|size=16}} [[Gold Coast Titans]]
+|8–30
+| align="left" |'''{{leagueicon|North Queensland|size=16}} [[North Queensland Cowboys]]'''
+|Thursday, 7:50 pm
+|[[Robina Stadium|Cbus Super Stadium]]
+|[[Adam Gee (referee)|Adam Gee]]
+|11,743
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Auckland|size=16}} [[New Zealand Warriors]]'''
+|28–12
+| align="left" |{{leagueicon|Penrith|size=16}} [[Penrith Panthers]]
+|Friday, 6:00 pm
+|[[Mount Smart Stadium|Go Media Stadium]]
+|[[Gerard Sutton (referee)|Gerard Sutton]]
+|25,987
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Eastern Suburbs|size=16}} [[Sydney Roosters]]'''
+|20–18
+| align="left" |{{leagueicon|Canterbury|size=16}} [[Canterbury-Bankstown Bulldogs]]
+|Friday, 8:00 pm
+|[[Sydney Football Stadium (2022)|Allianz Stadium]]
+|[[Grant Atkins]]
+|30,306
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Melbourne|size=16}} [[Melbourne Storm]]'''
+|42–20
+| align="left" |{{leagueicon|Manly|size=16}} [[Manly Warringah Sea Eagles]]
+|Saturday, 3:00{{nbsp}}pm
+|[[Perth Rectangular Stadium|HBF Park]]
+|Kieren Irons
+|15,169
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Dolphins|size=16}} [[Dolphins (NRL)|Dolphins]]'''
+|40–32
+| align="left" |{{leagueicon|Brisbane|size=16}} [[Brisbane Broncos]]
+|Saturday, 5:30{{nbsp}}pm
+|[[Lang Park|Suncorp Stadium]]
+|Todd Smith
+|50,188
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|South Sydney|size=16}} [[South Sydney Rabbitohs]]'''
+|28–24
+| align="left" |{{leagueicon|Parramatta|size=16}} [[Parramatta Eels]]
+|Saturday, 7:30{{nbsp}}pm
+|[[Sydney Football Stadium (2022)|Allianz Stadium]]
+|Wyatt Raymond
+|19,077
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Canberra|size=16}} [[Canberra Raiders]]
+|24–30
+| align="left" |'''{{leagueicon|Newcastle|size=16}} [[Newcastle Knights]]'''
+|Sunday, 2:00 pm
+|[[Canberra Stadium|GIO Stadium]]
+|[[Ashley Klein]]
+|8,507
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|St. George|size=16}} [[St. George Illawarra Dragons]]'''
+|24–16
+| align="left" |{{leagueicon|Cronulla|size=16}} [[Cronulla-Sutherland Sharks]]
+|Sunday, 4:05 pm
+|[[Jubilee Stadium|St. George Venues Jubilee Stadium]]
+|Liam Kennedy
+|11,018
+|- style="text-align:center; background:#f5faff;" 
+| colspan="7" align="left" |Bye: {{leagueicon|Wests Tigers|size=16}} [[Wests Tigers]]
+|-
+! colspan="7" align="left" |Source:<ref>{{Cite web |title=Draw |url=https://www.nrl.com/draw/?competition=111&round=23&season=2026 |access-date=2025-11-14 |website=National Rugby League |language=en}}</ref>
+|}
+
+* With their loss to the Dolphins, the Brisbane Broncos became the first reigning premiers to miss the finals the following season since the Wests Tigers in [[2006 NRL season|2006]].<ref>{{cite news|url=https://www.news.com.au/sport/nrl/broncos-make-unwanted-history-in-the-battle-of-brisbane-as-year-from-hell-gets-even-worse/news-story/c760243e215814f60dfbefd61dee299f|title=Broncos make unwanted history in the Battle of Brisbane as Dolphins snatch crucial victory|first=Ben|last=Talintyre|date=8 August 2026|access-date=9 August 2026|website=[[News.com.au]]}}</ref>
+
+=== Round 24 (Indigenous Round) ===
+'''August 13–16'''
+{| class="wikitable" style="border-collapse:collapse; text-align:center; width:100%;"
+|- style="text-align:center; background:#f5faff;"  style="background:#c1d8ff;"
+! rowspan="2" |Home
+! rowspan="2" |Score
+! rowspan="2" |Away
+! colspan="4" |Match information
+|-
+! width="17%" |Day & time
+! width="17%" |Venue
+! width="17%" |Referee
+! width="5%" |Attendance
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Penrith|size=16}} [[Penrith Panthers]]
+|6–12
+| align="left" |'''{{leagueicon|Eastern Suburbs|size=16}} [[Sydney Roosters]]'''
+|Thursday, 7:50 pm
+|[[Western Sydney Stadium|CommBank Stadium]]
+|[[Adam Gee (referee)|Adam Gee]]
+|16,768
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Manly|size=16}} [[Manly Warringah Sea Eagles]]
+|0–22
+| align="left" |'''{{leagueicon|Dolphins|size=16}} [[Dolphins (NRL)|Dolphins]]'''
+|Friday, 6:00 pm
+|[[Brookvale Oval|4 Pines Park]]
+|[[Grant Atkins]]
+|11,108
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Canterbury|size=16}} [[Canterbury-Bankstown Bulldogs]]
+|6–22
+| align="left" |'''{{leagueicon|South Sydney|size=16}} [[South Sydney Rabbitohs]]'''
+|Friday, 8:00 pm
+|[[Stadium Australia|Accor Stadium]]
+|[[Ashley Klein]]
+|26,582
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Cronulla|size=16}} [[Cronulla-Sutherland Sharks]]
+|20–24
+| align="left" |'''{{leagueicon|Canberra|size=16}} [[Canberra Raiders]]'''
+|Saturday, 3:00{{nbsp}}pm
+|[[Endeavour Field|Ocean Protect Stadium]]
+|[[Gerard Sutton (referee)|Gerard Sutton]]
+|12,358
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Parramatta|size=16}} [[Parramatta Eels]]'''
+|32–30
+| align="left" |{{leagueicon|North Queensland|size=16}} [[North Queensland Cowboys]]
+|Saturday, 5:30{{nbsp}}pm
+|[[Western Sydney Stadium|CommBank Stadium]]
+|Todd Smith
+|12,804
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Brisbane|size=16}} [[Brisbane Broncos]]
+|6–40
+| align="left" |'''{{leagueicon|Auckland|size=16}} [[New Zealand Warriors]]'''
+|Saturday, 7:30{{nbsp}}pm
+|[[Lang Park|Suncorp Stadium]]
+|Wyatt Raymond
+|38,916
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Newcastle|size=16}} [[Newcastle Knights]]'''
+|36–26
+| align="left" |{{leagueicon|Gold Coast Titans|size=16}} [[Gold Coast Titans]]
+|Sunday, 2:00 pm
+|[[Newcastle International Sports Centre|McDonald Jones Stadium]]
+|Liam Kennedy
+|20,003
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Wests Tigers|size=16}} [[Wests Tigers]]
+|22–24
+| align="left" |'''{{leagueicon|St. George|size=16}} [[St. George Illawarra Dragons]]'''
+|Sunday, 4:05 pm
+|[[Western Sydney Stadium|CommBank Stadium]]
+|Peter Gough
+|9,773
+|- style="text-align:center; background:#f5faff;" 
+| colspan="7" align="left" |Bye: {{leagueicon|Melbourne|size=16}} [[Melbourne Storm]]
+|-
+! colspan="7" align="left" |Source:<ref>{{Cite web |title=Draw |url=https://www.nrl.com/draw/?competition=111&round=24&season=2026 |access-date=2025-11-14 |website=National Rugby League |language=en}}</ref>
+|}
+*Manly were held scoreless at Brookvale Oval (aka 4 Pines Park) for the first time since [[1993 NSWRL season|round 6, 1993]]
+
+=== Round 25 (Telstra Together Round) ===
+'''August 20–23'''
+{| class="wikitable" style="border-collapse:collapse; text-align:center; width:100%;"
+|- style="text-align:center; background:#f5faff;"  style="background:#c1d8ff;"
+! rowspan="2" |Home
+! rowspan="2" |Score
+! rowspan="2" |Away
+! colspan="4" |Match information
+|-
+! width="17%" |Day & time
+! width="17%" |Venue
+! width="17%" |Referee
+! width="5%" |Attendance
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Melbourne|size=16}} [[Melbourne Storm]]
+|14–22
+| align="left" |'''{{leagueicon|Penrith|size=16}} [[Penrith Panthers]]'''
+|Thursday, 7:50 pm
+|[[Melbourne Rectangular Stadium|AAMI Park]]
+|[[Grant Atkins]]
+|17,880
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Canberra|size=16}} [[Canberra Raiders]]
+|30–34
+| align="left" |'''{{leagueicon|Brisbane|size=16}} [[Brisbane Broncos]]'''
+|Friday, 6:00 pm
+|[[Canberra Stadium|GIO Stadium]]
+|[[Adam Gee (referee)|Adam Gee]]
+|20,512
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Dolphins|size=16}} [[Dolphins (NRL)|Dolphins]]'''
+|34–16
+| align="left" |{{leagueicon|Parramatta|size=16}} [[Parramatta Eels]]
+|Friday, 8:00 pm
+|[[Lang Park|Suncorp Stadium]]
+|[[Gerard Sutton (referee)|Gerard Sutton]]
+|24,728
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Newcastle|size=16}} [[Newcastle Knights]]
+|24–44
+| align="left" |'''{{leagueicon|Manly|size=16}} [[Manly Warringah Sea Eagles]]'''
+|Saturday, 3:00{{nbsp}}pm
+|[[Newcastle International Sports Centre|McDonald Jones Stadium]]
+|Wyatt Raymond
+|24,537
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|South Sydney|size=16}} [[South Sydney Rabbitohs]]
+|26–45
+| align="left" |'''{{leagueicon|Auckland|size=16}} [[New Zealand Warriors]]'''
+|Saturday, 5:30{{nbsp}}pm
+|[[Stadium Australia|Accor Stadium]]
+|Todd Smith
+|19,531
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|St. George|size=16}} [[St. George Illawarra Dragons]]
+|14–44
+| align="left" |'''{{leagueicon|Canterbury|size=16}} [[Canterbury-Bankstown Bulldogs]]'''
+|Saturday, 7:30{{nbsp}}pm
+|[[Sydney Football Stadium (2022)|Allianz Stadium]]
+|Liam Kennedy
+|14,711
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Gold Coast Titans|size=16}} [[Gold Coast Titans]]
+|22–30
+| align="left" |'''{{leagueicon|Cronulla|size=16}} [[Cronulla-Sutherland Sharks]]'''
+|Sunday, 2:00 pm
+|[[Robina Stadium|Cbus Super Stadium]]
+|Peter Gough
+|16,074
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Eastern Suburbs|size=16}} [[Sydney Roosters]]
+|24–25
+| align="left" |'''{{leagueicon|Wests Tigers|size=16}} [[Wests Tigers]]'''
+|Sunday, 4:05 pm
+|[[Sydney Football Stadium (2022)|Allianz Stadium]]
+|[[Ashley Klein]]
+|26,240
+|- style="text-align:center; background:#f5faff;" 
+| colspan="7" align="left" |Bye: {{leagueicon|North Queensland|size=16}} [[Cronulla-Sutherland Sharks|North Queensland Cowboys]]
+|-
+! colspan="7" align="left" |Source:<ref>{{Cite web |title=Draw |url=https://www.nrl.com/draw/?competition=111&round=25&season=2026 |access-date=2025-11-14 |website=National Rugby League |language=en}}</ref>
+|}
+
+* With their loss to Penrith, the Melbourne Storm missed the finals with a losing record for the first time since 2002, the first of coach Craig Bellamy's 24 year career.{{efn|The Melbourne Storm also missed the finals in 2010, when the club was penalised for [[Melbourne Storm salary cap breach|salary cap breaches]] and received the wooden spoon; the club would have otherwise finished fifth on the ladder that year.}}<ref>{{cite web|url=https://www.abc.net.au/news/2026-08-20/nrl-live-melbourne-storm-penrith-panthers/107060788|title=Penrith Panthers end Melbourne Storm's slim NRL finals hopes with 22-14 win|publisher=[[ABC News (Australia)|ABC News]] ([[Australian Broadcasting Corporation]])|first=Jon|last=Healy|date=20 August 2026|accessdate=21 August 2026}}</ref> It was also the first time both reigning Grand Finalists missed out on the finals the following year since [[2006 NRL season|2006]].
+* Penrith won in Melbourne at AAMI Park for the first time since [[2018 NRL season results#round 25|round 25, 2018]].
+
+=== Round 26 ===
+'''August 27–30'''
+{| class="wikitable" style="border-collapse:collapse; text-align:center; width:100%;"
+|- style="text-align:center; background:#f5faff;"  style="background:#c1d8ff;"
+! rowspan="2" |Home
+! rowspan="2" |Score
+! rowspan="2" |Away
+! colspan="4" |Match information
+|-
+! width="17%" |Day & time
+! width="17%" |Venue
+! width="17%" |Referee
+! width="5%" |Attendance
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Brisbane|size=16}} [[Brisbane Broncos]]
+|20–46
+| align="left" |'''{{leagueicon|Melbourne|size=16}} [[Melbourne Storm]]'''
+|Thursday, 7:50 pm
+|[[Lang Park|Suncorp Stadium]]
+|Wyatt Raymond
+|36,476
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Manly|size=16}} [[Manly Warringah Sea Eagles]]'''
+|44–10
+| align="left" |{{leagueicon|St. George|size=16}} [[St. George Illawarra Dragons]]
+|Friday, 6:00 pm
+|[[Brookvale Oval|4 Pines Park]]
+|Nick Pelgrave
+|13,597
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Penrith|size=16}} [[Penrith Panthers]]'''
+|24–10
+| align="left" |{{leagueicon|Canterbury|size=16}} [[Canterbury-Bankstown Bulldogs]]
+|Friday, 8:00 pm
+|[[Western Sydney Stadium|CommBank Stadium]]
+|[[Gerard Sutton (referee)|Gerard Sutton]]
+|19,979
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Gold Coast Titans|size=16}} [[Gold Coast Titans]]
+|22–42
+| align="left" |'''{{leagueicon|South Sydney|size=16}} [[South Sydney Rabbitohs]]'''
+|Saturday, 3:00{{nbsp}}pm
+|[[Robina Stadium|Cbus Super Stadium]]
+|Liam Kennedy
+|22,108
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Eastern Suburbs|size=16}} [[Sydney Roosters]]
+|12–26
+| align="left" |'''{{leagueicon|Dolphins|size=16}} [[Dolphins (NRL)|Dolphins]]'''
+|Saturday, 5:30{{nbsp}}pm
+|[[Sydney Football Stadium (2022)|Allianz Stadium]]
+|Todd Smith
+|23,216
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|North Queensland|size=16}} [[North Queensland Cowboys]]'''
+|24–10
+| align="left" |{{leagueicon|Wests Tigers|size=16}} [[Wests Tigers]]
+|Saturday, 7:30{{nbsp}}pm
+|[[North Queensland Stadium|Queensland Country Bank Stadium]]
+|[[Grant Atkins]]
+|17,888
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Auckland|size=16}} [[New Zealand Warriors]]'''
+|46–32
+| align="left" |{{leagueicon|Newcastle|size=16}} [[Newcastle Knights]]
+|Sunday, 2:00 pm
+|[[Mount Smart Stadium|Go Media Stadium]]
+|[[Adam Gee (referee)|Adam Gee]]
+|25,853
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Parramatta|size=16}} [[Parramatta Eels]]'''
+|38–18
+| align="left" |{{leagueicon|Cronulla|size=16}} [[Cronulla-Sutherland Sharks]]
+|Sunday, 4:05 pm
+|[[Western Sydney Stadium|CommBank Stadium]]
+|[[Ashley Klein]]
+|18,074
+|- style="text-align:center; background:#f5faff;" 
+| colspan="7" align="left" |Bye: {{leagueicon|Canberra|size=16}} [[Canberra Raiders]]
+|-
+! colspan="7" align="left" |Source:<ref>{{Cite web |title=Draw |url=https://www.nrl.com/draw/?competition=111&round=26&season=2026 |access-date=2025-11-14 |website=National Rugby League |language=en}}</ref>
+|}
+
+* St George Illawarra won their first wooden spoon as a joint venture club.
+
+=== Round 27 ===
+'''September 3–6'''
+{| class="wikitable" style="border-collapse:collapse; text-align:center; width:100%;"
+|- style="text-align:center; background:#f5faff;"  style="background:#c1d8ff;"
+! rowspan="2" |Home
+! rowspan="2" |Score
+! rowspan="2" |Away
+! colspan="4" |Match information
+|-
+! width="17%" |Day & time
+! width="17%" |Venue
+! width="17%" |Referee
+! width="5%" |Attendance
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Canterbury|size=16}} [[Canterbury-Bankstown Bulldogs]]
+|20–34
+| align="left" |'''{{leagueicon|Brisbane|size=16}} [[Brisbane Broncos]]'''
+|Thursday, 7:50 pm
+|[[Stadium Australia|Accor Stadium]]
+|[[Grant Atkins]]
+|13,802
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Gold Coast Titans|size=16}} [[Gold Coast Titans]]
+|20–24
+| align="left" |'''{{leagueicon|Dolphins|size=16}} [[Dolphins (NRL)|Dolphins]]'''
+|Friday, 6:00 pm
+|[[Robina Stadium|Cbus Super Stadium]]
+|Wyatt Raymond
+|17,053
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|South Sydney|size=16}} [[South Sydney Rabbitohs]]'''
+|50–20
+| align="left" |{{leagueicon|Eastern Suburbs|size=16}} [[Sydney Roosters]]
+|Friday, 8:00 pm
+|[[Sydney Football Stadium (2022)|Allianz Stadium]]
+|[[Adam Gee (referee)|Adam Gee]]
+|41,513
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Auckland|size=16}} [[New Zealand Warriors]]'''
+|31–30
+| align="left" |{{leagueicon|Manly|size=16}} [[Manly Warringah Sea Eagles]]
+|Saturday, 3:00{{nbsp}}pm
+|[[Mount Smart Stadium|Go Media Stadium]]
+|[[Gerard Sutton (referee)|Gerard Sutton]]
+|26,206
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|North Queensland|size=16}} [[North Queensland Cowboys]]
+|30–50
+| align="left" |'''{{leagueicon|Canberra|size=16}} [[Canberra Raiders]]'''
+|Saturday, 5:30{{nbsp}}pm
+|[[North Queensland Stadium|Queensland Country Bank Stadium]]
+|Nick Pelgrave
+|18,982
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |{{leagueicon|Cronulla|size=16}} [[Cronulla-Sutherland Sharks]]
+|20–24
+| align="left" |'''{{leagueicon|Melbourne|size=16}} [[Melbourne Storm]]'''
+|Saturday, 7:30{{nbsp}}pm
+|[[Endeavour Field|Ocean Protect Stadium]]
+|Todd Smith
+|12,184
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|St. George|size=16}} [[St. George Illawarra Dragons]]'''
+|24–22
+| align="left" |{{leagueicon|Parramatta|size=16}} [[Parramatta Eels]]
+|Sunday, 2:00 pm
+|[[Wollongong Showground|WIN Stadium]]
+|Liam Kennedy
+|17,013
+|- style="text-align:center; background:#f5faff;" 
+| align="left" |'''{{leagueicon|Penrith|size=16}} [[Penrith Panthers]]'''
+|38–10
+| align="left" |{{leagueicon|Wests Tigers|size=16}} [[Wests Tigers]]
+|Sunday, 4:05 pm
+|[[Western Sydney Stadium|CommBank Stadium]]
+|[[Ashley Klein]]
+|18,332
+|- style="text-align:center; background:#f5faff;" 
+| colspan="7" align="left" |Bye: {{leagueicon|Newcastle|size=16}} [[Newcastle Knights]]
+|-
+! colspan="7" align="left" |Source:<ref>{{Cite web |title=Draw |url=https://www.nrl.com/draw/?competition=111&round=27&season=2026 |access-date=2025-11-14 |website=National Rugby League |language=en}}</ref>
+|}
+
+==Finals series==
+{{main|2026 NRL finals series}}
+{| border="1" cellpadding="3" cellspacing="0" style="border-collapse:collapse; font-size:90%; text-align:center; width:100%;"
+|- style="background:#c1d8ff;"
+! rowspan="2" style="width:21%;" |Home
+! rowspan="2" style="width:6%;" |Score
+! rowspan="2" style="width:21%;" |Away
+! colspan="6" |Match Information
+|- style="background:#efefef;"
+! width="17%" |Date and time (AEST)
+! width="17%" |Venue
+! width="11%" |Referee
+! width="7%" |Attendance
+|- style="background:#d0e7ff;"
+| colspan="7" | '''Qualifying and elimination finals'''
+|- style="background:#f5faff;"
+| align="left" |  {{leagueicon|South Sydney|size=16}} [[South Sydney Rabbitohs]]
+| 10–20
+| align="left" |  '''{{leagueicon|Newcastle|size=16}} [[Newcastle Knights]]'''
+| 11 September, 19:50
+| [[Sydney Football Stadium (2022)|Allianz Stadium]]
+| [[Ashley Klein]]
+| 28,152
+|- style="background:#f5faff;"
+| align="left" |  {{leagueicon|Auckland|size=16}} [[New Zealand Warriors]]
+| 16–26
+| align="left" |  '''{{leagueicon|Dolphins|size=16}} [[Dolphins (NRL)|Dolphins]]'''
+| 12 September, 16:05
+| [[Mt Smart Stadium|Go Media Stadium]]
+| [[Adam Gee (referee)|Adam Gee]]
+| 26,131
+|- style="background:#f5faff;"
+| align="left" |  '''{{leagueicon|Cronulla|size=16}} [[Cronulla-Sutherland Sharks]]'''
+| 26–16
+| align="left" |  {{leagueicon|North Queensland|size=16}} [[North Queensland Cowboys]]
+| 12 September, 19:50
+| [[Sydney Football Stadium (2022)|Allianz Stadium]]
+| [[Grant Atkins]]
+| 17,249
+|- style="background:#f5faff;"
+| align="left" |  '''{{leagueicon|Penrith|size=16}} [[Penrith Panthers]]'''
+| 19–12
+| align="left" |  {{leagueicon|Eastern Suburbs|size=16}} [[Sydney Roosters]]
+| 13 September, 16:05
+| [[Western Sydney Stadium|Commbank Stadium]]
+| [[Gerard Sutton (referee)|Gerard Sutton]]
+| 22,148
+|- style="background:#d0e7ff;"
+| colspan="7" | '''Semi-finals'''
+|- style="background:#f5faff;"
+| align="left" |  '''{{leagueicon|Eastern Suburbs|size=16}} [[Sydney Roosters]]'''
+| 46–10
+| align="left" |  {{leagueicon|Cronulla|size=16}} [[Cronulla-Sutherland Sharks]]
+| 19 September, 19:50
+| [[Sydney Football Stadium (2022)|Allianz Stadium]]
+| [[Adam Gee (referee)|Adam Gee]]
+| 39,147
+|- style="background:#f5faff;"
+| align="left" |  {{leagueicon|Auckland|size=16}} [[New Zealand Warriors]]
+| 10–12
+| align="left" |  '''{{leagueicon|Newcastle|size=16}} [[Newcastle Knights]]'''
+| 20 September, 16:05
+| [[Eden Park]]
+| [[Ashley Klein]]
+| 48,511
+|- style="background:#d0e7ff;"
+| colspan="7" | '''Preliminary finals'''
+|- style="background:#f5faff;"
+| align="left" |  {{leagueicon|Dolphins|size=16}} [[Dolphins (NRL)|Dolphins]]
+| 20–36
+| align="left" | '''{{leagueicon|Eastern Suburbs|size=16}} [[Sydney Roosters]]'''
+| 25 September, 19:50
+| [[Lang Park|Suncorp Stadium]]
+| [[Adam Gee (referee)|Adam Gee]]
+| 52,286
+|- style="background:#f5faff;"
+| align="left" |  {{leagueicon|Penrith|size=16}} [[Penrith Panthers]]
+| 14–22
+| align="left" | '''{{leagueicon|Newcastle|size=16}} [[Newcastle Knights]]'''
+| 27 September, 16:00
+| [[Accor Stadium]]
+| [[Gerard Sutton (referee)|Gerard Sutton]]
+| 57,102
+|- style="background:#d0e7ff;"
+| colspan="7" |'''[[2026 NRL Grand Final|Grand Final]]'''
+|- style="background:#f5faff;"
+| align="left" |'''{{leagueicon|Eastern Suburbs|size=16}} [[Sydney Roosters]]'''
+| 19–18
+| align="left" |{{leagueicon|Newcastle|size=16}} [[Newcastle Knights]]
+| 4 October, 18:30
+|[[Stadium Australia|Accor Stadium]]
+| [[Adam Gee (referee)|Adam Gee]]
+| 80,814
+|}
+*The crowd of 48,511 at the New Zealand vs Newcastle semi final broke the record for the highest attended rugby league match in New Zealand.
+*Newcastle became the first side to go from a wooden spoon to a Grand Final the following year since [[2010 NRL season|2010]].
+*The crowd of 80,814 for the Grand Final was the largest crowd Newcastle have played in front of since the [[2001 NRL Grand Final|2001 Grand Final]].
+*Sydney became the first team to win the comp after conceding 50 points.
+
+===Bracket===
+{{8TeamBracket-PagePlayoff|RD2-RD3-cross=y|team-width=180|score-width=40|boldwinner=high|RD1-text1=13 September – [[Western Sydney Stadium|Sydney]]|RD1-team1={{leagueicon|Penrith|16}} [[Penrith Panthers|Penrith]]|RD1-score1=19|RD1-team2={{leagueicon|Sydney|16}} [[Sydney Roosters|Sydney]]|RD1-score2=12|RD1-text4=12 September – [[Mount Smart Stadium|Auckland]]|RD1-team7={{leagueicon|Auckland|16}} [[New Zealand Warriors|New Zealand]]|RD1-score7=16|RD1-team8={{leagueicon|Dolphins|16}} [[Dolphins (NRL)|Dolphins]]|RD1-score8=26|RD1-text2=12 September – [[Sydney Football Stadium (2022)|Sydney]]|RD1-team3={{leagueicon|Cronulla|16}} [[Cronulla-Sutherland Sharks|Cronulla]]|RD1-score3=26|RD1-team4={{leagueicon|North Queensland|16}} [[North Queensland Cowboys|North Queensland]]|RD1-score4=16|RD1-text3=11 September – [[Sydney Football Stadium (2022)|Sydney]]|RD1-team5={{leagueicon|South Sydney|16}} [[South Sydney Rabbitohs|South Sydney]]|RD1-score5=10|RD1-team6={{leagueicon|Newcastle|16}} [[Newcastle Knights|Newcastle]]|RD1-score6=20|RD2-text1=19 September – [[Sydney Football Stadium (2022)|Sydney]]|RD2-team1={{leagueicon|Sydney|16}} '''[[Sydney Roosters|Sydney]]'''|RD2-score1=46|RD2-team2={{leagueicon|Cronulla|16}} [[Cronulla-Sutherland Sharks|Cronulla]]|RD2-score2=10|RD2-text2=20 September – [[Eden Park|Auckland]]|RD2-team3={{leagueicon|Auckland|16}} [[New Zealand Warriors|New Zealand]]|RD2-score3=10|RD2-team4={{leagueicon|Newcastle|16}} '''[[Newcastle Knights|Newcastle]]'''|RD2-score4=12|RD3-text1=27 September – [[Western Sydney Stadium|Sydney]]|RD3-team1={{leagueicon|Penrith|16}} [[Penrith Panthers|Penrith]]|RD3-score1=14|RD3-team2={{leagueicon|Newcastle|16}} '''[[Newcastle Knights|Newcastle]]''' |RD3-score2=22|RD3-text2=25 September – [[Lang Park|Brisbane]]|RD3-team3={{leagueicon|Dolphins|16}} [[Dolphins (NRL)|Dolphins]]|RD3-score3=20|RD3-team4={{leagueicon|Sydney|16}} '''[[Sydney Roosters|Sydney]]'''|RD3-score4=36|RD4-text1=4 October – [[Stadium Australia|Sydney]]|RD4-team1={{leagueicon|Sydney|16}} '''[[Sydney Roosters|Sydney]]'''|RD4-score1=19|RD4-team2={{leagueicon|Newcastle|16}} [[Newcastle Knights|Newcastle]]|RD4-score2=18}}
+
+== Stadiums used ==
+{| class="wikitable sortable"
+|+
+!Stadium
+!Games played
+!Teams / Events
+!Total attendance
+!Average attendance
+!Highest attendance
+|-
+|[[Brookvale Oval|4 Pines Park]]
+|12
+|{{leagueicon|Manly|size=16}} [[Manly Warringah Sea Eagles]]
+|189,668
+|15,806
+|17,389
+|-
+|[[Melbourne Rectangular Stadium|AAMI Park]]
+|11
+|{{leagueicon|Melbourne|size=16}} [[Melbourne Storm]]
+|214,085
+|19,462
+|28,245
+|-
+|[[Stadium Australia|Accor Stadium]]
+|20
+|{{leagueicon|Canterbury|size=16}} [[Canterbury-Bankstown Bulldogs]], {{leagueicon|South Sydney|size=16}} [[South Sydney Rabbitohs]], [[2026 NRL Grand Final|Grand Final]]
+|524,307
+|26,215
+|80,814
+|-
+|[[Allegiant Stadium]]
+|2{{efn|Includes 1 double-header.}}
+|{{leagueicon|Canterbury|size=16}} [[Canterbury-Bankstown Bulldogs]], {{leagueicon|Newcastle|size=16}} [[Newcastle Knights]]
+|45,719
+|45,719
+|45,719
+|-
+|[[Sydney Football Stadium (2022)|Allianz Stadium]]
+|17
+|{{leagueicon|South Sydney|size=16}} [[South Sydney Rabbitohs]], {{leagueicon|St. George|size=16}} [[St. George Illawarra Dragons]], {{leagueicon|Eastern Suburbs|size=16}} [[Sydney Roosters]]
+|450,625
+|26,507
+|41,513
+|-
+|[[Campbelltown Sports Stadium]]
+|4
+|{{leagueicon|Wests Tigers|size=16}} [[Wests Tigers]]
+|55,263
+|13,816
+|17,316
+|-
+|[[Carrington Park]]
+|1
+|{{leagueicon|Penrith|16}} [[Penrith Panthers]]
+|12,000
+|12,000
+|12,000
+|-
+|[[Robina Stadium|Cbus Super Stadium]]
+|11
+|{{leagueicon|Gold Coast Titans|size=16}} [[Gold Coast Titans]]
+|194,657
+|17,696
+|26,223
+|-
+|[[Western Sydney Stadium|CommBank Stadium]]
+|25
+|{{leagueicon|Parramatta|size=16}} [[Parramatta Eels]], {{leagueicon|Penrith|16}} [[Penrith Panthers]], {{leagueicon|Wests Tigers|size=16}} [[Wests Tigers]]
+|453,837
+|18,153
+|29,397
+|-
+|[[Eden Park]]
+|1
+|{{leagueicon|Auckland|size=16}} [[New Zealand Warriors]]
+|48,511
+|48,511
+|48,511
+|-
+|[[Canberra Stadium|GIO Stadium]]
+|12
+|{{leagueicon|Canberra|size=16}} [[Canberra Raiders]]
+|179,588
+|14,966
+|20,512
+|-
+|[[Glen Willow Regional Sports Stadium|Glen Willow Oval]]
+|1
+|{{leagueicon|Penrith|16}} [[Penrith Panthers]]
+|10,000
+|10,000
+|10,000
+|-
+|[[Mount Smart Stadium|Go Media Stadium]]
+|10
+|{{leagueicon|Auckland|size=16}} [[New Zealand Warriors]]
+|248,547
+|24,855
+|26,206
+|-
+|[[Perth Rectangular Stadium|HBF Park]]
+|1
+|{{leagueicon|Melbourne|size=16}} [[Melbourne Storm]]
+|15,169
+|15,169
+|15,169
+|-
+|[[Wellington Regional Stadium|Hnry Stadium]]
+|1
+|{{leagueicon|Auckland|size=16}} [[New Zealand Warriors]]
+|34,812
+|34,812
+|34,812
+|-
+|[[Dolphin Stadium (Brisbane)|Kayo Stadium]]
+|2
+|{{leagueicon|Dolphins|size=16}} [[Dolphins (NRL)|Dolphins]]
+|20,046
+|10,023
+|10,023
+|-
+|[[Leichhardt Oval]]
+|3
+|{{leagueicon|Wests Tigers|size=16}} [[Wests Tigers]]
+|52,563
+|17,521
+|17,773
+|-
+|[[Newcastle International Sports Centre|McDonald Jones Stadium]]
+|11
+|{{leagueicon|Newcastle|size=16}} [[Newcastle Knights]]
+|239,893
+|21,808
+|24,537
+|-
+|[[Endeavour Field|Ocean Protect Stadium]]
+|10
+|{{leagueicon|Cronulla|size=16}} [[Cronulla-Sutherland Sharks]]
+|125,807
+|12,581
+|14,989
+|-
+|[[Te Kaha (stadium)|One New Zealand Stadium]]
+|1
+|{{leagueicon|Auckland|size=16}} [[New Zealand Warriors]]
+|24,365
+|24,365
+|24,365
+|-
+|[[Perth Stadium|Optus Stadium]]
+|2{{efn|Includes 1 double-header.}}
+|{{leagueicon|Cronulla|size=16}} [[Cronulla-Sutherland Sharks]], {{leagueicon|South Sydney|size=16}} [[South Sydney Rabbitohs]]
+|33,404
+|33,404
+|33,404
+|-
+|[[Central Coast Stadium|polytec Stadium]]
+|2
+|{{leagueicon|South Sydney|size=16}} [[South Sydney Rabbitohs]], {{leagueicon|Eastern Suburbs|size=16}} [[Sydney Roosters]]
+|32,166
+|16,083
+|19,940
+|-
+|[[North Queensland Stadium|Queensland Country Bank Stadium]]
+|12
+|{{leagueicon|North Queensland|size=16}} [[North Queensland Cowboys]]
+|232,771
+|19,398
+|25,461
+|-
+|[[Jubilee Stadium|St. George Venues Jubilee Stadium]]
+|5
+|{{leagueicon|St. George|size=16}} [[St. George Illawarra Dragons]]
+|49,712
+|9,942
+|12,431
+|-
+|[[Lang Park|Suncorp Stadium]]
+|30{{efn|Includes [[Magic Round (NRL)|1 double-header & 2 triple-headers]].}}
+|{{leagueicon|Brisbane|size=16}} [[Brisbane Broncos]], {{leagueicon|Dolphins|size=16}} [[Dolphins (NRL)|Dolphins]], [[Magic Round (NRL)|Magic Round]]
+|942,564
+|37,703
+|52,286
+|-
+|[[Marrara Oval|TIO Stadium]]
+|1
+|{{leagueicon|Dolphins|size=16}} [[Dolphins (NRL)|Dolphins]]
+|12,570
+|12,570
+|12,570
+|-
+|[[Wollongong Showground|WIN Stadium]]
+|5
+|{{leagueicon|St. George|size=16}} [[St. George Illawarra Dragons]]
+|60,039
+|12,008
+|17,013
+|}
+
+== Notes ==
+{{notelist}}
+
+== References ==
+<references />
+
+{{2026 in rugby league}}{{NRL}}{{National Rugby League seasons}}
+
+[[Category:2026 NRL season]]
