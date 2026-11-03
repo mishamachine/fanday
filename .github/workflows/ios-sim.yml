@@ -1,0 +1,61 @@
+# Fanday iOS Simulator smoke run on GitHub's macOS runners (no Xcode on the dev Mac).
+# Builds the app unsigned, boots an iPhone simulator, launches, screenshots, checks for crashes.
+# Cost: private repo macOS minutes bill at 10x (about 200 free macOS min/month). See scripts/ios-sim/README.md.
+name: ios-sim
+
+on:
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: 'Git ref (branch, tag or SHA) to build'
+        type: string
+        required: false
+        default: ''
+  pull_request:
+    paths:
+      - 'ios/**'
+      - 'src/**'
+      - 'package*.json'
+      - 'scripts/ios-sim/**'
+      - '.github/workflows/ios-sim.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ios-sim-${{ github.event.pull_request.number || github.event.inputs.ref || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  simulator:
+    runs-on: macos-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          ref: ${{ github.event.inputs.ref || '' }}
+          persist-credentials: false
+
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install, native web build, cap sync
+        run: |
+          npm ci
+          # Publishable Supabase key only; no secrets.
+          cp .env.example .env
+          npx vite build --mode native --outDir dist-native
+          npx cap sync ios
+
+      - name: Build, boot, launch, screenshot
+        run: bash scripts/ios-sim/run.sh
+
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        if: always()
+        with:
+          name: ios-sim-${{ github.run_id }}
+          path: artifacts/
+          if-no-files-found: warn
+          retention-days: 7
