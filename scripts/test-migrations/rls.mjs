@@ -162,6 +162,50 @@ await svc(`select fanday.record_link_click('${G1}','watch')`); await svc(`select
 ok('link_clicks: one counter row, server-only, no person columns', (await db.query(`select clicks from fanday.link_clicks`)).rows[0].clicks === 2 && !!(await as('authenticated', A, `select fanday.record_link_click('${G1}','watch')`)).error
   && String(await n('authenticated', A, 'select 1 from fanday.link_clicks')).startsWith('ERR:') && (await db.query(`select string_agg(column_name,',' order by column_name) c from information_schema.columns where table_schema='fanday' and table_name='link_clicks'`)).rows[0].c === 'clicks,day,game_id,slot')
 
+// ---- device id ownership is one atomic statement (no check-then-write gap)
+const RACE = 'dddddddd-0000-0000-0000-0000000000ff'
+// two fresh tokens (T1 was claimed above and T2 revoked)
+const R1 = '1'.repeat(64), R2 = '2'.repeat(64); await reg(R1); await reg(R2)
+const race = await Promise.all([R1, R2].map((t) => as('anon', null, `select fanday.device_calendar_upsert('${t}','${RACE}','ios','c','[]'::jsonb)`)))
+ok('race: two tokens upserting the same new device id -> exactly one owns it, the other is refused', race.filter((r) => r.error).length === 1 && race.filter((r) => r.rows).length === 1
+  && (await db.query(`select count(*)::int c from fanday.devices where id='${RACE}'`)).rows[0].c === 1)
+const winner = (await db.query(`select token_id::text t from fanday.devices where id='${RACE}'`)).rows[0].t
+ok('race: the loser changed nothing (platform/calendar untouched), the winner can still update', (await db.query(`select calendar_id c from fanday.devices where id='${RACE}'`)).rows[0].c === 'c'
+  && !(await as('anon', null, `select fanday.device_calendar_upsert('${winner === (await db.query(`select id::text i from fanday.device_tokens where token_hash = sha256(convert_to('${R1}','UTF8'))`)).rows[0].i ? R1 : R2}','${RACE}','ios','c2','[]'::jsonb)`)).error
+  && (await db.query(`select calendar_id c from fanday.devices where id='${RACE}'`)).rows[0].c === 'c2')
+await db.exec(`insert into fanday.devices (id, user_id, platform) values ('dddddddd-0000-0000-0000-0000000000fe','${B}','ios')`)
+ok('a user-owned device id is refused to a token and left untouched', !!(await as('anon', null, `select fanday.device_calendar_upsert('${R1}','dddddddd-0000-0000-0000-0000000000fe','android','x','[]'::jsonb)`)).error
+  && (await db.query(`select platform p, calendar_id c from fanday.devices where id='dddddddd-0000-0000-0000-0000000000fe'`)).rows[0].p === 'ios')
+
+// ---- usage log is capped per device per day
+const LT = '9'.repeat(64); const ltId = await reg(LT)
+for (let i = 0; i < 205; i++) await as('anon', null, `select fanday.device_log_event('${LT}','open')`)
+ok('device_log_event: 200 per device per UTC day, the rest dropped silently (no error)', (await db.query(`select count(*)::int c from fanday.usage_events where token_id='${ltId}'`)).rows[0].c === 200
+  && !(await as('anon', null, `select fanday.device_log_event('${LT}','open')`)).error)
+
+// ---- alert dedupe
+ok('alert_once: true once per kind and window, then false; service_role only', (await svc(`select fanday.alert_once('k', date_trunc('hour', now())) a`)).rows[0].a === true
+  && (await svc(`select fanday.alert_once('k', date_trunc('hour', now())) a`)).rows[0].a === false
+  && (await svc(`select fanday.alert_once('k', date_trunc('hour', now()) + interval '1 hour') a`)).rows[0].a === true
+  && !!(await as('anon', null, `select fanday.alert_once('k', now())`)).error && String(await n('authenticated', A, 'select 1 from fanday.alert_log')).startsWith('ERR:'))
+
+// ---- Apple identity: which one Fanday added
+const mkA = async (n, provs, age = '0 minutes') => {
+  const id = `${n}${n}${n}${n}${n}${n}${n}${n}-0000-4000-8000-0000000000a${n}`
+  await db.exec(`insert into auth.users (id, email) values ('${id}','ap${n}@x.com'); ${provs.map(([p, a]) => `insert into auth.identities (user_id, provider, created_at) values ('${id}','${p}', now() - interval '${a ?? age}');`).join('')}`)
+  return id
+}
+const apple = async (id) => (await db.query(`select apple_added_by_fanday a from fanday.user_origin where user_id='${id}'`)).rows[0]?.a ?? null
+const [X1, X2, X3, X4] = [await mkA(1, [['apple']]), await mkA(2, [['google'], ['apple', '2 days']]), await mkA(3, [['google', '2 days']]), await mkA(4, [['google', '2 days']])]
+for (const x of [X1, X2, X3, X4]) await as('authenticated', x, 'select fanday.ensure_profile()')
+ok('apple origin: first use via Fanday Apple sign-in (fresh identity) -> apple_added_by_fanday = true', (await apple(X1)) === true)
+ok('apple origin: an Apple identity that already existed (older) -> false', (await apple(X2)) === false)
+ok('apple origin: no Apple identity -> false; a later fresh Apple identity (Fanday sign-in) flips it to true; older ones never do', (await apple(X3)) === false
+  && await (async () => { await db.exec(`insert into auth.identities (user_id, provider) values ('${X3}','apple')`); await as('authenticated', X3, 'select fanday.ensure_profile()'); return (await apple(X3)) === true })()
+  && await (async () => { await db.exec(`insert into auth.identities (user_id, provider, created_at) values ('${X4}','apple', now() - interval '3 days')`); await as('authenticated', X4, 'select fanday.ensure_profile()'); return (await apple(X4)) === false })())
+ok('apple origin: auth_user_deletable reports it', (await svc(`select fanday.auth_user_deletable('${X3}') r`)).rows[0].r.apple_added_by_fanday === true)
+await db.exec(`delete from fanday.user_origin where user_id in ('${X1}','${X2}','${X3}','${X4}'); delete from fanday.profiles where user_id in ('${X1}','${X2}','${X3}','${X4}')`)
+
 // ---- cleanup (service_role only, not scheduled)
 await reg('e'.repeat(64)); await reg('f'.repeat(64))
 await db.exec(`update fanday.device_tokens set last_used_at = now() - interval '25 months' where token_hash = sha256(convert_to('${'e'.repeat(64)}','UTF8'));

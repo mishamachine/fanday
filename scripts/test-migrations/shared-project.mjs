@@ -38,7 +38,7 @@ for (const [id, email, meta] of [[U.A, 'a@x.com', '{}'], [U.B, 'b@x.com', '{}'],
   await db.exec(`insert into auth.users (id, email, raw_app_meta_data) values ('${id}','${email}','${meta}')`)
 }
 await db.exec(`insert into public.user_progress (user_id, lesson_id) values ('${U.A}',1),('${U.C}',1); insert into public.user_settings (user_id, settings) values ('${U.A}','{"x":1}');
-  insert into public.chess_events (user_id, kind) values ('${U.C}','move'); insert into public.chess_frames (user_id, frame) values ('${U.D}','{}');`)
+  insert into public.chess_events (game_id, kind) values ('g1','move'); insert into public.chess_frames (game_id, frame) values ('g1','{}');`)
 
 const before = await catalogSnapshot(db)
 const sha = (s) => createHash('sha256').update(s).digest('hex')
@@ -61,7 +61,7 @@ ok('CATALOG OUTSIDE fanday IS BYTE-IDENTICAL after apply + 2 reapplies', before 
 const fan = (await db.query(`select (select count(*)::int from pg_class c join pg_namespace n on n.oid=c.relnamespace where n.nspname='fanday' and c.relkind='r') t,
   (select count(*)::int from pg_proc p join pg_namespace n on n.oid=p.pronamespace where n.nspname='fanday') f,
   (select count(*)::int from fanday.leagues) l, (select count(*)::int from fanday.teams) tm, (select count(*)::int from fanday.teams where tz is not null) tz`)).rows[0]
-ok('fanday got its tables, functions and seeds (15 tables, 19 leagues, 434 teams, 30 MLS zones)', fan.t === 15 && fan.f >= 20 && fan.l === 19 && fan.tm === 434 && fan.tz === 30, JSON.stringify(fan))
+ok('fanday got its tables, functions and seeds (16 tables, 19 leagues, 434 teams, 30 MLS zones)', fan.t === 16 && fan.f >= 20 && fan.l === 19 && fan.tm === 434 && fan.tz === 30, JSON.stringify(fan))
 ok('no trigger on auth.users or on any fanday table (FK system triggers on auth.users are covered by the snapshot: unchanged)', (await db.query(`select count(*)::int c from pg_trigger t join pg_class c on c.oid=t.tgrelid join pg_namespace n on n.oid=c.relnamespace
   where not t.tgisinternal and ((n.nspname='auth' and c.relname='users') or n.nspname='fanday')`)).rows[0].c === 0)
 ok('nothing fanday owns lives in public', (await db.query(`select count(*)::int c from pg_depend d join pg_proc p on p.oid=d.objid where false`)).rows[0].c === 0

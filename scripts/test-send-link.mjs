@@ -15,12 +15,13 @@ ok('email: subject starts with "Fanday:"', SUBJECT.startsWith('Fanday:'))
 
 // ---- handler with fakes
 function world({ existing = [], failSend = false } = {}) {
-  const w = { users: new Set(existing), created: [], links: [], sent: [], origins: [], counters: new Map(), salt: 'salt-1', errors: [] }
+  const w = { users: new Set(existing), created: [], links: [], sent: [], origins: [], alerts: new Set(), counters: new Map(), salt: 'salt-1', errors: [] }
   w.deps = {
     rpc: async (fn, a) => {
       if (fn === 'rl_salt') return { data: w.salt, error: null }
       if (fn === 'rl_hit') { const k = `${a.p_scope}|${a.p_key}|${a.p_window}`; const n = (w.counters.get(k) ?? 0) + 1; w.counters.set(k, n); return { data: n <= a.p_limit, error: null } }
       if (fn === 'auth_user_id_by_email') return { data: w.users.has(a.p_email) ? 'uid' : null, error: null }
+      if (fn === 'alert_once') { const k = `${a.p_kind}|${a.p_window}`; const first = !w.alerts.has(k); w.alerts.add(k); return { data: first, error: null } }
       if (fn === 'set_user_origin') { w.origins.push([a.p_user, a.p_created]); return { data: null, error: null } }
       return { data: null, error: { message: 'unknown' } }
     },
@@ -56,7 +57,12 @@ ok('per address: 3 per hour; the 4th and 5th get the same generic reply but no m
 
 w = world()
 for (let i = 0; i < 30; i++) await call(w, { email: `u${i}@x.com`, redirect: WEB }, { 'x-forwarded-for': `10.0.0.${i}` })
-ok('overall: 20 per hour across all callers', w.sent.length === 20, String(w.sent.length))
+const alerts = w.sent.filter((m) => m.to === 'machinemisha+fanday@gmail.com')
+ok('overall: 20 sign-in emails per hour across all callers, plus exactly ONE alert mail to machinemisha+fanday (deduped per hour)', w.sent.length - alerts.length === 20 && alerts.length === 1, `${w.sent.length} sent, ${alerts.length} alerts`)
+ok('alert: subject starts "Fanday:" and names no address', alerts[0].subject.startsWith('Fanday:') && !/@.*@/.test(alerts[0].text) && !alerts[0].html.includes('@x.com'))
+w.deps.now = () => new Date('2026-11-03T11:30:00Z')
+for (let i = 40; i < 46; i++) await call(w, { email: `u${i}@x.com`, redirect: WEB }, { 'x-forwarded-for': `10.0.1.${i}` })
+ok('next hour: new budget of 20, and a new alert once it trips again', w.sent.filter((m) => m.to !== 'machinemisha+fanday@gmail.com').length === 26)
 
 w = world()
 for (let i = 0; i < 14; i++) await call(w, { email: `p${i}@x.com`, redirect: WEB }, { 'x-forwarded-for': '7.7.7.7' })

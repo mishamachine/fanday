@@ -100,6 +100,9 @@ create table if not exists fanday.profiles (
 create table if not exists fanday.user_origin (
   user_id            uuid primary key,
   created_by_fanday  boolean not null,
+  -- true when an Apple identity appeared through a Fanday sign-in (seen fresh, under 10 minutes old, by ensure_profile). Only such an
+  -- identity is unlinked on account deletion; an Apple identity from anywhere else is left alone.
+  apple_added_by_fanday boolean not null default false,
   created_at         timestamptz not null default now()
 );
 
@@ -176,6 +179,12 @@ create table if not exists fanday.rate_counters (
   n            int not null default 0,
   primary key (scope, key, window_start)
 );
+-- One row per alert kind and window: lets fanday-send-link mail "the hourly cap was reached" at most once per hour.
+create table if not exists fanday.alert_log (
+  kind         text not null,
+  window_start timestamptz not null,
+  primary key (kind, window_start)
+);
 create table if not exists fanday.rl_salts (
   day  date primary key,
   salt text not null
@@ -197,6 +206,7 @@ alter table fanday.link_clicks    enable row level security;
 alter table fanday.usage_events   enable row level security;
 alter table fanday.rate_counters  enable row level security;
 alter table fanday.rl_salts       enable row level security;
+alter table fanday.alert_log      enable row level security;
 
 drop policy if exists leagues_read      on fanday.leagues;
 drop policy if exists teams_read        on fanday.teams;
@@ -257,7 +267,7 @@ create policy usage_events_own_select on fanday.usage_events for select to authe
 -- ---------------------------------------------------------------- privileges (defence in depth beside RLS)
 revoke all on fanday.leagues, fanday.teams, fanday.sponsors, fanday.games, fanday.game_changes, fanday.profiles,
   fanday.user_origin, fanday.device_tokens, fanday.follows, fanday.devices, fanday.device_events, fanday.link_clicks, fanday.usage_events,
-  fanday.rate_counters, fanday.rl_salts from anon, authenticated;
+  fanday.rate_counters, fanday.rl_salts, fanday.alert_log from anon, authenticated;
 
 grant select on fanday.leagues, fanday.teams, fanday.sponsors, fanday.games, fanday.game_changes to anon, authenticated;
 grant select on fanday.profiles to authenticated;
@@ -276,12 +286,14 @@ grant usage, select on all sequences in schema fanday to service_role;
 -- and no origin row exists yet. Otherwise false. (Users made by fanday-send-link are recorded true by that function, via set_user_origin.)
 create or replace function fanday.ensure_profile() returns void
 language plpgsql security definer set search_path = '' as $$
-declare v_uid uuid := auth.uid(); v_created timestamptz; v_true boolean;
+declare v_uid uuid := auth.uid(); v_created timestamptz; v_true boolean; v_apple boolean;
 begin
   if v_uid is null then raise exception 'not authenticated' using errcode = '28000'; end if;
   insert into fanday.profiles (user_id, email)
     select u.id, u.email from auth.users u where u.id = v_uid
   on conflict (user_id) do update set email = excluded.email;
+  -- A fresh Apple identity seen here (this call follows a Fanday sign-in) was added by Fanday.
+  v_apple := exists (select 1 from auth.identities i where i.user_id = v_uid and i.provider = 'apple' and i.created_at > now() - interval '10 minutes');
   if not exists (select 1 from fanday.user_origin o where o.user_id = v_uid) then
     select u.created_at into v_created from auth.users u where u.id = v_uid;
     v_true := v_created is not null
@@ -289,7 +301,9 @@ begin
       and exists (select 1 from auth.identities i where i.user_id = v_uid)
       and not exists (select 1 from auth.identities i where i.user_id = v_uid and i.provider not in ('google', 'apple'))
       and not fanday.user_has_foreign_rows(v_uid);
-    insert into fanday.user_origin (user_id, created_by_fanday) values (v_uid, coalesce(v_true, false)) on conflict (user_id) do nothing;
+    insert into fanday.user_origin (user_id, created_by_fanday, apple_added_by_fanday) values (v_uid, coalesce(v_true, false), v_apple) on conflict (user_id) do nothing;
+  elsif v_apple then
+    update fanday.user_origin set apple_added_by_fanday = true where user_id = v_uid and not apple_added_by_fanday;
   end if;
 end $$;
 revoke all on function fanday.ensure_profile() from public, anon;
@@ -342,14 +356,16 @@ end $$;
 create or replace function fanday.device_calendar_upsert(p_token text, p_device uuid, p_platform text, p_calendar_id text, p_events jsonb)
 returns void
 language plpgsql security definer set search_path = '' as $$
-declare v_id uuid := fanday._token_id(p_token);
+declare v_id uuid := fanday._token_id(p_token); v_n int;
 begin
   if p_device is null then raise exception 'device id required' using errcode = '22023'; end if;
-  if exists (select 1 from fanday.devices d where d.id = p_device and d.token_id is distinct from v_id) then
-    raise exception 'device belongs to another owner' using errcode = '42501';
-  end if;
+  -- One atomic statement, no check-then-write gap: the update arm only fires for a row this token owns. If another owner (a user or
+  -- another token) holds the id, nothing is inserted or changed, zero rows come back, and we refuse.
   insert into fanday.devices (id, token_id, platform, calendar_id, last_sync_at) values (p_device, v_id, p_platform, p_calendar_id, now())
-  on conflict (id) do update set platform = excluded.platform, calendar_id = excluded.calendar_id, last_sync_at = now();
+  on conflict (id) do update set platform = excluded.platform, calendar_id = excluded.calendar_id, last_sync_at = now()
+    where fanday.devices.token_id = v_id;
+  get diagnostics v_n = row_count;
+  if v_n = 0 then raise exception 'device belongs to another owner' using errcode = '42501'; end if;
   insert into fanday.device_events (device_id, game_id, event_identifier, synced_rev)
     select p_device, x.game_id, x.event_identifier, x.synced_rev
       from jsonb_to_recordset(coalesce(p_events, '[]'::jsonb)) as x(game_id uuid, event_identifier text, synced_rev bigint)
@@ -368,6 +384,8 @@ create or replace function fanday.device_log_event(p_token text, p_name text) re
 language plpgsql security definer set search_path = '' as $$
 declare v_id uuid := fanday._token_id(p_token);
 begin
+  -- Best effort and capped: 200 events per device per UTC day; the rest are dropped without an error.
+  if not fanday.rl_hit('device-log', v_id::text, date_trunc('day', now() at time zone 'utc') at time zone 'utc', 200) then return; end if;
   insert into fanday.usage_events (token_id, name) values (v_id, p_name);
 end $$;
 
@@ -435,8 +453,17 @@ begin
   on conflict (scope, key, window_start) do update set n = c.n + 1 returning c.n into v_n;
   return v_n <= p_limit;
 end $$;
-revoke all on function fanday.rl_salt(), fanday.rl_hit(text, text, timestamptz, int) from public, anon, authenticated;
-grant execute on function fanday.rl_salt(), fanday.rl_hit(text, text, timestamptz, int) to service_role;
+-- True only for the first caller per (kind, window): the dedupe for alert emails. Old rows are removed by cleanup.
+create or replace function fanday.alert_once(p_kind text, p_window timestamptz) returns boolean
+language plpgsql security definer set search_path = '' as $$
+declare v_n int;
+begin
+  insert into fanday.alert_log (kind, window_start) values (p_kind, p_window) on conflict do nothing;
+  get diagnostics v_n = row_count;
+  return v_n = 1;
+end $$;
+revoke all on function fanday.rl_salt(), fanday.rl_hit(text, text, timestamptz, int), fanday.alert_once(text, timestamptz) from public, anon, authenticated;
+grant execute on function fanday.rl_salt(), fanday.rl_hit(text, text, timestamptz, int), fanday.alert_once(text, timestamptz) to service_role;
 
 -- ---------------------------------------------------------------- link counting (called by fanday-go)
 create or replace function fanday.record_link_click(p_game uuid, p_slot text) returns void
@@ -488,13 +515,15 @@ end $$;
 -- The rule: the auth user may be deleted only if Fanday created it (fanday.user_origin.created_by_fanday) AND it owns nothing outside `fanday`.
 create or replace function fanday.auth_user_deletable(p_user uuid) returns jsonb
 language plpgsql security definer set search_path = '' as $$
-declare v_created boolean; v_foreign boolean;
+declare v_created boolean; v_foreign boolean; v_apple boolean;
 begin
-  select o.created_by_fanday into v_created from fanday.user_origin o where o.user_id = p_user;
+  select o.created_by_fanday, o.apple_added_by_fanday into v_created, v_apple from fanday.user_origin o where o.user_id = p_user;
+  v_apple := coalesce(v_apple, false);
   v_created := coalesce(v_created, false);
   if not exists (select 1 from auth.users u where u.id = p_user) then v_created := false; end if;
   v_foreign := fanday.user_has_foreign_rows(p_user);
-  return jsonb_build_object('fanday_created', v_created, 'foreign_rows', v_foreign, 'deletable', v_created and not v_foreign);
+  return jsonb_build_object('fanday_created', v_created, 'foreign_rows', v_foreign, 'deletable', v_created and not v_foreign,
+                            'apple_added_by_fanday', v_apple);
 end $$;
 
 -- fanday-send-link records the users it creates. Never overwrites an existing row.
@@ -533,6 +562,7 @@ begin
       or coalesce(revoked_at, claimed_at) < now() - interval '30 days';
   get diagnostics v_n = row_count;
   delete from fanday.rate_counters where window_start < now() - interval '2 days';
+  delete from fanday.alert_log where window_start < now() - interval '2 days';
   return v_n;
 end $$;
 

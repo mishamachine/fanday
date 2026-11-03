@@ -25,16 +25,22 @@ export interface Limit { scope: string; value: string | null; window: 'hour' | '
 
 /**
  * Counts the limits IN ORDER and stops at the first one that is exceeded, so a later (global) limit is only consumed by callers that
- * passed the earlier (per-caller) ones. Returns true when every limit allows the call. Fails closed: a database error returns false.
- * `value` is hashed with the daily salt before it leaves this function; null = one shared bucket.
+ * passed the earlier (per-caller) ones. Returns null when every limit allows the call, else the scope of the limit that tripped
+ * (a database error returns 'error': fails closed). `value` is hashed with the daily salt before it leaves this function; null = one shared bucket.
  */
-export async function allow(rpc: Rpc, limits: Limit[], now = new Date()): Promise<boolean> {
+export async function firstTripped(rpc: Rpc, limits: Limit[], now = new Date()): Promise<string | null> {
   const s = await rpc('rl_salt', {})
-  if (s.error || typeof s.data !== 'string') return false
+  if (s.error || typeof s.data !== 'string') return 'error'
   for (const l of limits) {
     const key = l.value === null ? 'all' : await sha256Hex(`${s.data}:${l.scope}:${l.value}`)
     const r = await rpc('rl_hit', { p_scope: l.scope, p_key: key, p_window: l.window === 'hour' ? hourWindow(now) : dayWindow(now), p_limit: l.max })
-    if (r.error || r.data !== true) return false
+    if (r.error) return 'error'
+    if (r.data !== true) return l.scope
   }
-  return true
+  return null
+}
+
+/** True when every limit allows the call. */
+export async function allow(rpc: Rpc, limits: Limit[], now = new Date()): Promise<boolean> {
+  return (await firstTripped(rpc, limits, now)) === null
 }

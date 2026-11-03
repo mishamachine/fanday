@@ -71,7 +71,13 @@ Deno.serve(async (req) => {
         return r.ok
       },
     }, { appleIdentityId: appleIdent?.identity_id ?? appleIdent?.id ?? null })
-    if (!result.ok) { console.error('fanday-delete-account', result.error); return json({ error: 'Could not delete the account. Nothing was deleted; try again.' }, 500) }
+    if (!result.ok) {
+      console.error('fanday-delete-account', result.stage, result.error)
+      // 'rows': nothing was deleted. 'auth': your Fanday data is already gone but the sign-in account is still there; retrying finishes it.
+      return json({ error: result.stage === 'rows'
+        ? 'Could not delete the account. Nothing was deleted; try again.'
+        : 'Your Fanday data was deleted, but we could not finish closing the account. Please try again.' }, 500)
+    }
     return json({ deleted: true, authUserDeleted: result.authUserDeleted, appleRevoked, appleUnlinked: result.appleUnlinked })
   } catch (e) {
     console.error('fanday-delete-account', e)

@@ -1,5 +1,5 @@
 // A stand-in for the SHARED Supabase project (ywcrzkvwamjchjjkfrve) in a real Postgres (pglite): the Supabase roles, the bits of
-// `auth` that Fanday reads, and `public` tables with the names, user_id columns and RLS policies of Woofabulary and Chess Tutor
+// `auth` that Fanday reads, and `public` tables with the names, user_id columns (Woofabulary only: Chess Tutor has none) and RLS policies of Woofabulary and Chess Tutor
 // (as described in the README, "Anonymous sign-ins: effect on other apps", read-only check of 2026-11-03).
 // Column lists beyond user_id are minimal on purpose: only names, user_id and policy shape matter to Fanday's migrations.
 import { PGlite } from '@electric-sql/pglite'
@@ -22,7 +22,7 @@ create schema auth; grant usage on schema auth to anon, authenticated, service_r
 create table auth.users (id uuid primary key, email text, is_anonymous boolean not null default false,
   raw_app_meta_data jsonb not null default '{}'::jsonb, created_at timestamptz not null default now());
 create table auth.identities (id uuid primary key default gen_random_uuid(), user_id uuid not null references auth.users (id) on delete cascade,
-  provider text not null, identity_data jsonb not null default '{}'::jsonb);
+  provider text not null, identity_data jsonb not null default '{}'::jsonb, created_at timestamptz not null default now());
 create table auth.sessions (id uuid primary key default gen_random_uuid(), user_id uuid not null references auth.users (id) on delete cascade);
 create function auth.uid() returns uuid language sql stable as $$ select nullif(current_setting('request.jwt.claim.sub', true), '')::uuid $$;
 grant execute on function auth.uid() to anon, authenticated, service_role;
@@ -37,8 +37,9 @@ create table public.user_settings (user_id uuid primary key, settings jsonb, upd
 create table public.daily_activity (id serial primary key, user_id uuid not null, day date, n int);
 create table public.saved_lessons (id serial primary key, user_id uuid not null, lesson_id int);
 create view public.lesson_summaries as select l.id, l.title, w.n as week from public.lessons l left join public.weeks w on w.id = l.week_id;
-create table public.chess_events (id serial primary key, user_id text, kind text);   -- text user_id on purpose
-create table public.chess_frames (id serial primary key, user_id uuid, frame jsonb);
+-- Chess Tutor has no user_id column (checked read-only, 2026-11-03): its tables are keyed by game, RLS on and no policies.
+create table public.chess_events (id serial primary key, game_id text, kind text, payload jsonb);
+create table public.chess_frames (id serial primary key, game_id text, frame jsonb);
 
 create function public.touch_updated_at() returns trigger language plpgsql as $$ begin new.updated_at := now(); return new; end $$;
 create trigger user_settings_touch before update on public.user_settings for each row execute function public.touch_updated_at();

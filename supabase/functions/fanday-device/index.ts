@@ -5,7 +5,7 @@ import { allow, clientAddress, sha256Hex } from '../_shared/fanday-limits.ts'
 // POST { action: 'register' } -> { token }   (verify_jwt false: signed-out phones have no session)
 // Issues the device token that keys a signed-out user's follows. 32 random bytes from the platform CSPRNG, returned ONCE as 64 hex chars,
 // kept by the app in secure storage. Only sha256(token) is stored (fanday.device_tokens). No IP is stored: the per-caller limit counts
-// sha256(daily salt + address), and the salt is deleted after two days. Limits: 10 tokens per caller per day, 300 per hour overall.
+// sha256(daily salt + address), and the salt is deleted after two days. Limits: 20 tokens per caller per hour (caller = sha256 of daily salt + address), 2000 per hour overall.
 // Everything else the app does with the token is a direct RPC (fanday.device_*), including delete, so this is the only function it needs.
 const CORS = { 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type' }
 const json = (body: unknown, status = 200) => new Response(JSON.stringify(body), { status, headers: { ...CORS, 'Content-Type': 'application/json', 'Cache-Control': 'no-store' } })
@@ -24,7 +24,7 @@ Deno.serve(async (req) => {
     const db = createClient(Deno.env.get('SUPABASE_URL')!, secretKey(), { auth: { persistSession: false }, db: { schema: 'fanday' } })
     const rpc = (fn: string, args: Record<string, unknown>) => db.rpc(fn, args)
     const addr = clientAddress(req.headers, Number(Deno.env.get('FANDAY_TRUSTED_PROXY_HOPS')) || 1)
-    if (!(await allow(rpc, [{ scope: 'device-ip', value: addr, window: 'day', max: 10 }, { scope: 'device-all', value: null, window: 'hour', max: 300 }]))) {
+    if (!(await allow(rpc, [{ scope: 'device-ip', value: addr, window: 'hour', max: 20 }, { scope: 'device-all', value: null, window: 'hour', max: 2000 }]))) {
       return json({ error: 'Too many requests. Try again later.' }, 429)
     }
     const bytes = crypto.getRandomValues(new Uint8Array(32))
