@@ -156,9 +156,10 @@ export interface Kickoff {
 
 /** Combine a parsed date and time into a UTC kickoff. A label on the time wins over `fallback`.
  *  With neither, the time is TBC: we never guess a zone. */
-export function toKickoff(date: YMD, time: ParsedTime, fallback: Zone | null): Kickoff {
+export function toKickoff(date: YMD, time: ParsedTime, fallback: Zone | null, aliases?: Record<string, string>): Kickoff {
   if (time.kind === 'tbc') return { kickoffAt: null, timeTbc: true };
-  const zone = resolveZone(time.zoneLabel) ?? fallback;
+  const alias = time.zoneLabel ? aliases?.[time.zoneLabel.toUpperCase()] : undefined;
+  const zone = alias ? { iana: alias } : resolveZone(time.zoneLabel) ?? fallback;
   if (!zone) return { kickoffAt: null, timeTbc: true };
   return { kickoffAt: localToUtc(date.y, date.m, date.d, time.h, time.mi, zone), timeTbc: false };
 }

@@ -182,6 +182,18 @@ test('Liga MX: Club America 2026-27 (CST/PDT labels, Apertura section, bad minut
   assert.equal(first.away.name.normalize('NFD').replace(/[\u0300-\u036f]/g, ''), 'America');
 });
 
+test('Liga MX context: CT/CST/CDT labels map to America/Mexico_City (no DST), other labels keep their zone', () => {
+  const box = (time) => `{{Football box|date=3 July 2026|time=${time}|team1=A|team2=B|score=}}`;
+  const alias = { CT: 'America/Mexico_City', CST: 'America/Mexico_City', CDT: 'America/Mexico_City' };
+  const at = (t, ctx) => parseWikitext('football', box(t), ctx)[0].kickoffAt;
+  assert.equal(at('20:00 [[Central Time Zone|CDT]]', { zoneAliases: alias }), '2026-07-04T02:00:00Z'); // Mexico City is UTC-6 all year
+  assert.equal(at('20:00 [[Central Time Zone|CDT]]', {}), '2026-07-04T01:00:00Z'); // elsewhere CDT stays UTC-5
+  assert.equal(at('20:00 CT', { zoneAliases: alias }), '2026-07-04T02:00:00Z');
+  assert.equal(at('20:00 [[Pacific Time Zone|PDT]]', { zoneAliases: alias }), '2026-07-04T03:00:00Z');
+  const g = parse('football', 'america', { tz: 'America/Mexico_City', zoneAliases: alias });
+  assert.equal(find(g, '2026-06-28', 'Trival Valderas').kickoffAt, '2026-06-28T12:00:00Z');
+});
+
 test('Brasileirao: Flamengo 2026 ({{UTZ|21:30|-3}} times, Campeonato Brasileiro section)', () => {
   const g = parse('football', 'flamengo', { tz: 'America/Sao_Paulo' });
   const br = g.filter((x) => /^Campeonato Brasileiro/.test(x.section));

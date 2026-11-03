@@ -85,7 +85,10 @@ jobs:
               -H "Content-Type: application/json" \
               -H "x-ingest-secret: ${INGEST_SECRET}" \
               -d "$BODY" -o response.json
-            jq -c '{mode, planned, cursor, nextCursor, done, pagesFetched, pagesMissing: (.pagesMissing | length), gamesParsed, created, updated, held, vanished, changes, unmatchedTeams: (.unmatchedTeams | length), elapsedMs}' response.json
+            jq -c '{mode, planned, cursor, nextCursor, done, pagesFetched, pagesMissing: (.pagesMissing | length), gamesParsed, created, updated, held, vanished, changes, warnings: (.warnings | length), unmatchedTeams: (.unmatchedTeams | length), elapsedMs}' response.json
+            jq -r '(.warnings // [])[] | "::warning::" + .' response.json
+            jq -r '(.rolled // [])[] | "::notice::Season rollover " + .' response.json
+            jq -r '(.pagesFilled // [])[] | "::notice::Wikipedia page found " + .' response.json
             if [ "$(jq -r '.done' response.json)" = "true" ]; then
               jq -r 'if (.unmatchedTeams | length) > 0 then "::warning::Unmatched teams: " + (.unmatchedTeams | join(", ")) else empty end' response.json
               exit 0

@@ -29,7 +29,7 @@ export function parseFootball(wikitext: string, ctx: ParseContext = {}): ParsedG
     const home = team(p['team1']);
     const away = team(p['team2']);
     if (!date || !home || !away) continue;
-    const { kickoffAt, timeTbc } = toKickoff(date, parseTime(p['time']), fallbackZone(ctx, home));
+    const { kickoffAt, timeTbc } = toKickoff(date, parseTime(p['time']), fallbackZone(ctx, home), ctx.zoneAliases);
     out.push({
       home, away, date: isoDate(date), kickoffAt, timeTbc,
       status: statusFromScore(p['score']),

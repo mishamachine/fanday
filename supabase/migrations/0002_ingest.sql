@@ -5,10 +5,12 @@
 --   source_rank   2 = competition page (UCL, AFL, IPL, NRL), 1 = the home club's own page, 0 = any other page
 --   pending       a kickoff / date / status change seen once, held until the same value is seen on a later run
 --   missing_runs  consecutive runs in which the owning page no longer listed this future game
+--   missing_since when it was first missed; a game is marked postponed only after 2 runs AND 24 hours
 alter table public.games
   add column if not exists source_rank  smallint not null default 0,
   add column if not exists pending      jsonb,
-  add column if not exists missing_runs smallint not null default 0;
+  add column if not exists missing_runs smallint not null default 0,
+  add column if not exists missing_since timestamptz;
 
 -- Local zone of the home team (IANA name), used for times a page gives with no zone label (MLS). Null = unknown, time stays TBC.
 alter table public.teams add column if not exists tz text;
@@ -50,10 +52,12 @@ begin
          source_rank  = coalesce(x.source_rank, 0),
          pending      = nullif(x.pending, 'null'::jsonb),
          missing_runs = coalesce(x.missing_runs, 0),
+         missing_since = x.missing_since,
          updated_at   = now()
     from jsonb_to_recordset(coalesce(p_updates, '[]'::jsonb)) as x(
            id uuid, game_date date, kickoff_at timestamptz, time_tbc boolean, status text, venue text, broadcast text,
-           source_page text, source_rev bigint, source_rank smallint, pending jsonb, missing_runs smallint)
+           source_page text, source_rev bigint, source_rank smallint, pending jsonb, missing_runs smallint,
+           missing_since timestamptz)
    where g.id = x.id;
   get diagnostics n_upd = row_count;
 
@@ -69,3 +73,33 @@ $$;
 
 revoke all on function public.ingest_apply(jsonb, jsonb, jsonb) from public, anon, authenticated;
 grant execute on function public.ingest_apply(jsonb, jsonb, jsonb) to service_role;
+
+-- Season rollover (daily ingest): move a Wikipedia league to its next season, and fill or correct one team's Wikipedia page name.
+-- Each function can change exactly one column, only for Wikipedia-sourced leagues. Same rights as ingest_apply.
+create or replace function public.ingest_set_league_season(p_league_id text, p_season text)
+returns void
+language sql
+security definer
+set search_path = ''
+as $$
+  update public.leagues
+     set season = p_season
+   where id = p_league_id and source = 'wikipedia' and nullif(btrim(p_season), '') is not null;
+$$;
+
+create or replace function public.ingest_set_team_wiki_page(p_team_id text, p_wiki_page text)
+returns void
+language sql
+security definer
+set search_path = ''
+as $$
+  update public.teams t
+     set wiki_page = p_wiki_page
+   where t.id = p_team_id and nullif(btrim(p_wiki_page), '') is not null
+     and exists (select 1 from public.leagues l where l.id = t.league_id and l.source = 'wikipedia');
+$$;
+
+revoke all on function public.ingest_set_league_season(text, text) from public, anon, authenticated;
+revoke all on function public.ingest_set_team_wiki_page(text, text) from public, anon, authenticated;
+grant execute on function public.ingest_set_league_season(text, text) to service_role;
+grant execute on function public.ingest_set_team_wiki_page(text, text) to service_role;

@@ -33,6 +33,8 @@ export interface ParseContext {
   tz?: string;
   /** Take the fallback zone from the home team (MLS). With no label and no home zone the time is TBC. */
   zoneFromHome?: boolean;
+  /** Label (upper case) to IANA zone, overriding the fixed-offset table: Liga MX CT/CST/CDT -> America/Mexico_City. */
+  zoneAliases?: Record<string, string>;
   homeTz?: (home: TeamRef) => string | null;
   /** The team a team-season page is about (CFB, CBB, NFL). */
   subject?: TeamRef;

@@ -9,13 +9,16 @@
 //    Other pages may only insert games the owner does not list yet. A higher-ranked page takes ownership.
 //  * A kickoff, date, status or time_tbc change is held in games.pending and written (with its game_changes rows) only when the
 //    same new value is seen again on a later run at least MIN_CONFIRM_MS later. Venue and broadcast changes apply at once.
-//  * A future game its owner stops listing for 2 runs in a row is set to 'postponed' (never deleted) with a status change.
+//  * A future game its owner stops listing is set to 'postponed' (never deleted, logged) only after 2 runs AND 24 h since first missed.
+//    If a page would lose more than 3 games (or 10% of its owned games) in one run, the vanish step is skipped for it with a warning.
+//  * Daily runs also roll a league to its next season when that season's pages exist, and look for the Wikipedia page of any team
+//    whose page is missing, writing only leagues.season and teams.wiki_page.
 //  * The whole batch (inserts, updates, game_changes) is one RPC call = one transaction.
 
 import type { ParsedGame, TeamRef } from './types.ts';
 import { parseWikitext } from './parse.ts';
 import { canonicalInstant, collapseText, detectChanges, type FieldChange } from './detect.ts';
-import { LEAGUE_SOURCES, leagueForSection, seasonContext, sourceFor } from './sources.ts';
+import { LEAGUE_SOURCES, leagueForSection, nextSeason, seasonContext, sourceFor } from './sources.ts';
 import type { WikiPage } from './mediawiki.ts';
 
 /** leagues.id is the slug ('epl', 'nfl', 'ncaaf'), as in the foundation schema. */
@@ -29,7 +32,7 @@ export interface StoredGame {
   id: string; league_id: string; home_team_id: string; away_team_id: string; game_date: string;
   kickoff_at: string | null; time_tbc: boolean; status: string; venue: string | null; broadcast: string | null;
   source_page: string | null; source_rev: number | string | null;
-  source_rank: number; pending: Pending | null; missing_runs: number;
+  source_rank: number; pending: Pending | null; missing_runs: number; missing_since: string | null;
 }
 
 export const INSERT_COLUMNS = [
@@ -38,7 +41,7 @@ export const INSERT_COLUMNS = [
 ] as const;
 export const UPDATE_COLUMNS = [
   'id', 'game_date', 'kickoff_at', 'time_tbc', 'status', 'venue', 'broadcast', 'source_page', 'source_rev',
-  'source_rank', 'pending', 'missing_runs',
+  'source_rank', 'pending', 'missing_runs', 'missing_since',
 ] as const;
 /** Affiliate and sponsor columns: no code path here can name them. */
 export const PROTECTED_COLUMNS = ['watch_provider', 'watch_url', 'tickets_url', 'sponsor_id', 'sponsor_text', 'sponsor_url'] as const;
@@ -56,6 +59,12 @@ export interface Db {
   ownedFutureGames(title: string, fromDate: string): Promise<StoredGame[]>;
   /** One transaction: public.ingest_apply(inserts, updates, changes). */
   apply(ops: ApplyOps): Promise<void>;
+  /** Is any game of the league still scheduled on or after `fromDate`? */
+  hasFutureGames(leagueId: string, fromDate: string): Promise<boolean>;
+  /** Season rollover: writes leagues.season and nothing else. */
+  setLeagueSeason(leagueId: string, season: string): Promise<void>;
+  /** Writes teams.wiki_page and nothing else. */
+  setTeamWikiPage(teamId: string, wikiPage: string): Promise<void>;
   /** Games kicking off in [fromIso, toIso], or time-TBC games dated within that span. */
   gamesInWindow(fromIso: string, toIso: string): Promise<Array<{ source_page: string | null; home_team_id: string; away_team_id: string }>>;
 }
@@ -63,31 +72,42 @@ export interface Db {
 export interface Deps {
   db: Db;
   fetchPages(titles: string[]): Promise<Map<string, WikiPage | null>>;
+  /** Which Wikipedia titles exist (no content fetched). */
+  pagesExist(titles: string[]): Promise<Map<string, boolean>>;
   now(): number;
   log?(msg: string): void;
 }
 
-export interface WorkItem { title: string; leagueSlug: string; teamId?: string; season: string }
+export interface WorkItem {
+  title: string; leagueSlug: string; teamId?: string; season: string;
+  /** page: fetch and parse. rollover: is next season's page up? discover: find the page of a team that has none. Default page. */
+  kind?: 'page' | 'rollover' | 'discover';
+}
 
+/** Rollover checks first, then every page, then teams with no wiki_page at all (daily mode runs all three). */
 export function buildWorklist(leagues: LeagueRow[], teams: TeamRow[]): WorkItem[] {
-  const out: WorkItem[] = [];
+  const pages: WorkItem[] = [];
+  const rollovers: WorkItem[] = [];
+  const discovers: WorkItem[] = [];
   const seen = new Set<string>();
   for (const src of LEAGUE_SOURCES) {
     const league = leagues.find((l) => l.id === src.slug);
     if (!league?.season) continue;
+    rollovers.push({ title: `rollover:${src.slug}`, kind: 'rollover', leagueSlug: src.slug, season: league.season });
     const add = (title: string, t?: TeamRow) => {
       if (seen.has(title)) return;
       seen.add(title);
-      out.push({ title, leagueSlug: src.slug, season: league.season!, teamId: t?.id });
+      pages.push({ title, kind: 'page', leagueSlug: src.slug, season: league.season!, teamId: t?.id });
     };
     if (src.mode === 'league') for (const title of src.title(league.season)) add(title);
     else {
-      for (const t of teams.filter((x) => x.league_id === league.id && x.wiki_page).sort((a, b) => a.name.localeCompare(b.name))) {
-        for (const title of src.title(league.season, t.wiki_page!)) add(title, t);
+      for (const t of teams.filter((x) => x.league_id === league.id).sort((a, b) => a.name.localeCompare(b.name))) {
+        if (t.wiki_page) for (const title of src.title(league.season, t.wiki_page)) add(title, t);
+        else discovers.push({ title: `discover:${t.id}`, kind: 'discover', leagueSlug: src.slug, teamId: t.id, season: league.season });
       }
     }
   }
-  return out;
+  return [...rollovers, ...pages, ...discovers];
 }
 
 /** Lower case, no accents, no dots/punctuation, without FC/AFC/CF tokens: "Arsenal F.C." and "Arsenal" match. */
@@ -130,6 +150,9 @@ export function assertSafe(row: Record<string, unknown>, allowed: readonly strin
 export const WINDOW_DAYS = 21;
 export const MIN_CONFIRM_MS = 30 * 60_000;
 export const VANISH_RUNS = 2;
+export const VANISH_MIN_MS = 24 * 3_600_000;
+export const MASS_VANISH_MAX = 3;
+export const MASS_VANISH_SHARE = 0.1;
 const DAY = 86_400_000;
 
 interface Incoming extends GameInsert { }
@@ -200,13 +223,13 @@ export function planUpdate(
   const broadcast = inc.broadcast ?? e.broadcast; // a missing TV column never erases a stored note
   const dirty = changes.length > 0 || JSON.stringify(pending) !== JSON.stringify(e.pending ?? null) ||
     collapseText(broadcast) !== collapseText(e.broadcast) || e.source_page !== inc.source_page ||
-    e.source_rank !== inc.source_rank || e.missing_runs !== 0;
+    e.source_rank !== inc.source_rank || e.missing_runs !== 0 || e.missing_since != null;
   if (!dirty) return null;
   return {
     changes, held,
     update: {
       id: e.id, ...next, venue: inc.venue, broadcast, source_page: inc.source_page, source_rev: inc.source_rev,
-      source_rank: inc.source_rank, pending, missing_runs: 0,
+      source_rank: inc.source_rank, pending, missing_runs: 0, missing_since: null,
     },
   };
 }
@@ -216,11 +239,15 @@ export function planUpdate(
 export interface BatchStats {
   pagesFetched: number; pagesMissing: string[]; gamesParsed: number; gamesDropped: number;
   created: number; updated: number; held: number; changes: number; vanished: number; unmatchedTeams: string[];
+  warnings: string[]; rolled: string[]; pagesFilled: string[];
 }
-const emptyStats = (): BatchStats => ({ pagesFetched: 0, pagesMissing: [], gamesParsed: 0, gamesDropped: 0, created: 0, updated: 0, held: 0, changes: 0, vanished: 0, unmatchedTeams: [] });
+const emptyStats = (): BatchStats => ({ pagesFetched: 0, pagesMissing: [], gamesParsed: 0, gamesDropped: 0, created: 0, updated: 0, held: 0, changes: 0, vanished: 0, unmatchedTeams: [], warnings: [], rolled: [], pagesFilled: [] });
 
 export async function processBatch(items: WorkItem[], deps: Deps, ref: { leagues: LeagueRow[]; teams: TeamRow[] }): Promise<BatchStats> {
   const stats = emptyStats();
+  await maintain(items.filter((i) => i.kind === 'rollover' || i.kind === 'discover'), deps, ref, stats);
+  items = items.filter((i) => (i.kind ?? 'page') === 'page');
+  if (items.length === 0) return stats;
   const idx = indexTeams(ref.teams);
   const pages = await deps.fetchPages(items.map((i) => i.title));
   const unmatched = new Set<string>();
@@ -232,7 +259,11 @@ export async function processBatch(items: WorkItem[], deps: Deps, ref: { leagues
 
   for (const item of items) {
     const page = pages.get(item.title);
-    if (!page) { stats.pagesMissing.push(item.title); continue; }
+    if (!page) {
+      stats.pagesMissing.push(item.title);
+      if (item.teamId) await discoverPage(item, deps, ref, stats); // the page may live under another name
+      continue;
+    }
     stats.pagesFetched++;
     const src = sourceFor(item.leagueSlug)!;
     const team = item.teamId ? ref.teams.find((t) => t.id === item.teamId) : undefined;
@@ -296,18 +327,28 @@ export async function processBatch(items: WorkItem[], deps: Deps, ref: { leagues
     }
   }
 
-  // Games an owning page has stopped listing: marked postponed after VANISH_RUNS runs, never deleted.
+  // Games an owning page has stopped listing. Marked postponed (never deleted) only after VANISH_RUNS runs AND VANISH_MIN_MS
+  // since first missed. A page about to lose too many games at once is probably broken or vandalised: skip it and warn.
   for (const p of parsedPages) {
     if (!p.clean) continue; // a page that parsed to nothing, or lost games to unknown teams, proves nothing
-    for (const e of await deps.db.ownedFutureGames(p.title, today)) {
-      if (touched.has(e.id) || seenBy.get(p.title)?.has(e.id) || e.status !== 'scheduled') continue;
+    const owned = await deps.db.ownedFutureGames(p.title, today);
+    const missing = owned.filter((e) => !touched.has(e.id) && !seenBy.get(p.title)?.has(e.id) && e.status === 'scheduled');
+    if (!missing.length) continue;
+    if (missing.length > MASS_VANISH_MAX || missing.length > owned.length * MASS_VANISH_SHARE) {
+      const msg = `mass vanish skipped for "${p.title}": ${missing.length} of ${owned.length} future games missing`;
+      stats.warnings.push(msg);
+      deps.log?.(`warning: ${msg}`);
+      continue;
+    }
+    for (const e of missing) {
       touched.add(e.id);
+      const since = e.missing_since ?? stamp;
       const runs = e.missing_runs + 1;
-      const gone = runs >= VANISH_RUNS;
+      const gone = runs >= VANISH_RUNS && nowMs - Date.parse(since) >= VANISH_MIN_MS;
       ops.updates.push({
         id: e.id, game_date: e.game_date, kickoff_at: e.kickoff_at, time_tbc: e.time_tbc, status: gone ? 'postponed' : e.status,
         venue: e.venue, broadcast: e.broadcast, source_page: e.source_page, source_rev: e.source_rev, source_rank: e.source_rank,
-        pending: e.pending, missing_runs: runs,
+        pending: e.pending, missing_runs: runs, missing_since: since,
       });
       if (gone) {
         ops.changes.push({ game_id: e.id, field: 'status', old_value: e.status, new_value: 'postponed', detected_at: stamp });
@@ -322,6 +363,53 @@ export async function processBatch(items: WorkItem[], deps: Deps, ref: { leagues
   stats.updated = ops.updates.length;
   stats.changes = ops.changes.length;
   return stats;
+}
+
+// ---------------------------------------------------------------- season rollover and page discovery
+
+/** Candidate Wikipedia article names for a team, current wiki_page first. */
+export function pageCandidates(t: TeamRow): string[] {
+  return [...new Set([t.wiki_page, t.name, `${t.name} F.C.`, `${t.name} FC`, `Club ${t.name}`].filter((x): x is string => !!x))];
+}
+
+/** Look for a team's season page under its candidate names; store the first name that exists. Writes teams.wiki_page only. */
+async function discoverPage(item: WorkItem, deps: Deps, ref: { leagues: LeagueRow[]; teams: TeamRow[] }, stats: BatchStats): Promise<void> {
+  const src = sourceFor(item.leagueSlug);
+  const team = ref.teams.find((t) => t.id === item.teamId);
+  const league = ref.leagues.find((l) => l.id === item.leagueSlug);
+  if (!src || !team || !league?.season) return;
+  const names = pageCandidates(team);
+  const titles = names.map((n) => src.title(league.season!, n)[0]);
+  const found = await deps.pagesExist(titles);
+  const hit = names.findIndex((_, i) => found.get(titles[i]));
+  if (hit < 0 || names[hit] === team.wiki_page) return;
+  await deps.db.setTeamWikiPage(team.id, names[hit]);
+  stats.pagesFilled.push(`${team.id}: ${names[hit]}`);
+  team.wiki_page = names[hit];
+}
+
+async function maintain(items: WorkItem[], deps: Deps, ref: { leagues: LeagueRow[]; teams: TeamRow[] }, stats: BatchStats): Promise<void> {
+  const today = new Date(deps.now()).toISOString().slice(0, 10);
+  for (const item of items) {
+    if (item.kind === 'discover') { await discoverPage(item, deps, ref, stats); continue; }
+    const src = sourceFor(item.leagueSlug);
+    const league = ref.leagues.find((l) => l.id === item.leagueSlug);
+    const next = league?.season ? nextSeason(league.season) : null;
+    if (!src || !league || !next) continue;
+    const titles = src.mode === 'league'
+      ? src.title(next)
+      : ref.teams.filter((t) => t.league_id === league.id && t.wiki_page).flatMap((t) => src.title(next, t.wiki_page!));
+    if (!titles.length) continue;
+    const found = [...(await deps.pagesExist(titles)).values()].filter(Boolean).length;
+    // A league page must be up; for team pages, at least half of the teams (the rest stay "Schedule coming").
+    const ready = src.mode === 'league' ? found === titles.length : found * 2 >= titles.length;
+    if (!ready || found === 0) continue;
+    if (await deps.db.hasFutureGames(league.id, today)) continue; // the current season is still being played
+    const prev = league.season;
+    await deps.db.setLeagueSeason(league.id, next);
+    stats.rolled.push(`${league.id}: ${prev} -> ${next}`);
+    league.season = next;
+  }
 }
 
 // ---------------------------------------------------------------- run
@@ -345,7 +433,7 @@ export async function runIngest(req: RunRequest, deps: Deps): Promise<RunSummary
     const pages = new Set(games.map((g) => g.source_page));
     const teamIds = new Set(games.flatMap((g) => [g.home_team_id, g.away_team_id]));
     // A game is on the league page and on both clubs' season pages: refresh all of them.
-    work = work.filter((w) => pages.has(w.title) || (w.teamId !== undefined && teamIds.has(w.teamId)));
+    work = work.filter((w) => (w.kind ?? 'page') === 'page' && (pages.has(w.title) || (w.teamId !== undefined && teamIds.has(w.teamId))));
   }
   const start = Math.max(0, req.cursor ?? 0);
   const stats = start < work.length ? await processBatch(work.slice(start, start + PAGES_PER_CALL), deps, { leagues, teams }) : emptyStats();

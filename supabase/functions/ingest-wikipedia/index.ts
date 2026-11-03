@@ -39,10 +39,11 @@ Deno.serve(async (req) => {
   const mode = (body.mode ?? 'daily') as Mode;
   if (mode !== 'daily' && mode !== 'gameday') return json(400, { error: 'mode must be daily or gameday' });
 
+  const wiki = createFetcher();
   try {
     const summary = await runIngest(
       { mode, cursor: Number.isInteger(body.cursor) ? body.cursor : 0, league: typeof body.league === 'string' ? body.league : undefined },
-      { db: createRestDb(url, key), fetchPages: createFetcher(), now: () => Date.now() },
+      { db: createRestDb(url, key), fetchPages: wiki, pagesExist: wiki.exists, now: () => Date.now(), log: (m) => console.warn(m) },
     );
     console.log(JSON.stringify(summary));
     return json(200, summary);

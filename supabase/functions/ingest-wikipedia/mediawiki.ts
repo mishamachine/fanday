@@ -95,7 +95,7 @@ export function createFetcher(opts: FetcherOptions = {}) {
     }
   }
 
-  return async function fetchPages(titles: string[]): Promise<Map<string, WikiPage | null>> {
+  async function fetchPages(titles: string[]): Promise<Map<string, WikiPage | null>> {
     // When the answer is too big the API returns `continue` and the rest of the pages' revisions on the next call.
     const merged: ApiJson = { query: { pages: {} } };
     let cont: Record<string, string> | undefined;
@@ -112,5 +112,28 @@ export function createFetcher(opts: FetcherOptions = {}) {
       cont = json.continue;
     }
     return extractPages(merged, titles);
-  };
+  }
+
+  /** Which titles exist (redirects followed)? One light call per 50 titles, no page content. */
+  async function exists(titles: string[]): Promise<Map<string, boolean>> {
+    const out = new Map<string, boolean>();
+    for (let i = 0; i < titles.length; i += 50) {
+      const chunk = titles.slice(i, i + 50);
+      const q = new URLSearchParams({ action: 'query', format: 'json', redirects: '1', maxlag: String(maxlag), titles: chunk.join('|') });
+      const json = await callApi(`${API}?${q}`);
+      const ok = new Map<string, boolean>();
+      for (const p of Object.values(json.query?.pages ?? {})) ok.set(p.title, !('missing' in p) && !('invalid' in p));
+      const hop = (t: string) => {
+        for (const list of [json.query?.normalized, json.query?.redirects]) {
+          const m = list?.find((x) => x.from === t);
+          if (m) t = m.to;
+        }
+        return t;
+      };
+      for (const t of chunk) out.set(t, ok.get(hop(hop(t))) ?? false);
+    }
+    return out;
+  }
+
+  return Object.assign(fetchPages, { exists });
 }

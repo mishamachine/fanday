@@ -14,9 +14,9 @@ const HOUR = 3_600_000;
 
 // ---- fake database: ingest_apply semantics (one atomic call; only the listed columns change) ----
 function fakeDb({ leagues, teams, games = [] }) {
-  const rows = new Map(games.map((g) => [g.id, { source_rank: 0, pending: null, missing_runs: 0, ...g }]));
+  const rows = new Map(games.map((g) => [g.id, { source_rank: 0, pending: null, missing_runs: 0, missing_since: null, ...g }]));
   let n = 1000;
-  const log = { applies: [], changes: [] };
+  const log = { applies: [], changes: [], seasons: [], pages: [] };
   const db = {
     leagues: async () => leagues,
     teams: async () => teams,
@@ -28,7 +28,7 @@ function fakeDb({ leagues, teams, games = [] }) {
       for (const r of ops.inserts) {
         assertSafe(r, INSERT_COLUMNS);
         const dup = [...staged.values()].some((g) => g.league_id === r.league_id && g.home_team_id === r.home_team_id && g.away_team_id === r.away_team_id && g.game_date === r.game_date);
-        if (!dup) staged.set(`g${n}`, { id: `g${n++}`, pending: null, missing_runs: 0, ...r });
+        if (!dup) staged.set(`g${n}`, { id: `g${n++}`, pending: null, missing_runs: 0, missing_since: null, ...r });
       }
       for (const u of ops.updates) {
         assertSafe(u, UPDATE_COLUMNS);
@@ -40,10 +40,14 @@ function fakeDb({ leagues, teams, games = [] }) {
       rows.clear();
       for (const [k, v] of staged) rows.set(k, v);
     },
+    hasFutureGames: async (leagueId, from) => [...rows.values()].some((g) => g.league_id === leagueId && g.status === 'scheduled' && g.game_date >= from),
+    setLeagueSeason: async (id, season) => { log.seasons.push([id, season]); leagues.find((l) => l.id === id).season = season; },
+    setTeamWikiPage: async (id, page) => { log.pages.push([id, page]); teams.find((t) => t.id === id).wiki_page = page; },
     gamesInWindow: async (from, to) => [...rows.values()].filter((g) => (g.kickoff_at && g.kickoff_at >= from && g.kickoff_at <= to) || (g.time_tbc && g.game_date >= from.slice(0, 10) && g.game_date <= to.slice(0, 10))),
   };
   return { db, rows, log };
 }
+const noPages = async (titles) => new Map(titles.map((t) => [t, false]));
 const byDate = (rows, date, venueOrHome) => [...rows.values()].filter((g) => g.game_date === date && (!venueOrHome || g.venue === venueOrHome || g.home_team_id === venueOrHome));
 
 const aflLeagues = [{ id: 'afl', season: '2027' }];
@@ -55,7 +59,7 @@ function setup({ wikitext = fixture('afl'), games = [] } = {}) {
   const state = { wikitext, revid: 1382991168, now: NOW, fetched: [] };
   const fx = fakeDb({ leagues: aflLeagues, teams: aflTeams, games });
   const deps = {
-    db: fx.db, now: () => state.now,
+    db: fx.db, now: () => state.now, pagesExist: noPages,
     fetchPages: async (titles) => { state.fetched.push(titles); return new Map(titles.map((t) => [t, { title: t, revid: state.revid, wikitext: state.wikitext }])); },
   };
   const run = () => runIngest({ mode: 'daily' }, deps);
@@ -175,28 +179,60 @@ test('venue edits apply at once; whitespace-only venue edits do nothing', async 
   assert.equal(t.rows.get(id).venue, 'SCG Annexe');
 });
 
-test('a game its owner stops listing: scheduled -> postponed after 2 runs, never deleted, logged', async () => {
+test('a game its owner stops listing: postponed only after 2 runs AND 24 h, never deleted, logged', async () => {
   const t = setup();
   await t.run();
   const id = byDate(t.rows, '2027-03-17', 'Sydney Cricket Ground')[0].id;
   t.state.wikitext = edited('{{AFLGame|' + OPENER + '||}}\n', '');
-  const a = await t.run();
-  assert.equal(a.vanished, 0);
-  assert.deepEqual([t.rows.get(id).status, t.rows.get(id).missing_runs], ['scheduled', 1]);
+  await t.run();
+  assert.deepEqual([t.rows.get(id).status, t.rows.get(id).missing_runs, t.rows.get(id).missing_since], ['scheduled', 1, new Date(NOW).toISOString()]);
   t.state.now += 3 * HOUR;
   const b = await t.run();
-  assert.equal(b.vanished, 1);
+  assert.deepEqual([b.vanished, t.rows.get(id).missing_runs, t.rows.get(id).status], [0, 2, 'scheduled'], 'two runs but only 3 h: not yet');
+  t.state.now += 22 * HOUR; // 25 h after the first miss
+  const c = await t.run();
+  assert.equal(c.vanished, 1);
   assert.equal(t.rows.size, 135, 'never deleted');
   assert.equal(t.rows.get(id).status, 'postponed');
-  assert.deepEqual(t.log.changes.map((c) => [c.game_id, c.field, c.old_value, c.new_value]), [[id, 'status', 'scheduled', 'postponed']]);
+  assert.deepEqual(t.log.changes.map((x) => [x.game_id, x.field, x.old_value, x.new_value]), [[id, 'status', 'scheduled', 'postponed']]);
   // it comes back: the page lists it again, and the status returns after two confirming runs
   t.state.wikitext = fixture('afl');
   t.state.now += 3 * HOUR;
   await t.run();
-  assert.equal(t.rows.get(id).missing_runs, 0);
   t.state.now += 3 * HOUR;
   await t.run();
-  assert.equal(t.rows.get(id).status, 'scheduled');
+  assert.deepEqual([t.rows.get(id).status, t.rows.get(id).missing_runs, t.rows.get(id).missing_since], ['scheduled', 0, null]);
+});
+
+test('a game seen again before 24 h resets the missing clock', async () => {
+  const t = setup();
+  await t.run();
+  const id = byDate(t.rows, '2027-03-17', 'Sydney Cricket Ground')[0].id;
+  t.state.wikitext = edited('{{AFLGame|' + OPENER + '||}}\n', '');
+  await t.run();
+  t.state.wikitext = fixture('afl');
+  t.state.now += 3 * HOUR;
+  await t.run();
+  assert.deepEqual([t.rows.get(id).missing_runs, t.rows.get(id).missing_since], [0, null]);
+});
+
+test('mass-vanish guard: more than 3 games gone in one run is skipped for the page, with a warning', async () => {
+  const t = setup();
+  await t.run();
+  const logs = [];
+  t.deps.log = (m) => logs.push(m);
+  t.state.wikitext = fixture('afl').split('\n').filter((l) => !/^\{\{AFLGame\|(?:Wednesday, 17 March|Thursday, 18 March|Friday, 19 March|Saturday, 20 March)/.test(l)).join('\n');
+  const missingCount = fixture('afl').split('\n').length - t.state.wikitext.split('\n').length;
+  assert.ok(missingCount > 3, `dropped ${missingCount} games`);
+  for (let i = 0; i < 3; i++) {
+    t.state.now += HOUR; // still before the first dropped game (17 March 00:00 UTC is 4 h away)
+    const s = await t.run();
+    assert.equal(s.vanished, 0);
+    assert.match(s.warnings[0], /mass vanish skipped for "2027 AFL season"/);
+  }
+  assert.ok([...t.rows.values()].every((g) => g.status === 'scheduled' && g.missing_runs === 0), 'nothing touched');
+  assert.equal(t.log.changes.length, 0);
+  assert.match(logs[0], /warning: mass vanish/);
 });
 
 test('a page that parses to nothing (blanked, template change) postpones nothing', async () => {
@@ -219,7 +255,7 @@ function eplSetup(pages) {
   const teams = [['ars', 'Arsenal F.C.'], ['eve', 'Everton F.C.']].map(([id, wiki_page]) => ({ id, league_id: 'epl', name: wiki_page.replace(' F.C.', ''), short_name: null, wiki_page }));
   const state = { pages, now: Date.parse('2026-10-01T00:00:00Z') };
   const fx = fakeDb({ leagues, teams });
-  const deps = { db: fx.db, now: () => state.now, fetchPages: async (titles) => new Map(titles.map((t) => [t, state.pages[t] ? { title: t, revid: 5, wikitext: state.pages[t] } : null])) };
+  const deps = { db: fx.db, pagesExist: noPages, now: () => state.now, fetchPages: async (titles) => new Map(titles.map((t) => [t, state.pages[t] ? { title: t, revid: 5, wikitext: state.pages[t] } : null])) };
   return { state, deps, ...fx };
 }
 const ARS = '2026\u201327 Arsenal F.C. season';
@@ -308,9 +344,100 @@ test('migration 0002: transactional SECURITY DEFINER RPC, empty search_path, ser
   assert.match(sql, /grant execute on function public\.ingest_apply\(jsonb, jsonb, jsonb\) to service_role;/);
   assert.doesNotMatch(sql.replace(/--.*$/gm, ''), /watch_|tickets_url|sponsor/);
   assert.match(sql, /add column if not exists pending\s+jsonb/);
+  assert.match(sql, /add column if not exists missing_since timestamptz/);
+  for (const fn of ['ingest_set_league_season(text, text)', 'ingest_set_team_wiki_page(text, text)']) {
+    assert.ok(sql.includes(`revoke all on function public.${fn} from public, anon, authenticated;`), fn);
+    assert.ok(sql.includes(`grant execute on function public.${fn} to service_role;`), fn);
+  }
+  const setters = sql.slice(sql.indexOf('create or replace function public.ingest_set_league_season'));
+  assert.equal((setters.match(/security definer/g) ?? []).length, 2);
+  assert.equal((setters.match(/set search_path = ''/g) ?? []).length, 2);
+  assert.equal((setters.match(/\bset\s+(season|wiki_page)\s*=/g) ?? []).length, 2, 'one column each');
   // every column the function writes is one the migration or 0001 defines
   const body = sql.slice(sql.indexOf('create or replace function'));
   for (const c of [...INSERT_COLUMNS, ...UPDATE_COLUMNS].filter((x) => !['id', 'pending'].includes(x))) assert.ok(body.includes(c), c);
+});
+
+// ---- season rollover and page discovery ----
+async function runAll(deps, mode = 'daily') {
+  const all = { rolled: [], pagesFilled: [], pagesMissing: [], calls: 0 };
+  let cursor = 0, r;
+  do {
+    r = await runIngest({ mode, cursor }, deps);
+    cursor = r.nextCursor;
+    all.calls++;
+    for (const k of ['rolled', 'pagesFilled', 'pagesMissing']) all[k].push(...r[k]);
+  } while (!r.done);
+  return all;
+}
+const existing = (...titles) => async (ts) => new Map(ts.map((t) => [t, titles.includes(t)]));
+function rollSetup({ leagues, teams, games = [], exists }) {
+  const fx = fakeDb({ leagues, teams, games });
+  const deps = { db: fx.db, now: () => Date.parse('2027-01-10T12:00:00Z'), pagesExist: exists, fetchPages: async (t) => new Map(t.map((x) => [x, null])) };
+  return { deps, ...fx };
+}
+const mkTeam = (id, league_id, name, wiki_page) => ({ id, league_id, name, short_name: null, wiki_page });
+
+test('rollover: a league page that exists for the next season moves leagues.season', async () => {
+  const leagues = [{ id: 'ipl', season: '2026' }, { id: 'epl', season: '2026-27' }];
+  const t = rollSetup({ leagues, teams: [], exists: existing('2027 Indian Premier League') });
+  const s = await runAll(t.deps);
+  assert.deepEqual(t.log.seasons, [['ipl', '2027']]);
+  assert.deepEqual(s.rolled, ['ipl: 2026 -> 2027']);
+  assert.equal(leagues[1].season, '2026-27', 'EPL has no next-season page yet');
+});
+
+test('rollover: team pages need at least half of the teams, and only after the current season is over', async () => {
+  const leagues = [{ id: 'nfl', season: '2026' }];
+  const teams = ['A', 'B', 'C', 'D'].map((n) => mkTeam(`nfl-${n}`, 'nfl', n, n));
+  let t = rollSetup({ leagues, teams, exists: existing('2027 A season') }); // 1 of 4
+  await runAll(t.deps);
+  assert.deepEqual(t.log.seasons, []);
+  t = rollSetup({ leagues, teams, exists: existing('2027 A season', '2027 B season') }); // 2 of 4
+  await runAll(t.deps);
+  assert.deepEqual(t.log.seasons, [['nfl', '2027']]);
+  // a game still to be played in the current season blocks the roll
+  const live = [{ id: 'g1', league_id: 'nfl', home_team_id: 'nfl-A', away_team_id: 'nfl-B', game_date: '2027-01-17', kickoff_at: null, time_tbc: true, status: 'scheduled', venue: null, broadcast: null, source_page: 'x', source_rev: 1 }];
+  leagues[0].season = '2026';
+  t = rollSetup({ leagues, teams, games: live, exists: existing('2027 A season', '2027 B season', '2027 C season') });
+  await runAll(t.deps);
+  assert.deepEqual(t.log.seasons, []);
+});
+
+test('rollover accepts hyphen or en dash seasons and keeps the style', async () => {
+  const { nextSeason } = await load('sources.ts');
+  assert.deepEqual([nextSeason('2026-27'), nextSeason('2026\u201327'), nextSeason('2026'), nextSeason('2099-00'), nextSeason('x')], ['2027-28', '2027\u201328', '2027', '2100-01', null]);
+});
+
+test('discover: a team with a null or missing wiki_page is re-checked daily and filled once its page appears', async () => {
+  const mk = () => [mkTeam('ligamx-atlante', 'ligamx', 'Atlante', null), mkTeam('ligamx-puebla', 'ligamx', 'Puebla', 'Club Puebla'), mkTeam('ligamx-tijuana', 'ligamx', 'Tijuana', 'Club Tijuana')];
+  // today: no page exists, so nothing is written and the teams stay "Schedule coming"
+  const teams = mk();
+  let t = rollSetup({ leagues: [{ id: 'ligamx', season: '2026-27' }], teams, exists: existing() });
+  const first = await runAll(t.deps);
+  assert.deepEqual([t.log.pages, first.pagesFilled], [[], []]);
+  assert.ok(first.pagesMissing.includes('2026\u201327 Club Puebla season'));
+  assert.equal(teams[0].wiki_page, null);
+  // later: Atlante's page appears under "Atlante F.C.", Puebla's under its plain name, Tijuana's under the name already stored
+  t = rollSetup({ leagues: [{ id: 'ligamx', season: '2026-27' }], teams, exists: existing('2026\u201327 Atlante F.C. season', '2026\u201327 Puebla season', '2026\u201327 Club Tijuana season') });
+  const second = await runAll(t.deps);
+  assert.deepEqual([...t.log.pages].sort(), [['ligamx-atlante', 'Atlante F.C.'], ['ligamx-puebla', 'Puebla']]);
+  assert.equal(second.pagesFilled.length, 2);
+  assert.equal(teams[2].wiki_page, 'Club Tijuana', 'an existing page name is left alone');
+});
+
+test('discover: page filled lets the next run parse it; gameday never runs maintenance', async () => {
+  const leagues = [{ id: 'ligamx', season: '2026-27' }];
+  const teams = [mkTeam('ligamx-atlante', 'ligamx', 'Atlante', null)];
+  let asked = 0;
+  const t = rollSetup({ leagues, teams, exists: async (ts) => { asked++; return new Map(ts.map((x) => [x, false])); } });
+  const g = await runIngest({ mode: 'gameday' }, t.deps);
+  assert.deepEqual([g.planned, asked], [0, 0]);
+  const d = await runAll(t.deps);
+  assert.ok(d.calls >= 1 && asked > 0);
+  // only the two RPC-backed writes exist on the Db interface for this: season and wiki_page
+  const writes = Object.keys(t.deps.db).filter((k) => /^set/.test(k)).sort();
+  assert.deepEqual(writes, ['setLeagueSeason', 'setTeamWikiPage']);
 });
 
 // ---- game-day selection and paging ----
@@ -331,7 +458,7 @@ test('gameday: only pages with a game in the next 36 hours (and both clubs\u2019
   const games = [{ id: 'g1', league_id: 'nfl', home_team_id: 'N0', away_team_id: 'N1', game_date: '2026-09-14', kickoff_at: null, time_tbc: true, status: 'scheduled', venue: 'x', broadcast: null, source_page: '2026 Kansas City Chiefs season', source_rev: 1 }];
   const fx = fakeDb({ leagues, teams, games });
   const fetched = [];
-  const deps = { db: fx.db, now: () => Date.parse('2026-09-13T12:00:00Z'), fetchPages: async (t) => { fetched.push(t); return new Map(t.map((x) => [x, null])); } };
+  const deps = { db: fx.db, pagesExist: noPages, now: () => Date.parse('2026-09-13T12:00:00Z'), fetchPages: async (t) => { fetched.push(t); return new Map(t.map((x) => [x, null])); } };
   await runIngest({ mode: 'gameday' }, deps);
   assert.deepEqual(fetched.flat().sort(), ['2026 Denver Broncos season', '2026 Kansas City Chiefs season']);
 });
@@ -342,7 +469,7 @@ test('paging: at most PAGES_PER_CALL pages per call (Edge Function CPU limit); t
   const teams = Array.from({ length: 25 }, (_, i) => ({ id: `N${i}`, league_id: 'nfl', name: `Team ${String(i).padStart(2, '0')}`, short_name: null, wiki_page: `Team ${String(i).padStart(2, '0')}` }));
   const fx = fakeDb({ leagues, teams });
   const sizes = [];
-  const deps = { db: fx.db, now: () => 0, fetchPages: async (t) => { sizes.push(t.length); return new Map(t.map((x) => [x, null])); } };
+  const deps = { db: fx.db, pagesExist: noPages, now: () => 0, fetchPages: async (t) => { sizes.push(t.length); return new Map(t.map((x) => [x, null])); } };
   let cursor = 0, calls = 0, last;
   do {
     last = await runIngest({ mode: 'daily', cursor }, deps);
@@ -415,6 +542,25 @@ test('fetcher: descriptive User-Agent, maxlag, batched titles, pause between cal
   assert.equal(seen[0].headers['User-Agent'], USER_AGENT);
   assert.match(USER_AGENT, /^Fanday\/0\.1 \(machinemisha\+fanday@gmail\.com\)$/);
   assert.equal(buildUrl(['a', 'b'], 5).includes('titles=a%7Cb'), true);
+});
+
+test('exists(): light existence check, redirects followed, missing and invalid are false, 50 titles per call', async () => {
+  const urls = [];
+  const fetchImpl = async (url) => {
+    urls.push(new URL(String(url)));
+    return new Response(JSON.stringify({ query: {
+      redirects: [{ from: 'Old', to: 'New' }],
+      pages: { 1: { pageid: 1, title: 'New' }, '-1': { title: 'Nope', missing: '' }, '-2': { title: '', invalid: '' } },
+    } }), { status: 200 });
+  };
+  const ex = createFetcher({ fetchImpl, sleep: async () => {} }).exists;
+  const out = await ex(['Old', 'Nope', 'Absent']);
+  assert.deepEqual([...out], [['Old', true], ['Nope', false], ['Absent', false]]);
+  assert.equal(urls[0].searchParams.has('prop'), false, 'no content requested');
+  assert.equal(urls[0].searchParams.get('maxlag'), '5');
+  urls.length = 0;
+  await ex(Array.from({ length: 120 }, (_, i) => `T${i}`));
+  assert.equal(urls.length, 3);
 });
 
 test('fetcher: follows `continue` and merges the pages', async () => {
