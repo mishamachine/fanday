@@ -11,7 +11,7 @@ const rows = [...code.matchAll(/\('(mls-[a-z0-9-]+)', '([A-Za-z_\/]+)'\)/g)].map
 test('teams_tz.sql: one idempotent UPDATE of teams.tz for the 30 MLS teams', () => {
   assert.equal(rows.length, 30);
   assert.equal(new Set(rows.map((r) => r[0])).size, 30, 'ids are unique');
-  assert.match(code, /update public\.teams t\s+set tz = v\.tz/);
+  assert.match(code, /update fanday\.teams t\s+set tz = v\.tz/);
   assert.match(code, /t\.league_id = 'mls'/);
   assert.doesNotMatch(code, /\b(insert|delete|drop|alter|truncate)\b/i);
   assert.doesNotMatch(code, /\bset\s+(?!tz\b)\w+\s*=/i, 'only tz is set');

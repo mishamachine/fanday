@@ -1,14 +1,14 @@
 import { eq, ok, done } from './_t.mjs'
-import { parseGoPath, resolveTarget, sponsorActive } from '../supabase/functions/go/target.ts'
+import { parseGoPath, resolveTarget, sponsorActive } from '../supabase/functions/fanday-go/target.ts'
 
 const ID = 'aaaaaaaa-0000-0000-0000-000000000001'
-eq('parses functions path', parseGoPath(`/functions/v1/go/${ID}/watch`), { gameId: ID, slot: 'watch' })
-eq('parses bare path', parseGoPath(`/go/${ID}/tickets`), { gameId: ID, slot: 'tickets' })
-eq('sponsor slot ok', parseGoPath(`/go/${ID}/sponsor`)?.slot, 'sponsor')
-eq('unknown slot rejected', parseGoPath(`/go/${ID}/bogus`), null)
-eq('non-uuid game rejected', parseGoPath('/go/1 or 1=1/watch'), null)
-eq('extra segments rejected', parseGoPath(`/go/${ID}/watch/extra`), null)
-eq('missing slot rejected', parseGoPath(`/go/${ID}`), null)
+eq('parses functions path', parseGoPath(`/functions/v1/fanday-go/${ID}/watch`), { gameId: ID, slot: 'watch' })
+eq('parses bare path', parseGoPath(`/fanday-go/${ID}/tickets`), { gameId: ID, slot: 'tickets' })
+eq('sponsor slot ok', parseGoPath(`/fanday-go/${ID}/sponsor`)?.slot, 'sponsor')
+eq('unknown slot rejected', parseGoPath(`/fanday-go/${ID}/bogus`), null)
+eq('non-uuid game rejected', parseGoPath('/fanday-go/1 or 1=1/watch'), null)
+eq('extra segments rejected', parseGoPath(`/fanday-go/${ID}/watch/extra`), null)
+eq('missing slot rejected', parseGoPath(`/fanday-go/${ID}`), null)
 
 const row = { watch_url: 'https://watch.example/p?aff=123', tickets_url: 'https://tix.example/e', sponsor_url: null, sponsor: { url: 'https://acme.example' } }
 const w = new URL(resolveTarget(row, 'watch'))

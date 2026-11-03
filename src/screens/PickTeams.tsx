@@ -6,7 +6,6 @@ import { useStore } from '../store/useStore.ts'
 import { PRIVACY_LINE } from '../lib/env.ts'
 import { isEmail } from '../lib/authUtil.ts'
 import { signInWithEmail } from '../lib/auth.ts'
-import { isAnonymous } from '../lib/auth.ts'
 
 export default function PickTeams() {
   const { leagueId = '' } = useParams()
@@ -24,7 +23,7 @@ export default function PickTeams() {
   }, [leagueId])
 
   const count = teams.filter((t) => follows.includes(t.id)).length // ticked on this screen only
-  const canSave = !user || isAnonymous(user)
+  const canSave = !user
   async function sendLink() {
     setError('')
     try { await signInWithEmail(email); setEmailState('sent') } catch (e) { setError((e as Error).message) }

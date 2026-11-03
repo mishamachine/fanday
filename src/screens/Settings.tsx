@@ -2,7 +2,8 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { TopBar } from '../components/ui.tsx'
 import { useStore } from '../store/useStore.ts'
-import { deleteAccount, isAnonymous, signInWithApple, signInWithEmail, signInWithOAuth, signOut } from '../lib/auth.ts'
+import { deleteAccount, signInWithApple, signInWithEmail, signInWithGoogle, signOut } from '../lib/auth.ts'
+import { googleAvailable } from '../lib/googleNative.ts'
 import { isEmail } from '../lib/authUtil.ts'
 import { supabase } from '../lib/supabase.ts'
 import { calendar } from '../calendar/index.ts'
@@ -17,7 +18,7 @@ export default function Settings() {
   const [error, setError] = useState('')
   const [confirmDelete, setConfirmDelete] = useState(false)
   const [promo, setPromo] = useState(false)
-  const signedIn = !!user && !isAnonymous(user)
+  const signedIn = !!user
 
   const run = (fn: () => Promise<unknown>, ok = '') => async () => {
     setError(''); setMsg('')
@@ -52,7 +53,7 @@ export default function Settings() {
           <>
             <p>Optional. Sign in to keep your teams on a new phone. Your teams stay with you either way.</p>
             <button className="btn" onClick={run(signInWithApple)}>Continue with Apple</button>
-            <button className="btn alt" onClick={run(() => signInWithOAuth('google'))}>Continue with Google</button>
+            {googleAvailable && <button className="btn alt" onClick={run(signInWithGoogle)}>Continue with Google</button>}
             <input className="field" type="email" inputMode="email" autoComplete="email" aria-label="Email" placeholder="you@example.com" value={email} onChange={(e) => setEmail(e.target.value)} />
             <button className="btn alt" disabled={!isEmail(email)} onClick={run(() => signInWithEmail(email), 'Check your email for the sign-in link.')}>Email me a sign-in link</button>
           </>

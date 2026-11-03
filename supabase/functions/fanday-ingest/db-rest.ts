@@ -8,7 +8,9 @@ const PAGE = 1000;
 export function createRestDb(baseUrl: string, serviceKey: string, fetchImpl: typeof fetch = fetch): Db {
   const rest = `${baseUrl.replace(/\/$/, '')}/rest/v1`;
   const headers = (extra: Record<string, string> = {}) => ({
-    apikey: serviceKey, Authorization: `Bearer ${serviceKey}`, 'Content-Type': 'application/json', ...extra,
+    apikey: serviceKey, Authorization: `Bearer ${serviceKey}`, 'Content-Type': 'application/json',
+    // Shared project: every table and RPC lives in the `fanday` schema, selected per request (Accept-Profile for reads, Content-Profile for writes).
+    'Accept-Profile': 'fanday', 'Content-Profile': 'fanday', ...extra,
   });
 
   async function get<T>(path: string): Promise<T[]> {

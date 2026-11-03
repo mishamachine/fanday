@@ -1,7 +1,6 @@
 import { create } from 'zustand'
 import type { User } from '@supabase/supabase-js'
 import { loadRemoteFollows, saveRemoteFollows } from '../data/followsRemote.ts'
-import { isAnonymous } from '../lib/auth.ts'
 import type { IdentifierMap } from '../calendar/sync.ts'
 
 const KEY = 'fanday.v1'
@@ -31,8 +30,7 @@ const persistKeys = (s: State): Persisted =>
 export const useStore = create<State>((set, get) => {
   const commit = (patch: Partial<Persisted>) => { set(patch); save(persistKeys(get())); void pushFollows() }
   const pushFollows = async () => {
-    const u = get().user
-    if (u) await saveRemoteFollows(u.id, get().follows).catch(() => undefined)
+    await saveRemoteFollows(get().user?.id ?? null, get().follows).catch(() => undefined)
   }
   return {
     ...load(),
@@ -46,9 +44,7 @@ export const useStore = create<State>((set, get) => {
     setSync: (eventIds, calendarId) => commit({ eventIds, calendarId }),
     setChangeAlerts: (changeAlerts) => commit({ changeAlerts }),
     pullFollows: async () => {
-      const u = get().user
-      if (!u || isAnonymous(u)) return
-      const remote = await loadRemoteFollows()
+      const remote = await loadRemoteFollows(!!get().user)
       const merged = Array.from(new Set([...get().follows, ...remote]))
       commit({ follows: merged, onboarded: get().onboarded || merged.length > 0 })
     },

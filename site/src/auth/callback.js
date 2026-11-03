@@ -1,13 +1,13 @@
 // Hands a Supabase PKCE sign-in redirect to the Fanday app.
 // The app's parseCallbackUrl (src/lib/authUtil.ts on cto/fanday-v1-foundation) accepts
-// com.bbprojectfactory.fanday://auth/callback with ?code=... or ?error_description=... / ?error=...
-// Only those three parameters are forwarded. The code is a one-time PKCE code: useless without the
+// com.bbprojectfactory.fanday://auth/callback with ?token_hash=...&type=magiclink, ?code=... or ?error_description=... / ?error=...
+// Only those five parameters are forwarded (token_hash + type = the emailed link from fanday-send-link, spent only when the app verifies it). The PKCE code is useless without the
 // verifier stored in the app. Nothing is sent anywhere else, stored, or logged.
 (function () {
   var SCHEME = 'com.bbprojectfactory.fanday://auth/callback';
   var p = new URLSearchParams(window.location.search);
   var out = new URLSearchParams();
-  ['code', 'error_description', 'error'].forEach(function (k) { if (p.get(k)) out.set(k, p.get(k)); });
+  ['code', 'token_hash', 'type', 'error_description', 'error'].forEach(function (k) { if (p.get(k)) out.set(k, p.get(k)); });
   var h = document.getElementById('h');
   var msg = document.getElementById('msg');
   var open = document.getElementById('open');

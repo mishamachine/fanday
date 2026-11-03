@@ -2,7 +2,7 @@
 -- Idempotent. A club in two competitions (e.g. Arsenal in epl and ucl) has one row per league.
 -- wiki_page is the stem of the Wikipedia team-season title (NCAA: "<season> <wiki_page> team"; others: "<season> <wiki_page> season").
 -- NBA/NHL rows have wiki_page null and an official_calendar_url (links verified 2026-11-03, supabase/seed/official-calendar-links.json).
-insert into public.teams (id, league_id, name, short_name, wiki_page, official_calendar_url) values
+insert into fanday.teams (id, league_id, name, short_name, wiki_page, official_calendar_url) values
   ('epl-arsenal', 'epl', 'Arsenal', 'ARS', 'Arsenal F.C.', null),
   ('epl-aston-villa', 'epl', 'Aston Villa', 'AVL', 'Aston Villa F.C.', null),
   ('epl-bournemouth', 'epl', 'Bournemouth', 'BOU', 'AFC Bournemouth', null),
@@ -438,4 +438,4 @@ insert into public.teams (id, league_id, name, short_name, wiki_page, official_c
   ('nrl-sydney-roosters', 'nrl', 'Sydney Roosters', 'SYD', 'Sydney Roosters', null),
   ('nrl-wests-tigers', 'nrl', 'Wests Tigers', 'WES', 'Wests Tigers', null)
 on conflict (id) do update set league_id = excluded.league_id, name = excluded.name, short_name = excluded.short_name,
-  wiki_page = excluded.wiki_page, official_calendar_url = coalesce(excluded.official_calendar_url, public.teams.official_calendar_url);
+  wiki_page = excluded.wiki_page, official_calendar_url = coalesce(excluded.official_calendar_url, fanday.teams.official_calendar_url);

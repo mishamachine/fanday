@@ -2,7 +2,7 @@ import { eq, ok, done } from './_t.mjs'
 import { MockCalendar } from '../src/calendar/mock.ts'
 import { syncGames } from '../src/calendar/sync.ts'
 
-const ctx = { goBaseUrl: 'https://x.invalid/functions/v1' }
+const ctx = { goBaseUrl: 'https://x.invalid/functions/v1/fanday-go' }
 const mk = (id, over = {}) => ({
   id, leagueId: 'epl', sport: 'soccer', homeTeamId: 'epl-ars', awayTeamId: 'epl-che', homeName: 'Arsenal', awayName: 'Chelsea',
   kickoffAt: '2026-11-07T12:30:00.000Z', gameDate: '2026-11-07', timeTbc: false, status: 'scheduled', venue: 'Emirates Stadium', broadcast: null,

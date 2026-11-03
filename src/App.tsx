@@ -8,7 +8,7 @@ import OfficialCalendar from './screens/OfficialCalendar.tsx'
 import Settings from './screens/Settings.tsx'
 import AuthCallback from './screens/AuthCallback.tsx'
 import { useStore } from './store/useStore.ts'
-import { ensureAnonymousSession, initAuthListeners } from './lib/auth.ts'
+import { currentUser, initAuthListeners } from './lib/auth.ts'
 
 export default function App() {
   const onboarded = useStore((s) => s.onboarded)
@@ -17,7 +17,7 @@ export default function App() {
 
   useEffect(() => {
     const stop = initAuthListeners((u) => { setUser(u); void pullFollows() })
-    void ensureAnonymousSession().then((u) => { if (u) setUser(u) }) // first launch: anonymous session, no prompt
+    void currentUser().then((u) => { if (u) setUser(u) }) // restores a saved session; signed-out users have none (device token instead)
     return stop
   }, [setUser, pullFollows])
 

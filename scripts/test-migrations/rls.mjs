@@ -1,179 +1,160 @@
-// Proves RLS in 0001_init.sql with a real Postgres (pglite): users can't see each other's follows/devices/profile,
-// reference data is read-only, link_clicks is server-only, and the anonymous -> signed-in follow merge is safe.
-import { PGlite } from '@electric-sql/pglite'
-import { readFileSync } from 'node:fs'
-import { fileURLToPath } from 'node:url'
+// Fanday behaviour on the shared-project stand-in (real Postgres via pglite): RLS for signed-in users, the closed device-owned rows,
+// the device-token RPCs (isolation, wrong/revoked tokens, delete), claim_device (move, single use, mismatch, other user), lazy profiles,
+// rate limits, cleanup. Schema `fanday` only; the catalog-unchanged proof is in shared-project.mjs.
+import { makeStandIn, asFactory, read, U, ok } from './standin.mjs'
 
-const read = (f) => readFileSync(fileURLToPath(new URL(`../../supabase/${f}`, import.meta.url)), 'utf8')
-const db = new PGlite()
-const A = '11111111-1111-1111-1111-111111111111' // signed-in user A
-const B = '22222222-2222-2222-2222-222222222222' // signed-in user B
-const ANON = '33333333-3333-3333-3333-333333333333' // anonymous user
-const ANON2 = '44444444-4444-4444-4444-444444444444' // another anonymous user
-let fails = 0
-const ok = (name, cond, extra = '') => { if (!cond) fails++; console.log(`${cond ? 'ok  ' : 'FAIL'} ${name} ${cond ? '' : extra}`) }
+const db = await makeStandIn()
+const as = asFactory(db)
+const { A, B, C, D } = U
+const T1 = 'a'.repeat(64), T2 = 'b'.repeat(64), T3 = 'c'.repeat(64), T4 = 'd'.repeat(64)
+const G1 = 'aaaaaaaa-0000-0000-0000-000000000001'
+const DEV1 = 'dddddddd-0000-0000-0000-000000000001', DEV2 = 'dddddddd-0000-0000-0000-000000000002'
 
-// Minimal Supabase surroundings: roles, auth.users (with is_anonymous), auth.uid().
+for (const f of ['migrations/fanday_0001_init.sql', 'migrations/fanday_0002_ingest.sql', 'seed.sql', 'seed_teams.sql', 'seed/teams_tz.sql']) await db.exec(read(f))
 await db.exec(`
-create role anon nologin; create role authenticated nologin; create role service_role nologin bypassrls;
-grant usage on schema public to anon, authenticated, service_role;
-create schema auth; grant usage on schema auth to anon, authenticated, service_role;
-create table auth.users (id uuid primary key, email text, is_anonymous boolean not null default false);
-create function auth.uid() returns uuid language sql stable as $$ select nullif(current_setting('request.jwt.claim.sub', true), '')::uuid $$;
-grant execute on function auth.uid() to anon, authenticated, service_role;
+insert into auth.users (id, email) values ('${A}','a@x.com'), ('${B}','b@x.com'), ('${C}','c@x.com'), ('${D}','d@x.com');
+insert into fanday.teams (id, league_id, name, short_name) values ('nfl-kc-x','nfl','Chiefs','KC'), ('nfl-den-x','nfl','Broncos','DEN');
+insert into fanday.games (id, league_id, home_team_id, away_team_id, game_date, kickoff_at) values ('${G1}','nfl','nfl-kc-x','nfl-den-x','2026-11-08','2026-11-08T20:20:00Z');
 `)
-await db.exec(read('migrations/0001_init.sql'))
-await db.exec(read('seed.sql'))
-await db.exec(read('seed.sql')) // idempotent
-await db.exec(read('seed_teams.sql')); await db.exec(read('seed_teams.sql')) // loads into the real schema, idempotent
-ok('teams seed: 434 rows, every league FK valid, Arsenal once per league', (await db.query('select count(*)::int c from public.teams')).rows[0].c === 434
-  && (await db.query(`select count(*)::int c from public.teams where id in ('epl-arsenal','ucl-arsenal')`)).rows[0].c === 2)
-ok('teams seed: NBA/NHL have no wiki_page; every other seeded team has one', (await db.query(`select count(*)::int c from public.teams where (league_id in ('nba','nhl')) <> (wiki_page is null)`)).rows[0].c === 0)
-await db.exec(`
-insert into auth.users (id, email, is_anonymous) values ('${A}','a@x.com',false), ('${B}','b@x.com',false), ('${ANON}',null,true), ('${ANON2}',null,true);
-insert into public.teams (id, league_id, name, short_name) values ('nfl-kc','nfl','Chiefs','KC'), ('nfl-den','nfl','Broncos','DEN'), ('epl-ars','epl','Arsenal','ARS');
-insert into public.games (id, league_id, home_team_id, away_team_id, game_date, kickoff_at) values
-  ('aaaaaaaa-0000-0000-0000-000000000001','nfl','nfl-kc','nfl-den','2026-11-08','2026-11-08T20:20:00Z');
-insert into public.follows (user_id, team_id) values ('${A}','nfl-kc'), ('${B}','epl-ars');
-insert into public.devices (id, user_id, platform) values ('bbbbbbbb-0000-0000-0000-00000000000a','${A}','ios'), ('bbbbbbbb-0000-0000-0000-00000000000b','${B}','android');
-insert into public.device_events (device_id, game_id, event_identifier) values
-  ('bbbbbbbb-0000-0000-0000-00000000000a','aaaaaaaa-0000-0000-0000-000000000001','EV-A'), ('bbbbbbbb-0000-0000-0000-00000000000b','aaaaaaaa-0000-0000-0000-000000000001','EV-B');
-`)
-
-// Run SQL as a role + user. Always resets the role after.
-async function as(role, uid, sql) {
-  await db.exec(`set role ${role}; select set_config('request.jwt.claim.sub', '${uid ?? ''}', false);`)
-  try { return { rows: (await db.query(sql)).rows } }
-  catch (e) { return { error: e.message } }
-  finally { await db.exec(`reset role; select set_config('request.jwt.claim.sub', '', false);`) }
-}
 const n = async (role, uid, sql) => { const r = await as(role, uid, sql); return r.error ? `ERR:${r.error}` : r.rows.length }
+const svc = async (sql) => as('service_role', null, sql)
+const reg = async (t) => (await svc(`select fanday.register_device_token(sha256(convert_to('${t}','UTF8'))) id`)).rows[0].id
 
-ok('seed: 19 leagues, idempotent', (await db.query('select count(*)::int c from public.leagues')).rows[0].c === 19)
-ok('seed: off-season leagues flagged', (await db.query(`select string_agg(id, ',' order by id) s from public.leagues where not in_season`)).rows[0].s === 'ipl,mlb,nrl,wnba')
-ok('trigger created profiles for every auth user', (await db.query('select count(*)::int c from public.profiles')).rows[0].c === 4)
+ok('seed: 19 leagues, 434 teams, off-season flagged', (await db.query('select count(*)::int c from fanday.leagues')).rows[0].c === 19
+  && (await db.query(`select string_agg(id, ',' order by id) s from fanday.leagues where not in_season`)).rows[0].s === 'ipl,mlb,nrl,wnba')
+ok('no profile exists until the app asks (no trigger)', (await db.query('select count(*)::int c from fanday.profiles')).rows[0].c === 0)
 
-// ---- the headline: one user cannot read another user's follows, devices or profile
-ok('A sees only own follows', (await as('authenticated', A, 'select user_id from public.follows')).rows.every((r) => r.user_id === A) && await n('authenticated', A, 'select 1 from public.follows') === 1)
-ok('A cannot read B follows by filter', await n('authenticated', A, `select 1 from public.follows where user_id='${B}'`) === 0)
-ok('A sees only own devices', await n('authenticated', A, 'select 1 from public.devices') === 1)
-ok('A cannot read B devices by filter', await n('authenticated', A, `select 1 from public.devices where user_id='${B}'`) === 0)
-ok('A sees only own device_events', (await as('authenticated', A, 'select event_identifier e from public.device_events')).rows.map((r) => r.e).join() === 'EV-A')
-ok('A sees only own profile', (await as('authenticated', A, 'select user_id from public.profiles')).rows.map((r) => r.user_id).join() === A)
-ok('A cannot read B profile by filter', await n('authenticated', A, `select 1 from public.profiles where user_id='${B}'`) === 0)
-ok('anon (not signed in) sees no follows/devices/profiles', await n('anon', null, 'select 1 from public.follows') === 'ERR:permission denied for table follows'
-  && String(await n('anon', null, 'select 1 from public.profiles')).startsWith('ERR:'))
+// ---- lazy profiles
+ok('ensure_profile: signed-out role cannot call it', !!(await as('anon', null, 'select fanday.ensure_profile()')).error)
+ok('ensure_profile creates the caller profile only, with the auth email', !(await as('authenticated', A, 'select fanday.ensure_profile()')).error
+  && (await db.query(`select string_agg(user_id::text||':'||email, ',') s from fanday.profiles`)).rows[0].s === `${A}:a@x.com`)
+await as('authenticated', A, 'select fanday.ensure_profile()')
+await as('authenticated', B, 'select fanday.ensure_profile()')
+ok('ensure_profile is repeatable (one row per user)', (await db.query('select count(*)::int c from fanday.profiles')).rows[0].c === 2)
+await db.exec(`update auth.users set email='a2@x.com' where id='${A}'`); await as('authenticated', A, 'select fanday.ensure_profile()')
+ok('ensure_profile refreshes the email', (await db.query(`select email from fanday.profiles where user_id='${A}'`)).rows[0].email === 'a2@x.com')
+ok('A sees only own profile', (await as('authenticated', A, 'select user_id from fanday.profiles')).rows.map((r) => r.user_id).join() === A)
+ok('A cannot read or update B profile', await n('authenticated', A, `select 1 from fanday.profiles where user_id='${B}'`) === 0
+  && (await as('authenticated', A, `update fanday.profiles set country='ZZ' where user_id='${B}' returning 1`)).rows?.length === 0)
+ok('A can set prefs; cannot unlock Pro or rewrite email', (await as('authenticated', A, `update fanday.profiles set promo_push_opt_in=true, country='US' where user_id='${A}' returning 1`)).rows?.length === 1
+  && !!(await as('authenticated', A, `update fanday.profiles set pro_unlocked=true where user_id='${A}'`)).error
+  && !!(await as('authenticated', A, `update fanday.profiles set email='evil@x.com' where user_id='${A}'`)).error)
 
-// ---- cross-user writes are refused
-ok('A cannot insert a follow for B', (await as('authenticated', A, `insert into public.follows (user_id, team_id) values ('${B}','nfl-den')`)).error?.includes('row-level security'))
-ok('A cannot delete B follow', (await as('authenticated', A, `delete from public.follows where user_id='${B}' returning 1`)).rows?.length === 0)
-ok('A cannot attach a device to B', (await as('authenticated', A, `insert into public.devices (user_id, platform) values ('${B}','ios')`)).error?.includes('row-level security'))
-ok('A cannot add a device_event to B device', (await as('authenticated', A, `insert into public.device_events (device_id, game_id, event_identifier) values ('bbbbbbbb-0000-0000-0000-00000000000b','aaaaaaaa-0000-0000-0000-000000000001','X')`)).error?.includes('row-level security'))
-ok('A cannot update B profile', (await as('authenticated', A, `update public.profiles set country='ZZ' where user_id='${B}' returning 1`)).rows?.length === 0)
-ok('A can update own profile prefs', (await as('authenticated', A, `update public.profiles set promo_push_opt_in=true, country='US' where user_id='${A}' returning 1`)).rows?.length === 1)
-ok('A cannot unlock Pro on own profile', !!(await as('authenticated', A, `update public.profiles set pro_unlocked=true where user_id='${A}'`)).error)
-ok('A cannot rewrite own profile email', !!(await as('authenticated', A, `update public.profiles set email='evil@x.com' where user_id='${A}'`)).error)
-ok('A can add own follow and usage event', (await as('authenticated', A, `insert into public.follows (user_id, team_id) values ('${A}','nfl-den') returning 1`)).rows?.length === 1
-  && (await as('authenticated', A, `insert into public.usage_events (user_id, name) values ('${A}','open') returning 1`)).rows?.length === 1)
-ok('A cannot write usage event as B', (await as('authenticated', A, `insert into public.usage_events (user_id, name) values ('${B}','open')`)).error?.includes('row-level security'))
-ok('A cannot read B usage events', await n('authenticated', A, `select 1 from public.usage_events where user_id='${B}'`) === 0)
+// ---- signed-in RLS (tables)
+await db.exec(`insert into fanday.follows (user_id, team_id) values ('${A}','nfl-kc-x'), ('${B}','nfl-den-x');
+insert into fanday.devices (id, user_id, platform) values ('bbbbbbbb-0000-0000-0000-00000000000a','${A}','ios'), ('bbbbbbbb-0000-0000-0000-00000000000b','${B}','android');
+insert into fanday.device_events (device_id, game_id, event_identifier) values ('bbbbbbbb-0000-0000-0000-00000000000a','${G1}','EV-A'), ('bbbbbbbb-0000-0000-0000-00000000000b','${G1}','EV-B');`)
+ok('A sees only own follows / devices / events', await n('authenticated', A, 'select 1 from fanday.follows') === 1 && await n('authenticated', A, 'select 1 from fanday.devices') === 1
+  && (await as('authenticated', A, 'select event_identifier e from fanday.device_events')).rows.map((r) => r.e).join() === 'EV-A')
+ok('A cannot read B rows by filter', await n('authenticated', A, `select 1 from fanday.follows where user_id='${B}'`) === 0 && await n('authenticated', A, `select 1 from fanday.devices where user_id='${B}'`) === 0)
+ok('A cannot write rows for B', (await as('authenticated', A, `insert into fanday.follows (user_id, team_id) values ('${B}','nfl-kc-x')`)).error?.includes('row-level security')
+  && (await as('authenticated', A, `insert into fanday.devices (user_id, platform) values ('${B}','ios')`)).error?.includes('row-level security')
+  && (await as('authenticated', A, `insert into fanday.device_events (device_id, game_id, event_identifier) values ('bbbbbbbb-0000-0000-0000-00000000000b','${G1}','X')`)).error?.includes('row-level security')
+  && (await as('authenticated', A, `delete from fanday.follows where user_id='${B}' returning 1`)).rows?.length === 0)
+ok('A can add own follow and usage event; not as B', (await as('authenticated', A, `insert into fanday.follows (user_id, team_id) values ('${A}','nfl-den-x') returning 1`)).rows?.length === 1
+  && (await as('authenticated', A, `insert into fanday.usage_events (user_id, name) values ('${A}','open') returning 1`)).rows?.length === 1
+  && (await as('authenticated', A, `insert into fanday.usage_events (user_id, name) values ('${B}','open')`)).error?.includes('row-level security'))
+ok('signed-in users cannot create device-owned (no-user) rows', !!(await as('authenticated', A, `insert into fanday.follows (user_id, team_id) values (null,'nfl-kc-x')`)).error)
+ok('anon cannot touch user tables', String(await n('anon', null, 'select 1 from fanday.follows')).startsWith('ERR:') && String(await n('anon', null, 'select 1 from fanday.profiles')).startsWith('ERR:'))
 
-// ---- reference tables: readable by anon + authenticated, writable by service_role only
-for (const t of ['leagues', 'teams', 'games', 'sponsors', 'game_changes']) {
-  ok(`${t}: readable by anon and authenticated`, typeof await n('anon', null, `select 1 from public.${t}`) === 'number' && typeof await n('authenticated', A, `select 1 from public.${t}`) === 'number')
-}
-ok('anon can read games', await n('anon', null, 'select 1 from public.games') === 1)
-ok('authenticated cannot write games', !!(await as('authenticated', A, `update public.games set venue='x'`)).error)
-ok('anon cannot write teams', !!(await as('anon', null, `insert into public.teams (id, league_id, name, short_name) values ('x','nfl','X','X')`)).error)
-ok('authenticated cannot write leagues', !!(await as('authenticated', A, `delete from public.leagues`)).error)
-ok('authenticated cannot write sponsors', !!(await as('authenticated', A, `insert into public.sponsors (scope_type, scope_value, text) values ('league','nfl','x')`)).error)
-ok('authenticated cannot write game_changes', !!(await as('authenticated', A, `insert into public.game_changes (game_id, field) values ('aaaaaaaa-0000-0000-0000-000000000001','venue')`)).error)
-await db.exec(`set role service_role`)
-let svcErr = null
-try {
-  await db.exec(`
-  insert into public.sponsors (id, scope_type, scope_value, text, push_eligible) values ('cccccccc-0000-0000-0000-000000000001','league','nfl','Acme',false);
-  update public.games set watch_provider='x', watch_url='https://example.com/w', tickets_url='https://example.com/t', sponsor_id='cccccccc-0000-0000-0000-000000000001', sponsor_text='Acme', sponsor_url='https://example.com/s';
-  insert into public.game_changes (game_id, field, old_value, new_value) values ('aaaaaaaa-0000-0000-0000-000000000001','kickoff_at','19:20','20:20');`)
-} catch (e) { svcErr = e.message }
-await db.exec(`reset role`)
-ok('service_role writes games, sponsors and game_changes', !svcErr, svcErr ?? '')
+// ---- reference tables
+for (const t of ['leagues', 'teams', 'games', 'sponsors', 'game_changes']) ok(`${t}: readable by anon and authenticated`, typeof await n('anon', null, `select 1 from fanday.${t}`) === 'number' && typeof await n('authenticated', A, `select 1 from fanday.${t}`) === 'number')
+ok('reference tables are not writable by clients', !!(await as('authenticated', A, `update fanday.games set venue='x'`)).error && !!(await as('anon', null, `insert into fanday.teams (id, league_id, name, short_name) values ('x','nfl','X','X')`)).error
+  && !!(await as('authenticated', A, `delete from fanday.leagues`)).error && !!(await as('authenticated', A, `insert into fanday.sponsors (scope_type, scope_value, text) values ('league','nfl','x')`)).error)
+await db.exec(`insert into fanday.sponsors (scope_type, scope_value, text, starts_on, ends_on) values ('league','nfl','Expired', current_date-10, current_date-1), ('league','nfl','Future', current_date+1, null), ('league','nfl','EndsToday', null, current_date), ('league','nfl','StartsToday', current_date, current_date+5)`)
+ok('sponsors: clients see only active ones', (await as('anon', null, 'select text from fanday.sponsors order by text')).rows.map((r) => r.text).join() === 'EndsToday,StartsToday')
 
-// ---- link_clicks: server only
-ok('link_clicks: authenticated cannot read or write', String(await n('authenticated', A, 'select 1 from public.link_clicks')).startsWith('ERR:')
-  && !!(await as('authenticated', A, `insert into public.link_clicks (game_id, slot) values ('aaaaaaaa-0000-0000-0000-000000000001','watch')`)).error)
-ok('link_clicks: anon cannot write', !!(await as('anon', null, `insert into public.link_clicks (game_id, slot) values ('aaaaaaaa-0000-0000-0000-000000000001','watch')`)).error)
-await db.exec(`set role service_role`)
-await db.query(`select public.record_link_click('aaaaaaaa-0000-0000-0000-000000000001','watch')`)
-await db.query(`select public.record_link_click('aaaaaaaa-0000-0000-0000-000000000001','watch')`)
-await db.query(`select public.record_link_click('aaaaaaaa-0000-0000-0000-000000000001','tickets')`)
-const bogus = await db.query(`select public.record_link_click('aaaaaaaa-0000-0000-0000-000000000001','bogus')`).then(() => null, (e) => e.message)
-await db.exec(`reset role`)
-ok('link_clicks: record_link_click upserts one counter row per game+slot+day', JSON.stringify((await db.query(`select slot, clicks from public.link_clicks order by slot`)).rows) === JSON.stringify([{ slot: 'tickets', clicks: 1 }, { slot: 'watch', clicks: 2 }]))
-ok('link_clicks: slot still constrained', !!bogus)
-ok('record_link_click is not callable by users', !!(await as('authenticated', A, `select public.record_link_click('aaaaaaaa-0000-0000-0000-000000000001','watch')`)).error
-  && !!(await as('anon', null, `select public.record_link_click('aaaaaaaa-0000-0000-0000-000000000001','watch')`)).error)
-ok('link_clicks stores no person columns', (await db.query(`select string_agg(column_name, ',' order by column_name) c from information_schema.columns where table_name='link_clicks'`)).rows[0].c === 'clicks,day,game_id,slot')
+// ---- device-owned rows are closed to direct access, open through token RPCs
+const id1 = await reg(T1), id2 = await reg(T2)
+ok('device_tokens: no client can read or write the table', String(await n('anon', null, 'select 1 from fanday.device_tokens')).startsWith('ERR:') && String(await n('authenticated', A, 'select 1 from fanday.device_tokens')).startsWith('ERR:')
+  && !!(await as('anon', null, `insert into fanday.device_tokens (token_hash) values ('\\x00')`)).error)
+ok('device_tokens stores only a hash (no plaintext column)', (await db.query(`select string_agg(column_name,',' order by column_name) c from information_schema.columns where table_schema='fanday' and table_name='device_tokens'`)).rows[0].c === 'claimed_at,claimed_by,created_at,id,last_used_at,revoked_at,token_hash'
+  && (await db.query(`select count(*)::int c from fanday.device_tokens where token_hash = convert_to('${T1}','UTF8')`)).rows[0].c === 0)
+ok('register_device_token is service_role only', !!(await as('anon', null, `select fanday.register_device_token('\\x01')`)).error && !!(await as('authenticated', A, `select fanday.register_device_token('\\x01')`)).error)
+ok('_token_id helper is not callable by clients', !!(await as('anon', null, `select fanday._token_id('${T1}')`)).error)
 
-// ---- anonymous -> signed-in: follows survive
-await db.exec(`insert into public.follows (user_id, team_id) values ('${ANON}','nfl-kc'), ('${ANON}','epl-ars');
-insert into public.devices (user_id, platform) values ('${ANON}','ios');`)
-ok('signed-in user cannot start a merge claim', !!(await as('authenticated', A, 'select public.create_merge_claim()')).error)
-ok('anon (no JWT user) cannot call merge functions', !!(await as('anon', null, 'select public.create_merge_claim()')).error)
-const tok = (await as('authenticated', ANON, 'select public.create_merge_claim() t')).rows[0].t
-ok('anonymous user gets a claim token', /^[0-9a-f-]{36}$/.test(tok))
-ok('claim table is not readable by users', String(await n('authenticated', ANON, 'select 1 from public.merge_claims')).startsWith('ERR:'))
-ok('another anonymous user cannot redeem it', !!(await as('authenticated', ANON2, `select public.claim_anonymous_follows('${tok}')`)).error)
-ok('B cannot steal A-bound claim by guessing a random token', !!(await as('authenticated', B, `select public.claim_anonymous_follows(gen_random_uuid())`)).error)
-const r = await as('authenticated', B, `select public.claim_anonymous_follows('${tok}') r`)
-ok('signed-in B redeems: new follow moved (epl-ars was already followed by B), device moved', r.rows?.[0]?.r?.moved_follows === 1 && r.rows[0].r.moved_devices === 1, JSON.stringify(r))
-ok('B now has anon follows plus own; anon has none', (await db.query(`select user_id, count(*)::int c from public.follows where user_id in ('${B}','${ANON}') group by 1 order by 1`)).rows.map((x) => `${x.user_id.slice(0, 2)}:${x.c}`).join() === '22:2')
-ok('token is single use', !!(await as('authenticated', B, `select public.claim_anonymous_follows('${tok}')`)).error)
-const tok2 = (await as('authenticated', ANON2, 'select public.create_merge_claim() t')).rows[0].t
-await db.exec(`update public.merge_claims set expires_at = now() - interval '1 minute' where token = '${tok2}'`)
-ok('expired claim is rejected', !!(await as('authenticated', A, `select public.claim_anonymous_follows('${tok2}')`)).error)
-const tok3 = (await as('authenticated', ANON2, 'select public.create_merge_claim() t')).rows[0].t
-ok('anonymous user cannot redeem (must be signed in)', !!(await as('authenticated', ANON, `select public.claim_anonymous_follows('${tok3}')`)).error)
-await db.exec(`update auth.users set is_anonymous = false where id = '${ANON2}'`)
-ok('claim whose source is no longer anonymous is rejected', !!(await as('authenticated', A, `select public.claim_anonymous_follows('${tok3}')`)).error)
-await db.exec(`update auth.users set is_anonymous = true where id = '${ANON2}'`)
+ok('token 1 sets follows (unknown team skipped)', !(await as('anon', null, `select fanday.device_follows_set('${T1}', array['nfl-kc-x','nope'])`)).error
+  && (await as('anon', null, `select fanday.device_follows_list('${T1}') l`)).rows[0].l.join() === 'nfl-kc-x')
+await as('anon', null, `select fanday.device_follows_set('${T2}', array['nfl-den-x'])`)
+ok('token 2 cannot see or change token 1 rows', (await as('anon', null, `select fanday.device_follows_list('${T2}') l`)).rows[0].l.join() === 'nfl-den-x'
+  && (await db.query(`select count(*)::int c from fanday.follows where token_id='${id1}'`)).rows[0].c === 1)
+ok('set replaces the list (removal works)', !(await as('anon', null, `select fanday.device_follows_set('${T1}', array['nfl-den-x'])`)).error && (await as('anon', null, `select fanday.device_follows_list('${T1}') l`)).rows[0].l.join() === 'nfl-den-x')
+ok('signed-in A cannot see device-owned rows through the table', await n('authenticated', A, `select 1 from fanday.follows where token_id is not null`) === 0)
+ok('wrong token rejected (unknown, too short, null)', !!(await as('anon', null, `select fanday.device_follows_list('${T3}')`)).error && !!(await as('anon', null, `select fanday.device_follows_list('short')`)).error
+  && !!(await as('anon', null, `select fanday.device_follows_set(null, array['x'])`)).error)
+ok('too many teams refused', !!(await as('anon', null, `select fanday.device_follows_set('${T1}', (select array_agg(id) from fanday.teams))`)).error)
 
-// ---- sponsors: only active ones (starts_on/ends_on, inclusive) are visible to clients
-await db.exec(`insert into public.sponsors (id, scope_type, scope_value, text, starts_on, ends_on) values
-  ('cccccccc-0000-0000-0000-000000000002','league','nfl','Expired', current_date - 10, current_date - 1),
-  ('cccccccc-0000-0000-0000-000000000003','league','nfl','Future', current_date + 1, null),
-  ('cccccccc-0000-0000-0000-000000000004','league','nfl','EndsToday', null, current_date),
-  ('cccccccc-0000-0000-0000-000000000005','league','nfl','StartsToday', current_date, current_date + 5)`)
-const vis = async (role, uid) => (await as(role, uid, 'select text from public.sponsors order by text')).rows.map((r) => r.text).join()
-ok('sponsors: anon sees only active (no expired, no future)', await vis('anon', null) === 'Acme,EndsToday,StartsToday', await vis('anon', null))
-ok('sponsors: authenticated sees the same', await vis('authenticated', B) === 'Acme,EndsToday,StartsToday')
-ok('sponsors: service_role sees all', (await db.query('select count(*)::int c from public.sponsors')).rows[0].c === 5)
+ok('calendar: token 1 registers a device and its events (unknown game skipped)', !(await as('anon', null, `select fanday.device_calendar_upsert('${T1}','${DEV1}','ios','cal-1','[{"game_id":"${G1}","event_identifier":"E1","synced_rev":5},{"game_id":"eeeeeeee-0000-0000-0000-000000000009","event_identifier":"E2"}]'::jsonb)`)).error
+  && (await db.query(`select count(*)::int c from fanday.device_events where device_id='${DEV1}'`)).rows[0].c === 1)
+ok('calendar: token 2 cannot take over or write token 1 device', !!(await as('anon', null, `select fanday.device_calendar_upsert('${T2}','${DEV1}','android','x','[]'::jsonb)`)).error
+)
+ok('calendar: a bad platform is refused', !!(await as('anon', null, `select fanday.device_calendar_upsert('${T1}','${DEV2}','blackberry','x','[]'::jsonb)`)).error)
+ok('calendar: token 2 forget does not remove token 1 device', !(await as('anon', null, `select fanday.device_calendar_forget('${T2}','${DEV1}')`)).error
+  && (await db.query(`select count(*)::int c from fanday.devices where id='${DEV1}'`)).rows[0].c === 1)
+await as('anon', null, `select fanday.device_log_event('${T1}','open')`)
+ok('usage event logged against the device only', (await db.query(`select count(*)::int c from fanday.usage_events where token_id='${id1}' and user_id is null`)).rows[0].c === 1)
 
-// ---- cleanup of merged anonymous users (7 days after the claim was redeemed)
-const rows = async () => (await db.query(`select id from auth.users where id in ('${ANON}','${ANON2}') order by id`)).rows.map((r) => r.id)
-ok('before cleanup both anonymous users exist', (await rows()).length === 2)
-await db.exec(`set role service_role`)
-const c1 = (await db.query('select public.cleanup_merged_anonymous_users() n')).rows[0].n
-await db.exec(`reset role`)
-ok('cleanup: a claim redeemed today does not delete its anonymous user yet', c1 === 0 && (await rows()).length === 2)
-await db.exec(`update public.merge_claims set redeemed_at = now() - interval '8 days' where from_user = '${ANON}'`)
-await db.exec(`update public.merge_claims set redeemed_at = now() - interval '8 days' where from_user = '${B}'`) // not anonymous: must survive
-await db.exec(`insert into public.merge_claims (from_user, redeemed_at) values ('${B}', now() - interval '9 days')`)
-await db.exec(`set role service_role`)
-const c2 = (await db.query('select public.cleanup_merged_anonymous_users() n')).rows[0].n
-await db.exec(`reset role`)
-ok('cleanup: deletes the merged anonymous user after 7 days', c2 === 1 && (await rows()).join() === ANON2)
-ok('cleanup: never deletes a non-anonymous user', (await db.query(`select 1 from auth.users where id='${B}'`)).rows.length === 1)
-ok('cleanup: cascaded the anonymous user rows', (await db.query(`select (select count(*) from public.devices where user_id='${ANON}')::int d`)).rows[0].d === 0)
-ok('cleanup is not callable by users', !!(await as('authenticated', B, 'select public.cleanup_merged_anonymous_users()')).error)
+// ---- claim: signed-in user takes the device
+await as('anon', null, `select fanday.device_follows_set('${T1}', array['nfl-den-x','epl-arsenal'])`) // A already follows nfl-den-x; epl-arsenal is new to A
+ok('claim: anon role cannot call it', !!(await as('anon', null, `select fanday.claim_device('${T1}')`)).error)
+ok('claim: a mismatched (unknown) token fails and moves nothing', !!(await as('authenticated', A, `select fanday.claim_device('${T3}')`)).error && (await db.query(`select count(*)::int c from fanday.follows where user_id='${A}'`)).rows[0].c === 2)
+const cl = await as('authenticated', A, `select fanday.claim_device('${T1}') r`)
+ok('claim: A takes the device follows (merged with own), the calendar device, its events and usage', cl.rows?.[0]?.r?.moved_follows === 1 && cl.rows[0].r.moved_devices === 1
+  && (await db.query(`select string_agg(team_id, ',' order by team_id) s from fanday.follows where user_id='${A}'`)).rows[0].s === 'epl-arsenal,nfl-den-x,nfl-kc-x'
+  && (await db.query(`select user_id::text u, token_id::text t from fanday.devices where id='${DEV1}'`)).rows[0].u === A
+  && (await db.query(`select count(*)::int c from fanday.device_events where device_id='${DEV1}'`)).rows[0].c === 1
+  && (await db.query(`select count(*)::int c from fanday.usage_events where user_id='${A}' and name='open'`)).rows[0].c === 2
+  && (await db.query(`select count(*)::int c from fanday.follows where token_id='${id1}'`)).rows[0].c === 0, JSON.stringify(cl))
+ok('claim: the token is dead afterwards (reads, writes, second claim by A, claim by B)', !!(await as('anon', null, `select fanday.device_follows_list('${T1}')`)).error
+  && !!(await as('authenticated', A, `select fanday.claim_device('${T1}')`)).error && !!(await as('authenticated', B, `select fanday.claim_device('${T1}')`)).error)
+ok('claim: B could not steal anything via the used token', (await db.query(`select count(*)::int c from fanday.follows where user_id='${B}'`)).rows[0].c === 1)
+const rec = (await db.query(`select claimed_by::text cb, claimed_at is not null ca from fanday.device_tokens where id='${id1}'`)).rows[0]
+ok('claim: recorded who claimed and when', rec.cb === A && rec.ca)
+ok('claim: a revoked token cannot be claimed', await (async () => { await reg(T4); await as('anon', null, `select fanday.device_delete('${T4}')`); return !!(await as('authenticated', C, `select fanday.claim_device('${T4}')`)).error })())
+await reg(T3)
+ok('claim: refused when two users race the same token (second sees it used)', await (async () => {
+  await as('anon', null, `select fanday.device_follows_set('${T3}', array['nfl-kc-x'])`)
+  const [r1, r2] = await Promise.all([as('authenticated', C, `select fanday.claim_device('${T3}') r`), as('authenticated', D, `select fanday.claim_device('${T3}') r`)])
+  return [r1, r2].filter((r) => r.error).length === 1 && [r1, r2].filter((r) => r.rows).length === 1
+})())
 
-// ---- profile email follows auth.users; delete cascades everything (what delete-account relies on)
-await db.exec(`update auth.users set email='a2@x.com' where id='${A}'`)
-ok('profile email follows auth.users email', (await db.query(`select email from public.profiles where user_id='${A}'`)).rows[0].email === 'a2@x.com')
-await db.exec(`delete from auth.users where id='${A}'`)
-const left = (await db.query(`select (select count(*) from public.follows where user_id='${A}')::int + (select count(*) from public.devices where user_id='${A}')::int + (select count(*) from public.profiles where user_id='${A}')::int + (select count(*) from public.usage_events where user_id='${A}')::int + (select count(*) from public.device_events where event_identifier='EV-A')::int c`)).rows[0].c
-ok('deleting the auth user cascades all of A\'s rows', left === 0)
-ok('...and leaves B and reference data alone', (await db.query(`select (select count(*) from public.follows where user_id='${B}')::int f, (select count(*) from public.games)::int g`)).rows[0].f === 2)
+// ---- device delete (signed-out)
+await as('anon', null, `select fanday.device_calendar_upsert('${T2}','${DEV2}','android','c2','[{"game_id":"${G1}","event_identifier":"E3"}]'::jsonb)`)
+await as('anon', null, `select fanday.device_log_event('${T2}','open')`)
+const dd = await as('anon', null, `select fanday.device_delete('${T2}') r`)
+ok('device delete removes every row of the device and reports counts', dd.rows?.[0]?.r?.follows === 1 && dd.rows[0].r.devices === 1
+  && (await db.query(`select (select count(*) from fanday.follows where token_id='${id2}')::int + (select count(*) from fanday.devices where token_id='${id2}')::int + (select count(*) from fanday.usage_events where token_id='${id2}')::int + (select count(*) from fanday.device_events where device_id='${DEV2}')::int c`)).rows[0].c === 0)
+ok('device delete revokes the token (reuse fails) and touches nobody else', !!(await as('anon', null, `select fanday.device_follows_list('${T2}')`)).error && !!(await as('anon', null, `select fanday.device_delete('${T2}')`)).error
+  && (await db.query(`select count(*)::int c from fanday.follows where user_id='${B}'`)).rows[0].c === 1)
 
-console.log(fails ? `\n${fails} FAILED` : '\nall migration checks passed')
-process.exit(fails ? 1 : 0)
+// ---- rate limits and salts
+ok('rl: salt is stable within a day and server-only', (await svc('select fanday.rl_salt() s')).rows[0].s === (await svc('select fanday.rl_salt() s')).rows[0].s && !!(await as('anon', null, 'select fanday.rl_salt()')).error)
+const hits = []; for (let i = 0; i < 5; i++) hits.push((await svc(`select fanday.rl_hit('t','k',date_trunc('hour', now()), 3) ok`)).rows[0].ok)
+ok('rl: allows up to the limit, then refuses', hits.join() === 'true,true,true,false,false' && !!(await as('anon', null, `select fanday.rl_hit('t','k',now(),3)`)).error)
+ok('rl: stores counters only (no address or email columns)', (await db.query(`select string_agg(column_name,',' order by column_name) c from information_schema.columns where table_schema='fanday' and table_name in ('rate_counters','rl_salts')`)).rows[0].c === 'day,key,n,salt,scope,window_start')
+
+// ---- link counting
+await svc(`select fanday.record_link_click('${G1}','watch')`); await svc(`select fanday.record_link_click('${G1}','watch')`)
+ok('link_clicks: one counter row, server-only, no person columns', (await db.query(`select clicks from fanday.link_clicks`)).rows[0].clicks === 2 && !!(await as('authenticated', A, `select fanday.record_link_click('${G1}','watch')`)).error
+  && String(await n('authenticated', A, 'select 1 from fanday.link_clicks')).startsWith('ERR:') && (await db.query(`select string_agg(column_name,',' order by column_name) c from information_schema.columns where table_schema='fanday' and table_name='link_clicks'`)).rows[0].c === 'clicks,day,game_id,slot')
+
+// ---- cleanup (service_role only, not scheduled)
+await reg('e'.repeat(64)); await reg('f'.repeat(64))
+await db.exec(`update fanday.device_tokens set last_used_at = now() - interval '25 months' where token_hash = sha256(convert_to('${'e'.repeat(64)}','UTF8'));
+  insert into fanday.follows (token_id, team_id) select id, 'nfl-kc-x' from fanday.device_tokens where token_hash = sha256(convert_to('${'e'.repeat(64)}','UTF8'));
+  update fanday.device_tokens set revoked_at = now() - interval '31 days' where id = '${id2}'`)
+const cu = (await svc('select fanday.cleanup_unused_device_tokens() n')).rows[0].n
+ok('cleanup: removes tokens unused 24+ months (rows cascade) and revoked/claimed 30+ days; keeps the rest', cu >= 2
+  && (await db.query(`select count(*)::int c from fanday.device_tokens where token_hash = sha256(convert_to('${'e'.repeat(64)}','UTF8'))`)).rows[0].c === 0
+  && (await db.query(`select count(*)::int c from fanday.device_tokens where token_hash = sha256(convert_to('${'f'.repeat(64)}','UTF8'))`)).rows[0].c === 1
+  && (await db.query(`select count(*)::int c from fanday.follows where token_id is not null and team_id='nfl-kc-x' and token_id not in (select id from fanday.device_tokens)`)).rows[0].c === 0)
+ok('cleanup is not callable by clients; no anonymous-user cleanup function exists', !!(await as('authenticated', A, 'select fanday.cleanup_unused_device_tokens()')).error
+  && (await db.query(`select count(*)::int c from pg_proc p join pg_namespace n on n.oid=p.pronamespace where n.nspname='fanday' and p.proname in ('cleanup_merged_anonymous_users','create_merge_claim','claim_anonymous_follows')`)).rows[0].c === 0)
+
+// ---- orphans (no FK to auth.users)
+await db.exec(`insert into auth.users (id, email) values ('55555555-5555-5555-5555-555555555555','z@x.com'); insert into fanday.follows (user_id, team_id) values ('55555555-5555-5555-5555-555555555555','nfl-kc-x');
+  delete from auth.users where id='55555555-5555-5555-5555-555555555555'`)
+ok('rows of an auth user deleted elsewhere are swept by purge_orphaned_user_rows (and live users untouched)', (await svc('select fanday.purge_orphaned_user_rows() n')).rows[0].n === 1
+  && (await db.query(`select count(*)::int c from fanday.follows where user_id='${A}'`)).rows[0].c === 3)
+
+process.exit(ok.fails() ? 1 : (console.log('\nall migration checks passed'), 0))

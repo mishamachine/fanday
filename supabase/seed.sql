@@ -1,7 +1,7 @@
 -- Leagues seed (README, 2026-11-02). `season` = the newest season whose Wikipedia pages exist (checked 2026-11-03); the ingest reads it as is,
 -- so for off-season leagues it must be raised by hand (or by a later job) when the next season's pages appear. Idempotent. NBA/NHL use official team calendar links; MLB, WNBA, IPL, NRL are
 -- off-season (in_season=false): pickable now, games arrive when the schedule is published. Teams: seed_teams.sql.
-insert into public.leagues (id, name, country, country_code, sport, season, source, tz, in_season, sort) values
+insert into fanday.leagues (id, name, country, country_code, sport, season, source, tz, in_season, sort) values
   ('epl',         'Premier League',      'England',   'GB', 'soccer',            '2026-27', 'wikipedia',     'Europe/London',            true,   10),
   ('nfl',         'NFL',                 'USA',       'US', 'american_football', '2026',    'wikipedia',     'America/New_York',         true,   20),
   ('nba',         'NBA',                 'USA',       'US', 'basketball',        '2026-27', 'official_link', 'America/New_York',         true,   30),

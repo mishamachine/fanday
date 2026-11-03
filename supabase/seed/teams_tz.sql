@@ -1,8 +1,8 @@
--- Home time zone (IANA) of every MLS team. Run after supabase/seed_teams.sql (PR #1) and migration 0002_ingest.sql (adds teams.tz).
+-- Home time zone (IANA) of every MLS team. Run after supabase/seed_teams.sql (PR #1) and migration fanday_0002_ingest.sql (adds teams.tz).
 -- The Wikipedia ingest uses it for MLS kickoff times that carry no zone label; with no zone a time stays TBC (it never guesses).
 -- Other leagues need no team zone: their pages label the time, or the zone comes from the league, the template or the venue.
 -- Idempotent: an UPDATE of one column, safe to re-run. Team ids are from supabase/seed/teams.json on cto/fanday-v1-foundation (aba1937).
-update public.teams t
+update fanday.teams t
    set tz = v.tz
   from (values
   ('mls-atlanta-united-fc', 'America/New_York'),

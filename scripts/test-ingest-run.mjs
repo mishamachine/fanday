@@ -370,20 +370,20 @@ test('unknown teams are reported and skipped; the page is not trusted to postpon
 });
 
 test('migration 0002: transactional SECURITY DEFINER RPC, empty search_path, service_role only, no affiliate columns', () => {
-  const sql = readFileSync(new URL('../supabase/migrations/0002_ingest.sql', import.meta.url), 'utf8');
-  assert.match(sql, /create or replace function public\.ingest_apply\(p_inserts jsonb, p_updates jsonb, p_changes jsonb\)/);
+  const sql = readFileSync(new URL('../supabase/migrations/fanday_0002_ingest.sql', import.meta.url), 'utf8');
+  assert.match(sql, /create or replace function fanday\.ingest_apply\(p_inserts jsonb, p_updates jsonb, p_changes jsonb\)/);
   assert.match(sql, /security definer/);
   assert.match(sql, /set search_path = ''/);
-  assert.match(sql, /revoke all on function public\.ingest_apply\(jsonb, jsonb, jsonb\) from public, anon, authenticated;/);
-  assert.match(sql, /grant execute on function public\.ingest_apply\(jsonb, jsonb, jsonb\) to service_role;/);
+  assert.match(sql, /revoke all on function fanday\.ingest_apply\(jsonb, jsonb, jsonb\) from public, anon, authenticated;/);
+  assert.match(sql, /grant execute on function fanday\.ingest_apply\(jsonb, jsonb, jsonb\) to service_role;/);
   assert.doesNotMatch(sql.replace(/--.*$/gm, ''), /watch_|tickets_url|sponsor/);
   assert.match(sql, /add column if not exists pending\s+jsonb/);
   assert.match(sql, /add column if not exists missing_since timestamptz/);
   for (const fn of ['ingest_set_league_season(text, text)', 'ingest_set_team_wiki_page(text, text)']) {
-    assert.ok(sql.includes(`revoke all on function public.${fn} from public, anon, authenticated;`), fn);
-    assert.ok(sql.includes(`grant execute on function public.${fn} to service_role;`), fn);
+    assert.ok(sql.includes(`revoke all on function fanday.${fn} from public, anon, authenticated;`), fn);
+    assert.ok(sql.includes(`grant execute on function fanday.${fn} to service_role;`), fn);
   }
-  const setters = sql.slice(sql.indexOf('create or replace function public.ingest_set_league_season'));
+  const setters = sql.slice(sql.indexOf('create or replace function fanday.ingest_set_league_season'));
   assert.equal((setters.match(/security definer/g) ?? []).length, 2);
   assert.equal((setters.match(/set search_path = ''/g) ?? []).length, 2);
   assert.equal((setters.match(/\bset\s+(season|wiki_page)\s*=/g) ?? []).length, 2, 'one column each');
@@ -647,27 +647,28 @@ test('fetcher: gives up after repeated maxlag or server errors', async () => {
 // ---- Edge Function handler (Deno stubbed) ----
 test('handler: method, configuration and shared-secret checks', async () => {
   let handler;
-  const env = { INGEST_SECRET: 'test-secret-not-real', SUPABASE_URL: 'https://example.test', SUPABASE_SERVICE_ROLE_KEY: 'test-key-not-real' };
+  const env = { FANDAY_INGEST_SECRET: 'test-secret-not-real', SUPABASE_URL: 'https://example.test', SUPABASE_SERVICE_ROLE_KEY: 'test-key-not-real' };
   globalThis.Deno = { env: { get: (k) => env[k] }, serve: (h) => { handler = h; } };
   const realFetch = globalThis.fetch;
   const rest = [];
   globalThis.fetch = async (url, init) => { rest.push({ url: String(url), headers: init?.headers }); return new Response('[]', { status: 200 }); };
   try {
-    await import(new URL('../supabase/functions/ingest-wikipedia/index.ts', import.meta.url).href);
+    await import(new URL('../supabase/functions/fanday-ingest/index.ts', import.meta.url).href);
     const call = (method, headers, body) => handler(new Request('https://f.test/', { method, headers, body }));
     assert.equal((await call('GET', {})).status, 405);
     assert.equal((await call('POST', {})).status, 401);
     assert.equal((await call('POST', { 'x-ingest-secret': 'wrong' })).status, 401);
     assert.equal((await call('POST', { 'x-ingest-secret': 'test-secret-not-real-extra' })).status, 401);
     assert.equal(rest.length, 0, 'no database call before authorization');
-    assert.equal((await call('POST', { 'x-ingest-secret': env.INGEST_SECRET }, '{"mode":"hourly"}')).status, 400);
-    const ok = await call('POST', { 'x-ingest-secret': env.INGEST_SECRET }, '{"mode":"gameday"}');
+    assert.equal((await call('POST', { 'x-ingest-secret': env.FANDAY_INGEST_SECRET }, '{"mode":"hourly"}')).status, 400);
+    const ok = await call('POST', { 'x-ingest-secret': env.FANDAY_INGEST_SECRET }, '{"mode":"gameday"}');
     assert.equal(ok.status, 200);
     const body = await ok.json();
     assert.deepEqual([body.mode, body.done, body.planned], ['gameday', true, 0]);
     assert.ok(rest.some((r) => r.url.startsWith('https://example.test/rest/v1/leagues')), 'the call reaches the database (keeps the project awake)');
-    delete env.INGEST_SECRET;
-    assert.equal((await call('POST', { 'x-ingest-secret': '' })).status, 500, 'fails closed without INGEST_SECRET');
+    assert.ok(rest.every((r) => r.headers['Accept-Profile'] === 'fanday' && r.headers['Content-Profile'] === 'fanday'), 'every REST call selects the fanday schema');
+    delete env.FANDAY_INGEST_SECRET;
+    assert.equal((await call('POST', { 'x-ingest-secret': '' })).status, 500, 'fails closed without FANDAY_INGEST_SECRET');
   } finally {
     globalThis.fetch = realFetch;
     delete globalThis.Deno;

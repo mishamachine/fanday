@@ -2,7 +2,7 @@
 import { readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 
-const root = new URL('../supabase/functions/ingest-wikipedia/', import.meta.url);
+const root = new URL('../supabase/functions/fanday-ingest/', import.meta.url);
 export const load = (name) => import(new URL(name, root).href);
 export const fixture = (name) => readFileSync(fileURLToPath(new URL(`./test-ingest-fixtures/${name}.wikitext`, import.meta.url)), 'utf8');
 

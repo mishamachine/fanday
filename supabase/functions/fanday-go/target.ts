@@ -4,10 +4,10 @@ export type Slot = (typeof SLOTS)[number]
 
 const UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i
 
-/** Accepts .../go/{game}/{slot} (any prefix, such as /functions/v1). Anything else is null. */
+/** Accepts .../fanday-go/{game}/{slot} (any prefix, such as /functions/v1). Anything else is null. */
 export function parseGoPath(pathname: string): { gameId: string; slot: Slot } | null {
   const parts = pathname.split('/').filter(Boolean)
-  const i = parts.lastIndexOf('go')
+  const i = parts.lastIndexOf('fanday-go')
   if (i < 0 || parts.length !== i + 3) return null
   const [gameId, slot] = [parts[i + 1], parts[i + 2]]
   if (!UUID.test(gameId) || !(SLOTS as readonly string[]).includes(slot)) return null

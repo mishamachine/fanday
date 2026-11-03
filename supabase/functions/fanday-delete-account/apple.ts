@@ -11,8 +11,8 @@ const b64url = (b: ArrayBuffer | Uint8Array | string) => {
 export interface AppleConfig { teamId: string; keyId: string; privateKey: string }
 
 export function appleConfigFrom(env: (k: string) => string | undefined): AppleConfig | null {
-  const teamId = env('APPLE_TEAM_ID')?.trim(), keyId = env('APPLE_KEY_ID')?.trim()
-  const privateKey = env('APPLE_PRIVATE_KEY')?.replace(/\\n/g, '\n').trim()
+  const teamId = env('FANDAY_APPLE_TEAM_ID')?.trim(), keyId = env('FANDAY_APPLE_KEY_ID')?.trim()
+  const privateKey = env('FANDAY_APPLE_PRIVATE_KEY')?.replace(/\\n/g, '\n').trim()
   return teamId && keyId && privateKey ? { teamId, keyId, privateKey } : null
 }
 
@@ -64,9 +64,9 @@ export async function revokeAppleAuthorization(cfg: AppleConfig, clientId: strin
   return rev.ok ? 'revoked' : 'failed'
 }
 
-/** Redirect URIs the server accepts from the web flow: APPLE_REDIRECT_URIS (comma list) or the project's Supabase auth callback. */
+/** Redirect URIs the server accepts from the web flow: FANDAY_APPLE_REDIRECT_URIS (comma list) or the project's Supabase auth callback. */
 export function allowedRedirectUris(env: (k: string) => string | undefined): string[] {
-  const list = (env('APPLE_REDIRECT_URIS') ?? '').split(',').map((x) => x.trim()).filter(Boolean)
+  const list = (env('FANDAY_APPLE_REDIRECT_URIS') ?? '').split(',').map((x) => x.trim()).filter(Boolean)
   const url = env('SUPABASE_URL')?.replace(/\/$/, '')
   return list.length ? list : url ? [`${url}/auth/v1/callback`] : []
 }

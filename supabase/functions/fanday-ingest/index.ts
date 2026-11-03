@@ -1,11 +1,11 @@
-// Edge Function `ingest-wikipedia` (Deno). Not deployed by this PR.
+// Edge Function `fanday-ingest` (Deno). Not deployed by this PR.
 //
 // POST /functions/v1/ingest-wikipedia
-//   header  x-ingest-secret: <INGEST_SECRET>
+//   header  x-ingest-secret: <FANDAY_INGEST_SECRET>
 //   body    {"mode":"daily"|"gameday","cursor":0,"league":"epl"}   (cursor and league optional)
 // A run handles pages until its time budget is spent and returns nextCursor; callers loop until done.
 //
-// Env (set as Supabase secrets by Babar): INGEST_SECRET. SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY are injected by Supabase.
+// Env (set as Supabase secrets by Babar): FANDAY_INGEST_SECRET. SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY are injected by Supabase.
 // Deploy with verify_jwt = false: the shared secret is the only credential.
 
 import { createFetcher } from './mediawiki.ts';
@@ -28,7 +28,7 @@ function safeEqual(a: string, b: string): boolean {
 
 Deno.serve(async (req) => {
   if (req.method !== 'POST') return json(405, { error: 'POST only' });
-  const secret = Deno.env.get('INGEST_SECRET');
+  const secret = Deno.env.get('FANDAY_INGEST_SECRET');
   const url = Deno.env.get('SUPABASE_URL');
   const key = Deno.env.get('SUPABASE_SERVICE_ROLE_KEY');
   if (!secret || !url || !key) return json(500, { error: 'function is not configured' });
