@@ -31,10 +31,6 @@ li { margin:4px 0; }
 .paid { font-size:.75rem; color:var(--muted); border:1px solid var(--line); border-radius:4px; padding:0 5px; margin-left:6px; }
 .moved { display:inline-block; background:var(--mv); color:var(--mvt); font-size:.75rem; font-weight:700; border-radius:99px; padding:1px 8px; margin-left:6px; }
 .note { font-size:.9rem; }
-.draft { background:var(--mv); color:var(--mvt); border-left:4px solid var(--amb); border-radius:4px; padding:12px 16px; font-weight:600; }
-.draft p { color:var(--mvt); margin:0; }
-.todo { border:2px dashed var(--muted); border-radius:8px; padding:12px 16px; margin:20px 0; background:var(--card); }
-.todo p { margin:0; }
 .card { background:var(--card); border:1px solid var(--line); border-radius:8px; padding:4px 18px 14px; margin-top:16px; }
 .card h2 { margin-top:14px; }
 .btn { display:inline-flex; align-items:center; justify-content:center; min-height:44px; padding:10px 18px; background:var(--nav); color:#fff; font-weight:700; border-radius:4px; text-decoration:none; }
@@ -47,3 +43,17 @@ li { margin:4px 0; }
 code { font-family:var(--mono); font-size:.9em; background:var(--card); border:1px solid var(--line); border-radius:4px; padding:0 4px; }
 .hidden { display:none; }
 @media (max-width:420px) { h1 { font-size:1.8rem; } body { font-size:16px; } }
+.legal h1 { margin-top:24px; }
+.legal h2 { margin-top:28px; }
+.legal table { border-collapse:collapse; width:100%; background:var(--card); border:1px solid var(--line); border-radius:8px; margin:12px 0; font-size:.95rem; }
+.legal th, .legal td { text-align:left; vertical-align:top; padding:10px 12px; border-bottom:1px solid var(--line); color:var(--muted); }
+.legal th { color:var(--ink); background:var(--bg); }
+.legal td strong { color:var(--ink); }
+.legal li ul { margin-top:4px; }
+@media (max-width:600px) {
+  .legal table, .legal tbody, .legal tr, .legal td { display:block; width:100%; }
+  .legal thead { position:absolute; left:-9999px; }
+  .legal tr { border-bottom:2px solid var(--line); padding:6px 0; }
+  .legal td { border:0; padding:6px 12px; }
+  .legal td::before { content:attr(data-label); display:block; font-size:.75rem; letter-spacing:.04em; text-transform:uppercase; color:var(--ink); font-weight:600; }
+}

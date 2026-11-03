@@ -17,6 +17,44 @@ const read = (p) => readFileSync(join(src, p), 'utf8')
 const write = (p, data) => { const f = join(dist, p); mkdirSync(dirname(f), { recursive: true }); writeFileSync(f, data) }
 const copy = (from, to) => { const f = join(dist, to); mkdirSync(dirname(f), { recursive: true }); copyFileSync(join(src, from), f) }
 
+
+// Small Markdown renderer for the legal texts: headings, paragraphs (soft line breaks kept), bold, links, bullet lists (nested), tables.
+const inline = (t) => esc(t).replace(/&quot;/g, '"')
+  .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+  .replace(/\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g, '<a href="$2" rel="noopener">$1</a>')
+function md(text) {
+  const lines = text.replace(/\r/g, '').split('\n'); const out = []; let i = 0
+  const cells = (l) => l.trim().replace(/^\||\|$/g, '').split('|').map((c) => c.trim())
+  while (i < lines.length) {
+    const l = lines[i]
+    if (!l.trim()) { i++; continue }
+    let m
+    if ((m = l.match(/^(#{1,3}) (.+)$/))) { out.push(`<h${m[1].length}>${inline(m[2])}</h${m[1].length}>`); i++; continue }
+    if (l.startsWith('|')) {
+      const head = cells(l); i += 2; const rows = []
+      while (i < lines.length && lines[i].startsWith('|')) rows.push(cells(lines[i++]))
+      out.push('<table><thead><tr>' + head.map((h) => `<th scope="col">${inline(h)}</th>`).join('') + '</tr></thead><tbody>' +
+        rows.map((r) => '<tr>' + r.map((c, j) => `<td data-label="${esc(head[j])}">${inline(c)}</td>`).join('') + '</tr>').join('') + '</tbody></table>')
+      continue
+    }
+    if (/^\s*- /.test(l)) {
+      const items = []
+      while (i < lines.length && /^\s*- /.test(lines[i])) { const mm = lines[i].match(/^(\s*)- (.*)$/); items.push({ d: mm[1].length >= 2 ? 1 : 0, t: mm[2] }); i++ }
+      let html = '<ul>', depth = 0
+      items.forEach((it, k) => {
+        if (it.d > depth) { html += '<ul>'; depth = 1 } else if (it.d < depth) { html += '</li></ul></li>'; depth = 0 } else if (k) html += '</li>'
+        html += `<li>${inline(it.t)}`
+      })
+      html += depth ? '</li></ul></li></ul>' : '</li></ul>'
+      out.push(html); continue
+    }
+    const para = []
+    while (i < lines.length && lines[i].trim() && !/^(#{1,3} |\||\s*- )/.test(lines[i])) para.push(inline(lines[i++].trim()))
+    out.push(`<p>${para.join('<br>\n')}</p>`)
+  }
+  return out.join('\n')
+}
+
 rmSync(dist, { recursive: true, force: true })
 mkdirSync(dist, { recursive: true })
 
@@ -30,7 +68,8 @@ for (const page of pages) {
   if (!m) throw new Error(`${page}: missing <!--meta {...}--> first line`)
   const meta = JSON.parse(m[1])
   for (const k of ['title', 'description', 'path']) if (!meta[k]) throw new Error(`${page}: meta.${k} missing`)
-  const content = raw.slice(m[0].length).trimEnd()
+  let content = raw.slice(m[0].length).trimEnd()
+  content = content.replace(/<!--md (legal\/[\w-]+\.md)-->/, (_, f) => `<div class="legal">\n${md(readFileSync(join(root, 'site', f), 'utf8'))}\n</div>`)
   const vars = {
     title: esc(meta.title), ogTitle: esc(meta.ogTitle ?? meta.title), description: esc(meta.description),
     robots: meta.robots ?? 'index, follow', referrer: meta.referrer ?? 'strict-origin-when-cross-origin',
