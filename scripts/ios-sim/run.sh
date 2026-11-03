@@ -45,7 +45,9 @@ sleep 8
 xcrun simctl io "$UDID" screenshot "$OUT/02-after-8s.png"
 
 echo "== process alive?"
-if xcrun simctl spawn "$UDID" launchctl list | grep -q "$BUNDLE_ID"; then
+# Capture first: `grep -q` exits early and, with pipefail, the writer gets SIGPIPE and the check reported a live app as NOT RUNNING.
+LCTL="$(xcrun simctl spawn "$UDID" launchctl list 2>&1)"
+if grep -q "$BUNDLE_ID" <<<"$LCTL"; then
   echo "alive" | tee "$OUT/alive.txt"
 else
   echo "NOT RUNNING" | tee "$OUT/alive.txt"; FAIL=1
