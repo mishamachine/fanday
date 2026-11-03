@@ -1,0 +1,498 @@
+[
+ {
+  "league": "nba",
+  "team": "Atlanta Hawks",
+  "url": "https://nba.ecal.com/atlanta-hawks",
+  "kind": "calendar_sync",
+  "verified_on": "2026-11-03",
+  "note": "League ECAL page for this team (nba.ecal.com); not the link on the team's nba.com schedule page, which has no calendar link found. Loads 200."
+ },
+ {
+  "league": "nba",
+  "team": "Boston Celtics",
+  "url": "https://nba.ecal.com/boston-celtics",
+  "kind": "calendar_sync",
+  "verified_on": "2026-11-03",
+  "note": "League ECAL page for this team (nba.ecal.com); not the link on the team's nba.com schedule page, which has no calendar link found. Loads 200."
+ },
+ {
+  "league": "nba",
+  "team": "Brooklyn Nets",
+  "url": "https://nba.ecal.com/brooklyn-nets",
+  "kind": "calendar_sync",
+  "verified_on": "2026-11-03",
+  "note": "League ECAL page for this team (nba.ecal.com); not the link on the team's nba.com schedule page, which has no calendar link found. Loads 200."
+ },
+ {
+  "league": "nba",
+  "team": "Charlotte Hornets",
+  "url": "https://hornets.ecal.com/",
+  "kind": "calendar_sync",
+  "verified_on": "2026-11-03",
+  "note": "Link taken from the addToCalendarLink on the team's nba.com schedule page. Loads 200."
+ },
+ {
+  "league": "nba",
+  "team": "Chicago Bulls",
+  "url": "https://www.nba.com/bulls/schedule/download",
+  "kind": "calendar_sync",
+  "verified_on": "2026-11-03",
+  "note": "Link taken from the addToCalendarLink on the team's nba.com schedule page. Loads 200."
+ },
+ {
+  "league": "nba",
+  "team": "Cleveland Cavaliers",
+  "url": "https://www.nba.com/cavaliers/add-to-calendar",
+  "kind": "calendar_sync",
+  "verified_on": "2026-11-03",
+  "note": "Link taken from the addToCalendarLink on the team's nba.com schedule page. Loads 200."
+ },
+ {
+  "league": "nba",
+  "team": "Dallas Mavericks",
+  "url": "https://mavs.ecal.com/",
+  "kind": "calendar_sync",
+  "verified_on": "2026-11-03",
+  "note": "Link taken from the addToCalendarLink on the team's nba.com schedule page. Loads 200."
+ },
+ {
+  "league": "nba",
+  "team": "Denver Nuggets",
+  "url": "https://nba.ecal.com/denver-nuggets",
+  "kind": "calendar_sync",
+  "verified_on": "2026-11-03",
+  "note": "Link taken from the addToCalendarLink on the team's nba.com schedule page. Loads 200."
+ },
+ {
+  "league": "nba",
+  "team": "Detroit Pistons",
+  "url": "https://nba.ecal.com/detroit-pistons",
+  "kind": "calendar_sync",
+  "verified_on": "2026-11-03",
+  "note": "Link taken from the addToCalendarLink on the team's nba.com schedule page. Loads 200."
+ },
+ {
+  "league": "nba",
+  "team": "Golden State Warriors",
+  "url": "https://nba.ecal.com/golden-state-warriors",
+  "kind": "calendar_sync",
+  "verified_on": "2026-11-03",
+  "note": "League ECAL page for this team (nba.ecal.com); not the link on the team's nba.com schedule page, which has no calendar link found. Loads 200."
+ },
+ {
+  "league": "nba",
+  "team": "Houston Rockets",
+  "url": "https://nba.ecal.com/houston-rockets",
+  "kind": "calendar_sync",
+  "verified_on": "2026-11-03",
+  "note": "Link taken from the addToCalendarLink on the team's nba.com schedule page. Loads 200."
+ },
+ {
+  "league": "nba",
+  "team": "Indiana Pacers",
+  "url": "https://nba.ecal.com/indiana-pacers",
+  "kind": "calendar_sync",
+  "verified_on": "2026-11-03",
+  "note": "Link taken from the addToCalendarLink on the team's nba.com schedule page. Loads 200."
+ },
+ {
+  "league": "nba",
+  "team": "LA Clippers",
+  "url": "https://sync.ecal.com/loading?widgetId=66eb176aba5c13000855f12b&apiKey=tsJCv6QH6urnuO6A8bcvJMzMgRKVWggncHaIgcNSDtw66e5a55",
+  "kind": "calendar_sync",
+  "verified_on": "2026-11-03",
+  "note": "Link taken from the addToCalendarLink on the team's nba.com schedule page. Loads 200."
+ },
+ {
+  "league": "nba",
+  "team": "Los Angeles Lakers",
+  "url": "https://cdn.nba.com/teams/calendars/lakers.ics",
+  "kind": "calendar_sync",
+  "verified_on": "2026-11-03",
+  "note": "Direct .ics feed on cdn.nba.com, linked as the team's add-to-calendar on its nba.com schedule page (HEAD 200, not downloaded)."
+ },
+ {
+  "league": "nba",
+  "team": "Memphis Grizzlies",
+  "url": "https://nba.ecal.com/memphis-grizzlies",
+  "kind": "calendar_sync",
+  "verified_on": "2026-11-03",
+  "note": "League ECAL page for this team (nba.ecal.com); not the link on the team's nba.com schedule page, which has no calendar link found. Loads 200."
+ },
+ {
+  "league": "nba",
+  "team": "Miami Heat",
+  "url": "https://nba.ecal.com/miami-heat",
+  "kind": "calendar_sync",
+  "verified_on": "2026-11-03",
+  "note": "League ECAL page for this team (nba.ecal.com); not the link on the team's nba.com schedule page, which has no calendar link found. Loads 200."
+ },
+ {
+  "league": "nba",
+  "team": "Milwaukee Bucks",
+  "url": "https://nba.ecal.com/milwaukee-bucks",
+  "kind": "calendar_sync",
+  "verified_on": "2026-11-03",
+  "note": "League ECAL page for this team (nba.ecal.com); not the link on the team's nba.com schedule page, which has no calendar link found. Loads 200."
+ },
+ {
+  "league": "nba",
+  "team": "Minnesota Timberwolves",
+  "url": "https://www.nba.com/timberwolves/schedule/download",
+  "kind": "calendar_sync",
+  "verified_on": "2026-11-03",
+  "note": "Link taken from the addToCalendarLink on the team's nba.com schedule page. Loads 200."
+ },
+ {
+  "league": "nba",
+  "team": "New Orleans Pelicans",
+  "url": "https://calendar.pelicans.com/",
+  "kind": "calendar_sync",
+  "verified_on": "2026-11-03",
+  "note": "Link taken from the addToCalendarLink on the team's nba.com schedule page. Loads 200."
+ },
+ {
+  "league": "nba",
+  "team": "New York Knicks",
+  "url": "https://nba.ecal.com/new-york-knicks",
+  "kind": "calendar_sync",
+  "verified_on": "2026-11-03",
+  "note": "Link taken from the addToCalendarLink on the team's nba.com schedule page. Loads 200."
+ },
+ {
+  "league": "nba",
+  "team": "Oklahoma City Thunder",
+  "url": "https://nba.ecal.com/oklahoma-city-thunder",
+  "kind": "calendar_sync",
+  "verified_on": "2026-11-03",
+  "note": "Link taken from the addToCalendarLink on the team's nba.com schedule page. Loads 200."
+ },
+ {
+  "league": "nba",
+  "team": "Orlando Magic",
+  "url": "https://cdn.nba.com/teams/calendars/magic.ics",
+  "kind": "calendar_sync",
+  "verified_on": "2026-11-03",
+  "note": "Direct .ics feed on cdn.nba.com, linked as the team's add-to-calendar on its nba.com schedule page (HEAD 200, not downloaded)."
+ },
+ {
+  "league": "nba",
+  "team": "Philadelphia 76ers",
+  "url": "https://nba.ecal.com/philadelphia-76ers",
+  "kind": "calendar_sync",
+  "verified_on": "2026-11-03",
+  "note": "Link taken from the addToCalendarLink on the team's nba.com schedule page. Loads 200."
+ },
+ {
+  "league": "nba",
+  "team": "Phoenix Suns",
+  "url": "https://nba.ecal.com/phoenix-suns",
+  "kind": "calendar_sync",
+  "verified_on": "2026-11-03",
+  "note": "Link taken from the addToCalendarLink on the team's nba.com schedule page. Loads 200."
+ },
+ {
+  "league": "nba",
+  "team": "Portland Trail Blazers",
+  "url": "https://cdn.nba.com/teams/calendars/blazers.ics",
+  "kind": "calendar_sync",
+  "verified_on": "2026-11-03",
+  "note": "Direct .ics feed on cdn.nba.com, linked as the team's add-to-calendar on its nba.com schedule page (HEAD 200, not downloaded)."
+ },
+ {
+  "league": "nba",
+  "team": "Sacramento Kings",
+  "url": "https://nba.ecal.com/sacramento-kings",
+  "kind": "calendar_sync",
+  "verified_on": "2026-11-03",
+  "note": "League ECAL page for this team (nba.ecal.com); not the link on the team's nba.com schedule page, which has no calendar link found. Loads 200."
+ },
+ {
+  "league": "nba",
+  "team": "San Antonio Spurs",
+  "url": "https://sanantoniospurs.ecal.com/",
+  "kind": "calendar_sync",
+  "verified_on": "2026-11-03",
+  "note": "Link taken from the addToCalendarLink on the team's nba.com schedule page. Loads 200."
+ },
+ {
+  "league": "nba",
+  "team": "Toronto Raptors",
+  "url": "https://cdn.nba.com/teams/calendars/raptors.ics",
+  "kind": "calendar_sync",
+  "verified_on": "2026-11-03",
+  "note": "Direct .ics feed on cdn.nba.com, linked as the team's add-to-calendar on its nba.com schedule page (HEAD 200, not downloaded)."
+ },
+ {
+  "league": "nba",
+  "team": "Utah Jazz",
+  "url": "https://nba.ecal.com/utah-jazz",
+  "kind": "calendar_sync",
+  "verified_on": "2026-11-03",
+  "note": "League ECAL page for this team (nba.ecal.com); not the link on the team's nba.com schedule page, which has no calendar link found. Loads 200."
+ },
+ {
+  "league": "nba",
+  "team": "Washington Wizards",
+  "url": "https://nba.ecal.com/washington-wizards",
+  "kind": "calendar_sync",
+  "verified_on": "2026-11-03",
+  "note": "League ECAL page for this team (nba.ecal.com); not the link on the team's nba.com schedule page, which has no calendar link found. Loads 200."
+ },
+ {
+  "league": "nhl",
+  "team": "Anaheim Ducks",
+  "url": "https://nhl.ecal.com/ana",
+  "kind": "calendar_sync",
+  "verified_on": "2026-11-03",
+  "note": "League ECAL page (nhl.ecal.com, 3-letter team code). Loads 200. Team nhl.com pages link to ECAL; some link a long-slug variant that returns 404 server-side, so the 3-letter code is used."
+ },
+ {
+  "league": "nhl",
+  "team": "Boston Bruins",
+  "url": "https://nhl.ecal.com/bos",
+  "kind": "calendar_sync",
+  "verified_on": "2026-11-03",
+  "note": "League ECAL page (nhl.ecal.com, 3-letter team code). Loads 200. Team nhl.com pages link to ECAL; some link a long-slug variant that returns 404 server-side, so the 3-letter code is used."
+ },
+ {
+  "league": "nhl",
+  "team": "Buffalo Sabres",
+  "url": "https://nhl.ecal.com/buf",
+  "kind": "calendar_sync",
+  "verified_on": "2026-11-03",
+  "note": "League ECAL page (nhl.ecal.com, 3-letter team code). Loads 200. Team nhl.com pages link to ECAL; some link a long-slug variant that returns 404 server-side, so the 3-letter code is used."
+ },
+ {
+  "league": "nhl",
+  "team": "Calgary Flames",
+  "url": "https://nhl.ecal.com/cgy",
+  "kind": "calendar_sync",
+  "verified_on": "2026-11-03",
+  "note": "League ECAL page (nhl.ecal.com, 3-letter team code). Loads 200. Team nhl.com pages link to ECAL; some link a long-slug variant that returns 404 server-side, so the 3-letter code is used."
+ },
+ {
+  "league": "nhl",
+  "team": "Carolina Hurricanes",
+  "url": "https://nhl.ecal.com/car",
+  "kind": "calendar_sync",
+  "verified_on": "2026-11-03",
+  "note": "League ECAL page (nhl.ecal.com, 3-letter team code). Loads 200. Team nhl.com pages link to ECAL; some link a long-slug variant that returns 404 server-side, so the 3-letter code is used."
+ },
+ {
+  "league": "nhl",
+  "team": "Chicago Blackhawks",
+  "url": "https://nhl.ecal.com/chi",
+  "kind": "calendar_sync",
+  "verified_on": "2026-11-03",
+  "note": "League ECAL page (nhl.ecal.com, 3-letter team code). Loads 200. Team nhl.com pages link to ECAL; some link a long-slug variant that returns 404 server-side, so the 3-letter code is used."
+ },
+ {
+  "league": "nhl",
+  "team": "Colorado Avalanche",
+  "url": "https://nhl.ecal.com/col",
+  "kind": "calendar_sync",
+  "verified_on": "2026-11-03",
+  "note": "League ECAL page (nhl.ecal.com, 3-letter team code). Loads 200. Team nhl.com pages link to ECAL; some link a long-slug variant that returns 404 server-side, so the 3-letter code is used."
+ },
+ {
+  "league": "nhl",
+  "team": "Columbus Blue Jackets",
+  "url": "https://nhl.ecal.com/cbj",
+  "kind": "calendar_sync",
+  "verified_on": "2026-11-03",
+  "note": "League ECAL page (nhl.ecal.com, 3-letter team code). Loads 200. Team nhl.com pages link to ECAL; some link a long-slug variant that returns 404 server-side, so the 3-letter code is used."
+ },
+ {
+  "league": "nhl",
+  "team": "Dallas Stars",
+  "url": "https://nhl.ecal.com/dal",
+  "kind": "calendar_sync",
+  "verified_on": "2026-11-03",
+  "note": "League ECAL page (nhl.ecal.com, 3-letter team code). Loads 200. Team nhl.com pages link to ECAL; some link a long-slug variant that returns 404 server-side, so the 3-letter code is used."
+ },
+ {
+  "league": "nhl",
+  "team": "Detroit Red Wings",
+  "url": "https://nhl.ecal.com/det",
+  "kind": "calendar_sync",
+  "verified_on": "2026-11-03",
+  "note": "League ECAL page (nhl.ecal.com, 3-letter team code). Loads 200. Team nhl.com pages link to ECAL; some link a long-slug variant that returns 404 server-side, so the 3-letter code is used."
+ },
+ {
+  "league": "nhl",
+  "team": "Edmonton Oilers",
+  "url": "https://nhl.ecal.com/edm",
+  "kind": "calendar_sync",
+  "verified_on": "2026-11-03",
+  "note": "League ECAL page (nhl.ecal.com, 3-letter team code). Loads 200. Team nhl.com pages link to ECAL; some link a long-slug variant that returns 404 server-side, so the 3-letter code is used."
+ },
+ {
+  "league": "nhl",
+  "team": "Florida Panthers",
+  "url": "https://nhl.ecal.com/fla",
+  "kind": "calendar_sync",
+  "verified_on": "2026-11-03",
+  "note": "League ECAL page (nhl.ecal.com, 3-letter team code). Loads 200. Team nhl.com pages link to ECAL; some link a long-slug variant that returns 404 server-side, so the 3-letter code is used."
+ },
+ {
+  "league": "nhl",
+  "team": "Los Angeles Kings",
+  "url": "https://nhl.ecal.com/lak",
+  "kind": "calendar_sync",
+  "verified_on": "2026-11-03",
+  "note": "League ECAL page (nhl.ecal.com, 3-letter team code). Loads 200. Team nhl.com pages link to ECAL; some link a long-slug variant that returns 404 server-side, so the 3-letter code is used."
+ },
+ {
+  "league": "nhl",
+  "team": "Minnesota Wild",
+  "url": "https://nhl.ecal.com/min",
+  "kind": "calendar_sync",
+  "verified_on": "2026-11-03",
+  "note": "League ECAL page (nhl.ecal.com, 3-letter team code). Loads 200. Team nhl.com pages link to ECAL; some link a long-slug variant that returns 404 server-side, so the 3-letter code is used."
+ },
+ {
+  "league": "nhl",
+  "team": "Montreal Canadiens",
+  "url": "https://nhl.ecal.com/mtl",
+  "kind": "calendar_sync",
+  "verified_on": "2026-11-03",
+  "note": "League ECAL page (nhl.ecal.com, 3-letter team code). Loads 200. Team nhl.com pages link to ECAL; some link a long-slug variant that returns 404 server-side, so the 3-letter code is used."
+ },
+ {
+  "league": "nhl",
+  "team": "Nashville Predators",
+  "url": "https://nhl.ecal.com/nsh",
+  "kind": "calendar_sync",
+  "verified_on": "2026-11-03",
+  "note": "League ECAL page (nhl.ecal.com, 3-letter team code). Loads 200. Team nhl.com pages link to ECAL; some link a long-slug variant that returns 404 server-side, so the 3-letter code is used."
+ },
+ {
+  "league": "nhl",
+  "team": "New Jersey Devils",
+  "url": "https://nhl.ecal.com/njd",
+  "kind": "calendar_sync",
+  "verified_on": "2026-11-03",
+  "note": "League ECAL page (nhl.ecal.com, 3-letter team code). Loads 200. Team nhl.com pages link to ECAL; some link a long-slug variant that returns 404 server-side, so the 3-letter code is used."
+ },
+ {
+  "league": "nhl",
+  "team": "New York Islanders",
+  "url": "https://nhl.ecal.com/nyi",
+  "kind": "calendar_sync",
+  "verified_on": "2026-11-03",
+  "note": "League ECAL page (nhl.ecal.com, 3-letter team code). Loads 200. Team nhl.com pages link to ECAL; some link a long-slug variant that returns 404 server-side, so the 3-letter code is used."
+ },
+ {
+  "league": "nhl",
+  "team": "New York Rangers",
+  "url": "https://nhl.ecal.com/nyr",
+  "kind": "calendar_sync",
+  "verified_on": "2026-11-03",
+  "note": "League ECAL page (nhl.ecal.com, 3-letter team code). Loads 200. Team nhl.com pages link to ECAL; some link a long-slug variant that returns 404 server-side, so the 3-letter code is used."
+ },
+ {
+  "league": "nhl",
+  "team": "Ottawa Senators",
+  "url": "https://nhl.ecal.com/ott",
+  "kind": "calendar_sync",
+  "verified_on": "2026-11-03",
+  "note": "League ECAL page (nhl.ecal.com, 3-letter team code). Loads 200. Team nhl.com pages link to ECAL; some link a long-slug variant that returns 404 server-side, so the 3-letter code is used."
+ },
+ {
+  "league": "nhl",
+  "team": "Philadelphia Flyers",
+  "url": "https://nhl.ecal.com/phi",
+  "kind": "calendar_sync",
+  "verified_on": "2026-11-03",
+  "note": "League ECAL page (nhl.ecal.com, 3-letter team code). Loads 200. Team nhl.com pages link to ECAL; some link a long-slug variant that returns 404 server-side, so the 3-letter code is used."
+ },
+ {
+  "league": "nhl",
+  "team": "Pittsburgh Penguins",
+  "url": "https://nhl.ecal.com/pit",
+  "kind": "calendar_sync",
+  "verified_on": "2026-11-03",
+  "note": "League ECAL page (nhl.ecal.com, 3-letter team code). Loads 200. Team nhl.com pages link to ECAL; some link a long-slug variant that returns 404 server-side, so the 3-letter code is used."
+ },
+ {
+  "league": "nhl",
+  "team": "San Jose Sharks",
+  "url": "https://nhl.ecal.com/sjs",
+  "kind": "calendar_sync",
+  "verified_on": "2026-11-03",
+  "note": "League ECAL page (nhl.ecal.com, 3-letter team code). Loads 200. Team nhl.com pages link to ECAL; some link a long-slug variant that returns 404 server-side, so the 3-letter code is used."
+ },
+ {
+  "league": "nhl",
+  "team": "Seattle Kraken",
+  "url": "https://nhl.ecal.com/sea",
+  "kind": "calendar_sync",
+  "verified_on": "2026-11-03",
+  "note": "League ECAL page (nhl.ecal.com, 3-letter team code). Loads 200. Team nhl.com pages link to ECAL; some link a long-slug variant that returns 404 server-side, so the 3-letter code is used."
+ },
+ {
+  "league": "nhl",
+  "team": "St. Louis Blues",
+  "url": "https://nhl.ecal.com/stl",
+  "kind": "calendar_sync",
+  "verified_on": "2026-11-03",
+  "note": "League ECAL page (nhl.ecal.com, 3-letter team code). Loads 200. Team nhl.com pages link to ECAL; some link a long-slug variant that returns 404 server-side, so the 3-letter code is used."
+ },
+ {
+  "league": "nhl",
+  "team": "Tampa Bay Lightning",
+  "url": "https://nhl.ecal.com/tbl",
+  "kind": "calendar_sync",
+  "verified_on": "2026-11-03",
+  "note": "League ECAL page (nhl.ecal.com, 3-letter team code). Loads 200. Team nhl.com pages link to ECAL; some link a long-slug variant that returns 404 server-side, so the 3-letter code is used."
+ },
+ {
+  "league": "nhl",
+  "team": "Toronto Maple Leafs",
+  "url": "https://nhl.ecal.com/tor",
+  "kind": "calendar_sync",
+  "verified_on": "2026-11-03",
+  "note": "League ECAL page (nhl.ecal.com, 3-letter team code). Loads 200. Team nhl.com pages link to ECAL; some link a long-slug variant that returns 404 server-side, so the 3-letter code is used."
+ },
+ {
+  "league": "nhl",
+  "team": "Utah Mammoth",
+  "url": "https://nhl.ecal.com/uta",
+  "kind": "calendar_sync",
+  "verified_on": "2026-11-03",
+  "note": "League ECAL page (nhl.ecal.com, 3-letter team code). Loads 200. Team nhl.com pages link to ECAL; some link a long-slug variant that returns 404 server-side, so the 3-letter code is used."
+ },
+ {
+  "league": "nhl",
+  "team": "Vancouver Canucks",
+  "url": "https://nhl.ecal.com/van",
+  "kind": "calendar_sync",
+  "verified_on": "2026-11-03",
+  "note": "League ECAL page (nhl.ecal.com, 3-letter team code). Loads 200. Team nhl.com pages link to ECAL; some link a long-slug variant that returns 404 server-side, so the 3-letter code is used."
+ },
+ {
+  "league": "nhl",
+  "team": "Vegas Golden Knights",
+  "url": "https://nhl.ecal.com/vgk",
+  "kind": "calendar_sync",
+  "verified_on": "2026-11-03",
+  "note": "League ECAL page (nhl.ecal.com, 3-letter team code). Loads 200. Team nhl.com pages link to ECAL; some link a long-slug variant that returns 404 server-side, so the 3-letter code is used."
+ },
+ {
+  "league": "nhl",
+  "team": "Washington Capitals",
+  "url": "https://nhl.ecal.com/wsh",
+  "kind": "calendar_sync",
+  "verified_on": "2026-11-03",
+  "note": "League ECAL page (nhl.ecal.com, 3-letter team code). Loads 200. Team nhl.com pages link to ECAL; some link a long-slug variant that returns 404 server-side, so the 3-letter code is used."
+ },
+ {
+  "league": "nhl",
+  "team": "Winnipeg Jets",
+  "url": "https://nhl.ecal.com/wpg",
+  "kind": "calendar_sync",
+  "verified_on": "2026-11-03",
+  "note": "League ECAL page (nhl.ecal.com, 3-letter team code). Loads 200. Team nhl.com pages link to ECAL; some link a long-slug variant that returns 404 server-side, so the 3-letter code is used."
+ }
+]

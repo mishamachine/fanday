@@ -1,0 +1,5 @@
+package com.bbprojectfactory.fanday;
+
+import com.getcapacitor.BridgeActivity;
+
+public class MainActivity extends BridgeActivity {}

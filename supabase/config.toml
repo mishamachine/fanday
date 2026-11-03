@@ -1,0 +1,32 @@
+# Supabase CLI config for the Fanday project (ref smhddbnctlkbwppzrsry, org "B&B Free", us-west-1).
+# Link once with: supabase link --project-ref smhddbnctlkbwppzrsry   (Babar/CTO step; this PR does not link or push.)
+project_id = "smhddbnctlkbwppzrsry"
+
+[db.seed]
+enabled = true
+sql_paths = ["./seed.sql", "./seed_teams.sql", "./seed/teams_tz.sql"] # teams_tz.sql comes from PR #2 (needs teams.tz from its 0002): merge both PRs together
+
+# This file configures LOCAL development (`supabase start`). The production Site URL and redirect list
+# (https://fanday.bbprojectfactory.com, com.bbprojectfactory.fanday://auth/callback) are set in the dashboard:
+# see auth-setup-checklist.md. Do not rely on `supabase config push` for them.
+[auth]
+site_url = "http://localhost:5173"
+additional_redirect_urls = [
+  "com.bbprojectfactory.fanday://auth/callback",
+  "http://localhost:5173/**",
+]
+# Anonymous session on first launch (src/lib/auth.ts). Signing in later keeps follows via claim_anonymous_follows().
+enable_anonymous_sign_ins = true
+
+# JWT verification at the gateway is OFF for these functions, as STT does: each authenticates itself
+# (delete-account checks the bearer token; go is a public redirect that reads only the game row).
+[functions.delete-account]
+verify_jwt = false
+
+[functions.go]
+verify_jwt = false
+
+# Wikipedia ingest (PR #2, cto/fanday-ingest): called by the scheduled workflow. New-style sb_secret keys are not JWTs,
+# so the gateway check must stay off and the function authorizes the caller itself.
+[functions.ingest-wikipedia]
+verify_jwt = false
