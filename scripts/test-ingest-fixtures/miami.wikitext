@@ -1,0 +1,2321 @@
+<!-- FIXTURE. Page: 2026 Inter Miami CF season
+     Source: https://en.wikipedia.org/wiki/2026_Inter_Miami_CF_season
+     Revision id: 1383404277  (permanent link: https://en.wikipedia.org/w/index.php?oldid=1383404277)
+     Fetched: 2026-11-02 from the MediaWiki API (action=query&prop=revisions&rvprop=content|ids&rvslots=main&format=json),
+     User-Agent: Fanday/0.1 (machinemisha+fanday@gmail.com). Unmodified wikitext below this comment.
+     Text (c) Wikipedia contributors, licensed CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/);
+     authors are listed in the page history. Used here only as test data. -->
+{{Use American English|date=March 2026}}
+{{Infobox football club season
+| club = [[Inter Miami CF]]
+| season = [[2026 in American soccer|2026]]
+| image = Inter Miami CF wordmark-full pink.png
+| image_size = 
+| alt = 
+| caption = 
+| chrtitle = President
+| chairman = [[David Beckham]]
+| ownertitle = 
+| owner = 
+| mgrtitle = Head coach
+| manager = [[Javier Mascherano]]<br>''(until April 14)''<br>[[Guillermo Hoyos]]<br>''(interim, from April 14 until September 14)''<br>[[Kily González]]<br>''(from September 15)''
+| stadium = [[Chase Stadium]]<br>''(until March 18)''<br>[[Nu Stadium]]<br>''(from April 4)''
+| league = [[2026 Major League Soccer season|Major League Soccer]]
+| league result = Conference: ''2nd''<br>Overall: ''3rd''
+| cup1 = [[2026 MLS Cup playoffs|MLS Cup playoffs]]
+| cup1 result = ''Round one''
+| cup2 = [[2026 CONCACAF Champions Cup|CONCACAF Champions Cup]]
+| cup2 result = Round of 16
+| cup3 = [[2026 Leagues Cup|Leagues Cup]]
+| cup3 result = League phase
+| cup4 = [[2026 Campeones Cup|Campeones Cup]]
+| cup4 result = '''Winners'''
+| league topscorer = <br>[[Lionel Messi]] (26)
+| season topscorer = <br>Lionel Messi (30)
+| highest attendance = 
+| lowest attendance = 
+| average attendance = 
+| largest win = 7–1 vs. [[CF Montréal]] <br> (August 29)
+| largest loss = {{nowrap|0–3 vs. [[Los Angeles FC]]}} <br> (February 21) <br> 1–4 vs. [[Nashville SC]] <br> (August 15)
+| pattern_la1 = _intermiami25h
+| pattern_b1 = _intermiami25h
+| pattern_ra1 = _intermiami25h
+| pattern_sh1 = _intermiami25h
+| pattern_so1 = _intermiami25hl
+| leftarm1 = ffb0c0
+| body1 = ffb0c0
+| rightarm1 = ffb0c0
+| shorts1 = ffb0c0
+| socks1 = ffb0c0
+| pattern_la2 = _intermiami26a
+| pattern_b2 = _intermiami26a
+| pattern_ra2 = _intermiami26a
+| pattern_sh2 = _intermiami26a
+| pattern_so2 = 
+| leftarm2 = 000000
+| body2 = 000000
+| rightarm2 = 000000
+| shorts2 = 000000
+| socks2 = 000000
+| pattern_la3 = _intermiami26t
+| pattern_b3 = _intermiami26t
+| pattern_ra3 = _intermiami26t
+| pattern_sh3 = _intermiami26t
+| pattern_so3 = _intermiami26tl
+| leftarm3 = 85ccea
+| body3 = 85ccea
+| rightarm3 = 85ccea
+| shorts3 = 85ccea
+| socks3 = 85ccea
+| prevseason = [[2025 Inter Miami CF season|2025]]
+| nextseason = ''2027''
+| American = yes
+}}
+
+The [[2026 in American soccer|2026 season]] is the seventh season for [[Inter Miami CF]], a professional [[association football|soccer]] team based in [[Miami]], Florida, United States. The team plays in [[Major League Soccer]] (MLS), the top flight of club soccer in the United States, as a member of the [[Eastern Conference (MLS)|Eastern Conference]]. This is the first season for the team at [[Nu Stadium]]. The year also marks the 23rd season of first-division club soccer in [[South Florida]]. In addition to playing in the [[2026 Major League Soccer season|MLS regular season]], Inter Miami CF competed in the [[2026 CONCACAF Champions Cup|CONCACAF Champions Cup]] for the third time, as well as the [[2026 Leagues Cup|Leagues Cup]] and the [[2026 Campeones Cup|Campeones Cup]].
+
+Inter Miami CF enters the season as the defending [[MLS Cup]] champions; in [[MLS Cup 2025]], they defeated [[Vancouver Whitecaps FC]].<ref name="MVP">{{cite news |date=December 7, 2025 |title=Inter Miami's Lionel Messi named MLS Cup 2025 MVP pres. by Audi  |url=https://www.mlssoccer.com/playoffs/2025/news/inter-miami-s-lionel-messi-named-mls-cup-2025-mvp-pres-by-audi |publisher=Major League Soccer |access-date=December 7, 2025}}</ref>
+
+==Summary==
+
+===Preseason===
+
+After a six-week offseason, Inter Miami CF began their preseason training camp on January 17 in Fort Lauderdale ahead of three [[friendly match|friendlies]] on a tour of South America.<ref>{{cite news |last=Kaufman |first=Michelle |date=January 17, 2026 |title=Inter Miami camp opens, Jorge Mas shares updates on Berterame, Blackmon, Allende |url=https://www.miamiherald.com/sports/mls/inter-miami/article314346910.html |work=Miami Herald |url-access=subscription |accessdate=February 28, 2026}}</ref> An additional match, against [[Independiente del Valle]] of Ecuador, was scheduled for February 13 in [[Bayamón, Puerto Rico]]. It was postponed to February 26—a week into the MLS regular season—after the club announced that [[Lionel Messi]] had a muscle strain and would be unable to play.<ref>{{cite news |last=Kaufman |first=Michelle |date=February 11, 2026 |title=Lionel Messi is injured, Inter Miami preseason game in Puerto Rico postponed |url=https://www.miamiherald.com/sports/mls/inter-miami/article314660056.html |work=Miami Herald |url-access=subscription |accessdate=February 28, 2026}}</ref> During the rescheduled friendly, Messi was tackled to the ground by a security guard during an attempt to restrain a [[pitch invader]].<ref name="Guardian-Bayamon">{{cite news |last=Rueter |first=Jeff |date=February 26, 2026 |title=Lionel Messi tackled by pitch invader during chaotic friendly in Puerto Rico |url=https://www.theguardian.com/football/2026/feb/26/lionel-messi-tackled-inter-miami-friendly-independiente-del-valle-puerto-rico |work=[[The Guardian]] |accessdate=February 28, 2026}}</ref>
+
+==Non-competitive results==
+
+===Preseason===
+The full preseason schedule with matches in South America was announced on January 23, 2026.<ref>{{cite press release |date=January 23, 2026|title=2025 MLS Cup Champions Announce Additional Preseason Match as Part of the 2026 Champions Tour |url=https://www.intermiamicf.com/news/2025-mls-cup-champions-announce-additional-preseason-match-as-part-of-the-2026-champions-tour |publisher=Inter Miami CF |access-date=January 25, 2026}}</ref>
+{{Football box collapsible
+|round      = 1
+|date       = January 24
+|time       = 5:00&nbsp;p.m. [[Eastern Time Zone|EST]]
+|team1      = [[Alianza Lima]] {{fbaicon|PER}}
+|score      = 3–0
+|report     = https://www.intermiamicf.com/competitions/mls-preseason-friendlies/2026/matches/miavsali-01-24-2026/
+|team2      = {{fbaicon|USA}} Inter Miami CF 
+|goals1     = 
+*[[Paolo Guerrero|Guerrero]] {{goal|29||36}}
+*[[Luis Ramos (footballer, born 1999)|Ramos]] {{goal|72}}
+|goals2     = 
+*[[Kenan Hot|Hot]] {{yel|82}}
+|stadium    = [[Estadio Alejandro Villanueva]]
+|location   = [[Lima]], Peru
+|attendance = 30,000
+|referee    = [[Kevin Ortega (football referee)|Kevin Ortega]] ([[Peruvian Football Federation|Peru]])
+|result     = L
+}}
+{{Football box collapsible
+|round      = 2
+|date       = January 31
+|time       = 5:00&nbsp;p.m. [[Eastern Time Zone|EST]]
+|team1      = [[Atlético Nacional]] {{fbaicon|COL}}
+|score      = 1–2
+|report     = https://www.intermiamicf.com/competitions/mls-preseason-friendlies/2026/matches/miavsatn-01-31-2026/
+|team2      = {{fbaicon|USA}} Inter Miami CF
+|goals1     = 
+*[[Juan Rengifo|Rengifo]] {{goal|26}}
+*[[Alfredo Morelos|Morelos]] {{yel|90}}
+|goals2     = 
+*[[Luis Suárez (Uruguayan footballer)|Suárez]] {{goal|55}}
+*[[Rodrigo De Paul|De Paul]] {{yel|60}}
+*[[Elkin Rivero|Rivero]] {{goal|90+1|o.g.}}
+|stadium    = [[Estadio Atanasio Girardot]]
+|location   = [[Medellín]], Colombia
+|attendance = 38,026
+|referee    = María Daza ([[Colombian Football Federation|Colombia]])
+|result     = W
+}}
+{{Football box collapsible
+|round      = 3
+|date       = February 7
+|time       = 7:00&nbsp;p.m. [[Eastern Time Zone|EST]]
+|team1      = [[Barcelona S.C.|Barcelona SC]] {{fbaicon|ECU}}
+|score      = 2–2
+|report     = https://www.intermiamicf.com/competitions/mls-preseason-friendlies/2026/matches/miavsbsc-02-07-2026/
+|team2      = {{fbaicon|USA}} Inter Miami CF
+|goals1     = 
+*[[Joao Rojas (footballer, born 1997)|Rojas]] {{goal|41}}
+*[[Tomás Martínez (footballer)|Martínez]] {{goal|87}}
+|goals2     = 
+*[[Ian Fray|Fray]] {{yel|21}}
+*[[Lionel Messi|Messi]] {{goal|31}}
+*[[Germán Berterame|Berterame]] {{goal|45+3}}
+*[[David Ayala (footballer, born 2002)|Ayala]] {{sentoff|0|87}}
+*[[Mamadi Jiana|Jiana]] {{yel|90+2}}
+|stadium    = [[Estadio Monumental Banco Pichincha]]
+|location   = [[Guayaquil]], Ecuador
+|attendance = 
+|referee    = Yerson Zambrano ([[Ecuadorian Football Federation|Ecuador]])
+|result     = D
+}}
+
+===Friendlies===
+{{Football box collapsible
+|round      = [[Exhibition game#Club football|Friendly]]
+|date       = February 26
+|time       = 8:00&nbsp;p.m. [[Eastern Time Zone|EST]]
+|team1      = Inter Miami CF {{fbaicon|USA}}
+|score      = 2–1
+|report     = https://www.intermiamicf.com/competitions/friendly/2026/matches/idvvsmia-02-26-2026/
+|team2      = {{fbaicon|ECU}} [[Independiente del Valle]]
+|goals1     = 
+*[[Yannick Bright|Bright]] {{yel|15}}
+*[[Santiago Morales (soccer)|Morales]] {{goal|16}}
+*[[Lionel Messi|Messi]] {{goal|70|pen.}}
+|goals2     = 
+*[[Patrik Mercado|Mercado]] {{goal|17}}
+*[[Matías Perelló|Perelló]] {{yel|37}}
+|stadium    = [[Juan Ramón Loubriel Stadium]]
+|location   = [[Bayamón, Puerto Rico|Bayamón]], Puerto Rico
+|attendance = 12,500<ref name="Guardian-Bayamon"/>
+|referee    = José Torres ([[Puerto Rican Football Federation|Puerto Rico]])
+|result     = W
+|note       = The match was originally scheduled for February 13.<ref>{{cite news |url=https://www.intermiamicf.com/news/champions-tour-update |title=Champions Tour Update |publisher=Inter Miami CF |date=February 11, 2026 |access-date=February 11, 2026}}</ref>
+}}
+
+==Competitions==
+
+===Overview===
+{{Fb overview2
+|c=5
+|c1=[[2026 Major League Soccer season|Major League Soccer]] |fm1={{nowrap|February 21}} |lm1={{nowrap|November 7}} |sr1=Matchday 1 |fp1=TBD |w1=16 |d1=11 |l1=6 |f1=77 |a1=56
+|c2=[[2026 MLS Cup playoffs|MLS Cup playoffs]] |fm2=TBD |lm2=TBD |sr2=Round one |fp2=TBD |w2=0 |d2=0 |l2=0 |f2=0 |a2=0
+|c3={{nowrap|[[2026 CONCACAF Champions Cup|CONCACAF Champions Cup]]}} |fm3=March 11 |lm3=March 18 |sr3=Round of 16 |fp3=Round of 16 |w3=0 |d3=2 |l3=0 |f3=1 |a3=1
+|c4=[[2026 Leagues Cup|Leagues Cup]] |fm4=August 5 |lm4=August 12 |sr4={{nowrap|League phase}} |fp4={{nowrap|League phase}} |w4=1 |d4=0 |l4=2 |f4=7 |a4=7
+|c5=[[2026 Campeones Cup|Campeones Cup]] |dm5=September 16 |sr5=Final |fp5=Winners |w5=1 |d5=0 |l5=0 |f5=2 |a5=0
+|u=November 1, 2026
+|s=[https://www.espn.co.uk/football/team/results/_/id/20232/season/2026 ESPN]
+}}
+
+===Major League Soccer (MLS)===
+{{main|2026 Major League Soccer season}}
+
+====League tables====
+{{2026 Major League Soccer Eastern Conference table|showteam=MIA|show_limit=5}}
+{{2026 Major League Soccer season table|showteam=MIA|show_limit=5}}
+
+====Results summary====
+{{Fb rs|hw=6|hd=8|hl=2|hgf=43|hga=28|aw=10|ad=3|al=4|agf=34|aga=28|dp=}}
+{{Fb_rs footer|u=November 1, 2026|s=[https://www.mlssoccer.com/standings/2026/ MLS standings] |date=December 2025}}
+
+====Results by round====
+{{#invoke:sports rbr table|table|legendpos=b
+| update=November 1, 2026
+| header=Round
+| label1=Stadium
+| res1=[[Los Angeles Memorial Coliseum|A]]/[[Inter&Co Stadium|A]]/[[M&T Bank Stadium|A]]/[[Bank of America Stadium|A]]/[[Yankee Stadium|A]]/[[Nu Stadium|H]]/[[Nu Stadium|H]]/[[Empower Field at Mile High|A]]/[[America First Field|A]]/[[Nu Stadium|H]]/[[Nu Stadium|H]]/[[BMO Field|A]]/[[TQL Stadium|A]]/[[Nu Stadium|H]]/[[Nu Stadium|H]]/[[Nu Stadium|H]]/[[Stade Saputo|A]]/[[Nu Stadium|H]]/[[Geodis Park|A]]/[[Subaru Park|A]]/[[Nu Stadium|H]]/[[Nu Stadium|H]]/[[Nu Stadium|H]]/[[Soldier Field|A]]/[[Nu Stadium|H]]/[[Nu Stadium|H]]/[[ScottsMiracle-Gro Field|A]]/[[Nu Stadium|H]]/[[Nu Stadium|H]]/[[Mercedes-Benz Stadium|A]]/[[Sports Illustrated Stadium|A]]/[[Nu Stadium|H]]/[[Gillette Stadium|A]]/[[Nu Stadium|H]]
+
+| label2=Result
+| res2=L/W/W/D/W/D/D/W/W/D/L/W/W/W/W/W/W/D/L/D/L/W/D/D/D/D/L/W/W/W/L/D/W/
+
+| label3=Position (East)
+| pos3=14/7/3/3/3/4/3/2/2/2/3/3/2/2/2/2/2/2/2/2/2/2/2/2/2/3/3/2/2/2/3/3/2/
+
+| label4=Points
+| res4=0p/3p/6p/7p/10p/11p/12p/15p/18p/19p/19p/22p/25p/28p/31p/34p/37p/38p/38p/39p/39p/42p/43p/44p/45p/46p/46p/49p/52p/55p/55p/56p/59p/
+
+| color_W=green2|text_W=Win
+| color_D=yellow2|text_D=Draw
+| color_L=red2|text_L=Loss
+| color_P=lightgrey|text_P=Postponed
+| text_H=Home|text_A=Away|text_N=Neutral
+| color_1=gold|color_2–7=green1|color_8–9=blue1
+| source=[https://www.mlssoccer.com/standings/form-guide/?year=2025 MLS standings]
+}}
+
+====Regular season results====
+The MLS regular season schedule was released on November 20, 2025.<ref>{{cite press release |date=November 20, 2025 |title=Inter Miami CF 2026 MLS Regular Season Schedule Unveiled |url=https://www.intermiamicf.com/news/inter-miami-cf-2026-mls-regular-season-schedule-unveiled |publisher=Inter Miami CF |access-date=November 20, 2025}}</ref> Inter Miami CF will play 34 matches—17 at home and 17 away—primarily against the 14 other teams in the [[Eastern Conference (MLS)|Eastern Conference]]; the team also played six opponents from the [[Western Conference (MLS)|Western Conference]].
+
+{{legend2|#BBF3BB|Win|border=1px solid #AAAAAA}}
+{{legend2|#FFFFBB|Draw|border=1px solid #AAAAAA}}
+{{legend2|#FFBBBB|Loss|border=1px solid #AAAAAA}}
+{{legend2|#BBBBBB|Void|border=1px solid #AAAAAA}} <!-- optional -->
+{{legend2|#BBBBBB|Postponed|border=1px solid #AAAAAA}} <!-- optional -->
+
+{{football box collapsible
+| round      = 1
+| date       = February 21
+| time       = 9:30&nbsp;p.m. [[Eastern Time Zone|EST]]
+| team1      = [[Los Angeles FC]]
+| score      = 3–0
+| report     = https://www.mlssoccer.com/competitions/mls-regular-season/2026/matches/lafcvsmia-02-21-2026/
+| team2      = Inter Miami CF
+| goals1     = 
+*[[David Martínez (footballer, born 2006)|Martínez]] {{goal|38}}
+*[[Denis Bouanga|Bouanga]] {{goal|73}}, {{yel|80}}
+*[[Nathan Ordaz|Ordaz]] {{goal|90+4}}
+| goals2     = 
+*[[Maximiliano Falcón|Falcón]] {{yel|45+3}}
+*[[Telasco Segovia|Segovia]] {{yel|80}}
+| referee    = Pierre-Luc Lauzière
+| stadium    = [[Los Angeles Memorial Coliseum]]
+| location   = [[Los Angeles|Los Angeles, California]]
+| attendance = 75,673
+| result     = L
+}}
+{{football box collapsible
+| round      = [[Inter Miami CF–Orlando City SC rivalry|2]]
+| date       = March 1
+| time       = 7:00&nbsp;p.m. [[Eastern Time Zone|EST]]
+| team1      = [[Orlando City SC]]
+| score      = 2–4
+| report     = https://www.mlssoccer.com/competitions/mls-regular-season/2026/matches/orlvsmia-03-01-2026/
+| team2      = Inter Miami CF
+| goals1     = 
+*[[Marco Pašalić|Pašalić]] {{goal|18}}, {{yel|74}}
+*[[Martín Ojeda|M. Ojeda]] {{goal|24}}
+*[[Colin Guske|Guske]] {{sentoff|2|45|88}}
+*[[Nolan Miller (soccer)|Miller]] {{yel|45+4}}
+*[[Griffin Dorsey|Dorsey]] {{yel|71}}
+| goals2     = 
+*[[Tadeo Allende|Allende]] {{yel|45+4}}
+*[[Mateo Silvetti|Silvetti]] {{goal|49}}
+*[[Lionel Messi|Messi]] {{goal|57||90}}
+*[[Telasco Segovia|Segovia]] {{goal|85}}, {{yel|90+4}}
+*[[Rodrigo De Paul|De Paul]] {{yel|90+8}}
+| referee    = [[Ismail Elfath]]
+| stadium    = [[Inter&Co Stadium]]
+| location   = [[Orlando, Florida]]
+| attendance = 24,453
+| result     = W
+}}
+{{football box collapsible
+| round      = 3
+| date       = March 7
+| time       = 4:30&nbsp;p.m. [[Eastern Time Zone|EST]]
+| team1      = [[D.C. United]]
+| score      = 1–2
+| report     = https://www.mlssoccer.com/competitions/mls-regular-season/2026/matches/dcvsmia-03-07-2026/
+| team2      = Inter Miami CF
+| goals1     = 
+*[[João Peglow|Peglow]] {{yel|58}}
+*[[Tai Baribo|Baribo]] {{goal|75}}
+| goals2     = 
+*[[Rodrigo De Paul|De Paul]] {{goal|17}}
+*[[Lionel Messi|Messi]] {{goal|27}}
+*[[Dayne St. Clair|St. Clair]] {{yel|87}}
+| referee    = Filip Dujic
+| stadium    = [[M&T Bank Stadium]]
+| location   = [[Baltimore|Baltimore, Maryland]]
+| attendance = 72,026
+| result     = W
+}}
+{{football box collapsible
+| round      = 4
+| date       = March 14
+| time       = 7:30&nbsp;p.m. [[Eastern Time Zone|EDT]]
+| team1      = [[Charlotte FC]]
+| score      = 0–0
+| report     = https://www.mlssoccer.com/competitions/mls-regular-season/2026/matches/cltvsmia-03-14-2026/
+| team2      = Inter Miami CF
+| goals1     = 
+*[[Wilfried Zaha|Zaha]] {{yel|32}}
+*[[Ashley Westwood (footballer, born 1990)|Westwood]] {{yel|38}}
+*[[Harry Toffolo|Toffolo]] {{yel|77}}
+| goals2     = 
+*[[Mateo Silvetti|Silvetti]] {{yel|6}}
+*[[Telasco Segovia|Segovia]] {{yel|75}}
+| referee    = Guido Gonzales Jr.
+| stadium    = [[Bank of America Stadium]]
+| location   = [[Charlotte, North Carolina]]
+| attendance = 34,780
+| result     = D
+}}
+{{football box collapsible
+| round      = 5
+| date       = March 22
+| time       = 1:00&nbsp;p.m. [[Eastern Time Zone|EDT]]
+| team1      = [[New York City FC]]
+| score      = 2–3
+| report     = https://www.mlssoccer.com/competitions/mls-regular-season/2026/matches/nycvsmia-03-22-2026/
+| team2      = Inter Miami CF
+| goals1     = 
+*[[Nicolás Fernández (footballer, born 2000)|Fernández]] {{goal|17}} 
+*[[Agustín Ojeda (footballer, born 2004)|Ojeda]] {{goal|59}}
+*[[Maxi Moralez|Moralez]] {{yel|61}}
+| goals2     = 
+*[[Gonzalo Luján|Luján]] {{goal|4}}, {{yel|38}} 
+*[[Micael (footballer, born 2000)|Micael]] {{yel|53}}, {{goal|74}}
+*[[Tadeo Allende|Allende]] {{yel|55}}
+*[[Lionel Messi|Messi]] {{goal|61}} 
+| referee    = [[Armando Villarreal]]
+| stadium    = [[Yankee Stadium]]
+| location   = [[New York City|New York City, New York]]
+| attendance = 45,845
+| result     = W
+}}
+{{football box collapsible
+| round      = 6
+| date       = April 4
+| time       = 7:30&nbsp;p.m. [[Eastern Time Zone|EDT]]
+| team1      = Inter Miami CF
+| score      = 2–2
+| report     = https://www.mlssoccer.com/competitions/mls-regular-season/2026/matches/miavsatx-04-04-2026/
+| team2      = [[Austin FC]]
+| goals1     = 
+*[[Lionel Messi|Messi]] {{goal|10}}
+*[[Maximiliano Falcón|Falcón]] {{yel|43}}
+*[[Yannick Bright|Bright]] {{yel|60}}
+*[[Luis Suárez (Uruguayan footballer)|Suárez]] {{goal|82}}
+| goals2     = 
+*[[Guilherme Biro (footballer, born 2000)|Biro]] {{goal|6}}
+*[[Jayden Nelson|Nelson]] {{goal|53}}
+| referee    = [[Allen Chapman]]
+| stadium    = [[Nu Stadium]]
+| location   = [[Miami|Miami, Florida]]
+| attendance = 26,412
+| result     = D
+}}
+{{football box collapsible
+| round      = 7
+| date       = April 11
+| time       = 7:30&nbsp;p.m. [[Eastern Time Zone|EDT]]
+| team1      = Inter Miami CF
+| score      = 2–2
+| report     = https://www.mlssoccer.com/competitions/mls-regular-season/2026/matches/miavsrbny-04-11-2026/
+| team2      = [[New York Red Bulls]]
+| goals1     = 
+*[[Mateo Silvetti|Silvetti]] {{goal|45+2}}
+*[[Germán Berterame|Berterame]] {{goal|55}}
+*[[Ian Fray|Fray]] {{yel|76}}
+| goals2     = 
+*[[Jorge Ruvalcaba|Ruvalcaba]] {{goal|15}}
+*[[Cade Cowell|Cowell]] {{yel|59}}
+*[[Adri Mehmeti|Mehmeti]] {{goal|77}}
+*[[Rafael Mosquera|Mosquera]] {{yel|80}}
+| referee    = Rosendo Mendoza
+| stadium    = [[Nu Stadium]]
+| location   = [[Miami|Miami, Florida]]
+| attendance = 26,277
+| result     = D
+}}
+{{football box collapsible
+| round      = 8
+| date       = April 18
+| time       = 4:30&nbsp;p.m. [[Eastern Time Zone|EDT]]
+| team1      = [[Colorado Rapids]]
+| score      = 2–3
+| report     = https://www.mlssoccer.com/competitions/mls-regular-season/2026/matches/colvsmia-04-18-2026/
+| team2      = Inter Miami CF
+| goals1     = 
+*[[Josh Atencio|Atencio]] {{yel|18}}
+*[[Rafael Navarro (footballer)|R. Navarro]] {{goal|58}}
+*[[Darren Yapi|Yapi]] {{goal|62}} 
+*[[Wayne Frederick (footballer)|Frederick]] {{yel|64}}
+*[[Lucas Herrington|Herrington]] {{yel|76}}
+*[[Jackson Travis|Travis]] {{yel|90+4}}
+| goals2     = 
+*[[Lionel Messi|Messi]] {{goal|18|pen.|79}}, {{yel|90+3}}
+*[[Rodrigo De Paul|De Paul]] {{yel|22}}
+*[[Micael (footballer, born 2000)|Micael]] {{yel|29}}
+*[[Germán Berterame|Berterame]] {{goal|45+5}}
+*[[Telasco Segovia|Segovia]] {{yel|86}}
+*[[Yannick Bright|Bright]] {{sentoff|0|87}}
+| referee    = Jon Freemon
+| stadium    = [[Empower Field at Mile High]]
+| location   = [[Denver|Denver, Colorado]]
+| attendance = 75,824
+| result     = W
+}}
+{{football box collapsible
+| round      = 9
+| date       = April 22
+| time       = 9:30&nbsp;p.m. [[Eastern Time Zone|EDT]]
+| team1      = [[Real Salt Lake]]
+| score      = 0–2
+| report     = https://www.mlssoccer.com/competitions/mls-regular-season/2026/matches/rslvsmia-04-22-2026/
+| team2      = Inter Miami CF
+| goals1     = 
+*[[DeAndre Yedlin|Yedlin]] {{yel|43}}
+*[[Stijn Spierings|Spierings]] {{yel|45+4}}
+*[[Diego Luna (soccer, born 2003)|Luna]] {{yel|58}}
+| goals2     = 
+*[[Noah Allen|Allen]] {{yel|42}}
+*[[Micael (footballer, born 2000)|Micael]] {{yel|58}}
+*[[Telasco Segovia|Segovia]] {{yel|65}}
+*[[Rodrigo De Paul|De Paul]] {{goal|82}}
+*[[Luis Suárez (Uruguayan footballer)|Suárez]] {{goal|83}}
+| referee    = Pierre-Luc Lauzière
+| stadium    = [[America First Field]]
+| location   = [[Sandy, Utah]]
+| attendance = 21,512
+| result     = W
+}}
+{{football box collapsible
+| round      = 10
+| date       = April 25
+| time       = 7:30&nbsp;p.m. [[Eastern Time Zone|EDT]]
+| team1      = Inter Miami CF
+| score      = 1–1
+| report     = https://www.mlssoccer.com/competitions/mls-regular-season/2026/matches/miavsne-04-25-2026/
+| team2      = [[New England Revolution]]
+| goals1     = 
+*[[Tadeo Allende|Allende]] {{yel|59}}
+*[[David Ruiz (footballer, born 2004)|Ruiz]] {{yel|67}}
+*[[Germán Berterame|Berterame]] {{goal|76}}
+*[[Micael (footballer, born 2000)|Micael]] {{yel|90+2}}
+| goals2     = 
+*[[Carles Gil|Gil]] {{goal|56}}
+| referee    = Rubiel Vazquez
+| stadium    = [[Nu Stadium]]
+| location   = [[Miami|Miami, Florida]]
+| attendance = 26,609
+| result     = D
+}}
+{{football box collapsible
+| round      = [[Inter Miami CF–Orlando City SC rivalry|11]]
+| date       = May 2
+| time       = 7:00&nbsp;p.m. [[Eastern Time Zone|EDT]]
+| team1      = Inter Miami CF
+| score      = 3–4
+| report     = https://www.mlssoccer.com/competitions/mls-regular-season/2026/matches/miavsorl-05-02-2026/
+| team2      = [[Orlando City SC]]
+| goals1     = 
+*[[Ian Fray|Fray]] {{goal|4}}
+*[[Telasco Segovia|Segovia]] {{goal|25}}
+*[[Lionel Messi|Messi]] {{goal|33}}, {{yel|78}}
+*[[Maximiliano Falcón|Falcón]] {{yel|45+4}}
+*[[Dayne St. Clair|St. Clair]] {{yel|45+5}}
+*[[Yannick Bright|Bright]] {{yel|52}}
+*[[Rodrigo De Paul|De Paul]] {{yel|59}}
+| goals2     = 
+*[[Robin Jansson|Jansson]] {{yel|18}}
+*[[Adrián Marín (footballer, born 1997)|Marín]] {{yel|36}}
+*[[Martín Ojeda|M. Ojeda]] {{goal|39||68||79|pen.}}
+*[[Tyrese Spicer|Spicer]] {{goal|90+3}}
+*[[Maxime Crépeau|Crépeau]] {{yel|90+6}}
+| referee    = Guido Gonzales Jr.
+| stadium    = [[Nu Stadium]]
+| location   = [[Miami|Miami, Florida]]
+| attendance = 26,684
+| result     = L
+}}
+{{football box collapsible
+| round      = 12
+| date       = May 9
+| time       = 1:00&nbsp;p.m. [[Eastern Time Zone|EDT]]
+| team1      = [[Toronto FC]]
+| score      = 2–4
+| report     = https://www.mlssoccer.com/competitions/mls-regular-season/2026/matches/torvsmia-05-09-2026/
+| team2      = Inter Miami CF
+| goals1     = 
+*[[Raheem Edwards (soccer, born 1995)|Edwards]] {{yel|51}}
+*[[Emilio Aristizábal|Aristizábal]] {{goal|82||90}}
+| goals2     = 
+*[[Rodrigo De Paul|De Paul]] {{goal|44}}
+*[[Luis Suárez (Uruguayan footballer)|Suárez]] {{goal|56}}, {{yel|61}}
+*[[Sergio Reguilón|Reguilón]] {{goal|73}}
+*[[Lionel Messi|Messi]] {{goal|75}}
+*[[Dániel Pintér|Pintér]] {{yel|89}}
+| referee    = [[Victor Rivas (referee)|Victor Rivas]]
+| stadium    = [[BMO Field]]
+| location   = [[Toronto|Toronto, Ontario]]
+| attendance = 44,828
+| result     = W
+}}
+{{football box collapsible
+| round      = 13
+| date       = May 13
+| time       = 7:30&nbsp;p.m. [[Eastern Time Zone|EDT]]
+| team1      = [[FC Cincinnati]]
+| score      = 3–5
+| report     = https://www.mlssoccer.com/competitions/mls-regular-season/2026/matches/cinvsmia-05-13-2026/
+| team2      = Inter Miami CF
+| goals1     = 
+*[[Kévin Denkey|Denkey]] {{goal|41|pen.}}
+*[[Pavel Bucha|Bucha]] {{goal|49}}
+*[[Evander (footballer)|Evander]] {{goal|64}}, {{yel|90+4}}
+*[[Obinna Nwobodo|Nwobodo]] {{yel|76}}
+| goals2     = 
+*[[Lionel Messi|Messi]] {{goal|24||55}}
+*[[Ian Fray|Fray]] {{yel|38}}
+*[[Gonzalo Luján|Luján]] {{yel|40}}
+*[[Yannick Bright|Bright]] {{yel|77}}
+*[[Mateo Silvetti|Silvetti]] {{goal|79}}
+*[[Germán Berterame|Berterame]] {{goal|84}}
+*[[Roman Celentano|Celentano]] {{goal|89|o.g.}}
+| referee    = Alexis Da Silva
+| stadium    = [[TQL Stadium]]
+| location   = [[Cincinnati|Cincinnati, Ohio]]
+| attendance = 25,513
+| result     = W
+}}
+{{football box collapsible
+| round      = 14
+| date       = May 17
+| time       = 6:00&nbsp;p.m. [[Eastern Time Zone|EDT]]
+| team1      = Inter Miami CF
+| score      = 2–0
+| report     = https://www.mlssoccer.com/competitions/mls-regular-season/2026/matches/miavspor-05-17-2026/
+| team2      = [[Portland Timbers]]
+| goals1     = 
+*[[Lionel Messi|Messi]] {{goal|31}}
+*[[Rodrigo De Paul|De Paul]] {{yel|41}}
+*[[Germán Berterame|Berterame]] {{goal|42}}
+*[[Telasco Segovia|Segovia]] {{yel|58}}
+| goals2     = 
+*[[David Da Costa (footballer, born 2001)|Da Costa]] {{yel|65}}
+*[[Finn Surman|Surman]] {{yel|90+2}}
+| referee    = [[Drew Fischer]]
+| stadium    = [[Nu Stadium]]
+| location   = [[Miami|Miami, Florida]]
+| attendance = 26,715
+| result     = W
+}}
+{{football box collapsible
+| round      = 15
+| date       = May 24
+| time       = 7:00&nbsp;p.m. [[Eastern Time Zone|EDT]]
+| team1      = Inter Miami CF
+| score      = 6–4
+| report     = https://www.mlssoccer.com/competitions/mls-regular-season/2026/matches/miavsphi-05-24-2026/
+| team2      = [[Philadelphia Union]]
+| goals1     = 
+*[[Dayne St. Clair|St. Clair]] {{yel|9}}
+*[[Germán Berterame|Berterame]] {{goal|13||42}}
+*[[Luis Suárez (Uruguayan footballer)|Suárez]] {{goal|29||44||81}}
+*[[Ian Fray|Fray]] {{yel|38}}
+*[[Telasco Segovia|Segovia]] {{yel|45+11}}
+*[[Sergio Reguilón|Reguilón]] {{yel|49}}
+*[[Gonzalo Luján|Luján]] {{yel|90+3}}
+*[[Rodrigo De Paul|De Paul]] {{goal|90+3}}
+*[[Noah Allen|Allen]] {{yel|90+7}}
+| goals2     = 
+*[[Milan Iloski|Iloski]] {{goal|4||10|pen.|45+8|pen.}}
+*[[Geiner Martínez|Martínez]] {{yel|16}}
+*[[Bruno Damiani|Damiani]] {{goal|20}}
+*[[Jovan Lukić (footballer, born 2002)|Lukić]] {{yel|24}}
+*[[Danley Jean Jacques|Jean Jacques]] {{yel|75}}
+| referee    = Rosendo Mendoza
+| stadium    = [[Nu Stadium]]
+| location   = [[Miami|Miami, Florida]]
+| attendance = 26,649
+| result     = W
+}}
+{{football box collapsible
+| round      = 16
+| date       = July 22
+| time       = 7:30&nbsp;p.m. [[Eastern Time Zone|EDT]]
+| team1      = Inter Miami CF
+| score      = 3–2
+| report     = https://www.mlssoccer.com/competitions/mls-regular-season/2026/matches/miavschi-07-22-2026/
+| team2      = [[Chicago Fire FC]]
+| goals1     = 
+*[[Luis Suárez (Uruguayan footballer)|Suárez]] {{goal|27|pen.|51}}
+*[[Preston Plambeck|Plambeck]] {{goal|87}}
+*[[Sergio Reguilón|Reguilón]] {{yel|90+7}}
+| goals2     = 
+*[[Rocco Ríos Novo|Ríos Novo]] {{goal|18}}
+*[[Jack Elliott (footballer)|Elliott]] {{yel|64}}
+*[[Puso Dithejane|Dithejane]] {{goal|67}}
+| referee    = Rubiel Vazquez
+| stadium    = [[Nu Stadium]]
+| location   = [[Miami|Miami, Florida]]
+| attendance = 25,123
+| result     = W
+}}
+{{football box collapsible
+| round      = 17
+| date       = July 25
+| time       = 7:30&nbsp;p.m. [[Eastern Time Zone|EDT]]
+| team1      = [[CF Montréal]]
+| score      = 0–1
+| report     = https://www.mlssoccer.com/competitions/mls-regular-season/2026/matches/mtlvsmia-07-25-2026/
+| team2      = Inter Miami CF
+| goals1     = 
+| goals2     = 
+*[[Ian Fray|Fray]] {{yel|23}}
+*[[Luis Suárez (Uruguayan footballer)|Suárez]] {{goal|81|pen.}}
+*[[Telasco Segovia|Segovia]] {{yel|84}}
+| referee    = Alexis Da Silva
+| stadium    = [[Saputo Stadium]]
+| location   = [[Montreal|Montreal, Quebec]]
+| attendance = 19,619
+| result     = W
+}}
+{{football box collapsible
+| round      = 18
+| date       = August 1
+| time       = 7:30&nbsp;p.m. [[Eastern Time Zone|EDT]]
+| team1      = Inter Miami CF
+| score      = 2–2
+| report     = https://www.mlssoccer.com/competitions/mls-regular-season/2026/matches/miavsclb-08-01-2026/
+| team2      = [[Columbus Crew]]
+| goals1     = 
+*[[Luis Suárez (Uruguayan footballer)|Suárez]] {{goal|16}}
+*[[Noah Allen|Allen]] {{goal|45+5}}
+*[[Casemiro]] {{yel|82}}
+| goals2     = 
+*[[Casemiro]] {{goal|34|o.g.}}
+*[[Sekou Bangoura (footballer)|Bangoura]] {{yel|74}}
+*[[Brais Méndez|Méndez]] {{goal|84}}
+*[[Patrick Schulte|Schulte]] {{yel|90+5}}
+| referee    = [[Tori Penso]]
+| stadium    = [[Nu Stadium]]
+| location   = [[Miami|Miami, Florida]]
+| attendance = 25,922
+| result     = D
+}}
+{{football box collapsible
+| round      = 19
+| date       = August 15
+| time       = 8:30&nbsp;p.m. [[Eastern Time Zone|EDT]]
+| team1      = [[Nashville SC]]
+| score      = 4–1
+| report     = https://www.mlssoccer.com/competitions/mls-regular-season/2026/matches/nshvsmia-08-15-2026/
+| team2      = Inter Miami CF
+| goals1     = 
+*[[Andy Najar|Nájar]] {{goal|17}}
+*[[Sam Surridge|Surridge]] {{yel|45+6}}, {{goal|56}}
+*[[Hany Mukhtar|Mukhtar]] {{goal|49||63}}
+| goals2     = 
+*[[Telasco Segovia|Segovia]] {{goal|45+3}}
+*[[Casemiro]] {{yel|48}}
+*[[Lionel Messi|Messi]] {{yel|59}}
+*[[David Ruiz (footballer, born 2004)|Ruiz]] {{yel|79}}
+| referee    = [[Drew Fischer]]
+| stadium    = [[Geodis Park]]
+| location   = [[Nashville, Tennessee]]
+| attendance = 30,109
+| result     = L
+}}
+{{football box collapsible
+| round      = 20
+| date       = August 19
+| time       = 7:30&nbsp;p.m. [[Eastern Time Zone|EDT]]
+| team1      = [[Philadelphia Union]]
+| score      = 2–2
+| report     = https://www.mlssoccer.com/competitions/mls-regular-season/2026/matches/phivsmia-08-19-2026/
+| team2      = Inter Miami CF
+| goals1     = 
+*[[Indiana Vassilev|Vassilev]] {{goal|11}}
+*[[Kai Wagner|Wagner]] {{yel|43}}
+*[[Neil Pierre|Pierre]] {{goal|58}}
+*[[Milan Iloski|Iloski]] {{yel|87}}
+*[[Ezekiel Alladoh|Alladoh]] {{yel|90+5}}
+*[[Cavan Sullivan|C. Sullivan]] {{sentoff|0|90+12}}
+*[[Quinn Sullivan (soccer)|Q. Sullivan]] {{yel|90+13}}
+| goals2     = 
+*[[Dániel Pintér|Pintér]] {{goal|21}}
+*[[Lionel Messi|Messi]] {{goal|26}}
+*[[Sergio Reguilón|Reguilón]] {{yel|50}}
+*[[Ian Fray|Fray]] {{yel|55}}
+*[[Yannick Bright|Bright]] {{sentoff|0|90+12}}
+| referee    = [[Filip Dujic]]
+| stadium    = [[Subaru Park]]
+| location   = [[Chester, Pennsylvania]]
+| attendance = 19,778
+| result     = D
+}}
+{{football box collapsible
+| round      = 21
+| date       = August 22
+| time       = 7:30&nbsp;p.m. [[Eastern Time Zone|EDT]]
+| team1      = Inter Miami CF
+| score      = 1–2
+| report     = https://www.mlssoccer.com/competitions/mls-regular-season/2026/matches/miavstor-08-22-2026/
+| team2      = [[Toronto FC]]
+| goals1     = 
+*[[Maximiliano Falcón|Falcón]] {{yel|53}}
+*[[Lionel Messi|Messi]] {{goal|82}}
+*[[David Ayala (footballer, born 2002)|Ayala]] {{yel|90+5}}
+| goals2     = 
+*[[Richie Laryea|Laryea]] {{yel|37}}
+*[[Josh Sargent|Sargent]] {{goal|59}}
+*[[Derrick Etienne Jr.|Etienne]] {{goal|62}}
+| referee    = [[Ismail Elfath]] 
+| stadium    = [[Nu Stadium]]
+| location   = [[Miami|Miami, Florida]]
+| attendance = 26,654
+| result     = L
+}}
+{{football box collapsible
+| round      = 22
+| date       = August 29
+| time       = 7:30&nbsp;p.m. [[Eastern Time Zone|EDT]]
+| team1      = Inter Miami CF
+| score      = 7–1
+| report     = https://www.mlssoccer.com/competitions/mls-regular-season/2026/matches/miavsmtl-08-29-2026/
+| team2      = [[CF Montréal]]
+| goals1     = 
+*[[Ian Fray|Fray]] {{yel|11}}
+*[[Casemiro]] {{goal|20}}
+*[[Lionel Messi|Messi]] {{goal|40||52||83||90+6}}
+*[[Luis Suárez (Uruguayan footballer)|Suárez]] {{goal|80}}
+*[[Alexander Shaw (soccer, born 2008)|Shaw]] {{goal|89}}
+| goals2     = 
+*[[Fabian Herbers|Herbers]] {{yel|35}}, {{goal|37}}
+*[[Noah Streit|Streit]] {{yel|39}}
+| referee    = Elijio Arreguin
+| stadium    = [[Nu Stadium]]
+| location   = [[Miami|Miami, Florida]]
+| attendance = 26,066
+| result     = W
+}}
+{{football box collapsible
+| round      = 23
+| date       = September 5
+| time       = 7:30&nbsp;p.m. [[Eastern Time Zone|EDT]]
+| team1      = Inter Miami CF
+| score      = 2–2
+| report     = https://www.mlssoccer.com/competitions/mls-regular-season/2026/matches/miavsatl-09-05-2026/
+| team2      = [[Atlanta United FC]]
+| goals1     = 
+*[[Maximiliano Falcón|Falcón]] {{yel|28}}
+*[[Casemiro]] {{goal|32}}, {{yel|72}}
+*[[Germán Berterame|Berterame]] {{yel|42}}
+*[[Luis Suárez (Uruguayan footballer)|Suárez]] {{goal|45+1}}
+*[[Fricio Caicedo|Caicedo]] {{yel|58}}
+*[[Dayne St. Clair|St. Clair]] {{yel|62}}
+*[[Rodrigo De Paul|De Paul]] {{yel|75}}
+| goals2     = 
+*[[Miguel Almirón|Almirón]] {{goal|35}}, {{penmiss}} {{small|73'}}
+*[[Cooper Sanchez|Sanchez]] {{yel|39}}
+*[[Paulo Díaz]] {{yel|47}}
+*[[Breel Embolo|Embolo]] {{goal|87|pen.}}
+*[[Matthew Edwards (soccer)|Edwards]] {{yel|90+5}}
+| referee    = Jon Freemon
+| stadium    = [[Nu Stadium]]
+| location   = [[Miami|Miami, Florida]]
+| attendance = 26,635
+| result     = D
+}}
+{{football box collapsible
+| round      = 24
+| date       = September 9
+| time       = 8:30&nbsp;p.m. [[Eastern Time Zone|EDT]]
+| team1      = [[Chicago Fire FC]]
+| score      = 1–1
+| report     = https://www.mlssoccer.com/competitions/mls-regular-season/2026/matches/chivsmia-09-09-2026/
+| team2      = Inter Miami CF
+| goals1     = 
+*[[Robert Lewandowski|Lewandowski]] {{goal|10}}
+*[[Jonathan Dean|Dean]] {{yel|50}}
+*[[Djé D'Avilla|D'Avilla]] {{yel|59}}
+|goals2 = 
+*[[Telasco Segovia|Segovia]] {{yel|4}}
+*[[Maximiliano Falcón|Falcón]] {{yel|24}}
+*[[Casemiro]] {{goal|48}}
+*[[Germán Berterame|Berterame]] {{yel|71}}
+| referee    = [[Jair Marrufo]]
+| stadium    = [[Soldier Field]]
+| location   = [[Chicago|Chicago, Illinois]]
+| attendance = 63,094
+| result     = D
+}}
+{{football box collapsible
+| round      = 25
+| date       = September 12
+| time       = 7:30&nbsp;p.m. [[Eastern Time Zone|EDT]]
+| team1      = Inter Miami CF
+| score      = 2–2
+| report     = https://www.mlssoccer.com/competitions/mls-regular-season/2026/matches/miavsnsh-09-12-2026/
+| team2      = [[Nashville SC]]
+| goals1     = 
+*[[Reed Baker-Whiting|Baker-Whiting]] {{goal|19|o.g.}}
+*[[Felipe Caicedo|Caicedo]] {{yel|41}}
+*[[Lionel Messi|Messi]] {{goal|62}}
+*[[Germán Berterame|Berterame]] {{yel|86}}
+*[[Matías Galarza (Paraguayan footballer)|Galarza]] {{yel|90}}
+| goals2     = 
+*[[Sam Surridge|Surridge]] {{goal|4||90+1}}
+*[[Alex Muyl|Muyl]] {{yel|9}}
+*[[Maxwell Woledzi|Woledzi]] {{yel|43}}
+| referee    = Guido Gonzales Jr.
+| stadium    = [[Nu Stadium]]
+| location   = [[Miami|Miami, Florida]]
+| attendance = 26,603
+| result     = D
+}}
+{{football box collapsible
+| round      = 26
+| date       = September 20
+| time       = 7:00&nbsp;p.m. [[Eastern Time Zone|EDT]]
+| team1      = Inter Miami CF
+| score      = 2–2
+| report     = https://www.mlssoccer.com/competitions/mls-regular-season/2026/matches/miavssd-09-20-2026/
+| team2      = [[San Diego FC]]
+| goals1     = 
+*[[Lionel Messi|Messi]] {{goal|24}}
+*[[Yannick Bright|Bright]] {{yel|64}}
+*[[Luis Suárez (Uruguayan footballer)|Suárez]] {{goal|74}}
+*[[Alexander Shaw (soccer, born 2008)|Shaw]] {{yel|82}}
+| goals2     = 
+*[[Anders Dreyer|Dreyer]] {{goal|12||82}}
+*[[Ian Murphy (soccer)|Murphy]] {{yel|33}}
+| referee    = Rosendo Mendoza
+| stadium    = [[Nu Stadium]]
+| location   = [[Miami|Miami, Florida]]
+| attendance = 25,743
+| result     = D
+}}
+{{football box collapsible
+| round      = 27
+| date       = September 27
+| time       = 7:00&nbsp;p.m. [[Eastern Time Zone|EDT]]
+| team1      = [[Columbus Crew]]
+| score      = 2–1
+| report     = https://www.mlssoccer.com/competitions/mls-regular-season/2026/matches/clbvsmia-09-27-2026/
+| team2      = Inter Miami CF
+| goals1     = 
+*[[Josef Martínez|Martínez]] {{goal|28|pen.}}
+*[[Dylan Chambost|Chambost]] {{yel|38}}
+*[[Brais Méndez|Méndez]] {{yel|75}}
+*[[Eric Bailly|Bailly]] {{yel|78}}
+*[[Sekou Bangoura (footballer)|Bangoura]] {{yel|83}}
+*[[Jamal Thiaré|Thiaré]] {{goal|90+8}}
+| goals2     = 
+*[[Casemiro]] {{yel|27}}
+*[[Lionel Messi|Messi]] {{goal|33}}
+*[[Micael (footballer, born 2000)|Micael]] {{yel|67}}
+*[[Dániel Pintér|Pintér]] {{yel|80}}
+*[[Gonzalo Luján|Luján]] {{yel|90+2}}
+*[[Santiago Morales (soccer)|Morales]] {{sentoff|2|90+4|90+6}}
+*[[Luis Barraza|Barraza]] {{yel|90+10}}
+| referee    = [[Victor Rivas (referee)|Victor Rivas]]
+| stadium    = [[ScottsMiracle-Gro Field]]
+| location   = [[Columbus, Ohio]]
+| attendance = 21,188
+| result     = L
+}}
+{{football box collapsible
+| round      = 28
+| date       = October 10
+| time       = 7:30&nbsp;p.m. [[Eastern Time Zone|EDT]]
+| team1      = Inter Miami CF
+| score      = 4–0
+| report     = https://www.mlssoccer.com/competitions/mls-regular-season/2026/matches/miavsdc-10-10-2026/
+| team2      = [[D.C. United]]
+| goals1     = 
+*[[Luis Suárez (Uruguayan footballer)|Suárez]] {{goal|3||39}}
+*[[Lionel Messi|Messi]] {{goal|47||60}}
+| goals2     = 
+| referee    = Lukasz Szpala
+| stadium    = [[Nu Stadium]]
+| location   = [[Miami|Miami, Florida]]
+| attendance = 26,679
+| result     = W
+}}
+{{football box collapsible
+| round      = 29
+| date       = October 14
+| time       = 7:30&nbsp;p.m. [[Eastern Time Zone|EDT]]
+| team1      = Inter Miami CF
+| score      = 2–0
+| report     = https://www.mlssoccer.com/competitions/mls-regular-season/2026/matches/miavsnyc-10-14-2026/
+| team2      = [[New York City FC]]
+| goals1     = 
+*[[Germán Berterame|Berterame]] {{goal|20}}
+*[[Rodrigo De Paul|De Paul]] {{goal|45+5}}
+*[[Matías Galarza (Paraguayan footballer)|Galarza]] {{yel|52}}
+*[[Riquelme Fillipi|Riquelme]] {{yel|85}}
+| goals2     = 
+*[[Nicolás Fernández (footballer, born 2000)|Fernández]] {{penmiss}} {{small|90+7'}}
+| referee    = Lorenzo Hernandez
+| stadium    = [[Nu Stadium]]
+| location   = [[Miami|Miami, Florida]]
+| attendance = 25,773
+| result     = W
+}}
+{{football box collapsible
+| round      = 30
+| date       = October 17
+| time       = 7:30&nbsp;p.m. [[Eastern Time Zone|EDT]]
+| team1      = [[Atlanta United FC]]
+| score      = 1–3
+| report     = https://www.mlssoccer.com/competitions/mls-regular-season/2026/matches/atlvsmia-10-17-2026/
+| team2      = Inter Miami CF
+| goals1     = 
+*[[Tomás Jacob|Jacob]] {{yel|44}}
+*[[Mauricio Amaro|Amaro]] {{yel|54}}
+*[[Breel Embolo|Embolo]] {{yel|71}}
+*[[Fafà Picault|Picault]] {{goal|89|pen.}}
+| goals2     = 
+*[[Germán Berterame|Berterame]] {{goal|45}}
+*[[Lionel Messi|Messi]] {{goal|56||60}}, {{yel|90+6}}
+*[[Maximiliano Falcón|Falcón]] {{yel|89}}
+| referee    = [[Allen Chapman]]
+| stadium    = [[Mercedes-Benz Stadium]]
+| location   = [[Atlanta, Georgia]]
+| attendance = 46,686
+| result     = W
+}}
+{{football box collapsible
+| round      = 31
+| date       = October 24
+| time       = 4:30&nbsp;p.m. [[Eastern Time Zone|EDT]]
+| team1      = [[New York Red Bulls]]
+| score      = 2–0
+| report     = https://www.mlssoccer.com/competitions/mls-regular-season/2026/matches/rbnyvsmia-10-24-2026/
+| team2      = Inter Miami CF
+| goals1     = 
+*[[Casemiro]] {{goal|7|o.g.}}
+*[[Julián Bazán|Bazán]] {{yel|80}}
+*[[Emil Forsberg|Forsberg]] {{goal|90+1}}
+| goals2     = 
+*[[Santiago Morales (soccer)|Morales]] {{yel|90+4}}
+| referee    = [[Filip Dujic]]
+| stadium    = [[Sports Illustrated Stadium]]
+| location   = [[Harrison, New Jersey]]
+| attendance = 26,287
+| result     = L
+}}
+{{football box collapsible
+| round      = 32
+| date       = October 28
+| time       = 7:30&nbsp;p.m. [[Eastern Time Zone|EDT]]
+| team1      = Inter Miami CF
+| score      = 2–2
+| report     = https://www.mlssoccer.com/competitions/mls-regular-season/2026/matches/miavscin-10-28-2026/
+| team2      = [[FC Cincinnati]]
+| goals1     = 
+*[[Lionel Messi|Messi]] {{yel|44}}
+*[[Luis Suárez (Uruguayan footballer)|Suárez]] {{goal|61}}, {{yel|90+4}}
+*[[Riquelme Fillipi|Riquelme]] {{goal|90}}
+*[[Telasco Segovia|Segovia]] {{yel|90+2}}
+| goals2     = 
+*[[Kenji Mboma Dem|Mboma Dem]] {{goal|80}}
+*[[Samuel Gidi|Gidi]] {{goal|86}}
+| referee    = [[Armando Villarreal]]
+| stadium    = [[Nu Stadium]]
+| location   = [[Miami|Miami, Florida]]
+| attendance = 26,752
+| result     = D
+}}
+{{football box collapsible
+| round      = 33
+| date       = November 1
+| time       = 6:00&nbsp;p.m. [[Eastern Time Zone|EST]]
+| team1      = [[New England Revolution]]
+| score      = 1–2
+| report     = https://www.mlssoccer.com/competitions/mls-regular-season/2026/matches/nevsmia-11-01-2026/
+| team2      = Inter Miami CF
+| goals1     = 
+*[[Dániel Gazdag|Gazdag]] {{goal|53}}
+*[[Luca Langoni|Langoni]] {{yel|90+6}}
+| goals2     = 
+*[[Gonzalo Luján|Luján]] {{yel|25}}
+*[[Germán Berterame|Berterame]] {{goal|69}}
+*[[Matías Galarza (Paraguayan footballer)|Galarza]] {{yel|75}}
+*[[Lionel Messi|Messi]] {{goal|83}}
+*[[Telasco Segovia|Segovia]] {{yel|85}}
+| referee    = [[Serhiy Boyko]]
+| stadium    = [[Gillette Stadium]]
+| location   = [[Foxborough, Massachusetts]]
+| attendance = 54,112
+| result     = W
+}}
+{{football box collapsible
+| round      = 34
+| date       = November 7
+| time       = 4:00&nbsp;p.m. [[Eastern Time Zone|EST]]
+| team1      = Inter Miami CF
+| score      = 
+| report     = https://www.mlssoccer.com/competitions/mls-regular-season/2026/matches/miavsclt-11-07-2026/
+| team2      = [[Charlotte FC]]
+| goals1     = 
+| goals2     = 
+| referee    = 
+| stadium    = [[Nu Stadium]]
+| location   = [[Miami|Miami, Florida]]
+| attendance = 
+| result     = 
+}}
+
+===CONCACAF Champions Cup===
+{{main|2026 CONCACAF Champions Cup}}
+
+Inter Miami CF qualified for the tournament as the winner of [[MLS Cup 2025]], and were granted a [[bye (sports)|bye]] to the round of 16.
+
+====Round of 16====
+{{Football box collapsible
+|round = [[2026 CONCACAF Champions Cup#Round of 16|First leg]]
+|date = March 11
+|time = 7:30 p.m. [[Eastern Time Zone|EDT]]
+|team1 = [[Nashville SC]] {{fbaicon|USA}}
+|score = 0–0
+|report = https://www.concacaf.com/competitions/champions-cup/matches/6db31c4f8cfa4fcfbd9995ee3545ea24/nsh-vs-mia
+|team2 = {{fbaicon|USA}} Inter Miami CF
+|goals1 = 
+|goals2 = 
+*[[Germán Berterame|Berterame]] {{yel|51}}
+|stadium = [[Geodis Park]]
+|location = [[Nashville, Tennessee]]
+|attendance = 25,616
+|referee = [[Juan Gabriel Calderón]] ([[Costa Rican Football Federation|Costa Rica]])
+|result = D
+}}
+{{Football box collapsible
+|round = [[2026 CONCACAF Champions Cup#Round of 16|Second leg]]
+|date = March 18
+|time = 7:00 p.m. [[Eastern Time Zone|EDT]]
+|team1 = Inter Miami CF {{fbaicon|USA}} 
+|score = 1–1
+|aggregatescore = 1–1 ([[Away goals rule|a]])
+|report = https://www.concacaf.com/competitions/champions-cup/matches/3958684845824d7d80d1517e787d9c91/mia-vs-nsh
+|team2 = {{fbaicon|USA}} [[Nashville SC]]
+|goals1 = 
+*[[Lionel Messi|Messi]] {{goal|7}}
+*[[Gonzalo Luján|Luján]] {{yel|38}}
+|goals2 = 
+*[[Cristian Espinoza|Espinoza]] {{goal|74}}
+|stadium = [[Chase Stadium]]
+|location = [[Fort Lauderdale, Florida]]
+|attendance = 17,263
+|referee = Adonai Escobedo ([[Mexican Football Federation|Mexico]])
+|result = D
+}}
+
+===Leagues Cup===
+{{main|2026 Leagues Cup}}
+
+====League phase====
+{{main|2026 Leagues Cup league phase}}
+{{2026 Leagues Cup League stage Major League Soccer Standings|showteam=MIA|show_limit=5}}
+
+{{Football box collapsible
+|round = [[2026 Leagues Cup league phase|1]]
+|date = August 5
+|time = 7:30 p.m. [[Eastern Time Zone|EDT]]
+|team1 = Inter Miami CF {{fbaicon|USA}}
+|score = 4–2
+|report = https://www.leaguescup.com/competitions/leagues-cup/2026/matches/miavsasl-08-05-2026/
+|team2 = {{fbaicon|MEX}} [[Atlético San Luis]]
+|goals1 = 
+*[[Lionel Messi|Messi]] {{goal|11||44}}
+*[[Telasco Segovia|Segovia]] {{goal|26}}
+*[[Ian Fray|Fray]] {{yel|45+3}}
+*[[Micael (footballer, born 2000)|Micael]] {{goal|45+7}}
+|goals2 = 
+*[[David Rodríguez (soccer, born 2002)|Rodríguez]] {{goal|4}}
+*[[Rafa Llorente|Llorente]] {{goal|51}}
+|stadium = [[Nu Stadium]]
+|location = [[Miami|Miami, Florida]]
+|attendance = 23,999
+|referee = [[Saíd Martínez]] ([[Football Federation of Honduras|Honduras]])
+|result = W
+}}
+{{Football box collapsible
+|round = [[2026 Leagues Cup league phase|2]]
+|date = August 8
+|time = 8:00 p.m. [[Eastern Time Zone|EDT]]
+|team1 = Inter Miami CF {{fbaicon|USA}}
+|score = 1–2
+|report = https://www.leaguescup.com/competitions/leagues-cup/2026/matches/miavsmty-08-08-2026/
+|team2 = {{fbaicon|MEX}} [[C.F. Monterrey|Monterrey]]
+|goals1 = 
+*[[Rodrigo De Paul|De Paul]] {{goal|32}}, {{yel|33}}
+*[[Micael (footballer, born 2000)|Micael]] {{yel|38}}
+*[[Casemiro]] {{yel|81}}
+*[[David Ruiz (footballer, born 2004)|Ruiz]] {{yel|86}}
+|goals2 = 
+*[[Hugo Cuypers|Cuypers]] {{goal|47}}
+*[[Gerardo Arteaga|Arteaga]] {{yel|86}}
+*[[Diego Rossi|Rossi]] {{goal|90}}
+*[[Lucas Ocampos|Ocampos]] {{yel|90+6}}
+|stadium = [[Nu Stadium]]
+|location = [[Miami|Miami, Florida]]
+|attendance = 26,543
+|referee = Bryan López ([[National Football Federation of Guatemala|Guatemala]])
+|result = L
+}}
+{{Football box collapsible
+|round = [[2026 Leagues Cup league phase|3]]
+|date = August 12
+|time = 7:30 p.m. [[Eastern Time Zone|EDT]]
+|team1 = Inter Miami CF {{fbaicon|USA}}
+|score = 2–3
+|report = https://www.leaguescup.com/competitions/leagues-cup/2026/matches/miavsleo-08-12-2026/
+|team2 = {{fbaicon|MEX}} [[Club León|León]]
+|goals1 = 
+*[[Telasco Segovia|Segovia]] {{yel|33}}
+*[[Dániel Pintér|Pintér]] {{goal|42}}
+*[[Yannick Bright|Bright]] {{goal|54}}
+*[[Casemiro]] {{yel|55}}
+*[[Preston Plambeck|Plambeck]] {{yel|79}}
+|goals2 = 
+*[[Daniel Arcila|Arcila]] {{goal|50||83}}, {{yel|64}}
+*[[Jhohan Romaña|Romaña]] {{yel|55}}
+*[[Juan Pablo Domínguez|Domínguez]] {{goal|61}}
+|stadium = [[Nu Stadium]]
+|location = [[Miami|Miami, Florida]]
+|attendance = 21,318
+|referee = [[Mario Escobar (referee)|Mario Escobar]] ([[National Football Federation of Guatemala|Guatemala]])
+|result = L
+}}
+
+=== Campeones Cup ===
+{{main|2026 Campeones Cup}}
+{{football box collapsible
+|round      = [[2026 Campeones Cup#Match|Final]]
+|date       = September 16
+|time       = 8:00 p.m. [[Eastern Time Zone|EDT]]
+|team1      = Inter Miami CF {{fbaicon|USA}}
+|score      = 2–0
+|report     = https://www.mlssoccer.com/competitions/campeones-cup/2026/matches/miavscaz-09-16-2026/
+|team2      = {{fbaicon|MEX}} [[Cruz Azul]]
+|goals1     = 
+*[[Lionel Messi|Messi]] {{goal|24}}
+*[[Matías Galarza (Paraguayan footballer)|Galarza]] {{yel|41}}
+*[[Casemiro]] {{goal|81}}
+*[[Alexander Shaw (soccer, born 2008)|Shaw]] {{yel|90}}
+|goals2     = 
+*[[Willer Ditta|Ditta]] {{yel|66}}
+*[[Gabriel Fernández (footballer, born 1994)|Fernández]] {{yel|73}}
+|stadium    = [[Nu Stadium]]
+|location   = [[Miami|Miami, Florida]]
+|attendance = 26,495
+|referee    = [[Keylor Herrera]] ([[Costa Rican Football Federation|Costa Rica]])
+|result     = W
+|note       =
+}}
+
+==Roster==
+{{updated|September 21, 2026<ref name="Players">{{cite web|url=https://www.intermiamicf.com/club/roster|title=Inter Miami CF Roster|publisher=Inter Miami CF|access-date=December 12, 2025}}</ref>}}
+
+{| class="wikitable sortable nowrap" style="text-align:center; font-size:90%;"
+|-
+! style="background:#000000; color:#F7B5CD; text-align:center;"| No.
+! style="background:#000000; color:#F7B5CD; text-align:center;"| Player
+! style="background:#000000; color:#F7B5CD; text-align:center;"| Nationality
+! style="background:#000000; color:#F7B5CD; text-align:center;"| {{abbr|Pos.|Position}}
+! style="background:#000000; color:#F7B5CD; text-align:center;"| Age
+! style="background:#000000; color:#F7B5CD; text-align:center;"| Signed from
+! style="background:#000000; color:#F7B5CD; text-align:center;"| Contract<br />ends
+! style="background:#000000; color:#F7B5CD; text-align:center;"| Notes<ref>{{cite web|url=https://mlssoccer.app.box.com/s/om9oaesg5gcztfle9tog5bioo13gbcnd|title=Club Roster Profiles September 2026|publisher=Major League Soccer|page=17|access-date=September 21, 2026}}</ref>
+|-class="sortbottom"
+| colspan="8" style="background:#F7B5CD; color:#000000; text-align:center" | '''Goalkeepers''' 
+|-
+| 13
+| align="left" | {{sortname|Luis|Barraza}}
+| align="left" | {{flag|United States}}
+| [[Goalkeeper (association football)|GK]]
+| {{age|1996|11|8}}
+| style="text-align:left"|{{fbaicon|USA}} [[D.C. United]]
+| {{dts|Jun 2027}}
+| 
+|-
+| 34
+| align="left" | {{sortname|Rocco|Ríos Novo}}
+| align="left" | {{flag|Argentina}}
+| [[Goalkeeper (association football)|GK]]
+| {{age|2002|6|4}}
+| style="text-align:left"|{{fbaicon|ARG}} [[Club Atlético Lanús|Lanús]]
+| {{dts|Jun 2029}}
+| 
+|-
+| 97
+| align="left" | {{sortname|Dayne|St. Clair}}
+| align="left" | {{flag|Canada}}
+| [[Goalkeeper (association football)|GK]]
+| {{age|1997|5|9}}
+| style="text-align:left"|{{fbaicon|USA}} [[Minnesota United FC]]
+| {{dts|Dec 2026}}
+| 
+|-class="sortbottom"
+| colspan="8" style="background:#F7B5CD; color:#000000; text-align:center" | '''Defenders'''
+|-
+| 2
+| align="left" | {{sortname|Gonzalo|Luján}}
+| align="left" | {{flag|Argentina}}
+| [[Defender (association football)|DF]]
+| {{age|2001|4|21}}
+| style="text-align:left"|{{fbaicon|ARG}} [[San Lorenzo de Almagro|San Lorenzo]]
+| {{dts|Dec 2027}}
+| 
+|-
+| 3
+| align="left" | {{sortname|Sergio|Reguilón}}
+| align="left" | {{flag|Spain}}
+| [[Defender (association football)|DF]]
+| {{age|1996|12|16}}
+| style="text-align:left"|''[[Free agent]]''
+| {{dts|Dec 2027}}
+| align="left" | [[MLS International Roster Slots|International]]
+|-
+| 4
+| align="left" | {{sortname|Facundo|Mura}}
+| align="left" | {{flag|Argentina}}
+| [[Defender (association football)|DF]]
+| {{age|1999|3|23}}
+| style="text-align:left"|{{fbaicon|ARG}} [[Racing Club de Avellaneda|Racing Club]]
+| {{dts|Jun 2029}}
+|
+|-
+| 15
+| align="left" | {{sortname|Fricio|Caicedo}}
+| align="left" | {{flag|Ecuador}}
+| [[Defender (association football)|DF]]
+| {{age|2008|4|17}}
+| style="text-align:left"|{{fbaicon|CRC}} [[FC Moravia FCM|Moravia FCM]]
+| {{dts|Jun 2027}}
+| align="left" | [[MLS International Roster Slots|International]], on loan
+|-
+| 16
+| align="left" | {{sortname||Micael|dab=footballer, born 2000}}
+| align="left" | {{flag|Brazil}}
+| [[Defender (association football)|DF]]
+| {{age|2000|8|12}}
+| style="text-align:left"|{{fbaicon|BRA}} [[SE Palmeiras|Palmeiras]]
+| {{dts|Dec 2026}}
+| align="left" | [[MLS International Roster Slots|International]], on loan
+|-
+| 17
+| align="left" | {{sortname|Ian|Fray}}
+| align="left" | {{flag|Jamaica}}
+| [[Defender (association football)|DF]]
+| {{age|2002|8|31}}
+| style="text-align:left" |{{fbaicon|USA}} [[Fort Lauderdale CF]]
+| {{dts|Jun 2029}}
+| 
+|-
+| 26
+| align="left" | {{sortname|Tyler|Hall|dab=soccer}}
+| align="left" | {{flag|United States}}
+| [[Defender (association football)|DF]]
+| {{age|2006|2|5}}
+| style="text-align:left"|{{fbaicon|USA}} [[Inter Miami CF II]]
+| {{dts|Dec 2027}}
+| align="left" | [[Homegrown Player Rule (MLS)|HGP]]
+|-
+| 37
+| align="left" | {{sortname|Maximiliano|Falcón}}
+| align="left" | {{flag|Uruguay}}
+| [[Defender (association football)|DF]]
+| {{age|1997|5|1}}
+| style="text-align:left"|{{fbaicon|CHI}} [[Colo-Colo]]
+| {{dts|Dec 2028}}
+| align="left" | [[MLS International Roster Slots|International]]
+|-
+| 62
+| align="left" | {{sortname|Israel|Boatwright}}
+| align="left" | {{flag|Dominican Republic}}
+| [[Defender (association football)|DF]]
+| {{age|2005|6|2}}
+| style="text-align:left"|{{fbaicon|USA}} [[Inter Miami CF II]]
+| {{dts|Dec 2026}}
+| align="left" | [[Homegrown Player Rule (MLS)|HGP]]
+|-
+| 70
+| align="left" | {{sortname|Daniel|Sumalla}}
+| align="left" | {{flag|United States}}
+| [[Defender (association football)|DF]]
+| {{age|2007|6|25}}
+| style="text-align:left"|{{fbaicon|USA}} [[Inter Miami CF II]]
+| {{dts|Dec 2026}}
+| align="left" | [[Homegrown Player Rule (MLS)|HGP]]
+|-
+| 76
+| align="left" | {{sortname|Cesar|Abadia-Reda}}
+| align="left" | {{flag|United States}}
+| [[Defender (association football)|DF]]
+| {{age|2006|4|4}}
+| style="text-align:left"|{{fbaicon|USA}} [[Inter Miami CF II]]
+| {{dts|Dec 2026}}
+| align="left" | [[Homegrown Player Rule (MLS)|HGP]]
+|-class="sortbottom"
+| colspan="8" style="background:#F7B5CD; color:#000000; text-align:center" | '''Midfielders'''
+|-
+| 5
+| align="left" | {{sortname||Casemiro}}
+| align="left" | {{flag|Brazil}}
+| [[Midfielder|MF]]
+| {{age|1992|2|23}}
+| style="text-align: left;" |{{fbaicon|ENG}} [[Manchester United F.C.|Manchester United]]
+| {{dts|Jun 2027}}
+| align="left" | [[MLS International Roster Slots|International]]
+|-
+| 7
+| align="left" | {{sortname|Rodrigo|De Paul}}
+| align="left" | {{flag|Argentina}}
+| [[Midfielder|MF]]
+| {{age|1994|5|24}}
+| style="text-align: left;" |{{fbaicon|ESP}} [[Atlético Madrid]]
+| {{dts|Dec 2029}}
+| align="left" | [[Designated Player Rule|DP]]; [[MLS International Roster Slots|International]]
+|-
+| 8
+| align="left" | {{sortname|Telasco|Segovia}}
+| align="left" | {{flag|Venezuela}}
+| [[Midfielder|MF]]
+| {{age|2003|4|2}}
+| style="text-align:left"|{{fbaicon|POR}} [[Casa Pia A.C.|Casa Pia]]
+| {{dts|Dec 2029}}
+| 
+|-
+| 20
+| align="left" | {{sortname|Santiago|Morales|dab=soccer}}
+| align="left" | {{flag|United States}}
+| [[Midfielder|MF]]
+| {{age|2007|2|9}}
+| style="text-align:left"|{{fbaicon|USA}} [[Inter Miami CF II]]
+| {{dts|Dec 2027}}
+| align="left" | [[Homegrown Player Rule (MLS)|HGP]]
+|-
+| 22
+| align="left" | {{sortname|David|Ayala|dab=footballer, born 2002}}
+| align="left" | {{flag|Argentina}}
+| [[Midfielder|MF]]
+| {{age|2002|7|26}}
+| style="text-align: left;" |{{fbaicon|USA}} [[Portland Timbers]]
+| {{dts|Dec 2026}}
+| align="left" | 
+|-
+| 42
+| align="left" | {{sortname|Yannick|Bright}}
+| align="left" | {{flag|Italy}}
+| [[Midfielder|MF]]
+| {{age|2001|9|3}}
+| style="text-align:left"|{{fbaicon|USA}} [[New Hampshire Wildcats men's soccer|New Hampshire Wildcats]]
+| {{dts|Dec 2028}}
+| align="left" | [[MLS International Roster Slots|International]]
+|-
+| 59
+| align="left" | {{sortname|Preston|Plambeck}}
+| align="left" | {{flag|United States}}
+| [[Midfielder|MF]]
+| {{age|2005|12|20}}
+| style="text-align:left"|{{fbaicon|USA}} [[Inter Miami CF II]]
+| {{dts|Dec 2026}}
+|
+|-
+| 80
+| align="left" | {{sortname|Matías|Galarza|dab=Paraguayan footballer}}
+| align="left" | {{flag|Paraguay}}
+| [[Midfielder|MF]]
+| {{age|2002|2|11}}
+| style="text-align:left"|{{fbaicon|ARG}} [[Club Atlético River Plate|River Plate]]
+| {{dts|Dec 2026}}
+| align="left" | [[MLS International Roster Slots|International]], on loan
+|-
+| 88
+| align="left" | {{sortname|Alexander|Shaw|dab=soccer, born 2008}}
+| align="left" | {{flag|United States}}
+| [[Midfielder|MF]]
+| {{age|2008|4|3}}
+| style="text-align:left"|{{fbaicon|USA}} [[Inter Miami CF II]]
+| {{dts|Dec 2026}}
+| align="left" | [[Homegrown Player Rule (MLS)|HGP]]
+|-class="sortbottom"
+| colspan="8" style="background:#F7B5CD; color:#000000; text-align:center" | '''Forwards'''
+|-
+| 9
+| align="left" | {{sortname|Luis|Suárez|dab=Uruguayan footballer}}
+| align="left" | {{flag|Uruguay}}
+| [[Forward (association football)|FW]]
+| {{age|1987|1|24}}
+| style="text-align:left"|{{fbaicon|BRA}} [[Grêmio FBPA|Grêmio]]
+| {{dts|Dec 2026}}
+| align="left" | [[MLS International Roster Slots|International]]
+|-
+| 10
+| align="left" | {{sortname|Lionel|Messi}} ''([[Captain (association football)|captain]])''
+| align="left" | {{flag|Argentina}}
+| [[Forward (association football)|FW]]
+| {{age|1987|6|24}}
+| style="text-align:left"|{{fbaicon|FRA}} [[Paris Saint-Germain FC|Paris Saint-Germain]]
+| {{dts|Dec 2028}}
+| align="left" | [[Designated Player Rule|DP]]; [[MLS International Roster Slots|International]]
+|-
+| 11
+| align="left" | {{sortname||Riquelme Fillipi}}
+| align="left" | {{flag|Brazil}}
+| [[Forward (association football)|FW]]
+| {{age|2006|9|15}}
+| style="text-align:left"|{{fbaicon|BRA}} [[SE Palmeiras|Palmeiras]]
+| {{dts|Jun 2030}}
+| align="left" | [[MLS International Roster Slots|International]]
+|-
+| 19
+| align="left" | {{sortname|Germán|Berterame}}
+| align="left" | {{flag|Mexico}}
+| [[Forward (association football)|FW]]
+| {{age|1998|9|13}}
+| style="text-align:left"|{{fbaicon|MEX}} [[C.F. Monterrey|Monterrey]]
+| {{dts|Jun 2029}}
+| align="left" | [[Designated Player Rule|DP]]; [[MLS International Roster Slots|International]]
+|-
+| 21
+| align="left" | {{sortname|Tadeo|Allende}}
+| align="left" | {{flag|Argentina}}
+| [[Forward (association football)|FW]]
+| {{age|1999|2|20}}
+| style="text-align:left"|{{fbaicon|ESP}} [[RC Celta de Vigo|Celta Vigo]]
+| {{dts|Jun 2030}}
+| align="left" |[[MLS International Roster Slots|International]]
+|-
+| 24
+| align="left" | {{sortname|Mateo|Silvetti}}
+| align="left" | {{flag|Argentina}}
+| [[Forward (association football)|FW]]
+| {{age|2006|1|14}}
+| style="text-align:left"|{{fbaicon|ARG}} [[Newell's Old Boys]]
+| {{dts|Dec 2029}}
+|-
+| 54
+| align="left" | {{sortname|Lovend's|Delinois}}
+| align="left" | {{flag|Haiti}}
+| [[Forward (association football)|FW]]
+| {{age|2004|10|5}}
+| style="text-align:left"|{{fbaicon|USA}} [[Inter Miami CF II]]
+| {{dts|Jun 2027}}
+| align="left" | [[MLS International Roster Slots|International]]
+|-
+| 56
+| align="left" | {{sortname|Dániel|Pintér}}
+| align="left" | {{flag|United States}}
+| [[Forward (association football)|FW]]
+| {{age|2007|6|6}}
+| style="text-align:left"|{{fbaicon|USA}} [[Inter Miami CF II]]
+| {{dts|Jun 2028}}
+| align="left" | [[Homegrown Player Rule (MLS)|HGP]]
+|}
+
+==Management==
+{{Fb cs header}}
+|-
+!colspan="2" style="background:#F7B5CD; color:#000000; text-align:left" |Ownership<ref>{{cite web |title=Inter Miami CF Ownership |url=https://www.intermiamicf.com/club/ownership |publisher=Inter Miami CF |accessdate=September 27, 2026}}</ref>
+|-
+{{Fb cs staff |p=Managing Owner |s={{Flagicon|USA}} [[Jorge Mas]]}}
+{{Fb cs staff |p=Co-Owner |s={{Flagicon|ENG}} [[David Beckham]]}}
+{{Fb cs staff |p=Co-Owner |s={{flagicon|USA}} [[MasTec|Jose Mas]]}}
+|-
+!colspan="2" style="background:#F7B5CD; color:#000000; text-align:left" |Front office<ref>{{cite web |title= Inter Miami CF Name Raúl Sanllehí and Xavier Asensi as Co-presidents |url=https://www.intermiamicf.com/news/inter-miami-cf-name-raul-sanllehi-and-xavier-asensi-as-co-presidents |publisher=Inter Miami CF |date=June 17, 2024}}</ref>
+|-
+{{Fb cs staff |p=President of Business Operations |s={{Flagicon|ESP}} Xavier Asensi}}
+{{Fb cs staff |p=President of Football Operations |s={{flagicon|ESP}} [[Raul Sanllehi]]}}
+{{Fb cs staff |p=Sporting Director |s={{flagicon|ESP}} Alberto Marrero}}
+|-
+!colspan="2" style="background:#F7B5CD; color:#000000; text-align:left" |Coaching staff<ref>{{cite web |title= Inter Miami CF Announce Cristian González’s Coaching Staff |url=https://www.intermiamicf.com/news/inter-miami-cf-announce-cristian-gonzalez-s-coaching-staff |publisher=Inter Miami CF |date=September 25, 2026}}</ref>
+|-
+{{Fb cs staff |p=Head coach |s={{Flagicon|ARG}} [[Kily González]]}}
+{{Fb cs staff |p=Assistant coach |s={{Flagicon|ARG}} [[Tomás Costa]]}}
+{{Fb cs staff |p=Assistant coach |s={{Flagicon|ARG}} Ricardo de Alberto}}
+{{Fb cs staff |p=Goalkeeper coach |s={{flagicon|ARG}} [[Ignacio Don]]}}
+{{Fb cs footer|u=September 27, 2026 |s=Inter Miami CF}}
+
+==Transfers==
+
+=== In ===
+{| class="wikitable plainrowheaders sortable nowrap" style="font-size:95%; text-align:left"
+|+ Incoming transfers for Inter Miami CF
+|-
+! scope=col | Player
+! scope=col | {{abbr|No.|Number}}
+! scope=col | {{abbr|Pos.|Position}}
+! scope=col | Previous team
+! scope=col class=unsortable | Notes
+! scope=col | Date
+|-
+! scope=row |{{sort|De Paul|{{flagathlete|[[Rodrigo De Paul]]|ARG}}}}
+| align=center | 7 || align=center | MF || {{flagathlete|[[Atlético Madrid]]|ESP}}
+| Purchase option exercised after loan<ref>{{Cite news|url=https://www.mlssoccer.com/news/inter-miami-permanently-acquire-rodrigo-de-paul-from-atletico-madrid|title=Inter Miami fully acquire Rodrigo De Paul from Atlético Madrid|publisher=Major League Soccer|date=December 11, 2025}}</ref>
+| {{dts|December 11, 2025}}
+|-
+! scope=row |{{sort|Reguilón|{{flagathlete|[[Sergio Reguilón]]|ESP}}}}
+| align=center | 3 || align=center | DF || {{flagathlete|[[Tottenham Hotspur F.C.|Tottenham Hotspur]]|ENG}}
+| [[Free agent]]<ref>{{Cite news|url=https://www.intermiamicf.com/news/inter-miami-cf-signs-defender-sergio-reguilon|title=Inter Miami CF Signs Defender Sergio Reguilón|publisher=Inter Miami CF|date=December 15, 2025}}</ref>
+| {{dts|December 15, 2025}}
+|-
+! scope=row |{{sort|Mura|{{flagathlete|[[Facundo Mura]]|ARG}}}}
+| align=center | 4 || align=center | DF || {{flagathlete|[[Racing Club de Avellaneda|Racing Club]]|ARG}}
+| [[Free agent]]<ref>{{Cite news|title=Inter Miami CF Signs Defender Facundo Mura |url=https://www.intermiamicf.com/news/inter-miami-cf-signs-defender-facundo-mura|publisher=Inter Miami CF|date=January 3, 2026}}</ref>
+| {{dts|January 3, 2026}}
+|-
+! scope=row |{{sort|St Clair|{{flagathlete|[[Dayne St. Clair]]|CAN}}}}
+| align=center | 97 || align=center | GK || {{flagathlete|[[Minnesota United FC]]|USA}}
+| [[Free agent]]<ref>{{Cite news|title=Inter Miami CF Signs 2025 MLS Goalkeeper of the Year Dayne St. Clair|url=https://www.intermiamicf.com/news/inter-miami-cf-signs-2025-mls-goalkeeper-of-the-year-dayne-st-clair|publisher=Inter Miami CF|date=January 4, 2026}}</ref>
+| {{dts|January 4, 2026}}
+|-
+! scope=row |{{sort|Micael|{{flagathlete|[[Micael (footballer, born 2000)|Micael]]|BRA}}}}
+| align=center | 16 || align=center | DF || {{flagathlete|[[SE Palmeiras|Palmeiras]]|BRA}}
+| Loan with purchase option<ref>{{Cite news|url=https://www.intermiamicf.com/news/inter-miami-cf-signs-brazilian-defender-micael-dos-santos-on-loan|title=Inter Miami CF Signs Brazilian Defender Micael dos Santos on Loan|publisher=Inter Miami CF|date=January 7, 2026}}</ref>
+| {{dts|January 7, 2026}}
+|-
+! scope=row |{{sort|Ayala|{{flagathlete|[[David Ayala (footballer, born 2002)|David Ayala]]|ARG}}}}
+| align=center | 22 || align=center | MF || {{flagathlete|[[Portland Timbers]]|USA}}
+| Traded for up to $2.15 million<ref>{{Cite news|url=https://www.mlssoccer.com/news/inter-miami-acquire-david-ayala-from-portland-timbers|title=Inter Miami acquire David Ayala from Portland Timbers|publisher=Major League Soccer|date=January 9, 2026}}</ref>
+| {{dts|January 9, 2026}}
+|-
+! scope=row |{{sort|Allende|{{flagathlete|[[Tadeo Allende]]|ARG}}}}
+| align=center | 21 || align=center | FW || {{flagathlete|[[RC Celta de Vigo|Celta Vigo]]|ESP}}
+| Transferred after loan<ref>{{Cite news|url=https://www.intermiamicf.com/news/inter-miami-cf-acquires-attacker-tadeo-allende-on-a-permanent-transfer-from-rc-celta-de-vigo|title=Inter Miami CF Acquires Attacker Tadeo Allende on a Permanent Transfer from RC Celta de Vigo|publisher=Inter Miami CF|date=January 19, 2026}}</ref>
+| {{dts|January 19, 2026}}
+|-
+! scope=row |{{sort|Pinter|{{flagathlete|[[Dániel Pintér]]|USA}}}}
+| align=center | 56 || align=center | FW || {{flagathlete|[[Inter Miami CF II]]|USA}}
+| [[Homegrown Player Rule (Major League Soccer)|Homegrown player]]<ref>{{Cite news|url=https://www.intermiamicf.com/news/inter-miami-cf-signs-academy-graduate-daniel-pinter-as-homegrown-player|title=Inter Miami CF Signs Academy Graduate Daniel Pinter as Homegrown Player|publisher=Inter Miami CF|date=January 22, 2026}}</ref>
+| {{dts|January 22, 2026}}
+|-
+! scope=row |{{sort|Ríos Novo|{{flagathlete|[[Rocco Ríos Novo]]|ARG}}}}
+| align=center | 34 || align=center | GK || {{flagathlete|[[Club Atlético Lanús|Lanús]]|ARG}}
+| Transferred after loan<ref>{{Cite news|url=https://www.intermiamicf.com/news/inter-miami-cf-signs-goalkeeper-rocco-rios-novo-on-a-permanent-transfer|title=Inter Miami CF Signs Goalkeeper Rocco Ríos Novo on a Permanent Transfer|publisher=Inter Miami CF|date=January 22, 2026}}</ref>
+| {{dts|January 22, 2026}}
+|-
+! scope=row |{{sort|Barraza|{{flagathlete|[[Luis Barraza]]|USA}}}}
+| align=center | 13 || align=center | GK || {{flagathlete|[[D.C. United]]|USA}}
+| [[Free agent]]<ref>{{Cite news|url=https://www.intermiamicf.com/news/inter-miami-cf-signs-goalkeeper-luis-barraza|title=Inter Miami CF Signs Goalkeeper Luis Barraza|publisher=Inter Miami CF|date=January 23, 2026}}</ref>
+| {{dts|January 23, 2026}}
+|-
+! scope=row |{{sort|Berterame|{{flagathlete|[[Germán Berterame]]|MEX}}}}
+| align=center | 19 || align=center | FW || {{flagathlete|[[C.F. Monterrey|Monterrey]]|MEX}}
+| Transferred for undisclosed fee<ref>{{Cite news|url=https://www.intermiamicf.com/news/inter-miami-cf-signs-mexican-international-forward-german-berterame-as-designated-player|title=Inter Miami CF Signs Mexican International Forward Germán Berterame as Designated Player|publisher=Inter Miami CF|date=January 31, 2026}}</ref>
+| {{dts|January 31, 2026}}
+|-
+! scope=row |{{sort|Shaw|{{flagathlete|[[Alexander Shaw (soccer, born 2008)|Alexander Shaw]]|USA}}}}
+| align=center | 88 || align=center | MF || {{flagathlete|[[Inter Miami CF II]]|USA}}
+| [[Homegrown Player Rule (Major League Soccer)|Homegrown player]]<ref>{{Cite news|url=https://www.intermiamicf.com/news/inter-miami-cf-signs-academy-graduate-alexander-shaw-as-homegrown-player|title=Inter Miami CF Signs Academy Graduate Alexander Shaw as Homegrown Player|publisher=Inter Miami CF|date=March 20, 2026}}</ref>
+| {{dts|March 20, 2026}}
+|-
+! scope=row |{{sort|Abadia-Reda|{{flagathlete|[[Cesar Abadia-Reda]]|USA}}}}
+| align=center | 76 || align=center | DF || {{flagathlete|[[Inter Miami CF II]]|USA}}
+| [[Homegrown Player Rule (Major League Soccer)|Homegrown player]]<ref>{{Cite news|url=https://www.intermiamicf.com/news/inter-miami-cf-signs-academy-graduate-cesar-abadia-as-homegrown-player|title=Inter Miami CF Signs Academy Graduate Cesar Abadia as Homegrown Player|publisher=Inter Miami CF|date=April 4, 2026}}</ref>
+| {{dts|April 4, 2026}}
+|-
+! scope=row |{{sort|Plambeck|{{flagathlete|[[Preston Plambeck]]|USA}}}}
+| align=center | 59 || align=center | MF || {{flagathlete|[[Inter Miami CF II]]|USA}}
+| [[Homegrown Player Rule (Major League Soccer)|Homegrown player]]<ref>{{Cite news|url=https://www.intermiamicf.com/news/inter-miami-cf-signs-academy-graduate-preston-plambeck|title=Inter Miami CF Signs Academy Graduate Preston Plambeck|publisher=Inter Miami CF|date=May 13, 2026}}</ref>
+| {{dts|May 13, 2026}}
+|-
+! scope=row |{{sort|Caicedo|{{flagathlete|[[Fricio Caicedo]]|ECU}}}}
+| align=center | 15 || align=center | DF || {{flagathlete|[[FC Moravia FCM|Moravia FCM]]|CRC}}
+| Loan with purchase option<ref>{{Cite news|url=https://www.intermiamicf.com/news/inter-miami-cf-signs-ecuadorian-defender-fricio-caicedo-on-loan|title=Inter Miami CF Signs Ecuadorian Defender Fricio Caicedo on Loan|publisher=Inter Miami CF|date=July 14, 2026}}</ref>
+| {{dts|July 14, 2026}}
+|-
+! scope=row |{{sort|Casemiro|{{flagathlete|[[Casemiro]]|BRA}}}}
+| align=center | 5 || align=center | MF || {{flagathlete|[[Manchester United F.C.|Manchester United]]|ENG}}
+| [[Free agent]]<ref>{{Cite news|url=https://www.intermiamicf.com/news/inter-miami-cf-signs-five-time-uefa-champions-league-winning-midfielder-casemiro|title=Inter Miami CF Signs Five-Time UEFA Champions League-Winning Midfielder Casemiro|publisher=Inter Miami CF|date=July 22, 2026}}</ref>
+| {{dts|July 22, 2026}}
+|-
+! scope=row |{{sort|Sumalla|{{flagathlete|[[Daniel Sumalla]]|USA}}}}
+| align=center | 70 || align=center | DF || {{flagathlete|[[Inter Miami CF II]]|USA}}
+| [[Homegrown Player Rule (Major League Soccer)|Homegrown player]]<ref>{{Cite news|url=https://www.intermiamicf.com/news/inter-miami-cf-signs-academy-graduate-daniel-sumalla|title=Inter Miami CF Signs Academy Graduate Daniel Sumalla|publisher=Inter Miami CF|date=July 22, 2026}}</ref>
+| {{dts|July 22, 2026}}
+|-
+! scope=row |{{sort|Delinois|{{flagathlete|[[Lovend's Delinois]]|HAI}}}}
+| align=center | 54 || align=center | FW || {{flagathlete|[[Inter Miami CF II]]|USA}}
+| Promoted<ref>{{Cite news|url=https://www.intermiamicf.com/news/inter-miami-cf-signs-haitian-attacker-lovend-s-delinois-from-inter-miami-cf-ii|title=Inter Miami CF Signs Haitian Attacker Lovend’s Delinois from Inter Miami CF II|publisher=Inter Miami CF|date=August 15, 2026}}</ref>
+| {{dts|August 15, 2026}}
+|-
+! scope=row |{{sort|Riquelme Fillipi|{{flagathlete|[[Riquelme Fillipi]]|BRA}}}}
+| align=center | 11 || align=center | FW || {{flagathlete|[[SE Palmeiras|Palmeiras]]|BRA}}
+| Transferred for undisclosed fee<ref>{{Cite news|url=https://www.intermiamicf.com/news/inter-miami-cf-signs-brazilian-winger-riquelme-fillipi|title=Inter Miami CF Signs Brazilian Winger Riquelme Fillipi|publisher=Inter Miami CF|date=September 2, 2026}}</ref>
+| {{dts|September 2, 2026}}
+|-
+! scope=row |{{sort|Galarza|{{flagathlete|[[Matías Galarza (Paraguayan footballer)|Matías Galarza]]|PAR}}}}
+| align=center | 80 || align=center | MF || {{flagathlete|[[Club Atlético River Plate|River Plate]]|ARG}}
+| Loan with purchase option<ref>{{Cite news|url=https://www.intermiamicf.com/news/inter-miami-cf-signs-paraguayan-midfielder-matias-galarza-on-loan|title=Inter Miami CF Signs Paraguayan Midfielder Matías Galarza on Loan|publisher=Inter Miami CF|date=September 3, 2026}}</ref>
+| {{dts|September 3, 2026}}
+|}
+
+=== Out ===
+{| class="wikitable plainrowheaders sortable nowrap" style="font-size:95%; text-align:left"
+|+ Outgoing transfers for Inter Miami CF
+|-
+! scope=col | Player
+! scope=col | {{abbr|No.|Number}}
+! scope=col | {{abbr|Pos.|Position}}
+! scope=col | New team
+! scope=col class=unsortable | Notes
+! scope=col | Date
+|-
+! scope=row |{{sort|Alba|{{flagathlete|[[Jordi Alba]]|ESP}}}}
+| align=center | 18 || align=center | DF || colspan="2" align=center | Retired<ref>{{Cite news|url=https://www.intermiamicf.com/news/jordi-alba-to-retire-from-professional-futbol-at-the-end-of-the-season|title=Jordi Alba to Retire from Professional Fútbol at the End of the Season|publisher=Inter Miami CF|date=October 7, 2025}}</ref>
+| {{dts|December 6, 2025}}
+|-
+! scope=row |{{sort|Busquets|{{flagathlete|[[Sergio Busquets]]|ESP}}}}
+| align=center | 5 || align=center | MF || colspan="2" align=center | Retired<ref>{{Cite news|url=https://www.intermiamicf.com/news/sergio-busquets-to-retire-at-the-end-of-the-season|title=Sergio Busquets to retire at the end of the season|publisher=Inter Miami CF|date=September 26, 2025}}</ref>
+| {{dts|December 6, 2025}}
+|-
+! scope=row |{{sort|Picault|{{flagathlete|[[Fafà Picault]]|HAI}}}}
+| align=center | 14 || align=center | FW || {{flagathlete|[[Atlanta United FC]]|USA}}
+| Option declined<ref name=rosterdecisions>{{Cite news|url=https://www.intermiamicf.com/news/inter-miami-cf-announces-2025-roster-decisions|title=Inter Miami CF Announces 2025 Roster Decisions|publisher=Inter Miami CF|date=December 11, 2025}}</ref>
+| {{dts|December 11, 2025}}
+|-
+! scope=row |{{sort|Sailor|{{flagathlete|[[Ryan Sailor]]|USA}}}}
+| align=center | 15 || align=center | DF || {{flagathlete|[[Seattle Sounders FC]]|USA}}
+| Out of contract<ref name=rosterdecisions/>
+| {{dts|December 11, 2025}}
+|-
+! scope=row |{{sort|Weigandt|{{flagathlete|[[Marcelo Weigandt]]|ARG}}}}
+| align=center | 57 || align=center | DF || {{flagathlete|[[Boca Juniors]]|ARG}}
+| End of loan<ref name=rosterdecisions/>
+| {{dts|December 11, 2025}}
+|-
+! scope=row |{{sort|Yarbrough|{{flagathlete|[[William Yarbrough]]|USA}}}}
+| align=center | 25 || align=center | GK || {{flagathlete|[[Toronto FC]]|CAN}}
+| Option declined<ref name=rosterdecisions/>
+| {{dts|December 11, 2025}}
+|-
+! scope=row |{{sort|Obando|{{flagathlete|[[Allen Obando]]|ECU}}}}
+| align=center | 29 || align=center | FW || {{flagathlete|[[Barcelona S.C.|Barcelona SC]]|ECU}}
+| End of loan
+| {{dts|December 31, 2025}}
+|-
+! scope=row |{{sort|Rodríguez|{{flagathlete|[[Baltasar Rodríguez]]|ARG}}}}
+| align=center | 11 || align=center | MF || {{flagathlete|[[Racing Club de Avellaneda|Racing Club]]|ARG}}
+| End of loan
+| {{dts|December 31, 2025}}
+|-
+! scope=row |{{sort|Avilés|{{flagathlete|[[Tomás Avilés]]|ARG}}}}
+| align=center | 6 || align=center | DF || {{flagathlete|[[CF Montréal]]|CAN}}
+| Loan with purchase option<ref>{{Cite news|url=https://www.intermiamicf.com/news/inter-miami-cf-loans-defender-tomas-aviles-to-cf-montreal|title=Inter Miami CF Loans Defender Tomás Avilés to CF Montréal|publisher=Inter Miami CF|date=January 23, 2026}}</ref>
+| {{dts|January 23, 2026}}
+|-
+! scope=row |{{sort|Ustari|{{flagathlete|[[Oscar Ustari]]|ARG}}}}
+| align=center | 19 || align=center | GK || [[Free agent|Unattached]]
+| Contract terminated<ref>{{Cite news|url=https://www.intermiamicf.com/news/inter-miami-cf-and-oscar-ustari-agree-to-mutually-terminate-contract|title=Inter Miami CF and Óscar Ustari Agree to Mutually Terminate Contract|publisher=Inter Miami CF|date=February 2, 2026}}</ref>
+| {{dts|February 2, 2026}}
+|-
+! scope=row |{{sort|Cremashi|{{flagathlete|[[Benjamin Cremaschi]]|USA}}}}
+| align=center | 30 || align=center | MF || {{flagathlete|[[Parma Calcio 1913|Parma]]|ITA}}
+| Transferred after loan<ref>{{Cite news|url=https://www.intermiamicf.com/news/inter-miami-cf-transfers-homegrown-midfielder-to-serie-a-side-parma-calcio-1913|title=Inter Miami CF Transfers Homegrown Midfielder to Serie A Side Parma Calcio 1913|publisher=Inter Miami CF|date=June 27, 2026}}</ref>
+| {{dts|June 27, 2026}}
+|-
+! scope=row |{{sort|Avilés|{{flagathlete|[[Tomás Avilés]]|ARG}}}}
+| align=center | 6 || align=center | DF || {{flagathlete|[[O'Higgins F.C.|O'Higgins]]|CHI}}
+| Loan<ref>{{Cite news|url=https://www.intermiamicf.com/news/inter-miami-cf-loans-defender-tomas-aviles-to-o-higgins-fc|title=Inter Miami CF Loans Defender Tomás Avilés to O'Higgins FC|publisher=Inter Miami CF|date=July 17, 2026}}</ref>
+| {{dts|July 17, 2026}}
+|-
+! scope=row |{{sort|Ruiz|{{flagathlete|[[David Ruiz (footballer, born 2004)|David Ruiz]]|HON}}}}
+| align=center | 41 || align=center | MF || {{flagathlete|[[New York Red Bulls]]|USA}}
+| Loan with purchase option<ref>{{Cite news|url=https://www.intermiamicf.com/news/inter-miami-cf-loans-homegrown-midfielder-david-ruiz-to-red-bull-new-york|title=Inter Miami CF Loans Homegrown Midfielder David Ruíz to Red Bull New York|publisher=Inter Miami CF|date=September 2, 2026}}</ref>
+| {{dts|September 2, 2026}}
+|-
+! scope=row |{{sort|Allen|{{flagathlete|[[Noah Allen]]|GRE}}}}
+| align=center | 32 || align=center | DF || {{flagathlete|[[Chicago Fire FC]]|USA}}
+| Loan with purchase option<ref>{{Cite news|url=https://www.intermiamicf.com/news/homegrown-defender-noah-allen-joins-chicago-fire-fc|title=Homegrown Defender Noah Allen Joins Chicago Fire FC|publisher=Inter Miami CF|date=September 3, 2026}}</ref>
+| {{dts|September 3, 2026}}
+|}
+
+=== Draft picks ===
+{{main|2026 MLS SuperDraft}}
+
+{| class="wikitable plainrowheaders sortable nowrap" style="font-size:95%; text-align:left"
+|+ 2026 MLS SuperDraft picks for Inter Miami
+|-
+! scope=col | Player
+! scope=col | Nationality
+! scope=col | {{abbr|Round|Round of the draft}}
+! scope=col | {{abbr|Pick|Overall pick in the draft}}
+! scope=col | {{abbr|Pos.|Position}}
+! scope=col | Previous team
+|-
+! scope=row |{{sortname|Abdel|Talabi}}
+| {{fba|USA}}
+| align=center | 1st || align=center | 30 || align=center | DF || [[Bryant Bulldogs men's soccer|Bryant University]]
+|-
+! scope=row |{{sortname|Kenan|Hot}}
+| {{fba|USA}}
+| align=center | 2nd || align=center | 32 || align=center | MF || [[Duke Blue Devils men's soccer|Duke University]]
+|-
+! scope=row |{{sortname|Mamadi|Jiana}}
+| {{fba|USA}}
+| align=center | 2nd || align=center | 54 || align=center | FW || [[Bryant Bulldogs men's soccer|Bryant University]]
+|-
+! scope=row |{{sortname|Alex|Barger}}
+| {{fba|USA}}
+| align=center | 2nd || align=center | 60 || align=center | DF || [[Indiana Hoosiers men's soccer|Indiana University Bloomington]]
+|-
+! scope=row |{{sortname|Maximilian|Kissel}}
+| {{fba|GER}}
+| align=center | 3rd || align=center | 90 || align=center | FW || [[Vermont Catamounts men's soccer|University of Vermont]]
+|}
+
+== Statistics ==
+<small>'''Key''' <br/>MLS = Major League Soccer, PO = MLS Cup playoffs, CCC = CONCACAF Champions Cup, LC = Leagues Cup, CC = Campeones Cup <br/> A = Appearances, S = Starts, G = Goals</small>
+
+{{updated|November 2, 2026}}<ref>{{cite web|url=https://www.besoccer.com/team/squad/inter-miami-cf|title=Inter Miami squad|website=BeSoccer|access-date=February 24, 2026|archive-url=https://web.archive.org/web/20250207091223/https://www.besoccer.com/team/squad/inter-miami-cf|archive-date=February 7, 2025|url-status=dead}}</ref>
+
+=== Appearances and goals ===
+{{mw-datatable}}
+{| class="wikitable mw-datatable sortable nowrap" style="text-align:center; font-size:92%;"
+! rowspan="2"|No.
+! rowspan="2"|{{abbr|Pos|Position}}
+! rowspan="2"|Player
+! rowspan="2" style="border-right: 1pt black solid"|{{abbr|Nat|Nationality}}
+! colspan="3" style="border-right: 1pt black solid"|[[2026 Major League Soccer season|MLS]]
+! colspan="3" style="border-right: 1pt black solid"|[[2026 MLS Cup playoffs|PO]]
+! colspan="3" style="border-right: 1pt black solid"|[[2026 CONCACAF Champions Cup|CCC]]
+! colspan="3" style="border-right: 1pt black solid"|[[2026 Leagues Cup|LC]]
+! colspan="3" style="border-right: 1pt black solid"|[[2026 Campeones Cup|CC]]
+! colspan="3"|Total
+|-
+!{{abbr|A|Appearances}}!!{{abbr|S|Starts}}!!style="border-right: 1pt black solid"|{{abbr|G|Goals scored}}
+!{{abbr|A|Appearances}}!!{{abbr|S|Starts}}!!style="border-right: 1pt black solid"|{{abbr|G|Goals scored}}
+!{{abbr|A|Appearances}}!!{{abbr|S|Starts}}!!style="border-right: 1pt black solid"|{{abbr|G|Goals scored}}
+!{{abbr|A|Appearances}}!!{{abbr|S|Starts}}!!style="border-right: 1pt black solid"|{{abbr|G|Goals scored}}
+!{{abbr|A|Appearances}}!!{{abbr|S|Starts}}!!style="border-right: 1pt black solid"|{{abbr|G|Goals scored}}
+!{{abbr|A|Appearances}}!!{{abbr|S|Starts}}!!{{abbr|G|Goals scored}}
+|-bgcolor=efefef class="sortbottom"
+| colspan="22" |Goalkeepers
+|-
+|34
+|GK
+|style="text-align:left"|{{sortname|Rocco|Ríos Novo}}
+|style="border-right: 1pt black solid"|{{flagicon|ARG}}
+|6||6||style="border-right: 1pt black solid"|0
+|0||0||style="border-right: 1pt black solid"|0
+|0||0||style="border-right: 1pt black solid"|0
+|3||3||style="border-right: 1pt black solid"|0
+|0||0||style="border-right: 1pt black solid"|0
+|'''9'''||'''9'''||'''0'''
+|-
+|97
+|GK
+|style="text-align:left"|{{sortname|Dayne|St. Clair}}
+|style="border-right: 1pt black solid"|{{flagicon|CAN}}
+|27||27||style="border-right: 1pt black solid"|0
+|0||0||style="border-right: 1pt black solid"|0
+|2||2||style="border-right: 1pt black solid"|0
+|0||0||style="border-right: 1pt black solid"|0
+|1||1||style="border-right: 1pt black solid"|0
+|'''30'''||'''30'''||'''0'''
+|-bgcolor=efefef class="sortbottom"
+| colspan="22" |Defenders
+|-
+|2
+|DF
+|style="text-align:left"|{{sortname|Gonzalo|Luján}}
+|style="border-right: 1pt black solid"|{{flagicon|ARG}}
+|23||19||style="border-right: 1pt black solid"|1
+|0||0||style="border-right: 1pt black solid"|0
+|2||1||style="border-right: 1pt black solid"|0
+|1||1||style="border-right: 1pt black solid"|0
+|1||0||style="border-right: 1pt black solid"|0
+|'''27'''||'''21'''||'''1'''
+|-
+|3
+|DF
+|style="text-align:left"|{{sortname|Sergio|Reguilón}}
+|style="border-right: 1pt black solid"|{{flagicon|ESP}}
+|19||16||style="border-right: 1pt black solid"|1
+|0||0||style="border-right: 1pt black solid"|0
+|1||1||style="border-right: 1pt black solid"|0
+|3||0||style="border-right: 1pt black solid"|0
+|1||0||style="border-right: 1pt black solid"|0
+|'''24'''||'''17''||'''1'''
+|-
+|4
+|DF
+|style="text-align:left"|{{sortname|Facundo|Mura}}
+|style="border-right: 1pt black solid"|{{flagicon|ARG}}
+|25||12||style="border-right: 1pt black solid"|0
+|0||0||style="border-right: 1pt black solid"|0
+|2||2||style="border-right: 1pt black solid"|0
+|3||1||style="border-right: 1pt black solid"|0
+|1||1||style="border-right: 1pt black solid"|0
+|'''31'''||'''16'''||'''0'''
+|-
+|15
+|DF
+|style="text-align:left"|{{sortname|Fricio|Caicedo}}
+|style="border-right: 1pt black solid"|{{flagicon|ECU}}
+|6||5||style="border-right: 1pt black solid"|0
+|0||0||style="border-right: 1pt black solid"|0
+|–||–||style="border-right: 1pt black solid"|–
+|2||1||style="border-right: 1pt black solid"|0
+|1||1||style="border-right: 1pt black solid"|0
+|'''9'''||'''7'''||'''0'''
+|-
+|16
+|DF
+|style="text-align:left"|{{sortname||Micael|dab=footballer, born 2000}}
+|style="border-right: 1pt black solid"|{{flagicon|BRA}}
+|24||24||style="border-right: 1pt black solid"|1
+|0||0||style="border-right: 1pt black solid"|0
+|2||2||style="border-right: 1pt black solid"|0
+|3||3||style="border-right: 1pt black solid"|1
+|1||0||style="border-right: 1pt black solid"|0
+|'''30'''||'''29'''||'''2'''
+|-
+|17
+|DF
+|style="text-align:left"|{{sortname|Ian|Fray}}
+|style="border-right: 1pt black solid"|{{flagicon|JAM}}
+|26||20||style="border-right: 1pt black solid"|1
+|0||0||style="border-right: 1pt black solid"|0
+|1||0||style="border-right: 1pt black solid"|0
+|3||3||style="border-right: 1pt black solid"|0
+|0||0||style="border-right: 1pt black solid"|0
+|'''30'''||'''23'''||'''1'''
+|-
+|37
+|DF
+|style="text-align:left"|{{sortname|Maximiliano|Falcón}}
+|style="border-right: 1pt black solid"|{{flagicon|URU}}
+|19||16||style="border-right: 1pt black solid"|0
+|0||0||style="border-right: 1pt black solid"|0
+|1||1||style="border-right: 1pt black solid"|0
+|0||0||style="border-right: 1pt black solid"|0
+|1||1||style="border-right: 1pt black solid"|0
+|'''21'''||'''18'''||'''0'''
+|-
+|76
+|DF
+|style="text-align:left"|{{sortname|Cesar|Abadía-Reda}}
+|style="border-right: 1pt black solid"|{{flagicon|USA}}
+|5||0||style="border-right: 1pt black solid"|0
+|0||0||style="border-right: 1pt black solid"|0
+|–||–||style="border-right: 1pt black solid"|–
+|0||0||style="border-right: 1pt black solid"|0
+|0||0||style="border-right: 1pt black solid"|0
+|'''5'''||'''0'''||'''0'''
+|-
+|<s>32</s>
+|DF
+|style="text-align:left"|{{sortname|Noah|Allen}}{{efn|name=transfer|Player transferred out during the season}}
+|style="border-right: 1pt black solid"|{{flagicon|GRE}}
+|19||12||style="border-right: 1pt black solid"|1
+|–||–||style="border-right: 1pt black solid"|–
+|2||1||style="border-right: 1pt black solid"|0
+|3||3||style="border-right: 1pt black solid"|0
+|–||–||style="border-right: 1pt black solid"|–
+|'''24'''||'''16'''||'''1'''
+|-bgcolor=efefef class="sortbottom"
+| colspan="22" |Midfielders
+|-
+|5
+|MF
+|style="text-align:left"|{{sortname||Casemiro}}
+|style="border-right: 1pt black solid"|{{flagicon|BRA}}
+|17||17||style="border-right: 1pt black solid"|3
+|0||0||style="border-right: 1pt black solid"|0
+|–||–||style="border-right: 1pt black solid"|–
+|3||3||style="border-right: 1pt black solid"|0
+|1||1||style="border-right: 1pt black solid"|1
+|'''21'''||'''21'''||'''4'''
+|-
+|7
+|MF
+|style="text-align:left"|{{sortname|Rodrigo|De Paul}}
+|style="border-right: 1pt black solid"|{{flagicon|ARG}}
+|28||28||style="border-right: 1pt black solid"|5
+|0||0||style="border-right: 1pt black solid"|0
+|2||2||style="border-right: 1pt black solid"|0
+|3||3||style="border-right: 1pt black solid"|1
+|1||1||style="border-right: 1pt black solid"|0
+|'''34'''||'''34'''||'''6'''
+|-
+|8
+|MF
+|style="text-align:left"|{{sortname|Telasco|Segovia}}
+|style="border-right: 1pt black solid"|{{flagicon|VEN}}
+|29||23||style="border-right: 1pt black solid"|3
+|0||0||style="border-right: 1pt black solid"|0
+|2||2||style="border-right: 1pt black solid"|0
+|3||3||style="border-right: 1pt black solid"|1
+|0||0||style="border-right: 1pt black solid"|0
+|'''34'''||'''28'''||'''4'''
+|-
+|20
+|MF
+|style="text-align:left"|{{sortname|Santiago|Morales|dab=soccer}}
+|style="border-right: 1pt black solid"|{{flagicon|USA}}
+|3||1||style="border-right: 1pt black solid"|0
+|0||0||style="border-right: 1pt black solid"|0
+|0||0||style="border-right: 1pt black solid"|0
+|0||0||style="border-right: 1pt black solid"|0
+|0||0||style="border-right: 1pt black solid"|0
+|'''3'''||'''1'''||'''0'''
+|-
+|22
+|MF
+|style="text-align:left"|{{sortname|David|Ayala|dab=footballer, born 2002}}
+|style="border-right: 1pt black solid"|{{flagicon|ARG}}
+|16||8||style="border-right: 1pt black solid"|0
+|0||0||style="border-right: 1pt black solid"|0
+|1||0||style="border-right: 1pt black solid"|0
+|2||0||style="border-right: 1pt black solid"|0
+|0||0||style="border-right: 1pt black solid"|0
+|'''19'''||'''8'''||'''0'''
+|-
+|42
+|MF
+|style="text-align:left"|{{sortname|Yannick|Bright}}
+|style="border-right: 1pt black solid"|{{flagicon|ITA}}
+|25||23||style="border-right: 1pt black solid"|0
+|0||0||style="border-right: 1pt black solid"|0
+|2||2||style="border-right: 1pt black solid"|0
+|3||3||style="border-right: 1pt black solid"|1
+|1||1||style="border-right: 1pt black solid"|0
+|'''31'''||'''29'''||'''1'''
+|-
+|59
+|MF
+|style="text-align:left"|{{sortname|Preston|Plambeck}}
+|style="border-right: 1pt black solid"|{{flagicon|USA}}
+|6||0||style="border-right: 1pt black solid"|1
+|0||0||style="border-right: 1pt black solid"|0
+|–||–||style="border-right: 1pt black solid"|–
+|2||0||style="border-right: 1pt black solid"|0
+|0||0||style="border-right: 1pt black solid"|0
+|'''8'''||'''0'''||'''1'''
+|-
+|80
+|MF
+|style="text-align:left"|{{sortname|Matías|Galarza|dab=Paraguayan footballer}}
+|style="border-right: 1pt black solid"|{{flagicon|PAR}}
+|8||6||style="border-right: 1pt black solid"|0
+|0||0||style="border-right: 1pt black solid"|0
+|–||–||style="border-right: 1pt black solid"|–
+|–||–||style="border-right: 1pt black solid"|–
+|1||1||style="border-right: 1pt black solid"|0
+|'''9'''||'''7'''||'''0'''
+|-
+|88
+|MF
+|style="text-align:left"|{{sortname|Alexander|Shaw|dab=soccer, born 2008}}
+|style="border-right: 1pt black solid"|{{flagicon|USA}}
+|7||0||style="border-right: 1pt black solid"|1
+|0||0||style="border-right: 1pt black solid"|0
+|–||–||style="border-right: 1pt black solid"|–
+|0||0||style="border-right: 1pt black solid"|0
+|1||0||style="border-right: 1pt black solid"|0
+|'''8'''||'''0'''||'''1'''
+|-
+|<s>41</s>
+|MF
+|style="text-align:left"|{{sortname|David|Ruiz|dab=footballer, born 2004}}{{efn|name=transfer}}
+|style="border-right: 1pt black solid"|{{flagicon|HON}}
+|9||3||style="border-right: 1pt black solid"|0
+|–||–||style="border-right: 1pt black solid"|–
+|0||0||style="border-right: 1pt black solid"|0
+|2||0||style="border-right: 1pt black solid"|0
+|–||–||style="border-right: 1pt black solid"|–
+|'''11'''||'''3'''||'''0'''
+|-bgcolor=efefef class="sortbottom"
+| colspan="22" |Forwards
+|-
+|9
+|FW
+|style="text-align:left"|{{sortname|Luis|Suárez|dab=Uruguayan footballer}}
+|style="border-right: 1pt black solid"|{{flagicon|URU}}
+|29||24||style="border-right: 1pt black solid"|16
+|0||0||style="border-right: 1pt black solid"|0
+|1||0||style="border-right: 1pt black solid"|0
+|0||0||style="border-right: 1pt black solid"|0
+|1||1||style="border-right: 1pt black solid"|0
+|'''31'''||'''25'''||'''16'''
+|-
+|10
+|FW
+|style="text-align:left"|{{sortname|Lionel|Messi}}
+|style="border-right: 1pt black solid"|{{flagicon|ARG}}
+|30||28||style="border-right: 1pt black solid"|26
+|0||0||style="border-right: 1pt black solid"|0
+|2||2||style="border-right: 1pt black solid"|1
+|2||1||style="border-right: 1pt black solid"|2
+|1||1||style="border-right: 1pt black solid"|1
+|'''35'''||'''32'''||'''30'''
+|-
+|11
+|FW
+|style="text-align:left"|{{sortname||Riquelme Fillipi}}
+|style="border-right: 1pt black solid"|{{flagicon|BRA}}
+|6||2||style="border-right: 1pt black solid"|1
+|0||0||style="border-right: 1pt black solid"|0
+|–||–||style="border-right: 1pt black solid"|–
+|–||–||style="border-right: 1pt black solid"|–
+|0||0||style="border-right: 1pt black solid"|0
+|'''6'''||'''2'''||'''1'''
+|-
+|19
+|FW
+|style="text-align:left"|{{sortname|Germán|Berterame}}
+|style="border-right: 1pt black solid"|{{flagicon|MEX}}
+|29||26||style="border-right: 1pt black solid"|10
+|0||0||style="border-right: 1pt black solid"|0
+|2||2||style="border-right: 1pt black solid"|0
+|0||0||style="border-right: 1pt black solid"|0
+|1||1||style="border-right: 1pt black solid"|0
+|'''32'''||'''29'''||'''10'''
+|-
+|21
+|FW
+|style="text-align:left"|{{sortname|Tadeo|Allende}}
+|style="border-right: 1pt black solid"|{{flagicon|ARG}}
+|9||4||style="border-right: 1pt black solid"|0
+|0||0||style="border-right: 1pt black solid"|0
+|2||2||style="border-right: 1pt black solid"|0
+|0||0||style="border-right: 1pt black solid"|0
+|0||0||style="border-right: 1pt black solid"|0
+|'''11'''||'''6'''||'''0'''
+|-
+|24
+|FW
+|style="text-align:left"|{{sortname|Mateo|Silvetti}}
+|style="border-right: 1pt black solid"|{{flagicon|ARG}}
+|14||10||style="border-right: 1pt black solid"|3
+|0||0||style="border-right: 1pt black solid"|0
+|2||0||style="border-right: 1pt black solid"|0
+|1||0||style="border-right: 1pt black solid"|0
+|0||0||style="border-right: 1pt black solid"|0
+|'''17'''||'''10'''||'''3'''
+|-
+|54
+|FW
+|style="text-align:left"|{{sortname|Lovend's|Delinois}}
+|style="border-right: 1pt black solid"|{{flagicon|HAI}}
+|2||0||style="border-right: 1pt black solid"|0
+|0||0||style="border-right: 1pt black solid"|0
+|–||–||style="border-right: 1pt black solid"|–
+|2||2||style="border-right: 1pt black solid"|0
+|0||0||style="border-right: 1pt black solid"|0
+|'''4'''||'''2'''||'''0'''
+|-
+|56
+|FW
+|style="text-align:left"|{{sortname|Dániel|Pintér}}
+|style="border-right: 1pt black solid"|{{flagicon|USA}}
+|14||4||style="border-right: 1pt black solid"|1
+|0||0||style="border-right: 1pt black solid"|0
+|0||0||style="border-right: 1pt black solid"|0
+|3||3||style="border-right: 1pt black solid"|1
+|0||0||style="border-right: 1pt black solid"|0
+|'''17'''||'''7'''||'''2'''
+|- class="sortbottom"
+!colspan=4 style="border-right: 1pt black solid"|Total
+!colspan=2|33||style="border-right: 1pt black solid"|75
+!colspan=2|0||style="border-right: 1pt black solid"|0
+!colspan=2|2||style="border-right: 1pt black solid"|1
+!colspan=2|3||style="border-right: 1pt black solid"|7
+!colspan=2|1||style="border-right: 1pt black solid"|2
+!colspan=2|39||85
+|}
+{{notelist}}
+
+=== Goalscorers ===
+{| class="wikitable sortable nowrap" style="text-align:center; font-size:92%;"
+!Rank
+!Pos.
+!No.
+!width=150|Player
+!width=50|[[2026 Major League Soccer season|MLS]]
+!width=50|[[2026 MLS Cup playoffs|PO]]
+!width=50|[[2026 CONCACAF Champions Cup|CCC]]
+!width=50|[[2026 Leagues Cup|LC]]
+!width=50|[[2026 Campeones Cup|CC]]
+!width=55|Total
+|-
+|1
+|FW
+|10
+|style="text-align:left"|{{flagicon|ARG}} [[Lionel Messi]]
+| 26 || 0 || 1 || 2 || 1 || '''30'''
+|-
+|2
+|FW
+|9
+|style="text-align:left"|{{flagicon|URU}} [[Luis Suárez (Uruguayan footballer)|Luis Suárez]]
+| 16 || 0 || 0 || 0 || 0 || '''16'''
+|-
+|3
+|FW
+|19
+|style="text-align:left"|{{flagicon|MEX}} [[Germán Berterame]]
+| 10 || 0 || 0 || 0 || 0 || '''10'''
+|-
+|4
+|MF
+|7
+|style="text-align:left"|{{flagicon|ARG}} [[Rodrigo De Paul]]
+| 5 || 0 || 0 || 1 || 0 || '''6'''
+|-
+|rowspan="2"|5
+|MF
+|5
+|style="text-align:left"|{{flagicon|BRA}} [[Casemiro]]
+| 3 || 0 || 0 || 0 || 1 || '''4'''
+|-
+|MF
+|8
+|style="text-align:left"|{{flagicon|VEN}} [[Telasco Segovia]]
+| 3 || 0 || 0 || 1 || 0 || '''4'''
+|-
+|7
+|FW
+|24
+|style="text-align:left"|{{flagicon|ARG}} [[Mateo Silvetti]]
+| 3 || 0 || 0 || 0 || 0 || '''3'''
+|-
+|rowspan="2"|8
+|DF
+|16
+|style="text-align:left"|{{flagicon|BRA}} [[Micael (footballer, born 2000)|Micael]]
+| 1 || 0 || 0 || 1 || 0 || '''2'''
+|-
+|FW
+|56
+|style="text-align:left"|{{flagicon|USA}} [[Dániel Pintér]]
+| 1 || 0 || 0 || 1 || 0 || '''2'''
+|-
+|rowspan="8"|10
+|DF
+|<s>32</s>
+|style="text-align:left"|{{flagicon|GRE}} [[Noah Allen]]
+| 1 || 0 || 0 || 0 || 0 || '''1'''
+|-
+|MF
+|42
+|style="text-align:left"|{{flagicon|ITA}} [[Yannick Bright]]
+| 0 || 0 || 0 || 1 || 0 || '''1'''
+|-
+|DF
+|17
+|style="text-align:left"|{{flagicon|JAM}} [[Ian Fray]]
+| 1 || 0 || 0 || 0 || 0 || '''1'''
+|-
+|DF
+|2
+|style="text-align:left"|{{flagicon|ARG}} [[Gonzalo Luján]]
+| 1 || 0 || 0 || 0 || 0 || '''1'''
+|-
+|MF
+|59
+|style="text-align:left"|{{flagicon|USA}} [[Preston Plambeck]]
+| 1 || 0 || 0 || 0 || 0 || '''1'''
+|-
+|DF
+|3
+|style="text-align:left"|{{flagicon|ESP}} [[Sergio Reguilón]]
+| 1 || 0 || 0 || 0 || 0 || '''1'''
+|-
+|FW
+|11
+|style="text-align:left"|{{flagicon|BRA}} [[Riquelme Fillipi]]
+| 1 || 0 || 0 || 0 || 0 || '''1'''
+|-
+|MF
+|88
+|style="text-align:left"|{{flagicon|USA}} [[Alexander Shaw (soccer, born 2008)|Alexander Shaw]]
+| 1 || 0 || 0 || 0 || 0 || '''1'''
+|- class="sortbottom"
+|colspan="4"|[[Own goal#Association football|Own goals]]
+| 2 || 0 || 0 || 0 || 0 || '''2'''
+|-
+!colspan="4"|Total
+! 77 !! 0 !! 1 !! 7 !! 2 !! 87
+|}
+
+=== Assists ===
+{| class="wikitable sortable nowrap" style="text-align:center; font-size:92%;"
+!Rank
+!Pos.
+!No.
+!width=150|Player
+!width=50|[[2026 Major League Soccer season|MLS]]
+!width=50|[[2026 MLS Cup playoffs|PO]]
+!width=50|[[2026 CONCACAF Champions Cup|CCC]]
+!width=50|[[2026 Leagues Cup|LC]]
+!width=50|[[2026 Campeones Cup|CC]]
+!width=55|Total
+|-
+|1
+|FW
+|10
+|style="text-align:left"|{{flagicon|ARG}} [[Lionel Messi]]
+| 15 || 0 || 0 || 1 || 1 || '''17'''
+|-
+|2
+|MF
+|7
+|style="text-align:left"|{{flagicon|ARG}} [[Rodrigo De Paul]]
+| 10 || 0 || 0 || 0 || 0 || '''10'''
+|-
+|3
+|MF
+|8
+|style="text-align:left"|{{flagicon|VEN}} [[Telasco Segovia]]
+| 9 || 0 || 0 || 0 || 0 || '''9'''
+|-
+|4
+|FW
+|9
+|style="text-align:left"|{{flagicon|URU}} [[Luis Suárez (Uruguayan footballer)|Luis Suárez]]
+| 7 || 0 || 0 || 0 || 1 || '''8'''
+|-
+|5
+|FW
+|19
+|style="text-align:left"|{{flagicon|MEX}} [[Germán Berterame]]
+| 7 || 0 || 0 || 0 || 0 || '''7'''
+|-
+|6
+|DF
+|<s>32</s>
+|style="text-align:left"|{{flagicon|GRE}} [[Noah Allen]]
+| 1 || 0 || 0 || 3 || 0 || '''4'''
+|-
+|rowspan="2"|7
+|DF
+|17
+|style="text-align:left"|{{flagicon|JAM}} [[Ian Fray]]
+| 2 || 0 || 0 || 1 || 0 || '''3'''
+|-
+|FW
+|24
+|style="text-align:left"|{{flagicon|ARG}} [[Mateo Silvetti]]
+| 3 || 0 || 0 || 0 || 0 || '''3'''
+|-
+|9
+|MF
+|5
+|style="text-align:left"|{{flagicon|BRA}} [[Casemiro]]
+| 1 || 0 || 0 || 1 || 0 || '''2'''
+|-
+|rowspan="2"|10
+|MF
+|42
+|style="text-align:left"|{{flagicon|ITA}} [[Yannick Bright]]
+| 1 || 0 || 0 || 0 || 0 || '''1'''
+|-
+|DF
+|3
+|style="text-align:left"|{{flagicon|ESP}} [[Sergio Reguilón]]
+| 0 || 0 || 1 || 0 || 0 || '''1'''
+|-
+!colspan="4"|Total
+! 56 !! 0 !! 1 !! 6 !! 2 !! 65
+|}
+
+=== Clean sheets ===
+{| class="wikitable sortable nowrap" style="text-align:center; font-size:92%;"
+!Rank
+!No.
+!width=150|Player
+!width=50|[[2026 Major League Soccer season|MLS]]
+!width=50|[[2026 MLS Cup playoffs|PO]]
+!width=50|[[2026 CONCACAF Champions Cup|CCC]]
+!width=50|[[2026 Leagues Cup|LC]]
+!width=50|[[2026 Campeones Cup|CC]]
+!width=55|Total
+|-
+|1
+|97
+|style="text-align:left"|{{flagicon|CAN}} [[Dayne St. Clair]]
+| 4 || 0 || 1 || 0 || 1 || '''6'''
+|-
+|2
+|34
+|style="text-align:left"|{{flagicon|ARG}} [[Rocco Ríos Novo]]
+| 2 || 0 || 0 || 0 || 0 || '''2'''
+|-
+!colspan="3"|Total
+! 6 !! 0 !! 1 !! 0 !! 1 !! 8
+|}
+
+==References==
+{{reflist}}
+
+{{Inter Miami CF}}
+{{2026 MLS season by team}}
+
+{{DEFAULTSORT:Inter Miami CF season 2026}}
+[[Category:Inter Miami CF seasons|2026]]
+[[Category:2026 MLS season by team]]
+[[Category:American soccer clubs 2026 season]]
+[[Category:2026 in sports in Florida]]
+[[Category:2026 in Miami]]
+[[Category:2026 CONCACAF Champions Cup participants seasons|Inter Miami CF]]

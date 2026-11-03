@@ -1,0 +1,1134 @@
+<!-- FIXTURE. Page: 2026–27 Duke Blue Devils men's basketball team
+     Source: https://en.wikipedia.org/wiki/2026%E2%80%9327_Duke_Blue_Devils_men's_basketball_team
+     Revision id: 1382029301  (permanent link: https://en.wikipedia.org/w/index.php?oldid=1382029301)
+     Fetched: 2026-11-02 from the MediaWiki API (action=query&prop=revisions&rvprop=content|ids&rvslots=main&format=json),
+     User-Agent: Fanday/0.1 (machinemisha+fanday@gmail.com). Unmodified wikitext below this comment.
+     Text (c) Wikipedia contributors, licensed CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/);
+     authors are listed in the page history. Used here only as test data. -->
+{{Short description|American college basketball season}}
+{{Use mdy dates|date=April 2026}}
+{{Infobox college sports team season
+| team        = Duke Blue Devils
+| year        = 2026–27
+| sport       = basketball
+| logo        = Duke Blue Devils basketball mark.svg
+| logo_size   = 125
+| conference  = Atlantic Coast Conference
+| short_conf  = ACC
+| record      = 0–0
+| conf_record = 0–0
+| CoachRank   = 2
+| APRank      = 2
+| head_coach  = [[Jon Scheyer]]
+| hc_year     = 5th
+| assoc_coach = [[Chris Carrawell]]
+| ahc_year    = 9th
+| asst_coach1 = Emanuel Dildy
+| ac1_year    = 4th
+| asst_coach2 = [[Tyler Thornton]]
+| ac2_year    = 2nd
+| asst_coach3 = K.J. Conklin
+| ac3_year    = 1st
+| asst_coach4 = Alexander Powell
+| ac4_year    = 1st
+| stadium     = [[Cameron Indoor Stadium]]
+}}
+{{2026–27 ACC men's basketball standings}}
+The '''2026–27 Duke Blue Devils men's basketball team''' will represent [[Duke University]] during the [[2026–27 NCAA Division I men's basketball season]]. The [[Duke Blue Devils|Blue Devils]] will be led by fifth-year head coach [[Jon Scheyer]]. Duke plays their home games at [[Cameron Indoor Stadium]] in [[Durham, North Carolina]], as a member of the [[Atlantic Coast Conference]] (ACC).
+
+== Previous season ==
+{{Main|2025–26 Duke Blue Devils men's basketball team}}
+The Blue Devils finished the 2025–26 season {{Win-loss record|w=35|l=3}} and {{Win-loss record|w=17|l=1}} in ACC play to finish in first place. As the first seed in the [[2026 ACC men's basketball tournament|ACC Tournament]], held at the [[Spectrum Center]] in [[Charlotte, North Carolina]], they earned a bye to the quarterfinals and narrowly beat [[2025–26 Florida State Seminoles men's basketball team|Florida State]], 80–79, to advance to the semifinals.<ref>{{cite web |title=Top-Seeded Duke Wins Thriller, 80-79, over Florida State in ACC Quarterfinal |url=https://goduke.com/news/2026/3/12/mens-basketball-top-seeded-duke-wins-thriller-80-79-over-florida-state-in-acc-quarterfinal |website=goduke.com |publisher=[[Duke University]] Athletics |date=12 March 2026}}</ref> There, they defeated [[2025–26 Clemson Tigers men's basketball team|Clemson]] 73–61 to advance to the championship game,<ref>{{cite web |title=No. 1 Duke Defeats Clemson, 73-61, to Advance to ACC Title Game |url=https://goduke.com/news/2026/3/14/mens-basketball-no-1-duke-defeats-clemson-73-61-to-advance-to-acc-title-game |website=goduke.com |publisher=[[Duke University]] Athletics |date=14 March 2026}}</ref> where they defeated [[2025–26 Virginia Cavaliers men's basketball team|Virginia]], 74–70, to win the tournament championship.<ref>{{cite web |title=Duke Repeats as Men’s Basketball ACC Champions |url=https://goduke.com/news/2026/3/14/mens-basketball-duke-repeats-as-mens-basketball-acc-champions |website=goduke.com |publisher=[[Duke University]] Athletics |date=14 March 2026}}</ref> The championship was their 24th conference tournament victory in program history and their second consecutive championship. As a result, they received the conference's automatic bid to the [[NCAA Division I men's basketball tournament upsets|NCAA tournament]] as the [[2026 NCAA Division I men's basketball tournament|No. 1 overall seed]], and were placed in the East region. In the first round, the Blue Devils trailed No. 16 seed [[2025–26 Siena Saints men's basketball team|Siena]] 43–32 at halftime, becoming the first No. 1 seed to trail a 16 seed by double-digits at the half in tournament history.<ref>{{cite web|url=https://www.espn.com/mens-college-basketball/story/_/id/48278903/sources-syracuse-hire-gerry-mcnamara-basketball-coach|title=Sources: Syracuse to hire Gerry McNamara as basketball coach|accessdate=March 22, 2026|date=March 22, 2026|publisher=[[ESPN]]|last1=Thamel|first1=Pete|author-link1=Pete Thamel|last2=Brozello|first2=Jeff}}</ref> However, they rallied to escape the upset to win 71–65.<ref>{{Cite web |last=Hale |first=David |date=2026-03-19 |title=Duke avoids historic upset, stops Siena in NCAA tournament |url=https://www.espn.com/mens-college-basketball/story/_/id/48252405/duke-avoids-historic-upset-stops-siena-ncaa-tournament |access-date=2026-03-20 |website=ESPN.com |language=en}}</ref> The Blue Devils proceeded to defeat No. 9 seed [[2025–26 TCU Horned Frogs men's basketball team|TCU]] 81–58 in the second round<ref>{{cite web |title=Duke Marches into Sweet 16 by Topping TCU |url=https://goduke.com/news/2026/3/21/mens-basketball-duke-marches-into-sweet-16-by-topping-tcu |website=goduke.com |publisher=[[Duke University]] Athletics |date=21 March 2026}}</ref> and No. 5 seed [[2025–26 St. John's Red Storm men's basketball team|St. John's]] 80–75 in the Sweet Sixteen.<ref>{{cite web |title=Duke Bound for Elite Eight After Topping St. John’s, 80-75 |url=https://goduke.com/news/2026/3/27/mens-basketball-duke-bound-for-elite-eight-after-topping-st-johns-80-75 |website=goduke.com |publisher=[[Duke University]] Athletics |date=27 March 2026}}</ref> Against No. 2 seed [[2025–26 UConn Huskies men's basketball team|UConn]] in the Elite Eight, the Blue Devils took a 19-point lead. However, the Huskies pulled off a comeback in the final seconds, where UConn's [[Silas Demary Jr.]] deflected a pass from [[Cayden Boozer]], leading to Huskies guard [[Braylon Mullins]] making a game-winning [[Glossary of basketball terms#logo three|logo]] [[Three-point field goal|three]] with 0.4 seconds left, to win 73–72.<ref>{{Cite news |last= |first= |date=March 29, 2026 |title=Inside UConn's stunning win over Duke in Sunday's Elite Eight|url=https://www.espn.com/mens-college-basketball/story/_/id/48335596/march-madness-predictions-live-tracker-elite-eight-michigan-duke-uconn-2026 |access-date=March 29, 2026 |website=espn.com|publisher=[[ESPN]]}}</ref><ref>{{Cite news |last=Shaughnessy |first=Dan |date=April 3, 2026 |title=You'll always remember where you were when Braylon Mullins shot UConn into Final Four, and other thoughts|url=https://www.bostonglobe.com/2026/04/03/sports/braylon-mullins-uconn-basketball/ |access-date=April 4, 2026 |website=bostonglobe.com|publisher=[[The Boston Globe]]}}</ref>
+
+== Offseason ==
+On March 19, 2026, assistant coach [[Evan Bradds]] was hired as the head coach of the [[Belmont Bruins men's basketball|Belmont Bruins]].<ref>{{cite web |title=Belmont Names Evan Bradds Head Men's Basketball Coach |url=https://belmontbruins.com/news/2026/3/19/belmont-names-evan-bradds-head-mens-basketball-coach.aspx |website=belmontbruins.com |publisher=[[Belmont University]] Athletics |date=19 March 2026}}</ref> He remained with Duke throughout the [[2026 NCAA Division I men's basketball tournament|2026 NCAA tournament]].<ref>{{Cite web |last=Borzello|first=Jeff|date=2026-03-19 |title=Sources: Belmont finalizing hire of Duke's Evan Bradds as coach |url=https://www.espn.com/mens-college-basketball/story/_/id/48244492/sources-belmont-finalizing-hire-duke-evan-bradds-coach |access-date=2026-03-19 |website=espn.com|publisher=[[ESPN]] |language=en}}</ref>
+
+=== Departures ===
+{| class="wikitable sortable" style="text-align: center"
+|+ style="{{NCAA color cell|Duke Blue Devils}}" | Duke departures
+|- align=center
+! style="{{NCAA secondary color cell| Duke Blue Devils}}" |Name
+! style="{{NCAA secondary color cell| Duke Blue Devils}}" |Number
+! style="{{NCAA secondary color cell| Duke Blue Devils}}" |Pos.
+! style="{{NCAA secondary color cell| Duke Blue Devils}}" |Height
+! style="{{NCAA secondary color cell| Duke Blue Devils}}" |Weight
+! style="{{NCAA secondary color cell| Duke Blue Devils}}" |Year
+! style="{{NCAA secondary color cell| Duke Blue Devils}}" |Hometown
+! style="{{NCAA secondary color cell| Duke Blue Devils}}" class="unsortable" | Reason for departure
+|-
+|[[Isaiah Evans]]
+|3
+|G/F
+|6'6"
+|180
+|Sophomore
+|[[Fayetteville, North Carolina|Fayetteville, NC]]
+|Declared for [[2026 NBA draft]];<br />selected 33rd overall by [[Brooklyn Nets]]<ref>{{cite web |last1=Bachar |first1=Zach |title=Duke's Isaiah Evans Declares for 2026 NBA Draft, Latest B/R Mock Draft Projection |url=https://bleacherreport.com/articles/25421435-dukes-isaiah-evans-declares-2026-nba-draft-latest-br-mock-draft-projection |website=bleacherreport.com |publisher=[[Bleacher Report]] |date=22 April 2026}}</ref>
+|-
+|[[Maliq Brown]]
+|6
+|F
+|6'9"
+|225
+|Senior
+|[[Culpeper, Virginia|Culpeper, VA]]
+|Graduated/[[2026 NBA draft]];<br />selected 44th overall by [[San Antonio Spurs]]
+|-
+|[[Darren Harris (basketball)|Darren Harris]]
+|8
+|G/F
+|6'5"
+|195
+|Sophomore
+|[[Herndon, Virginia|Herndon, VA]]
+|Transferred to [[Indiana Hoosiers men's basketball|Indiana]]<ref>{{cite web |title=Darren Harris Signs with Indiana Men’s Basketball |url=https://iuhoosiers.com/news/2026/4/20/mens-basketball-darren-harris-signs-with-indiana-mens-basketball |website=iuhoosiers.com |publisher=[[Indiana University Bloomington]] Athletics |date=20 April 2026}}</ref>
+|-
+|[[Cameron Boozer]]
+|12
+|F
+|6'9"
+|250
+|Freshman
+|[[Salt Lake City, Utah|Salt Lake City, UT]]
+|Declared for [[2026 NBA draft]];<br />selected 3rd overall by [[Memphis Grizzlies]]<ref>{{cite web |last1=Skretta |first1=Dave |title=Star freshmen Darryn Peterson at Kansas, Cameron Boozer at Duke declare for NBA draft |url=https://apnews.com/article/nba-draft-kansas-darryn-peterson-3a1bb1339c38d8c2901c3021cd329522 |website=apnews.com |publisher=[[Associated Press]] |date=24 April 2026}}</ref>
+|-
+|Cameron Sheffield
+|13
+|G/F
+|6'6"
+|205
+|Graduate student
+|[[Alpharetta, Georgia|Alpharetta, GA]]
+|Graduated
+|-
+|[[Nikolas Khamenia]]
+|14
+|G/F
+|6'8"
+|205
+|Freshman
+|[[Studio City, Los Angeles|Studio City, CA]]
+|Transferred to [[UConn Huskies men's basketball|UConn]]<ref>{{cite web |title=Huskies Sign Four Newcomers For 2026-27 |url=https://uconnhuskies.com/news/2026/4/29/mens-basketball-huskies-sign-four-newcomers-for-2026-27 |website=uconnhuskies.com |publisher=[[University of Connecticut]] Athletics |date=29 April 2026}}</ref>
+|-
+|Ifeanyi Ufochukwu
+|15
+|C
+|6'11"
+|245
+|Graduate student
+|[[Benin City]], [[Nigeria]]
+|Graduated
+|-
+|Jack Scott
+|20
+|G/F
+|6'6"
+|220
+|Senior
+|[[Colorado Springs, Colorado|Colorado Springs, CO]]
+|Graduated
+|}
+
+=== Incoming transfers ===
+{| class="wikitable sortable" style="text-align: center"
+|+ style="{{NCAA color cell|Duke Blue Devils}}" | Duke incoming transfers
+|- align=center
+! style="{{NCAA secondary color cell| Duke Blue Devils}}" |Name
+! style="{{NCAA secondary color cell| Duke Blue Devils}}" |Number
+! style="{{NCAA secondary color cell| Duke Blue Devils}}" |Pos.
+! style="{{NCAA secondary color cell| Duke Blue Devils}}" |Height
+! style="{{NCAA secondary color cell| Duke Blue Devils}}" |Weight
+! style="{{NCAA secondary color cell| Duke Blue Devils}}" |Year
+! style="{{NCAA secondary color cell| Duke Blue Devils}}" |Hometown
+! style="{{NCAA secondary color cell| Duke Blue Devils}}" class="unsortable" |Previous school
+|-
+|Drew Scharnowski
+|8
+|F
+|6'9"
+|230
+|Senior
+|[[Burlington, Illinois|Burlington, IL]]
+|[[Belmont Bruins men's basketball|Belmont]]<ref>{{cite web |last1=Snyder |first1=Ann |title=Duke basketball, Jon Scheyer land Belmont transfer Drew Scharnowski |url=https://www.fayobserver.com/story/sports/college/basketball/2026/04/19/belmont-forward-drew-scharnowski-commits-to-duke-basketball-jon-scheyer/89690140007/ |website=fayobserver.com |publisher=[[Fayetteville Observer]] |date=19 April 2026}}</ref>
+|-
+|[[John Blackwell (basketball)|John Blackwell]]
+|13
+|G
+|6'4"
+|203
+|Senior
+|[[Bloomfield Hills, Michigan|Bloomfield Hills, MI]]
+|[[Wisconsin Badgers men's basketball|Wisconsin]]<ref>{{cite web |last1=Borzello |first1=Jeff |title=Duke lands John Blackwell, top guard in transfer portal |url=https://www.espn.com/mens-college-basketball/story/_/id/48553673/duke-lands-john-blackwell-top-guard-transfer-portal |website=espn.com |publisher=[[ESPN]] |date=21 April 2026}}</ref>
+|-
+|Jacob Theodosiou
+|26
+|G
+|6'4"
+|204
+|Senior
+|[[Waterloo, Ontario|Waterloo, ON]]
+|[[Loyola Greyhounds men's basketball|Loyola (MD)]]<ref>{{cite web |last1=Gates |first1=Riley |title=Duke lands commitment from Loyola Maryland transfer guard Jacob Theodosiou |url=https://www.on3.com/college/duke-blue-devils/news/duke-lands-commitment-from-loyola-maryland-transfer-guard-jacob-theodosiou/ |website=On3.com |publisher=[[On3.com]] |date=2 May 2026}}</ref>
+|}
+
+=== Recruiting class ===
+====2026 recruiting class====
+{{College athlete recruit start|collapse=no|year=2026}}
+{{College athlete recruit entry
+|recruit=[[Joaquim Boumtje-Boumtje]]*
+|position=[[Center (basketball)|C]]
+|hometown=[[St. Petersburg, Florida|St. Petersburg, FL]]
+|highschool=[[FC Barcelona Bàsquet B]] (ESP)
+|feet=6
+|inches=11
+|weight=230
+|40=
+|commitdate=April 30, 2026 
+|247 stars=5
+|espn stars=5
+|espn grade=95
+|On3 stars=5
+}}
+{{College athlete recruit entry
+|recruit=[[Cameron Williams (basketball)|Cameron Williams]]
+|position=[[Power Forward|PF]]
+|hometown=[[Phoenix, Arizona|Phoenix, AZ]]
+|highschool=[[St. Mary's High School (Phoenix, Arizona)|St. Mary's HS]]
+|feet=6
+|inches=11
+|weight=200
+|40=
+|commitdate=November 14, 2025 
+|247 stars=5
+|espn stars=5
+|espn grade=94
+|On3 stars=5
+}}
+{{College athlete recruit entry
+|recruit=[[Deron Rippey Jr.]]
+|position=[[Point guard|PG]]
+|hometown=[[Brooklyn|Brooklyn, NY]]
+|highschool=[[Blair Academy]] (NJ)
+|feet=6
+|inches=1
+|weight=175
+|40=
+|commitdate=December 30, 2025 
+|247 stars=5
+|espn stars=5
+|espn grade=91
+|On3 stars=5
+}}
+{{College athlete recruit entry
+|recruit=Bryson Howard
+|position=[[Shooting guard|SG]]
+|hometown=[[Frisco, Texas|Frisco, TX]]
+|highschool=[[Heritage High School (Frisco, Texas)|Heritage]]
+|feet=6
+|inches=4
+|weight=190
+|40=
+|commitdate=October 21, 2025 
+|247 stars=5
+|espn stars=4
+|espn grade=89
+|On3 stars=5
+}}
+{{College athlete recruit entry
+|recruit=Maxime Meyer
+|position=[[Center (basketball)|C]]
+|hometown=[[Toronto|Toronto, ON]]
+|highschool=[[IMG Academy]] (FL)
+|feet=7
+|inches=1
+|weight=215
+|40=
+|commitdate=October 30, 2025 
+|247 stars=4
+|espn stars=4
+|espn grade=82
+|On3 stars=4
+}}
+{{College athlete recruit entry
+|recruit=Nick Arnold
+|position=[[Point Guard (basketball)|PG]]
+|hometown=[[Mooresville, North Carolina|Mooresville, NC]]
+|highschool=[[Davidson Day School]] (NC)
+|feet=5
+|inches=11
+|weight=175
+|40=
+|commitdate=May 14, 2026 
+}}
+{{College athlete recruit end
+| 40               =
+| year             = 2026 
+| espn ref title   = 2026 Duke Blue Devils Recruiting Class
+| 247 ref title    = 2026 Duke 24/7 Sports Commits
+| On3 ref title    = 2026 Duke Blue Devils Basketball Industry Comparison Commits 
+| 247 school       = Duke
+| espn schoolid    = 150
+| On3 school       = Duke-blue-devils
+| On3 overall      = 1
+| 247 overall      = 1 
+| espn overall     = 1
+| accessdate       = May 5, 2026
+| bball            = yes
+| collapse         =
+}}
+
+* Boumtje-Boumtje [[reclassification (education)|reclassified]] from the class of 2027 to 2026 in committing.
+
+'''2026 overall class rankings''' 
+{| class="wikitable"
+|-
+{{CollegePrimaryHeader|team=Duke Blue Devils|Website|National rank|Conference rank|5-star recruits|4-star recruits|Total}}
+|-
+| ESPN<ref>{{cite web|title=Duke 2026 Recruiting Class |url=https://www.espn.com/college-sports/basketball/recruiting/school/_/id/150/class/2026|access-date=April 5, 2024 |publisher=ESPN}}</ref>|| 1 || 1 || 4 || 1 || 5
+|-
+| On3/Rivals Recruits<ref>{{cite web |title=Duke 2026 Recruiting Class |url=https://www.on3.com/college/duke-blue-devils/basketball/2026/commits |access-date=April 5, 2024 |website=On3.com}}</ref>|| 1 || 1 || 4 || 1 || 5
+|- 
+| 247 Sports<ref>{{cite web |title=Duke 2026 Recruiting Class |url=https://247sports.com/college/duke/Season/2026-Basketball/Commits |access-date=April 5, 2024 |website=247sports.com}}</ref>|| 1 || 1 || 4 || 1 || 5
+|}
+
+== Roster ==
+{{CBB roster/Header|year=2026|team=Duke Blue Devils|teamcolors=y|high_school=y}}
+{{CBB roster/Player|pos=G|num=1|first=Caleb|last=Foster|link=y|ft=6|in=5|lbs=200|class=SR|high_school=[[Notre Dame High School (Sherman Oaks, California)|Notre Dame HS]]|home=[[Harrisburg, North Carolina|Harrisburg, NC]]}}
+{{CBB roster/Player|pos=G|num=2|first=Cayden|last=Boozer|link=y|ft=6|in=4|lbs=195|class=SO|high_school=[[Christopher Columbus High School (Miami-Dade County, Florida)|Columbus HS (FL)]]|home=[[Salt Lake City, Utah|Salt Lake City, UT]]}}
+{{CBB roster/Player|pos=G|num=3|first=Deron|last=Rippey Jr.|link=y|ft=6|in=3|lbs=185|class=FR|high_school=[[Blair Academy|Blair Academy (NJ)]]|home=[[Brooklyn|Brooklyn, NY]]}}
+{{CBB roster/Player|pos=GF|num=5|first=Sebastian|last=Wilkins|ft=6|in=8|lbs=220|class=SO|high_school=[[Brewster Academy]]|home=[[Boston|Boston, MA]]}}
+{{CBB roster/Player|pos=GF|num=7|first=Dame|last=Sarr|link=y|ft=6|in=8|lbs=200|class=SO|high_school=[[FC Barcelona Bàsquet|FC Barcelona]]|home=[[Oderzo]], [[Italy]]}}
+{{CBB roster/Player|pos=F|num=8|first=Drew|last=Scharnowski|ft=6|in=10|lbs=240|class=SR|high_school=[[Belmont Bruins men's basketball|Belmont]]|home=[[Burlington, Illinois|Burlington, IL]]}}
+{{CBB roster/Player|pos=G|num=12|first=Bryson|last=Howard|ft=6|in=4|lbs=190|class=FR|high_school=[[Heritage High School (Frisco, Texas)|Heritage]]|home=[[Frisco, Texas|Frisco, TX]]}}
+{{CBB roster/Player|pos=G|num=13|first=John|last=Blackwell|dab=basketball|link=y|ft=6|in=5|lbs=205|class=SR|high_school=[[Wisconsin Badgers men's basketball|Wisconsin]]|home=[[Bloomfield Hills, Michigan|Bloomfield Hills, MI]]}}
+{{CBB roster/Player|pos=F|num=14|first=Cameron|last=Williams|dab=basketball|link=y|ft=7|in=0|lbs=215|class=FR|high_school=[[St. Mary's High School (Phoenix, Arizona)|St. Mary's HS]]|home=[[Phoenix, Arizona|Phoenix, AZ]]}}
+{{CBB roster/Player|pos=C|num=15|first=Maxime|last=Meyer|ft=7|in=1|lbs=225|class=FR|high_school=[[IMG Academy|IMG Academy (FL)]]|home=[[Toronto|Toronto, ON]]}}
+{{CBB roster/Player|pos=C|num=21|first=Patrick|last=Ngongba II|link=y|ft=6|in=11|lbs=250|class=JR|high_school=[[Paul VI Catholic High School|St. Paul VI]]|home=[[Manassas, Virginia|Manassas, VA]]}}
+{{CBB roster/Player|pos=G|num=26|first=Jacob|last=Theodosiou|ft=6|in=4|lbs=205|class=SR|high_school=[[Loyola Greyhounds men's basketball|Loyola (MD)]]|home=[[Waterloo, Ontario|Waterloo, ON]]}}
+{{CBB roster/Player|pos=F/C|num=30|first=Joaquim|last=Boumtje-Boumtje|link=y|ft=7|in=2|lbs=250|class=FR|high_school=[[FC Barcelona Bàsquet B]]|home=[[St. Petersburg, Florida|St. Petersburg, FL]]}}
+{{CBB roster/Player|first=Brock|last=Davis|num=50|pos=GF|ft=6|in=5|lbs=195|class=GS|home=[[Washington, D.C.]]|high_school=[[Georgetown Day School|Georgetown Day]]|note=W}}
+{{CBB roster/Player|pos=G|num=55|first=Nick|last=Arnold|ft=5|in=11|lbs=175|class=FR|high_school=[[Davidson Day School|Davidson Day]]|home=[[Mooresville, North Carolina|Mooresville, NC]]|note=W}}
+
+{{CBB roster/Footer
+|head_coach=
+* [[Jon Scheyer]] ([[Duke University|Duke]])
+|asst_coach=
+* [[Chris Carrawell]] ([[Duke University|Duke]])
+* Emanuel Dildy ([[Eastern Illinois University|Eastern Illinois]])
+* K.J. Conklin ([[Illinois State University|Illinois State]])
+* Alexander Powell ([[Kenyon College|Kenyon]])
+* [[Tyler Thornton]] ([[Duke University|Duke]])
+|roster_url=https://goduke.com/sports/mens-basketball/roster
+|accessdate=2026-08-05}}
+
+== Schedule and results ==
+{{CBB schedule start|gamehighs=yes|attend=yes|time=yes|tv=yes}}
+|-
+!colspan=9 style="{{NCAA color cell|Duke Blue Devils}}"| Exhibition
+{{CBB schedule entry
+| date         = October 8, 2026
+| time         = 7:00 p.m.
+| nonconf      = yes
+| rank         = 
+| score        = [https://goduke.com/news/2026/10/8/mens-basketball-boumtje-boumtje-and-sarr-lead-offense-in-102-62-win-over-belmont 102–62]
+| opponent     = [[2026–27 Belmont Bruins basketball team|Belmont]]
+| site_stadium = [[Cameron Indoor Stadium]]
+| site_cityst  = [[Durham, North Carolina|Durham, NC]]
+| tv           = [[ACC Network|ACCNX]]
+| highscorer   = ''{{tooltip|Tied|Boumtje-Boumtje, Sarr}}''
+| points       = 19
+| highrebounder= ''{{tooltip|Tied|Boumtje-Boumtje, Ngongba II}}''
+| rebounds     = 7
+| highassister = [[Patrick Ngongba II |Ngongba II]]
+| assists      = 4
+| record       = 
+| attend       = N/A
+}}
+{{CBB schedule entry
+| date         = October 20, 2026
+| time         = 7:00 p.m.
+| nonconf      = yes
+| rank         = 2
+| score        = [https://goduke.com/news/2026/10/20/mens-basketball-no-2-duke-cruises-past-no-8-tennessee-103-64-in-exhibition 103–64]
+| opprank      = 8
+| opponent     = [[2026–27 Tennessee Volunteers basketball team|Tennessee]]
+| site_stadium = Cameron Indoor Stadium
+| site_cityst  = Durham, NC
+| tv           = ACCN
+| highscorer   = [[Deron Rippey Jr. |Rippey Jr.]]
+| points       = 21
+| highrebounder= Ngongba II
+| rebounds     = 7
+| highassister = [[Cayden Boozer |Boozer]]
+| assists      = 6
+| record       = 
+| attend       = 
+}}
+{{CBB schedule entry
+| date         = October 25, 2026
+| time         = 1:00 p.m.
+| nonconf      = yes
+| away         = yes
+| rank         = 2
+| opponent     = [[2026–27 Kansas Jayhawks men's basketball team|Kansas]]
+| opprank      = 17
+| score        = [https://goduke.com/news/2026/10/25/mens-basketball-ngongba-ii-dominates-no-2-duke-wins-90-84-in-exhibition-at-no-17-kansas 90–84]
+| site_stadium = [[Allen Fieldhouse]]
+| site_cityst  = [[Lawrence, Kansas|Lawrence, Kansas]]
+| tv           = [[ESPN College Basketball|ESPN]]
+| highscorer   = Ngongba II
+| points       = 28
+| highrebounder= Ngongba II
+| rebounds     = 10
+| highassister = Ngongba II
+| assists      = 4
+| record       = 
+| attend       = 15,300
+}}
+|-
+!colspan=9 style="{{NCAA color cell|Duke Blue Devils}}"| Regular season
+{{CBB schedule entry
+| date         = November 2, 2026
+| time         = 6:30 p.m.
+| nonconf      = yes
+| rank         = 2
+| opponent     = [[2026–27 Army Black Knights men's basketball team|Army]]
+| score        = 
+| site_stadium = Cameron Indoor Stadium
+| site_cityst  = Durham, NC
+| tv           = [[ESPNU College Basketball|ESPNU]]
+| highscorer   = &nbsp;
+| points       = 
+| highrebounder= &nbsp;
+| rebounds     = 
+| highassister = &nbsp;
+| assists      = 
+| record       = 
+| attend       = 
+}}
+{{CBB schedule entry
+| date         = November 5, 2026
+| time         = 8:00 p.m.
+| nonconf      = yes
+| rank         = 2
+| opponent     = [[2026–27 Coastal Carolina Chanticleers men's basketball team|Coastal Carolina]]
+| score        = 
+| site_stadium = Cameron Indoor Stadium
+| site_cityst  = Durham, NC
+| tv           = ACCN
+| highscorer   = &nbsp;
+| points       = 
+| highrebounder= &nbsp;
+| rebounds     = 
+| highassister = &nbsp;
+| assists      = 
+| record       = 
+| attend       = 
+}}
+{{CBB schedule entry
+| date         = November 10, 2026
+| time         = 7:00 p.m.
+| nonconf      = yes
+| neutral      = yes
+| opponent     = [[2026–27 Michigan State Spartans men's basketball team|Michigan State]]
+| gamename     = [[Champions Classic]]
+| rank         = 
+| score        = 
+| site_stadium = [[United Center]]
+| site_cityst  = [[Chicago|Chicago, IL]]
+| tv           = ESPN
+| highscorer   = &nbsp;
+| points       = 
+| highrebounder= &nbsp;
+| rebounds     = 
+| highassister = &nbsp;
+| assists      = 
+| record       = 
+| attend       = 
+}}
+{{CBB schedule entry
+| date         = November 13, 2026
+| time         = 8:00 p.m.
+| nonconf      = yes
+| opponent     = [[2026–27 SIU Edwardsville Cougars men's basketball team|SIU Edwardsville]]
+| rank         = 
+| score        = 
+| site_stadium = Cameron Indoor Stadium
+| site_cityst  = Durham, NC
+| tv           = [[CW Courtside Saturday|The CW]]
+| highscorer   = &nbsp;
+| points       = 
+| highrebounder= &nbsp;
+| rebounds     = 
+| highassister = &nbsp;
+| assists      = 
+| record       = 
+| attend       = 
+}}
+{{CBB schedule entry
+| date         = November 17, 2026
+| time         = 7:00 p.m.
+| nonconf      = yes
+| opponent     = [[2026–27 Illinois Fighting Illini men's basketball team|Illinois]]
+| rank         = 
+| score        = 
+| site_stadium = Cameron Indoor Stadium
+| site_cityst  = Durham, NC
+| tv           = ESPN
+| highscorer   = &nbsp;
+| points       = 
+| highrebounder= &nbsp;
+| rebounds     = 
+| highassister = &nbsp;
+| assists      = 
+| record       = 
+| attend       = 
+}}
+{{CBB schedule entry
+| date         = November 21, 2026
+| time         = 11:00 p.m.
+| nonconf      = yes
+| neutral      = yes
+| opponent     = [[2026–27 Washington State Cougars men's basketball team|Washington State]]
+| gamename     = [[Acrisure Series]]
+| rank         = 
+| score        = 
+| site_stadium = [[Acrisure Arena]]
+| site_cityst  = [[Thousand Palms, California|Thousand Palms, CA]]
+| tv           = ESPN2
+| highscorer   = &nbsp;
+| points       = 
+| highrebounder= &nbsp;
+| rebounds     = 
+| highassister = &nbsp;
+| assists      = 
+| record       = 
+| attend       = 
+}}
+{{CBB schedule entry
+| date         = November 25, 2026
+| time         = 7:00 p.m.
+| nonconf      = yes
+| neutral      = yes
+| opponent     = [[2026–27 UConn Huskies men's basketball team|UConn]]
+| rank         = 
+| score        = 
+| site_stadium = [[T-Mobile Arena]]
+| site_cityst  = [[Paradise, Nevada|Paradise, NV]]
+| tv           = [[Sports on Amazon Prime Video|Prime Video]]
+| highscorer   = &nbsp;
+| points       = 
+| highrebounder= &nbsp;
+| rebounds     = 
+| highassister = &nbsp;
+| assists      = 
+| record       = 
+| attend       = 
+}}
+{{CBB schedule entry
+| date         = December 1, 2026
+| away         = yes
+| time         = 9:30 p.m.
+| nonconf      = yes
+| opponent     = [[2026–27 Florida Gators men's basketball team|Florida]]
+| rank         = 
+| score        = 
+| gamename     = [[ACC–SEC Challenge]]
+| site_stadium = [[O'Connell Center]]
+| site_cityst  = [[Gainesville, Florida|Gainesville, FL]]
+| tv           = ESPN
+| highscorer   = &nbsp;
+| points       = 
+| highrebounder= &nbsp;
+| rebounds     = 
+| highassister = &nbsp;
+| assists      = 
+| record       = 
+| attend       = 
+}}
+{{CBB schedule entry
+| date         = December 4, 2026
+| time         = 7:00 p.m.
+| nonconf      = yes
+| opponent     = [[2026–27 Harvard Crimson men's basketball team|Harvard]]
+| rank         = 
+| score        = 
+| gamename     = Brotherhood Run
+| site_stadium = Cameron Indoor Stadium
+| site_cityst  = Durham, NC
+| tv           = ESPN2
+| highscorer   = &nbsp;
+| points       = 
+| highrebounder= &nbsp;
+| rebounds     = 
+| highassister = &nbsp;
+| assists      = 
+| record       = 
+| attend       = 
+}}
+{{CBB schedule entry
+| date         = December 8, 2026
+| time         = 9:00 p.m.
+| nonconf      = yes
+| neutral      = yes
+| opponent     = [[2026–27 Georgia Bulldogs men's basketball team|Georgia]]
+| rank         = 
+| score        = 
+| gamename     = [[Jimmy V Classic]]
+| site_stadium = [[Madison Square Garden]]
+| site_cityst  = [[New York City|New York, NY]]
+| tv           = ESPN
+| highscorer   = &nbsp;
+| points       = 
+| highrebounder= &nbsp;
+| rebounds     = 
+| highassister = &nbsp;
+| assists      = 
+| record       = 
+| attend       = 
+}}
+{{CBB schedule entry
+| date         = December 15, 2026
+| time         = 7:00 p.m.
+| nonconf      = yes
+| neutral      = 
+| opponent     = [[2026–27 Campbell Fighting Camels men's basketball team|Campbell]]
+| rank         = 
+| score        = 
+| gamename     = 
+| site_stadium = Cameron Indoor Stadium
+| site_cityst  = Durham, NC
+| tv           = ACCN
+| highscorer   = &nbsp;
+| points       = 
+| highrebounder= &nbsp;
+| rebounds     = 
+| highassister = &nbsp;
+| assists      = 
+| record       = 
+| attend       = 
+}}
+{{CBB schedule entry
+| date         = December 17, 2026
+| time         = 8:00 p.m.
+| nonconf      = yes
+| neutral      = 
+| opponent     = [[2026–27 Grambling State Tigers men's basketball team|Grambling State]]
+| rank         = 
+| score        = 
+| gamename     = 
+| site_stadium = Cameron Indoor Stadium
+| site_cityst  = Durham, NC
+| tv           = ACCN
+| highscorer   = &nbsp;
+| points       = 
+| highrebounder= &nbsp;
+| rebounds     = 
+| highassister = &nbsp;
+| assists      = 
+| record       = 
+| attend       = 
+}}
+{{CBB schedule entry
+| date         = December 21, 2026
+| time         = 7:00 p.m.
+| nonconf      = yes
+| neutral      = yes
+| opponent     = [[2026–27 Texas Tech Red Raiders basketball team|Texas Tech]]
+| rank         = 
+| score        = 
+| site_stadium = Madison Square Garden
+| site_cityst  = New York, NY
+| tv           = Prime Video
+| highscorer   = &nbsp;
+| points       = 
+| highrebounder= &nbsp;
+| rebounds     = 
+| highassister = &nbsp;
+| assists      = 
+| record       = 
+| attend       = 
+}}
+{{CBB schedule entry
+| date         = December 30, 2026
+| time         = 7:00 p.m.
+| nonconf      =
+| away         = yes
+| opponent     = [[2026–27 Georgia Tech Yellow Jackets men's basketball team|Georgia Tech]]
+| rank         = 
+| gamename     =
+| score        = 
+| site_stadium = [[McCamish Pavilion]]
+| site_cityst  = [[Atlanta|Atlanta, GA]]
+| tv           = ESPN
+| highscorer   = &nbsp;
+| points       = 
+| highrebounder= &nbsp;
+| rebounds     = 
+| highassister = &nbsp;
+| assists      = 
+| record       = 
+| attend       = 
+}}
+{{CBB schedule entry
+| date         = January 2, 2027
+| time         = 2:15 p.m.
+| nonconf      =
+| opponent     = [[2026–27 California Golden Bears men's basketball team|California]]
+| rank         = 
+| gamename     =
+| score        = 
+| site_stadium = Cameron Indoor Stadium
+| site_cityst  = Durham, NC
+| tv           = The CW
+| highscorer   = &nbsp;
+| points       = 
+| highrebounder= &nbsp;
+| rebounds     = 
+| highassister = &nbsp;
+| assists      = 
+| record       = 
+| attend       = 
+}}
+{{CBB schedule entry
+| date         = January 5, 2027
+| time         = 7:00 p.m.
+| nonconf      =
+| away         = yes
+| opponent     = [[2026–27 Syracuse Orange men's basketball team|Syracuse]]
+| rank         = 
+| gamename     =
+| score        = 
+| site_stadium = [[JMA Wireless Dome]]
+| site_cityst  = [[Syracuse, New York|Syracuse, NY]]
+| tv           = ESPN/ESPN2
+| highscorer   = &nbsp;
+| points       = 
+| highrebounder= &nbsp;
+| rebounds     = 
+| highassister = &nbsp;
+| assists      = 
+| record       = 
+| attend       = 
+}}
+{{CBB schedule entry
+| date         = January 9, 2027
+| time         = 2:00 p.m.
+| nonconf      =
+| opponent     = [[2026–27 Pittsburgh Panthers men's basketball team|Pittsburgh]]
+| rank         = 
+| gamename     =
+| score        = 
+| site_stadium = Cameron Indoor Stadium
+| site_cityst  = Durham, NC
+| tv           = [[College Basketball on CBS Sports|CBS]]
+| highscorer   = &nbsp;
+| points       = 
+| highrebounder= &nbsp;
+| rebounds     = 
+| highassister = &nbsp;
+| assists      = 
+| record       = 
+| attend       = 
+}}
+{{CBB schedule entry
+| date         = January 13, 2027
+| time         = 9:00 p.m.
+| nonconf      =
+| opponent     = [[2026–27 Stanford Cardinal men's basketball team|Stanford]]
+| rank         = 
+| gamename     =
+| score        = 
+| site_stadium = Cameron Indoor Stadium
+| site_cityst  = Durham, NC
+| tv           = ACCN
+| highscorer   = &nbsp;
+| points       = 
+| highrebounder= &nbsp;
+| rebounds     = 
+| highassister = &nbsp;
+| assists      = 
+| record       = 
+| attend       = 
+}}
+{{CBB schedule entry
+| date         = January 16, 2027
+| time         = 7:00 p.m.
+| nonconf      =
+| away         = yes
+| opponent     = [[2026–27 Boston College Eagles men's basketball team|Boston College]]
+| rank         = 
+| gamename     =
+| score        = 
+| site_stadium = [[Conte Forum]]
+| site_cityst  = [[Chestnut Hill, Massachusetts|Chestnut Hill, MA]]
+| tv           = ACCN
+| highscorer   = &nbsp;
+| points       = 
+| highrebounder= &nbsp;
+| rebounds     = 
+| highassister = &nbsp;
+| assists      = 
+| record       = 
+| attend       = 
+}}
+{{CBB schedule entry
+| date         = January 20, 2027
+| time         = 9:00 p.m.
+| nonconf      =
+| away         = yes
+| opponent     = [[2026–27 Wake Forest Demon Deacons men's basketball team|Wake Forest]]
+| rank         = 
+| gamename     =
+| score        = 
+| site_stadium = [[Lawrence Joel Veterans Memorial Coliseum|LJVM Coliseum]]
+| site_cityst  = [[Winston-Salem, North Carolina|Winston-Salem, NC]]
+| tv           = ACCN
+| highscorer   = &nbsp;
+| points       = 
+| highrebounder= &nbsp;
+| rebounds     = 
+| highassister = &nbsp;
+| assists      = 
+| record       = 
+| attend       = 
+}}
+{{CBB schedule entry
+| date         = January 23, 2027
+| time         = 2:15 p.m.
+| nonconf      =
+| opponent     = [[2026–27 Notre Dame Fighting Irish men's basketball team|Notre Dame]]
+| rank         = 
+| gamename     =
+| score        = 
+| site_stadium = Cameron Indoor Stadium
+| site_cityst  = Durham, NC
+| tv           = The CW
+| highscorer   = &nbsp;
+| points       = 
+| highrebounder= &nbsp;
+| rebounds     = 
+| highassister = &nbsp;
+| assists      = 
+| record       = 
+| attend       = 
+}}
+{{CBB schedule entry
+| date         = January 30, 2027
+| time         = 4:00/4:30 p.m.
+| nonconf      =
+| away         = yes
+| opponent     = [[2026–27 Clemson Tigers men's basketball team|Clemson]]
+| rank         = 
+| gamename     =
+| score        = 
+| site_stadium = [[Littlejohn Coliseum]]
+| site_cityst  = [[Clemson, South Carolina|Clemson, SC]]
+| tv           = ESPN/ESPN2
+| highscorer   = &nbsp;
+| points       = 
+| highrebounder= &nbsp;
+| rebounds     = 
+| highassister = &nbsp;
+| assists      = 
+| record       = 
+| attend       = 
+}}
+{{CBB schedule entry
+| date         = Februrary 1, 2027
+| time         = 7:00 p.m.
+| nonconf      =
+| opponent     = [[2026–27 Miami Hurricanes men's basketball team|Miami]]
+| rank         = 
+| gamename     =
+| score        = 
+| site_stadium = Cameron Indoor Stadium
+| site_cityst  = Durham, NC
+| tv           = ESPN
+| highscorer   = &nbsp;
+| points       = 
+| highrebounder= &nbsp;
+| rebounds     = 
+| highassister = &nbsp;
+| assists      = 
+| record       = 
+| attend       = 
+}}
+{{CBB schedule entry
+| date         = February 6, 2027
+| time         = 6:00 p.m./6:30 p.m.
+| nonconf      =
+| away         = yes
+| opponent     = [[2026–27 Virginia Cavaliers men's basketball team|Virginia]]
+| rank         = 
+| gamename     =
+| score        = 
+| site_stadium = [[John Paul Jones Arena]]
+| site_cityst  = [[Charlottesville, Virginia|Charlottesville, VA]]
+| tv           = ESPN
+| highscorer   = &nbsp;
+| points       = 
+| highrebounder= &nbsp;
+| rebounds     = 
+| highassister = &nbsp;
+| assists      = 
+| record       = 
+| attend       = 
+}}
+{{CBB schedule entry
+| date         = Februrary 9, 2027
+| time         = 9:00 p.m.
+| nonconf      =
+| away         = yes
+| opponent     = [[2026–27 SMU Mustangs men's basketball team|SMU]]
+| rank         = 
+| gamename     =
+| score        = 
+| site_stadium = [[Moody Coliseum]]
+| site_cityst  = [[Dallas|Dallas, TX]]
+| tv           = ESPN
+| highscorer   = &nbsp;
+| points       = 
+| highrebounder= &nbsp;
+| rebounds     = 
+| highassister = &nbsp;
+| assists      = 
+| record       = 
+| attend       = 
+}}
+{{CBB schedule entry
+| date         = February 13, 2027
+| time         = 5:30 p.m. 
+| nonconf      =
+| opponent     = [[2026–27 North Carolina Tar Heels men's basketball team|North Carolina]]
+| rank         = 
+| gamename     = [[Carolina–Duke_rivalry#Men's_basketball|Rivalry]]
+| score        = 
+| site_stadium = Cameron Indoor Stadium
+| site_cityst  = Durham, NC
+| tv           = [[College Basketball on ABC|ABC]]
+| highscorer   = &nbsp;
+| points       = 
+| highrebounder= &nbsp;
+| rebounds     = 
+| highassister = &nbsp;
+| assists      = 
+| record       = 
+| attend       = 
+}}
+{{CBB schedule entry
+| date         = February 16, 2027
+| time         = 7:00 p.m.
+| nonconf      =
+| opponent     = [[2026–27 Florida State Seminoles men's basketball team|Florida State]]
+| rank         = 
+| gamename     =
+| score        = 
+| site_stadium = Cameron Indoor Stadium
+| site_cityst  = Durham, NC
+| tv           = ESPN/ESPN2
+| highscorer   = &nbsp;
+| points       = 
+| highrebounder= &nbsp;
+| rebounds     = 
+| highassister = &nbsp;
+| assists      = 
+| record       = 
+| attend       = 
+}}
+{{CBB schedule entry
+| date         = February 20, 2027
+| time         = 8:00 p.m.
+| nonconf      = yes
+| neutral      = yes
+| opponent     = [[2026–27 Gonzaga Bulldogs men's basketball team|Gonzaga]]
+| gamename     = Prime College Hoops Showcase
+| rank         = 
+| score        = 
+| site_stadium = [[Little Caesars Arena]]
+| site_cityst  = [[Detroit|Detroit, MI]]
+| tv           = Prime Video
+| highscorer   = &nbsp;
+| points       = 
+| highrebounder= &nbsp;
+| rebounds     = 
+| highassister = &nbsp;
+| assists      = 
+| record       = 
+| attend       = 
+}}
+{{CBB schedule entry
+| date         = Februrary 24, 2027
+| time         = 7:00 p.m.
+| nonconf      =
+| away         = yes
+| opponent     = [[2026–27 Louisville Cardinals men's basketball team|Louisville]]
+| rank         = 
+| gamename     =
+| score        = 
+| site_stadium = [[KFC Yum! Center]]
+| site_cityst  = [[Louisville, Kentucky|Louisville, KY]]
+| tv           = ESPN
+| highscorer   = &nbsp;
+| points       = 
+| highrebounder= &nbsp;
+| rebounds     = 
+| highassister = &nbsp;
+| assists      = 
+| record       = 
+| attend       = 
+}}
+{{CBB schedule entry
+| date         = Februrary 27, 2027
+| time         = 12:00 p.m.
+| nonconf      =
+| opponent     = [[2026–27 NC State Wolfpack men's basketball team|NC State]]
+| rank         = 
+| gamename     =
+| score        = 
+| site_stadium = Cameron Indoor Stadium
+| site_cityst  = Durham, NC
+| tv           = ESPN
+| highscorer   = &nbsp;
+| points       = 
+| highrebounder= &nbsp;
+| rebounds     = 
+| highassister = &nbsp;
+| assists      = 
+| record       = 
+| attend       = 
+}}
+{{CBB schedule entry
+| date         = March 1, 2027
+| time         = 7:00 p.m.
+| nonconf      =
+| opponent     = Virginia
+| rank         = 
+| gamename     =
+| score        = 
+| site_stadium = Cameron Indoor Stadium
+| site_cityst  = Durham, NC
+| tv           = ESPN
+| highscorer   = &nbsp;
+| points       = 
+| highrebounder= &nbsp;
+| rebounds     = 
+| highassister = &nbsp;
+| assists      = 
+| record       = 
+| attend       = 
+}}
+{{CBB schedule entry
+| date         = March 6, 2027
+| time         = 6:00 p.m./6:30 p.m.
+| nonconf      =
+| away         = yes
+| opponent     = North Carolina
+| rank         = 
+| gamename     = Rivalry
+| score        = 
+| site_stadium = [[Dean Smith Center]]
+| site_cityst  = [[Chapel Hill, North Carolina|Chapel Hill, NC]]
+| tv           = ESPN
+| highscorer   = &nbsp;
+| points       = 
+| highrebounder= &nbsp;
+| rebounds     = 
+| highassister = &nbsp;
+| assists      = 
+| record       = 
+| attend       = 
+}}
+<!--
+{{CBB schedule entry
+| date         = 
+| time         = 
+| nonconf      = yes
+| opponent     = 
+| rank         = 
+| score        = 
+| site_stadium = 
+| site_cityst  = 
+| tv           = 
+| highscorer   = &nbsp;
+| points       = 
+| highrebounder= &nbsp;
+| rebounds     = 
+| highassister = &nbsp;
+| assists      = 
+| record       = 
+| attend       = 
+}}-->
+{{CBB schedule end
+| rank       = 
+| poll     = [[2026–27 NCAA Division I men's basketball rankings#AP Poll|AP poll]]
+| timezone = [[Eastern Time Zone|Eastern Time]]
+| region  = 
+| regionname = 
+}}
+
+Source:<ref>{{cite web |title=2026-27 Men's Basketball Schedule |url=https://goduke.com/sports/mens-basketball/schedule/2026-27 |publisher=[[Duke University]] Athletics}}</ref>
+
+==Rankings==
+{{See also|2026–27 NCAA Division I men's basketball rankings}}
+{{Ranking movements
+| poll1title     = [[AP Poll|AP]] 
+| poll1firstweek = 0
+| poll1lastweek  = 20
+| poll1_0= 2 <small>(10)</small>
+| poll1_1= 
+| poll1_2= 
+| poll1_3= 
+| poll1_4= 
+| poll1_5= 
+| poll1_6= 
+| poll1_7= 
+| poll1_8= 
+| poll1_9= 
+| poll1_10= 
+| poll1_11= 
+| poll1_12=
+| poll1_13=
+| poll1_14=
+| poll1_15=
+| poll1_16=
+| poll1_17=
+| poll1_18=
+| poll1_19=
+| poll1_20=
+| poll2title     = [[Coaches Poll|Coaches]]
+| poll2firstweek = 0
+| poll2lastweek  =20
+| poll2_0= 2 <small>(8)</small>
+| poll2_1= 
+| poll2_2= 
+| poll2_3= 
+| poll2_4= 
+| poll2_5= 
+| poll2_6= 
+| poll2_7= 
+| poll2_8= 
+| poll2_9= 
+| poll2_10=
+| poll2_11=
+| poll2_12=
+| poll2_13=
+| poll2_14=
+| poll2_15=
+| poll2_16=
+| poll2_17=
+| poll2_18=
+| poll2_19=
+| poll2_20=
+}}
+
+== References ==
+<references />
+
+{{Duke Blue Devils men's basketball navbox}}
+
+{{DEFAULTSORT:2026-27 Duke Blue Devils men's basketball team}}
+
+[[Category:2026–27 Atlantic Coast Conference men's basketball season|Duke]]
+[[Category:Duke Blue Devils men's basketball seasons|2025-26]]
+[[Category:2026 in sports in North Carolina|Duke Blue Devils men's basketball]]
+[[Category:2027 in sports in North Carolina|Duke Blue Devils men's basketball]]

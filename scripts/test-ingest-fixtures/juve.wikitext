@@ -1,0 +1,2448 @@
+<!-- FIXTURE. Page: 2026–27 Juventus FC season
+     Source: https://en.wikipedia.org/wiki/2026%E2%80%9327_Juventus_FC_season
+     Revision id: 1383468310  (permanent link: https://en.wikipedia.org/w/index.php?oldid=1383468310)
+     Fetched: 2026-11-02 from the MediaWiki API (action=query&prop=revisions&rvprop=content|ids&rvslots=main&format=json),
+     User-Agent: Fanday/0.1 (machinemisha+fanday@gmail.com). Unmodified wikitext below this comment.
+     Text (c) Wikipedia contributors, licensed CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/);
+     authors are listed in the page history. Used here only as test data. -->
+{{Short description|Italian football club season}}
+{{Infobox football club season
+|club               = [[Juventus FC|Juventus]]
+|season             = [[2026–27 in Italian football|2026–27]]
+|image              = 
+|image_size         = 
+|alt                = 
+|caption            = 
+|chrtitle           = 
+|chairman           = [[Gianluca Ferrero]]
+|ownertitle         = 
+|owner              = 
+|mgrtitle           = Head coach
+|manager            = [[Luciano Spalletti]] 
+|stdtitle           = 
+|stadium            = [[Juventus Stadium]]
+|league             = [[Serie A]]
+|league result      = ''[[2026–27 Serie A|7th]]''
+|cup1               = [[Coppa Italia]]
+|cup1 result        = ''[[2026–27 Coppa Italia|Round of 16]]''
+|cup2               = [[UEFA Europa League]]
+|cup2 result        = ''[[2026–27 UEFA Europa League|League phase]]''
+|league topscorer   = <br>[[Gleison Bremer|Bremer]]<br>[[Edon Zhegrova]]<br>(2 each)
+|season topscorer   = <br>[[Randal Kolo Muani]]<br>[[Nick Woltemade]]<br>(3 each)
+|highest attendance = 41,691 vs [[SSC Napoli|Napoli]]<br/>{{nowrap|(1 November 2026, Serie A)}}
+|lowest attendance  = 40,271 vs [[Parma Calcio 1913|Parma]]<br/>{{nowrap|(29 August 2026, Serie A)}}
+|average attendance = 40,828
+|largest win        = Juventus 5–0 [[NEC Nijmegen|NEC]]
+|largest loss       = Juventus 0–3 [[SS Lazio|Lazio]]
+|pattern_la1        = _juventus2627h
+|pattern_b1         = _juventus2627h
+|pattern_ra1        = _juventus2627h
+|pattern_sh1        = _juventus2627h
+|pattern_so1        = _juventus2627hl
+|leftarm1           = FFFFFF
+|body1              = FFFFFF
+|rightarm1          = FFFFFF
+|shorts1            = FFFFFF
+|socks1             = FFFFFF
+| pattern_la2 = _juventus2627a
+| pattern_b2 = _juventus2627a
+| pattern_ra2 = _juventus2627a
+| pattern_sh2 = _juventus2627a
+| pattern_so2 = _adidasonblackl
+| leftarm2 = ffa8c6
+| body2 = ffa8c6
+| rightarm2 = ffa8c6
+| shorts2 = 000000
+| socks2 = ffa8c6
+| pattern_la3 = _juventus2627t
+| pattern_b3 = _juventus2627t
+| pattern_ra3 = _juventus2627t
+| pattern_sh3 = _rmcf0910t
+| pattern_so3 = _galaxy11t
+| leftarm3 =
+| body3 =
+| rightarm3 =
+| shorts3 = 000000
+| socks3 = 000000
+|prevseason         = [[2025–26 Juventus FC season|2025–26]]
+|nextseason         = ''2027–28''
+|updated            = 1 November 2026
+}}
+The '''2026–27 season''' is [[Juventus FC|Juventus Football Club]]'s 129th season in existence and their 20th consecutive season in the top flight of [[Football in Italy|Italian football]]. In addition to the [[2026–27 Serie A|domestic league]], Juventus is participating in the [[2026–27 Coppa Italia|Coppa Italia]] and the [[2026–27 UEFA Europa League|UEFA Europa League]].
+
+== Players ==
+===Squad information===
+Players, appearances, goals and squad numbers last updated on 1 November 2026. Appearances and goals include all official competition matches.<ref>{{cite web|title=First Team Men|url=https://www.juventus.com/en/teams/first-team-men/squad/|publisher=Juventus FC|date=1 November 2026|access-date=1 November 2026}}</ref><br>Note: Flags indicate national team as has been defined under [[FIFA eligibility rules]]. Players may hold more than one non-FIFA nationality.
+{| class="wikitable sortable" style="text-align:left; font-size:90%; width:100%;"
+|-
+! style="background:#000; color:white; text-align:center;"| No.
+! style="background:#000; color:white; text-align:center;"| Player
+! style="background:#000; color:white; text-align:center;"| Nat.
+! style="background:#000; color:white; text-align:center;"| Position(s)
+! style="background:#000; color:white; text-align:center;"| Date of birth (age)
+! style="background:#000; color:white; text-align:center;"| Signed in
+! style="background:#000; color:white; text-align:center;"| Contract ends
+! style="background:#000; color:white; text-align:center;"| Signed from
+! style="background:#000; color:white; text-align:center;"| Transfer fee
+! style="background:#000; color:white; text-align:center;"| Apps.
+! style="background:#000; color:white; text-align:center;"| Goals
+|-
+! colspan=11 style="background:#dcdcdc; text-align:center;"| Goalkeepers
+|-
+|1
+|[[Kamil Grabara]]
+|{{flagicon|POL}}
+|[[Goalkeeper (association football)|GK]]
+| {{birth date and age|df=yes|1999|1|8}}
+|2026
+|2027
+|{{fbaicon|GER}} [[VfL Wolfsburg|Wolfsburg]] 
+|€0.7M (loan)<ref>{{cite news|access-date=25 August 2026 |date=25 August 2026 |language=en |title=Kamil Grabara is Bianconero!|url=https://www.juventus.com/en/news/articles/kamil-grabara-is-bianconero|publisher=Juventus}}</ref>
+|0
+|0
+|-
+| 23
+| [[Carlo Pinsoglio]]
+| {{flagicon|ITA}}
+| [[Goalkeeper (association football)|GK]]
+| {{Birth date and age|df=yes|1990|3|16}}
+| 2014
+| 2027<ref>{{cite news|url=https://www.juventus.com/en/news/articles/official-carlo-pinsoglio-renews-2027|title=Carlo Pinsoglio renews his contract until 2027|publisher=Juventus FC|date=26 February 2026}}</ref>
+| {{fbaicon|ITA}} [[LR Vicenza|Vicenza]]
+| €0.7M<ref>{{cite web|url=http://www.juventus.com/media/native/investor-relations-docs/italiano/bilanci/1314/Relazione+finanziaria+annuale+30_06_2014.pdf|title=Relazione finanziaria annuale al 30 giugno 2014|date=2 October 2014|access-date=7 August 2015|publisher=Juventus FC|language=it|archive-date=1 October 2015|archive-url=https://web.archive.org/web/20151001001720/http://www.juventus.com/media/native/investor-relations-docs/italiano/bilanci/1314/Relazione%2Bfinanziaria%2Bannuale%2B30_06_2014.pdf|url-status=dead}}</ref>
+|6
+|0
+|-
+|25
+|[[Guglielmo Vicario]]
+|{{flagicon|ITA}}
+|[[Goalkeeper (association football)|GK]]
+| {{birth date and age|df=yes|1996|10|7}}
+|2026
+|2027
+|{{fbaicon|ENG}} [[Tottenham Hotspur F.C.|Tottenham Hotspur]] 
+|Free (loan)<ref name="Vicario"/>
+|10
+|0
+|-
+|33
+|[[Neto (footballer, born 1989)|Neto]]
+|{{flagicon|BRA}}
+|[[Goalkeeper (association football)|GK]]
+| {{birth date and age|df=yes|1989|7|19}}
+|2026
+|2027
+|{{fbaicon|BRA}} [[Botafogo FR|Botafogo]] 
+|Free<ref name="Neto"/>
+|22
+|0
+|-
+! colspan=11 style="background:#dcdcdc; text-align:center;"|Defenders
+|-
+| 2
+| [[Zeki Çelik]]
+| {{flagicon|TUR}}
+| [[Right back (association football)|RB]] / [[Right wing-back|RWB]] / [[Left-back|LB]] / [[Left wing-back|LWB]] / [[Centre-back|CB]]
+| {{birth date and age|df=yes|1997|2|17}}
+| 2026
+| 2029
+| {{fbaicon|ITA}} [[AS Roma|Roma]]
+| Free<ref>{{cite news |title=Zeki Celik signs for Juventus! |url=https://www.juventus.com/en/news/articles/zeki-celik-signs-for-juventus |date=16 July 2026 |access-date=16 July 2026 |publisher=Juventus FC}}</ref>
+|6
+|1
+|-
+| 3
+| [[Gleison Bremer|Bremer]]
+| {{flagicon|BRA}}
+| [[Centre back|CB]] 
+| {{birth date and age|df=yes|1997|3|18}}
+| 2022
+| 2029<ref>{{cite news|url=https://www.juventus.com/en/news/articles/gleison-bremer-renews-2029|title=Gleison Bremer renews!|date=5 August 2024|access-date=5 August 2024|publisher=Juventus FC}}</ref>
+| {{fbaicon|ITA}} [[Torino FC|Torino]]
+| €41M<ref>{{cite news|url=https://www.juventus.com/en/news/articles/bremer-is-now-a-juventus-player|title=Bremer is now a Juventus player!|publisher=Juventus FC|date=20 July 2022|access-date=28 July 2022}}</ref>
+|132
+|14
+|-
+| 4
+| [[Federico Gatti]]
+| {{flagicon|ITA}}
+| [[Centre back|CB]]
+| {{birth date and age|df=yes|1998|6|24}}
+| 2022
+| 2030<ref>{{cite news|url=https://www.juventus.com/en/news/articles/federico-gatti-extends-until-2030|title=Federico Gatti extends until 2030!|publisher=Juventus FC|date=23 July 2025}}</ref>
+| {{fbaicon|ITA}} [[Frosinone Calcio|Frosinone]]
+| €5.4M<ref>{{cite news|url=https://www.juventus.com/it/news/articoli/federico-gatti-e-un-giocatore-della-juventus|title=Federico Gatti è un giocatore della Juventus!|language=it|publisher=Juventus FC|date=31 January 2022|access-date=31 January 2022}}</ref>
+|142
+|11
+|-
+| 6
+| [[Lloyd Kelly]]
+| {{flagicon|ENG}}
+| [[Centre back|CB]] / [[Left back (association football)|LB]]
+| {{birth date and age|df=yes|1998|10|6}}
+| 2025
+| 2029 
+| {{fbaicon|ENG}} [[Newcastle United F.C.|Newcastle]] 
+| €17.2M<ref name="Kelly">{{cite news|title= Lloyd Kelly is already a Juventus player: permanent move not tied to Champions League |url= https://www.newcastleunited.com/en/news/newcastle-united-announces-2025-26-retained-list |date=6 June 2025| access-date=10 June 2025 |publisher= Newcastle Utd F.C.}}</ref>
+|71
+|2
+|-
+| 15
+| [[Pierre Kalulu]]
+| {{flagicon|FRA}}
+| [[Centre back|CB]] / [[Right back (association football)|RB]]
+| {{birth date and age|df=yes|2000|6|5}}
+| 2024
+| 2029
+| {{fbaicon|ITA}} [[AC Milan|Milan]]
+| €14.3M<ref>{{cite news|url=https://www.juventus.com/en/news/articles/happy-birthday-pierre-kalulu-2025|title=A perfect birthday - Pierre Kalulu remains Bianconero! |publisher=Juventus FC|date=5 June 2025|access-date=5 June 2025}}</ref>
+|102
+|3
+|-
+| 20
+| [[Andrea Cambiaso]]
+| {{flagicon|ITA}}
+| [[Right back (association football)|RB]] / [[Right wing-back|RWB]] / [[Left back (association football)|LB]] / [[Left wing-back|LWB]]
+| {{birth date and age|df=yes|2000|2|20}}
+| 2022
+| 2029<ref>{{cite news|url=https://www.juventus.com/it/news/articoli/juventus-andrea-cambiaso-rinnovo-2029|date=24 May 2024|title=Ufficiale {{!}} Andrea Cambiaso rinnova fino al 2029!|publisher=Juventus FC|language=it|access-date=24 May 2024}}</ref>
+| {{fbaicon|ITA}} [[Genoa CFC|Genoa]]
+| €8.8M<ref>{{cite news|url=https://www.juventus.com/it/news/articoli/cambiaso-e-un-nuovo-giocatore-della-juventus|date=14 July 2022|title=Cambiaso è un nuovo giocatore della Juventus|publisher=Juventus FC|language=it|access-date=14 July 2022}}</ref>
+|141
+|8
+|-
+| 24
+| [[Daniele Rugani]]
+| {{flagicon|ITA}}
+| [[Centre back|CB]]
+| {{Birth date and age|df=yes|1994|7|29}}
+| 2015
+| 2028<ref>{{cite news|url=https://www.juventus.com/en/news/articles/daniele-rugani-renews-until-2028-20-10-25|title=Daniele Rugani renews until 2028!|publisher=Juventus FC|language=it|date=20 October 2025|access-date=20 October 2025}}</ref>
+| {{fbaicon|ITA}} [[Empoli FC|Empoli]]
+| €3.5M<ref>{{cite news|url=http://www.juventus.com/en/news/news/2014/juventus-complete-full-rugani-purchase.php|title=Juventus complete full Rugani purchase|publisher=Juventus FC|access-date=26 April 2016}}</ref>
+|157
+|11
+|-
+| 26
+| [[Jhon Lucumí]]
+| {{flagicon|COL}}
+| [[Centre-back|CB]]
+| {{birth date and age|df=yes|1998|06|26}}
+| 2026
+| 2030
+| {{fbaicon|ITA}} [[Bologna FC 1909|Bologna]]
+| €19.5M<ref>{{cite web|url=https://www.juventus.com/en/news/articles/jhon-lucumi-joins-juventus|title=Jhon Lucumi joins Juventus!|work=Juventus FC|date=August 17, 2026|access-date=August 17, 2026}}</ref>
+|9
+|0
+|-
+| 32
+| [[Juan Cabal]]
+| {{flagicon|COL}}
+| [[Centre back|CB]] / [[Left back (association football)|LB]]
+| {{birth date and age|df=yes|2001|1|8}}
+| 2024
+| 2029
+| {{fbaicon|ITA}} [[Hellas Verona FC|Hellas Verona]]
+| €12.8M<ref name="Jcsign">{{cite news|url=https://www.juventus.com/en/news/articles/juan-cabal-signs-for-juventus|title=Juan Cabal signs for Juventus!|publisher=Juventus FC|date=18 July 2024|access-date=18 July 2024}}</ref>
+|31
+|2
+|-
+! colspan=11 style="background:#dcdcdc; text-align:center;"| Midfielders
+|-
+| 5
+| [[Manuel Locatelli]] ([[Captain (association football)|c]])
+| {{flagicon|ITA}}
+| [[Central midfielder|CM]] / [[Defensive Midfielder|DM]]
+| {{birth date and age|df=yes|1998|1|8}}
+| 2021
+| 2030<ref>{{cite news|url=https://www.juventus.com/en/news/articles/manuel-locatelli-rinnovo-juventus-2030|title=Manuel Locatelli extends his contract with Juventus until 2030|publisher=Juventus FC|date=17 April 2026|access-date=17 April 2026}}</ref>
+| {{fbaicon|ITA}} [[US Sassuolo Calcio|Sassuolo]] 
+| €30M<ref>{{cite news|url=https://www.juventus.com/it/news/articoli/ufficiale-locatelli-e-bianconero|title=Ufficiale: Locatelli è bianconero!|language=it|publisher=Juventus FC|date=18 August 2021|access-date=18 August 2021}}</ref>
+|232
+|9
+|-
+| 8
+| [[Teun Koopmeiners]]
+| {{flagicon|NED}}
+| [[Central midfielder|CM]] / [[Defensive Midfielder|DM]] / [[Midfielder#Attacking midfielder|AM]]
+| {{birth date and age|df=yes|1998|2|28}}
+| 2024
+| 2029
+| {{fbaicon|ITA}} [[Atalanta BC|Atalanta]] 
+| €54.7M<ref name="Koopmeiners">{{cite news|url=https://www.juventus.com/en/news/articles/teun-koopmeiners-signs-for-juventus|title=Teun Koopmeiners signs for Juventus!|publisher=Juventus FC|date=28 August 2024|access-date=28 August 2024}}</ref>
+|98
+|8
+|-
+| 12
+| [[Douglas Luiz]]
+| {{flagicon|BRA}}
+| [[Central midfielder|CM]]
+| {{birth date and age|df=yes|1998|5|9}}
+| 2024
+| 2029
+| {{fbaicon|ENG}} [[Aston Villa F.C.|Aston Villa]]
+| €50M<ref name="Dljoin">{{cite news|url=https://www.juventus.com/en/news/articles/douglas-luiz-joins-juventus|title=Douglas Luiz joins Juventus!|publisher=Juventus FC|date=30 June 2024|access-date=30 June 2024}}</ref>
+|37
+|1
+|-
+| 17
+| [[Kerim Alajbegović]]
+| {{flagicon|BIH}}
+| [[Midfielder#Attacking midfielder|AM]]/[[Forward (association football)#Winger|LW]]
+| {{birth date and age|df=yes|2007|9|21}}
+| 2026
+| 2031
+| {{fbaicon|GER}} [[Bayer 04 Leverkusen|Bayer Leverkusen]]
+| €32M<ref name="Alajbegović"/>
+|9
+|1
+|-
+| 19
+| [[Khéphren Thuram]]
+| {{flagicon|FRA}}
+| [[Central midfielder|CM]]
+| {{birth date and age|df=yes|2001|3|26}}
+| 2024
+| 2029
+| {{fbaicon|FRA}} [[OGC Nice|Nice]]
+|€20M<ref name="juventus.com">{{cite news|url=https://www.juventus.com/en/news/articles/khephren-thuram-is-a-juventus-player|title=Khéphren Thuram is a Juventus player!|publisher=Juventus FC|date=10 July 2024|access-date=10 July 2024}}</ref>
+|96
+|9
+|-
+| 22
+| [[Weston McKennie]]
+| {{flagicon|USA}}
+| [[Central midfielder|CM]] / [[Right back (association football)|RB]] / [[Right wing-back|RWB]]
+| {{birth date and age|df=yes|1998|8|28}}
+| 2020
+| 2030<ref>{{cite news|url=https://www.juventus.com/en/news/articles/weston-mckennie-extends-his-contract-with-juventus-until-2030|title=Weston McKennie extends his contract with Juventus until 2030|publisher=Juventus FC|date=2 March 2026|access-date=2 March 2026}}</ref>
+| {{fbaicon|GER}} [[FC Schalke 04|Schalke 04]]
+|€22M<ref>{{cite news |date=12 July 2022 |title=Juve Primavera, doppio colpo Ufficiale: presi Yildiz e Srdoc. La nota del club |language=it |website=Juventus News 24 |url=https://www.juventusnews24.com/juve-primavera-yildiz-srdoc-ufficiale-comunicato-club-dettagli-cifre/ |access-date=12 July 2022}}</ref>
+|239
+|28
+|-
+|29
+|[[Pape Matar Sarr]]
+|{{flagicon|SEN}}
+|[[Central midfielder|CM]] / [[Midfielder#Attacking midfielder|AM]]
+| {{birth date and age|df=yes|2002|9|14}}
+|2026
+|2027
+|{{fbaicon|ENG}} [[Tottenham Hotspur F.C.|Tottenham Hotspur]]
+|€2.8M (loan)<ref>{{cite news|url=https://www.juventus.com/en/news/articles/pape-matar-sarr-is-bianconero-01-09-26|title=Pape Matar Sarr is Bianconero!|publisher=Juventus FC|date=1 September 2026|access-date=1 September 2026}}</ref>
+|6
+|0
+|-
+| 31
+| [[Nico González (footballer, born 1998)|Nico González]]
+| {{flagicon|ARG}}
+| [[Midfielder#Attacking midfielder|AM]] / [[Forward (association football)#Winger|RW]] / [[Forward (association football)#Winger|LW]]
+| {{birth date and age|df=yes|1998|4|6}}
+| 2024
+| 2030<ref>{{cite web|url=https://www.juventus.com/en/news/articles/nico-gonzalez-renews-until-2030|title=Nico Gonzalez renews until 2030!|publisher=Juventus FC|date=9 October 2026|access-date=9 October 2026}}</ref>
+| {{fbaicon|ITA}} [[ACF Fiorentina|Fiorentina]]
+| €28.1M<ref name="González">{{cite news|url=https://www.juventus.com/en/news/articles/nico-gonzalez-is-bianconero|title=Nico Gonzalez is Bianconero!|publisher=Juventus FC|date=25 August 2024|access-date=25 August 2024}}</ref>
+|46
+|6
+|-
+|41
+|[[Augusto Owusu]]
+|{{flagicon|ITA}}
+| [[Central midfielder|CM]] / [[Defensive Midfielder|DM]]
+| {{birth date and age|df=yes|2005|1|28}}
+|2024
+|2028
+| {{fbaicon|ITA}} [[Juventus FC Youth Sector|Youth Sector]]
+| N/A
+|0
+|0
+|-
+! colspan="11" style="background:#dcdcdc; text-align:center;" | Forwards
+|-
+| 7
+| [[Francisco Conceição]]
+| {{flagicon|POR}}
+| [[Forward (association football)#Winger|RW]] / [[Forward (association football)#Winger|LW]]
+| {{birth date and age|df=yes|2002|12|14}}
+| 2024
+| 2030
+| {{fbaicon|POR}} [[FC Porto|Porto]]
+| €32M<ref name="Francisco Conceicao signs a permane">{{cite news|url=https://www.juventus.com/en/news/articles/francisco-conceicao-signs-a-permanent-deal|title=Francisco Conceicao signs a permanent deal|publisher=Juventus FC|date=16 July 2025|access-date=16 July 2025}}</ref>
+|88
+|12
+|-
+| 9
+| [[Randal Kolo Muani]]
+| {{flagicon|FRA}}
+| [[Striker (association football)|ST]]
+| {{birth date and age|df=yes|1998|12|5}}
+| 2026
+| 2031
+| {{fbaicon|FRA}} [[Paris Saint-Germain FC|Paris Saint-Germain]]
+| €41.2M<ref name="Kolo Muani" />
+|32
+|12
+|-
+| 10
+| [[Kenan Yıldız]]
+| {{flagicon|TUR}}
+| [[Attacking midfielder|AM]]
+| {{Birth date and age|df=yes|2005|5|4}}
+| 2023
+| 2030<ref>{{cite news|url=https://www.juventus.com/en/news/articles/kenan-yildiz-renews-until-2030|title=Kenan Yildiz renews until 2030|date=7 February 2026|access-date=7 February 2026|publisher=Juventus FC}}</ref>
+| {{fbaicon|ITA}} [[Juventus FC Youth Sector|Youth Sector]]
+| N/A
+|132
+|27
+|-
+| 11
+| [[Edon Zhegrova]]
+| {{flagicon|KOS}}
+| [[Forward (association football)#Winger|RW]] / [[Forward (association football)#Winger|LW]]
+| {{Birth date and age|df=yes|1999|3|31}}
+| 2025 
+| 2030
+| {{fbaicon|FRA}} [[Lille OSC|Lille]] 
+| €15.5M<ref name="Zhegrova">{{cite news|url=https://www.juventus.com/en/news/articles/zhegrova-is-bianconero|title=Zhegrova is Bianconero!|publisher=Juventus FC|date=1 September 2025|access-date=1 September 2025}}</ref>
+|33
+|0
+|-
+| 13
+| [[Jérémie Boga]]
+| {{flagicon|CIV}}
+| [[Left winger (association football)|LW]] / [[Attacking midfielder|AM]]
+| {{Birth date and age|df=yes|1997|1|3}}
+| 2026
+| 2029
+| {{fbaicon|FRA}} [[OGC Nice|Nice]]
+| €4.8M<ref>{{cite news|url=https://www.juventus.com/en/news/articles/jeremie-boga-joins-permanently-15-06-2026|title=Jeremie Boga joins permanently!|publisher=Juventus FC|date=15 June 2026|access-date=15 June 2026}}</ref>
+|24
+|5
+|-
+| 14
+| [[Arkadiusz Milik]]
+| {{flagicon|POL}}
+| [[Striker (association football)|ST]]
+| {{birth date and age|df=yes|1994|2|28}}
+| 2022
+| 2027<ref>{{cite web|url=https://www.juventus.com/en/news/articles/arkadiusz-milik-extends-contract-with-juventus-until-2027|title=Arkadiusz Milik extends contract with Juventus until 2027|publisher=Juventus FC|date=30 April 2025|access-date=1 May 2025}}</ref>
+| {{fbaicon|FRA}} [[Olympique de Marseille|Marseille]]
+| €6.3M<ref>{{cite news|url=https://www.juventus.com/en/news/articles/official-milik-continues-at-juventus|title=Official: Milik continues at Juventus|language=it|publisher=Juventus FC|date=21 June 2023|access-date=21 June 2023}}</ref>
+|77
+|17
+|-
+| 18
+| [[Jeff Ekhator]]
+| {{flagicon|ITA}}
+| [[Striker (association football)|ST]] / [[Forward (association football)#Winger|RW]]
+| {{Birth date and age|df=yes|2006|11|11}}
+| 2026
+| 2031
+| {{fbaicon|ITA}} [[Genoa CFC|Genoa]]
+| €16.4M<ref>{{cite news|url=https://www.juventus.com/en/news/articles/jeff-ekhator-signs-for-juventus-01-07-26|title=Jeff Ekhator signs for Juventus|publisher=Juventus FC|date=1 July 2026|access-date=1 July 2026}}</ref>
+|0
+|0
+|-
+|27
+|[[Nick Woltemade]]
+|{{flagicon|GER}}
+|[[Striker (association football)|ST]] / [[Midfielder#Attacking midfielder|AM]]
+| {{birth date and age|df=yes|2002|2|14}}
+|2026
+|2027
+|{{fbaicon|ENG}} [[Newcastle United F.C.|Newcastle United]]
+|€3.6M (loan)<ref name=":0">{{cite news|url=https://www.juventus.com/en/news/articles/nick-woltemade-joins-01-09-26|title=Nick Woltemade joins!|publisher=Juventus FC|date=1 September 2026|access-date=1 September 2026}}</ref>
+|8
+|2
+|-
+|45
+|[[Justin Oboavwoduo]]
+|{{flagicon|ENG}}
+|[[Striker (association football)|ST]]
+| {{birth date and age|df=yes|2006|8|23}}
+|2026
+|2028
+|{{fbaicon|ENG}} [[Manchester City]]
+|Free<ref>{{cite news|url=https://www.juventus.com/it/news/articoli/next-gen-justin-oboavwoduo-e-un-nuovo-giocatore-della-juventus|title=Next Gen: Justin Oboavwoduo è un nuovo giocatore della Juventus|publisher=Juventus FC|date=2 February 2026|access-date=2 February 2026|language=it}}</ref>
+|0
+|0
+|-
+! colspan=11 style="background:#dcdcdc; text-align:center;"| Players transferred during the season
+|-
+| 1
+| [[Mattia Perin]]
+| {{flagicon|ITA}}
+| [[Goalkeeper (association football)|GK]]
+| {{Birth date and age|df=yes|1992|11|10}}
+| 2018
+| 2027<ref>{{cite news|title=Ufficiale {{!}} Perin rinnova fino al 2027|url=https://www.juventus.com/it/news/articoli/ufficiale-perin-rinnova-fino-al-2027|date=23 October 2024|access-date=23 October 2024|publisher=Juventus FC|language=it}}</ref>
+| {{fbaicon|ITA}} [[Genoa CFC|Genoa]]
+| €12M
+|70
+|0
+|-
+| 16
+| [[Michele Di Gregorio]]
+| {{flagicon|ITA}}
+| [[Goalkeeper (association football)|GK]]
+| {{Birth date and age|df=yes|1997|7|27}}
+| 2024
+| 2029
+| {{fbaicon|ITA}} [[AC Monza|Monza]]
+| €14.3M<ref name="Juventus FC">{{cite news|url=https://www.juventus.com/en/news/articles/michele-di-gregorio-is-a-juventus-player|title=Michele Di Gregorio is a Juventus player|publisher=Juventus FC|date=5 July 2024|access-date=6 July 2024}}</ref>
+|84
+|0
+|-
+| 21
+| [[Fabio Miretti]]
+| {{flagicon|ITA}}
+| [[Central midfielder|CM]] / [[Attacking midfielder|AM]]
+| {{Birth date and age|df=yes|2003|8|3}}
+| 2021
+| 2028<ref>{{cite news|url=https://www.juventus.com/en/news/articles/fabio-miretti-renews-with-juventus|title=Fabio Miretti renews with Juventus!|publisher=Juventus FC|date=17 July 2024|access-date=17 July 2024}}</ref>
+| {{fbaicon|ITA}} [[Juventus FC Youth Sector|Youth Sector]]
+| N/A
+|106
+|3
+|-
+| 30
+| [[Jonathan David]]
+| {{flagicon|CAN}}
+| [[Striker (association football)|ST]]
+| {{birth date and age|df=yes|2000|2|16}}
+| 2025
+| 2030
+| {{fbaicon|FRA}} [[Lille OSC|Lille]]
+| Free<ref>{{cite news|url=https://www.juventus.com/en/news/articles/jonathan-david-joins-juventus|title=Jonathan David joins Juventus|publisher=Juventus FC|date=4 July 2025|access-date=4 July 2025}}</ref>
+|47
+|8
+|}
+
+== Transfers ==
+=== Summer 2026 ===
+====In====
+{| class="wikitable sortable"
+|-
+! style="width:80px;"| Date
+! style="width:20px;"| {{tooltip|Pos.|Position}}
+! style="width:190px;"| Player
+! style="width:20px;"| {{tooltip|Age|Age on the day of the transfer}}
+! style="width:180px;"| Moving from
+! style="width:120px;" class="unsortable"| Fee
+! style="width:250px;" class="unsortable"| Notes
+! style="width:20px;"| Source
+|-
+| {{dts|format=dmy|2026|7|1}}
+| align=center| {{sortname||DF|Defender (association football)}}
+| {{flagicon|ITA}} [[Daniele Rugani]]
+| align=center| {{Age|1994|7|29|2026|7|1}}
+|align=left| {{fbaicon|ITA}} [[ACF Fiorentina|Fiorentina]]
+| align="center"  {{N/A}}
+| align="center" | End of loan
+|<ref>{{cite news|url=https://www.juventus.com/en/news/articles/squad-list-juventus-summer-tour-powered-by-jeep-2026|title=Squad List: Juventus Summer Tour powered by Jeep|publisher=Juventus FC|date=2 August 2026|access-date=2 August 2026}}</ref>
+|-
+|{{dts|format=dmy|2026|7|1}}
+| align=center| {{sortname||MF|Midfielder (association football)}}
+|{{flagicon|BRA}} [[Douglas Luiz]]
+| align="center" | {{Age|1998|5|9|2026|7|1}}
+|align=left| {{fbaicon|ENG}} [[Aston Villa]]
+| align="center"  {{N/A}}
+| align="center" | End of loan
+|<ref>{{cite news|url=https://www.juventus.com/en/news/articles/squad-list-juventus-summer-tour-powered-by-jeep-2026|title=Squad List: Juventus Summer Tour powered by Jeep|publisher=Juventus FC|date=2 August 2026|access-date=2 August 2026}}</ref>
+|-
+|{{dts|format=dmy|2026|7|1}}
+| align=center| {{sortname||MF|Midfielder (association football)}}
+|{{flagicon|ARG}} [[Nicolás González (footballer, born 1998)|Nico González]]
+| align="center" | {{Age|1998|4|6|2026|7|1}}
+|align=left| {{fbaicon|ESP}} [[Atlético Madrid]]
+| align="center" {{N/A}}
+| align="center" |End of loan 
+|<ref>{{cite web|url=https://www.juventus.com/en/news/articles/nico-gonzalez-renews-until-2030|title=Nico Gonzalez renews until 2030!|publisher=Juventus FC|date=9 October 2026|access-date=9 October 2026}}</ref>
+|-
+| {{dts|format=dmy|2026|7|1}}
+| align="center" | {{sortname||FW|Forward (association football)}}
+| {{flagicon|ITA}} [[Jeff Ekhator]]
+| align=center| {{Age|2006|11|11|2026|7|1}}
+|align=left|{{fbaicon|ITA}} [[Genoa CFC|Genoa]]
+| align=center| €16.4M 
+| align=center| Variables for €2M and for future sale
+|<ref>{{cite news|url=https://www.juventus.com/en/news/articles/jeff-ekhator-signs-for-juventus-01-07-26|title=Jeff Ekhator signs for Juventus|publisher=Juventus FC|date=1 July 2026|access-date=1 July 2026}}</ref>
+|-
+| {{dts|format=dmy|2026|7|16}}
+|align=center| [[Defender (association football)|DF]]
+| {{flagicon|TUR}} [[Zeki Çelik]]
+| align=center| {{Age|1997|2|17|2026|7|16}}
+| {{fbaicon|ITA}} [[AS Roma|Roma]]
+| align=center| Free
+| align=center| End of contract
+|<ref>{{cite news |title=Zeki Celik signs for Juventus! |url=https://www.juventus.com/en/news/articles/zeki-celik-signs-for-juventus |date=16 July 2026 |access-date=16 July 2026 |publisher=Juventus FC}}</ref>
+|-
+| {{dts|format=dmy|2026|8|2}}
+| align=center| {{sortname||MF|Midfielder (association football)}}
+| {{flagicon|BIH}} [[Kerim Alajbegović]]
+| align=center| {{Age|2007|9|21|2026|2|8}}
+| {{fbaicon|GER}} [[Bayer 04 Leverkusen|Bayer Leverkusen]]
+| align=center| €32M
+| align=center| Variables for €5M
+|<ref name="Alajbegović">{{cite web |title=Kerim Alajbegovic joins!|url=https://www.juventus.com/en/news/articles/kerim-alajbegovic-joins |publisher=Juventus FC |access-date=2 August 2026 |date=2 August 2026}}</ref>
+|-
+| {{dts|format=dmy|2026|8|2}}
+|align=center| [[Forward (association football)|FW]]
+| {{flagicon|FRA}} [[Randal Kolo Muani]]
+| align=center| {{Age|1998|12|5|2026|2|8}}
+| {{fbaicon|FRA}} [[Paris Saint Germain]]
+| align=center| €41.2M
+| align=center| Variables for €12M
+|<ref name="Kolo Muani">{{cite web |title=Randal Kolo Muani returns! |url=https://www.juventus.com/en/news/articles/randal-kolo-muani-returns |publisher=Juventus FC |access-date=2 August 2026 |language=en |date=2 August 2026}}</ref>
+|-
+| {{dts|format=dmy|2026|8|17}}
+|align=center| [[Defender (association football)|DF]]
+| {{flagicon|COL}} [[Jhon Lucumí]]
+| align=center| {{Age|1998|06|28|2026|8|17}}
+| {{fbaicon|ITA}} [[Bologna FC 1909|Bologna]]
+| align=center| €20.1M
+| align=center| Variables for €2M
+| <ref>{{cite web|url=https://www.juventus.com/en/news/articles/jhon-lucumi-joins-juventus|title=Jhon Lucumi joins Juventus!|work=Juventus FC|date=August 17, 2026|access-date=August 17, 2026}}</ref>
+|-
+| {{dts|format=dmy|2026|8|18}}
+| align="center" |[[Goalkeeper (association football)|GK]]
+|{{flagicon|ITA}} [[Guglielmo Vicario]]
+| align="center" |{{Age|1996|10|7|2026|8|18}}
+|{{fbaicon|ENG}} [[Tottenham Hotspur F.C.|Tottenham Hotspur]]
+| align="center" {{N/A}}
+| align="center" |On loan until June 2027 with option to buy for €8M and variables for €2M
+|<ref name="Vicario">{{cite news|access-date=18 August 2026 |date=18 August 2026 |language=en |title=Guglielmo Vicario is Bianconero! |url=https://www.juventus.com/en/news/articles/guglielmo-vicario-is-bianconerottps://www.tottenhamhotspur.com/news/1086109/juventus-loan-for-vicario|publisher=Juventus}}</ref>
+|-
+| {{dts|format=dmy|2026|8|25}}
+| align="center" |[[Goalkeeper (association football)|GK]]
+|{{flagicon|POL}} [[Kamil Grabara]]
+| align="center" |{{Age|1999|1|8|2026|8|25}}
+|{{fbaicon|GER}} [[VfL Wolfsburg]]
+| align="center" |€0.7M
+| align="center" |On loan until June 2027 with option to buy for €11.5M and varibles for €0.3M
+|<ref>{{cite news|access-date=25 August 2026 |date=25 August 2026 |language=en |title=Kamil Grabara is Bianconero!|url=https://www.juventus.com/en/news/articles/kamil-grabara-is-bianconero|publisher=Juventus}}</ref>
+|-
+|{{dts|format=dmy|2026|9|1}}
+| align=center| {{sortname||MF|Midfielder (association football)}}
+|{{flagicon|SEN}} [[Pape Matar Sarr]]
+| align="center" | {{Age|2002|9|14|2026|9|1}}
+|align=left| {{fbaicon|ENG}} [[Tottenham Hotspur F.C.|Tottenham Hotspur]]
+| align="center" |€2.8M
+| align="center" |On loan until June 2027 with option to buy for €27.5M 
+|<ref>{{cite news|url=https://www.juventus.com/en/news/articles/pape-matar-sarr-is-bianconero-01-09-26|title=Pape Matar Sarr is Bianconero!|publisher=Juventus FC|date=1 September 2026|access-date=1 September 2026}}</ref>
+|-
+|{{dts|format=dmy|2026|9|1}}
+|align=center| [[Forward (association football)|FW]]
+|{{flagicon|GER}} [[Nick Woltemade]]
+| align="center" | {{Age|2002|2|14|2026|9|1}}
+|align=left| {{fbaicon|ENG}} [[Newcastle United F.C.|Newcastle United]]
+| align="center" |€3.6M
+| align="center" |On loan until June 2027 and variables for €0.5M
+|<ref name=":0">{{cite news|url=https://www.juventus.com/en/news/articles/nick-woltemade-joins-01-09-26|title=Nick Woltemade joins!|publisher=Juventus FC|date=1 September 2026|access-date=1 September 2026}}</ref>
+|-
+| {{dts|format=dmy|2026|9|28}}
+| align="center" |[[Goalkeeper (association football)|GK]]
+|{{flagicon|BRA}} [[Neto (footballer, born 1989)|Neto]]
+| align="center" |{{Age|1989|7|19|2026|9|28}}
+|{{fbaicon|BRA}} [[Botafogo FR]]
+| align="center" |Free
+| align="center" |End of contract
+|<ref name="Neto">{{cite news|url=https://www.juventus.com/en/news/articles/official-neto-is-a-juventus-player|title=Official: Neto is a Juventus player|publisher=Juventus FC|date=28 September 2026|access-date=2 October 2026}}</ref>
+|}
+
+====Out====
+{| class="wikitable sortable"
+|-
+! style="width:80px;"| Date
+! style="width:20px;"| {{tooltip|Pos.|Position}}
+! style="width:190px;"| Player
+! style="width:20px;"| {{tooltip|Age|Age on the day of the transfer}}
+! style="width:180px;"| Moving to
+! style="width:120px;" class="unsortable"| Fee
+! style="width:250px;" class="unsortable"| Notes
+! style="width:20px;"| Source
+|-
+| {{dts|format=dmy|2026|6|30}}
+| align="center" | {{sortname||DF|Defender (association football)}}
+| {{flagicon|SWE}} [[Emil Holm (footballer)|Emil Holm]]
+| align=center| {{Age|2000|5|13|2026|6|30}}
+|align=left| {{fbaicon|ITA}} [[Bologna FC|Bologna]]
+| align=center {{N/A}}
+| align=center| End of loan
+|<ref name="Holm">{{cite news |url=https://www.juventus.com/en/news/articles/emil-holm-joins-juventus-on-loan-02-02-26|title=Emil Holm joins Juventus on loan|publisher=Juventus FC|date=2 February 2026|access-date=2 February 2026}}</ref>
+|-
+| {{dts|format=dmy|2026|7|28}}
+| align="center" | {{sortname||FW|Forward (association football)}}
+| {{flagicon|BEL}} [[Loïs Openda]]
+| align=center| {{Age|2000|6|16|2026|7|28}}
+|align=left| {{fbaicon|FRA}} [[Olympique Lyonnais|Lyon]]
+| align=center| €3.5M 
+| align=center| On loan until June 2027
+|<ref name="Openda">{{cite news |url=https://www.juventus.com/en/news/articles/lyon-loan-for-lois-openda|title=Lois Openda loaned to Lyon|publisher=Juventus FC|date=28 July 2026|access-date=31 July 2026}}</ref>
+|-
+| {{dts|format=dmy|2026|8|3}}
+| align="center" | {{sortname||MF|Midfielder (association football)}}
+| {{flagicon|MNE}} [[Vasilije Adžić]]
+| align=center| {{Age|2006|5|12|2026|8|3}}
+|align=left| {{fbaicon|ITA}} [[US Sassuolo Calcio|Sassuolo]]
+| align=center| €0.5M 
+| align=center| On loan until June 2027 with an option to buy for €12M and buy-back option for €13.7M
+|<ref name="Vasilije Adžić">{{cite news |url=https://www.sassuolocalcio.it/en/featured/vasilije-adzic-welcome-to-the-neroverdi/|title=Vasilije Adžić, welcome to the neroverdi!|publisher=Sassuolo Calcio|date=3 August 2026|access-date=3 August 2026}}</ref>
+|-
+|{{dts|2026|8|6|format=dmy}}
+| align="center" |{{sortname||MF|Midfielder (association football)}}
+|{{flagicon|SRB}} [[Filip Kostić]]
+| align="center" |{{Age|1992|11|1|2026|8|6}}
+| align=left| {{fbicon|NED}} [[PSV Eindhoven]]
+| align="center" | Free
+| align="center" | End of contract
+|<ref>{{cite news |url=https://www.psv.nl/en/media/artikel/transfer-psv-contracteert-filip-kostic|title=Transfer: PSV Signs Filip Kostić|publisher=Sassuolo Calcio|date=6 August 2026|access-date=6 August 2026}}</ref>
+|-
+| {{dts|format=dmy|2026|8|12}}
+| align=center| {{sortname||FW|Forward (association football)}}
+| {{flagicon|SRB}} [[Dušan Vlahović]]
+| align="center" | {{Age|2000|1|28|2026|8|12}}
+| align=left| {{fbicon|TUR}} [[Beşiktaş J.K.|Beşiktaş]] 
+| align="center" |Free
+| align=center|End of contract
+|<ref>{{cite web|url=https://www.nytimes.com/athletic/7257911/2026/08/12/dusan-vlahovic-besiktas-transfer-juventus/|work=[[The Athletic]]|title=Dusan Vlahovic agrees Besiktas move as free agent after Juventus exit|first=Colin|last=Millar|date=August 12, 2026|access-date=August 12, 2026}}</ref>
+|-
+|{{dts|format=dmy|2026|8|24}}
+| align=center| {{sortname||GK|Goalkeeper (association football)}}
+|{{flagicon|ITA}} [[Mattia Perin]]
+| align="center" | {{Age|1992|11|10|2026|8|24}}
+|align=left| {{fbaicon|ITA}} [[Palermo FC|Palermo]]
+| align="center" |€0.4M
+| align=center| 
+|<ref>{{cite web|url=https://www.goal.com/en/news/juventus-perin-signs-for-palermo-the-details-of-the-contract-and-how-much-the-bianconeri-club-save/bltd95cb7f9a1e874ef |work=Goal|title=Juventus, Perin signs for Palermo: the details of the contract and how much the Bianconeri club save|date=August 24, 2026|access-date=August 25, 2026}}</ref>
+|-
+|{{dts|format=dmy|2026|8|25}}
+| align=center| {{sortname||GK|Goalkeeper (association football)}}
+|{{flagicon|ITA}} [[Michele Di Gregorio]]
+| align="center" | {{Age|1997|7|27|2026|8|25}}
+|align=left| {{fbaicon|ENG}} [[AFC Bournemouth|Bournemouth]]
+| align="center" |€1.3M
+| align=center| On loan until June 2027 with an option to buy for €12.7M and variables for €0.8M and €1.5M
+|<ref>{{cite web|url=https://www.afcb.co.uk/news/2026/august/25/michele-di-gregorio-joins-afc-bournemouth-on-loan/|work=AFC Bournemouth|title=
+Di Gregorio makes Cherries loan move|date=August 25, 2026|access-date=August 25, 2026}}</ref>
+|-
+|{{dts|format=dmy|2026|8|28}}
+| align=center| {{sortname||MF|Midfielder (association football)}}
+|{{flagicon|ITA}} [[Fabio Miretti]]
+| align="center" | {{Age|2003|8|03|2026|8|28}}
+|align=left| {{fbaicon|TUR}} [[Beşiktaş J.K.|Beşiktaş]]
+| align="center" |€2.1M
+| align=center| On loan until June 2027 with an option to buy for €13M 
+|<ref>{{cite web |url=https://bjk.com.tr/tr/haber/94992 |title=Beşiktaşımıza Hoş Geldin Fabio Miretti |publisher=Beşiktaş J.K. |language=tr |date=28 August 2026 }}</ref>
+|-
+| {{dts|format=dmy|2025|9|1}}
+| align="center" | {{sortname||FW|Forward (association football)}}
+| {{flagicon|CAN}} [[Jonathan David]]
+| align=center| {{Age|2000|1|14|2025|9|1}}
+|align=left| {{fbaicon|ESP}} [[Atlético Madrid]]
+| align=center{{N/A}}
+| align=center| On loan until June 2027 with an option to buy for €25M 
+|<ref>{{cite news|url=https://en.atleticodemadrid.com/noticias/welcome-jonathan-david|title=JWelcome, Jonathan David!|publisher=Atletico de Madrid|date=1 September 2026|access-date=1 September 2026}}</ref>
+|}
+
+====Other acquisitions====
+{| class="wikitable sortable"
+|-
+! style="width:80px;"| Date
+! style="width:20px;"| {{tooltip|Pos.|Position}}
+! style="width:190px;"| Player
+! style="width:20px;"| {{tooltip|Age|Age on the day of the transfer}}
+! style="width:180px;"| Moving from
+! style="width:120px;" class="unsortable"| Fee
+! style="width:250px;" class="unsortable"| Notes
+! style="width:20px;"| Source
+|-
+| {{dts|format=dmy|2026|6|15}}
+| align="center" | {{sortname||FW|Forward (association football)}}
+| {{flagicon|CIV}} [[Jérémie Boga]]
+| align=center| {{Age|1997|1|3|2026|6|15}}
+|align=left| {{fbaicon|FRA}} [[OGC Nice|Nice]]
+| align=center| €4.8M
+| align=center| Redeem after loan and variables for €0.8M
+|<ref>{{cite web |title=Jeremie Boga joins permanently! |url=https://www.juventus.com/en/news/articles/jeremie-boga-joins-permanently-15-06-2026 |website=Juventus FC |access-date=15 June 2026}}</ref>
+|-
+|{{dts|format=dmy|2026|6|19}}
+| align="center" |{{sortname||MF|Midfielder}}
+|{{flagicon|ITA}} [[Giacomo Faticanti]]
+| align="center" |{{Age|2004|7|31|2026|6|19}}
+| {{fbaicon|ITA}} [[US Lecce|Lecce]]
+| align="center" | €1M
+| align="center" | Redeem after loan
+|<ref>{{cite news|title=Ufficiale {{!}} Giacomo Faticanti a titolo definitivo alla Juventus|url=https://www.juventus.com/it/news/articoli/ufficiale-giacomo-faticanti-a-titolo-definitivo-alla-juventus|date=19 June 2026|access-date=19 June 2026|language=it|publisher=Juventus FC}}</ref>
+|-
+|{{dts|format=dmy|2026|6|20}}
+| align="center" |{{sortname||GK|Goalkeeper (association football)}}
+|{{flagicon|ITA}} [[Giovanni Daffara]]
+| align="center" |{{Age|2004|12|5|2026|6|20}}
+|{{fbaicon|ITA}} [[US Avellino 1912|Avellino]]
+| align="center" |€0.5M
+| align="center" | Buy back option
+|<ref>{{cite news |date=20 June 2026 |title=Ufficiale: Esercitato il diritto di contro opzione per Giovanni Daffara|url=https://www.juventus.com/it/news/articoli/ufficiale-esercitato-il-diritto-di-contro-opzione-per-giovanni-daffara|access-date=20 June 2026 |publisher=Juventus FC |language=it}}</ref>
+|-
+| {{dts|format=dmy|2026|6|30}}
+| align="center" | {{sortname||FW|Forward (association football)}}
+| {{flagicon|BEL}} [[Loïs Openda]]
+| align=center| {{Age|2000|6|16|2026|6|30}}
+|align=left| {{fbaicon|GER}} [[RB Leipzig]]
+| align=center| €42.75M 
+| align=center| Redeem after loan and variables for €0.8M
+|<ref name="Openda1">{{cite news|url=https://www.juventus.com/en/news/articles/lois-openda-is-bianconero|title=Lois Openda is Bianconero!|publisher=Juventus FC|date=1 September 2025|access-date=1 September 2025}}</ref>
+|-
+|{{dts|format=dmy|2026|7|1}}
+| align="center" |{{sortname||GK|Goalkeeper (association football)}}
+|{{flagicon|ITA}} [[Simone Cat Berro]]
+| align="center" |{{Age|2004|12|5|2026|7|1}}
+|{{fbaicon|ITA}} Cairese
+| align="center" {{N/A}}
+| align="center" | End of loan to play for [[Juventus Next Gen]]
+|
+|-
+|{{dts|format=dmy|2026|7|1}}
+| align=center| {{sortname||DF|Defender (association football)}}
+|{{flagicon|FRA}} [[Louis Reynaud]]
+| align="center" | {{Age|2008|4|12|2026|7|1}}
+|align=left| {{fbaicon|FRA}} [[Toulouse FC|Toulouse]]
+| align="center" | Free
+| align="center" | To play for [[Juventus Next Gen]]
+|<ref>{{cite news|url=https://www.juventus.com/it/news/articoli/u20-arriva-alla-juventus-louis-reynaud-contratto-fino-al-2030|title=U20: Arriva alla Juventus Louis Reynaud: contratto fino al 2030|publisher=Juventus FC|date=4 July 2026|access-date=4 July 2026|language=it}}</ref>
+|-
+|{{dts|format=dmy|2026|7|1}}
+| align="center" |{{sortname||MF|Midfielder}}
+|{{flagicon|ITA}} [[Diego Ripani]]
+| align="center" |{{Age|2005|9|12|2026|7|1}}
+| {{fbaicon|ITA}} [[Forlì FC|Forlì]]
+| align="center" {{N/A}}
+| align="center" | End of loan to play for [[Juventus Next Gen]]
+|
+|-
+| {{dts|format=dmy|2026|7|7}}
+| align="center" | {{sortname||FW|Forward (association football)}}
+| {{flagicon|ITA}} [[Daniel Okolo]]
+| align=center| {{Age|2007|8|30|2026|7|7}}
+|align=left| {{fbaicon|ITA}} [[US Triestina Calcio 1918|Triestina]]
+| align="center" | Free
+| align="center" | To play for [[Juventus Next Gen]]
+|<ref>{{cite news|url=https://www.juventus.com/it/news/articoli/next-gen-daniel-okolo-e-un-giocatore-bianconero|title=Next Gen: Daniel Okolo è un giocatore bianconero!|publisher=Juventus FC|date=8 July 2026|access-date=8 July 2026|language=it}}</ref>
+|-
+| {{dts|format=dmy|2026|7|15}}
+| align="center" | {{sortname||FW|Forward (association football)}}
+| {{flagicon|ITA}} [[Ismaël Konaté]]
+| align=center| {{Age|2006|3|29|2026|7|15}}
+|align=left| {{fbaicon|ITA}} [[Empoli FC|Empoli]]
+| align="center" | Undisclosed
+| align="center" | To play for [[Juventus Next Gen]]
+|<ref>{{cite news|url=https://www.juventus.com/it/news/articoli/next-gen-ismael-konate-e-un-nuovo-giocatore-della-juventus|title=Next Gen: Ismael Konate è un nuovo giocatore della Juventus|publisher=Juventus FC|date=15 July 2026|access-date=15 July 2026|language=it}}</ref>
+|-
+| {{dts|format=dmy|2026|8|11}}
+| align=center| {{sortname||DF|Defender (association football)}}
+| {{flagicon|ITA}} [[Christian Corradi]]
+| align=center| {{Age|2005|2|21|2026|8|11}}
+|align=left| {{fbaicon|ITA}} [[Hellas Verona FC|Hellas Verona]]
+| align="center" {{N/A}}
+| align="center" | On loan to play for [[Juventus Next Gen]]
+|<ref>{{cite news|url=https://www.juventus.com/it/news/articoli/next-gen-ali-camara-e-un-nuovo-giocatore-della-juventus|title=Next Gen: Christian Corradi è un nuovo giocatore bianconero|publisher=Juventus FC|date=11 August 2026|access-date=11 August 2026|language=it}}</ref>
+|-
+| {{dts|format=dmy|2026|8|30}}
+| align="center" | {{sortname||FW|Forward (association football)}}
+| {{flagicon|BEL}} [[Ali Camara (footballer, born 2008)|Ali Camara]]
+| align=center| {{Age|2008|1|13|2026|8|30}}
+|align=left| {{fbaicon|BEL}} [[Club Brugge KV|Club Brugge]]
+| align=center|€1.5M
+| align=center| To play for [[Juventus Next Gen]]
+|<ref>{{cite news|url=https://www.juventus.com/it/news/articoli/next-gen-christian-corradi-e-un-nuovo-giocatore-bianconero|title=Next Gen: Ali Camara è un nuovo giocatore della Juventus|publisher=Juventus FC|date=30 August 2026|access-date=30 August 2026|language=it}}</ref>
+|-
+|{{dts|format=dmy|2026|9|1}}
+| align="center" |{{sortname||MF|Midfielder}}
+|{{flagicon|ITA}} [[Filippo Melegoni]]
+| align="center" |{{Age|1999|2|18|2026|9|1}}
+| {{fbaicon|ITA}} [[Carrarese Calcio 1908|Carrarese Calcio]]
+| align="center" | Undisclosed
+| align="center" | To play for [[Juventus Next Gen]]
+|<ref>{{cite news|title=Next Gen: Filippo Melegoni è un nuovo giocatore della Juventus|url=https://www.juventus.com/it/news/articoli/next-gen-filippo-melegoni-e-un-nuovo-giocatore-della-juventus|date=1 September 2026|access-date=1 September 2026|language=it|publisher=Juventus FC}}</ref>
+|}
+
+====Other disposals====
+{| class="wikitable sortable"
+|-
+! style="width:80px;" | Date
+! style="width:20px;" | {{tooltip|Pos.|Position}}
+! style="width:190px;" | Player
+! style="width:20px;" | {{tooltip|Age|Age on the day of the transfer}}
+! style="width:180px;" | Moving to
+! style="width:120px;" class="unsortable" | Fee
+! style="width:250px;" class="unsortable" | Notes
+! style="width:20px;" | Source
+|-
+| {{dts|format=dmy|2026|6|30}}
+| align="center" | [[Defender (association football)|DF]]
+| {{flagicon|URU}} [[Facundo González]]
+| align="center" |{{Age|2003|6|6|2026|6|30}}
+| {{fbaicon|ESP}} [[Racing de Santander|Racing Santander]]
+| align="center" | €2.5M
+| align="center" | Redeem after loan
+|<ref>{{cite web|url=https://www.realracingclub.es/noticias/el-racing-incorpora-al-defensa-facu-gonzalez-a-su-plantilla-de-la-campana-202526|title=El Racing incorpora al defensa Facu González a su plantilla de la campaña 2025/26|publisher=Real Racing Club|language=es|date=1 September 2025|access-date=1 September 2025}}</ref>
+|-
+| {{dts|format=dmy|2026|6|30}}
+| align="center" | {{sortname||DF|Defender (association football)}}
+| {{flagicon|ITA}} [[Gabriele Mulazzi]]
+| align=center| {{Age|2003|4|1|2026|6|30}}
+|align=left| {{fbaicon|SUI}} [[FC Sion|Sion]]
+| align=center {{N/A}}
+| align=center| End of loan
+|<ref>{{cite news|url=https://www.juventus.com/it/news/articoli/next-gen-gabriele-mulazzi-torna-in-bianconero-prestito-dal-sion|title=Next Gen: Gabriele Mulazzi torna in bianconero: prestito dal Sion|publisher=Juventus FC|date=1 February 2026|access-date=1 February 2026|language=it}}</ref>
+|-
+|{{dts|2026|6|30|format=dmy}}
+| align="center" |{{sortname||MF|Midfielder}}
+|{{flagicon|ITA}} [[Mattia Compagnon]]
+| align="center" |{{Age|2001|11|6|2026|6|30}}
+|{{fbaicon|ITA}} [[Venezia FC|Venezia]]
+| align="center" | €1M
+| align="center" | Redeem after loan
+|<ref>{{cite news |date=12 July 2025 |title=Mattia Compagnon al Venezia FC|url=https://www.veneziafc.it/news/mattia-compagnon-al-venezia-fc|access-date=12 July 2025 |publisher=Venezia FC |language=it}}</ref>
+|-
+|{{dts|2026|6|30|format=dmy}}
+| align="center" |{{sortname||MF|Midfielder}}
+|{{flagicon|ITA}} [[Alessandro Sersanti]]
+| align="center" |{{Age|2002|2|16|2026|8|30}}
+|{{fbaicon|ITA}} [[Modena FC 2018|Modena]]
+| align="center" | €1M
+| align="center" | Redeem after loan and variables for future sale
+|<ref>{{cite web |date=22 August 2025 |title=Calciomercato: Sersanti è gialloblù|url=https://modenacalcio.com/sersanti-e-gialloblu/|access-date=22 August 2025 |publisher=Modena Calcio |language=it}}</ref>
+|-
+|{{dts|format=dmy|2026|6|30}}
+| align=center| {{sortname||FW|Defender (association football)}}
+|{{flagicon|USA}} [[Timothy Weah]]
+| align="center" | {{Age|2000|2|22|2026|6|30}}
+|align=left| {{fbaicon|FRA}} [[Olympique de Marseille|Marseille]]
+| align="center" | €14.4M
+| align="center" | Redeem after loan plus variables for €4.1M and for future sale
+|<ref>{{cite web|url=https://www.juventus.com/en/news/articles/timothy-weah-joins-olympique-marseille|title=Timothy Weah joins Olympique Marseille |publisher=Juventus FC|date=6 August 2025|access-date=6 August 2025}}</ref>
+|-
+|{{dts|format=dmy|2026|6|30}}
+| align=center| {{sortname||DF|Defender (association football)}}
+|{{Flagicon|ITA}} [[Filippo Scaglia]]
+| align="center" | {{Age|1992|1|31|2026|6|30}}
+|{{N/A}}
+| align="center" | Free
+| align="center" | Retired
+|
+|-
+|{{dts|format=dmy|2026|7|1}}
+| align="center" |{{sortname||GK|Goalkeeper (association football)}}
+|{{flagicon|ITA}} [[Giovanni Daffara]]
+| align="center" |{{Age|2004|12|5|2026|7|1}}
+|{{fbaicon|ITA}} [[Parma Calcio 1913|Parma]]
+| align="center" |€6M
+| align="center" | Variables for future sale
+|<ref>{{cite news |date=1 July 2026 |title=Giovanni Daffara joins Parma Calcio|url=https://www.parmacalcio1913.com/en/main-news/giovanni-daffara-joins-parma-calcio/|access-date=1 July 2026 |publisher=Juventus FC |language=it}}</ref>
+|-
+|{{dts|format=dmy|2026|7|1}}
+| align="center" |{{sortname||FW|Forward (association football)}}
+|{{flagicon|ARG}} Juan Ignacio Quattrocchi
+| align="center" |{{Age|2004|2|3|2026|7|1}}
+| {{fbaicon|ARG}} [[Club Atlético Acassuso|Acassuso]]
+| align="center" |Free
+| align="center" |Released
+|
+|-
+|{{dts|format=dmy|2026|7|2}}
+| align="center" |{{sortname||DF|Defender (association football)}}
+|{{flagicon|AUT}} [[David Puczka]]
+| align="center" |{{Age|2005|1|26|2026|7|2}}
+|{{fbaicon|ITA}} [[Genoa CFC|Genoa]]
+| align="center" | €6M
+| align="center" | Variables for future sale
+|<ref>{{cite news|title=David Puczka è un giocatore del Genoa|url=https://genoacfc.it/2026/07/02/il-genoa-acquista-il-laterale-austriaco-david-puczka/|date=2 July 2026|access-date=2 July 2026|language=it|publisher=Genoa CFC}}</ref>
+|-
+|{{dts|format=dmy|2026|7|8}}
+| align=center| {{sortname||DF|Defender (association football)}}
+|{{Flagicon|ITA}} [[Brando Moruzzi]]
+| align="center" | {{Age|2004|7|20|2026|7|8}}
+|align=left| {{fbaicon|ITA}} [[US Avellino 1912|Avellino]]
+| align="center" {{N/A}}
+| align=center| On loan until June 2027 with option to buy
+|<ref>{{Cite web|title=Brando Moruzzi in prestito dalla Juventus |url=https://www.usavellino1912.com/brando-moruzzi-in-prestito-dalla-juventus/|date=10 July 2026 | access-date=10 July 2026 |publisher= US Avellino 1912|language=it}}</ref>
+|-
+|{{dts|format=dmy|2026|7|8}}
+| align="center" |{{sortname||MF|Midfielder}}
+|{{Flagicon|ITA}} [[Giacomo Faticanti]]
+| align="center" | {{Age|2004|7|31|2026|7|8}}
+|align=left| {{fbaicon|ITA}} [[US Avellino 1912|Avellino]]
+| align="center" {{N/A}}
+| align=center| On loan until June 2027 with option to buy
+|<ref>{{Cite web|title=Giacomo Faticanti in prestito dalla Juventus |url=https://www.usavellino1912.com/giacomo-faticanti-in-prestito-dalla-juventus/|date=10 July 2026 | access-date=10 July 2026 |publisher= US Avellino 1912|language=it}}</ref>
+|-
+|{{dts|format=dmy|2026|7|8}}
+| align="center" |{{sortname||FW|Forward (association football)}}
+|{{flagicon|ITA}} [[Alessandro Pietrelli]]
+| align="center" |{{Age|2003|1|5|2026|7|8}}
+| {{fbaicon|ITA}} [[LR Vicenza]]
+| align="center" {{N/A}}
+| align="center" | On loan until June 2027 with option to buy
+|<ref>{{cite news|title=Presentazione Alessandro Pietrelli-Riccardo Marchizza|url=https://www.lrvicenza.net/presentazione-alessandro-pietrelli-riccardo-marchizza/?_gl=1*8zr40m*_up*MQ..*_ga*MTk1MjM3NDkyMi4xNzgzNzIwMjAz*_ga_0JVGXFMK6Z*czE3ODM3MjAyMDIkbzEkZzEkdDE3ODM3MjAzMjUkajYwJGwwJGgw|date=10 July 2026|access-date=10 July 2026|language=it|publisher=LR Vicenza}}</ref>
+|-
+|{{dts|2026|7|10|format=dmy}}
+| align="center" |{{sortname||FW|Forward (association football)}}
+|{{flagicon|ITA}} [[Gianmarco Di Biase]]
+| align="center" |{{Age|2005|11|26|2026|7|10}}
+|{{fbaicon|ENG}} [[Crawley Town F.C.|Crawley Town]]
+| align="center" | €0.23M
+| align="center" | 
+|<ref>{{cite web|url=https://www.crawleytownfc.com/news/2026/july/10/reds-add-italian-firepower-to-frontline-/|title=Reds add Italian firepower to frontline|publisher=Juventus FC|date=10 July 2026|access-date=10 July 2026}}</ref>
+|-
+|{{dts|2026|7|20|format=dmy}}
+| align="center" |{{sortname||FW|Forward (association football)}}
+|{{flagicon|ITA}} [[Diego Pugno]]
+| align="center" |{{Age|2006|7|7|2026|7|20}}
+|{{fbaicon|NED}} [[AFC Ajax|Ajax]]
+| align="center" {{N/A}}
+| align="center" | On loan until June 2027 with option to buy to play for [[Jong Ajax]]
+|<ref>{{cite web|url=https://english.ajax.nl/articles/ajax-and-juventus-reach-agreement-on-diego-pugno|title=Ajax and Juventus reach agreement on Diego Pugno|publisher=AFC Ajax|date=20 July 2026|access-date=20 July 2026}}</ref>
+|-
+|{{dts|format=dmy|2026|7|24}}
+| align="center" |{{sortname||FW|Forward (association football)}}
+|{{flagicon|ITA}} [[Alessio Vacca]]
+| align="center" |{{Age|2005|6|15|2026|7|24}}
+| {{fbaicon|ITA}} [[US Folgore Caratese ASD|Folgore Caratese]]
+| align="center" {{N/A}}
+| align="center" | On loan until June 2027 
+|<ref>{{cite news|title=Next Gen {{!}} Alessio Vacca in prestito alla Folgore Caratese|url=https://www.juventus.com/it/news/articoli/next-gen-alessio-vacca-in-prestito-alla-folgore-caratese|date=24 July 2026|access-date=24 July 2026|language=it|publisher=Juventus FC}}</ref>
+|-
+|{{dts|format=dmy|2026|7|28}}
+| align=center| {{sortname||DF|Defender (association football)}}
+|{{Flagicon|ITA}} [[Lorenzo Villa]]
+| align="center" | {{Age|2003|7|26|2026|7|28}}
+|align=left| {{fbaicon|SUI}} [[FC Sion|Sion]]
+| align="center" | €0.25M
+| align=center| 
+|<ref>{{cite web|url=https://www.fcsion.ch/fr/news/le-fc-sion-enrole-lorenzo-villa-pour-les-trois-prochaines-saisons-4674|title=Le FC Sion enrôle Lorenzo Villa pour les trois prochaines saisons|language=fr|publisher=FC Sion|date=28 July 2026|access-date=28 July 2026}}</ref>
+|-
+|{{dts|2026|7|30|format=dmy}}
+| align="center" |{{sortname||DF|Defender (association football)}}
+|{{flagicon|SWE}} [[Jonas Rouhi]]
+| align="center" |{{Age|2004|1|7|2026|7|30}}
+|{{fbaicon|ITA}} [[Carrarese Calcio 1908|Carrarese]]
+| align="center" {{N/A}}
+| align="center" | Renewal of loan until June 2027
+|<ref>{{cite news |date=30 July 2026 |title=Bentornato sotto le apuane Jonas Rouhi|url=https://carraresecalcio1908.it/bentornato-sotto-le-apuane-jonas-rouhi/|access-date=30 July 2026 |language=it|publisher=Carrarese Calcio 1908}}</ref>
+|-
+| {{dts|format=dmy|2026|8|3}}
+| align="center" | {{sortname||DF|Defender (association football)}}
+| {{flagicon|POR}} [[João Mário (footballer, born 2000)|João Mário]]
+| align=center| {{Age|2000|1|3|2026|8|3}}
+|align=left| {{fbaicon|ITA}} [[ACF Fiorentina|Fiorentina]]
+| align=center| €1.8M 
+| align=center| On loan until june 2027 with an option to buy for €9.5M
+|<ref name="João Mário">{{cite news|url=https://www.acffiorentina.com/en/news/la-fiorentina-acquista-joao-mario-030826?_gl=1*u4xxkm*_up*MQ..*_ga*OTM4NDU0MzYuMTc4NTg3MjY3NA..*_ga_EKC655Q48G*czE3ODU4NzI2NzMkbzEkZzEkdDE3ODU4NzI3MjQkajkkbDAkaDUxMjIxOTQ1OA..|title=Fiorentina sign Joao Mario|publisher=ACF Fiorentina|date=3 August 2026|access-date=3 August 2026}}</ref>
+|-
+| {{dts|format=dmy|2024|8|3}}
+| align="center" | {{sortname||FW|Forward (association football)}}
+| {{flagicon|ITA}} [[Leonardo Cerri]]
+| align=center| {{Age|2003|3|4|2024|8|3}}
+|align=left| {{fbaicon|FRA}} [[Grenoble Foot 38|Grenoble]]
+| align=center| Undisclosed
+| align=center| 
+|<ref>{{cite news|url=https://gf38.fr/leonardo-cerri-rejoint-le-gf38/|title=Leonardo Cerri rejoint le GF38 !|publisher=SSC Bari|date=3 August 2026|access-date=3 August 2026|language=fr}}</ref>
+|-
+|{{dts|format=dmy|2026|8|4}}
+| align="center" |{{sortname||DF|Defender (association football)}}
+|{{flagicon|BRA}} [[Pedro Felipe de Jesus Gomes|Pedro Felipe]]
+| align="center" |{{Age|2004|8|8|2026|8|24}}
+|{{fbaicon|ESP}} [[Racing de Santander|Racing Santander]]
+| align="center" | €0.5M
+| align="center" | 
+|<ref>{{cite news|title=Racing y Juventus FC acuerdan el traspaso de Pedro Felipe|url=https://www.realracingclub.es/noticias/racing-y-juventus-fc-acuerdan-el-traspaso-de-pedro-felipe|date=4 August 2026|access-date=4 August 2026|language=es|publisher=Real Racing Club}}</ref>
+|-
+|{{dts|2026|8|4|format=dmy}}
+| align="center" |{{sortname||MF|Midfielder}}
+|{{flagicon|ITA}} [[Francesco Crapisto]]
+| align="center" |{{Age|2006|8|17|2026|8|4}}
+|{{fbaicon|ITA}} [[FC Crotone|Crotone]]
+| align="center" {{N/A}}
+| align="center" | On loan until June 2027
+|<ref>{{cite news |date=4 August 2026 |title=Crapisto è rossoblù. Benvenuto Francesco!|url=https://www.fccrotone.it/in-evidenza/crapisto-e-rossoblu-benvenuto-francesco/|access-date=4 August 2026 |publisher=FC Crotone|language=it}}</ref>
+|-
+|{{dts|format=dmy|2026|8|10}}
+| align=center| {{sortname||GK|Goalkeeper (association football)}}
+|{{Flagicon|ITA}} [[Simone Scaglia]]
+| align="center" | {{Age|2004|7|12|2026|8|10}}
+|{{fbaicon|ITA}} [[Padova Calcio|Padova]]
+| align="center" | Free
+| align="center" | Released
+|<ref>{{cite news |date=10 August 2026 |title=Simone Scaglia è un giocatore del Calcio Padova|url=https://www.padovacalcio.it/simone-scaglia-calcio-padova/|access-date=10 August 2026 |publisher=FC Crotone|language=it}}</ref>
+|-
+|{{dts|format=dmy|2026|8|15}}
+| align="center" |{{sortname||FW|Forward (association football)}}
+|{{flagicon|ITA}} [[Tommaso Mancini]]
+| align="center" |{{Age|2004|7|23|2026|8|15}}
+| {{fbaicon|ITA}} [[US Livorno 1915|Livorno]]
+| align="center"  {{N/A}}
+| align="center" | On loan until June 2027 
+|<ref>{{cite news|title=Tommaso Mancini è un nuovo giocatore dell’Unione Sportiva Livorno 1915|url=https://www.uslivorno.com/comunicati-ufficiali/tommaso-mancini-e-un-nuovo-giocatore-dellunione-sportiva-livorno-1915/|access-date=15 August 2026|language=it|publisher=US Livorno}}</ref>
+|-
+|{{dts|format=dmy|2026|8|20}}
+| align="center" |{{sortname||FW|Forward (association football)}}
+|{{flagicon|ITA}} [[Emanuele Pecorino]]
+| align="center" |{{Age|2001|7|15|2026|8|20}}
+|{{fbaicon|ITA}} [[US Catanzaro|Catanzaro]]
+| align="center" | €0.9M
+| align="center" | 
+|<ref>{{cite news |date=20 August 2026 |title=Emanuele Pecorino in giallorosso|url=https://www.uscatanzaro1929.com/2026/08/20/emanuele-pecorino-in-giallorosso/|access-date=20 August 2026 |publisher=US Catanzaro 1929 |language=it}}</ref>
+|-
+|{{dts|format=dmy|2026|8|25}}
+| align=center| {{sortname||FW|Forward (association football)}}
+|{{Flagicon|ITA}} [[Serigne Deme]]
+| align="center" | {{Age|2005|2|4|2026|8|25}}
+|align=left| {{fbaicon|NED}} [[FC Volendam|Volendam]]
+| align="center" | Free
+| align=center| 
+|<ref>{{cite web|url=https://fcvolendam.nl/nieuws/fc-volendam-versterkt-voorhoede-met-serigne-deme/|title=FC Volendam versterkt voorhoede met Serigne Deme|language=nl|publisher=FC Volendam|date=25 August 2026|access-date=25 August 2026}}</ref>
+|-
+| {{dts|format=dmy|2026|8|30}}
+| align="center" | {{sortname||MF|Midfielder}}
+| {{flagicon|GER}} [[Adin Ličina]]
+| align=center| {{Age|2007|1|6|2026|8|30}}
+|align=left| {{fbaicon|ITA}} [[US Cremonese|Cremonese]]
+| align="center"  {{N/A}}
+| align="center" | On loan until June 2027
+|<ref>{{Cite web|url=https://uscremonese.it/adin-licina-e-grigiorosso/ |title= Adin Licina è grigiorosso!|publisher=US Cremonese|language=it|date=30 August 2026|access-date=30 August 2026}}</ref>
+|-
+|{{dts|2026|8|30|format=dmy}}
+| align="center" |{{sortname||MF|Midfielder}}
+|{{flagicon|ITA}} Valdes Ngana
+| align="center" |{{Age|2006|8|17|2026|8|30}}
+|{{fbaicon|ITA}} [[Calcio Foggia 1920|Foggia]]
+| align="center"  {{N/A}}
+| align="center" | On loan until June 2027
+|<ref>{{cite news |date=30 August 2026 |title=Welcome Valdes Ngana|url=https://www.calciofoggia1920.net/dalla-juventus-arriva-valdes-ngana/|access-date=30 August 2026 |publisher=Calcio Foggia 1920|language=it}}</ref>
+|-
+| {{dts|format=dmy|2026|8|31}}
+| align=center| {{sortname||MF|Midfielder}}
+| {{flagicon|BRA}} [[Arthur Melo|Arthur]]
+| align="center" | {{Age|1996|8|12|2026|8|31}}
+|align=left| {{fbaicon|BRA}} [[Santos FC|Santos]]
+| align="center" | Free
+| align=center| Released
+|<ref>{{cite news |date=31 August 2026 |title=Santos FC contrata volante Arthur|url=https://www.santosfc.com.br/santos-fc-contrata-volante-arthur/|access-date=31 August 2026 |publisher=Santos FC|language=pt}}</ref>
+|-
+|{{dts|format=dmy|2026|9|1}}
+| align="center" |{{sortname||DF|Defender (association football)}}
+|{{flagicon|ESP}} [[Bruno Martinez]]
+| align="center" |{{Age|2006|6|19|2026|8|24}}
+|{{fbaicon|ESP}} [[UCAM Murcia CF|UCAM Murcia]]
+| align="center"  {{N/A}}
+| align="center" | On loan until June 2027 
+|<ref>{{cite news|title=Bruno Martínez, poderío físico para la zaga del UCAM Murcia CF|url=https://www.ucamdeportes.com/ucamcf/noticias/bruno-martinez-poderio-fisico-para-la-zaga-del-ucam-murcia-cf|access-date=1 September 2026|language=es|publisher=UCAM Deportes}}</ref>
+|-
+|{{dts|format=dmy|2026|9|1}}
+| align="center" |{{sortname||DF|Defender (association football)}}
+|{{flagicon|ESP}} [[Javier Gil (footballer)|Gil Puche]]
+| align="center" |{{Age|2006|5|3|2026|8|24}}
+|{{fbaicon|ESP}} [[Atlético Madrid]]
+| align="center"  {{N/A}}
+| align="center" | On loan until June 2027 with option to buy and buy-back option to play for [[Atlético Madrileño]]
+|<ref>{{cite news|title=Next Gen: Gil Puche in prestito all'Atletico Madrid|url=https://www.juventus.com/it/news/articoli/next-gen-gil-puche-in-prestito-all-atletico-madrid|access-date=1 September 2026|language=it|publisher=Juventus}}</ref>
+|-
+|{{dts|format=dmy|2026|9|1}}
+| align="center" |{{sortname||FW|Forward (association football)}}
+|{{flagicon|ITA}} [[Lorenzo Anghelè]]
+| align="center" |{{Age|2005|2|26|2026|9|1}}
+| {{fbaicon|ITA}} [[FC Südtirol|Südtirol]]
+| align="center"  {{N/A}}
+| align="center" | On loan until June 2027 
+|<ref>{{cite news|title=Lorenzo Anghelè è un nuovo giocatore dell’FC Südtirol|url=https://www.fc-suedtirol.com/it/news/lorenzo-anghel%C3%A8-%C3%A8-un-nuovo-giocatore-dell-fc-s%C3%BCdtirol/24-11174.html|access-date=1 September 2026|language=it|publisher=FC Sudtirol}}</ref>
+|-
+|{{dts|format=dmy|2026|9|1}}
+| align="center" |{{sortname||FW|Forward (association football)}}
+|{{flagicon|ITA}} [[Nicolò Cudrig]]
+| align="center" |{{Age|2002|8|7|2026|9|1}}
+|{{fbaicon|ITA}} [[Carrarese Calcio 1908|Carrarese]]
+| align="center"  {{N/A}}
+| align="center" | On loan until June 2027 
+|<ref>{{cite news |date=1 September 2026|title=Nicolò Cudrig è azzurro!|url=https://carraresecalcio1908.it/nicolo-cudrig-in-azzurro/|access-date=1 September 2026 |language=it|publisher=Carrarese Calcio 1908}}</ref>
+|-
+| {{dts|format=dmy|2026|9|2}}
+| align="center" | {{sortname||FW|Forward (association football)}}
+| {{flagicon|CRO}} [[Ivano Srdoč]]
+| align=center| {{Age|2005|5|8|2026|9|2}}
+|align=left| {{fbaicon|SUI}} [[FC Sion|Sion]]
+| align="center" | Undisclosed
+| align="center" | 
+|<ref>{{cite news |date=2 September 2026|title=Le FC Sion accueille Ivano Srdoc au sein de ses M21|url=https://www.fcsion.ch/fr/news/le-fc-sion-accueille-ivano-srdoc-au-sein-de-ses-m21-4722|access-date=2 September 2026 |language=fr|publisher=FC Sion}}</ref>
+|}
+<!--
+===Winter 2026–27===
+====In====
+{| class="wikitable sortable"
+|-
+! style="width:80px;"| Date
+! style="width:20px;"| {{tooltip|Pos.|Position}}
+! style="width:190px;"| Player
+! style="width:20px;"| {{tooltip|Age|Age on the day of the transfer}}
+! style="width:180px;"| Moving from
+! style="width:120px;" class="unsortable"| Fee
+! style="width:250px;" class="unsortable"| Notes
+! style="width:20px;"| Source
+|-
+|}
+
+====Out====
+{| class="wikitable sortable"
+|-
+! style="width:80px;" | Date
+! style="width:20px;" | {{tooltip|Pos.|Position}}
+! style="width:190px;" | Player
+! style="width:20px;" | {{tooltip|Age|Age on the day of the transfer}}
+! style="width:180px;" | Moving to
+! style="width:120px;" class="unsortable" | Fee
+! style="width:250px;" class="unsortable" | Notes
+! style="width:20px;" | Source
+|}
+
+====Other acquisitions====
+{| class="wikitable sortable"
+|-
+! style="width:80px;"| Date
+! style="width:20px;"| {{tooltip|Pos.|Position}}
+! style="width:190px;"| Player
+! style="width:20px;"| {{tooltip|Age|Age on the day of the transfer}}
+! style="width:180px;"| Moving from
+! style="width:120px;" class="unsortable"| Fee
+! style="width:250px;" class="unsortable"| Notes
+! style="width:20px;"| Source
+|-
+|}
+
+====Other disposals====
+{| class="wikitable sortable"
+|-
+! style="width:80px;" | Date
+! style="width:20px;" | {{tooltip|Pos.|Position}}
+! style="width:190px;" | Player
+! style="width:20px;" | {{tooltip|Age|Age on the day of the transfer}}
+! style="width:180px;" | Moving to
+! style="width:120px;" class="unsortable" | Fee
+! style="width:250px;" class="unsortable" | Notes
+! style="width:20px;" | Source
+|-
+|}
+-->
+
+== Pre-season and friendlies ==
+{{footballbox collapsible
+|round = [[Exhibition game#Club football|Friendly]]
+|date = 18 July 2026
+|time = 15:30 [[Central European Summer Time|CEST]] ([[UTC+02:00|UTC+2]]) 
+|team1 = [[FC Basel|Basel]]
+|score = 0–0
+|report = https://www.juventus.com/en/news/articles/bianconeri-begin-pre-season-with-draw-against-fc-basel
+|team2 = Juventus
+|goals1 =
+*[[Philip Otele|Otele]] {{penmiss}} 58'
+*[[Mirko Salvi|Salvi]] {{sent off|0|85}}
+|goals2 =
+*[[Andrea Cambiaso|Cambiaso]] {{yel|38}}
+*[[João Mário (footballer, born 2000)|João Mário]] {{yel|90+3}}
+|stadium = [[St. Jakob-Park]]
+|location = [[Basel]], Switzerland
+|attendance = 24,206
+|referee = Lukas Fähndrich ([[Swiss Football Association|Switzerland]])
+|result = D
+}}
+{{footballbox collapsible
+|round = Friendly
+|date = 25 July 2026
+|time = 20:00 [[Central European Summer Time|CEST]] ([[UTC+02:00|UTC+2]]) 
+|team1 = [[Standard Liège]]
+|score = 0–1
+|report = https://www.juventus.com/en/news/articles/bianconeri-beat-standard-liege-with-miretti-strike
+|team2 = Juventus
+|goals1 =
+|goals2 =
+*[[Fabio Miretti|Miretti]] {{goal|55}}, {{yel|69}}
+|stadium = [[Stade Maurice Dufrasne]]
+|location = [[Liège]], Belgium
+|attendance = 17,000
+|referee = Jasper Vergoote ([[Royal Belgian Football Association|Belgium]])
+|result = W
+}}
+{{footballbox collapsible
+|round = Friendly
+|date = 31 July 2026
+|time = 18:00 [[Central European Summer Time|CEST]] ([[UTC+02:00|UTC+2]]) 
+|team1 = Juventus
+|score = 2–0
+|report = https://www.juventus.com/en/news/articles/bianconeri-beat-nice-at-jtc
+|team2 = [[OGC Nice|Nice]]
+|goals1 =
+*[[Douglas Luiz]] {{goal|11}}
+*[[Justin Oboavwoduo|Oboavwoduo]] {{goal|89}}
+|goals2 =
+|stadium = [[Juventus Training Center (Turin)|Juventus Training Center]]
+|location = [[Turin]], Italy
+|attendance = 400
+|referee = Luca Pairetto ([[Italian Football Federation|Italy]])
+|result = W
+}}
+{{footballbox collapsible
+|round = Friendly
+|date = 5 August 2026
+|time = 19:30 [[Hong Kong Time|HKT]] ([[UTC+08:00|UTC+8]]) 
+|team1 = [[Chelsea FC|Chelsea]]
+|score = 0–1
+|report = https://www.juventus.com/en/news/articles/bianconeri-beat-chelsea-with-zhegrova-strike
+|team2 = Juventus
+|goals1 =
+*[[Moisés Caicedo|Caicedo]] {{yel|62}}
+*[[Roméo Lavia|Lavia]] {{yel|81}}
+|goals2 = 
+*[[Douglas Luiz]] {{yel|58}}
+*[[Edon Zhegrova|Zhegrova]] {{goal|68}}
+*[[Federico Gatti|Gatti]] {{yel|71}}
+*[[Gleison Bremer|Bremer]] {{yel|81}}
+|stadium = [[Kai Tak Sports Park]]
+|location = [[Kowloon]], Hong Kong
+|attendance = 43,375 
+|referee = Wai-Sing Ho ([[Football Association of Hong Kong, China|Hong Kong]])
+|result = W
+}}
+{{footballbox collapsible
+|round = Friendly
+|date = 8 August 2026
+|time = 19:00 [[Time in Australia|AWST]] ([[UTC+08:00|UTC+8]]) 
+|team1 = Juventus
+|score = 1–2
+|report = https://www.juventus.com/en/news/articles/conceicao-scores-in-narrow-bianconeri-defeat-to-inter-08-08-26
+|team2 = [[Inter Milan|Internazionale]]
+|goals1 =
+*[[Daniele Rugani|Rugani]] {{yel|75}}
+*[[Francisco Conceição|Conceição]] {{goal|85}}
+|goals2 =
+*[[Federico Dimarco|Dimarco]] {{goal|20}}
+*[[Andy Diouf|Diouf]] {{goal|62}}
+|stadium = [[Perth Stadium]]
+|location = [[Perth]], Australia
+|attendance = 50,325
+|referee = Tim Danaskos ([[Football Australia|Australia]])
+|result = L
+}}
+{{footballbox collapsible
+|round = Friendly
+|date = 11 August 2026
+|time = 18:00 [[Time in Australia|AWST]] ([[UTC+08:00|UTC+8]]) 
+|team1 = Juventus
+|score = 2–0
+|report = https://www.juventus.com/en/news/articles/bianconeri-sign-off-in-perth-with-palermo-win
+|team2 = [[Palermo FC|Palermo]]
+|goals1 =
+*[[Douglas Luiz]] {{yel|5}}
+*[[Kenan Yıldız|Yıldız]] {{goal|44}}
+*[[Arkadiusz Milik|Milik]] {{goal|86}}
+|goals2 =
+|stadium = [[Perth Rectangular Stadium]]
+|location = [[Perth]], Australia
+|attendance = 15,352
+|referee = [[Shaun Evans (referee)|Shaun Evans]] ([[Football Australia|Australia]])
+|result = W
+}}
+{{footballbox collapsible
+|round = Friendly
+|date = 17 August 2026
+|time = 18:00 [[Central European Summer Time|CEST]] ([[UTC+02:00|UTC+2]]) 
+|team1 = Juventus
+|score = 2–0
+|report = https://www.juventus.com/en/news/articles/bianconeri-sign-off-for-pre-season-with-next-gen-win-17-08-26
+|team2 = [[Juventus Next Gen]]
+|goals1 =
+*[[Francisco Conceição|Conceição]] {{goal|18}}
+*[[Weston McKennie|McKennie]] {{goal|30}}
+|goals2 =
+|stadium = [[Juventus Stadium]]
+|location = [[Turin]], Italy
+|attendance = 23,000
+|referee = Gabriele Scatena ([[Italian Football Federation|Italy]])
+|result = W
+|note = The match was called off at the 46th minute due to the annual tradition of [[pitch invasion]].
+}}
+
+==Competitions==
+===Overview===
+{{Fb overview2
+|c=3
+|c1=[[2026–27 Serie A|Serie A]] |fm1=23 August 2026 |lm1=30 May 2027 |sr1=Matchday 1 |fp1=TBD |w1=5 |d1=2 |l1=3 |f1=13 |a1=10
+|c2=[[2026–27 Coppa Italia|Coppa Italia]] |fm2=3 December 2026 |lm2=TBD |sr2=Round of 16 |fp2=TBD |w2=0 |d2=0 |l2=0 |f2=0 |a2=0
+|c3=[[2026–27 UEFA Europa League|UEFA Europa League]] |fm3=17 September 2026 |lm3=TBD |sr3=League phase |fp3=TBD |w3=2 |d3=1 |l3=0 |f3=9 |a3=3
+|u=1 November 2026
+|s=[https://int.soccerway.com/teams/italy/juventus-fc/1242/ Soccerway]
+}}
+
+===Serie A===
+{{Main|2026–27 Serie A}}
+
+====League table====
+{{:2026–27 Serie A|show_limit=5|showteam=JUV}}
+
+====Results summary====
+{{Fb_rs |hw=3 |hd=1 |hl=1 |hgf=7 |hga=4 |aw=2 |ad=1 |al=2 |agf=6 |aga=6 }}
+{{Fb_rs footer|u=1 November 2026|s=[http://www.legaseriea.it/en/serie-a/league-table Serie A]|date=August 2026}}
+
+====Results by round====
+{{#invoke:sports rbr table|table|legendpos=b
+| update=1 November 2026
+| header=Round
+| label1=Ground
+| res1=A/H/H/A/H/A/H/A/A/H/A/H/A/H/H/A/A/H/A/H/H/A/H/A/H/A/H/A/H/A/H/A/H/A/A/H/A/H
+| label2=Result
+| res2=W/W/D/L/W/D/L/W/L/W////////////////////////////
+| label3=Position
+| pos3=8/4/6/8/7/6/8/7/8/7////////////////////////////
+| color_W=green2|text_W=Win
+| color_D=yellow2|text_D=Draw
+| color_L=red2|text_L=Loss
+| text_H=Home|text_A=Away
+| color_1=gold|color_2–4=green1|color_5=blue1|color_6=yellow1|color_18–20=red1
+| source=[http://www.legaseriea.it/en/serie-a/league-table Serie A]
+}}
+
+====Matches====
+The league fixtures were released on 5 June 2026.<ref>{{cite news |title=Calendario della Serie A Enilive 2026/27 |url=https://www.legaseriea.it/serie-a/news/calendario-della-serie-a-enilive-2026-27 |access-date=5 June 2026 |publisher=Serie A |date=5 June 2026 |language=it}}</ref>
+
+{{Football box collapsible
+|round = 1
+|date = 23 August 2026
+|time = 18:30 [[Central European Summer Time|CEST]] ([[UTC+02:00|UTC+2]])
+|team1 = [[Frosinone Calcio|Frosinone]]
+|score = 0–1
+|report = https://en.legaseriea.it/serie-a/match/87efe7bc3660456ca4b7c9426ad0fa85/frosinone-vs-juventus
+|team2 = Juventus
+|goals1 =
+*[[Romano Schmid|Schmid]] {{yel|43}}
+*[[Gabriele Calvani|Calvani]] {{yel|90+3}}
+|goals2 =
+*[[Gleison Bremer|Bremer]] {{goal|22}}
+*[[Zeki Çelik|Çelik]] {{yel|50}}
+*[[Andrea Cambiaso|Cambiaso]] {{yel|81}}
+|stadium = [[Stadio Benito Stirpe]]
+|location = [[Frosinone]]
+|attendance = 15,256
+|referee = Giovanni Ayroldi
+|result = W
+}}
+{{Football box collapsible
+|round = 2
+|date = 29 August 2026
+|time = 20:45 [[Central European Summer Time|CEST]] ([[UTC+02:00|UTC+2]])
+|team1 = Juventus
+|score = 2–0
+|report = https://en.legaseriea.it/serie-a/match/ebf6152ee01f4ade99512e302d6dea47/juventus-vs-parma
+|team2 = [[Parma Calcio 1913|Parma]]
+|goals1 =
+*[[Jhon Lucumí|Lucumí]] {{yel|10}}
+*[[Manuel Locatelli|Locatelli]] {{yel|54}}
+*[[Nico González (footballer, born 1998)|González]] {{goal|62}}
+*[[Teun Koopmeiners|Koopmeiners]] {{goal|88}}
+|goals2 =
+*[[Enrico Del Prato|Del Prato]] {{yel|55}}
+*[[Mariano Troilo|Troilo]] {{yel|78}}
+*[[Abdou-Salam Konaté|Konaté]] {{yel|90+3}}
+|stadium = [[Juventus Stadium]]
+|location = [[Turin]]
+|attendance = 40,271
+|referee = Francesco Fourneau
+|result = W
+}}
+{{Football box collapsible
+|round = [[Juventus FC–AC Milan rivalry|3]]
+|date = 6 September 2026
+|time = 20:45 [[Central European Summer Time|CEST]] ([[UTC+02:00|UTC+2]])
+|team1 = Juventus
+|score = 1–1
+|report = https://en.legaseriea.it/serie-a/match/7c4d8a215bdb45d9bf8b6f48fe82fbaa/juventus-vs-milan
+|team2 = [[AC Milan|Milan]]
+|goals1 =
+*[[Federico Gatti|Gatti]] {{goal|90+2}}, {{yel|90+6}}
+|goals2 =
+*[[Alphadjo Cisse|Cisse]] {{goal|68}}, {{yel|90+6}}
+*[[Pervis Estupiñán|Estupiñán]] {{yel|79}}
+*[[Koni De Winter|De Winter]] {{yel|90+2}}
+|stadium = [[Juventus Stadium]]
+|location = [[Turin]]
+|attendance = 41,577
+|referee = [[Maurizio Mariani]]
+|result = D
+}}
+{{Football box collapsible
+|round = 4
+|date = 13 September 2026
+|time = 20:45 [[Central European Summer Time|CEST]] ([[UTC+02:00|UTC+2]])
+|team1 = [[US Sassuolo Calcio|Sassuolo]]
+|score = 3–2
+|report = https://en.legaseriea.it/serie-a/match/9388dc1dd7d1471f9a99150ab044f3b8/sassuolo-vs-juventus
+|team2 = Juventus
+|goals1 =
+*[[Luca Lipani|Lipani]] {{yel|48}}
+*[[Sebastiano Esposito|Esposito]] {{goal|65}}
+*[[Kieron Bowie|Bowie]] {{goal|89}}
+*[[Fedde Leysen|Leysen]] {{yel|90+3}}
+*[[Vasilije Adžić|Adžić]] {{goal|90+4}}
+|goals2 =
+*[[Jhon Lucumí|Lucumí]] {{yel|20}}
+*[[Douglas Luiz]] {{yel|76}}
+*[[Edon Zhegrova|Zhegrova]] {{goal|82||90+1}}
+|stadium = [[Mapei Stadium – Città del Tricolore]]
+|location = [[Reggio Emilia]]
+|attendance = 16,700
+|referee = Juan Luca Sacchi
+|result = L
+}}
+{{Football box collapsible
+|round = 5
+|date = 20 September 2026
+|time = 18:00 [[Central European Summer Time|CEST]] ([[UTC+02:00|UTC+2]])
+|team1 = Juventus
+|score = 2–0
+|report = https://en.legaseriea.it/serie-a/match/04fabb2a6dcc487bbdab3d1710dcdab5/juventus-vs-atalanta
+|team2 = [[Atalanta BC|Atalanta]]
+|goals1 =
+*[[Francisco Conceição|Conceição]] {{yel|22}}, {{goal|28}}
+*[[Gleison Bremer|Bremer]] {{goal|77}}
+|goals2 =
+*[[Thomas Thiesson Kristensen|Kristensen]] {{yel|17}}
+*[[Franck Kessié|Kessié]] {{yel|43}}
+|stadium = [[Juventus Stadium]]
+|location = [[Turin]]
+|attendance = 40,351
+|referee = Luca Zufferli
+|result = W
+}}
+{{Football box collapsible
+|round = 6
+|date = 11 October 2026
+|time = 20:45 [[Central European Summer Time|CEST]] ([[UTC+02:00|UTC+2]])
+|team1 = [[Cagliari Calcio|Cagliari]]
+|score = 1–1
+|report = https://en.legaseriea.it/serie-a/match/28365b607390400a86cce5ee099aa2a3/cagliari-vs-juventus
+|team2 = Juventus
+|goals1 =
+*[[Daniel Maldini|Maldini]] {{goal|20}}
+*[[Juan Rodríguez (footballer, born 2005)|Rodríguez]] {{yel|45+1}}
+*[[Alessandro Deiola|Deiola]] {{yel|83}}
+|goals2 =
+*[[Weston McKennie|McKennie]] {{yel|17}}
+*[[Randal Kolo Muani|Kolo Muani]] {{goal|81}}
+|stadium = [[Unipol Domus]]
+|location = [[Cagliari]]
+|attendance = 16,334
+|referee = Matteo Marcenaro
+|result = D
+}}
+{{Football box collapsible
+|round = 7
+|date = 18 October 2026
+|time = 20:45 [[Central European Summer Time|CEST]] ([[UTC+02:00|UTC+2]])
+|team1 = Juventus
+|score = 0–3
+|report = https://en.legaseriea.it/serie-a/match/eef93db17da9418caf328688054e5a4b/juventus-vs-lazio
+|team2 = [[SS Lazio|Lazio]]
+|goals1 =
+|goals2 =
+*[[Oliver Provstgaard|Provstgaard]] {{goal|37}}
+*[[Kenneth Taylor|Taylor]] {{yel|41}}
+*[[Mattia Zaccagni|Zaccagni]] {{yel|48}}
+*[[Gustav Isaksen|Isaksen]] {{goal|66}}
+*[[Fisayo Dele-Bashiru|Dele-Bashiru]] {{goal|89}}
+|stadium = [[Juventus Stadium]]
+|location = [[Turin]]
+|attendance = 41,112
+|referee = [[Davide Massa]]
+|result = L
+}}
+{{Football box collapsible
+|round = 8
+|date = 25 October 2026
+|time = 18:00 [[Central European Time|CET]] ([[UTC+01:00|UTC+1]])
+|team1 = [[US Lecce|Lecce]]
+|score = 0–2
+|report = https://en.legaseriea.it/serie-a/match/295b747323f340bbb809fe5f928f7ff5/lecce-vs-juventus
+|team2 = Juventus
+|goals1 =
+*[[Kialonda Gaspar|Gaspar]] {{sentoff|2|76|90+4}}
+|goals2 =
+*[[Weston McKennie|McKennie]] {{goal|29}}
+*[[Douglas Luiz]] {{goal|41}}
+|stadium = [[Stadio Via del mare]]
+|location = [[Lecce]]
+|attendance = 27,130
+|referee = Fabio Maresca
+|result = W
+}}
+{{Football box collapsible
+|round = 9
+|date = 28 October 2026
+|time = 20:45 [[Central European Time|CET]] ([[UTC+01:00|UTC+1]])
+|team1 = [[Genoa CFC|Genoa]]
+|score = 2–0
+|report = https://en.legaseriea.it/serie-a/match/ffda1c034a2a40b182674eb414a06134/genoa-vs-juventus
+|team2 = Juventus
+|goals1 =
+*[[Kingsley Ehizibue|Ehizibue]] {{goal|12}}
+*[[Tommaso Baldanzi|Baldanzi]] {{goal|28}}
+|goals2 =
+*[[Edon Zhegrova|Zhegrova]] {{yel|71}}
+|stadium = [[Stadio Luigi Ferraris]]
+|location = [[Genoa]]
+|attendance = 30,657
+|referee = [[Daniele Doveri]]
+|result = L
+}}
+{{Football box collapsible
+|round = [[Juventus FC–SSC Napoli rivalry|10]]
+|date = 1 November 2026
+|time = 20:45 [[Central European Time|CET]] ([[UTC+01:00|UTC+1]])
+|team1 = Juventus
+|score = 2–0
+|report = https://en.legaseriea.it/serie-a/match/46b3b185c34f45ebaab687944961c7e9/juventus-vs-napoli
+|team2 = [[SSC Napoli|Napoli]]
+|goals1 =
+*[[Douglas Luiz]] {{yel|16}}
+*[[Jhon Lucumí|Lucumí]] {{yel|20}}
+*[[Kerim Alajbegović|Alajbegović]] {{goal|70}}, {{yel|71}}
+*[[Jérémie Boga|Boga]] {{goal|87}}
+|goals2 =
+*[[Luca Marianucci|Marianucci]] {{sentoff|2|38|75}}
+*[[Rafa Marín|Marín]] {{yel|90+1}}
+|stadium = [[Juventus Stadium]]
+|location = [[Turin]]
+|attendance = 41,691
+|referee = Simone Sozza 
+|result = W
+}}
+{{Football box collapsible
+|round = [[ACF Fiorentina–Juventus FC rivalry|11]]
+|date = 8 November 2026
+|time = 20:45 [[Central European Time|CET]] ([[UTC+01:00|UTC+1]])
+|team1 = [[ACF Fiorentina|Fiorentina]]
+|score =
+|report = https://en.legaseriea.it/serie-a/match/4dd1f45d0f91439fa54a631e54d2dc9b/fiorentina-vs-juventus
+|team2 = Juventus
+|goals1 =
+|goals2 =
+|stadium = [[Stadio Artemio Franchi]]
+|location = [[Florence]]
+|attendance =
+|referee =
+|result =
+}}
+{{Football box collapsible
+|round = 12
+|date = 22 November 2026
+|time = 12:30 [[Central European Time|CET]] ([[UTC+01:00|UTC+1]]){{refn|group=note|The match was originally scheduled for 23 November 2026, 20:45 [[Central European Time|CET]] ([[UTC+01:00|UTC+1]]), before being moved a day earlier, 12:30 CET (UTC+1).<ref>{{cite web |url=https://images.legaseriea.it/image/private/fl_attachment/prd/w2zepi8iww3zamzewn8y.pdf |title=Comunicato ufficiale n.39|publisher=Lega Serie A|date=25 September 2026|access-date=25 September 2026|language=it}}</ref>}}
+|team1 = Juventus
+|score = 
+|report = https://en.legaseriea.it/serie-a/match/4d73af8b7a2b4d258b39375336437d42/juventus-vs-venezia
+|team2 = [[Venezia FC|Venezia]]
+|goals1 =
+|goals2 =
+|stadium = [[Juventus Stadium]]
+|location = [[Turin]]
+|attendance =
+|referee =
+|result =
+}}
+{{Football box collapsible
+|round = 13
+|date = 29 November 2026
+|time = 20:45 [[Central European Time|CET]] ([[UTC+01:00|UTC+1]])
+|team1 = [[Como 1907|Como]]
+|score =
+|report = https://en.legaseriea.it/serie-a/match/0387331c40644802895a5782cb4b4438/como-vs-juventus
+|team2 = Juventus
+|goals1 =
+|goals2 =
+|stadium = [[Stadio Giuseppe Sinigaglia]]
+|location = [[Como]]
+|attendance =
+|referee =
+|result =
+}}
+{{Football box collapsible
+|round = 14
+|date = 6 December 2026
+|time = 18:00 [[Central European Time|CET]] ([[UTC+01:00|UTC+1]])
+|team1 = Juventus
+|score =
+|report = https://en.legaseriea.it/serie-a/match/1ac681b148d6444aaeb0d62affd952be/juventus-vs-udinese
+|team2 = [[Udinese Calcio|Udinese]]
+|goals1 =
+|goals2 =
+|stadium = [[Juventus Stadium]]
+|location = [[Turin]]
+|attendance =
+|referee =
+|result =
+}}
+{{Football box collapsible
+|round = 15
+|date = 14 December 2026
+|time = 20:45 [[Central European Time|CET]] ([[UTC+01:00|UTC+1]])
+|team1 = Juventus
+|score =
+|report = https://en.legaseriea.it/serie-a/match/78216e7c17494d14b75faf0819f11c0c/juventus-vs-monza
+|team2 = [[AC Monza|Monza]]
+|goals1 =
+|goals2 =
+|stadium = [[Juventus Stadium]]
+|location = [[Turin]]
+|attendance =
+|referee =
+|result =
+}}
+{{Football box collapsible
+|round = 16
+|date = 19 December 2026
+|time = 20:45 [[Central European Time|CET]] ([[UTC+01:00|UTC+1]])
+|team1 = [[AS Roma|Roma]]
+|score =
+|report = https://en.legaseriea.it/serie-a/match/995288c4368848b4b65bbb863d313b79/roma-vs-juventus
+|team2 = Juventus
+|goals1 =
+|goals2 =
+|stadium = [[Stadio Olimpico]]
+|location = [[Rome]]
+|attendance =
+|referee =
+|result =
+}}
+{{Football box collapsible
+|round = 17
+|date = 3 January 2027
+|time = 20:45 [[Central European Time|CET]] ([[UTC+01:00|UTC+1]])
+|team1 = [[Bologna FC 1909|Bologna]]
+|score =
+|report = https://en.legaseriea.it/serie-a/match/bfeee5e5facf42b496bcd9ce386d869d/bologna-vs-juventus
+|team2 = Juventus
+|goals1 =
+|goals2 =
+|stadium = [[Stadio Renato Dall'Ara]]
+|location = [[Bologna]]
+|attendance =
+|referee =
+|result =
+}}
+{{Football box collapsible
+|round = [[Derby della Mole|18]]
+|date = 6 January 2027
+|time = 12:30 [[Central European Time|CET]] ([[UTC+01:00|UTC+1]])
+|team1 = Juventus
+|score = 
+|report = https://en.legaseriea.it/serie-a/match/8b1d544944eb4320a05a4ce059acfb17/juventus-vs-torino
+|team2 = [[Torino FC|Torino]]
+|goals1 =
+|goals2 =
+|stadium = [[Juventus Stadium]]
+|location = [[Turin]]
+|attendance = 
+|referee = 
+|result = 
+}}
+{{Football box collapsible
+|round = [[Derby d'Italia|19]]
+|date = 10 January 2027
+|time = 20:45 [[Central European Time|CET]] ([[UTC+01:00|UTC+1]])
+|team1 = [[Inter Milan|Internazionale]]
+|score =
+|report = https://en.legaseriea.it/serie-a/match/79d508ade748419b8fb9fa4e5f754768/inter-vs-juventus
+|team2 = Juventus
+|goals1 =
+|goals2 =
+|stadium = [[San Siro]]
+|location = [[Milan]]
+|attendance =
+|referee =
+|result =
+}}
+{{Football box collapsible
+|round = 20
+|date = 16 January 2027
+|time = --:-- [[Central European Time|CET]] ([[UTC+01:00|UTC+1]])
+|team1 = Juventus
+|score =
+|report = https://en.legaseriea.it/serie-a/match/50aef7de27084c6884339cabb1ddb084/juventus-vs-genoa
+|team2 = [[Genoa CFC|Genoa]]
+|goals1 =
+|goals2 =
+|stadium = [[Juventus Stadium]]
+|location = [[Turin]]
+|attendance =
+|referee =
+|result =
+}}
+{{Football box collapsible
+|round = 21
+|date = 23 January 2027
+|time = --:-- [[Central European Time|CET]] ([[UTC+01:00|UTC+1]])
+|team1 = Juventus
+|score =
+|report = https://en.legaseriea.it/serie-a/match/42af4900e8dc4d48af1b5279e92204b8/juventus-vs-cagliari
+|team2 = [[Cagliari Calcio|Cagliari]]
+|goals1 =
+|goals2 =
+|stadium = [[Juventus Stadium]]
+|location = [[Turin]]
+|attendance =
+|referee =
+|result =
+}}
+{{Football box collapsible
+|round = 22
+|date = 30 January 2027
+|time = --:-- [[Central European Time|CET]] ([[UTC+01:00|UTC+1]])
+|team1 = [[AC Milan|Milan]]
+|score =
+|report = https://en.legaseriea.it/serie-a/match/a1bb5e4f04244f93a067addacd259899/milan-vs-juventus
+|team2 = Juventus
+|goals1 =
+|goals2 =
+|stadium = [[San Siro]]
+|location = [[Milan]]
+|attendance =
+|referee =
+|result =
+}}
+{{Football box collapsible
+|round = 23
+|date = 6 February 2027
+|time = --:-- [[Central European Time|CET]] ([[UTC+01:00|UTC+1]])
+|team1 = Juventus
+|score =
+|report = https://en.legaseriea.it/serie-a/match/8b482901511a4c4dbfb00d640e7d5af3/juventus-vs-sassuolo
+|team2 = [[US Sassuolo Calcio|Sassuolo]]
+|goals1 =
+|goals2 =
+|stadium = [[Juventus Stadium]]
+|location = [[Turin]]
+|attendance =
+|referee =
+|result =
+}}
+{{Football box collapsible
+|round = 24
+|date = 13 February 2027
+|time = --:-- [[Central European Time|CET]] ([[UTC+01:00|UTC+1]])
+|team1 = [[SSC Napoli|Napoli]]
+|score =
+|report = https://en.legaseriea.it/serie-a/match/6d8467caa9bb4654b811c6ac9c44a65c/napoli-vs-juventus
+|team2 = Juventus
+|goals1 =
+|goals2 =
+|stadium = [[Stadio Diego Armando Maradona]]
+|location = [[Naples]]
+|attendance =
+|referee =
+|result =
+}}
+{{Football box collapsible
+|round = 25
+|date = 20 February 2027
+|time = --:-- [[Central European Time|CET]] ([[UTC+01:00|UTC+1]])
+|team1 = Juventus
+|score =
+|report = https://en.legaseriea.it/serie-a/match/50ebdcd2afb547eead35206e79c2a57b/juventus-vs-bologna
+|team2 = [[Bologna FC 1909|Bologna]]
+|goals1 =
+|goals2 =
+|stadium = [[Juventus Stadium]]
+|location = [[Turin]]
+|attendance =
+|referee =
+|result =
+}}
+{{Football box collapsible
+|round = 26
+|date = 27 February 2027
+|time = --:-- [[Central European Time|CET]] ([[UTC+01:00|UTC+1]])
+|team1 = [[AC Monza|Monza]]
+|score =
+|report = https://en.legaseriea.it/serie-a/match/4a69b6f826d64a3db343a83ce65180d2/monza-vs-juventus
+|team2 = Juventus
+|goals1 =
+|goals2 =
+|stadium = [[Stadio Brianteo]]
+|location = [[Monza]]
+|attendance =
+|referee =
+|result =
+}}
+{{Football box collapsible
+|round = 27
+|date = 6 March 2027
+|time = --:-- [[Central European Time|CET]] ([[UTC+01:00|UTC+1]])
+|team1 = Juventus
+|score =
+|report = https://en.legaseriea.it/serie-a/match/0177583b1d1b4b71b2eff0833c86daae/juventus-vs-roma
+|team2 = [[AS Roma|Roma]]
+|goals1 =
+|goals2 =
+|stadium = [[Juventus Stadium]]
+|location = [[Turin]]
+|attendance =
+|referee =
+|result =
+}}
+{{Football box collapsible
+|round = 28
+|date = 13 March 2027
+|time = --:-- [[Central European Time|CET]] ([[UTC+01:00|UTC+1]])
+|team1 = [[SS Lazio|Lazio]]
+|score =
+|report = https://en.legaseriea.it/serie-a/match/0ce37a3a36eb4292b72c3a2cb649676b/lazio-vs-juventus
+|team2 = Juventus
+|goals1 =
+|goals2 =
+|stadium = [[Stadio Olimpico]]
+|location = [[Rome]]
+|attendance =
+|referee =
+|result =
+}}
+{{Football box collapsible
+|round = 29
+|date = 20 March 2027
+|time = --:-- [[Central European Time|CET]] ([[UTC+01:00|UTC+1]])
+|team1 = Juventus
+|score =
+|report = https://en.legaseriea.it/serie-a/match/ebe0ac380103486ca3e1a411c7ff1217/juventus-vs-como
+|team2 = [[Como 1907|Como]]
+|goals1 =
+|goals2 =
+|stadium = [[Juventus Stadium]]
+|location = [[Turin]]
+|attendance =
+|referee =
+|result =
+}}
+{{Football box collapsible
+|round = 30
+|date = 3 April 2027
+|time = --:-- [[Central European Summer Time|CEST]] ([[UTC+02:00|UTC+2]])
+|team1 = [[Torino FC|Torino]]
+|score =
+|report = https://en.legaseriea.it/serie-a/match/b7041e67302e4de0a89892bb0532a230/torino-vs-juventus
+|team2 = Juventus
+|goals1 =
+|goals2 =
+|stadium = [[Stadio Olimpico Grande Torino]]
+|location = [[Turin]]
+|attendance =
+|referee =
+|result =
+}}
+{{Football box collapsible
+|round = 31
+|date = 10 April 2027
+|time = --:-- [[Central European Summer Time|CEST]] ([[UTC+02:00|UTC+2]])
+|team1 = Juventus
+|score =
+|report = https://en.legaseriea.it/serie-a/match/fed41162248b4fce8e3546419d86dc0b/juventus-vs-lecce
+|team2 = [[US Lecce|Lecce]]
+|goals1 =
+|goals2 =
+|stadium = [[Juventus Stadium]]
+|location = [[Turin]]
+|attendance =
+|referee =
+|result =
+}}
+{{Football box collapsible
+|round = 32
+|date = 17 April 2027
+|time = --:-- [[Central European Summer Time|CEST]] ([[UTC+02:00|UTC+2]])
+|team1 = [[Venezia FC|Venezia]]
+|score =
+|report = https://en.legaseriea.it/serie-a/match/13e3172e1dd147479d8df1bc866c2468/venezia-vs-juventus
+|team2 = Juventus
+|goals1 =
+|goals2 =
+|stadium = [[Stadio Pier Luigi Penzo]]
+|location = [[Venice]]
+|attendance =
+|referee =
+|result =
+}}
+{{Football box collapsible
+|round = 33
+|date = 24 April 2027
+|time = --:-- [[Central European Summer Time|CEST]] ([[UTC+02:00|UTC+2]])
+|team1 = Juventus
+|score =
+|report = https://en.legaseriea.it/serie-a/match/a0f5a14250cd4d43ac785227be484a81/juventus-vs-fiorentina
+|team2 = [[ACF Fiorentina|Fiorentina]]
+|goals1 =
+|goals2 =
+|stadium = [[Juventus Stadium]]
+|location = [[Turin]]
+|attendance =
+|referee =
+|result =
+|note = Ranieri received a red card after being substituted from the match.
+}}
+{{Football box collapsible
+|round = 34
+|date = 1 May 2027
+|time = --:-- [[Central European Summer Time|CEST]] ([[UTC+02:00|UTC+2]])
+|team1 = [[Atalanta BC|Atalanta]]
+|score =
+|report = https://en.legaseriea.it/serie-a/match/3ad31c580537411f81951fb4672f24ef/atalanta-vs-juventus
+|team2 = Juventus
+|goals1 =
+|goals2 =
+|stadium = [[Stadio Atleti Azzurri d'Italia]]
+|location = [[Bergamo]]
+|attendance =
+|referee =
+|result =
+}}
+{{Football box collapsible
+|round = 35
+|date = 8 May 2027
+|time = --:-- [[Central European Summer Time|CEST]] ([[UTC+02:00|UTC+2]])
+|team1 = [[Udinese Calcio|Udinese]]
+|score =
+|report = https://en.legaseriea.it/serie-a/match/ad75db2b4890444e92718db57fd9cd15/udinese-vs-juventus
+|team2 = Juventus
+|goals1 =
+|goals2 =
+|stadium = [[Stadio Friuli]]
+|location = [[Udine]]
+|attendance =
+|referee =
+|result =
+}}
+{{Football box collapsible
+|round = 36
+|date = 15 May 2027
+|time = --:-- [[Central European Summer Time|CEST]] ([[UTC+02:00|UTC+2]])
+|team1 = Juventus
+|score =
+|report = https://en.legaseriea.it/serie-a/match/5fee08a2cb8a4386aba91715307b6b96/juventus-vs-inter
+|team2 = [[Inter Milan|Internazionale]]
+|goals1 =
+|goals2 =
+|stadium = [[Juventus Stadium]]
+|location = [[Turin]]
+|attendance =
+|referee =
+|result =
+}}
+{{Football box collapsible
+|round = 37
+|date = 22 May 2027
+|time = --:-- [[Central European Summer Time|CEST]] ([[UTC+02:00|UTC+2]])
+|team1 = [[Parma Calcio 1913|Parma]]
+|score =
+|report = https://en.legaseriea.it/serie-a/match/5f465e631e5d4a3d80284ff841a76eac/parma-vs-juventus
+|team2 = Juventus
+|goals1 =
+|goals2 =
+|stadium = [[Stadio Ennio Tardini]]
+|location = [[Parma]]
+|attendance =
+|referee =
+|result =
+}}
+{{Football box collapsible
+|round = 38
+|date = 29 May 2027
+|time = --:-- [[Central European Summer Time|CEST]] ([[UTC+02:00|UTC+2]])
+|team1 = Juventus
+|score =
+|report = https://en.legaseriea.it/serie-a/match/0e67e362749a4bd3a12c2957e9b6042b/juventus-vs-frosinone
+|team2 = [[Frosinone Calcio|Frosinone]]
+|goals1 =
+|goals2 =
+|stadium = [[Juventus Stadium]]
+|location = [[Turin]]
+|attendance =
+|referee =
+|result =
+}}
+
+===Coppa Italia===
+{{main|2026–27 Coppa Italia}}
+{{Football box collapsible
+|round = [[2026–27 Coppa Italia#Round of 16|Round of 16]]
+|date = 3 December 2026
+|time = 21:00 [[Central European Time|CET]] ([[UTC+01:00|UTC+1]]) 
+|team1 = Juventus
+|score = 
+|report = https://en.legaseriea.it/coppa-italia/match/dd4bb8e98397429595a1ea32ed0a59cf/juventus-vs-sassuolo
+|team2 = [[US Sassuolo Calcio|Sassuolo]]
+|goals1 =
+|goals2 =
+|stadium = [[Juventus Stadium]]
+|location = [[Turin]]
+|attendance = 
+|referee = 
+|result = 
+}}
+
+=== UEFA Europa League ===
+{{main|2026–27 UEFA Europa League}}
+
+====League phase====
+{{main|2026–27 UEFA Europa League league phase}}
+The league phase draw was held on 28 August 2026.<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/draws/2027/2002229/ |title=League phase draw |publisher=UEFA |date=28 August 2026 |access-date=28 August 2026}}</ref>
+
+{{:2026–27 UEFA Europa League league phase|showteam=JUV|transcludesection=Table}}
+
+{{#invoke:sports rbr table|table|legendpos=b
+| update=22 October 2026
+| header=Round
+| label1=Ground
+| res1=H/A/H/A/H/A/A/H
+| label2=Result
+| res2=W/W/D/////
+| label3=Position
+| pos3=1/1/7/////
+| color_W=green2|text_W=Win
+| color_D=yellow2|text_D=Draw
+| color_L=red2|text_L=Loss
+| text_H=Home|text_A=Away
+| color_1-8=green1|color_9-16=blue1|color_17-24=blue2
+| source=[https://www.uefa.com/uefaeuropaleague/fixtures-results/ UEFA]
+}}
+
+{{footballbox collapsible
+| round      = [[2026–27 UEFA Europa League league phase#Juventus v NEC|1]]
+| date       = 17 September 2026
+| time       = 21:00 [[Central European Summer Time|CEST]] ([[UTC+2:00|UTC+2]])
+| team1      = Juventus {{fbaicon|ITA}}
+| score      = 5–0
+| report     = https://www.uefa.com/uefaeuropaleague/match/2050066/
+| team2      = {{fbaicon|NED}} [[NEC Nijmegen|NEC]]
+| goals1     = 
+*[[Nico González (footballer, born 1998)|González]] {{goal|9}}
+*[[Kerim Alajbegović|Alajbegović]] {{goal|24}}
+*[[Nick Woltemade|Woltemade]] {{goal|35|pen.}}
+*[[Douglas Luiz]] {{yel|53}}
+*[[Zeki Çelik|Çelik]] {{goal|75}}
+*[[Randal Kolo Muani|Kolo Muani]] {{goal|82}}
+| goals2     = 
+*[[Jamiro Monteiro|Monteiro]] {{yel|52}}
+| stadium    = [[Juventus Stadium]]
+| location   = [[Turin]], Italy
+| attendance = 41,407
+| referee    = Oleksiy Derevinskyi ([[Football Federation of Ukraine|Ukraine]])
+| result     = W
+}}
+{{footballbox collapsible
+| round      = [[2026–27 UEFA Europa League league phase#Celta Vigo v Juventus|2]]
+| date       = 15 October 2026
+| time       = 21:00 [[Central European Summer Time|CEST]] ([[UTC+2:00|UTC+2]])
+| team1      = [[RC Celta de Vigo|Celta Vigo]] {{fbaicon|ESP}}
+| score      = 1–2
+| report     = https://www.uefa.com/uefaeuropaleague/match/2050089/
+| team2      = {{fbaicon|ITA}} Juventus
+| goals1     = 
+*[[Hugo Álvarez (footballer, born 2003)|Álvarez]] {{goal|18}}
+*[[Williot Swedberg|Swedberg]] {{yel|39}}
+*[[Ilaix Moriba|Moriba]] {{yel|84}}
+| goals2     = 
+*[[Lloyd Kelly|Kelly]] {{yel|54}}
+*[[Nick Woltemade|Woltemade]] {{goal|58}}
+*[[Jhon Lucumí|Lucumí]] {{yel|72}}
+*[[Randal Kolo Muani|Kolo Muani]] {{goal|90+2}}
+| stadium    = [[Balaídos Stadium|Balaídos]]
+| location   = [[Vigo]], Spain
+| attendance = 21,805
+| referee    = Sander van der Eijk ([[Royal Dutch Football Association|Netherlands]])
+| result     = W
+}}
+{{footballbox collapsible
+| round      = [[2026–27 UEFA Europa League league phase#Juventus v Rennes|3]]
+| date       = 22 October 2026
+| time       = 18:45 [[Central European Summer Time|CEST]] ([[UTC+02:00|UTC+2]])
+| team1      = Juventus {{fbaicon|ITA}}
+| score      = 2–2
+| report     = https://www.uefa.com/uefaeuropaleague/match/2050093/
+| team2      = {{fbaicon|FRA}} [[Stade Rennais FC|Rennes]]
+| goals1     = 
+*[[Zeki Çelik|Çelik]] {{goal|5}}
+*[[Federico Gatti|Gatti]] {{yel|20}}
+*[[Nick Woltemade|Woltemade]] {{goal|67|pen.}}
+| goals2     = 
+*[[Musa Al-Taamari|Al-Taamari]] {{goal|15}}
+*[[Boulaye Dia|Dia]] {{goal|43|pen.}}
+*[[Abdelhamid Aït Boudlal|Aït Boudlal]] {{yel|82}}
+| stadium    = [[Juventus Stadium]]
+| location   = [[Turin]], Italy
+| attendance = 41,554
+| referee    = Morten Krogh ([[Danish Football Association|Denmark]])
+| result     = D
+}}
+{{footballbox collapsible
+| round      = [[2026–27 UEFA Europa League league phase#AZ v Juventus|4]]
+| date       = 5 November 2026
+| time       = 21:00 [[Central European Time|CET]] ([[UTC+01:00|UTC+1]])
+| team1      = [[AZ Alkmaar|AZ]] {{fbaicon|NED}}
+| score      = 
+| report     = https://www.uefa.com/uefaeuropaleague/match/2050114/
+| team2      = {{fbaicon|ITA}} Juventus
+| goals1     = 
+| goals2     = 
+| stadium    = [[AFAS Stadion]]
+| location   = [[Alkmaar]], Netherlands
+| attendance = 
+| referee    = 
+| result     = 
+}}
+{{footballbox collapsible
+| round      = [[2026–27 UEFA Europa League league phase#Juventus v Omonia|5]]
+| date       = 26 November 2026
+| time       = 21:00 [[Central European Time|CET]] ([[UTC+1:00|UTC+1]])
+| team1      = Juventus {{fbaicon|ITA}}
+| score      = 
+| report     = https://www.uefa.com/uefaeuropaleague/match/2050129/
+| team2      = {{fbaicon|CYP}} [[AC Omonia|Omonia]]
+| goals1     = 
+| goals2     = 
+| stadium    = [[Juventus Stadium]]
+| location   = [[Turin]], Italy
+| attendance = 
+| referee    = 
+| result     = 
+}}
+{{footballbox collapsible
+| round      = [[2026–27 UEFA Europa League league phase#Hapoel Be'er Sheva v Juventus|6]]
+| date       = 10 December 2026
+| time       = 18:45 [[Central European Time|CET]] ([[UTC+1:00|UTC+1]])
+| team1      = [[Hapoel Be'er Sheva F.C.|Hapoel Be'er Sheva]] {{fbaicon|ISR}}
+| score      = 
+| report     = https://www.uefa.com/uefaeuropaleague/match/2050162/
+| team2      = {{fbaicon|ITA}} Juventus
+| goals1     = 
+| goals2     = 
+| stadium    = [[Rapid-Giulești Stadium]]{{refn|group=note|name=Israel|Due to the [[Gaza war]], Israeli teams are required to play their home matches at neutral venues until further notice.<ref>{{cite news |url=https://www.uefa.com/news-media/news/0286-194079070fc0-ee97b2cd5400-1000/ |title=European Qualifier match between Belgium and Sweden declared abandoned with half-time result confirmed as final |website=[[UEFA]] |publisher=Union of European Football Associations |date=19 October 2023 |access-date=23 November 2023}}</ref>}}
+| location   = [[Bucharest]], Romania
+| attendance = 
+| referee    = 
+| result     = 
+}}
+{{footballbox collapsible
+| round      = [[2026–27 UEFA Europa League league phase#Ferencváros v Juventus|7]]
+| date       = 21 January 2027
+| time       = 18:45 [[Central European Summer Time|CET]] ([[UTC+1:00|UTC+1]])
+| team1      = [[Ferencvárosi TC|Ferencváros]] {{fbaicon|HUN}}
+| score      = 
+| report     = https://www.uefa.com/uefaeuropaleague/match/2050169/
+| team2      = {{fbaicon|ITA}} Juventus
+| goals1     = 
+| goals2     = 
+| stadium    = [[Ferencváros Stadion]]
+| location   = [[Budapest]], Hungary
+| attendance = 
+| referee    = 
+| result     = 
+}}
+{{footballbox collapsible
+| round      = [[2026–27 UEFA Europa League league phase#Juventus v Real Sociedad|8]]
+| date       = 28 January 2027
+| time       = 21:00 [[Central European Time|CET]] ([[UTC+01:00|UTC+1]])
+| team1      = Juventus {{fbaicon|ITA}}
+| score      = 
+| report     = https://www.uefa.com/uefaeuropaleague/match/2050184/
+| team2      = {{fbaicon|ESP}} [[Real Sociedad]]
+| goals1     = 
+| goals2     = 
+| stadium    = [[Juventus Stadium]]
+| location   = [[Turin]], Italy
+| attendance = 
+| referee    = 
+| result     = 
+}}
+
+== Statistics ==
+===Appearances and goals===
+{{Efs start|[[2026–27 Serie A|Serie A]]|[[2026–27 Coppa Italia|Coppa Italia]]|[[2026–27 UEFA Europa League|Europa League]]}}
+|-
+! colspan=14 style=background:#DCDCDC; text-align:center| Goalkeepers
+{{Efs player|no=1 |name=[[Kamil Grabara]]|pos=GK|nat=POL                              |0    |0 |0    |0 |1    |0 }}
+{{Efs player|no=23 |name=[[Carlo Pinsoglio]]|pos=GK|nat=ITA                           |0    |0 |0    |0 |0    |0 }}
+{{Efs player|no=25 |name=[[Guglielmo Vicario]]|pos=GK|nat=ITA                         |10   |0 |0    |0 |2    |0 }}
+{{Efs player|no=33 |name=[[Neto (footballer, born 1989)|Neto]]|pos=GK|nat=BRA         |0    |0 |0    |0 |0    |0 }}
+|-
+! colspan=14 style=background:#DCDCDC; text-align:center| Defenders
+{{Efs player|no=2 |name=[[Zeki Çelik]]|pos=DF|nat=TUR                                 |7    |0 |0    |0 |2    |2 }}
+{{Efs player|no=3 |name=[[Gleison Bremer|Bremer]]|pos=DF|nat=BRA                      |10   |2 |0    |0 |1+2  |0 }}
+{{Efs player|no=4 |name=[[Federico Gatti]]|pos=DF|nat=ITA                             |2+2  |1 |0    |0 |3    |0 }}
+{{Efs player|no=6 |name=[[Lloyd Kelly]]|pos=DF|nat=ENG                                |1+4  |0 |0    |0 |2    |0 }}
+{{Efs player|no=15 |name=[[Pierre Kalulu]]|pos=DF|nat=FRA                             |10   |0 |0    |0 |2+1  |0 }}
+{{Efs player|no=20 |name=[[Andrea Cambiaso]]|pos=DF|nat=ITA                           |2+5  |0 |0    |0 |2    |0 }}
+{{Efs player|no=24 |name=[[Daniele Rugani]]|pos=DF|nat=ITA                            |0    |0 |0    |0 |0    |0 }}
+{{Efs player|no=26 |name=[[Jhon Lucumí]]|pos=DF|nat=COL                               |9    |0 |0    |0 |1+2  |0 }}
+{{Efs player|no=32 |name=[[Juan Cabal]]|pos=DF|nat=COL                                |1+2  |0 |0    |0 |0    |0 }}
+|-
+! colspan=14 style=background:#DCDCDC; text-align:center| Midfielders
+{{Efs player|no=5 |name=[[Manuel Locatelli]]|pos=MF|nat=ITA                           |3    |0 |0    |0 |0    |0 }}
+{{Efs player|no=8 |name=[[Teun Koopmeiners]]|pos=MF|nat=NED                           |3+6  |1 |0    |0 |2+1  |0 }}
+{{Efs player|no=12 |name=[[Douglas Luiz]]|pos=MF|nat=BRA                              |10   |1 |0    |0 |2+1  |0 }}
+{{Efs player|no=17 |name=[[Kerim Alajbegović]]|pos=MF|nat=BIH                         |6+3  |1 |0    |0 |2+1  |1 }}
+{{Efs player|no=19 |name=[[Khéphren Thuram]]|pos=MF|nat=FRA                           |0    |0 |0    |0 |0    |0 }}
+{{Efs player|no=22 |name=[[Weston McKennie]]|pos=MF|nat=USA                           |7    |1 |0    |0 |3    |0 }}
+{{Efs player|no=29 |name=[[Pape Matar Sarr]]|pos=MF|nat=SEN                           |3+3  |0 |0    |0 |2    |0 }}
+{{Efs player|no=31 |name=[[Nico González (footballer, born 1998)|Nico González]]|pos=MF|nat=ARG |5+1  |1 |0    |0 |1+1  |1 }}
+{{Efs player|no=41 |name=[[Augusto Owusu]]|pos=MF|nat=ITA                             |0    |0  |0     |0+1    |0 }}
+|-
+! colspan=14 style=background:#DCDCDC; text-align:center| Forwards
+{{Efs player|no=7 |name=[[Francisco Conceição]]|pos=FW|nat=POR                        |6+1  |1 |0    |0 |1+2  |0 }}
+{{Efs player|no=9 |name=[[Randal Kolo Muani]]|pos=FW|nat=FRA                          |10   |1 |0    |0 |1+2  |2 }}
+{{Efs player|no=10 |name=[[Kenan Yıldız]]|pos=FW|nat=TUR                              |1    |0 |0    |0 |0    |0 }}
+{{Efs player|no=11 |name=[[Edon Zhegrova]]|pos=FW|nat=KOS                             |0+8  |2 |0    |0 |0    |0 }}
+{{Efs player|no=13 |name=[[Jérémie Boga]]|pos=FW|nat=CIV                              |1+6  |1 |0    |0 |0+1  |0 }}
+{{Efs player|no=14 |name=[[Arkadiusz Milik]]|pos=FW|nat=POL                           |0    |0 |0    |0 |0    |0 }}
+{{Efs player|no=18 |name=[[Jeff Ekhator]]|pos=FW|nat=ITA                              |0    |0 |0    |0 |0    |0 }}
+{{Efs player|no=27 |name=[[Nick Woltemade]]|pos=FW|nat=GER                            |2+6  |0 |0    |0 |3    |3 }}
+{{Efs player|no=45 |name=[[Justin Oboavwoduo]]|pos=FW|nat=ENG                         |0+1  |0 |0    |0 |0    |0 }}
+|-
+! colspan=16 style="background:#dcdcdc; text-align:center;"| Players transferred during the season
+|-
+{{Efs player|no=1 |name=[[Mattia Perin]]|pos=GK|nat=ITA                               |0+1  |0 |0    |0 |0    |0 }}
+{{Efs player|no=16 |name=[[Michele Di Gregorio]]|pos=GK|nat=ITA                       |0    |0 |0    |0 |0    |0 }}
+{{Efs player|no=21 |name=[[Fabio Miretti]]|pos=MF|nat=ITA                             |0    |0 |0    |0 |0    |0 }}
+{{Efs player|no=30 |name=[[Jonathan David]]|pos=FW|nat=CAN                            |1    |0 |0    |0 |0    |0 }}
+{{Fb cs footer |s=[[#Competitions|Competitions]] |u=1 November 2026|date=July 2026}}
+
+=== Goalscorers ===
+{| class="wikitable sortable" style="text-align:center"
+|-
+!width=15|{{Tooltip|Rank|Rank}}
+!width=15|{{Tooltip|No.|Squad Number}}
+!width=15|{{Tooltip|Pos.|Position}}
+!width=145|Player
+!width=80|'''[[2026–27 Serie A|Serie A]]'''
+!width=80|'''[[2026–27 Coppa Italia|Coppa Italia]]'''
+!width=80|'''[[2026–27 UEFA Europa League|Europa League]]'''
+!width=80|Total
+|-
+|rowspan="2"|'''1'''
+|9
+|[[Forward (association football)|FW]]
+|align=left|{{flagicon|FRA}} [[Randal Kolo Muani]]
+|1
+|0
+|2
+|rowspan="2"|'''3'''
+|-
+|27
+|[[Forward (association football)|FW]]
+|align=left|{{flagicon|GER}} [[Nick Woltemade]]
+|0
+|0
+|3
+|-
+|rowspan="5"|'''3'''
+|2
+|[[Defender (association football)|DF]]
+|align=left|{{flagicon|TUR}} [[Zeki Çelik]]
+|0
+|0
+|2
+|rowspan="5"|'''2'''
+|-
+|3
+|[[Defender (association football)|DF]]
+|align=left|{{flagicon|BRA}} [[Gleison Bremer|Bremer]]
+|2
+|0
+|0
+|-
+|11
+|[[Forward (association football)|FW]]
+|align=left|{{flagicon|KOS}} [[Edon Zhegrova]]
+|2
+|0
+|0
+|-
+|17
+|[[Midfielder|MF]]
+|align=left|{{flagicon|BIH}} [[Kerim Alajbegović]]
+|1
+|0
+|1
+|-
+|31
+|[[Midfielder|MF]]
+|align=left|{{flagicon|ARG}} [[Nico González (footballer, born 1998)|Nico González]]
+|1
+|0
+|1
+|-
+|rowspan="6"|'''8'''
+|4
+|[[Defender (association football)|DF]]
+|align=left|{{flagicon|ITA}} [[Federico Gatti]]
+|1
+|0
+|0
+|rowspan="6"|'''1'''
+|-
+|7
+|[[Forward (association football)|FW]]
+|align=left|{{flagicon|POR}} [[Francisco Conceição]]
+|1
+|0
+|0
+|-
+|8
+|[[Midfielder|MF]]
+|align=left|{{flagicon|NED}} [[Teun Koopmeiners]]
+|1
+|0
+|0
+|-
+|12
+|[[Midfielder|MF]]
+|align=left|{{flagicon|BRA}} [[Douglas Luiz]]
+|1
+|0
+|0
+|-
+|13
+|[[Forward (association football)|FW]]
+|align=left|{{flagicon|CIV}} [[Jérémie Boga]]
+|1
+|0
+|0
+|-
+|22
+|[[Midfielder|MF]]
+|align=left|{{flagicon|USA}} [[Weston McKennie]]
+|1
+|0
+|0
+|-
+!colspan=4|Totals
+!13
+!0
+!9
+!22
+{{Fb cs footer |s=[[#Competitions|Competitions]] |u=1 November 2026|date=October 2024}}
+
+==Notes==
+{{reflist|group=note}}
+
+== References ==
+{{Reflist}}
+
+{{Juventus FC seasons}}
+{{2026–27 in Italian football}}
+
+{{DEFAULTSORT:2026-27 Juventus F.C. Season}}
+[[Category:Juventus FC seasons]]
+[[Category:Italian football clubs 2026–27 season|Juventus]]
+[[Category:2026–27 UEFA Europa League participants seasons|Juventus]]
