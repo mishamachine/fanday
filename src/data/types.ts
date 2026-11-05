@@ -47,6 +47,9 @@ export interface Game {
 export interface DataSource {
   listLeagues(): Promise<League[]>
   listTeams(leagueId: string): Promise<Team[]>
-  /** Upcoming games for the followed teams, soonest first. */
-  listGames(teamIds: string[], now?: Date): Promise<Game[]>
+  /**
+   * Games for the followed teams from yesterday on, soonest first. With `aheadDays`, only games up to that many days
+   * after `now` (the calendar sync asks for 180); without it the list is open-ended and capped at 200.
+   */
+  listGames(teamIds: string[], now?: Date, aheadDays?: number): Promise<Game[]>
 }

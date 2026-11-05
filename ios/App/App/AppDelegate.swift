@@ -1,5 +1,6 @@
 import UIKit
 import Capacitor
+import BackgroundTasks
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -7,7 +8,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        // Must be registered before launch finishes. The task only tells the web layer "sync now" (the sync itself is
+        // TypeScript); iOS decides if and when it runs, so this is best effort. Sync on app open is the dependable path.
+        BGTaskScheduler.shared.register(forTaskWithIdentifier: "com.bbprojectfactory.fanday.refresh", using: nil) { task in
+            NotificationCenter.default.post(name: Notification.Name("FandayBackgroundRefresh"), object: nil)
+            // Expiration and the timer run on different queues: the lock makes sure the task is completed exactly once.
+            let lock = NSLock()
+            var finished = false
+            let finish = { (ok: Bool) in
+                lock.lock(); defer { lock.unlock() }
+                if !finished { finished = true; task.setTaskCompleted(success: ok) }
+            }
+            task.expirationHandler = { finish(false) }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 25) { finish(true) }
+            let next = BGAppRefreshTaskRequest(identifier: "com.bbprojectfactory.fanday.refresh")
+            next.earliestBeginDate = Date(timeIntervalSinceNow: 15 * 60)
+            try? BGTaskScheduler.shared.submit(next)
+        }
         return true
     }
 

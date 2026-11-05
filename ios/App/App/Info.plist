@@ -33,6 +33,18 @@
 	<string>$(MARKETING_VERSION)</string>
 	<key>CFBundleVersion</key>
 	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>NSCalendarsFullAccessUsageDescription</key>
+	<string>Fanday adds your teams' games to a calendar called Fanday and keeps the dates and kickoff times up to date, including when a game moves. It only changes events it created in that calendar.</string>
+	<key>NSCalendarsUsageDescription</key>
+	<string>Fanday adds your teams' games to a calendar called Fanday and keeps the dates and kickoff times up to date, including when a game moves. It only changes events it created in that calendar.</string>
+	<key>BGTaskSchedulerPermittedIdentifiers</key>
+	<array>
+		<string>com.bbprojectfactory.fanday.refresh</string>
+	</array>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>fetch</string>
+	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UIApplicationSceneManifest</key>

@@ -9,11 +9,13 @@ import Settings from './screens/Settings.tsx'
 import AuthCallback from './screens/AuthCallback.tsx'
 import { useStore } from './store/useStore.ts'
 import { ensureAnonymousSession, initAuthListeners } from './lib/auth.ts'
+import { useCalendarSync } from './calendar/useCalendarSync.ts'
 
 export default function App() {
   const onboarded = useStore((s) => s.onboarded)
   const setUser = useStore((s) => s.setUser)
   const pullFollows = useStore((s) => s.pullFollows)
+  useCalendarSync()
 
   useEffect(() => {
     const stop = initAuthListeners((u) => { setUser(u); void pullFollows() })

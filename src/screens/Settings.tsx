@@ -5,13 +5,13 @@ import { useStore } from '../store/useStore.ts'
 import { deleteAccount, isAnonymous, signInWithApple, signInWithEmail, signInWithOAuth, signOut } from '../lib/auth.ts'
 import { isEmail } from '../lib/authUtil.ts'
 import { supabase } from '../lib/supabase.ts'
-import { calendar } from '../calendar/index.ts'
+import { removeFandayCalendar } from '../calendar/runner.ts'
 import { DATA_CREDIT } from '../calendar/eventContent.ts'
 import { PRIVACY_LINE } from '../lib/env.ts'
 
 export default function Settings() {
   const nav = useNavigate()
-  const { user, changeAlerts, setChangeAlerts, calendarId, reset } = useStore()
+  const { user, changeAlerts, setChangeAlerts, reset } = useStore()
   const [email, setEmail] = useState('')
   const [msg, setMsg] = useState('')
   const [error, setError] = useState('')
@@ -28,8 +28,8 @@ export default function Settings() {
     if (user && supabase) await supabase.from('profiles').update({ promo_push_opt_in: v }).eq('user_id', user.id)
   }
   const doDelete = run(async () => {
-    await deleteAccount(user)
-    if (calendarId) await calendar.deleteCalendar(calendarId)
+    await deleteAccount(user) // throws (and removes nothing) if the server could not delete; the calendar stays then
+    await removeFandayCalendar()
     reset()
     nav('/', { replace: true })
   })
@@ -46,7 +46,7 @@ export default function Settings() {
         {signedIn ? (
           <>
             <p>Signed in{user?.email ? ` as ${user.email}` : ''}.</p>
-            <button className="btn alt" onClick={run(async () => { await signOut(); reset(); nav('/', { replace: true }) })}>Sign out</button>
+            <button className="btn alt" onClick={run(async () => { await removeFandayCalendar(); await signOut(); reset(); nav('/', { replace: true }) })}>Sign out</button>
           </>
         ) : (
           <>

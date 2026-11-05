@@ -11,6 +11,11 @@ on:
         type: string
         required: false
         default: ''
+      runner:
+        description: 'Runner image (arm64 macos-latest often has no capacity; Intel is the fallback)'
+        type: choice
+        options: [macos-15-intel, macos-latest]
+        default: macos-15-intel
   pull_request:
     types: [labeled, synchronize]
     paths:
@@ -27,7 +32,8 @@ jobs:
   simulator:
     # PR runs only when the PR carries the `ios-sim` label (macOS minutes bill at 10x).
     if: github.event_name == 'workflow_dispatch' || contains(github.event.pull_request.labels.*.name, 'ios-sim')
-    runs-on: macos-latest
+    # Intel by default (macos-latest arm64 had capacity gaps, 2026-11). Add label `ios-sim-arm` to a PR for arm64.
+    runs-on: ${{ github.event.inputs.runner || (contains(github.event.pull_request.labels.*.name, 'ios-sim-arm') && 'macos-latest' || 'macos-15-intel') }}
     timeout-minutes: 25
     concurrency:
       group: ios-sim-${{ github.event.pull_request.number || github.event.inputs.ref || github.ref }}
@@ -56,8 +62,14 @@ jobs:
           path: |
             build/spm
             build/ios
-          key: ios-sim-${{ runner.os }}-${{ hashFiles('ios/App/CapApp-SPM/Package.swift', 'package-lock.json', 'ios/App/App.xcodeproj/project.pbxproj') }}
-          restore-keys: ios-sim-${{ runner.os }}-
+          key: ios-sim-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('ios/App/CapApp-SPM/Package.swift', 'package-lock.json', 'ios/App/App.xcodeproj/project.pbxproj') }}
+          restore-keys: ios-sim-${{ runner.os }}-${{ runner.arch }}-
+
+      - name: Select newest Xcode 26 (Capacitor 8 needs the iOS 26 SDK)
+        run: |
+          X="$(ls -d /Applications/Xcode_26*.app 2>/dev/null | sort -V | tail -1)"
+          if [ -n "$X" ]; then sudo xcode-select -s "$X"; fi
+          xcodebuild -version
 
       - name: Build, boot, launch, screenshot
         run: bash scripts/ios-sim/run.sh

@@ -1,0 +1,12 @@
+{
+  "name": "fanday-calendar",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Fanday's device calendar plugin: EventKit (iOS) and CalendarContract (Android).",
+  "files": ["android/", "ios/", "Package.swift"],
+  "capacitor": {
+    "ios": { "src": "ios" },
+    "android": { "src": "android" }
+  },
+  "peerDependencies": { "@capacitor/core": ">=8.0.0" }
+}
