@@ -90,3 +90,21 @@ Roles: **Misha** = dashboard; **CTO (Al-Jazari)** = SQL, deploys and checks; **B
 ## 7. Trends & competitive watch
 - 2026-11-05, Supabase docs (search_docs): auth limits are per IP for refresh/verify and project-wide for emails/OTP; branches are billed per hour. **Recommendation:** give Fanday its own project before real traffic if Babar accepts about $10/month; every item in section 6 disappears. Evidence: sections 1 and 6 are the full price of sharing. Al-Jazari decides.
 - **Recommendation:** make `dry-run.sh` (about a minute, $0) a standing step for any future change to a shared project.
+
+## Reviewer sign-off (cto-reviewer, Opus, 2026-11-05)
+**Verdict: PASS WITH NITS, at head f8bde1b. Class: Babar-only** (shared production project, auth settings, service-role key). The decision to apply is Babar's.
+- **Re-checked against the 7 first-round findings: all fixed.** (1) Apply is plain SQL, recorded in `fanday.schema_versions`, and `supabase_migrations` is unchanged. (2) `fanday-ingest`, `-go` and `-device` use only the publishable key and a secret checked inside the RPC (`_check_secret` fails closed). Only `-send-link` and `-delete-account` hold the service-role key. All imports are pinned to exact versions. (3) Rollback takes `fanday` off the exposed schemas first, then shows a preview that must be approved. (4) Secrets are set before any function is deployed. (5) The rollback now needs the approved list and refuses without it. (6) Redirect URLs are exact. (7) Section 5 names who acts and who says go, with a stop condition at every step. Section 6 has the additions.
+- **I re-ran `dry-run.sh` myself on the local 17.11 image** (nothing pulled, container removed). Snapshot `c85442e0…016b` was the same before, after apply and after rollback. Both diffs were 0 bytes. `schema_migrations` was unchanged. The rollback refused to run without approval, and the negative control was caught.
+- **Correction to section 6, item 11 (pg_graphql).** Settled on live with read-only SQL, 2026-11-05. pg_graphql 1.5.11 shows only the schemas on the caller's `search_path`. With the default path, `languages` was visible and `supabase_migrations.schema_migrations` was not. With the path set to `supabase_migrations` it was the other way round. `graphql_public.graphql` sets no search_path of its own, so it gets the API's (`graphql_public`, `public`, `extensions`). So `fanday` will **not** appear in `/graphql/v1`. No SQL fix is needed. **Condition:** never add `fanday` to the Data API's "Extra search path".
+- **Residual risks:**
+  - The service-role key in two Fanday functions, with their pinned third-party imports.
+  - The shared user list, logs, PITR and auth limits (section 6).
+  - The rollback preview cannot tell apart a Fanday-created user who has since signed in to Woofabulary but owns no rows yet. Babar reads the emails before approving.
+  - Postgres 17.6 on live vs 17.11 in the test; GoTrue and PostgREST were not simulated.
+- **Conditions for the apply:**
+  1. Babar's recorded yes.
+  2. Follow section 5 exactly, with the baseline re-captured on the day.
+  3. Keep `public` first in the exposed schemas, and keep the first Google client ID first.
+  4. Signed-in Woofabulary round trip and Google sign-in by hand after steps 5 to 7.
+  5. Chess move count check after step 8.
+  6. Stop at the first unexpected diff.
