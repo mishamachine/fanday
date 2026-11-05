@@ -214,7 +214,7 @@ public class FandayCalendarPlugin: CAPPlugin, CAPBridgedPlugin {
         let now = Date()
         // fromMs: only events starting at or after it; older ones are history and are never swept.
         let floor = now.addingTimeInterval(-2 * 365 * 86400)
-        let from = number(call, "fromMs")?.doubleValue.map { max(Date(timeIntervalSince1970: $0 / 1000), floor) } ?? floor
+        let from = number(call, "fromMs").map { max(Date(timeIntervalSince1970: $0.doubleValue / 1000), floor) } ?? floor
         let pred = store.predicateForEvents(withStart: from, end: now.addingTimeInterval(2 * 365 * 86400), calendars: [cal])
         var removed = 0
         for ev in store.events(matching: pred) where isOurs(ev) && ev.startDate >= from && !keep.contains(ev.eventIdentifier ?? "") {
