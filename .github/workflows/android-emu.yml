@@ -1,0 +1,131 @@
+# Fanday Android emulator end-to-end run on GitHub's Linux runners (KVM). No local emulator needed.
+# Builds two QA debug APKs (mock data, real native calendar plugin), boots an API 34 emulator, drives onboarding,
+# and asserts on the CalendarContract provider: Fanday calendar, event IDs stable across a kickoff move, other calendars untouched.
+# Cost: Linux 1x minutes (private repo: 2000 free min/month). Expected about 18 to 25 min cold, 12 to 16 min with caches. See scripts/android-emu/run.sh.
+name: android-emu
+
+on:
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: 'Git ref (branch, tag or SHA) to build'
+        type: string
+        required: false
+        default: ''
+  pull_request:
+    types: [labeled, synchronize]
+    paths:
+      - 'android/**'
+      - 'plugins/**'
+      - 'src/**'
+      - 'package*.json'
+      - 'scripts/android-emu/**'
+      - '.github/workflows/android-emu.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  emulator:
+    # PR runs only when the PR carries the `android-emu` label.
+    if: github.event_name == 'workflow_dispatch' || contains(github.event.pull_request.labels.*.name, 'android-emu')
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    concurrency:
+      group: android-emu-${{ github.event.pull_request.number || github.event.inputs.ref || github.ref }}
+      cancel-in-progress: true
+    env:
+      API_LEVEL: 34
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          ref: ${{ github.event.inputs.ref || '' }}
+          persist-credentials: false
+
+      # The emulator needs about 7 GB for the userdata partition; the runner has about 6 GB free after the toolchains.
+      - name: Free disk space
+        run: |
+          sudo rm -rf /usr/share/dotnet /opt/ghc /usr/local/.ghcup /opt/hostedtoolcache/CodeQL /usr/local/share/boost /usr/local/lib/android/sdk/ndk
+          df -h /
+
+      - name: Enable KVM
+        run: |
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+
+      - uses: actions/setup-java@b6effb05e454b25005698d916606bdc6ffcbf961 # v5.7.0
+        with:
+          distribution: temurin
+          java-version: 21
+
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830 # v4
+        with:
+          path: |
+            ~/.gradle/caches
+            ~/.gradle/wrapper
+          key: android-emu-gradle-${{ runner.os }}-${{ hashFiles('android/**/*.gradle', 'android/gradle/wrapper/gradle-wrapper.properties', 'android/variables.gradle', 'plugins/fanday-calendar/android/build.gradle') }}
+          restore-keys: android-emu-gradle-${{ runner.os }}-
+
+      # No .env and no Supabase vars: the app uses its built-in mock data, which pairs with the real native plugin.
+      - name: Build both QA APKs (base, and kickoff shifted +90 min)
+        run: |
+          npm ci
+          mkdir -p build/apk
+          build_apk () { # <name> [env assignments...]
+            local name="$1"; shift
+            env VITE_QA=1 "$@" npx vite build --mode native --outDir dist-native
+            npx cap sync android
+            (cd android && ./gradlew --no-daemon assembleDebug)
+            cp android/app/build/outputs/apk/debug/app-debug.apk "build/apk/$name.apk"
+          }
+          build_apk base
+          build_apk shift VITE_QA_SHIFT_MIN=90
+          ls -l build/apk
+
+      - name: AVD cache
+        id: avd-cache
+        uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830 # v4
+        with:
+          path: |
+            ~/.android/avd/*
+            ~/.android/adb*
+          key: avd-${{ env.API_LEVEL }}-google_apis-x86_64-v1
+
+      - name: Create AVD and snapshot for caching
+        if: steps.avd-cache.outputs.cache-hit != 'true'
+        uses: reactivecircus/android-emulator-runner@a421e43855164a8197daf9d8d40fe71c6996bb0d # v2.38.0
+        with:
+          api-level: ${{ env.API_LEVEL }}
+          target: google_apis
+          arch: x86_64
+          force-avd-creation: false
+          disk-size: 4096M
+          emulator-options: -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim -camera-back none
+          disable-animations: false
+          script: echo "Generated AVD snapshot for caching."
+
+      - name: Run emulator end-to-end
+        uses: reactivecircus/android-emulator-runner@a421e43855164a8197daf9d8d40fe71c6996bb0d # v2.38.0
+        with:
+          api-level: ${{ env.API_LEVEL }}
+          target: google_apis
+          arch: x86_64
+          force-avd-creation: false
+          disk-size: 4096M
+          emulator-options: -no-snapshot-save -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim -camera-back none
+          disable-animations: true
+          script: bash scripts/android-emu/run.sh
+
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        if: always()
+        with:
+          name: android-emu-${{ github.run_id }}
+          path: artifacts/
+          if-no-files-found: warn
+          retention-days: 7
