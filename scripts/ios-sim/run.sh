@@ -41,13 +41,15 @@ START="$(date +%s)"
 xcrun simctl launch "$UDID" "$BUNDLE_ID" | tee "$OUT/launch.txt"
 sleep 3
 xcrun simctl io "$UDID" screenshot "$OUT/01-launch.png"
-sleep 8
-xcrun simctl io "$UDID" screenshot "$OUT/02-after-8s.png"
+# Intel simulators are slow: the first window can take 15s+, so wait longer.
+sleep 12
+xcrun simctl io "$UDID" screenshot "$OUT/02-after-15s.png"
+sleep 20
+xcrun simctl io "$UDID" screenshot "$OUT/03-after-35s.png"
 
 echo "== process alive?"
-# Capture first: `grep -q` exits early and, with pipefail, the writer gets SIGPIPE and the check reported a live app as NOT RUNNING.
-LCTL="$(xcrun simctl spawn "$UDID" launchctl list 2>&1)"
-if grep -q "$BUNDLE_ID" <<<"$LCTL"; then
+# launchctl lists exited jobs too (PID "-"), so require a numeric PID.
+if xcrun simctl spawn "$UDID" launchctl list | awk -v id="$BUNDLE_ID" '$3 ~ id && $1 ~ /^[0-9]+$/ {f=1} END{exit !f}'; then
   echo "alive" | tee "$OUT/alive.txt"
 else
   echo "NOT RUNNING" | tee "$OUT/alive.txt"; FAIL=1
