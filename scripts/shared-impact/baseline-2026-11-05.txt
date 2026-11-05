@@ -1,0 +1,40 @@
+== WOOFABULARY: public reads, exactly as the app makes them (anon/publishable key)
+languages: rows=7 codes=de,es,fr,it,ja,pt,ur live=de,es,fr,it,ja,pt,ur
+count weeks=91 lessons=273 lesson_summaries=273
+lesson_summaries(es): rows=39 body_sha=bbbccfa3a85d6c16
+lesson es_w1s1 (with languages+weeks embeds): rows=1 vocab=100 phrases=60 quiz=5 body_sha=3d8a4e3b08fd4ceb
+== WOOFABULARY: what a signed-out visitor must NOT get (RLS/grants unchanged)
+anon user_progress: {"code":"42501","details":null,"hint":null,"message":"permission denied for table user_progress"} [401]
+anon user_settings: {"code":"42501","details":null,"hint":null,"message":"permission denied for table user_settings"} [401]
+anon daily_activity: {"code":"42501","details":null,"hint":null,"message":"permission denied for table daily_activity"} [401]
+anon saved_lessons: {"code":"42501","details":null,"hint":null,"message":"permission denied for table saved_lessons"} [401]
+anon lessons_backup_20261021: {"code":"42501","details":null,"hint":null,"message":"permission denied for table lessons_backup_20261021"} [401]
+== PostgREST default schema (adding 'fanday' to exposed schemas must keep 'public' the default, i.e. the FIRST in the list)
+no Accept-Profile (default): 200   Accept-Profile: public: 200   (OpenAPI root is closed to publishable keys, so it is not compared)
+== AUTH: project settings (public endpoint)
+auth/v1/settings: {"disable_signup":false,"external":{"anonymous_users":false,"apple":false,"azure":false,"bitbucket":false,"discord":false,"email":true,"facebook":false,"figma":false,"fly":false,"github":false,"gitlab":false,"google":true,"kakao":false,"keycloak":false,"linkedin":false,"linkedin_oidc":false,"notion":false,"phone":false,"slack":false,"slack_oidc":false,"snapchat":false,"spotify":false,"twitch":false,"twitter":false,"workos":false,"zoom":false},"mailer_autoconfirm":false,"phone_autoconfirm":false,"sms_provider":"twilio"}
+external.google: true   external.apple: false   external.email: true
+auth health: 200
+== AUTH: Google web sign-in still starts with the SAME Google client (Woofabulary's), same callback
+authorize(google) host=https://accounts.google.com client_id=572623460389-6r3gsbgdbjmr6beptdjrprususv35e30.apps.googleusercontent.com redirect_uri=https%3A%2F%2Fywcrzkvwamjchjjkfrve.supabase.co%2Fauth%2Fv1%2Fcallback scope=email+profile
+== SITES reachable
+woofabulary https://woof.bobolearns.com: 200   chess https://chess.bobolearns.com: 200
+(no WOOF_ACCESS_TOKEN: signed-in reads skipped; see docs/shared-db-impact.md section 3 for the manual round trip)
+== CHESS TUTOR: the 5 edge functions (Origin https://chess.bobolearns.com; nothing written, nothing paid)
+chess-coach OPTIONS: 200 allow-origin=https://chess.bobolearns.com allow-methods=GET, POST, OPTIONS
+chess-voice OPTIONS: 200 allow-origin=https://chess.bobolearns.com allow-methods=GET, POST, OPTIONS
+chess-log OPTIONS: 200 allow-origin=https://chess.bobolearns.com allow-methods=POST, OPTIONS
+chess-tts OPTIONS: 200 allow-origin=https://chess.bobolearns.com allow-methods=GET, POST, OPTIONS
+chess-snap OPTIONS: 200 allow-origin=https://chess.bobolearns.com allow-methods=POST, OPTIONS
+chess-coach GET (config only, no upstream call): {"configured":true,"model":"deepseek-flash"} [200]
+chess-voice GET (config only, no upstream call): {"configured":false} [200]
+chess-tts GET (config only, no upstream call): {"configured":true,"voice":"edmund_32","model":"simba-3.2"} [200]
+chess-coach POST from a foreign Origin (must be refused before any write/paid call): {"error":"origin"} [403]
+chess-voice POST from a foreign Origin (must be refused before any write/paid call): {"error":"origin"} [403]
+chess-log POST from a foreign Origin (must be refused before any write/paid call): {"error":"origin"} [403]
+chess-tts POST from a foreign Origin (must be refused before any write/paid call): {"error":"origin"} [403]
+chess-snap POST from a foreign Origin (must be refused before any write/paid call): {"error":"origin"} [403]
+chess-tts GET ?say= from a foreign Referer (refused before the paid call): {"error":"origin"} [403]
+== CHESS TUTOR: tables as a browser sees them (RLS on, no policies: the app writes only through the functions' service role)
+anon read chess_events: [] [200]
+anon read chess_frames: [] [200]
