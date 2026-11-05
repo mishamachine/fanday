@@ -4,11 +4,14 @@
 --   * the only reads outside `fanday` are auth.users in SECURITY DEFINER functions (search_path = ''), plus auth.uid() in policies;
 --   * no triggers, and no foreign keys to auth.users (a FK would add system triggers to auth.users). User-owned rows carry a plain user_id;
 --     fanday.purge_orphaned_user_rows() removes rows whose auth user is gone.
--- Idempotent: safe to apply twice. Apply only with apply_migration (name fanday_0001_init); never `db push` / `db reset`.
+-- Idempotent: safe to apply twice. Apply as PLAIN SQL with execute_sql (never apply_migration, `db push` or `db reset`); the file records itself in fanday.schema_versions.
 -- Ownership model: a row belongs to a SIGNED-IN USER (user_id) or to a SIGNED-OUT DEVICE (token_id -> device_tokens). Exactly one.
 
 create schema if not exists fanday;
 grant usage on schema fanday to anon, authenticated, service_role;
+-- pg_graphql (live 1.5.x) follows privileges, so the public reference tables may appear in /graphql/v1 as they do in REST. This keeps
+-- GraphQL introspection of this schema off (queries are unaffected). Docs: supabase.github.io/pg_graphql/configuration
+comment on schema fanday is e'@graphql({"introspection": false})';
 
 -- ---------------------------------------------------------------- reference tables
 create table if not exists fanday.leagues (
@@ -179,6 +182,23 @@ create table if not exists fanday.rate_counters (
   n            int not null default 0,
   primary key (scope, key, window_start)
 );
+-- Which migrations/seeds were applied to THIS schema. Fanday's SQL is applied as plain SQL (execute_sql), never through apply_migration,
+-- because apply_migration writes rows into the shared supabase_migrations.schema_migrations, which Woofabulary and Chess Tutor use too.
+-- Each file records itself on its last line, so a rollback that drops the schema leaves nothing behind anywhere else.
+create table if not exists fanday.schema_versions (
+  version    text primary key,
+  applied_at timestamptz not null default now()
+);
+
+-- sha256 of one shared secret per Edge Function that does not hold the service-role key (ingest, go, device). The functions call
+-- SECURITY DEFINER RPCs with the PUBLISHABLE key and pass their secret; the RPC checks it here (fanday._check_secret). The hash is
+-- inserted by hand, once per secret, with SQL (see the PR body); nothing but the RPCs ever reads this table.
+create table if not exists fanday.function_secrets (
+  name        text primary key check (name in ('ingest', 'go', 'device')),
+  secret_hash bytea not null check (length(secret_hash) = 32),
+  set_at      timestamptz not null default now()
+);
+
 -- One row per alert kind and window: lets fanday-send-link mail "the hourly cap was reached" at most once per hour.
 create table if not exists fanday.alert_log (
   kind         text not null,
@@ -207,6 +227,8 @@ alter table fanday.usage_events   enable row level security;
 alter table fanday.rate_counters  enable row level security;
 alter table fanday.rl_salts       enable row level security;
 alter table fanday.alert_log      enable row level security;
+alter table fanday.schema_versions enable row level security;
+alter table fanday.function_secrets enable row level security;
 
 drop policy if exists leagues_read      on fanday.leagues;
 drop policy if exists teams_read        on fanday.teams;
@@ -267,7 +289,7 @@ create policy usage_events_own_select on fanday.usage_events for select to authe
 -- ---------------------------------------------------------------- privileges (defence in depth beside RLS)
 revoke all on fanday.leagues, fanday.teams, fanday.sponsors, fanday.games, fanday.game_changes, fanday.profiles,
   fanday.user_origin, fanday.device_tokens, fanday.follows, fanday.devices, fanday.device_events, fanday.link_clicks, fanday.usage_events,
-  fanday.rate_counters, fanday.rl_salts, fanday.alert_log from anon, authenticated;
+  fanday.rate_counters, fanday.rl_salts, fanday.alert_log, fanday.schema_versions, fanday.function_secrets from anon, authenticated;
 
 grant select on fanday.leagues, fanday.teams, fanday.sponsors, fanday.games, fanday.game_changes to anon, authenticated;
 grant select on fanday.profiles to authenticated;
@@ -326,13 +348,33 @@ begin
 end $$;
 revoke all on function fanday._token_id(text) from public, anon, authenticated;
 
--- Called only by the fanday-device Edge Function, which makes the token and passes its sha256.
-create or replace function fanday.register_device_token(p_hash bytea) returns uuid
-language sql security definer set search_path = '' as $$
-  insert into fanday.device_tokens (token_hash) values (p_hash) returning id;
-$$;
-revoke all on function fanday.register_device_token(bytea) from public, anon, authenticated;
-grant execute on function fanday.register_device_token(bytea) to service_role;
+-- Per-function secret check (see function_secrets). Fails closed: no row, no secret, short secret or a wrong one all raise.
+create or replace function fanday._check_secret(p_name text, p_secret text) returns void
+language plpgsql security definer set search_path = '' as $$
+begin
+  if p_secret is null or length(p_secret) < 16
+     or not exists (select 1 from fanday.function_secrets s where s.name = p_name and s.secret_hash = sha256(convert_to(p_secret, 'UTF8'))) then
+    raise exception 'forbidden' using errcode = '42501';
+  end if;
+end $$;
+revoke all on function fanday._check_secret(text, text) from public, anon, authenticated;
+
+-- fanday-device calls this with the publishable key and its secret. The caller's address is hashed here with the daily salt and only
+-- counted (20 tokens per caller per hour, 2000 per hour overall); neither the address nor the hash of it is stored in any row but the counter key.
+create or replace function fanday.issue_device_token(p_secret text, p_addr text, p_hash bytea) returns uuid
+language plpgsql security definer set search_path = '' as $$
+declare v_hour timestamptz := date_trunc('hour', now() at time zone 'utc') at time zone 'utc'; v_key text; v_id uuid;
+begin
+  perform fanday._check_secret('device', p_secret);
+  if p_hash is null or length(p_hash) <> 32 then raise exception 'bad hash' using errcode = '22023'; end if;
+  v_key := encode(sha256(convert_to(fanday.rl_salt() || ':device-ip:' || coalesce(p_addr, 'unknown'), 'UTF8')), 'hex');
+  if not fanday.rl_hit('device-ip', v_key, v_hour, 20) then raise exception 'rate_limited' using errcode = 'P0001'; end if;
+  if not fanday.rl_hit('device-all', 'all', v_hour, 2000) then raise exception 'rate_limited' using errcode = 'P0001'; end if;
+  insert into fanday.device_tokens (token_hash) values (p_hash) returning id into v_id;
+  return v_id;
+end $$;
+revoke all on function fanday.issue_device_token(text, text, bytea) from public;
+grant execute on function fanday.issue_device_token(text, text, bytea) to anon, authenticated, service_role;
 
 create or replace function fanday.device_follows_list(p_token text) returns text[]
 language plpgsql security definer set search_path = '' as $$
@@ -465,14 +507,16 @@ end $$;
 revoke all on function fanday.rl_salt(), fanday.rl_hit(text, text, timestamptz, int), fanday.alert_once(text, timestamptz) from public, anon, authenticated;
 grant execute on function fanday.rl_salt(), fanday.rl_hit(text, text, timestamptz, int), fanday.alert_once(text, timestamptz) to service_role;
 
--- ---------------------------------------------------------------- link counting (called by fanday-go)
-create or replace function fanday.record_link_click(p_game uuid, p_slot text) returns void
-language sql security invoker set search_path = '' as $$
+-- ---------------------------------------------------------------- link counting (called by fanday-go with the publishable key + its secret)
+create or replace function fanday.record_link_click(p_secret text, p_game uuid, p_slot text) returns void
+language plpgsql security definer set search_path = '' as $$
+begin
+  perform fanday._check_secret('go', p_secret);
   insert into fanday.link_clicks (game_id, slot, day, clicks) values (p_game, p_slot, current_date, 1)
   on conflict (game_id, slot, day) do update set clicks = fanday.link_clicks.clicks + 1;
-$$;
-revoke all on function fanday.record_link_click(uuid, text) from public, anon, authenticated;
-grant execute on function fanday.record_link_click(uuid, text) to service_role;
+end $$;
+revoke all on function fanday.record_link_click(text, uuid, text) from public;
+grant execute on function fanday.record_link_click(text, uuid, text) to anon, authenticated, service_role;
 
 -- ---------------------------------------------------------------- account deletion support (service_role; used by fanday-delete-account / fanday-send-link)
 -- Read-only lookup in auth.users for the send-link function (no user list in the Admin API by email).
@@ -583,3 +627,5 @@ revoke all on function fanday.auth_user_id_by_email(text), fanday.user_has_forei
   fanday.set_user_origin(uuid, boolean), fanday.delete_user_origin(uuid), fanday.delete_user_data(uuid), fanday.cleanup_unused_device_tokens(int), fanday.purge_orphaned_user_rows() from public, anon, authenticated;
 grant execute on function fanday.auth_user_id_by_email(text), fanday.user_has_foreign_rows(uuid), fanday.auth_user_deletable(uuid),
   fanday.set_user_origin(uuid, boolean), fanday.delete_user_origin(uuid), fanday.delete_user_data(uuid), fanday.cleanup_unused_device_tokens(int), fanday.purge_orphaned_user_rows() to service_role;
+
+insert into fanday.schema_versions (version) values ('fanday_0001_init') on conflict do nothing;

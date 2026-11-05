@@ -24,3 +24,5 @@ insert into fanday.leagues (id, name, country, country_code, sport, season, sour
 on conflict (id) do update set name = excluded.name, country = excluded.country, country_code = excluded.country_code,
   sport = excluded.sport, season = excluded.season, source = excluded.source, tz = excluded.tz,
   in_season = excluded.in_season, sort = excluded.sort;
+
+insert into fanday.schema_versions (version) values ('fanday_seed_leagues') on conflict do nothing;

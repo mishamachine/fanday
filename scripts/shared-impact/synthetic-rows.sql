@@ -7,3 +7,5 @@ insert into public.lessons (id,week_id,language_id,session,title,title_native,de
 insert into public.user_progress (user_id,lesson_id,language_code,quiz_score) values ('00000000-0000-0000-0000-0000000000a1','xx-1','xx',80);
 insert into public.user_settings (user_id) values ('00000000-0000-0000-0000-0000000000a1');
 insert into public.chess_events (session_id,kind) values ('s','move');
+-- the shared platform migration log (5 rows, like live): Fanday must never write here
+insert into supabase_migrations.schema_migrations (version,name) values ('20260101000001','a'),('20260101000002','b'),('20260101000003','c'),('20260101000004','d'),('20260101000005','e');

@@ -17,6 +17,8 @@ insert into fanday.teams (id, league_id, name, short_name, wiki_page, official_c
 ${rows.join(',\n')}
 on conflict (id) do update set league_id = excluded.league_id, name = excluded.name, short_name = excluded.short_name,
   wiki_page = excluded.wiki_page, official_calendar_url = coalesce(excluded.official_calendar_url, fanday.teams.official_calendar_url);
+
+insert into fanday.schema_versions (version) values ('fanday_seed_teams') on conflict do nothing;
 `
 }
 

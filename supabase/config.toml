@@ -1,7 +1,7 @@
 # Supabase CLI config for Fanday on the SHARED project "B&B Project Factory projects" (ref ywcrzkvwamjchjjkfrve), which also runs
 # Woofabulary and Chess Tutor. This file configures LOCAL development and Edge Function settings only.
-# NEVER run `supabase db push`, `db reset` or `config push` against the shared project: migrations go through apply_migration
-# (names fanday_0001_init, fanday_0002_ingest), and Auth settings are changed by hand in the dashboard (see the PR body).
+# NEVER run `supabase db push`, `db reset` or `config push` against the shared project. Fanday's SQL is applied as PLAIN SQL with execute_sql,
+# never apply_migration (that writes to the shared supabase_migrations table); Auth settings are changed by hand in the dashboard.
 # This PR does not link the CLI.
 project_id = "ywcrzkvwamjchjjkfrve"
 

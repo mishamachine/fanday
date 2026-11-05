@@ -1,5 +1,5 @@
 -- Fanday 0002: support for the Wikipedia ingest. Applies on top of fanday_0001_init.sql; schema `fanday` only. Idempotent.
--- Not applied to any remote project by the PR; apply with apply_migration (name fanday_0002_ingest).
+-- Not applied to any remote project by the PR; apply as PLAIN SQL with execute_sql (never apply_migration); it records itself in fanday.schema_versions.
 
 -- One owning page per game; other pages may only insert games the owner does not list yet.
 --   source_rank   2 = competition page (UCL, AFL, IPL, NRL), 1 = the home club's own page, 0 = any other page
@@ -17,9 +17,10 @@ alter table fanday.teams add column if not exists tz text;
 
 create index if not exists games_source_page_idx on fanday.games (source_page);
 
+-- The ingest RPCs run with the PUBLISHABLE key: each checks the 'ingest' secret (fanday._check_secret) and writes only to fanday tables.
 -- Applies one ingest batch (new games, updates to existing games, game_changes rows) in a single transaction.
 -- Only the listed columns can change; affiliate and sponsor columns are not reachable from here.
-create or replace function fanday.ingest_apply(p_inserts jsonb, p_updates jsonb, p_changes jsonb)
+create or replace function fanday.ingest_apply(p_secret text, p_inserts jsonb, p_updates jsonb, p_changes jsonb)
 returns jsonb
 language plpgsql
 security definer
@@ -30,6 +31,7 @@ declare
   n_upd int := 0;
   n_chg int := 0;
 begin
+  perform fanday._check_secret('ingest', p_secret);
   insert into fanday.games (league_id, home_team_id, away_team_id, game_date, kickoff_at, time_tbc, status,
                             venue, broadcast, source_page, source_rev, source_rank)
   select x.league_id, x.home_team_id, x.away_team_id, x.game_date, x.kickoff_at, coalesce(x.time_tbc, false),
@@ -71,35 +73,41 @@ begin
 end;
 $$;
 
-revoke all on function fanday.ingest_apply(jsonb, jsonb, jsonb) from public, anon, authenticated;
-grant execute on function fanday.ingest_apply(jsonb, jsonb, jsonb) to service_role;
+revoke all on function fanday.ingest_apply(text, jsonb, jsonb, jsonb) from public;
+grant execute on function fanday.ingest_apply(text, jsonb, jsonb, jsonb) to anon, authenticated, service_role;
 
 -- Season rollover (daily ingest): move a Wikipedia league to its next season, and fill or correct one team's Wikipedia page name.
 -- Each function can change exactly one column, only for Wikipedia-sourced leagues. Same rights as ingest_apply.
-create or replace function fanday.ingest_set_league_season(p_league_id text, p_season text)
+create or replace function fanday.ingest_set_league_season(p_secret text, p_league_id text, p_season text)
 returns void
-language sql
+language plpgsql
 security definer
 set search_path = ''
 as $$
+begin
+  perform fanday._check_secret('ingest', p_secret);
   update fanday.leagues
      set season = p_season
    where id = p_league_id and source = 'wikipedia' and nullif(btrim(p_season), '') is not null;
-$$;
+end $$;
 
-create or replace function fanday.ingest_set_team_wiki_page(p_team_id text, p_wiki_page text)
+create or replace function fanday.ingest_set_team_wiki_page(p_secret text, p_team_id text, p_wiki_page text)
 returns void
-language sql
+language plpgsql
 security definer
 set search_path = ''
 as $$
+begin
+  perform fanday._check_secret('ingest', p_secret);
   update fanday.teams t
      set wiki_page = p_wiki_page
    where t.id = p_team_id and nullif(btrim(p_wiki_page), '') is not null
      and exists (select 1 from fanday.leagues l where l.id = t.league_id and l.source = 'wikipedia');
-$$;
+end $$;
 
-revoke all on function fanday.ingest_set_league_season(text, text) from public, anon, authenticated;
-revoke all on function fanday.ingest_set_team_wiki_page(text, text) from public, anon, authenticated;
-grant execute on function fanday.ingest_set_league_season(text, text) to service_role;
-grant execute on function fanday.ingest_set_team_wiki_page(text, text) to service_role;
+revoke all on function fanday.ingest_set_league_season(text, text, text) from public;
+revoke all on function fanday.ingest_set_team_wiki_page(text, text, text) from public;
+grant execute on function fanday.ingest_set_league_season(text, text, text) to anon, authenticated, service_role;
+grant execute on function fanday.ingest_set_team_wiki_page(text, text, text) to anon, authenticated, service_role;
+
+insert into fanday.schema_versions (version) values ('fanday_0002_ingest') on conflict do nothing;

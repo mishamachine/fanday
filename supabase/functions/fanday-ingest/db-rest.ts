@@ -1,14 +1,15 @@
 // Supabase PostgREST client over plain fetch (no supabase-js dependency).
-// Called with the service-role key from the function's environment; the key never leaves this module.
+// Called with the PUBLISHABLE key (anon role): reads are the public reference tables; writes go through SECURITY DEFINER RPCs that check the
+// function secret (fanday._check_secret). This function never holds the service-role key.
 
 import type { ApplyOps, Db, LeagueRow, StoredGame, TeamRow } from './ingest.ts';
 
 const PAGE = 1000;
 
-export function createRestDb(baseUrl: string, serviceKey: string, fetchImpl: typeof fetch = fetch): Db {
+export function createRestDb(baseUrl: string, publishableKey: string, secret: string, fetchImpl: typeof fetch = fetch): Db {
   const rest = `${baseUrl.replace(/\/$/, '')}/rest/v1`;
   const headers = (extra: Record<string, string> = {}) => ({
-    apikey: serviceKey, Authorization: `Bearer ${serviceKey}`, 'Content-Type': 'application/json',
+    apikey: publishableKey, Authorization: `Bearer ${publishableKey}`, 'Content-Type': 'application/json',
     // Shared project: every table and RPC lives in the `fanday` schema, selected per request (Accept-Profile for reads, Content-Profile for writes).
     'Accept-Profile': 'fanday', 'Content-Profile': 'fanday', ...extra,
   });
@@ -44,10 +45,10 @@ export function createRestDb(baseUrl: string, serviceKey: string, fetchImpl: typ
       if (!res.ok) throw new Error(`Supabase GET games failed: ${res.status}`);
       return ((await res.json()) as unknown[]).length > 0;
     },
-    setLeagueSeason: (leagueId, season) => post('rpc/ingest_set_league_season', { p_league_id: leagueId, p_season: season }),
-    setTeamWikiPage: (teamId, wikiPage) => post('rpc/ingest_set_team_wiki_page', { p_team_id: teamId, p_wiki_page: wikiPage }),
-    // One transaction in the database; the function can change only the columns it lists (migration 0002).
-    apply: (ops: ApplyOps) => post('rpc/ingest_apply', { p_inserts: ops.inserts, p_updates: ops.updates, p_changes: ops.changes }),
+    setLeagueSeason: (leagueId, season) => post('rpc/ingest_set_league_season', { p_secret: secret, p_league_id: leagueId, p_season: season }),
+    setTeamWikiPage: (teamId, wikiPage) => post('rpc/ingest_set_team_wiki_page', { p_secret: secret, p_team_id: teamId, p_wiki_page: wikiPage }),
+    // One transaction in the database; the function can change only the columns it lists (migration fanday_0002).
+    apply: (ops: ApplyOps) => post('rpc/ingest_apply', { p_secret: secret, p_inserts: ops.inserts, p_updates: ops.updates, p_changes: ops.changes }),
     gamesInWindow: (fromIso, toIso) =>
       get<{ source_page: string | null; home_team_id: string; away_team_id: string }>(
         `games?select=source_page,home_team_id,away_team_id` +

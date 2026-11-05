@@ -1,5 +1,5 @@
-import 'jsr:@supabase/functions-js/edge-runtime.d.ts'
-import { createClient } from 'https://esm.sh/@supabase/supabase-js@2.118.0'
+import 'jsr:@supabase/functions-js@2.118.0/edge-runtime.d.ts'
+import { createClient } from 'https://esm.sh/@supabase/supabase-js@2.118.0?pin=v140'
 import { handle } from './handler.ts'
 import { gmailSender } from './smtp.ts'
 import { SUBJECT, TEMPLATE_HTML } from './template.ts'

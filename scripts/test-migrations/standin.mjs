@@ -27,6 +27,11 @@ create table auth.sessions (id uuid primary key default gen_random_uuid(), user_
 create function auth.uid() returns uuid language sql stable as $$ select nullif(current_setting('request.jwt.claim.sub', true), '')::uuid $$;
 grant execute on function auth.uid() to anon, authenticated, service_role;
 
+-- The platform's migration log, shared by every app. Fanday must never write here (it is applied as plain SQL, not apply_migration).
+create schema supabase_migrations;
+create table supabase_migrations.schema_migrations (version text primary key, statements text[], name text, created_by text, idempotency_key text, rollback text[]);
+insert into supabase_migrations.schema_migrations (version, name) values ('20260101000001','woof_init'),('20260101000002','woof_lessons'),('20260101000003','chess_events'),('20260101000004','chess_frames'),('20260101000005','woof_progress');
+
 -- Woofabulary (public read for content; own-row ALL policies for user data) and Chess Tutor (RLS on, no policies).
 create table public.languages (id serial primary key, code text not null);
 create table public.weeks (id serial primary key, language_id int references public.languages (id), n int);

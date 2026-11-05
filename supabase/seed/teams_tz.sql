@@ -37,3 +37,5 @@ update fanday.teams t
   ('mls-vancouver-whitecaps-fc', 'America/Los_Angeles')
   ) as v (id, tz)
  where t.id = v.id and t.league_id = 'mls';
+
+insert into fanday.schema_versions (version) values ('fanday_seed_teams_tz') on conflict do nothing;

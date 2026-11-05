@@ -40,6 +40,8 @@ for (const [id, email, meta] of [[U.A, 'a@x.com', '{}'], [U.B, 'b@x.com', '{}'],
 await db.exec(`insert into public.user_progress (user_id, lesson_id) values ('${U.A}',1),('${U.C}',1); insert into public.user_settings (user_id, settings) values ('${U.A}','{"x":1}');
   insert into public.chess_events (game_id, kind) values ('g1','move'); insert into public.chess_frames (game_id, frame) values ('g1','{}');`)
 
+const migLog = async () => JSON.stringify((await db.query(`select * from supabase_migrations.schema_migrations order by version`)).rows)
+const migBefore = await migLog()
 const before = await catalogSnapshot(db)
 const sha = (s) => createHash('sha256').update(s).digest('hex')
 const parsed = JSON.parse(before)
@@ -55,13 +57,15 @@ for (const pass of [1, 2, 3]) {
   }
 }
 const after = await catalogSnapshot(db)
+ok('supabase_migrations.schema_migrations is unchanged (5 rows, no fanday_* row): Fanday is applied as plain SQL, never apply_migration', (await migLog()) === migBefore && !migBefore.includes('fanday') && JSON.parse(migBefore).length === 5)
+ok('fanday.schema_versions records exactly what was applied', (await db.query(`select string_agg(version, ',' order by version) v from fanday.schema_versions`)).rows[0].v === 'fanday_0001_init,fanday_0002_ingest,fanday_seed_leagues,fanday_seed_teams,fanday_seed_teams_tz')
 console.log(`     catalog+data outside fanday: before sha256 ${sha(before).slice(0, 16)}, after sha256 ${sha(after).slice(0, 16)}, ${before.length} bytes`)
 ok('CATALOG OUTSIDE fanday IS BYTE-IDENTICAL after apply + 2 reapplies', before === after)
 
 const fan = (await db.query(`select (select count(*)::int from pg_class c join pg_namespace n on n.oid=c.relnamespace where n.nspname='fanday' and c.relkind='r') t,
   (select count(*)::int from pg_proc p join pg_namespace n on n.oid=p.pronamespace where n.nspname='fanday') f,
   (select count(*)::int from fanday.leagues) l, (select count(*)::int from fanday.teams) tm, (select count(*)::int from fanday.teams where tz is not null) tz`)).rows[0]
-ok('fanday got its tables, functions and seeds (16 tables, 19 leagues, 434 teams, 30 MLS zones)', fan.t === 16 && fan.f >= 20 && fan.l === 19 && fan.tm === 434 && fan.tz === 30, JSON.stringify(fan))
+ok('fanday got its tables, functions and seeds (18 tables, 19 leagues, 434 teams, 30 MLS zones)', fan.t === 18 && fan.f >= 20 && fan.l === 19 && fan.tm === 434 && fan.tz === 30, JSON.stringify(fan))
 ok('no trigger on auth.users or on any fanday table (FK system triggers on auth.users are covered by the snapshot: unchanged)', (await db.query(`select count(*)::int c from pg_trigger t join pg_class c on c.oid=t.tgrelid join pg_namespace n on n.oid=c.relnamespace
   where not t.tgisinternal and ((n.nspname='auth' and c.relname='users') or n.nspname='fanday')`)).rows[0].c === 0)
 ok('nothing fanday owns lives in public', (await db.query(`select count(*)::int c from pg_depend d join pg_proc p on p.oid=d.objid where false`)).rows[0].c === 0

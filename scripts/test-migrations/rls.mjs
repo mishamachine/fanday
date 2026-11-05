@@ -18,7 +18,11 @@ insert into fanday.games (id, league_id, home_team_id, away_team_id, game_date, 
 `)
 const n = async (role, uid, sql) => { const r = await as(role, uid, sql); return r.error ? `ERR:${r.error}` : r.rows.length }
 const svc = async (sql) => as('service_role', null, sql)
-const reg = async (t) => (await svc(`select fanday.register_device_token(sha256(convert_to('${t}','UTF8'))) id`)).rows[0].id
+// Per-function secrets: only their sha256 is stored (inserted by hand once, as the CTO will). The functions pass the plain secret to the RPCs.
+const SEC = { ingest: 'ingest-secret-0123456789abcdef', go: 'go-secret-0123456789abcdef0123', device: 'device-secret-0123456789abcdef' }
+for (const [name, sec] of Object.entries(SEC)) await db.exec(`insert into fanday.function_secrets (name, secret_hash) values ('${name}', sha256(convert_to('${sec}','UTF8')))`)
+let addrN = 0
+const reg = async (t) => { const r = await as('anon', null, `select fanday.issue_device_token('${SEC.device}', 'addr-${addrN++}', sha256(convert_to('${t}','UTF8'))) id`); if (r.error) throw new Error(r.error); return r.rows[0].id }
 
 ok('seed: 19 leagues, 434 teams, off-season flagged', (await db.query('select count(*)::int c from fanday.leagues')).rows[0].c === 19
   && (await db.query(`select string_agg(id, ',' order by id) s from fanday.leagues where not in_season`)).rows[0].s === 'ipl,mlb,nrl,wnba')
@@ -94,7 +98,40 @@ ok('device_tokens: no client can read or write the table', String(await n('anon'
   && !!(await as('anon', null, `insert into fanday.device_tokens (token_hash) values ('\\x00')`)).error)
 ok('device_tokens stores only a hash (no plaintext column)', (await db.query(`select string_agg(column_name,',' order by column_name) c from information_schema.columns where table_schema='fanday' and table_name='device_tokens'`)).rows[0].c === 'claimed_at,claimed_by,created_at,id,last_used_at,revoked_at,token_hash'
   && (await db.query(`select count(*)::int c from fanday.device_tokens where token_hash = convert_to('${T1}','UTF8')`)).rows[0].c === 0)
-ok('register_device_token is service_role only', !!(await as('anon', null, `select fanday.register_device_token('\\x01')`)).error && !!(await as('authenticated', A, `select fanday.register_device_token('\\x01')`)).error)
+const H = `sha256(convert_to('zz','UTF8'))`
+ok('issue_device_token: needs the device secret (none, short, wrong, another function secret -> refused; table unchanged)', await (async () => {
+  const before = (await db.query('select count(*)::int c from fanday.device_tokens')).rows[0].c
+  const bad = await Promise.all([null, 'short', 'x'.repeat(32), SEC.go, SEC.ingest].map((sx) => as('anon', null, `select fanday.issue_device_token(${sx === null ? 'null' : `'${sx}'`}, 'a', ${H})`)))
+  return bad.every((b) => b.error?.includes('forbidden')) && (await db.query('select count(*)::int c from fanday.device_tokens')).rows[0].c === before
+})())
+ok('issue_device_token: rejects a hash that is not 32 bytes', !!(await as('anon', null, `select fanday.issue_device_token('${SEC.device}','a','\\x01')`)).error)
+ok('function_secrets and schema_versions are closed to every client role', String(await n('anon', null, 'select 1 from fanday.function_secrets')).startsWith('ERR:') && String(await n('authenticated', A, 'select 1 from fanday.function_secrets')).startsWith('ERR:')
+  && String(await n('anon', null, 'select 1 from fanday.schema_versions')).startsWith('ERR:') && !!(await as('anon', null, `insert into fanday.function_secrets (name, secret_hash) values ('go', sha256('x'))`)).error)
+ok('_check_secret is not callable by clients', !!(await as('anon', null, `select fanday._check_secret('device','${SEC.device}')`)).error)
+ok('issue_device_token: 20 per caller per hour, then rate_limited (other callers unaffected)', await (async () => {
+  const res = []; for (let i = 0; i < 22; i++) res.push(await as('anon', null, `select fanday.issue_device_token('${SEC.device}','same-caller', sha256(convert_to('rl${i}','UTF8')))`))
+  const other = await as('anon', null, `select fanday.issue_device_token('${SEC.device}','someone-else', sha256(convert_to('rlx','UTF8')))`)
+  return res.filter((x) => x.rows).length === 20 && res.slice(20).every((x) => x.error?.includes('rate_limited')) && !!other.rows
+})())
+ok('issue_device_token: overall cap 2000 per hour (a refused caller does not use it up)', await (async () => {
+  await db.exec(`update fanday.rate_counters set n = 1999 where scope = 'device-all'`)
+  const a = await as('anon', null, `select fanday.issue_device_token('${SEC.device}','cap-1', sha256(convert_to('cap1','UTF8')))`)
+  const b = await as('anon', null, `select fanday.issue_device_token('${SEC.device}','cap-2', sha256(convert_to('cap2','UTF8')))`)
+  return !!a.rows && b.error?.includes('rate_limited')
+})())
+ok('device counters hold a salted hash, never the address', (await db.query(`select count(*)::int c from fanday.rate_counters where scope='device-ip' and (key like '%same-caller%' or key !~ '^[0-9a-f]{64}$')`)).rows[0].c === 0)
+await db.exec(`delete from fanday.rate_counters where scope like 'device-%'`)
+// ingest RPCs run with the publishable key and the ingest secret
+const ING = `'[{"league_id":"nfl","home_team_id":"nfl-kc-x","away_team_id":"nfl-den-x","game_date":"2026-12-01","source_page":"p","source_rev":1}]'::jsonb`
+ok('ingest RPCs: refused without the ingest secret (anon, authenticated, wrong, the go secret), accepted with it', await (async () => {
+  const bad = await Promise.all([['anon', null, 'bad'], ['authenticated', A, SEC.go], ['anon', null, 'x'.repeat(32)]].map(([r, u, sx]) => as(r, u, `select fanday.ingest_apply('${sx}', ${ING}, '[]'::jsonb, '[]'::jsonb)`)))
+  const badSet = await as('anon', null, `select fanday.ingest_set_league_season('${SEC.go}', 'nfl', '2099')`)
+  const good = await as('anon', null, `select fanday.ingest_apply('${SEC.ingest}', ${ING}, '[]'::jsonb, '[]'::jsonb) r`)
+  return bad.every((b) => b.error?.includes('forbidden')) && badSet.error?.includes('forbidden') && good.rows?.[0]?.r?.inserted === 1
+    && !(await as('anon', null, `select fanday.ingest_set_league_season('${SEC.ingest}','nfl','2027')`)).error && (await db.query(`select season from fanday.leagues where id='nfl'`)).rows[0].season === '2027'
+})())
+ok('ingest through the publishable key still cannot touch anything but its columns (affiliate columns unreachable)', (await db.query(`select watch_url, sponsor_id from fanday.games where game_date='2026-12-01'`)).rows[0].watch_url === null)
+await db.exec(`delete from fanday.games where game_date='2026-12-01'`)
 ok('_token_id helper is not callable by clients', !!(await as('anon', null, `select fanday._token_id('${T1}')`)).error)
 
 ok('token 1 sets follows (unknown team skipped)', !(await as('anon', null, `select fanday.device_follows_set('${T1}', array['nfl-kc-x','nope'])`)).error
@@ -158,8 +195,9 @@ ok('rl: allows up to the limit, then refuses', hits.join() === 'true,true,true,f
 ok('rl: stores counters only (no address or email columns)', (await db.query(`select string_agg(column_name,',' order by column_name) c from information_schema.columns where table_schema='fanday' and table_name in ('rate_counters','rl_salts')`)).rows[0].c === 'day,key,n,salt,scope,window_start')
 
 // ---- link counting
-await svc(`select fanday.record_link_click('${G1}','watch')`); await svc(`select fanday.record_link_click('${G1}','watch')`)
-ok('link_clicks: one counter row, server-only, no person columns', (await db.query(`select clicks from fanday.link_clicks`)).rows[0].clicks === 2 && !!(await as('authenticated', A, `select fanday.record_link_click('${G1}','watch')`)).error
+const rl = (sx, slot = 'watch', role = 'anon') => as(role, null, `select fanday.record_link_click('${sx}','${G1}','${slot}')`)
+ok('record_link_click: needs the go secret', !!(await rl('nope-nope-nope-nope')).error && !!(await rl(SEC.device)).error && !!(await rl(SEC.ingest)).error && !(await rl(SEC.go)).error && !(await rl(SEC.go)).error)
+ok('link_clicks: one counter row, server-only, no person columns', (await db.query(`select clicks from fanday.link_clicks`)).rows[0].clicks === 2 && !!(await as('authenticated', A, `select fanday.record_link_click('x','${G1}','watch')`)).error
   && String(await n('authenticated', A, 'select 1 from fanday.link_clicks')).startsWith('ERR:') && (await db.query(`select string_agg(column_name,',' order by column_name) c from information_schema.columns where table_schema='fanday' and table_name='link_clicks'`)).rows[0].c === 'clicks,day,game_id,slot')
 
 // ---- device id ownership is one atomic statement (no check-then-write gap)
