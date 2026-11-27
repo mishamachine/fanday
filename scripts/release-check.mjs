@@ -15,5 +15,13 @@ if (flags.maintenance_job_green_on_schedule === true && !flags.maintenance_job_g
 if (flags.other_apps_deletion_removes_fanday_rows === true && !flags.other_apps_deletion_removes_fanday_rows_evidence) problems.push('other_apps_deletion_removes_fanday_rows is true but has no evidence')
 if (flags.native_calendar_pr_landed !== true) problems.push('native_calendar_pr_landed is not set: the calendar-removal sentence in the privacy policy and terms is not true yet')
 else if (!flags.native_calendar_pr_landed_evidence) problems.push('native_calendar_pr_landed is true but has no evidence')
+// Phases: the plan must hold the close (phase 1) and open (phase 2) scripts for every signed-in entry point; declaring phase 2 needs them intact.
+const FUNCS = ['ensure_profile()', 'claim_device(text)', 'user_follows_add(text[])', 'user_device_upsert(uuid, text, text, text)', 'user_calendar_upsert(uuid, jsonb)', 'user_log_event(text)']
+const close = read('scripts/shared-impact/phase1-close-signin.sql'), open2 = read('scripts/shared-impact/phase2-open-signin.sql'), steps = read('docs/apply-steps.md')
+const missingClose = FUNCS.filter((f) => !close.includes(`fanday.${f}`) || !/revoke execute/.test(close)), missingOpen = FUNCS.filter((f) => !open2.includes(`fanday.${f}`) || !/grant execute/.test(open2))
+if (missingClose.length) problems.push('phase1-close-signin.sql does not revoke: ' + missingClose.join(', '))
+if (!/Phase 1/.test(steps) || !/Phase 2/.test(steps)) problems.push('docs/apply-steps.md has no Phase 1 / Phase 2 sections')
+if (flags.signin_phase === 2 && missingOpen.length) problems.push('signin_phase is 2 but phase2-open-signin.sql does not grant: ' + missingOpen.join(', '))
+if (flags.signin_phase !== 1 && flags.signin_phase !== 2) problems.push('signin_phase must be 1 or 2')
 if (problems.length) { console.error('RELEASE BLOCKED:\n- ' + problems.join('\n- ')); process.exit(1) }
 console.log('release check passed')

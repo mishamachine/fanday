@@ -107,14 +107,14 @@ ok('M1: user_log_event drops events past 200 per user per day, silently', await 
   for (let i = 0; i < 203; i++) await as('authenticated', D, `select fanday.user_log_event('open')`)
   return (await db.query(`select count(*)::int c from fanday.usage_events where user_id='${D}'`)).rows[0].c === 200 && !(await as('authenticated', D, `select fanday.user_log_event('open')`)).error
 })())
-ok('M1: user_device_upsert registers own phones, at most 5 per user; another owner id refused; direct updates stay own-only', await (async () => {
+ok('M1: user_device_upsert registers own phones, keeps at most 5 per user (the oldest is dropped, the new one survives); another owner id refused; direct updates stay own-only', await (async () => {
   const dev = (i) => `eeeeeeee-0000-0000-0000-00000000010${i}`
   for (let i = 0; i < 5; i++) if ((await as('authenticated', C, `select fanday.user_device_upsert('${dev(i)}','ios','c${i}')`)).error) return false
+  const again = await as('authenticated', C, `select fanday.user_device_upsert('${dev(0)}','android','c0b')`)   // refreshes dev(0): dev(1) is now the oldest
   const sixth = await as('authenticated', C, `select fanday.user_device_upsert('${dev(5)}','ios','c5')`)
-  const again = await as('authenticated', C, `select fanday.user_device_upsert('${dev(0)}','android','c0b')`)
   const theirs = await as('authenticated', C, `select fanday.user_device_upsert('bbbbbbbb-0000-0000-0000-00000000000a','ios','x')`)
-  return sixth.error?.includes('too many devices') && !again.error && theirs.error?.includes('another owner')
-    && (await db.query(`select count(*)::int c from fanday.devices where user_id='${C}'`)).rows[0].c === 5
+  const ids = (await db.query(`select right(id::text, 3) i from fanday.devices where user_id='${C}' order by 1`)).rows.map((r) => r.i).join()
+  return !sixth.error && !again.error && theirs.error?.includes('another owner') && ids === '100,102,103,104,105'
     && (await db.query(`select calendar_id c from fanday.devices where id='bbbbbbbb-0000-0000-0000-00000000000a'`)).rows[0].c === null
 })())
 await db.exec(`delete from fanday.devices where user_id='${C}'; delete from fanday.rate_counters where scope like 'user-%'; delete from fanday.usage_events where user_id='${D}'`)
@@ -388,16 +388,45 @@ ok('N1: length limits (event_identifier 256, calendar_id 256, push_token 4096)',
   const e = await db.query(`update fanday.devices set push_token = '${long(4097)}' where id='aaaaaaaa-1111-0000-0000-000000000001'`).then(() => false, () => true)
   return !!a.error && !b.error && !!c.error && d && e
 })())
-ok('N1: claim_device keeps at most 5 devices per user (the newest fit, the rest are dropped with their events)', await (async () => {
+ok('N1: claim_device keeps the claimed phones and removes the user\'s oldest devices beyond 5', await (async () => {
   const U9 = '99999999-aaaa-4000-8000-000000000001', T7 = '7a'.repeat(32)
   const tid = await reg(T7)
   await db.exec(`insert into fanday.devices (id, user_id, platform) select gen_random_uuid(), '${U9}', 'ios' from generate_series(1,3);
     insert into fanday.devices (id, token_id, platform, last_sync_at) select ('bbbbbbbb-2222-0000-0000-00000000000' || g)::uuid, '${tid}', 'ios', now() - (g || ' days')::interval from generate_series(1,4) g`)
   const r = await as('authenticated', U9, `select fanday.claim_device('${T7}') r`)
   const kept = (await db.query(`select id::text i from fanday.devices where user_id='${U9}' and id::text like 'bbbbbbbb-2222%' order by 1`)).rows.map((x) => x.i)
-  return !r.error && r.rows[0].r.moved_devices === 2 && (await db.query(`select count(*)::int c from fanday.devices where user_id='${U9}'`)).rows[0].c === 5
-    && kept.join() === 'bbbbbbbb-2222-0000-0000-000000000001,bbbbbbbb-2222-0000-0000-000000000002'
+  return !r.error && r.rows[0].r.moved_devices === 4 && (await db.query(`select count(*)::int c from fanday.devices where user_id='${U9}'`)).rows[0].c === 5
+    && kept.length === 4   // all four claimed phones survive; the oldest (never-synced) of the user's earlier devices went
     && (await db.query(`select count(*)::int c from fanday.devices where token_id='${tid}'`)).rows[0].c === 0
+})())
+
+ok('M1: a user with 5 old devices claims a new phone: the claiming phone survives, the oldest is gone; events go with it', await (async () => {
+  const U8 = '88888888-aaaa-4000-8000-000000000001', T8 = '8a'.repeat(32), tid = await reg(T8)
+  await db.exec(`insert into fanday.devices (id, user_id, platform, last_sync_at) select ('cccccccc-3333-0000-0000-00000000000' || g)::uuid, '${U8}', 'ios', now() - ((10 - g) || ' days')::interval from generate_series(1,5) g;
+    insert into fanday.device_events (device_id, game_id, event_identifier) values ('cccccccc-3333-0000-0000-000000000001','${G1}','OLD');
+    insert into fanday.devices (id, token_id, platform, last_sync_at) values ('cccccccc-3333-0000-0000-0000000000ff','${tid}','android', now() - interval '100 days')`)
+  const r = await as('authenticated', U8, `select fanday.claim_device('${T8}') r`)
+  const ids = (await db.query(`select right(id::text, 2) i from fanday.devices where user_id='${U8}' order by 1`)).rows.map((x) => x.i).join()
+  return !r.error && ids === '02,03,04,05,ff' && (await db.query(`select count(*)::int c from fanday.device_events where device_id='cccccccc-3333-0000-0000-000000000001'`)).rows[0].c === 0
+})())
+ok('M1: parallel claims for one user cannot leave more than 5 devices', await (async () => {
+  const U7 = '77777777-aaaa-4000-8000-000000000001', Ta = '9a'.repeat(32), Tb = '9b'.repeat(32), ta = await reg(Ta), tb = await reg(Tb)
+  await db.exec(`insert into fanday.devices (id, token_id, platform) select gen_random_uuid(), '${ta}', 'ios' from generate_series(1,4); insert into fanday.devices (id, token_id, platform) select gen_random_uuid(), '${tb}', 'ios' from generate_series(1,4)`)
+  const rs = await Promise.all([as('authenticated', U7, `select fanday.claim_device('${Ta}') r`), as('authenticated', U7, `select fanday.claim_device('${Tb}') r`)])
+  return rs.every((r) => !r.error) && (await db.query(`select count(*)::int c from fanday.devices where user_id='${U7}'`)).rows[0].c === 5
+})())
+
+ok('phase 1 closes every signed-in entry point; phase 2 reopens them (and a re-run of 0001 also reopens, so phase 1 is run again)', await (async () => {
+  const calls = [`select fanday.ensure_profile()`, `select fanday.user_follows_add(array['nfl-kc-x'])`, `select fanday.user_log_event('open')`, `select fanday.user_calendar_upsert('${DEV1}','[]'::jsonb)`,
+    `select fanday.user_device_upsert('${DEV1}','ios','c')`, `select fanday.claim_device('${'z'.repeat(50)}')`]
+  const denied = async () => (await Promise.all(calls.map((q) => as('authenticated', A, q)))).every((r) => r.error?.includes('permission denied'))
+  const open = async () => (await Promise.all(calls.map((q) => as('authenticated', A, q)))).every((r) => !r.error?.includes('permission denied'))
+  await db.exec(read('../scripts/shared-impact/phase1-close-signin.sql'))
+  const closed = await denied(), devOk = !(await as('anon', null, `select fanday.device_follows_list('${T4}')`)).error?.includes('permission denied')
+  await db.exec(read('../scripts/shared-impact/phase2-open-signin.sql')); const reopened = await open()
+  await db.exec(read('../scripts/shared-impact/phase1-close-signin.sql')); await db.exec(read('migrations/fanday_0001_init.sql')); const regrant = await open()
+  await db.exec(read('../scripts/shared-impact/phase1-close-signin.sql'))
+  return closed && devOk && reopened && regrant && await denied()
 })())
 
 process.exit(ok.fails() ? 1 : (console.log('\nall migration checks passed'), 0))

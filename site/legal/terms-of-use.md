@@ -17,7 +17,7 @@ You must be at least 13 to use Fanday. If you're under 18, a parent or guardian 
 
 ## 3. Accounts are optional
 
-- You can use Fanday without an account. On your device it keeps a random device code, not an account. If you sign in, you use the same B&B Project Factory sign-in as our other apps.
+- You can use Fanday without an account. On your device it keeps a random device code, not an account. If you sign in, you use the same B&B Project Factory sign-in as Woof and BoboLearns Hub.
 - You can sign in with Apple, Google or an email link. Signing in lets your teams follow you to a new phone.
 - Keep access to your sign-in method secure. Tell us if you think someone else is using your account.
 - You can delete your Fanday data at any time in the app (Settings → Delete account) or by emailing machinemisha+fanday@gmail.com. What happens to your sign-in is explained in our Privacy Policy.

@@ -5,5 +5,7 @@
   "other_apps_deletion_removes_fanday_rows": false,
   "other_apps_deletion_removes_fanday_rows_evidence": "",
   "native_calendar_pr_landed": false,
-  "native_calendar_pr_landed_evidence": ""
+  "native_calendar_pr_landed_evidence": "",
+  "signin_phase": 1,
+  "_signin_phase": "1 = ingest only (sign-in entry points closed by phase1-close-signin.sql). 2 = sign-in declared open (phase2-open-signin.sql run)."
 }

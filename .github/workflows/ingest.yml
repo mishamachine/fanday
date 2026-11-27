@@ -100,7 +100,7 @@ jobs:
           exit 1
 
   maintenance:
-    # Daily housekeeping through fanday-ingest: removes unused device codes (24 months; claimed or revoked ones after 30 days) and the
+    # Daily housekeeping through fanday-ingest: removes unused device codes (24 months; claimed or revoked ones after 29 days) and the
     # Fanday rows of sign-ins that were deleted elsewhere. Runs with the daily schedule and with a manual daily run.
     if: github.event.schedule == '0 10 * * *' || (github.event_name == 'workflow_dispatch' && inputs.mode == 'daily')
     runs-on: ubuntu-latest

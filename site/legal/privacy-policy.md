@@ -85,11 +85,12 @@ Some links in Fanday take you to services we don't run:
 
 - **Your account, teams, devices and calendar event IDs:** until you delete your account.
 - We keep the teams and calendars linked to a device code until you delete them in the app. When you sign in on a device, they move to your account and the device code stops working.
+- We may also delete device codes that haven't been used for a long time, with the teams and calendars linked to them.
 - **Usage events:** we aim to delete them after 13 months.
 - **Emails you send us:** we aim to delete them 12 months after your request is dealt with.
 - **Paid-link click counts:** kept, because they contain no personal data.
 
-Today these deletions are done by us, not by an automatic process. We'll update this policy when automatic deletion is in place. If you want your data gone sooner, delete your account (section 8).
+Apart from removing unused device codes, and Fanday data for sign-ins deleted in our other apps, these deletions are done by us, not by an automatic process. We'll update this policy when more of it is automatic. If you want your data gone sooner, delete your account (section 8).
 
 ## 8. Deleting your data
 

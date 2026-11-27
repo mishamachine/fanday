@@ -3,6 +3,12 @@
 Everything Fanday adds to the database lives in the schema `fanday`. Nothing in this repository is applied or deployed by CI.
 `npm run test:migrations` proves, against a stand-in of a shared project, that applying the migrations changes nothing outside `fanday`.
 
+## Phases
+
+- **Phase 1, ingest only.** Apply the migrations and seeds, then run `scripts/shared-impact/phase1-close-signin.sql`: it revokes execute on `ensure_profile`, `claim_device`, `user_follows_add`, `user_device_upsert`, `user_calendar_upsert` and `user_log_event` from `anon` and `authenticated`, so nobody can sign in to Fanday data yet. The ingest, go and device functions work as usual.
+  Re-running `fanday_0001_init.sql` re-grants those functions: run the phase 1 file again after any re-run.
+- **Phase 2, sign-in.** Only after the release gate below passes: run `scripts/shared-impact/phase2-open-signin.sql` (the re-grants), then ship the store build or site that offers sign-in. Set `signin_phase` to 2 in `release/signin-release-flags.json`; `npm run release:check` then also checks that the phase 2 file holds all the grants.
+
 ## Apply order (each step by the project owner, stopping at the first surprise)
 
 1. Dashboard: add `fanday` to the Data API exposed schemas (keep the existing ones, `public` first).

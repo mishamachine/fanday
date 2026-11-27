@@ -478,7 +478,7 @@ begin
   return v_n;
 end $$;
 
--- Registers or refreshes one of the caller's phones. At most 5 phones per user; another owner's device id is refused.
+-- Registers or refreshes one of the caller's phones. At most 5 phones per user (the oldest is dropped); another owner's device id is refused.
 create or replace function fanday.user_device_upsert(p_device uuid, p_platform text, p_calendar_id text, p_push_token text default null) returns void
 language plpgsql security definer set search_path = '' as $$
 declare v_uid uuid := auth.uid(); v_n int;
@@ -489,15 +489,13 @@ begin
     raise exception 'rate_limited' using errcode = 'P0001';
   end if;
   perform pg_advisory_xact_lock(hashtextextended('fanday.user_device:' || v_uid::text, 0));
-  if not exists (select 1 from fanday.devices d where d.id = p_device)
-     and (select count(*) from fanday.devices d where d.user_id = v_uid) >= 5 then
-    raise exception 'too many devices' using errcode = '22023';
-  end if;
   insert into fanday.devices (id, user_id, platform, calendar_id, push_token, last_sync_at) values (p_device, v_uid, p_platform, p_calendar_id, p_push_token, now())
   on conflict (id) do update set platform = excluded.platform, calendar_id = excluded.calendar_id, push_token = coalesce(excluded.push_token, fanday.devices.push_token), last_sync_at = now()
     where fanday.devices.user_id = v_uid;
   get diagnostics v_n = row_count;
   if v_n = 0 then raise exception 'device belongs to another owner' using errcode = '42501'; end if;
+  -- At most 5 phones: this one is in (stamped just now); the oldest beyond 5 are removed with their events.
+  delete from fanday.devices where id in (select d.id from fanday.devices d where d.user_id = v_uid order by d.last_sync_at desc nulls last, d.id offset 5);
 end $$;
 
 -- What the caller's phone wrote to its calendar. p_events: [{game_id, event_identifier, synced_rev}], at most 500. Own device only.
@@ -566,12 +564,12 @@ begin
   insert into fanday.follows (user_id, team_id) select v_caller, f.team_id from fanday.follows f where f.token_id = v_id on conflict do nothing;
   get diagnostics v_f = row_count;
   delete from fanday.follows where token_id = v_id;
-  -- At most 5 phones per user: keep the token's most recently synced devices that fit, drop the rest (their events go by cascade).
-  delete from fanday.devices where token_id = v_id and id not in
-    (select d.id from fanday.devices d where d.token_id = v_id order by d.last_sync_at desc nulls last, d.id
-      limit greatest(0, 5 - (select count(*)::int from fanday.devices u where u.user_id = v_caller)));
-  update fanday.devices set user_id = v_caller, token_id = null where token_id = v_id;
+  -- At most 5 phones per user. The phone(s) being claimed are moved FIRST and stamped as just synced; then the user's oldest devices
+  -- beyond 5 are removed (their events go by cascade). One lock per user keeps parallel claims and upserts from exceeding 5.
+  perform pg_advisory_xact_lock(hashtextextended('fanday.user_device:' || v_caller::text, 0));
+  update fanday.devices set user_id = v_caller, token_id = null, last_sync_at = now() where token_id = v_id;
   get diagnostics v_d = row_count;
+  delete from fanday.devices where id in (select d.id from fanday.devices d where d.user_id = v_caller order by d.last_sync_at desc nulls last, d.id offset 5);
   update fanday.usage_events set user_id = v_caller, token_id = null where token_id = v_id;
   return jsonb_build_object('moved_follows', v_f, 'moved_devices', v_d);
 end $$;

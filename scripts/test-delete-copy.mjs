@@ -19,6 +19,8 @@ ok('privacy: states what is kept for a device code, with no 24-month or 30-day d
   && (!claims.test(policy) || flags.maintenance_job_green_on_schedule === true))
 ok('privacy: the shared sign-in names only Woof and BoboLearns Hub',
   policy.includes('Fanday uses the same B&B Project Factory sign-in as Woof and BoboLearns Hub, so one account works in all three. Each app keeps its own data.') && !/Chess Tutor/.test(policy))
+ok('privacy: unused device codes may be deleted (no time figure), and the manual-deletion sentence is the legal text', policy.includes("We may also delete device codes that haven't been used for a long time, with the teams and calendars linked to them.")
+  && policy.includes("Apart from removing unused device codes, and Fanday data for sign-ins deleted in our other apps, these deletions are done by us, not by an automatic process. We'll update this policy when more of it is automatic. If you want your data gone sooner, delete your account (section 8)."))
 ok('the cleanup still runs daily (maintenance in the workflow, heartbeat row written)', /"mode":"maintenance"/.test(wf) && /cron: '0 10 \* \* \*'/.test(wf)
   && /run_maintenance[\s\S]*cleanup_unused_device_tokens\(24\)[\s\S]*purge_orphaned_user_rows\(\)[\s\S]*insert into fanday\.maintenance_runs/.test(sql))
 ok('claimed or revoked device codes are removed after 29 days (so "within 30 days" would hold with a daily run)', /coalesce\(revoked_at, claimed_at\) < now\(\) - interval '29 days'/.test(sql))
@@ -26,7 +28,7 @@ ok('claimed or revoked device codes are removed after 29 days (so "within 30 day
 // Terms (word for word)
 const terms = read('site/legal/terms-of-use.md')
 for (const line of [
-  '- You can use Fanday without an account. On your device it keeps a random device code, not an account. If you sign in, you use the same B&B Project Factory sign-in as our other apps.',
+  '- You can use Fanday without an account. On your device it keeps a random device code, not an account. If you sign in, you use the same B&B Project Factory sign-in as Woof and BoboLearns Hub.',
   '- You can delete your Fanday data at any time in the app (Settings → Delete account) or by emailing machinemisha+fanday@gmail.com. What happens to your sign-in is explained in our Privacy Policy.',
   '- If you delete your Fanday data in the app, Fanday removes its calendar from that phone.',
   'You can stop using Fanday and delete your Fanday data at any time.',
