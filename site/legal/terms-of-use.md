@@ -44,9 +44,9 @@ So please check the official source before you rely on a time: before you travel
 
 ## 7. Third-party services and content
 
-Fanday links to services we don't run, such as official team calendars, streaming and ticket sites, and Wikipedia. We aren't responsible for their content, availability or practices. Their own terms and privacy policies apply.
+Fanday links to services we don't run, such as official team calendars, and streaming and ticket sites. We aren't responsible for their content, availability or practices. Their own terms and privacy policies apply.
 
-Schedule data from Wikipedia is used under the [Creative Commons Attribution-ShareAlike 4.0 license](https://creativecommons.org/licenses/by-sa/4.0/), and we credit it in the app and in event notes.
+Fanday shows public schedule information from Wikipedia, credited in the app and in event notes, under the Creative Commons Attribution-ShareAlike 4.0 license (creativecommons.org/licenses/by-sa/4.0).
 
 **Fanday is not affiliated with, endorsed by or sponsored by any league, team or broadcaster.** Team and league names belong to their owners. We use them only to identify the games.
 

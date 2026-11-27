@@ -7,6 +7,7 @@ export interface GameRow {
   id: string; league_id: string; home_team_id: string; away_team_id: string; game_date: string; kickoff_at: string | null
   time_tbc: boolean; status: GameStatus; venue: string | null; broadcast: string | null; country: string | null
   watch_url: string | null; tickets_url: string | null; sponsor_text: string | null; sponsor_url: string | null
+  source_page?: string | null
   home: { name: string }; away: { name: string }; league: { sport: string; country_code: string }
   changes?: Array<{ field: string; old_value: string | null; detected_at: string }>
 }
@@ -25,7 +26,7 @@ export function toGame(r: GameRow): Game {
     homeName: r.home.name, awayName: r.away.name, kickoffAt: r.kickoff_at, gameDate: r.game_date, timeTbc: r.time_tbc,
     status: r.status, venue: r.venue, broadcast: r.broadcast, countryCode: r.country ?? r.league.country_code,
     previousKickoffAt: moved?.old_value ?? null, watchUrl: r.watch_url, ticketsUrl: r.tickets_url,
-    sponsorText: r.sponsor_text, sponsorUrl: r.sponsor_url,
+    sponsorText: r.sponsor_text, sponsorUrl: r.sponsor_url, sourcePage: r.source_page ?? null,
   }
 }
 

@@ -19,6 +19,7 @@ export function GameRow({ g }: { g: Game }) {
       <div className="what">
         <b>{g.homeName} vs {g.awayName}</b>
         <small>{sub}</small>
+        {g.sourcePage && <small className="src">Source: Wikipedia, '{g.sourcePage}'</small>}
         {moved && g.previousKickoffAt && <small> · was {formatTime(g.previousKickoffAt, g.countryCode)}</small>}
       </div>
       {postponed && <span className="tag mv">Postponed</span>}
