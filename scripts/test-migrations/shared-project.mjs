@@ -1,5 +1,5 @@
 // The cross-app safety proof for the SHARED project: applying Fanday's migrations and seeds changes NOTHING outside schema `fanday`.
-// 1. Build a stand-in of the shared project (Woofabulary + Chess Tutor tables, RLS, grants, a trigger, auth).  2. Snapshot the catalog and
+// 1. Build a stand-in of the shared project (other apps' tables, RLS, grants, a trigger, auth).  2. Snapshot the catalog and
 // the data outside `fanday`.  3. Apply fanday_0001 + fanday_0002 + seeds, then apply them all again.  4. Assert the snapshot is byte-identical.
 import { createHash } from 'node:crypto'
 import { readdirSync } from 'node:fs'
@@ -37,8 +37,8 @@ const db = await makeStandIn()
 for (const [id, email, meta] of [[U.A, 'a@x.com', '{}'], [U.B, 'b@x.com', '{}'], [U.C, 'c@x.com', '{}'], [U.D, 'd@x.com', '{}']]) {
   await db.exec(`insert into auth.users (id, email, raw_app_meta_data) values ('${id}','${email}','${meta}')`)
 }
-await db.exec(`insert into public.user_progress (user_id, lesson_id) values ('${U.A}',1),('${U.C}',1); insert into public.user_settings (user_id, settings) values ('${U.A}','{"x":1}');
-  insert into public.chess_events (game_id, kind) values ('g1','move'); insert into public.chess_frames (game_id, frame) values ('g1','{}');`)
+await db.exec(`insert into public.app_a_progress (user_id, lesson_id) values ('${U.A}',1),('${U.C}',1); insert into public.app_a_settings (user_id, settings) values ('${U.A}','{"x":1}');
+  insert into public.app_b_events (game_id, kind) values ('g1','move'); insert into public.app_b_frames (game_id, frame) values ('g1','{}');`)
 
 const migLog = async () => JSON.stringify((await db.query(`select * from supabase_migrations.schema_migrations order by version`)).rows)
 const migBefore = await migLog()
@@ -46,8 +46,8 @@ const before = await catalogSnapshot(db)
 const sha = (s) => createHash('sha256').update(s).digest('hex')
 const parsed = JSON.parse(before)
 ok('snapshot is meaningful: public tables, policies, grants, a trigger, a view, functions, roles', parsed.relations.length > 15 && parsed.policies.length === 7
-  && parsed.triggers.some((t) => t.relname === 'user_settings') && parsed.functions.some((f) => f.proname === 'touch_updated_at') && parsed.roles.length >= 3
-  && parsed.relations.some((r) => r.relname === 'lesson_summaries' && r.relkind === 'v') && parsed.data['public.user_progress'].n === 2)
+  && parsed.triggers.some((t) => t.relname === 'app_a_settings') && parsed.functions.some((f) => f.proname === 'app_a_touch') && parsed.roles.length >= 3
+  && parsed.relations.some((r) => r.relname === 'app_a_summaries' && r.relkind === 'v') && parsed.data['public.app_a_progress'].n === 2)
 
 for (const pass of [1, 2, 3]) {
   for (const f of files) {
@@ -72,7 +72,7 @@ ok('nothing fanday owns lives in public', (await db.query(`select count(*)::int 
   && (await db.query(`select count(*)::int c from pg_class c join pg_namespace n on n.oid=c.relnamespace where n.nspname='public' and (c.relname in ('leagues','teams','games','follows','profiles','devices','device_tokens') )`)).rows[0].c === 0)
 
 // ---- the snapshot really detects a change (negative control)
-await db.exec(`grant select on public.languages to service_role; revoke select on public.languages from anon`)
+await db.exec(`grant select on public.app_a_languages to service_role; revoke select on public.app_a_languages from anon`)
 ok('negative control: a stray grant outside fanday IS detected by the snapshot', (await catalogSnapshot(db)) !== before)
 
 process.exit(ok.fails() ? 1 : (console.log('\nshared-project proof passed'), 0))

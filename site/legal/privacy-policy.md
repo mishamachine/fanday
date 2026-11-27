@@ -9,7 +9,7 @@ Fanday puts your teams' games in your phone's calendar and keeps them up to date
 - You can use Fanday without signing in.
 - We don't sell your data or share it with advertisers.
 - There are no third-party ad or analytics tools in the app.
-- You can delete your account in the app at any time.
+- You can delete your Fanday data in the app at any time, signed in or not.
 
 ## 1. Who we are
 
@@ -22,7 +22,8 @@ Fanday is offered in the United States.
 | What | When | Why |
 |---|---|---|
 | **The teams you follow** | When you pick teams | To put their games in your calendar and keep your teams across devices |
-| **A random account ID** | When you first open the app. You get an anonymous account; no sign-in is needed | To keep your teams and devices together |
+| **A random device code** | When you first open the app without signing in. No account is made, and we keep only a scrambled copy of the code | To keep your teams and calendars together on that device |
+| **Your sign-in: your email address, and your Google or Apple account if you use one** | When you sign in | Fanday uses the same B&B Project Factory sign-in as our other apps (Woof, Chess Tutor and BoboLearns Hub), so one account works in all of them. Each app keeps its own data. |
 | **Your email address** | Only if you choose to sign in with Apple, Google or an email link | To sign you in and move your teams to a new phone |
 | **Your name and profile picture link** | Only if you sign in with Google, which shares them with our sign-in system | Our sign-in system may store them with your account. We don't use them |
 | **Your notification choices** | When you change them in Settings, for example "Sponsor messages" | To respect your choices |
@@ -63,7 +64,7 @@ These providers handle data for us so we can run Fanday.
 
 | Provider | What it does for Fanday | Data involved |
 |---|---|---|
-| **Supabase** (database in the United States) | Database and sign-in | Everything in section 2 |
+| **Supabase** (database in the United States) | Database and sign-in. Your sign-in account is shared with our other apps; your Fanday data is kept apart from theirs. | Everything in section 2 |
 | **Google** | Google sign-in. Firebase Cloud Messaging delivers push alerts. Gmail sends sign-in emails and receives support email | Email, name and profile picture link (Google sign-in only), push token, the emails we send you and that you send us |
 | **Apple** | Sign in with Apple. Apple Push Notification service delivers alerts on iPhone | Email or relay address (Apple sign-in only), push token |
 | **Hostinger** | Hosts the fanday.bbprojectfactory.com website | Standard web request data, such as IP address, in its server logs |
@@ -83,17 +84,17 @@ Some links in Fanday take you to services we don't run:
 ## 7. How long we keep data
 
 - **Your account, teams, devices and calendar event IDs:** until you delete your account.
-- **Accounts nobody uses:** we aim to delete anonymous accounts that haven't been used for 24 months.
-- **The anonymous account you started with:** when you sign in, your teams move to your signed-in account. We aim to delete the old anonymous account 7 days later.
+- Device codes nobody uses: we delete them, and the teams and calendars linked to them, after 24 months without use.
+- When you sign in on a device, its teams and calendars move to your account and the device code stops working. We delete the old code within 30 days.
 - **Usage events:** we aim to delete them after 13 months.
 - **Emails you send us:** we aim to delete them 12 months after your request is dealt with.
 - **Paid-link click counts:** kept, because they contain no personal data.
 
-Today these deletions are done by us, not by an automatic process. We'll update this policy when automatic deletion is in place. If you want your data gone sooner, delete your account (section 8).
+Apart from device codes (above), these deletions are done by us, not by an automatic process. We'll update this policy when automatic deletion is in place. If you want your data gone sooner, delete your account (section 8).
 
 ## 8. Deleting your data
 
-- **In the app:** Settings → Delete account, then confirm. This deletes your account and everything linked to it from our database. It removes the Fanday calendar from that phone. If you used Sign in with Apple, it also revokes Fanday's access to your Apple ID.
+- **In the app:** Settings → Delete account, then confirm. This deletes all your Fanday data from our database. If you created your sign-in through Fanday and none of our other apps holds data for you, we delete the sign-in too. Otherwise the sign-in stays, because our other apps use it; you can delete it from those apps. If you signed in with Apple, we also tell Apple to disconnect Fanday. Signed out: This deletes everything linked to this device from our database and stops its device code working. It removes the Fanday calendar from that phone.
 - **Without the app:** email machinemisha+fanday@gmail.com from the address on your account, or tell us how to find your account. We'll delete it within 30 days and confirm.
 
 If Fanday is on more than one phone, delete the "Fanday" calendar on the other phones in your calendar settings. Uninstalling the app does not delete your data from our servers. Use one of the options above.

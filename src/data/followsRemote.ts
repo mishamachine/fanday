@@ -1,7 +1,7 @@
 import { supabase } from '../lib/supabase.ts'
 import { ensureDeviceToken, getDeviceToken } from '../lib/deviceToken.ts'
 
-// Server copy of the followed teams. Signed in: the follows table (RLS keys it to auth.uid()). Signed out: the device-token RPCs
+// Server copy of the followed teams. Signed in: the follows table (RLS keys it to auth.uid()); adding goes through fanday.user_follows_add. Signed out: the device-token RPCs
 // (fanday.device_follows_*), which act only on the rows of the device that owns the token. Best effort: the local copy wins offline.
 
 export async function loadRemoteFollows(signedIn: boolean): Promise<string[]> {
@@ -28,7 +28,7 @@ export async function saveRemoteFollows(userId: string | null, teamIds: string[]
   const have = await loadRemoteFollows(true)
   const gone = have.filter((t) => !keep.has(t))
   if (gone.length) await supabase.from('follows').delete().in('team_id', gone)
-  // One row at a time: placeholder teams (leagues the seed doesn't cover yet) don't exist in the database and would fail the whole batch.
+  // Direct inserts are closed; user_follows_add is capped and skips team ids the database doesn't know (placeholder teams for leagues the seed doesn't cover yet).
   const add = teamIds.filter((t) => !have.includes(t))
-  await Promise.allSettled(add.map((team_id) => supabase!.from('follows').insert({ user_id: userId, team_id })))
+  if (add.length) await supabase.rpc('user_follows_add', { p_team_ids: add })
 }

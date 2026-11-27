@@ -1,10 +1,10 @@
 -- STEP 1 of the rollback: READ-ONLY preview. Run as role postgres (SQL editor or execute_sql). Changes nothing.
 -- Lists exactly which auth users rollback.sql would delete, with email, why each qualifies, and that none owns a row outside `fanday`.
--- Babar or Misha read the list, then run the generated approval statement (last result) to approve exactly these users, then run rollback.sql.
+-- The project owner reads the list, then run the generated approval statement (last result) to approve exactly these users, then run rollback.sql.
 begin read only;
 
 -- A. WOULD BE DELETED: Fanday created the user (fanday.user_origin.created_by_fanday) AND fanday.user_has_foreign_rows() is false
---    (no row in any table outside fanday with a user_id column, Woofabulary's and Chess Tutor's included).
+--    (no row in any table outside fanday with a user_id column, other apps' included).
 select 'A. would be DELETED' as list, o.user_id, u.email, u.created_at as user_created_at,
        (select string_agg(i.provider, ',' order by i.provider) from auth.identities i where i.user_id = o.user_id) as sign_in_methods,
        'user_origin says Fanday created it (recorded ' || o.created_at::date || ')' as why_it_qualifies,

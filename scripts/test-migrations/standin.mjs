@@ -1,6 +1,6 @@
-// A stand-in for the SHARED Supabase project (ywcrzkvwamjchjjkfrve) in a real Postgres (pglite): the Supabase roles, the bits of
-// `auth` that Fanday reads, and `public` tables with the names, user_id columns (Woofabulary only: Chess Tutor has none) and RLS policies of Woofabulary and Chess Tutor
-// (as described in the README, "Anonymous sign-ins: effect on other apps", read-only check of 2026-11-03).
+// A stand-in for a SHARED Supabase project in a real Postgres (pglite): the Supabase roles, the bits of
+// `auth` that Fanday reads, and generic `public` tables of two other apps (A: user_id columns and own-row RLS policies; B: RLS on, no user_id column).
+// Names are neutral on purpose; only table names, user_id columns and policy shape matter to Fanday's migrations.
 // Column lists beyond user_id are minimal on purpose: only names, user_id and policy shape matter to Fanday's migrations.
 import { PGlite } from '@electric-sql/pglite'
 import { readFileSync } from 'node:fs'
@@ -30,45 +30,45 @@ grant execute on function auth.uid() to anon, authenticated, service_role;
 -- The platform's migration log, shared by every app. Fanday must never write here (it is applied as plain SQL, not apply_migration).
 create schema supabase_migrations;
 create table supabase_migrations.schema_migrations (version text primary key, statements text[], name text, created_by text, idempotency_key text, rollback text[]);
-insert into supabase_migrations.schema_migrations (version, name) values ('20260101000001','woof_init'),('20260101000002','woof_lessons'),('20260101000003','chess_events'),('20260101000004','chess_frames'),('20260101000005','woof_progress');
+insert into supabase_migrations.schema_migrations (version, name) values ('20260101000001','app_a_init'),('20260101000002','app_a_content'),('20260101000003','app_b_events'),('20260101000004','app_b_frames'),('20260101000005','app_a_progress');
 
--- Woofabulary (public read for content; own-row ALL policies for user data) and Chess Tutor (RLS on, no policies).
-create table public.languages (id serial primary key, code text not null);
-create table public.weeks (id serial primary key, language_id int references public.languages (id), n int);
-create table public.lessons (id serial primary key, week_id int references public.weeks (id), title text);
-create table public.lessons_backup_20261021 (id int, title text);
-create table public.user_progress (id serial primary key, user_id uuid not null, lesson_id int, done boolean default false);
-create table public.user_settings (user_id uuid primary key, settings jsonb, updated_at timestamptz);
-create table public.daily_activity (id serial primary key, user_id uuid not null, day date, n int);
-create table public.saved_lessons (id serial primary key, user_id uuid not null, lesson_id int);
-create view public.lesson_summaries as select l.id, l.title, w.n as week from public.lessons l left join public.weeks w on w.id = l.week_id;
--- Chess Tutor has no user_id column (checked read-only, 2026-11-03): its tables are keyed by game, RLS on and no policies.
-create table public.chess_events (id serial primary key, game_id text, kind text, payload jsonb);
-create table public.chess_frames (id serial primary key, game_id text, frame jsonb);
+-- App A (public read for content; own-row ALL policies for user data) and app B (RLS on, no policies).
+create table public.app_a_languages (id serial primary key, code text not null);
+create table public.app_a_weeks (id serial primary key, language_id int references public.app_a_languages (id), n int);
+create table public.app_a_lessons (id serial primary key, week_id int references public.app_a_weeks (id), title text);
+create table public.app_a_backup (id int, title text);
+create table public.app_a_progress (id serial primary key, user_id uuid not null, lesson_id int, done boolean default false);
+create table public.app_a_settings (user_id uuid primary key, settings jsonb, updated_at timestamptz);
+create table public.app_a_activity (id serial primary key, user_id uuid not null, day date, n int);
+create table public.app_a_saved (id serial primary key, user_id uuid not null, lesson_id int);
+create view public.app_a_summaries as select l.id, l.title, w.n as week from public.app_a_lessons l left join public.app_a_weeks w on w.id = l.week_id;
+-- App B has no user_id column: its tables are keyed by game, RLS on and no policies.
+create table public.app_b_events (id serial primary key, game_id text, kind text, payload jsonb);
+create table public.app_b_frames (id serial primary key, game_id text, frame jsonb);
 
-create function public.touch_updated_at() returns trigger language plpgsql as $$ begin new.updated_at := now(); return new; end $$;
-create trigger user_settings_touch before update on public.user_settings for each row execute function public.touch_updated_at();
+create function public.app_a_touch() returns trigger language plpgsql as $$ begin new.updated_at := now(); return new; end $$;
+create trigger app_a_settings_touch before update on public.app_a_settings for each row execute function public.app_a_touch();
 
-alter table public.languages enable row level security; alter table public.weeks enable row level security; alter table public.lessons enable row level security;
-alter table public.user_progress enable row level security; alter table public.user_settings enable row level security;
-alter table public.daily_activity enable row level security; alter table public.saved_lessons enable row level security;
-alter table public.chess_events enable row level security; alter table public.chess_frames enable row level security;
-create policy languages_read on public.languages for select to anon, authenticated using (true);
-create policy weeks_read on public.weeks for select to anon, authenticated using (true);
-create policy lessons_read on public.lessons for select to anon, authenticated using (true);
-create policy user_progress_own on public.user_progress for all to authenticated using (auth.uid() = user_id) with check (auth.uid() = user_id);
-create policy user_settings_own on public.user_settings for all to authenticated using (auth.uid() = user_id) with check (auth.uid() = user_id);
-create policy daily_activity_own on public.daily_activity for all to authenticated using (auth.uid() = user_id) with check (auth.uid() = user_id);
-create policy saved_lessons_own on public.saved_lessons for all to authenticated using (auth.uid() = user_id) with check (auth.uid() = user_id);
+alter table public.app_a_languages enable row level security; alter table public.app_a_weeks enable row level security; alter table public.app_a_lessons enable row level security;
+alter table public.app_a_progress enable row level security; alter table public.app_a_settings enable row level security;
+alter table public.app_a_activity enable row level security; alter table public.app_a_saved enable row level security;
+alter table public.app_b_events enable row level security; alter table public.app_b_frames enable row level security;
+create policy app_a_languages_read on public.app_a_languages for select to anon, authenticated using (true);
+create policy app_a_weeks_read on public.app_a_weeks for select to anon, authenticated using (true);
+create policy app_a_lessons_read on public.app_a_lessons for select to anon, authenticated using (true);
+create policy app_a_progress_own on public.app_a_progress for all to authenticated using (auth.uid() = user_id) with check (auth.uid() = user_id);
+create policy app_a_settings_own on public.app_a_settings for all to authenticated using (auth.uid() = user_id) with check (auth.uid() = user_id);
+create policy app_a_activity_own on public.app_a_activity for all to authenticated using (auth.uid() = user_id) with check (auth.uid() = user_id);
+create policy app_a_saved_own on public.app_a_saved for all to authenticated using (auth.uid() = user_id) with check (auth.uid() = user_id);
 
-grant select on public.languages, public.weeks, public.lessons, public.lesson_summaries to anon, authenticated;
-grant select, insert, update, delete on public.user_progress, public.user_settings, public.daily_activity, public.saved_lessons to authenticated;
+grant select on public.app_a_languages, public.app_a_weeks, public.app_a_lessons, public.app_a_summaries to anon, authenticated;
+grant select, insert, update, delete on public.app_a_progress, public.app_a_settings, public.app_a_activity, public.app_a_saved to authenticated;
 grant all on all tables in schema public to service_role;
 grant usage, select on all sequences in schema public to service_role, authenticated;
 
-insert into public.languages (code) values ('es'), ('fr');
-insert into public.weeks (language_id, n) values (1, 1);
-insert into public.lessons (week_id, title) values (1, 'Hola');
+insert into public.app_a_languages (code) values ('es'), ('fr');
+insert into public.app_a_weeks (language_id, n) values (1, 1);
+insert into public.app_a_lessons (week_id, title) values (1, 'Hola');
 `)
   return db
 }

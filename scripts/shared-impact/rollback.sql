@@ -1,13 +1,13 @@
--- STEP 3 of the rollback for the SHARED project (ref ywcrzkvwamjchjjkfrve). Run as role postgres, ONLY after rollback-preview.sql was read
--- and its approval statement was run by Babar or Misha. One transaction; safe to re-run (a second run finds no `fanday` schema).
+-- STEP 3 of the rollback for the SHARED project. Run as role postgres, ONLY after rollback-preview.sql was read
+-- and its approval statement was run by the project owner. One transaction; safe to re-run (a second run finds no `fanday` schema).
 -- It removes ONLY what Fanday made, and ONLY users on the approved list (fanday.rollback_approved):
 --   1. Auth users that Fanday created AND that own nothing outside `fanday` AND are on the approved list. Deleting the user cascades to its
 --      auth.identities, sessions and refresh tokens, exactly as GoTrue's own delete does. If such a user is NOT on the approved list the
 --      whole script aborts and nothing is dropped (run the preview again). A Fanday-created user who ALSO owns another app's rows is KEPT.
 --   2. Apple identities that a Fanday sign-in added to a user we keep (apple_added_by_fanday) are unlinked.
 --   3. drop schema fanday cascade (tables, functions, policies, grants, seed data, schema_versions: all inside the schema).
--- Nothing is written to supabase_migrations (Fanday was applied as plain SQL), public, Woofabulary or Chess Tutor objects. NOT done here
--- (dashboard / CLI, docs/shared-db-impact.md section 4): exposed-schemas entry (do this FIRST), Edge Functions fanday-*, FANDAY_* secrets,
+-- Nothing is written to supabase_migrations (Fanday was applied as plain SQL), public or any other app's objects. NOT done here
+-- (dashboard / CLI, docs/apply-steps.md): exposed-schemas entry (do this FIRST), Edge Functions fanday-*, FANDAY_* secrets,
 -- Fanday redirect URLs, Google client IDs appended, Apple provider.
 begin;
 do $$

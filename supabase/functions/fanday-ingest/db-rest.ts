@@ -6,10 +6,15 @@ import type { ApplyOps, Db, LeagueRow, StoredGame, TeamRow } from './ingest.ts';
 
 const PAGE = 1000;
 
+/** New-style keys (`sb_publishable_...`) are not JWTs: the gateway rejects them in `Authorization: Bearer`. Send only `apikey` for those; keep Bearer for legacy JWT keys. */
+export function authHeaders(key: string): Record<string, string> {
+  return key.startsWith('sb_') ? { apikey: key } : { apikey: key, Authorization: `Bearer ${key}` };
+}
+
 export function createRestDb(baseUrl: string, publishableKey: string, secret: string, fetchImpl: typeof fetch = fetch): Db {
   const rest = `${baseUrl.replace(/\/$/, '')}/rest/v1`;
   const headers = (extra: Record<string, string> = {}) => ({
-    apikey: publishableKey, Authorization: `Bearer ${publishableKey}`, 'Content-Type': 'application/json',
+    ...authHeaders(publishableKey), 'Content-Type': 'application/json',
     // Shared project: every table and RPC lives in the `fanday` schema, selected per request (Accept-Profile for reads, Content-Profile for writes).
     'Accept-Profile': 'fanday', 'Content-Profile': 'fanday', ...extra,
   });
@@ -55,4 +60,15 @@ export function createRestDb(baseUrl: string, publishableKey: string, secret: st
           `&or=(and(kickoff_at.gte.${fromIso},kickoff_at.lte.${toIso}),and(time_tbc.is.true,game_date.gte.${fromIso.slice(0, 10)},game_date.lte.${toIso.slice(0, 10)}))&order=id`,
       ),
   };
+}
+
+/** Daily housekeeping (fanday.run_maintenance): unused device codes and orphaned user rows. Same secret and key as the ingest calls. */
+export async function runMaintenance(baseUrl: string, publishableKey: string, secret: string, fetchImpl: typeof fetch = fetch): Promise<unknown> {
+  const res = await fetchImpl(`${baseUrl.replace(/\/$/, '')}/rest/v1/rpc/run_maintenance`, {
+    method: 'POST',
+    headers: { ...authHeaders(publishableKey), 'Content-Type': 'application/json', 'Content-Profile': 'fanday' },
+    body: JSON.stringify({ p_secret: secret }),
+  });
+  if (!res.ok) throw new Error(`Supabase POST rpc/run_maintenance failed: ${res.status} ${(await res.text()).slice(0, 200)}`);
+  return res.json();
 }

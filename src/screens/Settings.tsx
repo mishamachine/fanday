@@ -9,6 +9,7 @@ import { supabase } from '../lib/supabase.ts'
 import { calendar } from '../calendar/index.ts'
 import { DATA_CREDIT } from '../calendar/eventContent.ts'
 import { PRIVACY_LINE } from '../lib/env.ts'
+import { DELETE_SIGNED_IN, DELETE_SIGNED_OUT } from '../lib/deleteCopy.ts'
 
 export default function Settings() {
   const nav = useNavigate()
@@ -73,13 +74,13 @@ export default function Settings() {
         <h2>Delete account</h2>
         {confirmDelete ? (
           <>
-            <p>This removes your teams, your account and the Fanday calendar on this phone. It can't be undone.</p>
+            <p>{user ? DELETE_SIGNED_IN : DELETE_SIGNED_OUT} It also removes the Fanday calendar on this phone. It can't be undone.</p>
             <button className="btn danger" onClick={doDelete}>Yes, delete everything</button>
             <button className="btn alt" onClick={() => setConfirmDelete(false)}>Cancel</button>
           </>
         ) : (
           <>
-            <p>Removes your teams and account data.</p>
+            <p>Deletes your Fanday data from our database.</p>
             <button className="btn danger" onClick={() => setConfirmDelete(true)}>Delete account</button>
           </>
         )}

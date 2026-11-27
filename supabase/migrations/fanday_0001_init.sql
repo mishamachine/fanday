@@ -1,9 +1,11 @@
--- Fanday 0001: everything lives in schema `fanday` on the SHARED B&B project (ywcrzkvwamjchjjkfrve), which also runs
--- Woofabulary and Chess Tutor. Rules this file keeps (proved by scripts/test-migrations/shared-project.mjs):
+-- Fanday 0001: everything lives in schema `fanday` of a Supabase project that other apps share. Rules this file keeps
+-- (proved by scripts/test-migrations/shared-project.mjs):
 --   * every table, function, policy, index and grant is schema-qualified `fanday.`; nothing outside `fanday` is created, altered, dropped or granted on;
---   * the only reads outside `fanday` are auth.users in SECURITY DEFINER functions (search_path = ''), plus auth.uid() in policies;
+--   * the only reads outside `fanday` are in SECURITY DEFINER functions (search_path = ''): auth.users (profiles, purge, deletion checks), auth.identities
+--     (ensure_profile: sign-in provider and age of the Apple identity), the catalogs and, for the foreign-rows check, the tables that reference auth.users
+--     (read-only, fails closed); plus auth.uid() in policies;
 --   * no triggers, and no foreign keys to auth.users (a FK would add system triggers to auth.users). User-owned rows carry a plain user_id;
---     fanday.purge_orphaned_user_rows() removes rows whose auth user is gone.
+--     fanday.purge_orphaned_user_rows() removes rows whose auth user is gone (run daily by fanday.run_maintenance, see the end of this file).
 -- Idempotent: safe to apply twice. Apply as PLAIN SQL with execute_sql (never apply_migration, `db push` or `db reset`); the file records itself in fanday.schema_versions.
 -- Ownership model: a row belongs to a SIGNED-IN USER (user_id) or to a SIGNED-OUT DEVICE (token_id -> device_tokens). Exactly one.
 
@@ -183,7 +185,7 @@ create table if not exists fanday.rate_counters (
   primary key (scope, key, window_start)
 );
 -- Which migrations/seeds were applied to THIS schema. Fanday's SQL is applied as plain SQL (execute_sql), never through apply_migration,
--- because apply_migration writes rows into the shared supabase_migrations.schema_migrations, which Woofabulary and Chess Tutor use too.
+-- because apply_migration writes rows into the shared supabase_migrations.schema_migrations, which the other apps use too.
 -- Each file records itself on its last line, so a rollback that drops the schema leaves nothing behind anywhere else.
 create table if not exists fanday.schema_versions (
   version    text primary key,
@@ -251,10 +253,9 @@ create policy profiles_own_update on fanday.profiles for update to authenticated
   using (user_id = (select auth.uid())) with check (user_id = (select auth.uid()));
 
 drop policy if exists follows_own_select on fanday.follows;
-drop policy if exists follows_own_insert on fanday.follows;
+drop policy if exists follows_own_insert on fanday.follows;   -- direct insert is closed (see grants); rows come from user_follows_add
 drop policy if exists follows_own_delete on fanday.follows;
 create policy follows_own_select on fanday.follows for select to authenticated using (user_id = (select auth.uid()));
-create policy follows_own_insert on fanday.follows for insert to authenticated with check (user_id = (select auth.uid()));
 create policy follows_own_delete on fanday.follows for delete to authenticated using (user_id = (select auth.uid()));
 
 drop policy if exists devices_own_select on fanday.devices;
@@ -262,7 +263,6 @@ drop policy if exists devices_own_insert on fanday.devices;
 drop policy if exists devices_own_update on fanday.devices;
 drop policy if exists devices_own_delete on fanday.devices;
 create policy devices_own_select on fanday.devices for select to authenticated using (user_id = (select auth.uid()));
-create policy devices_own_insert on fanday.devices for insert to authenticated with check (user_id = (select auth.uid()));
 create policy devices_own_update on fanday.devices for update to authenticated
   using (user_id = (select auth.uid())) with check (user_id = (select auth.uid()));
 create policy devices_own_delete on fanday.devices for delete to authenticated using (user_id = (select auth.uid()));
@@ -283,7 +283,6 @@ create policy device_events_own_delete on fanday.device_events for delete to aut
 
 drop policy if exists usage_events_own_insert on fanday.usage_events;
 drop policy if exists usage_events_own_select on fanday.usage_events;
-create policy usage_events_own_insert on fanday.usage_events for insert to authenticated with check (user_id = (select auth.uid()));
 create policy usage_events_own_select on fanday.usage_events for select to authenticated using (user_id = (select auth.uid()));
 
 -- ---------------------------------------------------------------- privileges (defence in depth beside RLS)
@@ -295,9 +294,12 @@ grant select on fanday.leagues, fanday.teams, fanday.sponsors, fanday.games, fan
 grant select on fanday.profiles to authenticated;
 -- pro_unlocked and email are never client-writable: pro_unlocked is set by the server, email by ensure_profile().
 grant update (country, promo_push_opt_in, marketing_email_opt_in) on fanday.profiles to authenticated;
-grant select, insert, delete on fanday.follows to authenticated;
-grant select, insert, update, delete on fanday.devices, fanday.device_events to authenticated;
-grant select, insert on fanday.usage_events to authenticated;
+-- No direct INSERT for signed-in users on follows, devices and usage_events: they would be unbounded. Those rows are created only by the
+-- capped RPCs user_follows_add, user_device_upsert and user_log_event (below). Updates and deletes of own rows stay direct.
+grant select, delete on fanday.follows to authenticated;
+grant select, update, delete on fanday.devices to authenticated;
+grant select, insert, update, delete on fanday.device_events to authenticated;
+grant select on fanday.usage_events to authenticated;
 
 grant all on all tables in schema fanday to service_role;
 grant usage, select on all sequences in schema fanday to service_role;
@@ -314,7 +316,9 @@ begin
   insert into fanday.profiles (user_id, email)
     select u.id, u.email from auth.users u where u.id = v_uid
   on conflict (user_id) do update set email = excluded.email;
-  -- A fresh Apple identity seen here (this call follows a Fanday sign-in) was added by Fanday.
+  -- HEURISTIC, not proof: Supabase does not record which app added an identity. An Apple identity under 10 minutes old that is seen here
+  -- (this call follows a Fanday sign-in) is taken to have been added by Fanday. An Apple identity linked elsewhere within those 10 minutes
+  -- would be misread as ours. The only consequence is that account deletion also unlinks that Apple identity (see apple_added_by_fanday).
   v_apple := exists (select 1 from auth.identities i where i.user_id = v_uid and i.provider = 'apple' and i.created_at > now() - interval '10 minutes');
   if not exists (select 1 from fanday.user_origin o where o.user_id = v_uid) then
     select u.created_at into v_created from auth.users u where u.id = v_uid;
@@ -401,6 +405,15 @@ language plpgsql security definer set search_path = '' as $$
 declare v_id uuid := fanday._token_id(p_token); v_n int;
 begin
   if p_device is null then raise exception 'device id required' using errcode = '22023'; end if;
+  if jsonb_typeof(coalesce(p_events, '[]'::jsonb)) <> 'array' or jsonb_array_length(coalesce(p_events, '[]'::jsonb)) > 500 then
+    raise exception 'too many events' using errcode = '22023';
+  end if;
+  -- At most 5 phones per token. The token row is locked first so two parallel calls cannot both slip past the count.
+  perform 1 from fanday.device_tokens t where t.id = v_id for update;
+  if not exists (select 1 from fanday.devices d where d.id = p_device)
+     and (select count(*) from fanday.devices d where d.token_id = v_id) >= 5 then
+    raise exception 'too many devices' using errcode = '22023';
+  end if;
   -- One atomic statement, no check-then-write gap: the update arm only fires for a row this token owns. If another owner (a user or
   -- another token) holds the id, nothing is inserted or changed, zero rows come back, and we refuse.
   insert into fanday.devices (id, token_id, platform, calendar_id, last_sync_at) values (p_device, v_id, p_platform, p_calendar_id, now())
@@ -430,6 +443,57 @@ begin
   if not fanday.rl_hit('device-log', v_id::text, date_trunc('day', now() at time zone 'utc') at time zone 'utc', 200) then return; end if;
   insert into fanday.usage_events (token_id, name) values (v_id, p_name);
 end $$;
+
+-- ---------------------------------------------------------------- signed-in writes (capped; direct INSERT is revoked)
+-- Adds teams to the caller's follows (unknown team ids are skipped). At most 300 follows per user, 200 calls per user per UTC day.
+create or replace function fanday.user_follows_add(p_team_ids text[]) returns int
+language plpgsql security definer set search_path = '' as $$
+declare v_uid uuid := auth.uid(); v_ids text[] := coalesce(p_team_ids, '{}'); v_n int;
+begin
+  if v_uid is null then raise exception 'not authenticated' using errcode = '28000'; end if;
+  if coalesce(array_length(v_ids, 1), 0) > 300 then raise exception 'too many teams' using errcode = '22023'; end if;
+  if not fanday.rl_hit('user-follows', v_uid::text, date_trunc('day', now() at time zone 'utc') at time zone 'utc', 200) then
+    raise exception 'rate_limited' using errcode = 'P0001';
+  end if;
+  insert into fanday.follows (user_id, team_id) select v_uid, t.id from fanday.teams t where t.id = any (v_ids) on conflict do nothing;
+  get diagnostics v_n = row_count;
+  if (select count(*) from fanday.follows f where f.user_id = v_uid) > 300 then raise exception 'too many teams' using errcode = '22023'; end if;
+  return v_n;
+end $$;
+
+-- Registers or refreshes one of the caller's phones. At most 5 phones per user; another owner's device id is refused.
+create or replace function fanday.user_device_upsert(p_device uuid, p_platform text, p_calendar_id text, p_push_token text default null) returns void
+language plpgsql security definer set search_path = '' as $$
+declare v_uid uuid := auth.uid(); v_n int;
+begin
+  if v_uid is null then raise exception 'not authenticated' using errcode = '28000'; end if;
+  if p_device is null then raise exception 'device id required' using errcode = '22023'; end if;
+  if not fanday.rl_hit('user-device', v_uid::text, date_trunc('day', now() at time zone 'utc') at time zone 'utc', 200) then
+    raise exception 'rate_limited' using errcode = 'P0001';
+  end if;
+  perform pg_advisory_xact_lock(hashtextextended('fanday.user_device:' || v_uid::text, 0));
+  if not exists (select 1 from fanday.devices d where d.id = p_device)
+     and (select count(*) from fanday.devices d where d.user_id = v_uid) >= 5 then
+    raise exception 'too many devices' using errcode = '22023';
+  end if;
+  insert into fanday.devices (id, user_id, platform, calendar_id, push_token, last_sync_at) values (p_device, v_uid, p_platform, p_calendar_id, p_push_token, now())
+  on conflict (id) do update set platform = excluded.platform, calendar_id = excluded.calendar_id, push_token = coalesce(excluded.push_token, fanday.devices.push_token), last_sync_at = now()
+    where fanday.devices.user_id = v_uid;
+  get diagnostics v_n = row_count;
+  if v_n = 0 then raise exception 'device belongs to another owner' using errcode = '42501'; end if;
+end $$;
+
+-- Best effort and capped like device_log_event: 200 events per user per UTC day; the rest are dropped without an error.
+create or replace function fanday.user_log_event(p_name text) returns void
+language plpgsql security definer set search_path = '' as $$
+declare v_uid uuid := auth.uid();
+begin
+  if v_uid is null then raise exception 'not authenticated' using errcode = '28000'; end if;
+  if not fanday.rl_hit('user-log', v_uid::text, date_trunc('day', now() at time zone 'utc') at time zone 'utc', 200) then return; end if;
+  insert into fanday.usage_events (user_id, name) values (v_uid, p_name);
+end $$;
+revoke all on function fanday.user_follows_add(text[]), fanday.user_device_upsert(uuid, text, text, text), fanday.user_log_event(text) from public, anon;
+grant execute on function fanday.user_follows_add(text[]), fanday.user_device_upsert(uuid, text, text, text), fanday.user_log_event(text) to authenticated;
 
 -- Signed-out delete: removes every row owned by the device and revokes the token (the revoked row, a hash only, is purged by cleanup).
 create or replace function fanday.device_delete(p_token text) returns jsonb
@@ -525,28 +589,42 @@ language sql security definer set search_path = '' as $$
   select u.id from auth.users u where lower(u.email) = lower(p_email) limit 1;
 $$;
 
--- True when the user owns a row in ANY table outside `fanday` that has a user_id column (Woofabulary, Chess Tutor, whatever is added later).
--- Read-only, catalog-driven. System schemas are skipped (auth.* tables have user_id too, but they are the login itself).
--- Fails closed: a table that cannot be read counts as "has rows".
+-- True when the user owns a row in ANY table outside `fanday` that points at them. A table counts when it has
+--   (a) a column named user_id, or
+--   (b) a column, whatever its name, that is a foreign key to auth.users (id, owner_id, profile_id, ...), or
+--   (c) storage.objects.owner / owner_id (Storage keeps the owner as plain columns).
+-- Read-only, catalog-driven. System schemas are skipped (auth.* tables reference auth.users too, but they are the login itself).
+-- Fails closed: a table that cannot be read counts as "has rows", and so does a table with row level security that this function's
+-- owner would not see in full (the owner is neither superuser/BYPASSRLS nor the table owner without FORCE RLS): "0 rows visible" is not "no rows".
 create or replace function fanday.user_has_foreign_rows(p_user uuid) returns boolean
 language plpgsql security definer set search_path = '' as $$
-declare r record; v_found boolean;
+declare r record; v_found boolean; v_me oid; v_bypass boolean;
 begin
+  select ro.oid, (ro.rolsuper or ro.rolbypassrls) into v_me, v_bypass from pg_catalog.pg_roles ro where ro.rolname = current_user;
+  if v_me is null then return true; end if;
   for r in
-    select n.nspname as s, c.relname as t, (a.atttypid = 'pg_catalog.uuid'::regtype) as is_uuid
+    select distinct n.nspname as s, c.relname as t, a.attname as col, (a.atttypid = 'pg_catalog.uuid'::regtype) as is_uuid,
+           c.relrowsecurity as rls, c.relforcerowsecurity as frls, c.relowner as own
       from pg_catalog.pg_class c
       join pg_catalog.pg_namespace n on n.oid = c.relnamespace
-      join pg_catalog.pg_attribute a on a.attrelid = c.oid and a.attname = 'user_id' and a.attnum > 0 and not a.attisdropped
+      join pg_catalog.pg_attribute a on a.attrelid = c.oid and a.attnum > 0 and not a.attisdropped
      where c.relkind in ('r', 'p') and not c.relispartition
-       and n.nspname <> 'fanday' and n.nspname not like 'pg\_%' and n.nspname <> 'information_schema'
-       and n.nspname not in ('auth', 'storage', 'realtime', 'vault', 'extensions', 'graphql', 'graphql_public', 'supabase_functions',
-                             'supabase_migrations', 'pgsodium', 'pgsodium_masks', 'cron', 'net', 'pgbouncer', '_realtime', '_analytics', '_supavisor', 'pgmq')
+       and (
+         ( n.nspname <> 'fanday' and n.nspname not like 'pg\_%' and n.nspname <> 'information_schema'
+           and n.nspname not in ('auth', 'storage', 'realtime', 'vault', 'extensions', 'graphql', 'graphql_public', 'supabase_functions',
+                                 'supabase_migrations', 'pgsodium', 'pgsodium_masks', 'cron', 'net', 'pgbouncer', '_realtime', '_analytics', '_supavisor', 'pgmq')
+           and ( a.attname = 'user_id'
+                 or exists (select 1 from pg_catalog.pg_constraint k
+                             where k.conrelid = c.oid and k.contype = 'f' and k.confrelid = 'auth.users'::pg_catalog.regclass and k.conkey = array[a.attnum]) ) )
+         or ( n.nspname = 'storage' and c.relname = 'objects' and a.attname in ('owner', 'owner_id') )
+       )
   loop
+    if r.rls and not v_bypass and not (r.own = v_me and not r.frls) then return true; end if;
     begin
       if r.is_uuid then
-        execute format('select exists (select 1 from %I.%I where user_id = $1)', r.s, r.t) into v_found using p_user;
+        execute format('select exists (select 1 from %I.%I where %I = $1)', r.s, r.t, r.col) into v_found using p_user;
       else
-        execute format('select exists (select 1 from %I.%I where user_id::text = $1::text)', r.s, r.t) into v_found using p_user;
+        execute format('select exists (select 1 from %I.%I where %I::text = $1::text)', r.s, r.t, r.col) into v_found using p_user;
       end if;
     exception when others then
       return true;
@@ -594,7 +672,7 @@ begin
   return jsonb_build_object('follows', v_f, 'devices', v_d, 'usage_events', v_u, 'profiles', v_p, 'tokens', v_t);
 end $$;
 
--- ---------------------------------------------------------------- cleanup (service_role only, NOT scheduled)
+-- ---------------------------------------------------------------- cleanup (service_role only; run daily through run_maintenance below)
 -- Device tokens unused for p_months (default 24, the retention in the privacy policy), claimed or revoked ones after 30 days,
 -- and rate counters older than 2 days. Their follows, devices and events go by cascade.
 create or replace function fanday.cleanup_unused_device_tokens(p_months int default 24) returns int
@@ -622,6 +700,21 @@ begin
   delete from fanday.user_origin  o where not exists (select 1 from auth.users u where u.id = o.user_id); get diagnostics v_c = row_count; v_n := v_n + v_c;
   return v_n;
 end $$;
+
+-- Daily housekeeping, called by the ingest workflow through fanday-ingest ({"mode":"maintenance"}), no pg_cron. Same secret as ingest
+-- (hash-checked like the other function RPCs). The orphan purge is skipped when auth.users is empty, so a wiped or mis-pointed
+-- auth table can never turn it into "delete everything".
+create or replace function fanday.run_maintenance(p_secret text) returns jsonb
+language plpgsql security definer set search_path = '' as $$
+declare v_tokens int; v_orphans int := 0; v_purged boolean := false;
+begin
+  perform fanday._check_secret('ingest', p_secret);
+  v_tokens := fanday.cleanup_unused_device_tokens(24);
+  if exists (select 1 from auth.users) then v_orphans := fanday.purge_orphaned_user_rows(); v_purged := true; end if;
+  return jsonb_build_object('device_tokens_removed', v_tokens, 'orphan_rows_removed', v_orphans, 'orphan_purge_ran', v_purged);
+end $$;
+revoke all on function fanday.run_maintenance(text) from public;
+grant execute on function fanday.run_maintenance(text) to anon, authenticated, service_role;
 
 revoke all on function fanday.auth_user_id_by_email(text), fanday.user_has_foreign_rows(uuid), fanday.auth_user_deletable(uuid),
   fanday.set_user_origin(uuid, boolean), fanday.delete_user_origin(uuid), fanday.delete_user_data(uuid), fanday.cleanup_unused_device_tokens(int), fanday.purge_orphaned_user_rows() from public, anon, authenticated;

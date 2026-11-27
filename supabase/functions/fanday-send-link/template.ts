@@ -1,4 +1,4 @@
-// Generated from projects/sports-calendar-sync/email-templates/magic-link.html (the two leading comment lines removed).
+// The magic-link email (HTML), kept in this file so the function needs no file reads.
 // {{ .ConfirmationURL }} is replaced by renderEmail() in link.ts. Edit the HTML source, then paste it here.
 export const SUBJECT = 'Fanday: your sign-in link'
 export const TEMPLATE_HTML = `<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Fanday: your sign-in link</title></head>

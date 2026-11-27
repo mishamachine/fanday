@@ -3,7 +3,7 @@ import { ok, eq, done } from './_t.mjs'
 import { readFileSync, readdirSync, statSync } from 'node:fs'
 import { join } from 'node:path'
 import { handle } from '../supabase/functions/fanday-device/handler.ts'
-import { createRestDb } from '../supabase/functions/fanday-ingest/db-rest.ts'
+import { createRestDb, authHeaders, runMaintenance } from '../supabase/functions/fanday-ingest/db-rest.ts'
 
 const root = new URL('../supabase/functions/', import.meta.url).pathname
 const files = (d) => readdirSync(d).flatMap((f) => { const p = join(d, f); return statSync(p).isDirectory() ? files(p) : p.endsWith('.ts') ? [p] : [] })
@@ -34,6 +34,29 @@ const calls = []
 const db = createRestDb('https://x.test', 'pub', 'sek', async (url, init) => { calls.push({ url: String(url), body: init?.body ? JSON.parse(init.body) : null, key: init.headers.apikey }); return new Response('[]', { status: 200 }) })
 await db.apply({ inserts: [], updates: [], changes: [] }); await db.setLeagueSeason('epl', '2026-27'); await db.setTeamWikiPage('x', 'Y')
 ok('ingest RPC calls include p_secret and use the publishable key', calls.length === 3 && calls.every((c) => c.body.p_secret === 'sek' && c.key === 'pub'))
+
+// ---- H1: new-style publishable keys (sb_publishable_...) are not JWTs; the gateway rejects them as a Bearer token
+const reqs = []
+const rec = async (url, init) => { reqs.push({ url: String(url), headers: init.headers, body: init.body ? JSON.parse(init.body) : null }); return new Response('[]', { status: 200 }) }
+const NEW = 'sb_publishable_test-not-real', OLD = 'eyJhbGciOiJIUzI1NiJ9.e30.sig'
+eq('authHeaders: an sb_ key is sent as apikey only', authHeaders(NEW), { apikey: NEW })
+eq('authHeaders: a legacy JWT key keeps apikey and Authorization: Bearer', authHeaders(OLD), { apikey: OLD, Authorization: `Bearer ${OLD}` })
+for (const [label, key] of [['sb_ key', NEW], ['legacy JWT key', OLD]]) {
+  reqs.length = 0
+  const d = createRestDb('https://x.test', key, 'sek', rec)
+  await d.leagues(); await d.hasFutureGames('epl', '2026-01-01'); await d.apply({ inserts: [], updates: [], changes: [] })
+  ok(`ingest requests (reads, a count read and a write) with a ${label}: apikey always, Authorization only for the JWT`, reqs.length === 3 && reqs.every((c) => c.headers.apikey === key
+    && (key === NEW ? !('Authorization' in c.headers) : c.headers.Authorization === `Bearer ${key}`) && c.headers['Accept-Profile'] === 'fanday' && c.headers['Content-Profile'] === 'fanday'))
+}
+
+// ---- M2: the daily maintenance call
+reqs.length = 0
+await runMaintenance('https://x.test/', NEW, 'sek', async (url, init) => { reqs.push({ url: String(url), headers: init.headers, body: JSON.parse(init.body) }); return new Response('{"device_tokens_removed":1}', { status: 200 }) })
+ok('maintenance: POST rpc/run_maintenance in schema fanday with the secret, sb_ key as apikey only', reqs.length === 1 && reqs[0].url === 'https://x.test/rest/v1/rpc/run_maintenance' && reqs[0].body.p_secret === 'sek'
+  && reqs[0].headers['Content-Profile'] === 'fanday' && reqs[0].headers.apikey === NEW && !('Authorization' in reqs[0].headers))
+ok('maintenance: a failed call throws (so the workflow turns red)', await runMaintenance('https://x.test', NEW, 'sek', async () => new Response('nope', { status: 401 })).then(() => false, (e) => /401/.test(e.message)))
+ok('the ingest function routes {"mode":"maintenance"} to run_maintenance and the workflow calls it once a day', /body\.mode === 'maintenance'/.test(text(join(root, 'fanday-ingest/index.ts')))
+  && /"mode":"maintenance"/.test(text(new URL('../.github/workflows/ingest.yml', import.meta.url).pathname)))
 
 // ---- fanday-device handler
 const req = (body, method = 'POST', headers = {}) => new Request('https://f.test/', { method, headers, body: body === undefined ? undefined : JSON.stringify(body) })

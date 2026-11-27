@@ -5,7 +5,7 @@ import { deleteAccount } from './delete.ts'
 
 // POST { confirm: 'DELETE', apple_authorization_code?, apple_client_id?, apple_redirect_uri? } with the signed-in user's bearer token.
 // (Signed-out users delete through the device token: fanday.device_delete, no function needed.)
-// The project is SHARED with Woofabulary and Chess Tutor, so deleting the auth user is the exception, not the rule (delete.ts):
+// The project is SHARED with other apps, so deleting the auth user is the exception, not the rule (delete.ts):
 // 1. FAILS CLOSED for Apple users: if the account has an Apple identity, the Apple secrets (FANDAY_APPLE_TEAM_ID, FANDAY_APPLE_KEY_ID,
 //    FANDAY_APPLE_PRIVATE_KEY) must exist, the app must send a fresh authorization code, and Apple must accept the revoke. Otherwise we
 //    return an error and delete NOTHING.

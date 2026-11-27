@@ -1,5 +1,4 @@
-# Supabase CLI config for Fanday on the SHARED project "B&B Project Factory projects" (ref ywcrzkvwamjchjjkfrve), which also runs
-# Woofabulary and Chess Tutor. This file configures LOCAL development and Edge Function settings only.
+# Supabase CLI config for Fanday on a SHARED Supabase project that other apps also use. This file configures LOCAL development and Edge Function settings only.
 # NEVER run `supabase db push`, `db reset` or `config push` against the shared project. Fanday's SQL is applied as PLAIN SQL with execute_sql,
 # never apply_migration (that writes to the shared supabase_migrations table); Auth settings are changed by hand in the dashboard.
 # This PR does not link the CLI.
@@ -20,7 +19,7 @@ additional_redirect_urls = [
   "https://fanday.bbprojectfactory.com/auth/callback",
   "http://localhost:5173/**",
 ]
-# Anonymous sign-ins stay OFF (Babar, 2026-11-03): the setting is project-wide and other apps share it. Signed-out Fanday users are
+# Anonymous sign-ins stay OFF: the setting is project-wide and other apps share it. Signed-out Fanday users are
 # keyed to a device token (fanday.device_tokens), not to an auth user.
 enable_anonymous_sign_ins = false
 

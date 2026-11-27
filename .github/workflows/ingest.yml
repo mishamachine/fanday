@@ -2,7 +2,7 @@
 #   daily    once a day at 10:00 UTC, all leagues
 #   gameday  every 3 hours, only pages with a game in the next 36 hours
 # Each call reads the fanday schema through the Data API (it must be in the exposed schemas).
-# Needs the repository secret FANDAY_INGEST_SECRET (same value as the Supabase function secret). Babar adds both.
+# Needs the repository secret FANDAY_INGEST_SECRET (same value as the Supabase function secret). Add both.
 name: ingest
 
 on:
@@ -98,3 +98,27 @@ jobs:
           done
           echo "::error::Ingest did not finish within 800 calls."
           exit 1
+
+  maintenance:
+    # Daily housekeeping through fanday-ingest: removes unused device codes (24 months; claimed or revoked ones after 30 days) and the
+    # Fanday rows of sign-ins that were deleted elsewhere. Runs with the daily schedule and with a manual daily run.
+    if: github.event.schedule == '0 10 * * *' || (github.event_name == 'workflow_dispatch' && inputs.mode == 'daily')
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      FUNCTION_URL: https://ywcrzkvwamjchjjkfrve.supabase.co/functions/v1/fanday-ingest
+      FANDAY_INGEST_SECRET: ${{ secrets.FANDAY_INGEST_SECRET }}
+    steps:
+      - name: Call fanday-ingest maintenance
+        run: |
+          set -euo pipefail
+          if [ -z "${FANDAY_INGEST_SECRET:-}" ]; then
+            echo "::error::Repository secret FANDAY_INGEST_SECRET is not set."
+            exit 1
+          fi
+          curl --silent --show-error --fail-with-body --max-time 120 --retry 2 --retry-delay 10 \
+            -X POST "$FUNCTION_URL" \
+            -H "Content-Type: application/json" \
+            -H "x-ingest-secret: ${FANDAY_INGEST_SECRET}" \
+            -d '{"mode":"maintenance"}' -o response.json
+          jq -c . response.json
