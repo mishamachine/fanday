@@ -1,32 +1,42 @@
-# Supabase CLI config for the Fanday project (ref smhddbnctlkbwppzrsry, org "B&B Free", us-west-1).
-# Link once with: supabase link --project-ref smhddbnctlkbwppzrsry   (Babar/CTO step; this PR does not link or push.)
-project_id = "smhddbnctlkbwppzrsry"
+# Supabase CLI config for Fanday on a SHARED Supabase project that other apps also use. This file configures LOCAL development and Edge Function settings only.
+# NEVER run `supabase db push`, `db reset` or `config push` against the shared project. Fanday's SQL is applied as PLAIN SQL with execute_sql,
+# never apply_migration (that writes to the shared supabase_migrations table); Auth settings are changed by hand in the dashboard.
+# This PR does not link the CLI.
+project_id = "ywcrzkvwamjchjjkfrve"
+
+[api]
+# `fanday` must also be added to the exposed schemas of the shared project (dashboard step), keeping the existing ones.
+schemas = ["public", "graphql_public", "fanday"]
 
 [db.seed]
 enabled = true
-sql_paths = ["./seed.sql", "./seed_teams.sql", "./seed/teams_tz.sql"] # teams_tz.sql comes from PR #2 (needs teams.tz from its 0002): merge both PRs together
+sql_paths = ["./seed.sql", "./seed_teams.sql", "./seed/teams_tz.sql"] # all write to fanday.leagues / fanday.teams only
 
-# This file configures LOCAL development (`supabase start`). The production Site URL and redirect list
-# (https://fanday.bbprojectfactory.com, com.bbprojectfactory.fanday://auth/callback) are set in the dashboard:
-# see auth-setup-checklist.md. Do not rely on `supabase config push` for them.
 [auth]
 site_url = "http://localhost:5173"
 additional_redirect_urls = [
   "com.bbprojectfactory.fanday://auth/callback",
+  "https://fanday.bbprojectfactory.com/auth/callback",
   "http://localhost:5173/**",
 ]
-# Anonymous session on first launch (src/lib/auth.ts). Signing in later keeps follows via claim_anonymous_follows().
-enable_anonymous_sign_ins = true
+# Anonymous sign-ins stay OFF: the setting is project-wide and other apps share it. Signed-out Fanday users are
+# keyed to a device token (fanday.device_tokens), not to an auth user.
+enable_anonymous_sign_ins = false
 
-# JWT verification at the gateway is OFF for these functions, as STT does: each authenticates itself
-# (delete-account checks the bearer token; go is a public redirect that reads only the game row).
-[functions.delete-account]
+# JWT verification at the gateway is OFF for these functions: each authenticates itself
+# (fanday-delete-account checks the bearer token; fanday-go is a public redirect; fanday-device and fanday-send-link serve signed-out phones;
+# fanday-ingest checks FANDAY_INGEST_SECRET). New-style sb_secret keys are not JWTs, so the gateway check must stay off.
+[functions.fanday-delete-account]
 verify_jwt = false
 
-[functions.go]
+[functions.fanday-go]
 verify_jwt = false
 
-# Wikipedia ingest (PR #2, cto/fanday-ingest): called by the scheduled workflow. New-style sb_secret keys are not JWTs,
-# so the gateway check must stay off and the function authorizes the caller itself.
-[functions.ingest-wikipedia]
+[functions.fanday-ingest]
+verify_jwt = false
+
+[functions.fanday-send-link]
+verify_jwt = false
+
+[functions.fanday-device]
 verify_jwt = false

@@ -1,6 +1,6 @@
 import { webcrypto as crypto } from 'node:crypto'
 import { eq, ok, done } from './_t.mjs'
-import { appleConfigFrom, appleClientSecret, revokeAppleAuthorization, appleGate, allowedRedirectUris } from '../supabase/functions/delete-account/apple.ts'
+import { appleConfigFrom, appleClientSecret, revokeAppleAuthorization, appleGate, allowedRedirectUris } from '../supabase/functions/fanday-delete-account/apple.ts'
 
 // A throwaway P-256 key made right here for the test. Not a real Apple key.
 const kp = await crypto.subtle.generateKey({ name: 'ECDSA', namedCurve: 'P-256' }, true, ['sign', 'verify'])
@@ -9,8 +9,8 @@ const pem = `-----BEGIN PRIVATE KEY-----\n${der.match(/.{1,64}/g).join('\n')}\n-
 const env = (o) => (k) => o[k]
 
 eq('no secrets: skipped cleanly', appleConfigFrom(env({})), null)
-eq('partial secrets: skipped cleanly', appleConfigFrom(env({ APPLE_TEAM_ID: 'T', APPLE_KEY_ID: 'K' })), null)
-const cfg = appleConfigFrom(env({ APPLE_TEAM_ID: 'TEAM123456', APPLE_KEY_ID: 'KEY1234567', APPLE_PRIVATE_KEY: pem.replace(/\n/g, '\\n') }))
+eq('partial secrets: skipped cleanly', appleConfigFrom(env({ FANDAY_APPLE_TEAM_ID: 'T', FANDAY_APPLE_KEY_ID: 'K' })), null)
+const cfg = appleConfigFrom(env({ FANDAY_APPLE_TEAM_ID: 'TEAM123456', FANDAY_APPLE_KEY_ID: 'KEY1234567', FANDAY_APPLE_PRIVATE_KEY: pem.replace(/\n/g, '\\n') }))
 ok('all three secrets (with \\n-escaped key): config built', !!cfg && cfg.privateKey.includes('\n'))
 
 const jwt = await appleClientSecret(cfg, 'com.bbprojectfactory.fanday', 1_800_000_000)
@@ -34,7 +34,7 @@ eq('exchanged the code, then revoked the refresh token', [calls[0][0], calls[0][
   ['https://appleid.apple.com/auth/token', 'CODE', 'https://appleid.apple.com/auth/revoke', 'RT', 'refresh_token'])
 eq('native flow: no redirect_uri sent', 'redirect_uri' in calls[0][1], false)
 calls.length = 0
-const web = 'https://smhddbnctlkbwppzrsry.supabase.co/auth/v1/callback'
+const web = 'https://ywcrzkvwamjchjjkfrve.supabase.co/auth/v1/callback'
 await revokeAppleAuthorization(cfg, 'com.example.services', 'CODE', { ...SUB, redirectUri: web }, fakeApple(true, true))
 eq('web flow: redirect_uri sent on /auth/token, exactly as given', calls[0][1].redirect_uri, web)
 calls.length = 0
@@ -46,7 +46,7 @@ eq('revoke rejected: failed', await revokeAppleAuthorization(cfg, 'x', 'CODE', S
 
 // Redirect allow-list.
 eq('default allow-list is the project auth callback', allowedRedirectUris(env({ SUPABASE_URL: 'https://p.supabase.co/' })), ['https://p.supabase.co/auth/v1/callback'])
-eq('APPLE_REDIRECT_URIS overrides', allowedRedirectUris(env({ SUPABASE_URL: 'https://p.supabase.co', APPLE_REDIRECT_URIS: 'https://a.example/cb, https://b.example/cb' })), ['https://a.example/cb', 'https://b.example/cb'])
+eq('FANDAY_APPLE_REDIRECT_URIS overrides', allowedRedirectUris(env({ SUPABASE_URL: 'https://p.supabase.co', FANDAY_APPLE_REDIRECT_URIS: 'https://a.example/cb, https://b.example/cb' })), ['https://a.example/cb', 'https://b.example/cb'])
 eq('nothing configured: empty (web flow refused)', allowedRedirectUris(env({})), [])
 
 // Fail closed: an Apple user is never deleted unless secrets exist and a code was sent.

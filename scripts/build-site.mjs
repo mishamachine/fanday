@@ -129,5 +129,5 @@ writeFileSync(zipPath, Buffer.concat([...locals, cd, end]))
 
 console.log(`Built ${files.length} files -> site/dist, ${statSync(zipPath).size} bytes -> site/fanday-site.zip`)
 if (readFileSync(join(dist, '.well-known/apple-app-site-association'), 'utf8').includes('TEAMID')) {
-  console.log('TODO (Babar): replace TEAMID in .well-known/apple-app-site-association with the Apple Team ID before store release.')
+  console.log('TODO: replace TEAMID in .well-known/apple-app-site-association with the Apple Team ID before store release.')
 }

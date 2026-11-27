@@ -1,7 +1,7 @@
 import { eq, ok, done } from './_t.mjs'
 import { eventTitle, eventNotes, toCalendarEvent, dataCredit, DATA_CREDIT_FULL } from '../src/calendar/eventContent.ts'
 
-const ctx = { goBaseUrl: 'https://smhddbnctlkbwppzrsry.supabase.co/functions/v1' }
+const ctx = { goBaseUrl: 'https://ywcrzkvwamjchjjkfrve.supabase.co/functions/v1/fanday-go' }
 const CREDIT = dataCredit(null)
 const ID = 'aaaaaaaa-0000-0000-0000-000000000001'
 // Shape copies the Game type / games table: nulls for everything the server hasn't filled.
@@ -24,12 +24,12 @@ eq('title ignores blank broadcaster', eventTitle({ ...base, broadcast: '  ' }), 
 eq('notes with nothing paid: details + credit only', eventNotes(base, ctx), `TV: CBS\n\n${CREDIT}`)
 const full = { ...base, watchUrl: 'https://watch.example/x', ticketsUrl: 'https://tix.example/x', sponsorText: 'Acme', sponsorUrl: 'https://acme.example' }
 const notes = eventNotes(full, ctx)
-ok('watch line labelled paid link, via /go', notes.includes(`Where to watch (paid link): ${ctx.goBaseUrl}/go/${ID}/watch`))
-ok('tickets line labelled paid link, via /go', notes.includes(`Tickets (paid link): ${ctx.goBaseUrl}/go/${ID}/tickets`))
-ok('sponsor line labelled paid link, via /go', notes.includes(`Presented by Acme (paid link): ${ctx.goBaseUrl}/go/${ID}/sponsor`))
+ok('watch line labelled paid link, via /go', notes.includes(`Where to watch (paid link): ${ctx.goBaseUrl}/${ID}/watch`))
+ok('tickets line labelled paid link, via /go', notes.includes(`Tickets (paid link): ${ctx.goBaseUrl}/${ID}/tickets`))
+ok('sponsor line labelled paid link, via /go', notes.includes(`Presented by Acme (paid link): ${ctx.goBaseUrl}/${ID}/sponsor`))
 ok('partner URLs never appear in notes', !notes.includes('watch.example') && !notes.includes('tix.example') && !notes.includes('acme.example'))
 ok('data credit last', notes.endsWith(CREDIT))
-eq('sponsor text without url: plain, no link', eventNotes({ ...base, sponsorText: 'Acme' }, ctx).includes('/go/'), false)
+eq('sponsor text without url: plain, no link', eventNotes({ ...base, sponsorText: 'Acme' }, ctx).includes('/fanday-go/'), false)
 eq('only tickets: watch line hidden', eventNotes({ ...base, ticketsUrl: 'https://tix.example/x' }, ctx).includes('Where to watch'), false)
 
 ok('notes name the source article, credit still last', eventNotes({ ...full, sourcePage: '2026 Kansas City Chiefs season' }, ctx).endsWith(dataCredit('2026 Kansas City Chiefs season')))

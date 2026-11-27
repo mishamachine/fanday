@@ -1,5 +1,5 @@
 import { eq, done } from './_t.mjs'
-import { makeLimiter, clientKey } from '../supabase/functions/go/ratelimit.ts'
+import { makeLimiter, clientKey } from '../supabase/functions/fanday-go/ratelimit.ts'
 
 const allow = makeLimiter(3, 1000)
 eq('first 3 in the window pass', [allow('a', 0), allow('a', 1), allow('a', 2)], [true, true, true])

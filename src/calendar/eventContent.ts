@@ -20,11 +20,11 @@ const DURATION_MIN: Record<string, number> = {
 }
 
 export interface EventContext {
-  /** Base URL of the `go` Edge Function, e.g. https://<ref>.supabase.co/functions/v1 (no trailing slash). */
+  /** Base URL of the `fanday-go` Edge Function, e.g. https://<ref>.supabase.co/functions/v1/fanday-go (no trailing slash). */
   goBaseUrl: string
 }
 
-const goLink = (ctx: EventContext, gameId: string, slot: string) => `${ctx.goBaseUrl}/go/${gameId}/${slot}`
+const goLink = (ctx: EventContext, gameId: string, slot: string) => `${ctx.goBaseUrl}/${gameId}/${slot}`
 const clean = (s: string | null | undefined) => (s ?? '').trim()
 
 /** "Chiefs vs Broncos · CBS" (broadcaster only when we have one). */

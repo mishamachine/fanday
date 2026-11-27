@@ -17,17 +17,17 @@ You must be at least 13 to use Fanday. If you're under 18, a parent or guardian 
 
 ## 3. Accounts are optional
 
-- Fanday starts with an anonymous account on your device.
+- You can use Fanday without an account. On your device it keeps a random device code, not an account. If you sign in, you use the same B&B Project Factory sign-in as Woof and BoboLearns Hub.
 - You can sign in with Apple, Google or an email link. Signing in lets your teams follow you to a new phone.
 - Keep access to your sign-in method secure. Tell us if you think someone else is using your account.
-- You can delete your account at any time in the app (Settings → Delete account) or by emailing machinemisha+fanday@gmail.com.
+- You can delete your Fanday data at any time in the app (Settings → Delete account) or by emailing machinemisha+fanday@gmail.com. What happens to your sign-in is explained in our Privacy Policy.
 
 ## 4. Your calendar
 
 - Fanday adds games to its own calendar called "Fanday".
 - Fanday may update or remove the events it created, for example when a time changes. If you edit one of those events, your changes may be overwritten.
 - Fanday does not change the other events in your calendar.
-- If you delete your account in the app, Fanday removes its calendar from that phone.
+- If you delete your Fanday data in the app, Fanday removes its calendar from that phone.
 
 ## 5. Game times can be wrong
 
@@ -80,7 +80,7 @@ Nothing in these terms limits liability that the law does not allow us to limit.
 
 ## 11. Ending
 
-You can stop using Fanday and delete your account at any time. We may suspend or end your access if you break these terms, or if we stop the service. Sections 5, 7, 9, 10 and 13 continue after the agreement ends.
+You can stop using Fanday and delete your Fanday data at any time. We may suspend or end your access if you break these terms, or if we stop the service. Sections 5, 7, 9, 10 and 13 continue after the agreement ends.
 
 ## 12. Changes to these terms
 

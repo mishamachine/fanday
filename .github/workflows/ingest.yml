@@ -1,8 +1,8 @@
 # Fanday Wikipedia ingest.
 #   daily    once a day at 10:00 UTC, all leagues
 #   gameday  every 3 hours, only pages with a game in the next 36 hours
-# Each call also keeps the free Supabase project active (the function reads the database).
-# Needs the repository secret INGEST_SECRET (same value as the Supabase function secret). Babar adds both.
+# Each call reads the fanday schema through the Data API (it must be in the exposed schemas).
+# Needs the repository secret FANDAY_INGEST_SECRET (same value as the Supabase function secret). Add both.
 name: ingest
 
 on:
@@ -22,7 +22,7 @@ on:
         required: false
   pull_request:
     paths:
-      - 'supabase/functions/ingest-wikipedia/**'
+      - 'supabase/functions/fanday-ingest/**'
       - 'scripts/test-ingest*'
       - '.github/workflows/ingest.yml'
 
@@ -55,17 +55,17 @@ jobs:
       group: ingest
       cancel-in-progress: false
     env:
-      FUNCTION_URL: https://smhddbnctlkbwppzrsry.supabase.co/functions/v1/ingest-wikipedia
-      INGEST_SECRET: ${{ secrets.INGEST_SECRET }}
+      FUNCTION_URL: https://ywcrzkvwamjchjjkfrve.supabase.co/functions/v1/fanday-ingest
+      FANDAY_INGEST_SECRET: ${{ secrets.FANDAY_INGEST_SECRET }}
       EVENT_SCHEDULE: ${{ github.event.schedule }}
       INPUT_MODE: ${{ inputs.mode }}
       INPUT_LEAGUE: ${{ inputs.league }}
     steps:
-      - name: Call ingest-wikipedia
+      - name: Call fanday-ingest
         run: |
           set -euo pipefail
-          if [ -z "${INGEST_SECRET:-}" ]; then
-            echo "::error::Repository secret INGEST_SECRET is not set."
+          if [ -z "${FANDAY_INGEST_SECRET:-}" ]; then
+            echo "::error::Repository secret FANDAY_INGEST_SECRET is not set."
             exit 1
           fi
           if [ "${EVENT_SCHEDULE:-}" = "0 10 * * *" ]; then MODE=daily
@@ -83,7 +83,7 @@ jobs:
             curl --silent --show-error --fail-with-body --max-time 170 --retry 2 --retry-delay 10 \
               -X POST "$FUNCTION_URL" \
               -H "Content-Type: application/json" \
-              -H "x-ingest-secret: ${INGEST_SECRET}" \
+              -H "x-ingest-secret: ${FANDAY_INGEST_SECRET}" \
               -d "$BODY" -o response.json
             jq -c '{mode, planned, cursor, nextCursor, done, pagesFetched, pagesMissing: (.pagesMissing | length), gamesParsed, created, updated, held, vanished, changes, warnings: (.warnings | length), unmatchedTeams: (.unmatchedTeams | length), elapsedMs}' response.json
             jq -r '(.warnings // [])[] | "::warning::" + .' response.json
@@ -98,3 +98,30 @@ jobs:
           done
           echo "::error::Ingest did not finish within 800 calls."
           exit 1
+
+  maintenance:
+    # Daily housekeeping through fanday-ingest: removes unused device codes (24 months; claimed or revoked ones after 29 days) and the
+    # Fanday rows of sign-ins that were deleted elsewhere. Runs with the daily schedule and with a manual daily run.
+    if: github.event.schedule == '0 10 * * *' || (github.event_name == 'workflow_dispatch' && inputs.mode == 'daily')
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      FUNCTION_URL: https://ywcrzkvwamjchjjkfrve.supabase.co/functions/v1/fanday-ingest
+      FANDAY_INGEST_SECRET: ${{ secrets.FANDAY_INGEST_SECRET }}
+    steps:
+      - name: Call fanday-ingest maintenance
+        run: |
+          set -euo pipefail
+          if [ -z "${FANDAY_INGEST_SECRET:-}" ]; then
+            echo "::error::Repository secret FANDAY_INGEST_SECRET is not set."
+            exit 1
+          fi
+          curl --silent --show-error --fail-with-body --max-time 120 --retry 2 --retry-delay 10 \
+            -X POST "$FUNCTION_URL" \
+            -H "Content-Type: application/json" \
+            -H "x-ingest-secret: ${FANDAY_INGEST_SECRET}" \
+            -d '{"mode":"maintenance"}' -o response.json
+          jq -c . response.json
+          if [ "$(jq -r '.orphan_purge_ran // true' response.json)" = "false" ]; then
+            echo "::warning::Orphan purge was skipped because auth.users looked empty. Check the project."
+          fi
