@@ -122,3 +122,6 @@ jobs:
             -H "x-ingest-secret: ${FANDAY_INGEST_SECRET}" \
             -d '{"mode":"maintenance"}' -o response.json
           jq -c . response.json
+          if [ "$(jq -r '.orphan_purge_ran // true' response.json)" = "false" ]; then
+            echo "::warning::Orphan purge was skipped because auth.users looked empty. Check the project."
+          fi

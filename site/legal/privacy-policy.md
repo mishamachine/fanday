@@ -23,7 +23,7 @@ Fanday is offered in the United States.
 |---|---|---|
 | **The teams you follow** | When you pick teams | To put their games in your calendar and keep your teams across devices |
 | **A random device code** | When you first open the app without signing in. No account is made, and we keep only a scrambled copy of the code | To keep your teams and calendars together on that device |
-| **Your sign-in: your email address, and your Google or Apple account if you use one** | When you sign in | Fanday uses the same B&B Project Factory sign-in as our other apps (Woof, Chess Tutor and BoboLearns Hub), so one account works in all of them. Each app keeps its own data. |
+| **Your sign-in: your email address, and your Google or Apple account if you use one** | When you sign in | Fanday uses the same B&B Project Factory sign-in as Woof and BoboLearns Hub, so one account works in all three. Each app keeps its own data. |
 | **Your email address** | Only if you choose to sign in with Apple, Google or an email link | To sign you in and move your teams to a new phone |
 | **Your name and profile picture link** | Only if you sign in with Google, which shares them with our sign-in system | Our sign-in system may store them with your account. We don't use them |
 | **Your notification choices** | When you change them in Settings, for example "Sponsor messages" | To respect your choices |
@@ -84,13 +84,12 @@ Some links in Fanday take you to services we don't run:
 ## 7. How long we keep data
 
 - **Your account, teams, devices and calendar event IDs:** until you delete your account.
-- Device codes nobody uses: we delete them, and the teams and calendars linked to them, after 24 months without use.
-- When you sign in on a device, its teams and calendars move to your account and the device code stops working. We delete the old code within 30 days.
+- We keep the teams and calendars linked to a device code until you delete them in the app. When you sign in on a device, they move to your account and the device code stops working.
 - **Usage events:** we aim to delete them after 13 months.
 - **Emails you send us:** we aim to delete them 12 months after your request is dealt with.
 - **Paid-link click counts:** kept, because they contain no personal data.
 
-Apart from device codes (above), these deletions are done by us, not by an automatic process. We'll update this policy when automatic deletion is in place. If you want your data gone sooner, delete your account (section 8).
+Today these deletions are done by us, not by an automatic process. We'll update this policy when automatic deletion is in place. If you want your data gone sooner, delete your account (section 8).
 
 ## 8. Deleting your data
 

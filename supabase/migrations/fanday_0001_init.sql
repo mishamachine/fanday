@@ -4,6 +4,10 @@
 --   * the only reads outside `fanday` are in SECURITY DEFINER functions (search_path = ''): auth.users (profiles, purge, deletion checks), auth.identities
 --     (ensure_profile: sign-in provider and age of the Apple identity), the catalogs and, for the foreign-rows check, the tables that reference auth.users
 --     (read-only, fails closed); plus auth.uid() in policies;
+--   * KNOWN RESIDUAL of fanday.user_has_foreign_rows (which decides whether the sign-in may be deleted with the Fanday data): it finds rows by a column named
+--     user_id, by a foreign key to auth.users, and by storage.objects owner/owner_id. A table in another schema that holds an owner id in a column with
+--     another name AND no foreign key (for example a plain `owner uuid`), is not seen. The sign-in is then deleted along with the Fanday data. Such an
+--     app must add a foreign key to auth.users (or name the column user_id) before it shares this project.
 --   * no triggers, and no foreign keys to auth.users (a FK would add system triggers to auth.users). User-owned rows carry a plain user_id;
 --     fanday.purge_orphaned_user_rows() removes rows whose auth user is gone (run daily by fanday.run_maintenance, see the end of this file).
 -- Idempotent: safe to apply twice. Apply as PLAIN SQL with execute_sql (never apply_migration, `db push` or `db reset`); the file records itself in fanday.schema_versions.
@@ -139,8 +143,8 @@ create table if not exists fanday.devices (
   user_id      uuid,
   token_id     uuid references fanday.device_tokens (id) on delete cascade,
   platform     text not null check (platform in ('ios', 'android', 'web')),
-  push_token   text,
-  calendar_id  text,
+  push_token   text check (char_length(push_token) <= 4096),
+  calendar_id  text check (char_length(calendar_id) <= 256),
   last_sync_at timestamptz,
   check ((user_id is null) <> (token_id is null))
 );
@@ -150,7 +154,7 @@ create index if not exists devices_token_idx on fanday.devices (token_id) where 
 create table if not exists fanday.device_events (
   device_id        uuid not null references fanday.devices (id) on delete cascade,
   game_id          uuid not null references fanday.games (id) on delete cascade,
-  event_identifier text not null,
+  event_identifier text not null check (char_length(event_identifier) <= 256),
   synced_rev       bigint,
   primary key (device_id, game_id)
 );
@@ -207,6 +211,14 @@ create table if not exists fanday.alert_log (
   window_start timestamptz not null,
   primary key (kind, window_start)
 );
+-- Heartbeat of the daily housekeeping: one row per run of run_maintenance, written by it. Read it to see that the job really runs.
+create table if not exists fanday.maintenance_runs (
+  id                   bigint generated always as identity primary key,
+  ran_at               timestamptz not null default now(),
+  device_tokens_removed int not null,
+  orphan_rows_removed  int not null,
+  orphan_purge_ran     boolean not null
+);
 create table if not exists fanday.rl_salts (
   day  date primary key,
   salt text not null
@@ -228,6 +240,7 @@ alter table fanday.link_clicks    enable row level security;
 alter table fanday.usage_events   enable row level security;
 alter table fanday.rate_counters  enable row level security;
 alter table fanday.rl_salts       enable row level security;
+alter table fanday.maintenance_runs enable row level security;
 alter table fanday.alert_log      enable row level security;
 alter table fanday.schema_versions enable row level security;
 alter table fanday.function_secrets enable row level security;
@@ -268,16 +281,11 @@ create policy devices_own_update on fanday.devices for update to authenticated
 create policy devices_own_delete on fanday.devices for delete to authenticated using (user_id = (select auth.uid()));
 
 drop policy if exists device_events_own_select on fanday.device_events;
-drop policy if exists device_events_own_insert on fanday.device_events;
+drop policy if exists device_events_own_insert on fanday.device_events;   -- direct insert/update are closed (see grants); rows come from user_calendar_upsert
 drop policy if exists device_events_own_update on fanday.device_events;
 drop policy if exists device_events_own_delete on fanday.device_events;
 create policy device_events_own_select on fanday.device_events for select to authenticated
   using (exists (select 1 from fanday.devices d where d.id = device_id and d.user_id = (select auth.uid())));
-create policy device_events_own_insert on fanday.device_events for insert to authenticated
-  with check (exists (select 1 from fanday.devices d where d.id = device_id and d.user_id = (select auth.uid())));
-create policy device_events_own_update on fanday.device_events for update to authenticated
-  using (exists (select 1 from fanday.devices d where d.id = device_id and d.user_id = (select auth.uid())))
-  with check (exists (select 1 from fanday.devices d where d.id = device_id and d.user_id = (select auth.uid())));
 create policy device_events_own_delete on fanday.device_events for delete to authenticated
   using (exists (select 1 from fanday.devices d where d.id = device_id and d.user_id = (select auth.uid())));
 
@@ -288,17 +296,18 @@ create policy usage_events_own_select on fanday.usage_events for select to authe
 -- ---------------------------------------------------------------- privileges (defence in depth beside RLS)
 revoke all on fanday.leagues, fanday.teams, fanday.sponsors, fanday.games, fanday.game_changes, fanday.profiles,
   fanday.user_origin, fanday.device_tokens, fanday.follows, fanday.devices, fanday.device_events, fanday.link_clicks, fanday.usage_events,
-  fanday.rate_counters, fanday.rl_salts, fanday.alert_log, fanday.schema_versions, fanday.function_secrets from anon, authenticated;
+  fanday.rate_counters, fanday.rl_salts, fanday.maintenance_runs, fanday.alert_log, fanday.schema_versions, fanday.function_secrets from anon, authenticated;
 
 grant select on fanday.leagues, fanday.teams, fanday.sponsors, fanday.games, fanday.game_changes to anon, authenticated;
 grant select on fanday.profiles to authenticated;
 -- pro_unlocked and email are never client-writable: pro_unlocked is set by the server, email by ensure_profile().
 grant update (country, promo_push_opt_in, marketing_email_opt_in) on fanday.profiles to authenticated;
 -- No direct INSERT for signed-in users on follows, devices and usage_events: they would be unbounded. Those rows are created only by the
--- capped RPCs user_follows_add, user_device_upsert and user_log_event (below). Updates and deletes of own rows stay direct.
+-- capped RPCs user_follows_add, user_device_upsert, user_calendar_upsert and user_log_event (below). device_events: select and delete only.
+-- Updates and deletes of own follows and devices stay direct.
 grant select, delete on fanday.follows to authenticated;
 grant select, update, delete on fanday.devices to authenticated;
-grant select, insert, update, delete on fanday.device_events to authenticated;
+grant select, delete on fanday.device_events to authenticated;
 grant select on fanday.usage_events to authenticated;
 
 grant all on all tables in schema fanday to service_role;
@@ -445,6 +454,14 @@ begin
 end $$;
 
 -- ---------------------------------------------------------------- signed-in writes (capped; direct INSERT is revoked)
+-- Rate-counter key for a signed-in user: salted hash, so no user id sits in fanday.rate_counters (the salt changes daily and is deleted after two days).
+create or replace function fanday._user_key(p_scope text, p_user uuid) returns text
+language plpgsql security definer set search_path = '' as $$
+begin
+  return encode(sha256(convert_to(fanday.rl_salt() || ':' || p_scope || ':' || p_user::text, 'UTF8')), 'hex');
+end $$;
+revoke all on function fanday._user_key(text, uuid) from public, anon, authenticated;
+
 -- Adds teams to the caller's follows (unknown team ids are skipped). At most 300 follows per user, 200 calls per user per UTC day.
 create or replace function fanday.user_follows_add(p_team_ids text[]) returns int
 language plpgsql security definer set search_path = '' as $$
@@ -452,7 +469,7 @@ declare v_uid uuid := auth.uid(); v_ids text[] := coalesce(p_team_ids, '{}'); v_
 begin
   if v_uid is null then raise exception 'not authenticated' using errcode = '28000'; end if;
   if coalesce(array_length(v_ids, 1), 0) > 300 then raise exception 'too many teams' using errcode = '22023'; end if;
-  if not fanday.rl_hit('user-follows', v_uid::text, date_trunc('day', now() at time zone 'utc') at time zone 'utc', 200) then
+  if not fanday.rl_hit('user-follows', fanday._user_key('user-follows', v_uid), date_trunc('day', now() at time zone 'utc') at time zone 'utc', 200) then
     raise exception 'rate_limited' using errcode = 'P0001';
   end if;
   insert into fanday.follows (user_id, team_id) select v_uid, t.id from fanday.teams t where t.id = any (v_ids) on conflict do nothing;
@@ -468,7 +485,7 @@ declare v_uid uuid := auth.uid(); v_n int;
 begin
   if v_uid is null then raise exception 'not authenticated' using errcode = '28000'; end if;
   if p_device is null then raise exception 'device id required' using errcode = '22023'; end if;
-  if not fanday.rl_hit('user-device', v_uid::text, date_trunc('day', now() at time zone 'utc') at time zone 'utc', 200) then
+  if not fanday.rl_hit('user-device', fanday._user_key('user-device', v_uid), date_trunc('day', now() at time zone 'utc') at time zone 'utc', 200) then
     raise exception 'rate_limited' using errcode = 'P0001';
   end if;
   perform pg_advisory_xact_lock(hashtextextended('fanday.user_device:' || v_uid::text, 0));
@@ -483,17 +500,41 @@ begin
   if v_n = 0 then raise exception 'device belongs to another owner' using errcode = '42501'; end if;
 end $$;
 
+-- What the caller's phone wrote to its calendar. p_events: [{game_id, event_identifier, synced_rev}], at most 500. Own device only.
+create or replace function fanday.user_calendar_upsert(p_device uuid, p_events jsonb) returns void
+language plpgsql security definer set search_path = '' as $$
+declare v_uid uuid := auth.uid();
+begin
+  if v_uid is null then raise exception 'not authenticated' using errcode = '28000'; end if;
+  if p_device is null then raise exception 'device id required' using errcode = '22023'; end if;
+  if jsonb_typeof(coalesce(p_events, '[]'::jsonb)) <> 'array' or jsonb_array_length(coalesce(p_events, '[]'::jsonb)) > 500 then
+    raise exception 'too many events' using errcode = '22023';
+  end if;
+  if not fanday.rl_hit('user-calendar', fanday._user_key('user-calendar', v_uid), date_trunc('day', now() at time zone 'utc') at time zone 'utc', 200) then
+    raise exception 'rate_limited' using errcode = 'P0001';
+  end if;
+  if not exists (select 1 from fanday.devices d where d.id = p_device and d.user_id = v_uid) then
+    raise exception 'device belongs to another owner' using errcode = '42501';
+  end if;
+  update fanday.devices set last_sync_at = now() where id = p_device and user_id = v_uid;
+  insert into fanday.device_events (device_id, game_id, event_identifier, synced_rev)
+    select p_device, x.game_id, x.event_identifier, x.synced_rev
+      from jsonb_to_recordset(coalesce(p_events, '[]'::jsonb)) as x(game_id uuid, event_identifier text, synced_rev bigint)
+     where exists (select 1 from fanday.games g where g.id = x.game_id)
+  on conflict (device_id, game_id) do update set event_identifier = excluded.event_identifier, synced_rev = excluded.synced_rev;
+end $$;
+
 -- Best effort and capped like device_log_event: 200 events per user per UTC day; the rest are dropped without an error.
 create or replace function fanday.user_log_event(p_name text) returns void
 language plpgsql security definer set search_path = '' as $$
 declare v_uid uuid := auth.uid();
 begin
   if v_uid is null then raise exception 'not authenticated' using errcode = '28000'; end if;
-  if not fanday.rl_hit('user-log', v_uid::text, date_trunc('day', now() at time zone 'utc') at time zone 'utc', 200) then return; end if;
+  if not fanday.rl_hit('user-log', fanday._user_key('user-log', v_uid), date_trunc('day', now() at time zone 'utc') at time zone 'utc', 200) then return; end if;
   insert into fanday.usage_events (user_id, name) values (v_uid, p_name);
 end $$;
-revoke all on function fanday.user_follows_add(text[]), fanday.user_device_upsert(uuid, text, text, text), fanday.user_log_event(text) from public, anon;
-grant execute on function fanday.user_follows_add(text[]), fanday.user_device_upsert(uuid, text, text, text), fanday.user_log_event(text) to authenticated;
+revoke all on function fanday.user_follows_add(text[]), fanday.user_device_upsert(uuid, text, text, text), fanday.user_calendar_upsert(uuid, jsonb), fanday.user_log_event(text) from public, anon;
+grant execute on function fanday.user_follows_add(text[]), fanday.user_device_upsert(uuid, text, text, text), fanday.user_calendar_upsert(uuid, jsonb), fanday.user_log_event(text) to authenticated;
 
 -- Signed-out delete: removes every row owned by the device and revokes the token (the revoked row, a hash only, is purged by cleanup).
 create or replace function fanday.device_delete(p_token text) returns jsonb
@@ -525,6 +566,10 @@ begin
   insert into fanday.follows (user_id, team_id) select v_caller, f.team_id from fanday.follows f where f.token_id = v_id on conflict do nothing;
   get diagnostics v_f = row_count;
   delete from fanday.follows where token_id = v_id;
+  -- At most 5 phones per user: keep the token's most recently synced devices that fit, drop the rest (their events go by cascade).
+  delete from fanday.devices where token_id = v_id and id not in
+    (select d.id from fanday.devices d where d.token_id = v_id order by d.last_sync_at desc nulls last, d.id
+      limit greatest(0, 5 - (select count(*)::int from fanday.devices u where u.user_id = v_caller)));
   update fanday.devices set user_id = v_caller, token_id = null where token_id = v_id;
   get diagnostics v_d = row_count;
   update fanday.usage_events set user_id = v_caller, token_id = null where token_id = v_id;
@@ -673,7 +718,7 @@ begin
 end $$;
 
 -- ---------------------------------------------------------------- cleanup (service_role only; run daily through run_maintenance below)
--- Device tokens unused for p_months (default 24, the retention in the privacy policy), claimed or revoked ones after 30 days,
+-- Device tokens unused for p_months (default 24, the retention in the privacy policy), claimed or revoked ones after 29 days (the policy says within 30),
 -- and rate counters older than 2 days. Their follows, devices and events go by cascade.
 create or replace function fanday.cleanup_unused_device_tokens(p_months int default 24) returns int
 language plpgsql security definer set search_path = '' as $$
@@ -681,7 +726,7 @@ declare v_n int;
 begin
   delete from fanday.device_tokens
    where last_used_at < now() - make_interval(months => p_months)
-      or coalesce(revoked_at, claimed_at) < now() - interval '30 days';
+      or coalesce(revoked_at, claimed_at) < now() - interval '29 days';   -- 29, so "within 30 days" holds with a daily run
   get diagnostics v_n = row_count;
   delete from fanday.rate_counters where window_start < now() - interval '2 days';
   delete from fanday.alert_log where window_start < now() - interval '2 days';
@@ -709,8 +754,12 @@ language plpgsql security definer set search_path = '' as $$
 declare v_tokens int; v_orphans int := 0; v_purged boolean := false;
 begin
   perform fanday._check_secret('ingest', p_secret);
+  -- At most once an hour: the secret holder cannot hammer the purge, and a repeat call is a no-op.
+  if not fanday.alert_once('maintenance', date_trunc('hour', now())) then return jsonb_build_object('skipped', true); end if;
   v_tokens := fanday.cleanup_unused_device_tokens(24);
   if exists (select 1 from auth.users) then v_orphans := fanday.purge_orphaned_user_rows(); v_purged := true; end if;
+  insert into fanday.maintenance_runs (device_tokens_removed, orphan_rows_removed, orphan_purge_ran) values (v_tokens, v_orphans, v_purged);
+  delete from fanday.maintenance_runs where ran_at < now() - interval '90 days';
   return jsonb_build_object('device_tokens_removed', v_tokens, 'orphan_rows_removed', v_orphans, 'orphan_purge_ran', v_purged);
 end $$;
 revoke all on function fanday.run_maintenance(text) from public;

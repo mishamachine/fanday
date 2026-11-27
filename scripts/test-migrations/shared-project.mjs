@@ -65,7 +65,7 @@ ok('CATALOG OUTSIDE fanday IS BYTE-IDENTICAL after apply + 2 reapplies', before 
 const fan = (await db.query(`select (select count(*)::int from pg_class c join pg_namespace n on n.oid=c.relnamespace where n.nspname='fanday' and c.relkind='r') t,
   (select count(*)::int from pg_proc p join pg_namespace n on n.oid=p.pronamespace where n.nspname='fanday') f,
   (select count(*)::int from fanday.leagues) l, (select count(*)::int from fanday.teams) tm, (select count(*)::int from fanday.teams where tz is not null) tz`)).rows[0]
-ok('fanday got its tables, functions and seeds (18 tables, 19 leagues, 434 teams, 30 MLS zones)', fan.t === 18 && fan.f >= 20 && fan.l === 19 && fan.tm === 434 && fan.tz === 30, JSON.stringify(fan))
+ok('fanday got its tables, functions and seeds (19 tables, 19 leagues, 434 teams, 30 MLS zones)', fan.t === 19 && fan.f >= 20 && fan.l === 19 && fan.tm === 434 && fan.tz === 30, JSON.stringify(fan))
 ok('no trigger on auth.users or on any fanday table (FK system triggers on auth.users are covered by the snapshot: unchanged)', (await db.query(`select count(*)::int c from pg_trigger t join pg_class c on c.oid=t.tgrelid join pg_namespace n on n.oid=c.relnamespace
   where not t.tgisinternal and ((n.nspname='auth' and c.relname='users') or n.nspname='fanday')`)).rows[0].c === 0)
 ok('nothing fanday owns lives in public', (await db.query(`select count(*)::int c from pg_depend d join pg_proc p on p.oid=d.objid where false`)).rows[0].c === 0

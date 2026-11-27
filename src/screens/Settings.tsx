@@ -7,7 +7,7 @@ import { googleAvailable } from '../lib/googleNative.ts'
 import { isEmail } from '../lib/authUtil.ts'
 import { supabase } from '../lib/supabase.ts'
 import { calendar } from '../calendar/index.ts'
-import { DATA_CREDIT } from '../calendar/eventContent.ts'
+import { DATA_CREDIT_FULL } from '../calendar/eventContent.ts'
 import { PRIVACY_LINE } from '../lib/env.ts'
 import { DELETE_SIGNED_IN, DELETE_SIGNED_OUT } from '../lib/deleteCopy.ts'
 
@@ -87,7 +87,7 @@ export default function Settings() {
       </section>
 
       <p className="fine">{PRIVACY_LINE}</p>
-      <p className="fine">{DATA_CREDIT}</p>
+      <p className="fine">{DATA_CREDIT_FULL}</p>
     </main>
   )
 }

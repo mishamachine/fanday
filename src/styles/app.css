@@ -49,6 +49,7 @@ h1 { font-size: 22px; font-weight: 600; margin-top: 4px; }
 .what { flex: 1; min-width: 0; }
 .what b { display: block; font-size: 13px; }
 .what small { color: var(--muted); font-size: 11px; }
+.what small.src { display: block; }
 .sync { color: var(--muted); font-size: 12px; margin-top: 2px; display: flex; align-items: center; gap: 6px; }
 .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--teal); }
 

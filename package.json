@@ -10,7 +10,8 @@
     "preview": "vite preview",
     "build:native": "vite build --mode native --outDir dist-native && npx cap sync",
     "test": "for f in scripts/test-*.mjs; do echo \"== $f\"; node \"$f\" || exit 1; done; npm run --silent test:migrations",
-    "test:migrations": "node scripts/test-migrations/shared-project.mjs && node scripts/test-migrations/rls.mjs && node scripts/test-migrations/delete-paths.mjs"
+    "test:migrations": "node scripts/test-migrations/shared-project.mjs && node scripts/test-migrations/rls.mjs && node scripts/test-migrations/delete-paths.mjs",
+    "release:check": "node scripts/release-check.mjs"
   },
   "dependencies": {
     "@capacitor-community/apple-sign-in": "^7.1.0",

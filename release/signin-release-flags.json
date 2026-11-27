@@ -1,0 +1,9 @@
+{
+  "_readme": "Edited by the release owner only. Set a flag to true once the condition is met and write what shows it in the matching *_evidence field. `npm run release:check` must pass before any public release of the sign-in (store build or site).",
+  "maintenance_job_green_on_schedule": false,
+  "maintenance_job_green_on_schedule_evidence": "",
+  "other_apps_deletion_removes_fanday_rows": false,
+  "other_apps_deletion_removes_fanday_rows_evidence": "",
+  "native_calendar_pr_landed": false,
+  "native_calendar_pr_landed_evidence": ""
+}

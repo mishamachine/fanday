@@ -75,7 +75,7 @@ insert into fanday.device_events (device_id, game_id, event_identifier) values (
 ok('A sees only own follows / devices / events', await n('authenticated', A, 'select 1 from fanday.follows') === 1 && await n('authenticated', A, 'select 1 from fanday.devices') === 1
   && (await as('authenticated', A, 'select event_identifier e from fanday.device_events')).rows.map((r) => r.e).join() === 'EV-A')
 ok('A cannot read B rows by filter', await n('authenticated', A, `select 1 from fanday.follows where user_id='${B}'`) === 0 && await n('authenticated', A, `select 1 from fanday.devices where user_id='${B}'`) === 0)
-ok('A cannot write rows for B', (await as('authenticated', A, `insert into fanday.device_events (device_id, game_id, event_identifier) values ('bbbbbbbb-0000-0000-0000-00000000000b','${G1}','X')`)).error?.includes('row-level security')
+ok('A cannot write rows for B', (await as('authenticated', A, `insert into fanday.device_events (device_id, game_id, event_identifier) values ('bbbbbbbb-0000-0000-0000-00000000000b','${G1}','X')`)).error?.includes('permission denied')
   && (await as('authenticated', A, `delete from fanday.follows where user_id='${B}' returning 1`)).rows?.length === 0)
 ok('M1: direct INSERT is revoked for signed-in users on follows, devices and usage_events (own id, other id, no user)', await (async () => {
   const sqls = [`insert into fanday.follows (user_id, team_id) values ('${A}','nfl-den-x')`, `insert into fanday.follows (user_id, team_id) values ('${B}','nfl-kc-x')`, `insert into fanday.follows (user_id, team_id) values (null,'nfl-kc-x')`,
@@ -99,7 +99,7 @@ ok('M1: user_follows_add caps a user at 300 follows (all-or-nothing) and refuses
 })())
 await db.exec(`delete from fanday.follows where user_id='${C}'; delete from fanday.rate_counters where scope like 'user-%'`)
 ok('M1: user_follows_add is rate limited per user per day (200 calls)', await (async () => {
-  await db.exec(`insert into fanday.rate_counters (scope, key, window_start, n) values ('user-follows','${D}', date_trunc('day', now() at time zone 'utc') at time zone 'utc', 200)`)
+  await db.exec(`insert into fanday.rate_counters (scope, key, window_start, n) values ('user-follows', fanday._user_key('user-follows','${D}'), date_trunc('day', now() at time zone 'utc') at time zone 'utc', 200)`)
   const r = await as('authenticated', D, `select fanday.user_follows_add(array['nfl-kc-x'])`)
   return r.error?.includes('rate_limited') && (await db.query(`select count(*)::int c from fanday.follows where user_id='${D}'`)).rows[0].c === 0
 })())
@@ -318,6 +318,7 @@ ok('M2: run_maintenance needs the ingest secret (none, short, wrong, go secret -
   const bad = await Promise.all([null, 'short', 'x'.repeat(32), SEC.go, SEC.device].map((sx) => as('anon', null, `select fanday.run_maintenance(${sx === null ? 'null' : `'${sx}'`})`)))
   return bad.every((b) => b.error?.includes('forbidden'))
 })())
+await db.exec(`delete from fanday.alert_log where kind='maintenance'`)
 ok('M2: run_maintenance removes unused device codes and orphaned rows, keeps live ones, returns counts', await (async () => {
   await reg('7'.repeat(64))
   await db.exec(`update fanday.device_tokens set last_used_at = now() - interval '25 months' where token_hash = sha256(convert_to('${'7'.repeat(64)}','UTF8'));
@@ -330,6 +331,7 @@ ok('M2: run_maintenance removes unused device codes and orphaned rows, keeps liv
     && (await db.query(`select count(*)::int c from fanday.follows where user_id='66666666-6666-6666-6666-666666666666'`)).rows[0].c === 0
     && (await db.query(`select count(*)::int c from fanday.follows where user_id='${A}'`)).rows[0].c === before
 })())
+await db.exec(`delete from fanday.alert_log where kind='maintenance'`)
 ok('M2: the orphan purge is skipped when auth.users is empty (never delete everything)', await (async () => {
   await db.exec(`begin; create temp table keep_users as select * from auth.users; create temp table keep_ident as select * from auth.identities; delete from auth.users;`)
   const n0 = (await db.query('select count(*)::int c from fanday.follows where user_id is not null')).rows[0].c
@@ -337,6 +339,65 @@ ok('M2: the orphan purge is skipped when auth.users is empty (never delete every
   const n1 = (await db.query('select count(*)::int c from fanday.follows where user_id is not null')).rows[0].c
   await db.exec(`rollback`)
   return r.rows?.[0]?.r?.orphan_purge_ran === false && n0 === n1 && n0 > 0
+})())
+
+// ---- round 2
+ok('N8: run_maintenance runs at most once an hour (a repeat is a no-op) and writes one heartbeat row per real run', await (async () => {
+  await db.exec(`delete from fanday.alert_log where kind='maintenance'; delete from fanday.maintenance_runs`)
+  const a = await as('anon', null, `select fanday.run_maintenance('${SEC.ingest}') r`)
+  const b = await as('anon', null, `select fanday.run_maintenance('${SEC.ingest}') r`)
+  return a.rows?.[0]?.r?.skipped === undefined && b.rows?.[0]?.r?.skipped === true && (await db.query('select count(*)::int c from fanday.maintenance_runs')).rows[0].c === 1
+    && String(await n('authenticated', A, 'select 1 from fanday.maintenance_runs')).startsWith('ERR:')
+})())
+ok('N8: user-* rate counters hold a salted hash, never a user id', (await db.query(`select count(*)::int c from fanday.rate_counters where scope like 'user-%' and key !~ '^[0-9a-f]{64}$'`)).rows[0].c === 0
+  && (await db.query(`select count(*)::int c from fanday.rate_counters where scope like 'user-%' and (key like '%${A}%' or key like '%${D}%')`)).rows[0].c === 0
+  && !!(await as('authenticated', A, `select fanday._user_key('x','${A}')`)).error)
+ok('L2: claimed or revoked device codes go after 29 days, not before', await (async () => {
+  const [k1, k2] = ['c1'.repeat(32), 'c2'.repeat(32)]; await reg(k1); await reg(k2)
+  await db.exec(`update fanday.device_tokens set revoked_at = now() - interval '28 days' where token_hash = sha256(convert_to('${k1}','UTF8'));
+    update fanday.device_tokens set claimed_at = now() - interval '29 days 1 hour' where token_hash = sha256(convert_to('${k2}','UTF8'))`)
+  await svc('select fanday.cleanup_unused_device_tokens()')
+  const left = (await db.query(`select count(*)::int c from fanday.device_tokens where token_hash in (sha256(convert_to('${k1}','UTF8')), sha256(convert_to('${k2}','UTF8')))`)).rows[0].c
+  return left === 1
+})())
+ok('N1: signed-in users cannot insert or update device_events directly', await (async () => {
+  const mine = (await db.query(`select id from fanday.devices where user_id='${A}' limit 1`)).rows[0].id
+  const g = (await db.query(`select id from fanday.games limit 1`)).rows[0].id
+  const ins = await as('authenticated', A, `insert into fanday.device_events (device_id, game_id, event_identifier) values ('${mine}','${g}','x')`)
+  const upd = await as('authenticated', A, `update fanday.device_events set event_identifier='y' where device_id='${mine}'`)
+  return ins.error?.includes('permission denied') && upd.error?.includes('permission denied')
+})())
+ok('N1: user_calendar_upsert writes events for the caller own device only, caps 500, refuses a non-array, anon refused', await (async () => {
+  const mine = (await db.query(`select id from fanday.devices where user_id='${A}' limit 1`)).rows[0].id
+  const ev = `'[{"game_id":"${G1}","event_identifier":"EV-NEW","synced_rev":1}]'::jsonb`
+  const okOwn = await as('authenticated', A, `select fanday.user_calendar_upsert('${mine}', ${ev})`)
+  const other = await as('authenticated', B, `select fanday.user_calendar_upsert('${mine}', ${ev})`)
+  const big = await as('authenticated', A, `select fanday.user_calendar_upsert('${mine}', (select jsonb_agg(jsonb_build_object('game_id',gen_random_uuid(),'event_identifier','E'||g)) from generate_series(1,501) g))`)
+  const obj = await as('authenticated', A, `select fanday.user_calendar_upsert('${mine}', '{"a":1}'::jsonb)`)
+  const anon = await as('anon', null, `select fanday.user_calendar_upsert('${mine}', ${ev})`)
+  return !okOwn.error && !!other.error && other.error.includes('another owner') && big.error?.includes('too many events') && obj.error?.includes('too many events') && !!anon.error
+    && (await db.query(`select event_identifier e from fanday.device_events where device_id='${mine}' and game_id='${G1}'`)).rows[0].e === 'EV-NEW'
+})())
+ok('N1: length limits (event_identifier 256, calendar_id 256, push_token 4096)', await (async () => {
+  const T6 = '6'.repeat(64); await reg(T6)
+  const long = (k) => 'x'.repeat(k)
+  const a = await as('anon', null, `select fanday.device_calendar_upsert('${T6}','aaaaaaaa-1111-0000-0000-000000000001','ios','${long(257)}','[]'::jsonb)`)
+  const b = await as('anon', null, `select fanday.device_calendar_upsert('${T6}','aaaaaaaa-1111-0000-0000-000000000001','ios','${long(256)}','[]'::jsonb)`)
+  const c = await as('anon', null, `select fanday.device_calendar_upsert('${T6}','aaaaaaaa-1111-0000-0000-000000000001','ios','c','[{"game_id":"${G1}","event_identifier":"${long(257)}"}]'::jsonb)`)
+  const d = await db.query(`update fanday.devices set push_token = '${long(4096)}' where id='aaaaaaaa-1111-0000-0000-000000000001'`).then(() => true, () => false)
+  const e = await db.query(`update fanday.devices set push_token = '${long(4097)}' where id='aaaaaaaa-1111-0000-0000-000000000001'`).then(() => false, () => true)
+  return !!a.error && !b.error && !!c.error && d && e
+})())
+ok('N1: claim_device keeps at most 5 devices per user (the newest fit, the rest are dropped with their events)', await (async () => {
+  const U9 = '99999999-aaaa-4000-8000-000000000001', T7 = '7a'.repeat(32)
+  const tid = await reg(T7)
+  await db.exec(`insert into fanday.devices (id, user_id, platform) select gen_random_uuid(), '${U9}', 'ios' from generate_series(1,3);
+    insert into fanday.devices (id, token_id, platform, last_sync_at) select ('bbbbbbbb-2222-0000-0000-00000000000' || g)::uuid, '${tid}', 'ios', now() - (g || ' days')::interval from generate_series(1,4) g`)
+  const r = await as('authenticated', U9, `select fanday.claim_device('${T7}') r`)
+  const kept = (await db.query(`select id::text i from fanday.devices where user_id='${U9}' and id::text like 'bbbbbbbb-2222%' order by 1`)).rows.map((x) => x.i)
+  return !r.error && r.rows[0].r.moved_devices === 2 && (await db.query(`select count(*)::int c from fanday.devices where user_id='${U9}'`)).rows[0].c === 5
+    && kept.join() === 'bbbbbbbb-2222-0000-0000-000000000001,bbbbbbbb-2222-0000-0000-000000000002'
+    && (await db.query(`select count(*)::int c from fanday.devices where token_id='${tid}'`)).rows[0].c === 0
 })())
 
 process.exit(ok.fails() ? 1 : (console.log('\nall migration checks passed'), 0))
