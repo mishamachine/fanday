@@ -42,6 +42,8 @@ export interface Game {
   ticketsUrl: string | null
   sponsorText: string | null
   sponsorUrl: string | null
+  /** Title of the Wikipedia article this game was read from (games.source_page), when known. */
+  sourcePage?: string | null
 }
 
 export interface DataSource {
